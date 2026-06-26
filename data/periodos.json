@@ -1,0 +1,873 @@
+[
+  {
+    "nome": "Ediacarano (Neoproterozóico)",
+    "ordem": 1,
+    "era": "Neoproterozóico",
+    "inicio_ma": 635,
+    "fim_ma": 538.8,
+    "cor": "#1f4e5f",
+    "descricao": "Último período do Pré-cambriano, marcado pelo surgimento dos primeiros metazoários macroscópicos de corpo mole (biota ediacarana).",
+    "total_registros": 5,
+    "taxons": [
+      {
+        "taxon": "Parvancorina sp.",
+        "count": 1,
+        "ids": [
+          1
+        ]
+      },
+      {
+        "taxon": "Charniodiscus? sp.",
+        "count": 1,
+        "ids": [
+          2
+        ]
+      },
+      {
+        "taxon": "Cyclomedusa sp.",
+        "count": 1,
+        "ids": [
+          3
+        ]
+      },
+      {
+        "taxon": "Acritarcos (Acritarcha indet.)",
+        "count": 1,
+        "ids": [
+          5
+        ]
+      },
+      {
+        "taxon": "Aspidella sp.",
+        "count": 1,
+        "ids": [
+          84
+        ]
+      }
+    ]
+  },
+  {
+    "nome": "Ediacarano / Cambriano",
+    "ordem": 2,
+    "era": "Neoproterozóico/Paleozóico",
+    "inicio_ma": 541,
+    "fim_ma": 530,
+    "cor": "#1f4e5f",
+    "descricao": "Intervalo de transição entre o Ediacarano e o início do Cambriano, marcado pela diversificação inicial de metazoários.",
+    "total_registros": 1,
+    "taxons": [
+      {
+        "taxon": "Chancelloria sp.",
+        "count": 1,
+        "ids": [
+          4
+        ]
+      }
+    ]
+  },
+  {
+    "nome": "Carbonífero Superior",
+    "ordem": 3,
+    "era": "Paleozóico",
+    "inicio_ma": 323.2,
+    "fim_ma": 298.9,
+    "cor": "#3d6b52",
+    "descricao": "Período de grandes glaciações no Gondwana; na Bacia do Paraná corresponde aos depósitos glaciogênicos e periglaciais do Grupo Itararé.",
+    "total_registros": 9,
+    "taxons": [
+      {
+        "taxon": "Cruziana problematica",
+        "count": 1,
+        "ids": [
+          72
+        ]
+      },
+      {
+        "taxon": "Glaciichnium liebegastensis",
+        "count": 1,
+        "ids": [
+          73
+        ]
+      },
+      {
+        "taxon": "Gluckstadtella elongata isp. nov.",
+        "count": 1,
+        "ids": [
+          74
+        ]
+      },
+      {
+        "taxon": "Helminthoidichnites tenuis",
+        "count": 1,
+        "ids": [
+          75
+        ]
+      },
+      {
+        "taxon": "Mermia carickensis",
+        "count": 1,
+        "ids": [
+          76
+        ]
+      },
+      {
+        "taxon": "Treptichnus pollardi",
+        "count": 1,
+        "ids": [
+          77
+        ]
+      },
+      {
+        "taxon": "Gordia molassica",
+        "count": 1,
+        "ids": [
+          78
+        ]
+      },
+      {
+        "taxon": "Kouphichnium minusculum / Kouphichnium isp.",
+        "count": 1,
+        "ids": [
+          79
+        ]
+      },
+      {
+        "taxon": "Isopodichnus isp. (sin. parcial de Cruziana problematica)",
+        "count": 1,
+        "ids": [
+          80
+        ]
+      }
+    ]
+  },
+  {
+    "nome": "Carbonífero Superior – Permiano Inferior (limite)",
+    "ordem": 4,
+    "era": "Paleozóico",
+    "inicio_ma": 300,
+    "fim_ma": 298.9,
+    "cor": "#3d6b52",
+    "descricao": "Limite cronoestratigráfico entre o Carbonífero e o Permiano, registrado nas camadas superiores do Grupo Itararé.",
+    "total_registros": 1,
+    "taxons": [
+      {
+        "taxon": "Pterichnus mauryae isp. nov.",
+        "count": 1,
+        "ids": [
+          71
+        ]
+      }
+    ]
+  },
+  {
+    "nome": "Carbonífero – Permiano Inferior",
+    "ordem": 5,
+    "era": "Paleozóico",
+    "inicio_ma": 303,
+    "fim_ma": 295,
+    "cor": "#3d6b52",
+    "descricao": "Intervalo glacial a pós-glacial do Grupo Itararé, com rica fauna de invertebrados marinhos e icnofósseis associados a ambientes deltaicos e marinhos rasos.",
+    "total_registros": 9,
+    "taxons": [
+      {
+        "taxon": "Protovirgularia isp.",
+        "count": 1,
+        "ids": [
+          6
+        ]
+      },
+      {
+        "taxon": "Diplichnites gouldi",
+        "count": 1,
+        "ids": [
+          7
+        ]
+      },
+      {
+        "taxon": "Diplopodichnus biformis",
+        "count": 1,
+        "ids": [
+          8
+        ]
+      },
+      {
+        "taxon": "Maculichna varia",
+        "count": 1,
+        "ids": [
+          9
+        ]
+      },
+      {
+        "taxon": "Umfolozia sinuosa",
+        "count": 1,
+        "ids": [
+          10
+        ]
+      },
+      {
+        "taxon": "Cochlichnus anguineus",
+        "count": 1,
+        "ids": [
+          11
+        ]
+      },
+      {
+        "taxon": "Hormosiroidea meandrica",
+        "count": 1,
+        "ids": [
+          12
+        ]
+      },
+      {
+        "taxon": "Treptichnus isp.",
+        "count": 1,
+        "ids": [
+          13
+        ]
+      },
+      {
+        "taxon": "Gluckstadella cooperi",
+        "count": 1,
+        "ids": [
+          14
+        ]
+      }
+    ]
+  },
+  {
+    "nome": "Permiano Inferior (Asseliano)",
+    "ordem": 6,
+    "era": "Paleozóico",
+    "inicio_ma": 298.9,
+    "fim_ma": 295,
+    "cor": "#6b8f5e",
+    "descricao": "Primeiro andar do Permiano Inferior (Cisuraliano); em Mafra corresponde ao Folhelho Lontras, com o mais importante conjunto de tetrápodes permianos de Santa Catarina.",
+    "total_registros": 36,
+    "taxons": [
+      {
+        "taxon": "Actinopterygii indet. (paleoniscídeos) — morfotipo 1",
+        "count": 1,
+        "ids": [
+          15
+        ]
+      },
+      {
+        "taxon": "Actinopterygii indet. — morfotipo 2",
+        "count": 1,
+        "ids": [
+          16
+        ]
+      },
+      {
+        "taxon": "Symmoriiformes gen. et sp. nov.",
+        "count": 1,
+        "ids": [
+          17
+        ]
+      },
+      {
+        "taxon": "Chondrichthyes indet. (2 dentes)",
+        "count": 1,
+        "ids": [
+          18
+        ]
+      },
+      {
+        "taxon": "Crossopterygii (celacanto) — morfotipos de escamas",
+        "count": 1,
+        "ids": [
+          19
+        ]
+      },
+      {
+        "taxon": "Anthracoblattina mendesi Pinto & Sedor, 2000",
+        "count": 1,
+        "ids": [
+          20
+        ]
+      },
+      {
+        "taxon": "Braquiópodes indet. (Brachiopoda)",
+        "count": 1,
+        "ids": [
+          21
+        ]
+      },
+      {
+        "taxon": "Poríferos (Porifera indet.)",
+        "count": 1,
+        "ids": [
+          22
+        ]
+      },
+      {
+        "taxon": "Conodontes (Conodonta indet.) — 5–6 espécies",
+        "count": 1,
+        "ids": [
+          23
+        ]
+      },
+      {
+        "taxon": "Restos vegetais (fragmentos)",
+        "count": 1,
+        "ids": [
+          24
+        ]
+      },
+      {
+        "taxon": "Coprólitos (Coprolita espiralada)",
+        "count": 1,
+        "ids": [
+          25
+        ]
+      },
+      {
+        "taxon": "Orbiculoidea guaraunensis Oliveira, 1930",
+        "count": 1,
+        "ids": [
+          41
+        ]
+      },
+      {
+        "taxon": "Insecta indet. (morfotipos adicionais, ordens não determinadas)",
+        "count": 1,
+        "ids": [
+          42
+        ]
+      },
+      {
+        "taxon": "Biota fóssil similar ao Campáleo (larvas, coprólitos, braquiópodes, esponjas, peixes)",
+        "count": 1,
+        "ids": [
+          43
+        ]
+      },
+      {
+        "taxon": "Ammonoidea indet. (afim. Uraloceras)",
+        "count": 1,
+        "ids": [
+          45
+        ]
+      },
+      {
+        "taxon": "Gastropoda indet.",
+        "count": 1,
+        "ids": [
+          46
+        ]
+      },
+      {
+        "taxon": "Chonetes rionegrensis",
+        "count": 1,
+        "ids": [
+          47
+        ]
+      },
+      {
+        "taxon": "Langella imbituvensis",
+        "count": 1,
+        "ids": [
+          48
+        ]
+      },
+      {
+        "taxon": "Beecheria sp.",
+        "count": 1,
+        "ids": [
+          49
+        ]
+      },
+      {
+        "taxon": "Biconvexiella sp.",
+        "count": 1,
+        "ids": [
+          50
+        ]
+      },
+      {
+        "taxon": "Quinquenella sp.",
+        "count": 1,
+        "ids": [
+          51
+        ]
+      },
+      {
+        "taxon": "Discinidae indet.",
+        "count": 1,
+        "ids": [
+          52
+        ]
+      },
+      {
+        "taxon": "Microhemidiscia greinerti",
+        "count": 1,
+        "ids": [
+          53
+        ]
+      },
+      {
+        "taxon": "Reticulosa indet.",
+        "count": 1,
+        "ids": [
+          54
+        ]
+      },
+      {
+        "taxon": "Crioselache wittigi",
+        "count": 1,
+        "ids": [
+          55
+        ]
+      },
+      {
+        "taxon": "Daphnaechelus sp.",
+        "count": 1,
+        "ids": [
+          56
+        ]
+      },
+      {
+        "taxon": "Irajapintoseidon uruguayensis Beltan, 1975",
+        "count": 1,
+        "ids": [
+          57
+        ]
+      },
+      {
+        "taxon": "Roslerichthys riomafrensis Hamel, 2005",
+        "count": 1,
+        "ids": [
+          58
+        ]
+      },
+      {
+        "taxon": "Santosichthys mafrensis Malabarba, 1988",
+        "count": 1,
+        "ids": [
+          59
+        ]
+      },
+      {
+        "taxon": "Coelacanthus sp.",
+        "count": 1,
+        "ids": [
+          60
+        ]
+      },
+      {
+        "taxon": "Annelida indet. (escolecodontes) / Paulinitidae / Polychaetaspidae",
+        "count": 1,
+        "ids": [
+          61
+        ]
+      },
+      {
+        "taxon": "Eumalacostraca indet. / Ostracoda indet.",
+        "count": 1,
+        "ids": [
+          62
+        ]
+      },
+      {
+        "taxon": "Arachnostega isp.",
+        "count": 1,
+        "ids": [
+          63
+        ]
+      },
+      {
+        "taxon": "Oichnus paraboloides / O. simplex",
+        "count": 1,
+        "ids": [
+          64
+        ]
+      },
+      {
+        "taxon": "Enterospira (espiral intestinal)",
+        "count": 1,
+        "ids": [
+          65
+        ]
+      },
+      {
+        "taxon": "Agathoxylon sp. / Abietopitys sp.",
+        "count": 1,
+        "ids": [
+          66
+        ]
+      }
+    ]
+  },
+  {
+    "nome": "Permiano Inferior (Cisuraliano)",
+    "ordem": 7,
+    "era": "Paleozóico",
+    "inicio_ma": 298.9,
+    "fim_ma": 279.3,
+    "cor": "#6b8f5e",
+    "descricao": "Série Cisuraliano do Permiano Inferior, abrangendo o intervalo de deposição do Grupo Itararé/Guatá em SC.",
+    "total_registros": 1,
+    "taxons": [
+      {
+        "taxon": "Mesogondolella spp.",
+        "count": 1,
+        "ids": [
+          95
+        ]
+      }
+    ]
+  },
+  {
+    "nome": "Permiano Inferior",
+    "ordem": 8,
+    "era": "Paleozóico",
+    "inicio_ma": 298.9,
+    "fim_ma": 273.0,
+    "cor": "#7fa66b",
+    "descricao": "Período com ampla diversidade de invertebrados marinhos, flora glossopterídea e icnofósseis na Fm. Rio Bonito (Assembleia Taió) e no Grupo Itararé.",
+    "total_registros": 18,
+    "taxons": [
+      {
+        "taxon": "Phyllotheca australis (Brongniart, 1828)",
+        "count": 1,
+        "ids": [
+          26
+        ]
+      },
+      {
+        "taxon": "Paracalamites australis (Feistmantel, 1876)",
+        "count": 1,
+        "ids": [
+          27
+        ]
+      },
+      {
+        "taxon": "Heteropecten catharinae (Reed, 1930)",
+        "count": 1,
+        "ids": [
+          28
+        ]
+      },
+      {
+        "taxon": "Myonia costata (Reed, 1930)",
+        "count": 1,
+        "ids": [
+          29
+        ]
+      },
+      {
+        "taxon": "Myonia tayoensis (Reed, 1930)",
+        "count": 1,
+        "ids": [
+          30
+        ]
+      },
+      {
+        "taxon": "Fauna marinha da 'Assembleia Taió' (bivalves + braquiópodes)",
+        "count": 1,
+        "ids": [
+          31
+        ]
+      },
+      {
+        "taxon": "Glossopteris sp. (flora de Glossopteris)",
+        "count": 1,
+        "ids": [
+          32
+        ]
+      },
+      {
+        "taxon": "Actinopterygii articulado (2 morfotipos)",
+        "count": 1,
+        "ids": [
+          37
+        ]
+      },
+      {
+        "taxon": "Astralomya sinuosa Rocha-Campos & Simões, 1993",
+        "count": 1,
+        "ids": [
+          85
+        ]
+      },
+      {
+        "taxon": "Schizodus occidentalis",
+        "count": 1,
+        "ids": [
+          86
+        ]
+      },
+      {
+        "taxon": "Stutchiburia brasiliensis",
+        "count": 1,
+        "ids": [
+          87
+        ]
+      },
+      {
+        "taxon": "Edmondia sp.",
+        "count": 1,
+        "ids": [
+          88
+        ]
+      },
+      {
+        "taxon": "Oriocrassatella itajaiensis",
+        "count": 1,
+        "ids": [
+          89
+        ]
+      },
+      {
+        "taxon": "Warthia sp.",
+        "count": 1,
+        "ids": [
+          90
+        ]
+      },
+      {
+        "taxon": "Orbiculoidea itajaiensis",
+        "count": 1,
+        "ids": [
+          91
+        ]
+      },
+      {
+        "taxon": "Asteroidea indet. / Ophiuroidea indet.",
+        "count": 1,
+        "ids": [
+          92
+        ]
+      },
+      {
+        "taxon": "Palaeophycus isp. / Planolites isp. / Rosselia isp.",
+        "count": 1,
+        "ids": [
+          93
+        ]
+      },
+      {
+        "taxon": "Clionolithes isp. / Entobia isp. / Oichnus ovalis",
+        "count": 1,
+        "ids": [
+          94
+        ]
+      }
+    ]
+  },
+  {
+    "nome": "Permiano Superior",
+    "ordem": 9,
+    "era": "Paleozóico",
+    "inicio_ma": 259.1,
+    "fim_ma": 251.9,
+    "cor": "#9bb86b",
+    "descricao": "Permiano final, representado pela Fm. Rio do Rasto, com depósitos continentais lacustres-fluviais e tetrápodes e invertebrados associados.",
+    "total_registros": 5,
+    "taxons": [
+      {
+        "taxon": "Schizoneura gondwanensis Feistmantel, 1876",
+        "count": 1,
+        "ids": [
+          33
+        ]
+      },
+      {
+        "taxon": "Glossopteris riorastensis (Rohn & Rösler, 1989)",
+        "count": 1,
+        "ids": [
+          34
+        ]
+      },
+      {
+        "taxon": "Glossopteris grafi (Rohn & Rösler, 1989)",
+        "count": 1,
+        "ids": [
+          35
+        ]
+      },
+      {
+        "taxon": "Glossopteris cf. G. indica / G. surangei (e outros morfotipos)",
+        "count": 1,
+        "ids": [
+          36
+        ]
+      },
+      {
+        "taxon": "Estheria sp. / Leaia sp. (filópodos)",
+        "count": 1,
+        "ids": [
+          97
+        ]
+      }
+    ]
+  },
+  {
+    "nome": "Jurássico Superior (?) – Cretáceo Inferior (?)",
+    "ordem": 10,
+    "era": "Mesozóico",
+    "inicio_ma": 152,
+    "fim_ma": 100,
+    "cor": "#c9a23a",
+    "descricao": "Idade indicativa para depósitos eólicos do paleodeserto da Fm. Botucatu, com icnofósseis de vertebrados continentais.",
+    "total_registros": 1,
+    "taxons": [
+      {
+        "taxon": "Theropoda indet. (afim. Carnosauria) — pista bípede",
+        "count": 1,
+        "ids": [
+          67
+        ]
+      }
+    ]
+  },
+  {
+    "nome": "Cretáceo Inferior",
+    "ordem": 11,
+    "era": "Mesozóico",
+    "inicio_ma": 143.1,
+    "fim_ma": 100.5,
+    "cor": "#c9a23a",
+    "descricao": "Continuação da sedimentação eólica/desértica regional, associada a geossítios do Geoparque Caminhos dos Cânions do Sul.",
+    "total_registros": 1,
+    "taxons": [
+      {
+        "taxon": "Aracoaraichnium leonardii Buck et al., 2017",
+        "count": 1,
+        "ids": [
+          96
+        ]
+      }
+    ]
+  },
+  {
+    "nome": "Plioceno–Pleistoceno",
+    "ordem": 12,
+    "era": "Cenozóico",
+    "inicio_ma": 5.33,
+    "fim_ma": 0.012,
+    "cor": "#b5651d",
+    "descricao": "Transição entre o Plioceno e o Pleistoceno, com depósitos da plataforma continental e registros de megafauna marinha e continental.",
+    "total_registros": 4,
+    "taxons": [
+      {
+        "taxon": "Paleotocas (icnofósseis de escavação — Dasypodidae / Mylodontidae)",
+        "count": 1,
+        "ids": [
+          38
+        ]
+      },
+      {
+        "taxon": "Paleotoca Furnas Xocleng (icnofóssil de escavação — Xenarthra)",
+        "count": 1,
+        "ids": [
+          81
+        ]
+      },
+      {
+        "taxon": "Paleotoca Toca do Tatu (icnofóssil de escavação — Xenarthra)",
+        "count": 1,
+        "ids": [
+          82
+        ]
+      },
+      {
+        "taxon": "Paleotocas adicionais (Jacinto Machado e Praia Grande, SC)",
+        "count": 1,
+        "ids": [
+          83
+        ]
+      }
+    ]
+  },
+  {
+    "nome": "Pleistoceno",
+    "ordem": 13,
+    "era": "Cenozóico",
+    "inicio_ma": 2.58,
+    "fim_ma": 0.0117,
+    "cor": "#b5651d",
+    "descricao": "Época das grandes glaciações; em SC corresponde aos depósitos quaternários com megafauna continental.",
+    "total_registros": 1,
+    "taxons": [
+      {
+        "taxon": "Tatu-gigante (Propraopus sp. / Glyptodon sp. — osteodermos)",
+        "count": 1,
+        "ids": [
+          39
+        ]
+      }
+    ]
+  },
+  {
+    "nome": "Pleistoceno Superior",
+    "ordem": 14,
+    "era": "Cenozóico",
+    "inicio_ma": 0.129,
+    "fim_ma": 0.0117,
+    "cor": "#b5651d",
+    "descricao": "Subdivisão final do Pleistoceno, com registros de megafauna sul-americana extinta (gliptodontes, toxodontes) em depósitos litorâneos e cavernas.",
+    "total_registros": 3,
+    "taxons": [
+      {
+        "taxon": "Stegomastodon waringi (Holland, 1920)",
+        "count": 1,
+        "ids": [
+          68
+        ]
+      },
+      {
+        "taxon": "Lestodon armatus Gervais, 1855",
+        "count": 1,
+        "ids": [
+          69
+        ]
+      },
+      {
+        "taxon": "Toxodon sp.",
+        "count": 1,
+        "ids": [
+          70
+        ]
+      }
+    ]
+  },
+  {
+    "nome": "Pleistoceno–Holoceno",
+    "ordem": 15,
+    "era": "Cenozóico",
+    "inicio_ma": 0.0117,
+    "fim_ma": 0,
+    "cor": "#a85a2e",
+    "descricao": "Transição entre o Pleistoceno e o Holoceno (atual), com depósitos lagunares e aluvionares recentes.",
+    "total_registros": 1,
+    "taxons": [
+      {
+        "taxon": "Registro paleoambiental (fitólitos, palinomorfos)",
+        "count": 1,
+        "ids": [
+          40
+        ]
+      }
+    ]
+  },
+  {
+    "nome": "Quaternário (Pleistoceno–Holoceno)",
+    "ordem": 16,
+    "era": "Cenozóico",
+    "inicio_ma": 2.58,
+    "fim_ma": 0,
+    "cor": "#a85a2e",
+    "descricao": "Período quaternário, abrangendo depósitos superficiais recentes e registros de fauna pleistocênica em diferentes contextos sedimentares.",
+    "total_registros": 1,
+    "taxons": [
+      {
+        "taxon": "Paleotoca (icnofóssil de escavação — Xenarthra: tatus, preguiças, tamanduás)",
+        "count": 1,
+        "ids": [
+          44
+        ]
+      }
+    ]
+  }
+]

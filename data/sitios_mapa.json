@@ -1,0 +1,385 @@
+[
+  {
+    "site": "Afloramento Campáleo (Mafra)",
+    "municipio": "Mafra",
+    "bacia": "Bacia do Paraná — Grupo Itararé",
+    "lat": -26.1112,
+    "lon": -49.805,
+    "count": 36,
+    "periodos": [
+      "Permiano Inferior (Asseliano)",
+      "Permiano Inferior (Cisuraliano)"
+    ],
+    "taxons_amostra": [
+      "Actinopterygii indet. (paleoniscídeos) — morfotipo 1",
+      "Actinopterygii indet. — morfotipo 2",
+      "Symmoriiformes gen. et sp. nov.",
+      "Chondrichthyes indet. (2 dentes)",
+      "Crossopterygii (celacanto) — morfotipos de escamas"
+    ]
+  },
+  {
+    "site": "Assembleia Taió",
+    "municipio": "Taió",
+    "bacia": "Bacia do Paraná — Fm. Rio Bonito",
+    "lat": -27.11,
+    "lon": -49.985,
+    "count": 11,
+    "periodos": [
+      "Permiano Inferior"
+    ],
+    "taxons_amostra": [
+      "Fauna marinha da 'Assembleia Taió' (bivalves + braquiópodes)",
+      "Astralomya sinuosa Rocha-Campos & Simões, 1993",
+      "Schizodus occidentalis",
+      "Stutchiburia brasiliensis",
+      "Edmondia sp."
+    ]
+  },
+  {
+    "site": "Pedreira Águas Claras",
+    "municipio": "Rio do Sul",
+    "bacia": "Bacia do Paraná — Grupo Itararé",
+    "lat": -27.215,
+    "lon": -49.6433,
+    "count": 9,
+    "periodos": [
+      "Carbonífero – Permiano Inferior"
+    ],
+    "taxons_amostra": [
+      "Protovirgularia isp.",
+      "Diplichnites gouldi",
+      "Diplopodichnus biformis",
+      "Maculichna varia",
+      "Umfolozia sinuosa"
+    ]
+  },
+  {
+    "site": "Pedreiras de Trombudo Central",
+    "municipio": "Trombudo Central",
+    "bacia": "Bacia do Paraná — Grupo Itararé",
+    "lat": -27.305,
+    "lon": -49.795,
+    "count": 6,
+    "periodos": [
+      "Carbonífero Superior"
+    ],
+    "taxons_amostra": [
+      "Cruziana problematica",
+      "Glaciichnium liebegastensis",
+      "Gluckstadtella elongata isp. nov.",
+      "Helminthoidichnites tenuis",
+      "Mermia carickensis"
+    ]
+  },
+  {
+    "site": "Região de Itajaí / BR-470",
+    "municipio": "Itajaí",
+    "bacia": "Bacia do Itajaí",
+    "lat": -26.9078,
+    "lon": -48.6614,
+    "count": 5,
+    "periodos": [
+      "Ediacarano (Neoproterozóico)",
+      "Ediacarano / Cambriano"
+    ],
+    "taxons_amostra": [
+      "Parvancorina sp.",
+      "Charniodiscus? sp.",
+      "Cyclomedusa sp.",
+      "Chancelloria sp.",
+      "Aspidella sp."
+    ]
+  },
+  {
+    "site": "Afloramentos do norte de SC/PR",
+    "municipio": "Mafra (região)",
+    "bacia": "Bacia do Paraná — Grupo Itararé",
+    "lat": -26.15,
+    "lon": -49.9,
+    "count": 4,
+    "periodos": [
+      "Permiano Superior"
+    ],
+    "taxons_amostra": [
+      "Schizoneura gondwanensis Feistmantel, 1876",
+      "Glossopteris riorastensis (Rohn & Rösler, 1989)",
+      "Glossopteris grafi (Rohn & Rösler, 1989)",
+      "Glossopteris cf. G. indica / G. surangei (e outros morfotipos)"
+    ]
+  },
+  {
+    "site": "Localidade Moema",
+    "municipio": "Itaiópolis",
+    "bacia": "Bacia do Paraná — Grupo Itararé",
+    "lat": -26.34,
+    "lon": -49.91,
+    "count": 3,
+    "periodos": [
+      "Permiano Inferior"
+    ],
+    "taxons_amostra": [
+      "Heteropecten catharinae (Reed, 1930)",
+      "Myonia costata (Reed, 1930)",
+      "Myonia tayoensis (Reed, 1930)"
+    ]
+  },
+  {
+    "site": "Pedreira Itaú-Itaúna",
+    "municipio": "Trombudo Central",
+    "bacia": "Bacia do Paraná — Grupo Itararé",
+    "lat": -27.305,
+    "lon": -49.795,
+    "count": 3,
+    "periodos": [
+      "Carbonífero Superior"
+    ],
+    "taxons_amostra": [
+      "Gordia molassica",
+      "Kouphichnium minusculum / Kouphichnium isp.",
+      "Isopodichnus isp. (sin. parcial de Cruziana problematica)"
+    ]
+  },
+  {
+    "site": "Assembleia Taió (rio Taió)",
+    "municipio": "Taió",
+    "bacia": "Bacia do Paraná — Fm. Rio Bonito",
+    "lat": -27.11,
+    "lon": -49.985,
+    "count": 2,
+    "periodos": [
+      "Permiano Inferior"
+    ],
+    "taxons_amostra": [
+      "Phyllotheca australis (Brongniart, 1828)",
+      "Paracalamites australis (Feistmantel, 1876)"
+    ]
+  },
+  {
+    "site": "Localidade não especificada (SC)",
+    "municipio": "Não especificado",
+    "bacia": "Não especificado",
+    "lat": -27.5,
+    "lon": -49.5,
+    "count": 2,
+    "periodos": [
+      "Cretáceo Inferior",
+      "Permiano Inferior"
+    ],
+    "taxons_amostra": [
+      "Actinopterygii articulado (2 morfotipos)",
+      "Aracoaraichnium leonardii Buck et al., 2017"
+    ]
+  },
+  {
+    "site": "Costa de Sombrio (plataforma continental)",
+    "municipio": "Sombrio",
+    "bacia": "Plataforma Continental — Fm. Laguna-Barreira",
+    "lat": -29.22,
+    "lon": -49.5,
+    "count": 2,
+    "periodos": [
+      "Pleistoceno Superior"
+    ],
+    "taxons_amostra": [
+      "Stegomastodon waringi (Holland, 1920)",
+      "Toxodon sp."
+    ]
+  },
+  {
+    "site": "Região de Itajaí",
+    "municipio": "Itajaí",
+    "bacia": "Bacia do Itajaí",
+    "lat": -26.9078,
+    "lon": -48.6614,
+    "count": 1,
+    "periodos": [
+      "Ediacarano (Neoproterozóico)"
+    ],
+    "taxons_amostra": [
+      "Acritarcos (Acritarcha indet.)"
+    ]
+  },
+  {
+    "site": "Afloramento Bainha",
+    "municipio": "Criciúma",
+    "bacia": "Bacia do Paraná — Fm. Rio Bonito",
+    "lat": -28.6775,
+    "lon": -49.3697,
+    "count": 1,
+    "periodos": [
+      "Permiano Inferior"
+    ],
+    "taxons_amostra": [
+      "Glossopteris sp. (flora de Glossopteris)"
+    ]
+  },
+  {
+    "site": "Geoparque Caminhos dos Cânions do Sul",
+    "municipio": "Praia Grande / Timbé do Sul (região)",
+    "bacia": "Bacia do Paraná — Fm. Botucatu / Cânions",
+    "lat": -29.19,
+    "lon": -49.94,
+    "count": 1,
+    "periodos": [
+      "Plioceno–Pleistoceno"
+    ],
+    "taxons_amostra": [
+      "Paleotocas (icnofósseis de escavação — Dasypodidae / Mylodontidae)"
+    ]
+  },
+  {
+    "site": "Planície litorânea sul de SC",
+    "municipio": "Litoral sul (região)",
+    "bacia": "Planície Costeira — Depósitos Quaternários",
+    "lat": -28.95,
+    "lon": -49.45,
+    "count": 1,
+    "periodos": [
+      "Pleistoceno"
+    ],
+    "taxons_amostra": [
+      "Tatu-gigante (Propraopus sp. / Glyptodon sp. — osteodermos)"
+    ]
+  },
+  {
+    "site": "Lagoa do Sombrio",
+    "municipio": "Sombrio",
+    "bacia": "Planície Costeira — Depósitos Quaternários",
+    "lat": -29.1133,
+    "lon": -49.6306,
+    "count": 1,
+    "periodos": [
+      "Pleistoceno–Holoceno"
+    ],
+    "taxons_amostra": [
+      "Registro paleoambiental (fitólitos, palinomorfos)"
+    ]
+  },
+  {
+    "site": "Afloramento de Rio dos Cedros",
+    "municipio": "Rio dos Cedros",
+    "bacia": "Bacia do Itajaí",
+    "lat": -26.6483,
+    "lon": -49.2783,
+    "count": 1,
+    "periodos": [
+      "Permiano Inferior (Asseliano)"
+    ],
+    "taxons_amostra": [
+      "Biota fóssil similar ao Campáleo (larvas, coprólitos, braquiópodes, esponjas, peixes)"
+    ]
+  },
+  {
+    "site": "Lauro Müller",
+    "municipio": "Lauro Müller",
+    "bacia": "Bacia do Paraná — Fm. Rio Bonito",
+    "lat": -28.4047,
+    "lon": -49.3811,
+    "count": 1,
+    "periodos": [
+      "Quaternário (Pleistoceno–Holoceno)"
+    ],
+    "taxons_amostra": [
+      "Paleotoca (icnofóssil de escavação — Xenarthra: tatus, preguiças, tamanduás)"
+    ]
+  },
+  {
+    "site": "Litoral sul de SC",
+    "municipio": "Litoral sul (região)",
+    "bacia": "Planície Costeira — Depósitos Quaternários",
+    "lat": -28.95,
+    "lon": -49.45,
+    "count": 1,
+    "periodos": [
+      "Jurássico Superior (?) – Cretáceo Inferior (?)"
+    ],
+    "taxons_amostra": [
+      "Theropoda indet. (afim. Carnosauria) — pista bípede"
+    ]
+  },
+  {
+    "site": "Plataforma continental Passo de Torres–Araranguá",
+    "municipio": "Passo de Torres / Araranguá (região)",
+    "bacia": "Plataforma Continental — Fm. Laguna-Barreira",
+    "lat": -29.28,
+    "lon": -49.55,
+    "count": 1,
+    "periodos": [
+      "Pleistoceno Superior"
+    ],
+    "taxons_amostra": [
+      "Lestodon armatus Gervais, 1855"
+    ]
+  },
+  {
+    "site": "Afloramento de Anitápolis",
+    "municipio": "Anitápolis",
+    "bacia": "Embasamento Cristalino / Depósitos Superficiais",
+    "lat": -27.8869,
+    "lon": -49.1394,
+    "count": 1,
+    "periodos": [
+      "Carbonífero Superior – Permiano Inferior (limite)"
+    ],
+    "taxons_amostra": [
+      "Pterichnus mauryae isp. nov."
+    ]
+  },
+  {
+    "site": "Morro Grande",
+    "municipio": "Morro Grande",
+    "bacia": "Bacia do Paraná — Fm. Botucatu",
+    "lat": -28.6611,
+    "lon": -49.5444,
+    "count": 1,
+    "periodos": [
+      "Plioceno–Pleistoceno"
+    ],
+    "taxons_amostra": [
+      "Paleotoca Furnas Xocleng (icnofóssil de escavação — Xenarthra)"
+    ]
+  },
+  {
+    "site": "Timbé do Sul (rio Rocinha)",
+    "municipio": "Timbé do Sul",
+    "bacia": "Bacia do Paraná — Fm. Botucatu",
+    "lat": -28.8244,
+    "lon": -49.9183,
+    "count": 1,
+    "periodos": [
+      "Plioceno–Pleistoceno"
+    ],
+    "taxons_amostra": [
+      "Paleotoca Toca do Tatu (icnofóssil de escavação — Xenarthra)"
+    ]
+  },
+  {
+    "site": "Paleotoca do Engenho Velho",
+    "municipio": "Jacinto Machado / Praia Grande",
+    "bacia": "Bacia do Paraná — Fm. Botucatu / Cânions",
+    "lat": -29.0333,
+    "lon": -49.8167,
+    "count": 1,
+    "periodos": [
+      "Plioceno–Pleistoceno"
+    ],
+    "taxons_amostra": [
+      "Paleotocas adicionais (Jacinto Machado e Praia Grande, SC)"
+    ]
+  },
+  {
+    "site": "Entre Valões e Poço Preto",
+    "municipio": "Lages",
+    "bacia": "Bacia do Paraná — Fm. Rio do Rasto",
+    "lat": -27.8167,
+    "lon": -50.3264,
+    "count": 1,
+    "periodos": [
+      "Permiano Superior"
+    ],
+    "taxons_amostra": [
+      "Estheria sp. / Leaia sp. (filópodos)"
+    ]
+  }
+]

@@ -1,0 +1,119 @@
+[
+  {
+    "nome": "Bacia do Paraná — Grupo Itararé / Fm. Rio do Sul / Fm. Rio Bonito / Fm. Rio do Rasto",
+    "cor": "#3d6b52",
+    "descricao": "Sucessão carbonífero-permiana aflorante no Planalto Catarinense, com os mais ricos registros fossilíferos do estado (tetrápodes, invertebrados marinhos, icnofósseis e flora glossopterídea).",
+    "coords": [
+      [
+        -26.0,
+        -50.1
+      ],
+      [
+        -26.05,
+        -49.55
+      ],
+      [
+        -26.45,
+        -49.05
+      ],
+      [
+        -27.0,
+        -48.95
+      ],
+      [
+        -27.5,
+        -49.1
+      ],
+      [
+        -27.85,
+        -49.55
+      ],
+      [
+        -28.1,
+        -50.1
+      ],
+      [
+        -28.1,
+        -50.8
+      ],
+      [
+        -27.5,
+        -51.1
+      ],
+      [
+        -26.8,
+        -51.0
+      ],
+      [
+        -26.3,
+        -50.6
+      ],
+      [
+        -26.0,
+        -50.1
+      ]
+    ]
+  },
+  {
+    "nome": "Bacia do Itajaí — Grupo Itajaí / Fm. Campo Alegre",
+    "cor": "#1f4e5f",
+    "descricao": "Bacia sedimentar neoproterozóica (Ediacarano) no vale do Itajaí, com raros registros de metazoários de impressão corporal, relevantes para a paleontologia do Ediacarano sul-americano.",
+    "coords": [
+      [
+        -26.75,
+        -49.1
+      ],
+      [
+        -26.7,
+        -48.55
+      ],
+      [
+        -27.05,
+        -48.5
+      ],
+      [
+        -27.2,
+        -49.0
+      ],
+      [
+        -27.0,
+        -49.35
+      ],
+      [
+        -26.75,
+        -49.1
+      ]
+    ]
+  },
+  {
+    "nome": "Plataforma Continental e Planície Costeira — Fm. Laguna-Barreira / Depósitos Quaternários",
+    "cor": "#8a8f6b",
+    "descricao": "Depósitos quaternários costeiros e plataforma continental do sul de SC, com megafauna pleistocênica (gliptodontes, toxodontes, mastodontes) recuperada em redes de arrasto e lagoas.",
+    "coords": [
+      [
+        -28.55,
+        -48.85
+      ],
+      [
+        -28.55,
+        -48.4
+      ],
+      [
+        -29.35,
+        -48.55
+      ],
+      [
+        -29.4,
+        -49.85
+      ],
+      [
+        -28.85,
+        -49.85
+      ],
+      [
+        -28.55,
+        -48.85
+      ]
+    ]
+  }
+]
