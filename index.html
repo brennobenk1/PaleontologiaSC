@@ -4,12 +4,9 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Paleo-SC · Banco de Dados Paleontológico de Santa Catarina</title>
-<meta name="description" content="Catálogo, mapa interativo e consulta científica do registro fossilífero de Santa Catarina, Brasil.">
-
-<link rel="stylesheet" href="vendor/leaflet/leaflet.css" />
-
+<meta name="description" content="Catálogo, mapa interativo e consulta científica do registro fossilífero de Santa Catarina, e registro de avifauna paleontológica do Brasil.">
 <link rel="icon" href="img/logo.png" type="image/png">
-<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
 
@@ -30,6 +27,7 @@
       <button class="nav-link" data-view="mapa">Mapa</button>
       <button class="nav-link" data-view="periodos">Períodos Geológicos</button>
       <button class="nav-link" data-view="instituicoes">Instituições</button>
+      <button class="nav-link" data-view="avifauna">Avifauna do Brasil</button>
       <button class="nav-link" data-view="sobre">Sobre &amp; Fontes</button>
     </nav>
 
@@ -55,6 +53,7 @@
       <div class="hero-actions">
         <button class="btn btn-primary" data-goto="catalogo">Explorar o catálogo</button>
         <button class="btn btn-ghost" data-goto="mapa">Ver mapa de sítios</button>
+        <button class="btn btn-ghost" data-goto="avifauna">Avifauna do Brasil</button>
       </div>
     </div>
     <div class="hero-stats" id="heroStats" aria-label="Estatísticas do banco de dados">
@@ -87,6 +86,10 @@
       <article class="feature-card">
         <h3>Rede institucional</h3>
         <p>Universidades, museus e centros de pesquisa que descrevem, custodiam ou estudam o material — com contato, sede e o perfil do acervo de cada instituição.</p>
+      </article>
+      <article class="feature-card feature-card-accent">
+        <h3>Avifauna fóssil do Brasil</h3>
+        <p>Aba nacional dedicada às aves fósseis e subfósseis descritas no Brasil — espécies extintas, sítios-chave e cobertura por estado, do Cretáceo Inferior (Aptiano, ~115 Ma) ao Holoceno.</p>
       </article>
     </div>
   </section>
@@ -122,12 +125,12 @@
 
 </section>
 
-<!-- ============ VIEW: CATÁLOGO ============ -->
+<!-- ============ VIEW: CATÁLOGO (SC) ============ -->
 <section class="view view-catalogo" id="view-catalogo" data-view="catalogo">
   <div class="view-header">
     <div class="section-head">
       <span class="section-num">Catálogo</span>
-      <h2>Consulta ao banco de dados</h2>
+      <h2>Consulta ao banco de dados — Santa Catarina</h2>
     </div>
     <p class="view-intro">Filtre por período, categoria, formação, município ou instituição. Clique em um registro para ver a ficha completa com referências e fontes de verificação.</p>
   </div>
@@ -169,12 +172,12 @@
   <p class="empty-state hidden" id="emptyState">Nenhum registro corresponde aos filtros selecionados. Tente ampliar os critérios de busca.</p>
 </section>
 
-<!-- ============ VIEW: MAPA ============ -->
+<!-- ============ VIEW: MAPA (SC) ============ -->
 <section class="view view-mapa" id="view-mapa" data-view="mapa">
   <div class="view-header">
     <div class="section-head">
       <span class="section-num">Mapa</span>
-      <h2>Sítios de coleta e bacias fossilíferas</h2>
+      <h2>Sítios de coleta e bacias fossilíferas — Santa Catarina</h2>
     </div>
     <p class="view-intro">Os círculos marcam localidades de coleta — o tamanho indica o número de registros documentados. As áreas sombreadas mostram a extensão aproximada das principais bacias e unidades sedimentares portadoras de fósseis em Santa Catarina.</p>
   </div>
@@ -188,9 +191,7 @@
         <p class="muted">Toque em um ponto do mapa para ver os detalhes do sítio.</p>
       </div>
     </div>
-    <div class="map-canvas">
-      <div id="leafletMap"></div>
-    </div>
+    <div class="map-canvas" id="svgMapWrap"></div>
   </div>
 </section>
 
@@ -199,7 +200,7 @@
   <div class="view-header">
     <div class="section-head">
       <span class="section-num">Tempo</span>
-      <h2>Períodos geológicos</h2>
+      <h2>Períodos geológicos — Santa Catarina</h2>
     </div>
     <p class="view-intro">Da base ao topo da coluna estratigráfica catarinense: abra cada período para ver as unidades, os táxons documentados e a contagem de registros.</p>
   </div>
@@ -219,6 +220,74 @@
   <div class="inst-grid" id="instGrid"></div>
 </section>
 
+<!-- ============ VIEW: AVIFAUNA DO BRASIL (NOVA ABA) ============ -->
+<section class="view view-avifauna" id="view-avifauna" data-view="avifauna">
+  <div class="view-header">
+    <div class="section-head">
+      <span class="section-num">Brasil</span>
+      <h2>Registro de Avifauna Paleontológica do Brasil</h2>
+    </div>
+    <p class="view-intro">
+      Aba nacional, independente do catálogo de Santa Catarina, dedicada às aves fósseis e
+      subfósseis formalmente descritas no Brasil — do Cretáceo Inferior (Aptiano, ~115 Ma) ao
+      Pleistoceno–Holoceno. Compilação baseada em Nascimento &amp; Silveira (2022; 2024) e em
+      Chiappe et al. (2024), as revisões mais completas publicadas sobre o tema.
+    </p>
+  </div>
+
+  <div class="avi-stats" id="aviStats"></div>
+
+  <section class="section-block avi-mesozoic-section" id="aviMesozoicHighlight"></section>
+
+  <div class="avi-layout">
+    <div class="avi-sidebar">
+      <h4>Cobertura por estado</h4>
+      <div class="avi-map-canvas" id="aviSvgMapWrap"></div>
+      <p class="muted avi-map-caption">Intensidade da cor = nº de registros citados na literatura por UF.</p>
+      <ul class="map-legend" style="margin-top:0.6rem;">
+        <li><span class="legend-swatch" style="background:#1f4e5f;border-radius:50%;"></span><span>Táxon mesozoico (Cretáceo)</span></li>
+        <li><span class="legend-swatch" style="background:#b5651d;border-radius:50%;"></span><span>Táxon cenozoico</span></li>
+      </ul>
+    </div>
+
+    <div class="avi-main">
+      <div class="avi-toolbar">
+        <div class="search-box">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+          <input type="search" id="aviSearchInput" placeholder="Buscar táxon, família, sítio, estado…" aria-label="Buscar na avifauna fóssil">
+        </div>
+        <select id="aviFilterEstado" aria-label="Filtrar por estado"><option value="">Estado — todos</option></select>
+        <select id="aviFilterPeriodo" aria-label="Filtrar por período"><option value="">Período — todos</option></select>
+      </div>
+      <div class="catalog-meta">
+        <span id="aviResultCount"></span>
+      </div>
+      <div class="avi-results" id="aviResults"></div>
+      <p class="empty-state hidden" id="aviEmptyState">Nenhum táxon corresponde aos filtros selecionados.</p>
+    </div>
+  </div>
+
+  <section class="section-block avi-coverage-table-wrap">
+    <div class="section-head">
+      <span class="section-num">Tabela</span>
+      <h2>Registros citados na literatura por Unidade Federativa</h2>
+    </div>
+    <p class="view-intro">Número de registros (não necessariamente de táxons distintos) atribuídos a cada estado na revisão de Nascimento &amp; Silveira (2024). Estados sem publicações de aves fósseis/subfósseis identificadas até a data da revisão aparecem com zero.</p>
+    <div class="catalog-table-wrap">
+      <table class="catalog-table" id="aviStateTable">
+        <thead>
+          <tr><th>UF</th><th>Estado</th><th>Região</th><th>Registros na literatura</th></tr>
+        </thead>
+        <tbody id="aviStateTableBody"></tbody>
+      </table>
+    </div>
+  </section>
+
+  <section class="section-block">
+    <p class="muted avi-source-note" id="aviSourceNote"></p>
+  </section>
+</section>
+
 <!-- ============ VIEW: SOBRE ============ -->
 <section class="view view-sobre" id="view-sobre" data-view="sobre">
   <div class="view-header">
@@ -230,24 +299,25 @@
 
   <div class="about-grid">
     <article class="about-card">
-      <h3>Origem dos dados</h3>
-      <p>Este banco foi compilado a partir da literatura paleontológica publicada sobre Santa Catarina — periódicos científicos, anais de congresso e teses/dissertações — com atualização até meados de 2025–2026. As instituições de referência citadas com maior frequência são o CENPALEO/UnC, a UFRGS, a UNISINOS e a UFSC, entre outras.</p>
+      <h3>Origem dos dados — Santa Catarina</h3>
+      <p>O catálogo de Santa Catarina foi compilado a partir da literatura paleontológica publicada sobre o estado — periódicos científicos, anais de congresso e teses/dissertações — com atualização até meados de 2025–2026. As instituições de referência citadas com maior frequência são o CENPALEO/UnC, a UFRGS, a UNISINOS e a UFSC, entre outras.</p>
     </article>
     <article class="about-card">
-      <h3>Como ler os campos</h3>
+      <h3>Origem dos dados — Avifauna do Brasil</h3>
+      <p>A aba de avifauna paleontológica nacional é baseada na revisão de Nascimento &amp; Silveira (2024, <em>Zoologia</em> 41: e23079) e na dissertação de mestrado de Nascimento (2022, MZUSP), que reúnem 669 registros da literatura, complementada com a descrição de <em>Navaornis hestiae</em> (Chiappe et al., 2024, <em>Nature</em>). Esta aba apresenta 24 táxons formalmente descritos (gêneros/espécies extintos) — incluindo os 3 mais antigos, do Cretáceo Inferior e Superior — com detalhamento de sítio, formação e instituição de guarda, além da síntese de cobertura por estado.</p>
+    </article>
+    <article class="about-card">
+      <h3>Como ler os campos — catálogo de SC</h3>
       <dl class="field-glossary" id="fieldGlossary"></dl>
     </article>
     <article class="about-card">
       <h3>Limitações</h3>
       <ul class="limit-list">
-        <li><strong>Cobertura:</strong> inclui apenas registros com publicação científica identificada — o acervo real do CENPALEO é muito maior.</li>
-        <li><strong>Tombamento:</strong> a maioria dos números de catálogo não é publicada; consulte a instituição de guarda diretamente.</li>
-        <li><strong>Atualização contínua:</strong> a paleontologia de SC é campo ativo; novos registros surgem com frequência.</li>
+        <li><strong>Cobertura (SC):</strong> inclui apenas registros com publicação científica identificada — o acervo real do CENPALEO é muito maior.</li>
+        <li><strong>Tombamento (SC):</strong> a maioria dos números de catálogo não é publicada; consulte a instituição de guarda diretamente.</li>
+        <li><strong>Avifauna do Brasil:</strong> a tabela de cobertura por estado reflete registros citados na literatura revisada, não o número real de espécies que existiram — viés de pesquisa e preservação afetam fortemente esses números.</li>
+        <li><strong>Atualização contínua:</strong> ambas as áreas são campos de pesquisa ativos; novos registros surgem com frequência.</li>
       </ul>
-    </article>
-    <article class="about-card">
-      <h3>Banco de dados &amp; planilha-fonte</h3>
-      <p>Todos os dados exibidos neste site são lidos diretamente dos arquivos JSON gerados a partir da planilha de catalogação <em>"fosseis_santa_catarina_enriquecido.xlsx"</em>. Atualizar a planilha e regenerar os arquivos de dados atualiza automaticamente catálogo, mapa, períodos e instituições.</p>
     </article>
   </div>
 </section>
@@ -272,12 +342,6 @@
   </div>
 </div>
 
-<script src="vendor/leaflet/leaflet.js"></script>
-<script src="js/data-loader.js"></script>
-<script src="js/app.js"></script>
-<script src="js/catalogo.js"></script>
-<script src="js/mapa.js"></script>
-<script src="js/periodos.js"></script>
-<script src="js/instituicoes.js"></script>
+<script src="app.js"></script>
 </body>
 </html>
