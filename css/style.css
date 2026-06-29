@@ -274,10 +274,12 @@ body::before{
 }
 .map-site-detail h5{ font-family: var(--font-display); margin: 0 0 0.4rem; color: var(--petrol-dk); font-size: 1.05rem; }
 .map-site-detail .site-taxon-list{ margin: 0.5rem 0 0; padding-left: 1.1rem; font-size:0.83rem; }
-.map-canvas{ border-radius: var(--radius-md); overflow:hidden; border:1px solid var(--line); box-shadow: var(--shadow-sm); }
-#leafletMap{ height: 600px; width:100%; background: var(--cream-dk); }
-.leaflet-popup-content{ font-family: var(--font-body); font-size:0.88rem; }
-.leaflet-popup-content b{ font-family: var(--font-display); font-style:italic; }
+.map-canvas{ border-radius: var(--radius-md); overflow:hidden; border:1px solid var(--line); box-shadow: var(--shadow-sm); background: var(--cream-dk); display:flex; align-items:center; justify-content:center; padding: 1rem; }
+.map-canvas svg{ width:100%; height:auto; max-height: 640px; display:block; }
+.site-dot{ cursor:pointer; transition: r .15s ease, fill-opacity .15s ease; }
+.site-dot:hover{ fill-opacity: 1; }
+.site-dot-active{ stroke: var(--terracotta-lt); stroke-width: 2.5; }
+.map-canvas polygon{ cursor:pointer; }
 
 /* =========================== PERÍODOS =========================== */
 .timeline-rail{ height:6px; border-radius:999px; background: var(--line); margin-bottom: 2rem; overflow:hidden; display:flex; }
@@ -360,6 +362,56 @@ body::before{
 .modal-grid div b{ display:block; font-family: var(--font-mono); font-size:0.68rem; text-transform:uppercase; color: var(--moss-dk); margin-bottom:0.15rem; font-weight:600; letter-spacing:0.02em;}
 .modal-sources{ list-style:none; padding:0; margin:0; display:flex; flex-direction:column; gap:0.4rem; }
 .modal-sources a{ font-size:0.84rem; word-break: break-all; }
+
+/* =========================================================
+   AVIFAUNA DO BRASIL — aba nacional
+   ========================================================= */
+.feature-card-accent{ border-color: var(--terracotta); background: linear-gradient(180deg, var(--paper), var(--cream-dk)); }
+
+.avi-stats{ display:grid; grid-template-columns: repeat(4, 1fr); gap: 0.9rem; margin-bottom: 2rem; }
+.avi-stats .stat-card{ text-align:center; }
+
+.avi-layout{ display:grid; grid-template-columns: 320px 1fr; gap: 1.4rem; margin-bottom: 2.5rem; }
+.avi-sidebar h4{ font-family: var(--font-mono); font-size:0.78rem; text-transform:uppercase; letter-spacing:0.04em; color: var(--moss-dk); margin: 0 0 0.6rem; }
+.avi-map-canvas{
+  border-radius: var(--radius-md); border:1px solid var(--line); background: var(--cream-dk);
+  display:flex; align-items:center; justify-content:center; padding: 0.6rem; box-shadow: var(--shadow-sm);
+}
+.avi-map-canvas svg{ width:100%; height:auto; display:block; }
+.avi-map-caption{ margin-top:0.6rem; font-size:0.8rem; }
+.avi-state-shape{ cursor:pointer; transition: fill .15s ease; stroke: var(--paper); stroke-width: 0.8; }
+.avi-taxon-dot{ cursor:pointer; fill: var(--terracotta); stroke: #7a3a10; stroke-width:1; transition: r .15s ease; }
+.avi-taxon-dot-mesozoic{ fill: var(--petrol-dk); stroke: #0d2a33; stroke-width:1.4; }
+.avi-card-mesozoic{ border-color: var(--petrol-lt); background: linear-gradient(180deg, var(--paper), #eef2ed); }
+.avi-taxon-dot:hover{ r: 8; }
+
+.avi-toolbar{ display:flex; gap:0.6rem; flex-wrap:wrap; margin-bottom: 0.8rem; align-items:center; }
+.avi-toolbar select{
+  font-family: var(--font-mono); font-size: 0.82rem; padding: 0.5rem 0.7rem;
+  border: 1px solid var(--line-strong); border-radius: var(--radius-sm); background: var(--paper); color: var(--ink);
+}
+.avi-results{ display:grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 1rem; }
+
+.avi-card{
+  background: var(--paper); border:1px solid var(--line); border-radius: var(--radius-md);
+  padding: 1.1rem 1.15rem; cursor:pointer; transition: box-shadow .15s ease, transform .15s ease;
+  display:flex; flex-direction:column; gap:0.45rem;
+}
+.avi-card:hover{ box-shadow: var(--shadow-md); transform: translateY(-2px); border-color: var(--petrol-lt); }
+.avi-card-top{ display:flex; justify-content:space-between; align-items:flex-start; gap:0.5rem; }
+.avi-taxon-name{ font-family: var(--font-display); font-style: italic; font-size: 1.08rem; color: var(--petrol-dk); margin:0; line-height:1.25; }
+.avi-card-meta{ font-size: 0.86rem; color: rgba(27,46,42,0.75); display:flex; flex-direction:column; gap:0.15rem; }
+.avi-card-meta b{ color: var(--ink); font-weight:600; }
+.avi-card-period{ font-family: var(--font-mono); font-size: 0.74rem; color: var(--moss-dk); }
+
+.avi-coverage-table-wrap{ padding-top: 0; }
+
+.avi-source-note{ text-align:center; }
+
+@media (max-width: 880px){
+  .avi-layout{ grid-template-columns: 1fr; }
+  .avi-stats{ grid-template-columns: repeat(2,1fr); }
+}
 
 /* =========================== RESPONSIVE =========================== */
 @media (max-width: 880px){
