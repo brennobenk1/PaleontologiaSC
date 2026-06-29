@@ -1,4 +1,4 @@
-# Paleo-SC — Banco de Dados Paleontológico de Santa Catarina
+# [Paleo-SC — Banco de Dados Paleontológico de Santa Catarina](https://brennobenk1.github.io/PaleontologiaSC/)
 
 Site de consulta e pesquisa paleontológica para o estado de Santa Catarina (Brasil),
 construído a partir da planilha `fosseis_santa_catarina_enriquecido.xlsx`.
