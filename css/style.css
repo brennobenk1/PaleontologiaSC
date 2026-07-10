@@ -572,3 +572,51 @@ body::before{
   .avi-stats{ grid-template-columns: 1fr 1fr; }
   .core-caption{ display:none; }
 }
+
+/* =========================================================
+   ÁRVORE GENEALÓGICA
+   ========================================================= */
+.tree-stats{ display:grid; grid-template-columns: repeat(4, 1fr); gap: 0.9rem; margin-bottom: 1.6rem; }
+.tree-stats .stat-card{ text-align:center; transform:none; margin-left:0; }
+
+.tree-toolbar{ display:flex; flex-wrap:wrap; gap:1.2rem; align-items:center; justify-content:space-between; margin-bottom:1.6rem; }
+.tree-legend{ flex-direction:row; flex-wrap:wrap; gap:1rem 1.4rem; }
+.tree-legend li{ font-size:0.8rem; }
+
+.tree-group-header{
+  font-family: var(--font-mono); font-size:0.78rem; text-transform:uppercase; letter-spacing:0.05em;
+  color: var(--gold); margin: 2rem 0 0.3rem; padding-bottom:0.4rem; border-bottom: 1px solid var(--line);
+}
+.tree-group-header:first-child{ margin-top:0; }
+.tree-group-note{ font-size:0.86rem; color: rgba(20,32,26,0.65); font-style:italic; margin: 0 0 0.9rem; max-width:70ch; }
+
+.order-trigger .period-title{ font-family: var(--font-body); font-weight:600; font-size:1rem; }
+.familia-chip-list{ gap:0.6rem; }
+.familia-chip{
+  display:flex; flex-direction:column; gap:0.4rem; background: var(--paper); border:1px solid var(--line);
+  border-radius: var(--radius-sm); padding: 0.5rem 0.7rem;
+}
+.familia-chip-name{ font-family: var(--font-display); font-style:italic; font-size:0.9rem; color: var(--petrol-dk); }
+.familia-chip.extinta{ background: var(--stone-dk); border-style:dashed; border-color: var(--line-strong); }
+.familia-chip.extinta .familia-chip-name{ color: var(--moss-dk); }
+.familia-chip.introduzida{ border-color: var(--gold-lt); }
+.chip-tag{
+  font-family: var(--font-mono); font-style:normal; font-size:0.62rem; text-transform:uppercase; letter-spacing:0.03em;
+  color: var(--gold); border:1px solid var(--gold-lt); border-radius:999px; padding:0.05rem 0.4rem; margin-left:0.3rem;
+}
+.fossil-subchip-list{ display:flex; flex-direction:column; gap:0.3rem; }
+.fossil-subchip{
+  display:block; text-align:left; background: none; border: 1px dashed var(--gold-lt); border-radius: var(--radius-sm);
+  padding: 0.3rem 0.55rem; font-family: var(--font-body); font-size: 0.82rem; color: var(--ink);
+  transition: background .15s ease, border-color .15s ease;
+}
+.fossil-subchip:hover{ background: var(--stone-dk); border-color: var(--gold); }
+.fossil-subchip em{ font-family: var(--font-display); color: var(--petrol-dk); }
+
+.tree-source-note{ text-align:center; margin-top:2rem; max-width:80ch; margin-left:auto; margin-right:auto; }
+
+@media (max-width: 880px){
+  .tree-stats{ grid-template-columns: repeat(2,1fr); }
+  .tree-toolbar{ flex-direction:column; align-items:stretch; }
+  .familia-chip-list{ grid-template-columns:1fr; }
+}
