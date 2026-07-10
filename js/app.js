@@ -91,11 +91,28 @@ function initHome(){
   const nInst = DB_INSTITUICOES.length;
   const periodosCount = new Set(DB_FOSSEIS.map(f => f.periodo)).size;
 
+  const orderedPeriods = DB_PERIODOS.slice().sort((a,b)=>a.ordem-b.ordem);
+  const totalRegistros = orderedPeriods.reduce((s,p)=>s+p.total_registros,0);
+  const coreBands = orderedPeriods.map(p => {
+    const h = Math.max(3, (p.total_registros/totalRegistros*100)).toFixed(2);
+    return `<span class="core-band" style="height:${h}%; background:${p.cor}" title="${p.nome} — ${p.total_registros} registro${p.total_registros===1?'':'s'}"></span>`;
+  }).join('');
+
   document.getElementById('heroStats').innerHTML = `
-    <div class="stat-card"><span class="stat-num">${DB_FOSSEIS.length}</span><span class="stat-label">Registros catalogados</span></div>
-    <div class="stat-card"><span class="stat-num">${nSitios}</span><span class="stat-label">Sítios de coleta</span></div>
-    <div class="stat-card"><span class="stat-num">${periodosCount}</span><span class="stat-label">Períodos geológicos</span></div>
-    <div class="stat-card"><span class="stat-num">${nInst}</span><span class="stat-label">Instituições</span></div>
+    <div class="specimen-rack">
+      <div class="core-sample" role="img" aria-label="Coluna estratigráfica simplificada, do Ediacarano ao Quaternário, com a proporção de registros catalogados por período">
+        <span class="core-cap core-cap-top"></span>
+        ${coreBands}
+        <span class="core-cap core-cap-bottom"></span>
+      </div>
+      <span class="core-caption">Ediacarano<br>&darr;<br>Quaternário</span>
+      <div class="tag-stack">
+        <div class="stat-card tag-1"><span class="stat-num">${DB_FOSSEIS.length}</span><span class="stat-label">Registros</span></div>
+        <div class="stat-card tag-2"><span class="stat-num">${nSitios}</span><span class="stat-label">Sítios</span></div>
+        <div class="stat-card tag-3"><span class="stat-num">${periodosCount}</span><span class="stat-label">Períodos</span></div>
+        <div class="stat-card tag-4"><span class="stat-num">${nInst}</span><span class="stat-label">Instituições</span></div>
+      </div>
+    </div>
   `;
 
   const taxons = DB_FOSSEIS.map(f => f.taxon);
@@ -192,6 +209,7 @@ function renderCatalogCards(list){
   const wrap = document.getElementById('catalogCards');
   wrap.innerHTML = list.map(f => `
     <article class="fossil-card" data-id="${f.id}" tabindex="0">
+      <span class="fossil-tagno">Nº ${String(f.id).padStart(3,'0')}</span>
       <div class="card-top">
         <h3 class="fossil-taxon">${f.taxon}</h3>
         <span class="${categoriaPillClass(f.categoria)}">${categoriaShort(f.categoria)}</span>
