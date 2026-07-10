@@ -965,6 +965,7 @@ function hydrateTreeNode(raw, typeOverride){
     node.idade = t ? t.idade_ma : '';
   }
   (raw.filhos || []).forEach(child => node.children.push(hydrateTreeNode(child)));
+  node.hasFossil = type === 'fossil' || node.children.some(c => c.hasFossil);
   return node;
 }
 
@@ -1039,6 +1040,7 @@ function treeLinkPath(d){
 function treeNodeColor(node){
   if(node.type === 'fossil') return '#b23b2e';
   if(node.type === 'root' || node.type === 'classe') return 'var(--ink)';
+  if(node.hasFossil) return '#b23b2e';
   if(node.type === 'clado') return 'var(--petrol-dk)';
   if(node.type === 'ordem') return node.extinta ? 'var(--moss-dk)' : 'var(--petrol-lt)';
   if(node.type === 'familia') return node.viva ? 'var(--moss)' : 'var(--stone-dk)';
