@@ -574,49 +574,61 @@ body::before{
 }
 
 /* =========================================================
-   ÁRVORE GENEALÓGICA
+   ÁRVORE GENEALÓGICA — dendrograma SVG
    ========================================================= */
 .tree-stats{ display:grid; grid-template-columns: repeat(4, 1fr); gap: 0.9rem; margin-bottom: 1.6rem; }
 .tree-stats .stat-card{ text-align:center; transform:none; margin-left:0; }
 
-.tree-toolbar{ display:flex; flex-wrap:wrap; gap:1.2rem; align-items:center; justify-content:space-between; margin-bottom:1.6rem; }
-.tree-legend{ flex-direction:row; flex-wrap:wrap; gap:1rem 1.4rem; }
-.tree-legend li{ font-size:0.8rem; }
+.tree-toolbar{ display:flex; flex-wrap:wrap; gap:1rem 1.4rem; align-items:center; justify-content:space-between; margin-bottom:1rem; }
+.tree-actions{ display:flex; gap:0.9rem; }
+.tree-legend{ flex-direction:row; flex-wrap:wrap; gap:0.9rem 1.2rem; }
+.tree-legend li{ font-size:0.78rem; }
 
-.tree-group-header{
-  font-family: var(--font-mono); font-size:0.78rem; text-transform:uppercase; letter-spacing:0.05em;
-  color: var(--gold); margin: 2rem 0 0.3rem; padding-bottom:0.4rem; border-bottom: 1px solid var(--line);
+.tree-canvas-wrap{
+  position:relative; height: 620px; overflow:hidden; border:1px solid var(--line); border-radius: var(--radius-lg);
+  background: var(--paper); box-shadow: var(--shadow-sm); cursor:grab; touch-action:none;
 }
-.tree-group-header:first-child{ margin-top:0; }
-.tree-group-note{ font-size:0.86rem; color: rgba(20,32,26,0.65); font-style:italic; margin: 0 0 0.9rem; max-width:70ch; }
+.tree-canvas-wrap.dragging{ cursor:grabbing; }
+.tree-hint{
+  position:absolute; left:1rem; bottom:0.8rem; z-index:4; margin:0; font-family: var(--font-mono);
+  font-size:0.68rem; color: rgba(20,32,26,0.5); pointer-events:none; letter-spacing:0.01em;
+}
+.tree-svg{ width:100%; height:100%; display:block; }
+.tree-link{ fill:none; stroke: var(--line-strong); stroke-width:1.4; }
+.tree-node{ cursor:pointer; }
+.tree-node circle{ transition: r .12s ease; }
+.tree-node:hover circle{ r:8; }
+.tree-node:focus{ outline:none; }
+.tree-node:focus circle{ stroke: var(--gold); stroke-width:3; }
+.tree-toggle-glyph{
+  font-family: var(--font-mono); font-size:9px; fill: var(--paper); pointer-events:none; user-select:none;
+}
+.tree-label{
+  font-family: var(--font-body); font-size:12.5px; fill: var(--ink); pointer-events:none; user-select:none;
+}
+.tree-label-root, .tree-label-classe{ font-family: var(--font-mono); font-weight:700; font-size:12px; }
+.tree-label-grupo{ font-family: var(--font-mono); font-size:11px; text-transform:uppercase; letter-spacing:0.02em; fill: var(--petrol-dk); }
+.tree-label-ordem{ font-weight:600; }
+.tree-label-familia{ font-family: var(--font-display); font-style:italic; font-size:12px; }
+.tree-label-fossil{ font-family: var(--font-display); font-weight:700; font-size:12.5px; }
+.tree-label-extinct{ opacity:0.72; }
+.tree-label-age{ font-family: var(--font-mono); font-size:10px; fill: rgba(20,32,26,0.55); font-style:normal; }
+.tree-label-match{ font-weight:700; }
+.tree-node-match circle{ stroke-width:3; }
 
-.order-trigger .period-title{ font-family: var(--font-body); font-weight:600; font-size:1rem; }
-.familia-chip-list{ gap:0.6rem; }
-.familia-chip{
-  display:flex; flex-direction:column; gap:0.4rem; background: var(--paper); border:1px solid var(--line);
-  border-radius: var(--radius-sm); padding: 0.5rem 0.7rem;
+.tree-zoom-controls{
+  position:absolute; top:1rem; right:1rem; z-index:5; display:flex; flex-direction:column; gap:0.45rem;
 }
-.familia-chip-name{ font-family: var(--font-display); font-style:italic; font-size:0.9rem; color: var(--petrol-dk); }
-.familia-chip.extinta{ background: var(--stone-dk); border-style:dashed; border-color: var(--line-strong); }
-.familia-chip.extinta .familia-chip-name{ color: var(--moss-dk); }
-.familia-chip.introduzida{ border-color: var(--gold-lt); }
-.chip-tag{
-  font-family: var(--font-mono); font-style:normal; font-size:0.62rem; text-transform:uppercase; letter-spacing:0.03em;
-  color: var(--gold); border:1px solid var(--gold-lt); border-radius:999px; padding:0.05rem 0.4rem; margin-left:0.3rem;
+.tree-zoom-controls button{
+  width:34px; height:34px; border-radius: var(--radius-sm); border:none; background: var(--petrol-dk); color: var(--paper);
+  font-size:1.1rem; line-height:1; box-shadow: var(--shadow-sm); transition: background .15s ease, transform .15s ease;
 }
-.fossil-subchip-list{ display:flex; flex-direction:column; gap:0.3rem; }
-.fossil-subchip{
-  display:block; text-align:left; background: none; border: 1px dashed var(--gold-lt); border-radius: var(--radius-sm);
-  padding: 0.3rem 0.55rem; font-family: var(--font-body); font-size: 0.82rem; color: var(--ink);
-  transition: background .15s ease, border-color .15s ease;
-}
-.fossil-subchip:hover{ background: var(--stone-dk); border-color: var(--gold); }
-.fossil-subchip em{ font-family: var(--font-display); color: var(--petrol-dk); }
+.tree-zoom-controls button:hover{ background: var(--petrol); transform: translateY(-1px); }
 
-.tree-source-note{ text-align:center; margin-top:2rem; max-width:80ch; margin-left:auto; margin-right:auto; }
+.tree-source-note{ text-align:center; margin-top:1.6rem; max-width:80ch; margin-left:auto; margin-right:auto; }
 
 @media (max-width: 880px){
   .tree-stats{ grid-template-columns: repeat(2,1fr); }
   .tree-toolbar{ flex-direction:column; align-items:stretch; }
-  .familia-chip-list{ grid-template-columns:1fr; }
+  .tree-canvas-wrap{ height: 480px; }
 }
