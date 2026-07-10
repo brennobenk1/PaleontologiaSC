@@ -1179,3 +1179,4 @@ function initArvore(){
     renderTreeSVG();
   });
 }
+
