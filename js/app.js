@@ -11,6 +11,153 @@ const DB_AVIFAUNA = [{"taxon": "Cratoavis cearensis", "autor_ano": "Carvalho, No
 const DB_COBERTURA_ESTADOS = [{"uf": "AC", "estado": "Acre", "regiao": "Norte", "registros": 8}, {"uf": "AM", "estado": "Amazonas", "regiao": "Norte", "registros": 1}, {"uf": "PA", "estado": "Pará", "regiao": "Norte", "registros": 1}, {"uf": "RR", "estado": "Roraima", "regiao": "Norte", "registros": 1}, {"uf": "TO", "estado": "Tocantins", "regiao": "Norte", "registros": 5}, {"uf": "AP", "estado": "Amapá", "regiao": "Norte", "registros": 0}, {"uf": "RO", "estado": "Rondônia", "regiao": "Norte", "registros": 0}, {"uf": "AL", "estado": "Alagoas", "regiao": "Nordeste", "registros": 1}, {"uf": "BA", "estado": "Bahia", "regiao": "Nordeste", "registros": 12}, {"uf": "CE", "estado": "Ceará", "regiao": "Nordeste", "registros": 77}, {"uf": "PE", "estado": "Pernambuco", "regiao": "Nordeste", "registros": 4}, {"uf": "PI", "estado": "Piauí", "regiao": "Nordeste", "registros": 35}, {"uf": "RN", "estado": "Rio Grande do Norte", "regiao": "Nordeste", "registros": 4}, {"uf": "MA", "estado": "Maranhão", "regiao": "Nordeste", "registros": 0}, {"uf": "PB", "estado": "Paraíba", "regiao": "Nordeste", "registros": 0}, {"uf": "SE", "estado": "Sergipe", "regiao": "Nordeste", "registros": 0}, {"uf": "GO", "estado": "Goiás", "regiao": "Centro-Oeste", "registros": 13}, {"uf": "MT", "estado": "Mato Grosso", "regiao": "Centro-Oeste", "registros": 1}, {"uf": "MS", "estado": "Mato Grosso do Sul", "regiao": "Centro-Oeste", "registros": 0}, {"uf": "DF", "estado": "Distrito Federal", "regiao": "Centro-Oeste", "registros": 0}, {"uf": "MG", "estado": "Minas Gerais", "regiao": "Sudeste", "registros": 174}, {"uf": "RJ", "estado": "Rio de Janeiro", "regiao": "Sudeste", "registros": 38}, {"uf": "SP", "estado": "São Paulo", "regiao": "Sudeste", "registros": 22}, {"uf": "ES", "estado": "Espírito Santo", "regiao": "Sudeste", "registros": 0}, {"uf": "PR", "estado": "Paraná", "regiao": "Sul", "registros": 1}, {"uf": "RS", "estado": "Rio Grande do Sul", "regiao": "Sul", "registros": 5}, {"uf": "SC", "estado": "Santa Catarina", "regiao": "Sul", "registros": 1}];
 const DB_RESUMO_AVIFAUNA = {"total_registros_literatura": 669, "generos_extintos_descritos": 18, "especies_extintas_descritas": 21, "taxons_total_catalogo": 24, "intervalo_temporal": "Cretáceo Inferior (Aptiano, ~115 Ma) ao Holoceno mais recente", "sitio_mais_diverso_nao_quaternario": "Formação Tremembé (Bacia de Taubaté, SP)", "sitio_mais_completo_quaternario": "Carste de Lagoa Santa (MG)", "mais_antigo_registro": "Kaririavis mater e Cratoavis cearensis — Formação Crato, Aptiano (~115 Ma)", "fonte_principal": "Nascimento, R.S. & Silveira, L.F. (2024) Fossil and subfossil birds of Brazil. Zoologia 41: e23079.", "fonte_secundaria": "Nascimento, R.S. (2022) Fossil Birds of Brazil. Dissertação de Mestrado, MZUSP.", "nota_mesozoico": "Os 16 gêneros/20 espécies do levantamento original de Nascimento & Silveira (2024) cobrem o registro até a data de submissão; Navaornis hestiae (Chiappe et al., 2024, Nature) foi publicado de forma independente e é aqui somado aos táxons mesozoicos formalmente descritos."};
 /* =========================================================
+   ÁRVORE GENEALÓGICA — famílias de aves vivas no Brasil
+   organizadas pelos clados da filogenômica moderna (Jarvis et
+   al. 2014; Prum et al. 2015), com os táxons fósseis do
+   catálogo de avifauna encaixados na posição correta.
+   viva:false / extinta:true = família ou ordem sem nenhum
+   representante vivo no Brasil hoje.
+   ========================================================= */
+const AVES_TREE_BR = [
+  { grupo: "Aves-tronco mesozoicas (fora da coroa Neornithes)",
+    notaGrupo: "Linhagens do Cretáceo que divergiram antes do ancestral comum de todas as aves modernas; nenhuma sobreviveu ao limite Cretáceo–Paleógeno (~66 Ma).",
+    ordens: [
+      { nome: "Enantiornithes", extinta:true, familias: [
+        { nome: "Enantiornithes indet. (Avisauridae?)", extinta:true, fosseis:["Cratoavis cearensis","Navaornis hestiae"] }
+      ]},
+      { nome: "Ornithuromorpha (grupo-tronco)", extinta:true, familias: [
+        { nome: "Euornithes indet. (posição incerta)", extinta:true, fosseis:["Kaririavis mater"] }
+      ]}
+    ]},
+  { grupo: "Palaeognathae",
+    ordens: [
+      { nome:"Rheiformes", familias:[ {nome:"Rheidae", viva:true, fosseis:["Diogenornis fragilis","Rhea fossilis"]} ]},
+      { nome:"Tinamiformes", familias:[ {nome:"Tinamidae", viva:true} ]}
+    ]},
+  { grupo: "Galloanserae",
+    ordens: [
+      { nome:"Anseriformes", familias:[
+        {nome:"Anhimidae", viva:true, fosseis:["Chaunoides antiquus"]},
+        {nome:"Anatidae", viva:true, fosseis:["Neochen pugil"]}
+      ]},
+      { nome:"Galliformes", familias:[
+        {nome:"Cracidae", viva:true},
+        {nome:"Odontophoridae", viva:true},
+        {nome:"Quercymegapodiidae", viva:false, fosseis:["Taubacrex granivora","Ameripodius silvasantosi"]}
+      ]},
+      { nome:"Odontopterygiformes", extinta:true, nota:"Ordem inteiramente extinta de \"aves de dentes ósseos\" marinhas gigantes; a ocorrência deste registro no Brasil é considerada duvidosa pelos revisores.", familias:[
+        {nome:"Pelagornithidae", extinta:true, fosseis:["Pelagornis longirostris"]}
+      ]}
+    ]},
+  { grupo: "Neoaves — Mirandornithes",
+    ordens: [
+      { nome:"Phoenicopteriformes", familias:[
+        {nome:"Phoenicopteridae", viva:true},
+        {nome:"Palaelodidae", viva:false, fosseis:["Agnopterus sicki","Palaelodus cf. ambiguus"]}
+      ]},
+      { nome:"Podicipediformes", familias:[ {nome:"Podicipedidae", viva:true} ]}
+    ]},
+  { grupo: "Neoaves — Columbea",
+    ordens: [
+      { nome:"Columbiformes", familias:[ {nome:"Columbidae", viva:true} ]}
+    ]},
+  { grupo: "Neoaves — posição incerta / Otidimorphae",
+    ordens: [
+      { nome:"Opisthocomiformes", nota:"Posição filogenética debatida — o Cigana/Hoatzin é tratado como incertae sedis por vários estudos genômicos recentes.", familias:[
+        {nome:"Opisthocomidae", viva:true, fosseis:["Hoazinavis lacustris"]}
+      ]},
+      { nome:"Cuculiformes", familias:[ {nome:"Cuculidae", viva:true, fosseis:["Eutreptodactylus itaboraiensis"]} ]}
+    ]},
+  { grupo: "Neoaves — Strisores",
+    ordens: [
+      { nome:"Steatornithiformes / Caprimulgiformes", familias:[
+        {nome:"Steatornithidae", viva:true},
+        {nome:"Nyctibiidae", viva:true},
+        {nome:"Caprimulgidae", viva:true}
+      ]},
+      { nome:"Apodiformes", familias:[
+        {nome:"Apodidae", viva:true},
+        {nome:"Trochilidae", viva:true}
+      ]}
+    ]},
+  { grupo: "Neoaves — Gruiformes",
+    ordens: [
+      { nome:"Gruiformes", familias:[
+        {nome:"Aramidae", viva:true},{nome:"Psophiidae", viva:true},
+        {nome:"Rallidae", viva:true},{nome:"Heliornithidae", viva:true}
+      ]}
+    ]},
+  { grupo: "Neoaves — Charadriiformes",
+    ordens: [
+      { nome:"Charadriiformes", familias:[
+        {nome:"Charadriidae", viva:true},{nome:"Haematopodidae", viva:true},{nome:"Recurvirostridae", viva:true},
+        {nome:"Burhinidae", viva:true},{nome:"Chionididae", viva:true},{nome:"Scolopacidae", viva:true},
+        {nome:"Thinocoridae", viva:true},{nome:"Jacanidae", viva:true},{nome:"Rostratulidae", viva:true},
+        {nome:"Glareolidae", viva:true},{nome:"Stercorariidae", viva:true},{nome:"Laridae", viva:true}
+      ]}
+    ]},
+  { grupo: "Neoaves — Aequornithes",
+    ordens: [
+      { nome:"Eurypygiformes", familias:[ {nome:"Eurypygidae", viva:true} ]},
+      { nome:"Phaethontiformes", familias:[ {nome:"Phaethontidae", viva:true} ]},
+      { nome:"Sphenisciformes", familias:[ {nome:"Spheniscidae", viva:true} ]},
+      { nome:"Procellariiformes", familias:[
+        {nome:"Diomedeidae", viva:true},{nome:"Oceanitidae", viva:true},
+        {nome:"Hydrobatidae", viva:true},{nome:"Procellariidae", viva:true}
+      ]},
+      { nome:"Ciconiiformes", familias:[ {nome:"Ciconiidae", viva:true, fosseis:["Ciconia lydekkeri"]} ]},
+      { nome:"Suliformes", familias:[
+        {nome:"Fregatidae", viva:true},{nome:"Sulidae", viva:true},
+        {nome:"Anhingidae", viva:true, fosseis:["Anhinga minuta","Macranhinga ranzii"]},
+        {nome:"Phalacrocoracidae", viva:true}
+      ]},
+      { nome:"Pelecaniformes", familias:[
+        {nome:"Pelecanidae", viva:true},{nome:"Ardeidae", viva:true},{nome:"Threskiornithidae", viva:true}
+      ]}
+    ]},
+  { grupo: "Telluraves",
+    ordens: [
+      { nome:"Cathartiformes", familias:[
+        {nome:"Cathartidae", viva:true, fosseis:["Brasilogyps faustoi","Wingegyps cartellei","Pleistovultur nevesi"]},
+        {nome:"Teratornithidae", viva:false, fosseis:["Taubatornis campbelli"]}
+      ]},
+      { nome:"Accipitriformes", familias:[ {nome:"Pandionidae", viva:true},{nome:"Accipitridae", viva:true} ]},
+      { nome:"Strigiformes", familias:[ {nome:"Tytonidae", viva:true},{nome:"Strigidae", viva:true} ]},
+      { nome:"Trogoniformes", familias:[ {nome:"Trogonidae", viva:true} ]},
+      { nome:"Coraciiformes", familias:[ {nome:"Momotidae", viva:true},{nome:"Alcedinidae", viva:true} ]},
+      { nome:"Piciformes", familias:[
+        {nome:"Galbulidae", viva:true},{nome:"Bucconidae", viva:true},{nome:"Capitonidae", viva:true},
+        {nome:"Ramphastidae", viva:true},{nome:"Picidae", viva:true}
+      ]},
+      { nome:"Cariamiformes", familias:[
+        {nome:"Cariamidae", viva:true},
+        {nome:"Psilopteridae", viva:false, fosseis:["Paleopsilopterus itaboraiensis"]},
+        {nome:"Phorusrhacidae", viva:false, fosseis:["Paraphysornis brasiliensis"]},
+        {nome:"Idiornithidae", viva:false, fosseis:["Itaboravis elaphrocnemoides"]}
+      ]},
+      { nome:"Falconiformes", familias:[ {nome:"Falconidae", viva:true} ]},
+      { nome:"Psittaciformes", familias:[ {nome:"Psittacidae", viva:true} ]},
+      { nome:"Passeriformes — Tyranni (suboscines)", familias:[
+        {nome:"Thamnophilidae", viva:true},{nome:"Melanopareiidae", viva:true},{nome:"Conopophagidae", viva:true},
+        {nome:"Grallariidae", viva:true},{nome:"Rhinocryptidae", viva:true},{nome:"Formicariidae", viva:true},
+        {nome:"Furnariidae", viva:true},{nome:"Scleruridae", viva:true},{nome:"Dendrocolaptidae", viva:true},
+        {nome:"Xenopidae", viva:true},{nome:"Tityridae", viva:true},{nome:"Pipridae", viva:true},
+        {nome:"Cotingidae", viva:true},{nome:"Tyrannidae", viva:true}
+      ]},
+      { nome:"Passeriformes — Passeri (oscines)", familias:[
+        {nome:"Vireonidae", viva:true},{nome:"Corvidae", viva:true},{nome:"Hirundinidae", viva:true},
+        {nome:"Troglodytidae", viva:true},{nome:"Polioptilidae", viva:true},{nome:"Turdidae", viva:true},
+        {nome:"Mimidae", viva:true},{nome:"Motacillidae", viva:true},{nome:"Fringillidae", viva:true},
+        {nome:"Passerellidae", viva:true},{nome:"Icteridae", viva:true},{nome:"Parulidae", viva:true},
+        {nome:"Thraupidae", viva:true},{nome:"Cardinalidae", viva:true},
+        {nome:"Sturnidae", viva:true, introduzida:true},
+        {nome:"Estrildidae", viva:true, introduzida:true},
+        {nome:"Passeridae", viva:true, introduzida:true}
+      ]}
+    ]}
+];
+
+/* =========================================================
    Paleo-SC — app.js
    Toda a lógica do site: navegação, catálogo, mapa SVG,
    períodos geológicos e instituições.
@@ -80,6 +227,7 @@ function categoriaPillClass(categoria){ return 'cat-pill cat-' + dbCategoriaGrup
     initPeriodos();
     initInstituicoes();
     initAvifauna();
+    initArvore();
   });
 })();
 
@@ -690,4 +838,112 @@ function renderAviMap(){
   svgEl.querySelectorAll('.avi-taxon-dot').forEach(dot => {
     dot.addEventListener('click', () => openAviModal(decodeURIComponent(dot.dataset.taxon)));
   });
+}
+
+/* ===========================================================
+   ÁRVORE GENEALÓGICA — famílias vivas + táxons fósseis
+   =========================================================== */
+let __treeQuery = '';
+
+function treeCountStats(){
+  let ordens = 0, familiasVivas = 0, familiasExtintas = 0, fosseis = 0;
+  AVES_TREE_BR.forEach(grupo => {
+    grupo.ordens.forEach(ordem => {
+      ordens++;
+      ordem.familias.forEach(fam => {
+        if(fam.viva) familiasVivas++; else familiasExtintas++;
+        if(fam.fosseis) fosseis += fam.fosseis.length;
+      });
+    });
+  });
+  return { ordens, familiasVivas, familiasExtintas, fosseis };
+}
+
+function treeMatchesQuery(ordem, fam, q){
+  if(!q) return true;
+  const hay = [ordem.nome, fam.nome, ...(fam.fosseis||[])].join(' ').toLowerCase();
+  return hay.includes(q);
+}
+
+function renderFamiliaChip(fam){
+  const cls = 'familia-chip' + (fam.viva ? '' : ' extinta') + (fam.introduzida ? ' introduzida' : '');
+  const label = (fam.viva ? '' : '&#8224; ') + fam.nome + (fam.introduzida ? ' <span class="chip-tag">introduzida</span>' : '');
+  const fosseisHtml = (fam.fosseis||[]).map(taxonName => {
+    const t = dbAviFindTaxon(taxonName);
+    const idade = t ? t.idade_ma : '';
+    return `<button type="button" class="fossil-subchip" data-taxon="${encodeURIComponent(taxonName)}">&#8224; <em>${taxonName}</em>${idade ? ` <span class="chip-count">${idade}</span>` : ''}</button>`;
+  }).join('');
+  return `
+    <div class="${cls}">
+      <span class="familia-chip-name">${label}</span>
+      ${fosseisHtml ? `<div class="fossil-subchip-list">${fosseisHtml}</div>` : ''}
+    </div>
+  `;
+}
+
+function renderArvore(){
+  const q = __treeQuery.trim().toLowerCase();
+  const wrap = document.getElementById('treeAccordion');
+
+  let html = '';
+  AVES_TREE_BR.forEach((grupo, gi) => {
+    const ordensVisiveis = grupo.ordens
+      .map((ordem, oi) => ({ ordem, oi, familias: ordem.familias.filter(f => treeMatchesQuery(ordem, f, q)) }))
+      .filter(x => x.familias.length > 0);
+    if(ordensVisiveis.length === 0) return;
+
+    html += `<h3 class="tree-group-header">${grupo.grupo}</h3>`;
+    if(grupo.notaGrupo) html += `<p class="tree-group-note">${grupo.notaGrupo}</p>`;
+
+    ordensVisiveis.forEach(({ordem, oi, familias}) => {
+      const nFosseis = familias.reduce((s,f)=>s+(f.fosseis?f.fosseis.length:0),0);
+      const isOpen = q.length > 0; // auto-abre quando há busca ativa
+      html += `
+        <div class="period-item order-item${isOpen?' open':''}" data-group="${gi}" data-order="${oi}">
+          <button class="period-trigger order-trigger" type="button">
+            <span class="period-swatch" style="background:${ordem.extinta ? 'var(--stone-dk)' : 'var(--petrol-lt)'}"></span>
+            <span class="period-title">${ordem.extinta ? '&#8224; ' : ''}${ordem.nome}</span>
+            <span class="period-range">${familias.length} família${familias.length===1?'':'s'}</span>
+            ${nFosseis ? `<span class="period-count">${nFosseis} fóssil${nFosseis===1?'':'eis'}</span>` : ''}
+            <svg class="period-chevron" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"></polyline></svg>
+          </button>
+          <div class="period-panel">
+            <div class="period-panel-inner">
+              ${ordem.nota ? `<p class="period-desc">${ordem.nota}</p>` : ''}
+              <div class="taxon-chip-list familia-chip-list">
+                ${familias.map(renderFamiliaChip).join('')}
+              </div>
+            </div>
+          </div>
+        </div>
+      `;
+    });
+  });
+
+  wrap.innerHTML = html || '<p class="empty-state">Nenhuma ordem, família ou fóssil corresponde à busca.</p>';
+
+  wrap.querySelectorAll('.order-trigger').forEach(btn => {
+    btn.addEventListener('click', () => btn.closest('.order-item').classList.toggle('open'));
+  });
+  wrap.querySelectorAll('.fossil-subchip').forEach(btn => {
+    btn.addEventListener('click', (e) => {
+      e.stopPropagation();
+      openAviModal(decodeURIComponent(btn.dataset.taxon));
+    });
+  });
+}
+
+function initArvore(){
+  const stats = treeCountStats();
+  document.getElementById('treeStats').innerHTML = `
+    <div class="stat-card"><span class="stat-num">${stats.ordens}</span><span class="stat-label">Ordens</span></div>
+    <div class="stat-card"><span class="stat-num">${stats.familiasVivas}</span><span class="stat-label">Famílias vivas listadas</span></div>
+    <div class="stat-card"><span class="stat-num">${stats.familiasExtintas}</span><span class="stat-label">Famílias sem viventes</span></div>
+    <div class="stat-card"><span class="stat-num">${stats.fosseis}</span><span class="stat-label">Táxons fósseis encaixados</span></div>
+  `;
+  document.getElementById('treeSearchInput').addEventListener('input', e => {
+    __treeQuery = e.target.value;
+    renderArvore();
+  });
+  renderArvore();
 }
