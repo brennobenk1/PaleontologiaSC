@@ -31,6 +31,7 @@
       <button class="nav-link" data-view="periodos">Períodos Geológicos</button>
       <button class="nav-link" data-view="instituicoes">Instituições</button>
       <button class="nav-link" data-view="avifauna">Avifauna do Brasil</button>
+      <button class="nav-link" data-view="arvore">Árvore Genealógica</button>
       <button class="nav-link" data-view="sobre">Sobre &amp; Fontes</button>
     </nav>
 
@@ -289,6 +290,51 @@
   <section class="section-block">
     <p class="muted avi-source-note" id="aviSourceNote"></p>
   </section>
+</section>
+
+<!-- ============ VIEW: ÁRVORE GENEALÓGICA ============ -->
+<section class="view view-arvore" id="view-arvore" data-view="arvore">
+  <div class="view-header">
+    <div class="section-head">
+      <span class="section-num">Filogenia</span>
+      <h2>Árvore Genealógica das Aves do Brasil</h2>
+    </div>
+    <p class="view-intro">
+      As famílias de aves atualmente vivas no Brasil, organizadas por ordem e pelos grandes clados
+      reconhecidos pela filogenômica moderna (Jarvis et al. 2014; Prum et al. 2015) — a mesma estrutura
+      de referência citada na plataforma <em>Ornitologia Avançada de Santa Catarina</em>. Os 24 táxons
+      fósseis do catálogo de avifauna são encaixados no ramo correto: alguns pertencem a famílias que
+      seguem vivas hoje (ex.: <em>Neochen pugil</em> em Anatidae, junto dos patos e marrecas atuais);
+      outros pertencem a famílias ou ordens inteiras que não têm nenhum representante vivo — como as
+      "aves-do-terror" (Phorusrhacidae) ou os teratornitídeos, parentes gigantes dos urubus.
+    </p>
+  </div>
+
+  <div class="tree-stats" id="treeStats"></div>
+
+  <div class="tree-toolbar">
+    <div class="search-box">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+      <input type="search" id="treeSearchInput" placeholder="Buscar ordem, família ou táxon fóssil…" aria-label="Buscar na árvore genealógica">
+    </div>
+    <ul class="map-legend tree-legend">
+      <li><span class="legend-swatch" style="background:var(--paper);border:1px solid var(--line-strong);"></span><span>Família viva no Brasil</span></li>
+      <li><span class="legend-swatch" style="background:var(--stone-dk);border:1px dashed var(--line-strong);"></span><span>Família / ordem inteiramente extinta</span></li>
+      <li><span class="legend-swatch" style="background:var(--gold);border-radius:50%;"></span><span>† Táxon fóssil do catálogo (clique para abrir a ficha)</span></li>
+    </ul>
+  </div>
+
+  <div class="tree-accordion" id="treeAccordion"></div>
+
+  <p class="muted tree-source-note">
+    Classificação de ordens e clados: Jarvis, E.D. et al. (2014, <em>Science</em> 346:1320–1331);
+    Prum, R.O. et al. (2015, <em>Nature</em> 526:569–573). Famílias vivas ocorrentes no Brasil:
+    Pacheco, J.F. et al. (2021) <em>Lista comentada das aves do Brasil pelo CBRO</em> — 2ª edição,
+    <em>Ornithology Research</em> 29:269–313 (102 famílias, 33 ordens, 1.971 espécies). Táxons fósseis
+    e suas referências originais: ver ficha de cada espécie e a aba Avifauna do Brasil. Esta árvore
+    lista as famílias mais relevantes de cada ordem; famílias de ocorrência unicamente vagante/acidental
+    podem não estar todas representadas.
+  </p>
 </section>
 
 <!-- ============ VIEW: SOBRE ============ -->
