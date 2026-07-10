@@ -18,144 +18,220 @@ const DB_RESUMO_AVIFAUNA = {"total_registros_literatura": 669, "generos_extintos
    viva:false / extinta:true = família ou ordem sem nenhum
    representante vivo no Brasil hoje.
    ========================================================= */
-const AVES_TREE_BR = [
-  { grupo: "Aves-tronco mesozoicas (fora da coroa Neornithes)",
-    notaGrupo: "Linhagens do Cretáceo que divergiram antes do ancestral comum de todas as aves modernas; nenhuma sobreviveu ao limite Cretáceo–Paleógeno (~66 Ma).",
-    ordens: [
-      { nome: "Enantiornithes", extinta:true, familias: [
-        { nome: "Enantiornithes indet. (Avisauridae?)", extinta:true, fosseis:["Cratoavis cearensis","Navaornis hestiae"] }
-      ]},
-      { nome: "Ornithuromorpha (grupo-tronco)", extinta:true, familias: [
-        { nome: "Euornithes indet. (posição incerta)", extinta:true, fosseis:["Kaririavis mater"] }
-      ]}
+const AVES_TREE_BR = {
+  nome: "Aves",
+  filhos: [
+    { nome: "Aves-tronco mesozoicas (fora da coroa Neornithes)", tipo: "clado",
+      nota: "Linhagens do Cretáceo que divergiram antes do ancestral comum de todas as aves modernas; nenhuma sobreviveu ao limite Cretáceo–Paleógeno (~66 Ma).",
+      filhos: [
+        { nome: "Enantiornithes", tipo: "ordem", extinta: true, filhos: [
+          { nome: "Enantiornithes indet. (Avisauridae?)", tipo: "familia", extinta: true, filhos: [
+            { nome: "Cratoavis cearensis", tipo: "fossil" },
+            { nome: "Navaornis hestiae", tipo: "fossil" }
+          ]}
+        ]},
+        { nome: "Ornithuromorpha (grupo-tronco)", tipo: "ordem", extinta: true, filhos: [
+          { nome: "Euornithes indet. (posição incerta)", tipo: "familia", extinta: true, filhos: [
+            { nome: "Kaririavis mater", tipo: "fossil" }
+          ]}
+        ]}
+      ]
+    },
+    { nome: "Palaeognathae", tipo: "clado", filhos: [
+        { nome: "Rheiformes", tipo: "ordem", filhos: [
+          { nome: "Rheidae", tipo: "familia", viva: true, filhos: [
+            { nome: "Diogenornis fragilis", tipo: "fossil" },
+            { nome: "Rhea fossilis", tipo: "fossil" }
+          ]}
+        ]},
+        { nome: "Tinamiformes", tipo: "ordem", filhos: [
+          { nome: "Tinamidae", tipo: "familia", viva: true }
+        ]}
     ]},
-  { grupo: "Palaeognathae",
-    ordens: [
-      { nome:"Rheiformes", familias:[ {nome:"Rheidae", viva:true, fosseis:["Diogenornis fragilis","Rhea fossilis"]} ]},
-      { nome:"Tinamiformes", familias:[ {nome:"Tinamidae", viva:true} ]}
-    ]},
-  { grupo: "Galloanserae",
-    ordens: [
-      { nome:"Anseriformes", familias:[
-        {nome:"Anhimidae", viva:true, fosseis:["Chaunoides antiquus"]},
-        {nome:"Anatidae", viva:true, fosseis:["Neochen pugil"]}
-      ]},
-      { nome:"Galliformes", familias:[
-        {nome:"Cracidae", viva:true},
-        {nome:"Odontophoridae", viva:true},
-        {nome:"Quercymegapodiidae", viva:false, fosseis:["Taubacrex granivora","Ameripodius silvasantosi"]}
-      ]},
-      { nome:"Odontopterygiformes", extinta:true, nota:"Ordem inteiramente extinta de \"aves de dentes ósseos\" marinhas gigantes; a ocorrência deste registro no Brasil é considerada duvidosa pelos revisores.", familias:[
-        {nome:"Pelagornithidae", extinta:true, fosseis:["Pelagornis longirostris"]}
-      ]}
-    ]},
-  { grupo: "Neoaves — Mirandornithes",
-    ordens: [
-      { nome:"Phoenicopteriformes", familias:[
-        {nome:"Phoenicopteridae", viva:true},
-        {nome:"Palaelodidae", viva:false, fosseis:["Agnopterus sicki","Palaelodus cf. ambiguus"]}
-      ]},
-      { nome:"Podicipediformes", familias:[ {nome:"Podicipedidae", viva:true} ]}
-    ]},
-  { grupo: "Neoaves — Columbea",
-    ordens: [
-      { nome:"Columbiformes", familias:[ {nome:"Columbidae", viva:true} ]}
-    ]},
-  { grupo: "Neoaves — posição incerta / Otidimorphae",
-    ordens: [
-      { nome:"Opisthocomiformes", nota:"Posição filogenética debatida — o Cigana/Hoatzin é tratado como incertae sedis por vários estudos genômicos recentes.", familias:[
-        {nome:"Opisthocomidae", viva:true, fosseis:["Hoazinavis lacustris"]}
-      ]},
-      { nome:"Cuculiformes", familias:[ {nome:"Cuculidae", viva:true, fosseis:["Eutreptodactylus itaboraiensis"]} ]}
-    ]},
-  { grupo: "Neoaves — Strisores",
-    ordens: [
-      { nome:"Steatornithiformes / Caprimulgiformes", familias:[
-        {nome:"Steatornithidae", viva:true},
-        {nome:"Nyctibiidae", viva:true},
-        {nome:"Caprimulgidae", viva:true}
-      ]},
-      { nome:"Apodiformes", familias:[
-        {nome:"Apodidae", viva:true},
-        {nome:"Trochilidae", viva:true}
-      ]}
-    ]},
-  { grupo: "Neoaves — Gruiformes",
-    ordens: [
-      { nome:"Gruiformes", familias:[
-        {nome:"Aramidae", viva:true},{nome:"Psophiidae", viva:true},
-        {nome:"Rallidae", viva:true},{nome:"Heliornithidae", viva:true}
-      ]}
-    ]},
-  { grupo: "Neoaves — Charadriiformes",
-    ordens: [
-      { nome:"Charadriiformes", familias:[
-        {nome:"Charadriidae", viva:true},{nome:"Haematopodidae", viva:true},{nome:"Recurvirostridae", viva:true},
-        {nome:"Burhinidae", viva:true},{nome:"Chionididae", viva:true},{nome:"Scolopacidae", viva:true},
-        {nome:"Thinocoridae", viva:true},{nome:"Jacanidae", viva:true},{nome:"Rostratulidae", viva:true},
-        {nome:"Glareolidae", viva:true},{nome:"Stercorariidae", viva:true},{nome:"Laridae", viva:true}
-      ]}
-    ]},
-  { grupo: "Neoaves — Aequornithes",
-    ordens: [
-      { nome:"Eurypygiformes", familias:[ {nome:"Eurypygidae", viva:true} ]},
-      { nome:"Phaethontiformes", familias:[ {nome:"Phaethontidae", viva:true} ]},
-      { nome:"Sphenisciformes", familias:[ {nome:"Spheniscidae", viva:true} ]},
-      { nome:"Procellariiformes", familias:[
-        {nome:"Diomedeidae", viva:true},{nome:"Oceanitidae", viva:true},
-        {nome:"Hydrobatidae", viva:true},{nome:"Procellariidae", viva:true}
-      ]},
-      { nome:"Ciconiiformes", familias:[ {nome:"Ciconiidae", viva:true, fosseis:["Ciconia lydekkeri"]} ]},
-      { nome:"Suliformes", familias:[
-        {nome:"Fregatidae", viva:true},{nome:"Sulidae", viva:true},
-        {nome:"Anhingidae", viva:true, fosseis:["Anhinga minuta","Macranhinga ranzii"]},
-        {nome:"Phalacrocoracidae", viva:true}
-      ]},
-      { nome:"Pelecaniformes", familias:[
-        {nome:"Pelecanidae", viva:true},{nome:"Ardeidae", viva:true},{nome:"Threskiornithidae", viva:true}
-      ]}
-    ]},
-  { grupo: "Telluraves",
-    ordens: [
-      { nome:"Cathartiformes", familias:[
-        {nome:"Cathartidae", viva:true, fosseis:["Brasilogyps faustoi","Wingegyps cartellei","Pleistovultur nevesi"]},
-        {nome:"Teratornithidae", viva:false, fosseis:["Taubatornis campbelli"]}
-      ]},
-      { nome:"Accipitriformes", familias:[ {nome:"Pandionidae", viva:true},{nome:"Accipitridae", viva:true} ]},
-      { nome:"Strigiformes", familias:[ {nome:"Tytonidae", viva:true},{nome:"Strigidae", viva:true} ]},
-      { nome:"Trogoniformes", familias:[ {nome:"Trogonidae", viva:true} ]},
-      { nome:"Coraciiformes", familias:[ {nome:"Momotidae", viva:true},{nome:"Alcedinidae", viva:true} ]},
-      { nome:"Piciformes", familias:[
-        {nome:"Galbulidae", viva:true},{nome:"Bucconidae", viva:true},{nome:"Capitonidae", viva:true},
-        {nome:"Ramphastidae", viva:true},{nome:"Picidae", viva:true}
-      ]},
-      { nome:"Cariamiformes", familias:[
-        {nome:"Cariamidae", viva:true},
-        {nome:"Psilopteridae", viva:false, fosseis:["Paleopsilopterus itaboraiensis"]},
-        {nome:"Phorusrhacidae", viva:false, fosseis:["Paraphysornis brasiliensis"]},
-        {nome:"Idiornithidae", viva:false, fosseis:["Itaboravis elaphrocnemoides"]}
-      ]},
-      { nome:"Falconiformes", familias:[ {nome:"Falconidae", viva:true} ]},
-      { nome:"Psittaciformes", familias:[ {nome:"Psittacidae", viva:true} ]},
-      { nome:"Passeriformes — Tyranni (suboscines)", familias:[
-        {nome:"Thamnophilidae", viva:true},{nome:"Melanopareiidae", viva:true},{nome:"Conopophagidae", viva:true},
-        {nome:"Grallariidae", viva:true},{nome:"Rhinocryptidae", viva:true},{nome:"Formicariidae", viva:true},
-        {nome:"Furnariidae", viva:true},{nome:"Scleruridae", viva:true},{nome:"Dendrocolaptidae", viva:true},
-        {nome:"Xenopidae", viva:true},{nome:"Tityridae", viva:true},{nome:"Pipridae", viva:true},
-        {nome:"Cotingidae", viva:true},{nome:"Tyrannidae", viva:true}
-      ]},
-      { nome:"Passeriformes — Passeri (oscines)", familias:[
-        {nome:"Vireonidae", viva:true},{nome:"Corvidae", viva:true},{nome:"Hirundinidae", viva:true},
-        {nome:"Troglodytidae", viva:true},{nome:"Polioptilidae", viva:true},{nome:"Turdidae", viva:true},
-        {nome:"Mimidae", viva:true},{nome:"Motacillidae", viva:true},{nome:"Fringillidae", viva:true},
-        {nome:"Passerellidae", viva:true},{nome:"Icteridae", viva:true},{nome:"Parulidae", viva:true},
-        {nome:"Thraupidae", viva:true},{nome:"Cardinalidae", viva:true},
-        {nome:"Sturnidae", viva:true, introduzida:true},
-        {nome:"Estrildidae", viva:true, introduzida:true},
-        {nome:"Passeridae", viva:true, introduzida:true}
-      ]}
+    { nome: "Neognathae", tipo: "clado", filhos: [
+        { nome: "Galloanserae", tipo: "clado", filhos: [
+          { nome: "Anseriformes", tipo: "ordem", filhos: [
+            { nome: "Anhimidae", tipo: "familia", viva: true, filhos: [ { nome: "Chaunoides antiquus", tipo: "fossil" } ] },
+            { nome: "Anatidae", tipo: "familia", viva: true, filhos: [ { nome: "Neochen pugil", tipo: "fossil" } ] }
+          ]},
+          { nome: "Galliformes", tipo: "ordem", filhos: [
+            { nome: "Cracidae", tipo: "familia", viva: true },
+            { nome: "Odontophoridae", tipo: "familia", viva: true },
+            { nome: "Quercymegapodiidae", tipo: "familia", viva: false, filhos: [
+              { nome: "Taubacrex granivora", tipo: "fossil" },
+              { nome: "Ameripodius silvasantosi", tipo: "fossil" }
+            ]}
+          ]},
+          { nome: "Odontopterygiformes", tipo: "ordem", extinta: true,
+            nota: "Ordem inteiramente extinta de \"aves de dentes ósseos\" marinhas gigantes; a ocorrência deste registro no Brasil é considerada duvidosa pelos revisores.",
+            filhos: [
+              { nome: "Pelagornithidae", tipo: "familia", extinta: true, filhos: [ { nome: "Pelagornis longirostris", tipo: "fossil" } ] }
+            ]}
+        ]},
+        { nome: "Neoaves", tipo: "clado", filhos: [
+          { nome: "Mirandornithes", tipo: "clado", filhos: [
+            { nome: "Phoenicopteriformes", tipo: "ordem", filhos: [
+              { nome: "Phoenicopteridae", tipo: "familia", viva: true },
+              { nome: "Palaelodidae", tipo: "familia", viva: false, filhos: [
+                { nome: "Agnopterus sicki", tipo: "fossil" },
+                { nome: "Palaelodus cf. ambiguus", tipo: "fossil" }
+              ]}
+            ]},
+            { nome: "Podicipediformes", tipo: "ordem", filhos: [
+              { nome: "Podicipedidae", tipo: "familia", viva: true }
+            ]}
+          ]},
+          { nome: "Columbea", tipo: "clado", filhos: [
+            { nome: "Columbiformes", tipo: "ordem", filhos: [
+              { nome: "Columbidae", tipo: "familia", viva: true }
+            ]}
+          ]},
+          { nome: "Otidimorphae / posição incerta", tipo: "clado", filhos: [
+            { nome: "Opisthocomiformes", tipo: "ordem",
+              nota: "Posição filogenética debatida — o Cigana/Hoatzin é tratado como incertae sedis por vários estudos genômicos recentes.",
+              filhos: [
+                { nome: "Opisthocomidae", tipo: "familia", viva: true, filhos: [ { nome: "Hoazinavis lacustris", tipo: "fossil" } ] }
+              ]},
+            { nome: "Cuculiformes", tipo: "ordem", filhos: [
+              { nome: "Cuculidae", tipo: "familia", viva: true, filhos: [ { nome: "Eutreptodactylus itaboraiensis", tipo: "fossil" } ] }
+            ]}
+          ]},
+          { nome: "Strisores", tipo: "clado", filhos: [
+            { nome: "Steatornithiformes / Caprimulgiformes", tipo: "ordem", filhos: [
+              { nome: "Steatornithidae", tipo: "familia", viva: true },
+              { nome: "Nyctibiidae", tipo: "familia", viva: true },
+              { nome: "Caprimulgidae", tipo: "familia", viva: true }
+            ]},
+            { nome: "Apodiformes", tipo: "ordem", filhos: [
+              { nome: "Apodidae", tipo: "familia", viva: true },
+              { nome: "Trochilidae", tipo: "familia", viva: true }
+            ]}
+          ]},
+          { nome: "Gruiformes", tipo: "ordem", filhos: [
+            { nome: "Aramidae", tipo: "familia", viva: true },
+            { nome: "Psophiidae", tipo: "familia", viva: true },
+            { nome: "Rallidae", tipo: "familia", viva: true },
+            { nome: "Heliornithidae", tipo: "familia", viva: true }
+          ]},
+          { nome: "Charadriiformes", tipo: "ordem", filhos: [
+            { nome: "Charadriidae", tipo: "familia", viva: true },
+            { nome: "Haematopodidae", tipo: "familia", viva: true },
+            { nome: "Recurvirostridae", tipo: "familia", viva: true },
+            { nome: "Burhinidae", tipo: "familia", viva: true },
+            { nome: "Chionididae", tipo: "familia", viva: true },
+            { nome: "Scolopacidae", tipo: "familia", viva: true },
+            { nome: "Thinocoridae", tipo: "familia", viva: true },
+            { nome: "Jacanidae", tipo: "familia", viva: true },
+            { nome: "Rostratulidae", tipo: "familia", viva: true },
+            { nome: "Glareolidae", tipo: "familia", viva: true },
+            { nome: "Stercorariidae", tipo: "familia", viva: true },
+            { nome: "Laridae", tipo: "familia", viva: true }
+          ]},
+          { nome: "Aequornithes", tipo: "clado", filhos: [
+            { nome: "Eurypygiformes", tipo: "ordem", filhos: [ { nome: "Eurypygidae", tipo: "familia", viva: true } ] },
+            { nome: "Phaethontiformes", tipo: "ordem", filhos: [ { nome: "Phaethontidae", tipo: "familia", viva: true } ] },
+            { nome: "Sphenisciformes", tipo: "ordem", filhos: [ { nome: "Spheniscidae", tipo: "familia", viva: true } ] },
+            { nome: "Procellariiformes", tipo: "ordem", filhos: [
+              { nome: "Diomedeidae", tipo: "familia", viva: true },
+              { nome: "Oceanitidae", tipo: "familia", viva: true },
+              { nome: "Hydrobatidae", tipo: "familia", viva: true },
+              { nome: "Procellariidae", tipo: "familia", viva: true }
+            ]},
+            { nome: "Ciconiiformes", tipo: "ordem", filhos: [
+              { nome: "Ciconiidae", tipo: "familia", viva: true, filhos: [ { nome: "Ciconia lydekkeri", tipo: "fossil" } ] }
+            ]},
+            { nome: "Suliformes", tipo: "ordem", filhos: [
+              { nome: "Fregatidae", tipo: "familia", viva: true },
+              { nome: "Sulidae", tipo: "familia", viva: true },
+              { nome: "Anhingidae", tipo: "familia", viva: true, filhos: [
+                { nome: "Anhinga minuta", tipo: "fossil" },
+                { nome: "Macranhinga ranzii", tipo: "fossil" }
+              ]},
+              { nome: "Phalacrocoracidae", tipo: "familia", viva: true }
+            ]},
+            { nome: "Pelecaniformes", tipo: "ordem", filhos: [
+              { nome: "Pelecanidae", tipo: "familia", viva: true },
+              { nome: "Ardeidae", tipo: "familia", viva: true },
+              { nome: "Threskiornithidae", tipo: "familia", viva: true }
+            ]}
+          ]},
+          { nome: "Telluraves", tipo: "clado", filhos: [
+            { nome: "Cathartiformes", tipo: "ordem", filhos: [
+              { nome: "Cathartidae", tipo: "familia", viva: true, filhos: [
+                { nome: "Brasilogyps faustoi", tipo: "fossil" },
+                { nome: "Wingegyps cartellei", tipo: "fossil" },
+                { nome: "Pleistovultur nevesi", tipo: "fossil" }
+              ]},
+              { nome: "Teratornithidae", tipo: "familia", viva: false, filhos: [ { nome: "Taubatornis campbelli", tipo: "fossil" } ] }
+            ]},
+            { nome: "Accipitriformes", tipo: "ordem", filhos: [
+              { nome: "Pandionidae", tipo: "familia", viva: true },
+              { nome: "Accipitridae", tipo: "familia", viva: true }
+            ]},
+            { nome: "Strigiformes", tipo: "ordem", filhos: [
+              { nome: "Tytonidae", tipo: "familia", viva: true },
+              { nome: "Strigidae", tipo: "familia", viva: true }
+            ]},
+            { nome: "Trogoniformes", tipo: "ordem", filhos: [ { nome: "Trogonidae", tipo: "familia", viva: true } ] },
+            { nome: "Coraciiformes", tipo: "ordem", filhos: [
+              { nome: "Momotidae", tipo: "familia", viva: true },
+              { nome: "Alcedinidae", tipo: "familia", viva: true }
+            ]},
+            { nome: "Piciformes", tipo: "ordem", filhos: [
+              { nome: "Galbulidae", tipo: "familia", viva: true },
+              { nome: "Bucconidae", tipo: "familia", viva: true },
+              { nome: "Capitonidae", tipo: "familia", viva: true },
+              { nome: "Ramphastidae", tipo: "familia", viva: true },
+              { nome: "Picidae", tipo: "familia", viva: true }
+            ]},
+            { nome: "Cariamiformes", tipo: "ordem", filhos: [
+              { nome: "Cariamidae", tipo: "familia", viva: true },
+              { nome: "Psilopteridae", tipo: "familia", viva: false, filhos: [ { nome: "Paleopsilopterus itaboraiensis", tipo: "fossil" } ] },
+              { nome: "Phorusrhacidae", tipo: "familia", viva: false, filhos: [ { nome: "Paraphysornis brasiliensis", tipo: "fossil" } ] },
+              { nome: "Idiornithidae", tipo: "familia", viva: false, filhos: [ { nome: "Itaboravis elaphrocnemoides", tipo: "fossil" } ] }
+            ]},
+            { nome: "Falconiformes", tipo: "ordem", filhos: [ { nome: "Falconidae", tipo: "familia", viva: true } ] },
+            { nome: "Psittaciformes", tipo: "ordem", filhos: [ { nome: "Psittacidae", tipo: "familia", viva: true } ] },
+            { nome: "Passeriformes — Tyranni (suboscines)", tipo: "ordem", filhos: [
+              { nome: "Thamnophilidae", tipo: "familia", viva: true },
+              { nome: "Melanopareiidae", tipo: "familia", viva: true },
+              { nome: "Conopophagidae", tipo: "familia", viva: true },
+              { nome: "Grallariidae", tipo: "familia", viva: true },
+              { nome: "Rhinocryptidae", tipo: "familia", viva: true },
+              { nome: "Formicariidae", tipo: "familia", viva: true },
+              { nome: "Furnariidae", tipo: "familia", viva: true },
+              { nome: "Scleruridae", tipo: "familia", viva: true },
+              { nome: "Dendrocolaptidae", tipo: "familia", viva: true },
+              { nome: "Xenopidae", tipo: "familia", viva: true },
+              { nome: "Tityridae", tipo: "familia", viva: true },
+              { nome: "Pipridae", tipo: "familia", viva: true },
+              { nome: "Cotingidae", tipo: "familia", viva: true },
+              { nome: "Tyrannidae", tipo: "familia", viva: true }
+            ]},
+            { nome: "Passeriformes — Passeri (oscines)", tipo: "ordem", filhos: [
+              { nome: "Vireonidae", tipo: "familia", viva: true },
+              { nome: "Corvidae", tipo: "familia", viva: true },
+              { nome: "Hirundinidae", tipo: "familia", viva: true },
+              { nome: "Troglodytidae", tipo: "familia", viva: true },
+              { nome: "Polioptilidae", tipo: "familia", viva: true },
+              { nome: "Turdidae", tipo: "familia", viva: true },
+              { nome: "Mimidae", tipo: "familia", viva: true },
+              { nome: "Motacillidae", tipo: "familia", viva: true },
+              { nome: "Fringillidae", tipo: "familia", viva: true },
+              { nome: "Passerellidae", tipo: "familia", viva: true },
+              { nome: "Icteridae", tipo: "familia", viva: true },
+              { nome: "Parulidae", tipo: "familia", viva: true },
+              { nome: "Thraupidae", tipo: "familia", viva: true },
+              { nome: "Cardinalidae", tipo: "familia", viva: true },
+              { nome: "Sturnidae", tipo: "familia", viva: true, introduzida: true },
+              { nome: "Estrildidae", tipo: "familia", viva: true, introduzida: true },
+              { nome: "Passeridae", tipo: "familia", viva: true, introduzida: true }
+            ]}
+          ]}
+        ]}
     ]}
-];
+  ]
+};
 
 /* =========================================================
    Paleo-SC — app.js
@@ -853,53 +929,54 @@ const TREE_COL_W = 190;     // espaçamento horizontal entre níveis
 
 function treeCountStats(){
   let ordens = 0, familiasVivas = 0, familiasExtintas = 0, fosseis = 0;
-  AVES_TREE_BR.forEach(grupo => {
-    grupo.ordens.forEach(ordem => {
-      ordens++;
-      ordem.familias.forEach(fam => {
-        if(fam.viva) familiasVivas++; else familiasExtintas++;
-        if(fam.fosseis) fosseis += fam.fosseis.length;
-      });
-    });
-  });
+  (function walk(node){
+    if(node.tipo === 'ordem') ordens++;
+    if(node.tipo === 'familia'){ if(node.viva) familiasVivas++; else familiasExtintas++; }
+    if(node.tipo === 'fossil') fosseis++;
+    (node.filhos || []).forEach(walk);
+  })(AVES_TREE_BR);
   return { ordens, familiasVivas, familiasExtintas, fosseis };
 }
 
-/* ---------- construção da hierarquia (uma vez) ---------- */
+/* ---------- construção da hierarquia (uma vez) ----------
+   Formato-fonte (AVES_TREE_BR) é uma árvore recursiva real:
+   { nome, tipo: 'clado'|'ordem'|'familia'|'fossil', extinta?, viva?,
+     introduzida?, nota?, filhos:[...] } — clados podem aninhar
+   outros clados livremente (ex.: Neoaves contém Mirandornithes,
+   Columbea, Aequornithes, Telluraves etc. como filhos diretos),
+   em vez de uma lista plana de grupos irmãos. */
+function hydrateTreeNode(raw, typeOverride){
+  const type = typeOverride || raw.tipo;
+  const node = {
+    id: 'n' + (__treeNodeSeq++),
+    name: raw.nome,
+    type,
+    extinta: !!raw.extinta,
+    viva: raw.viva,
+    introduzida: !!raw.introduzida,
+    nota: raw.nota,
+    taxonRef: type === 'fossil' ? raw.nome : undefined,
+    idade: '',
+    children: [],
+    _collapsed: type === 'ordem'
+  };
+  if(type === 'fossil'){
+    const t = dbAviFindTaxon(raw.nome);
+    node.idade = t ? t.idade_ma : '';
+  }
+  (raw.filhos || []).forEach(child => node.children.push(hydrateTreeNode(child)));
+  return node;
+}
+
 function buildTreeHierarchy(){
-  const mk = (name, type, extra) => Object.assign({
-    id: 'n' + (__treeNodeSeq++), name, type, children: [], _collapsed: false
-  }, extra || {});
-
-  const root = mk('Chordata', 'root');
-  const aves = mk('Aves', 'classe');
+  const root = hydrateTreeNode({ nome: 'Chordata', tipo: 'root', filhos: [] });
+  root._collapsed = false;
+  const aves = hydrateTreeNode(AVES_TREE_BR, 'classe');
+  aves._collapsed = false;
   root.children.push(aves);
-
-  AVES_TREE_BR.forEach(grupoData => {
-    const grupo = mk(grupoData.grupo, 'grupo', { nota: grupoData.notaGrupo });
-    aves.children.push(grupo);
-
-    grupoData.ordens.forEach(ordemData => {
-      const ordem = mk(ordemData.nome, 'ordem', { extinta: !!ordemData.extinta, nota: ordemData.nota, _collapsed: true });
-      grupo.children.push(ordem);
-
-      ordemData.familias.forEach(famData => {
-        const fam = mk(famData.nome, 'familia', {
-          viva: !!famData.viva, introduzida: !!famData.introduzida, _collapsed: false
-        });
-        ordem.children.push(fam);
-        (famData.fosseis || []).forEach(taxonName => {
-          const t = dbAviFindTaxon(taxonName);
-          fam.children.push(mk(taxonName, 'fossil', {
-            idade: t ? t.idade_ma : '', taxonRef: taxonName
-          }));
-        });
-      });
-    });
-  });
-
   return root;
 }
+
 
 function treeNodeMatches(node, q){
   if(!q) return false;
@@ -962,7 +1039,7 @@ function treeLinkPath(d){
 function treeNodeColor(node){
   if(node.type === 'fossil') return '#b23b2e';
   if(node.type === 'root' || node.type === 'classe') return 'var(--ink)';
-  if(node.type === 'grupo') return 'var(--petrol-dk)';
+  if(node.type === 'clado') return 'var(--petrol-dk)';
   if(node.type === 'ordem') return node.extinta ? 'var(--moss-dk)' : 'var(--petrol-lt)';
   if(node.type === 'familia') return node.viva ? 'var(--moss)' : 'var(--stone-dk)';
   return 'var(--ink)';
