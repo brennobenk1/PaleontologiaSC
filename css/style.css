@@ -607,7 +607,7 @@ body::before{
   font-family: var(--font-body); font-size:12.5px; fill: var(--ink); pointer-events:none; user-select:none;
 }
 .tree-label-root, .tree-label-classe{ font-family: var(--font-mono); font-weight:700; font-size:12px; }
-.tree-label-grupo{ font-family: var(--font-mono); font-size:11px; text-transform:uppercase; letter-spacing:0.02em; fill: var(--petrol-dk); }
+.tree-label-clado{ font-family: var(--font-mono); font-size:11px; text-transform:uppercase; letter-spacing:0.02em; fill: var(--petrol-dk); }
 .tree-label-ordem{ font-weight:600; }
 .tree-label-familia{ font-family: var(--font-display); font-style:italic; font-size:12px; }
 .tree-label-fossil{ font-family: var(--font-display); font-weight:700; font-size:12.5px; }
