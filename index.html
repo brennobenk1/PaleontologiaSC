@@ -317,14 +317,26 @@
       <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
       <input type="search" id="treeSearchInput" placeholder="Buscar ordem, família ou táxon fóssil…" aria-label="Buscar na árvore genealógica">
     </div>
+    <div class="tree-actions">
+      <button class="btn btn-text" id="treeExpandAll">Expandir tudo</button>
+      <button class="btn btn-text" id="treeCollapseAll">Recolher tudo</button>
+    </div>
     <ul class="map-legend tree-legend">
-      <li><span class="legend-swatch" style="background:var(--paper);border:1px solid var(--line-strong);"></span><span>Família viva no Brasil</span></li>
-      <li><span class="legend-swatch" style="background:var(--stone-dk);border:1px dashed var(--line-strong);"></span><span>Família / ordem inteiramente extinta</span></li>
-      <li><span class="legend-swatch" style="background:var(--gold);border-radius:50%;"></span><span>† Táxon fóssil do catálogo (clique para abrir a ficha)</span></li>
+      <li><span class="legend-swatch" style="background:var(--petrol-lt);border-radius:50%;"></span><span>Ordem / clado</span></li>
+      <li><span class="legend-swatch" style="background:var(--stone-dk);border-radius:50%;"></span><span>Sem viventes</span></li>
+      <li><span class="legend-swatch" style="background:#b23b2e;border-radius:50%;"></span><span>† Táxon fóssil (clique abre a ficha)</span></li>
     </ul>
   </div>
 
-  <div class="tree-accordion" id="treeAccordion"></div>
+  <div class="tree-canvas-wrap" id="treeCanvasWrap">
+    <div class="tree-zoom-controls">
+      <button type="button" id="treeZoomIn" aria-label="Aproximar">+</button>
+      <button type="button" id="treeZoomOut" aria-label="Afastar">&minus;</button>
+      <button type="button" id="treeZoomReset" aria-label="Centralizar">&#9678;</button>
+    </div>
+    <p class="tree-hint">Arraste para mover &middot; role para aproximar &middot; clique num nó para abrir/fechar o ramo</p>
+    <svg id="treeSvg" class="tree-svg" xmlns="http://www.w3.org/2000/svg"></svg>
+  </div>
 
   <p class="muted tree-source-note">
     Classificação de ordens e clados: Jarvis, E.D. et al. (2014, <em>Science</em> 346:1320–1331);
