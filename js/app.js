@@ -841,9 +841,15 @@ function renderAviMap(){
 }
 
 /* ===========================================================
-   ÁRVORE GENEALÓGICA — famílias vivas + táxons fósseis
+   ÁRVORE GENEALÓGICA — dendrograma SVG real
+   Chordata > Aves > clados > ordens > famílias > (fósseis em vermelho)
    =========================================================== */
+let __treeRoot = null;
+let __treeNodeSeq = 0;
 let __treeQuery = '';
+let __treeZoom = { k: 1, x: 40, y: 40 };
+const TREE_ROW_H = 26;      // espaçamento vertical entre folhas visíveis
+const TREE_COL_W = 190;     // espaçamento horizontal entre níveis
 
 function treeCountStats(){
   let ordens = 0, familiasVivas = 0, familiasExtintas = 0, fosseis = 0;
@@ -859,77 +865,212 @@ function treeCountStats(){
   return { ordens, familiasVivas, familiasExtintas, fosseis };
 }
 
-function treeMatchesQuery(ordem, fam, q){
-  if(!q) return true;
-  const hay = [ordem.nome, fam.nome, ...(fam.fosseis||[])].join(' ').toLowerCase();
-  return hay.includes(q);
+/* ---------- construção da hierarquia (uma vez) ---------- */
+function buildTreeHierarchy(){
+  const mk = (name, type, extra) => Object.assign({
+    id: 'n' + (__treeNodeSeq++), name, type, children: [], _collapsed: false
+  }, extra || {});
+
+  const root = mk('Chordata', 'root');
+  const aves = mk('Aves', 'classe');
+  root.children.push(aves);
+
+  AVES_TREE_BR.forEach(grupoData => {
+    const grupo = mk(grupoData.grupo, 'grupo', { nota: grupoData.notaGrupo });
+    aves.children.push(grupo);
+
+    grupoData.ordens.forEach(ordemData => {
+      const ordem = mk(ordemData.nome, 'ordem', { extinta: !!ordemData.extinta, nota: ordemData.nota, _collapsed: true });
+      grupo.children.push(ordem);
+
+      ordemData.familias.forEach(famData => {
+        const fam = mk(famData.nome, 'familia', {
+          viva: !!famData.viva, introduzida: !!famData.introduzida, _collapsed: false
+        });
+        ordem.children.push(fam);
+        (famData.fosseis || []).forEach(taxonName => {
+          const t = dbAviFindTaxon(taxonName);
+          fam.children.push(mk(taxonName, 'fossil', {
+            idade: t ? t.idade_ma : '', taxonRef: taxonName
+          }));
+        });
+      });
+    });
+  });
+
+  return root;
 }
 
-function renderFamiliaChip(fam){
-  const cls = 'familia-chip' + (fam.viva ? '' : ' extinta') + (fam.introduzida ? ' introduzida' : '');
-  const label = (fam.viva ? '' : '&#8224; ') + fam.nome + (fam.introduzida ? ' <span class="chip-tag">introduzida</span>' : '');
-  const fosseisHtml = (fam.fosseis||[]).map(taxonName => {
-    const t = dbAviFindTaxon(taxonName);
-    const idade = t ? t.idade_ma : '';
-    return `<button type="button" class="fossil-subchip" data-taxon="${encodeURIComponent(taxonName)}">&#8224; <em>${taxonName}</em>${idade ? ` <span class="chip-count">${idade}</span>` : ''}</button>`;
-  }).join('');
-  return `
-    <div class="${cls}">
-      <span class="familia-chip-name">${label}</span>
-      ${fosseisHtml ? `<div class="fossil-subchip-list">${fosseisHtml}</div>` : ''}
-    </div>
-  `;
+function treeNodeMatches(node, q){
+  if(!q) return false;
+  return node.name.toLowerCase().includes(q);
 }
 
-function renderArvore(){
+/* expande o caminho até qualquer nó cujo nome contenha a busca */
+function treeExpandToMatches(node, q){
+  let selfOrDescendantMatches = treeNodeMatches(node, q);
+  node.children.forEach(child => {
+    if(treeExpandToMatches(child, q)) selfOrDescendantMatches = true;
+  });
+  if(selfOrDescendantMatches && node.children.length) node._collapsed = false;
+  return selfOrDescendantMatches;
+}
+
+function treeSetCollapsedAll(node, value){
+  if(node.children.length){
+    if(node.type !== 'root' && node.type !== 'classe') node._collapsed = value;
+    node.children.forEach(c => treeSetCollapsedAll(c, value));
+  }
+}
+
+/* ---------- layout (calcula x,y só dos nós visíveis) ---------- */
+function computeTreeLayout(root){
+  const nodes = [];
+  const links = [];
+  let leafCounter = 0;
+
+  function visit(node, depth){
+    node._depth = depth;
+    const visibleChildren = node._collapsed ? [] : node.children;
+    if(visibleChildren.length === 0){
+      node._x = depth * TREE_COL_W;
+      node._y = leafCounter * TREE_ROW_H;
+      leafCounter++;
+    } else {
+      visibleChildren.forEach(child => visit(child, depth + 1));
+      const ys = visibleChildren.map(c => c._y);
+      node._x = depth * TREE_COL_W;
+      node._y = (Math.min(...ys) + Math.max(...ys)) / 2;
+    }
+    nodes.push(node);
+    visibleChildren.forEach(child => links.push({ source: node, target: child }));
+  }
+  visit(root, 0);
+
+  const width = (Math.max(...nodes.map(n => n._depth)) + 1) * TREE_COL_W + 260;
+  const height = Math.max(leafCounter * TREE_ROW_H, 200);
+  return { nodes, links, width, height };
+}
+
+/* ---------- render SVG ---------- */
+function treeLinkPath(d){
+  const x0 = d.source._x, y0 = d.source._y, x1 = d.target._x, y1 = d.target._y;
+  const midX = (x0 + x1) / 2;
+  return `M${x0},${y0} C${midX},${y0} ${midX},${y1} ${x1},${y1}`;
+}
+
+function treeNodeColor(node){
+  if(node.type === 'fossil') return '#b23b2e';
+  if(node.type === 'root' || node.type === 'classe') return 'var(--ink)';
+  if(node.type === 'grupo') return 'var(--petrol-dk)';
+  if(node.type === 'ordem') return node.extinta ? 'var(--moss-dk)' : 'var(--petrol-lt)';
+  if(node.type === 'familia') return node.viva ? 'var(--moss)' : 'var(--stone-dk)';
+  return 'var(--ink)';
+}
+
+function renderTreeSVG(){
+  if(!__treeRoot) return;
   const q = __treeQuery.trim().toLowerCase();
-  const wrap = document.getElementById('treeAccordion');
+  if(q) treeExpandToMatches(__treeRoot, q);
 
-  let html = '';
-  AVES_TREE_BR.forEach((grupo, gi) => {
-    const ordensVisiveis = grupo.ordens
-      .map((ordem, oi) => ({ ordem, oi, familias: ordem.familias.filter(f => treeMatchesQuery(ordem, f, q)) }))
-      .filter(x => x.familias.length > 0);
-    if(ordensVisiveis.length === 0) return;
+  const { nodes, links, width, height } = computeTreeLayout(__treeRoot);
+  const svg = document.getElementById('treeSvg');
 
-    html += `<h3 class="tree-group-header">${grupo.grupo}</h3>`;
-    if(grupo.notaGrupo) html += `<p class="tree-group-note">${grupo.notaGrupo}</p>`;
+  const linksHtml = links.map(l => `<path class="tree-link" d="${treeLinkPath(l)}"></path>`).join('');
 
-    ordensVisiveis.forEach(({ordem, oi, familias}) => {
-      const nFosseis = familias.reduce((s,f)=>s+(f.fosseis?f.fosseis.length:0),0);
-      const isOpen = q.length > 0; // auto-abre quando há busca ativa
-      html += `
-        <div class="period-item order-item${isOpen?' open':''}" data-group="${gi}" data-order="${oi}">
-          <button class="period-trigger order-trigger" type="button">
-            <span class="period-swatch" style="background:${ordem.extinta ? 'var(--stone-dk)' : 'var(--petrol-lt)'}"></span>
-            <span class="period-title">${ordem.extinta ? '&#8224; ' : ''}${ordem.nome}</span>
-            <span class="period-range">${familias.length} família${familias.length===1?'':'s'}</span>
-            ${nFosseis ? `<span class="period-count">${nFosseis} fóssil${nFosseis===1?'':'eis'}</span>` : ''}
-            <svg class="period-chevron" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"></polyline></svg>
-          </button>
-          <div class="period-panel">
-            <div class="period-panel-inner">
-              ${ordem.nota ? `<p class="period-desc">${ordem.nota}</p>` : ''}
-              <div class="taxon-chip-list familia-chip-list">
-                ${familias.map(renderFamiliaChip).join('')}
-              </div>
-            </div>
-          </div>
-        </div>
-      `;
+  const nodesHtml = nodes.map(n => {
+    const color = treeNodeColor(n);
+    const isFossil = n.type === 'fossil';
+    const hasHiddenChildren = n.children.length > 0;
+    const matched = q && treeNodeMatches(n, q);
+    const r = isFossil ? 5 : (n.type === 'familia' ? 4.5 : 6);
+    const labelClass = 'tree-label tree-label-' + n.type + (matched ? ' tree-label-match' : '') + (n.extinta || n.viva === false ? ' tree-label-extinct' : '');
+    const marker = hasHiddenChildren && n._collapsed ? `<text class="tree-toggle-glyph" x="${n._x}" y="${n._y+1}" text-anchor="middle" dominant-baseline="middle">+</text>` : '';
+    const daggerPrefix = isFossil ? '&#8224; ' : ((n.type==='ordem' && n.extinta) || (n.type==='familia' && n.viva===false) ? '&#8224; ' : '');
+    return `
+      <g class="tree-node tree-node-${n.type}${matched?' tree-node-match':''}" data-id="${n.id}" transform="translate(${n._x},${n._y})" tabindex="0">
+        <rect class="tree-hit" x="-8" y="-12" width="170" height="24" fill="transparent"></rect>
+        <circle r="${r}" fill="${hasHiddenChildren && n._collapsed ? color : (isFossil ? color : 'var(--paper)')}" stroke="${color}" stroke-width="2"></circle>
+        ${marker}
+        <text class="${labelClass}" x="${r + 8}" y="1" dominant-baseline="middle" fill="${isFossil ? '#b23b2e' : ''}">${daggerPrefix}${n.type==='fossil' ? `<tspan font-style="italic">${n.name}</tspan>` : n.name}${n.idade ? ` <tspan class="tree-label-age">(${n.idade})</tspan>` : ''}</text>
+      </g>
+    `;
+  }).join('');
+
+  svg.setAttribute('viewBox', `0 0 ${width} ${height}`);
+  svg.innerHTML = `<g id="treeZoomGroup" transform="translate(${__treeZoom.x},${__treeZoom.y}) scale(${__treeZoom.k})"><g transform="translate(20,20)">${linksHtml}${nodesHtml}</g></g>`;
+
+  svg.querySelectorAll('.tree-node').forEach(g => {
+    g.addEventListener('click', () => {
+      const node = nodes.find(n => n.id === g.dataset.id);
+      if(!node) return;
+      if(node.type === 'fossil'){
+        openAviModal(decodeURIComponent(node.taxonRef));
+        return;
+      }
+      if(node.children.length){
+        node._collapsed = !node._collapsed;
+        renderTreeSVG();
+      }
     });
+    g.addEventListener('keydown', e => { if(e.key === 'Enter') g.dispatchEvent(new Event('click')); });
   });
+}
 
-  wrap.innerHTML = html || '<p class="empty-state">Nenhuma ordem, família ou fóssil corresponde à busca.</p>';
+/* ---------- zoom / pan ---------- */
+function treeApplyZoom(){
+  const g = document.getElementById('treeZoomGroup');
+  if(g) g.setAttribute('transform', `translate(${__treeZoom.x},${__treeZoom.y}) scale(${__treeZoom.k})`);
+}
 
-  wrap.querySelectorAll('.order-trigger').forEach(btn => {
-    btn.addEventListener('click', () => btn.closest('.order-item').classList.toggle('open'));
+function initTreeZoomPan(){
+  const wrap = document.getElementById('treeCanvasWrap');
+  const svg = document.getElementById('treeSvg');
+  let dragging = false, startX = 0, startY = 0, startTx = 0, startTy = 0;
+
+  wrap.addEventListener('mousedown', e => {
+    dragging = true; wrap.classList.add('dragging');
+    startX = e.clientX; startY = e.clientY;
+    startTx = __treeZoom.x; startTy = __treeZoom.y;
   });
-  wrap.querySelectorAll('.fossil-subchip').forEach(btn => {
-    btn.addEventListener('click', (e) => {
-      e.stopPropagation();
-      openAviModal(decodeURIComponent(btn.dataset.taxon));
-    });
+  window.addEventListener('mousemove', e => {
+    if(!dragging) return;
+    __treeZoom.x = startTx + (e.clientX - startX);
+    __treeZoom.y = startTy + (e.clientY - startY);
+    treeApplyZoom();
+  });
+  window.addEventListener('mouseup', () => { dragging = false; wrap.classList.remove('dragging'); });
+
+  // toque (mobile)
+  wrap.addEventListener('touchstart', e => {
+    if(e.touches.length !== 1) return;
+    dragging = true;
+    startX = e.touches[0].clientX; startY = e.touches[0].clientY;
+    startTx = __treeZoom.x; startTy = __treeZoom.y;
+  }, { passive:true });
+  wrap.addEventListener('touchmove', e => {
+    if(!dragging || e.touches.length !== 1) return;
+    __treeZoom.x = startTx + (e.touches[0].clientX - startX);
+    __treeZoom.y = startTy + (e.touches[0].clientY - startY);
+    treeApplyZoom();
+  }, { passive:true });
+  wrap.addEventListener('touchend', () => { dragging = false; });
+
+  svg.addEventListener('wheel', e => {
+    e.preventDefault();
+    const delta = e.deltaY > 0 ? -0.1 : 0.1;
+    __treeZoom.k = Math.min(2.2, Math.max(0.35, __treeZoom.k + delta));
+    treeApplyZoom();
+  }, { passive:false });
+
+  document.getElementById('treeZoomIn').addEventListener('click', () => {
+    __treeZoom.k = Math.min(2.2, __treeZoom.k + 0.15); treeApplyZoom();
+  });
+  document.getElementById('treeZoomOut').addEventListener('click', () => {
+    __treeZoom.k = Math.max(0.35, __treeZoom.k - 0.15); treeApplyZoom();
+  });
+  document.getElementById('treeZoomReset').addEventListener('click', () => {
+    __treeZoom = { k: 1, x: 40, y: 40 }; treeApplyZoom();
   });
 }
 
@@ -941,9 +1082,21 @@ function initArvore(){
     <div class="stat-card"><span class="stat-num">${stats.familiasExtintas}</span><span class="stat-label">Famílias sem viventes</span></div>
     <div class="stat-card"><span class="stat-num">${stats.fosseis}</span><span class="stat-label">Táxons fósseis encaixados</span></div>
   `;
+
+  __treeRoot = buildTreeHierarchy();
+  renderTreeSVG();
+  initTreeZoomPan();
+
   document.getElementById('treeSearchInput').addEventListener('input', e => {
     __treeQuery = e.target.value;
-    renderArvore();
+    renderTreeSVG();
   });
-  renderArvore();
+  document.getElementById('treeExpandAll').addEventListener('click', () => {
+    treeSetCollapsedAll(__treeRoot, false);
+    renderTreeSVG();
+  });
+  document.getElementById('treeCollapseAll').addEventListener('click', () => {
+    treeSetCollapsedAll(__treeRoot, true);
+    renderTreeSVG();
+  });
 }
