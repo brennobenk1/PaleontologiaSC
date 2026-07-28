@@ -221,13 +221,33 @@ body::before{
 }
 .section-head h2{ font-size: 1.65rem; margin:0; }
 
-.feature-grid{ display:grid; grid-template-columns: repeat(4, 1fr); gap: 1.2rem; }
+.feature-grid{ display:grid; grid-template-columns: repeat(3, 1fr); gap: 1.2rem; }
 .feature-card{
+  position:relative; overflow:hidden;
   background: var(--paper); border:1px solid var(--line); border-radius: var(--radius-md);
-  padding: 1.35rem 1.25rem; box-shadow: var(--shadow-sm);
+  padding: 1.4rem 1.3rem 1.2rem; box-shadow: var(--shadow-sm);
+  cursor:pointer; display:flex; flex-direction:column;
+  transition: transform .18s ease, box-shadow .18s ease, border-color .18s ease;
 }
-.feature-card h3{ font-size: 1.06rem; margin-bottom: 0.5rem; }
-.feature-card p{ font-size: 0.92rem; color: rgba(20,32,26,0.78); margin:0; }
+.feature-card::after{
+  content:""; position:absolute; left:0; right:0; top:0; height:3px;
+  background: var(--gold-lt); transform: scaleX(0); transform-origin: left;
+  transition: transform .25s cubic-bezier(.2,.8,.3,1);
+}
+.feature-card:hover, .feature-card:focus-visible{
+  transform: translateY(-3px); box-shadow: var(--shadow-md); border-color: var(--petrol-lt);
+}
+.feature-card:hover::after, .feature-card:focus-visible::after{ transform: scaleX(1); }
+.feature-card h3{ font-size: 1.08rem; margin-bottom: 0.5rem; }
+.feature-card p{ font-size: 0.92rem; color: rgba(20,32,26,0.78); margin:0 0 1rem; }
+.feature-card p b{ font-family: var(--font-display); font-size:1.05em; color: var(--petrol-dk); }
+.feature-go{
+  margin-top:auto; font-family: var(--font-mono); font-size:0.68rem;
+  text-transform:uppercase; letter-spacing:0.05em; color: var(--gold);
+  display:inline-flex; align-items:center; gap:0.4rem;
+}
+.feature-go i{ font-style:normal; transition: transform .2s ease; }
+.feature-card:hover .feature-go i{ transform: translateX(4px); }
 .feature-card-accent{ border-color: var(--gold-lt); background: linear-gradient(180deg, var(--paper), var(--stone-dk)); }
 
 .era-bars{ display:flex; flex-direction:column; gap: 0.9rem; }
@@ -235,7 +255,19 @@ body::before{
 .era-bar-label{ font-family: var(--font-mono); font-size: 0.8rem; color: var(--petrol-dk); }
 .era-bar-track{ background: rgba(20,32,26,0.09); border-radius: 999px; height: 14px; overflow:hidden; display:block; }
 .era-bar-fill{ display:block; height: 100%; border-radius: 999px; transition: width 1s ease; }
-.era-bar-count{ font-family: var(--font-mono); font-size: 0.82rem; text-align:right; color: var(--moss-dk); }
+.era-bar-count{
+  font-family: var(--font-mono); font-size: 0.82rem; text-align:right; color: var(--petrol-dk);
+  display:flex; flex-direction:column; line-height:1.15;
+}
+.era-bar-count i{ font-style:normal; font-size:0.65rem; color: rgba(20,32,26,0.45); }
+
+/* fichas do hero: agora levam à seção que contam */
+.stat-card[data-goto]{ cursor:pointer; transition: transform .18s ease, box-shadow .18s ease, border-color .18s ease; }
+.stat-card[data-goto]:hover{ box-shadow: var(--shadow-md); border-color: var(--gold-lt); }
+.tag-1[data-goto]:hover{ transform: rotate(-2.4deg) translateY(-3px) scale(1.02); }
+.tag-2[data-goto]:hover{ transform: rotate(1.6deg) translateY(-3px) scale(1.02); }
+.tag-3[data-goto]:hover{ transform: rotate(-1.2deg) translateY(-3px) scale(1.02); }
+.tag-4[data-goto]:hover{ transform: rotate(2deg) translateY(-3px) scale(1.02); }
 
 .limit-grid{ display:grid; grid-template-columns: repeat(3,1fr); gap: 1.2rem; }
 .limit-card{ border-left: 3px solid var(--gold-lt); padding-left: 1rem; }
@@ -281,10 +313,23 @@ body::before{
 .fossil-card{
   position: relative;
   background: var(--paper); border:1px solid var(--line); border-radius: var(--radius-md);
-  padding: 1.2rem 1.15rem 1.1rem; cursor:pointer; transition: box-shadow .15s ease, transform .15s ease, border-color .15s ease;
-  display:flex; flex-direction:column; gap:0.5rem;
+  padding: 1.2rem 1.15rem 1rem 1.4rem; cursor:pointer;
+  transition: box-shadow .18s ease, transform .18s ease, border-color .18s ease;
+  display:flex; flex-direction:column; gap:0.45rem;
+  overflow:hidden;
 }
-.fossil-card:hover{ box-shadow: var(--shadow-md); transform: translateY(-2px); border-color: var(--petrol-lt); }
+/* faixa estratigráfica: cor do período geológico do próprio registro —
+   mesma paleta da coluna-testemunho do topo da página */
+.fossil-card::before{
+  content:""; position:absolute; left:0; top:0; bottom:0; width:5px;
+  background: var(--per-cor, var(--moss-lt)); transition: width .18s ease;
+}
+.fossil-card:hover{ box-shadow: var(--shadow-md); transform: translateY(-3px); border-color: var(--petrol-lt); }
+.fossil-card:hover::before{ width:8px; }
+.per-dot{
+  display:inline-block; width:7px; height:7px; border-radius:50%; flex-shrink:0;
+  background: var(--per-cor, var(--moss-lt)); margin-right:0.45rem;
+}
 .fossil-tagno{
   position:absolute; top:-8px; right:14px;
   font-family: var(--font-mono); font-size: 0.62rem; letter-spacing:0.03em; color: var(--gold);
@@ -305,9 +350,28 @@ body::before{
 .cat-pill.cat-micro{ background: #6d5c85; }
 .cat-pill.cat-meta{ background: var(--petrol-dk); }
 
-.fossil-meta{ font-size: 0.86rem; color: rgba(20,32,26,0.75); display:flex; flex-direction:column; gap:0.15rem; padding-top: 0.4rem; border-top: 1px dashed var(--line); }
-.fossil-meta b{ color: var(--ink); font-weight:600; }
-.fossil-period{ font-family: var(--font-mono); font-size: 0.74rem; color: var(--moss-dk); letter-spacing: 0.01em; }
+/* rótulo em versalete acima do valor — repetir "Formação:" inline em
+   158 cards polui; assim o olho salta direto para o conteúdo */
+.fossil-meta{
+  font-size: 0.88rem; color: var(--ink);
+  display:flex; flex-direction:column; gap:0.5rem;
+  padding-top: 0.55rem; border-top: 1px dashed var(--line);
+}
+.fossil-meta span{ display:flex; flex-direction:column; gap:0.08rem; }
+.fossil-meta b{
+  font-family: var(--font-mono); font-size:0.6rem; font-weight:600;
+  text-transform:uppercase; letter-spacing:0.06em; color: rgba(20,32,26,0.45);
+}
+.fossil-guarda{
+  font-size:0.76rem; color: rgba(20,32,26,0.58); line-height:1.35;
+  padding-top:0.5rem; margin-top:auto; border-top:1px solid var(--line);
+}
+.fossil-period{
+  display:flex; align-items:center;
+  font-family: var(--font-mono); font-size: 0.72rem; color: var(--moss-dk); letter-spacing: 0.01em;
+}
+.td-periodo{ white-space:nowrap; }
+.catalog-table tbody tr{ box-shadow: inset 4px 0 0 var(--per-cor, transparent); }
 
 .catalog-table-wrap{ overflow-x:auto; border:1px solid var(--line); border-radius: var(--radius-md); }
 .catalog-table{ width:100%; border-collapse:collapse; background: var(--paper); font-size: 0.88rem; }
