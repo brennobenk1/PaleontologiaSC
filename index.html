@@ -75,25 +75,35 @@
       <h2>O que este banco reúne</h2>
     </div>
     <div class="feature-grid">
-      <article class="feature-card">
+      <article class="feature-card" data-goto="catalogo" tabindex="0" role="button">
         <h3>Catálogo pesquisável</h3>
-        <p>97 registros compilados da literatura científica publicada — periódicos, anais e teses — com filtros por período, táxon, formação, município e instituição de guarda.</p>
+        <p><b id="featCount">—</b> registros compilados da literatura científica publicada — periódicos, anais e teses — com filtros por período, táxon, formação, município e instituição de guarda.</p>
+        <span class="feature-go">Abrir catálogo <i>&rarr;</i></span>
       </article>
-      <article class="feature-card">
+      <article class="feature-card" data-goto="mapa" tabindex="0" role="button">
         <h3>Mapa interativo</h3>
         <p>Localização dos sítios de coleta sobre o contorno de Santa Catarina, com a extensão aproximada das principais bacias e unidades sedimentares fossilíferas.</p>
+        <span class="feature-go">Ver mapa <i>&rarr;</i></span>
       </article>
-      <article class="feature-card">
+      <article class="feature-card" data-goto="periodos" tabindex="0" role="button">
         <h3>Linha do tempo geológica</h3>
         <p>Do Ediacarano ao Quaternário: cada período abre para revelar os táxons documentados, suas idades estimadas e o contexto da unidade litoestratigráfica.</p>
+        <span class="feature-go">Percorrer o tempo <i>&rarr;</i></span>
       </article>
-      <article class="feature-card">
+      <article class="feature-card" data-goto="instituicoes" tabindex="0" role="button">
         <h3>Rede institucional</h3>
         <p>Universidades, museus e centros de pesquisa que descrevem, custodiam ou estudam o material — com contato, sede e o perfil do acervo de cada instituição.</p>
+        <span class="feature-go">Ver instituições <i>&rarr;</i></span>
       </article>
-      <article class="feature-card feature-card-accent">
+      <article class="feature-card feature-card-accent" data-goto="avifauna" tabindex="0" role="button">
         <h3>Avifauna fóssil do Brasil</h3>
         <p>Aba nacional dedicada às aves fósseis e subfósseis descritas no Brasil — espécies extintas, sítios-chave e cobertura por estado, do Cretáceo Inferior (Aptiano, ~115 Ma) ao Holoceno.</p>
+        <span class="feature-go">Explorar avifauna <i>&rarr;</i></span>
+      </article>
+      <article class="feature-card feature-card-accent" data-goto="arvore" tabindex="0" role="button">
+        <h3>Árvore genealógica das aves</h3>
+        <p>Dendrograma interativo das famílias de aves vivas no Brasil pelos clados da filogenômica moderna, com os táxons fósseis do catálogo encaixados em vermelho no ramo correto.</p>
+        <span class="feature-go">Abrir árvore <i>&rarr;</i></span>
       </article>
     </div>
   </section>
@@ -406,4 +416,3 @@
 <script src="js/app.js"></script>
 </body>
 </html>
-
