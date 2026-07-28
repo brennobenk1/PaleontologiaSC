@@ -311,6 +311,16 @@ function dbCategoriaGrupo(categoria){
 function categoriaShort(categoria){ return categoria.split('—')[0].trim(); }
 function categoriaPillClass(categoria){ return 'cat-pill cat-' + dbCategoriaGrupo(categoria); }
 
+/* Cor estratigráfica do período — a MESMA paleta da coluna-testemunho do
+   topo da página. Reaproveitá-la no catálogo dá leitura instantânea da
+   idade de cada registro sem precisar ler o texto. */
+const __periodoCorCache = {};
+function periodoCor(nomePeriodo){
+  if(__periodoCorCache[nomePeriodo] !== undefined) return __periodoCorCache[nomePeriodo];
+  const p = DB_PERIODOS.find(x => x.nome === nomePeriodo);
+  return (__periodoCorCache[nomePeriodo] = p ? p.cor : '#8a9b6f');
+}
+
 /* ===========================================================
    NAVEGAÇÃO (SPA entre abas)
    =========================================================== */
@@ -337,7 +347,17 @@ function categoriaPillClass(categoria){ return 'cat-pill cat-' + dbCategoriaGrup
     window.paleoShowView = showView;
 
     navLinks.forEach(link => link.addEventListener('click', () => showView(link.dataset.view)));
-    document.querySelectorAll('[data-goto]').forEach(btn => btn.addEventListener('click', () => showView(btn.dataset.goto)));
+    // delegação: pega também os [data-goto] criados dinamicamente depois
+    // deste ponto (ex.: as fichas do hero, renderizadas em initHome)
+    document.addEventListener('click', e => {
+      const btn = e.target.closest('[data-goto]');
+      if(btn) showView(btn.dataset.goto);
+    });
+    document.addEventListener('keydown', e => {
+      if(e.key !== 'Enter' && e.key !== ' ') return;
+      const btn = e.target.closest('[data-goto][role="button"]');
+      if(btn){ e.preventDefault(); showView(btn.dataset.goto); }
+    });
 
     navToggle.addEventListener('click', () => {
       const open = mainNav.classList.toggle('open');
@@ -378,10 +398,10 @@ function initHome(){
       </div>
       <span class="core-caption">Ediacarano<br>&darr;<br>Quaternário</span>
       <div class="tag-stack">
-        <div class="stat-card tag-1"><span class="stat-num">${DB_FOSSEIS.length}</span><span class="stat-label">Registros</span></div>
-        <div class="stat-card tag-2"><span class="stat-num">${nSitios}</span><span class="stat-label">Sítios</span></div>
-        <div class="stat-card tag-3"><span class="stat-num">${periodosCount}</span><span class="stat-label">Períodos</span></div>
-        <div class="stat-card tag-4"><span class="stat-num">${nInst}</span><span class="stat-label">Instituições</span></div>
+        <div class="stat-card tag-1" data-goto="catalogo" role="button" tabindex="0"><span class="stat-num">${DB_FOSSEIS.length}</span><span class="stat-label">Registros</span></div>
+        <div class="stat-card tag-2" data-goto="mapa" role="button" tabindex="0"><span class="stat-num">${nSitios}</span><span class="stat-label">Sítios</span></div>
+        <div class="stat-card tag-3" data-goto="periodos" role="button" tabindex="0"><span class="stat-num">${periodosCount}</span><span class="stat-label">Períodos</span></div>
+        <div class="stat-card tag-4" data-goto="instituicoes" role="button" tabindex="0"><span class="stat-num">${nInst}</span><span class="stat-label">Instituições</span></div>
       </div>
     </div>
   `;
@@ -393,14 +413,24 @@ function initHome(){
   const eraColors = { 'Neoproterozóico / Cambriano':'#1f4e5f','Paleozóico — Carbonífero':'#3d6b52','Paleozóico — Permiano':'#7fa66b','Mesozóico':'#c9a23a','Cenozóico — Quaternário':'#b5651d' };
   const counts = {};
   DB_FOSSEIS.forEach(f => { counts[f.era] = (counts[f.era]||0) + 1; });
+  const total = DB_FOSSEIS.length;
   const max = Math.max(...Object.values(counts));
-  document.getElementById('eraBars').innerHTML = eraOrder.filter(e => counts[e]).map(e => `
+  document.getElementById('eraBars').innerHTML = eraOrder.filter(e => counts[e]).map(e => {
+    // largura mínima de 4%: a distribuição é muito desigual (o Permiano
+    // domina), e sem piso as eras pequenas viravam traços invisíveis
+    const w = Math.max(4, counts[e] / max * 100);
+    const pct = (counts[e] / total * 100).toFixed(counts[e] / total < 0.1 ? 1 : 0);
+    return `
     <div class="era-bar-row">
       <span class="era-bar-label">${e}</span>
-      <span class="era-bar-track"><span class="era-bar-fill" style="width:${(counts[e]/max*100).toFixed(0)}%; background:${eraColors[e]}"></span></span>
-      <span class="era-bar-count">${counts[e]}</span>
+      <span class="era-bar-track"><span class="era-bar-fill" style="width:${w.toFixed(1)}%; background:${eraColors[e]}"></span></span>
+      <span class="era-bar-count">${counts[e]}<i>${pct}%</i></span>
     </div>
-  `).join('');
+  `;}).join('');
+
+  // contagem sempre em sincronia com o banco (antes estava fixa em "97")
+  const featCount = document.getElementById('featCount');
+  if(featCount) featCount.textContent = DB_FOSSEIS.length;
 }
 
 /* ===========================================================
@@ -479,18 +509,18 @@ function renderCatalog(){
 function renderCatalogCards(list){
   const wrap = document.getElementById('catalogCards');
   wrap.innerHTML = list.map(f => `
-    <article class="fossil-card" data-id="${f.id}" tabindex="0">
+    <article class="fossil-card" data-id="${f.id}" tabindex="0" style="--per-cor:${periodoCor(f.periodo)}">
       <span class="fossil-tagno">Nº ${String(f.id).padStart(3,'0')}</span>
       <div class="card-top">
         <h3 class="fossil-taxon">${f.taxon}</h3>
         <span class="${categoriaPillClass(f.categoria)}">${categoriaShort(f.categoria)}</span>
       </div>
-      <span class="fossil-period">${f.periodo} &middot; ${f.idade_ma}</span>
+      <span class="fossil-period"><i class="per-dot"></i>${f.periodo} &middot; ${f.idade_ma}</span>
       <div class="fossil-meta">
-        <span><b>Formação:</b> ${f.formacao}</span>
-        <span><b>Município:</b> ${f.municipio}</span>
-        <span><b>Guarda:</b> ${f.armazenamento}</span>
+        <span><b>Formação</b>${f.formacao}</span>
+        <span><b>Município</b>${f.municipio}</span>
       </div>
+      <span class="fossil-guarda">${f.armazenamento}</span>
     </article>
   `).join('');
   wrap.querySelectorAll('.fossil-card').forEach(card => {
@@ -502,9 +532,9 @@ function renderCatalogCards(list){
 function renderCatalogTable(list){
   const tbody = document.getElementById('catalogTableBody');
   tbody.innerHTML = list.map(f => `
-    <tr data-id="${f.id}">
+    <tr data-id="${f.id}" style="--per-cor:${periodoCor(f.periodo)}">
       <td class="fossil-taxon">${f.taxon}</td>
-      <td>${f.periodo}</td>
+      <td class="td-periodo"><i class="per-dot"></i>${f.periodo}</td>
       <td>${f.formacao}</td>
       <td>${f.municipio}</td>
       <td>${f.armazenamento}</td>
