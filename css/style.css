@@ -316,13 +316,17 @@ body::before{
   padding: 1.2rem 1.15rem 1rem 1.4rem; cursor:pointer;
   transition: box-shadow .18s ease, transform .18s ease, border-color .18s ease;
   display:flex; flex-direction:column; gap:0.45rem;
-  overflow:hidden;
 }
 /* faixa estratigráfica: cor do período geológico do próprio registro —
-   mesma paleta da coluna-testemunho do topo da página */
+   mesma paleta da coluna-testemunho do topo da página.
+   NÃO usar overflow:hidden no card: a etiqueta de tombo fica em top:-8px,
+   propositalmente para fora, e seria decepada. A própria faixa é
+   arredondada para acompanhar o canto do cartão. */
 .fossil-card::before{
   content:""; position:absolute; left:0; top:0; bottom:0; width:5px;
-  background: var(--per-cor, var(--moss-lt)); transition: width .18s ease;
+  background: var(--per-cor, var(--moss-lt));
+  border-radius: var(--radius-md) 0 0 var(--radius-md);
+  transition: width .18s ease;
 }
 .fossil-card:hover{ box-shadow: var(--shadow-md); transform: translateY(-3px); border-color: var(--petrol-lt); }
 .fossil-card:hover::before{ width:8px; }
