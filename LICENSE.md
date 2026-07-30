@@ -1,5 +1,7 @@
 # Licenças do Paleo-SC
 
+Compilação e organização: **Brenno Alef Benk**.
+
 Este repositório tem **três camadas** com termos diferentes. A distinção
 importa: um banco de dados científico precisa deixar claro o que pode ser
 reusado, por quem e sob quais condições.
@@ -17,9 +19,12 @@ https://creativecommons.org/licenses/by/4.0/deed.pt-BR
 Você pode copiar, redistribuir, adaptar e usar para qualquer fim,
 inclusive comercial, **desde que atribua o crédito**:
 
-> Paleo-SC — Banco de Dados Paleontológico de Santa Catarina.
-> Disponível em: https://brennobenk1.github.io/PaleontologiaSC/
-> Acesso em: [data].
+> BENK, Brenno Alef. Banco de Dados Paleontológico de Santa Catarina.
+> Versão [x]. 2026. Disponível em:
+> https://brennobenk1.github.io/PaleontologiaSC/. Acesso em: [data].
+
+O rodapé do site gera essa citação pronta nos formatos ABNT, APA e
+BibTeX, já com a versão e a data de acesso preenchidas.
 
 O que está licenciado aqui é a **compilação** — a seleção, organização,
 verificação e o cruzamento dos registros. Fatos científicos isolados

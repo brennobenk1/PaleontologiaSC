@@ -6,6 +6,42 @@ saber o que havia nele naquele momento.
 
 Formato: as versões seguem `ANO.MÊS.N`.
 
+## 2026.07.2 — 28/07/2026
+
+### Acessibilidade
+- **Contraste corrigido.** Sete estilos usavam texto entre 45% e 60% de
+  opacidade; o pior caso dava 2,80:1, abaixo do mínimo WCAG AA (4,5:1) —
+  e afetava os rótulos de todos os cartões. Agora há um token único
+  (`--texto-suave`, 0,68) calculado para passar sobre o fundo mais
+  escuro em uso.
+
+### Confiabilidade
+- `scripts/validar.py`: as verificações de integridade que vinham sendo
+  feitas à mão viraram script versionado (escopo geográfico, coerência
+  formação × bacia, mapa × catálogo, contagens, campos obrigatórios).
+- GitHub Action roda a validação a cada push e pull request.
+- `LICENSE.md`: dados sob CC BY 4.0, código sob MIT, material de
+  terceiros fora do escopo. Antes não havia nada.
+
+### Desempenho
+- **Logo: 512 KB → 3 KB.** Estava em 1254×1254 px sendo exibida a 42×42.
+  Gerados `logo-96.png` (interface) e `logo-512.png` (compartilhamento).
+- Cartões passam a renderizar em lotes de 36 conforme a rolagem, em vez
+  de 158 de uma vez.
+- Carga em 3G lento: 19,7 s → 9,6 s; transferência 940 KB → 432 KB
+  (sem gzip; no GitHub Pages, com gzip, fica em torno de 92 KB).
+- Corrigido erro latente no `ready()`: com `<script defer>` a
+  inicialização rodava antes das declarações `let`, quebrando a página.
+
+### Conteúdo
+- **+6 registros do Afloramento de Canoinhas** (SIGEP 126), incluindo
+  *Krauselcladus canoinhensis* — única ocorrência do gênero em toda a
+  Bacia do Paraná e única conífera do Guadalupiano da porção gondwânica
+  brasileira. Novo município e primeira ocorrência da Fm. Teresina.
+- Nova época na linha do tempo: **Permiano Médio (Guadalupiano)**,
+  273,0–259,1 Ma, que não existia no banco.
+- Catálogo: 158 → 164 registros.
+
 ## 2026.07.1 — 28/07/2026
 
 ### Estrutura
