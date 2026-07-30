@@ -3,9 +3,9 @@
     "site": "Afloramento Campáleo (Mafra)",
     "municipio": "Mafra",
     "bacia": "Bacia do Paraná — Grupo Itararé",
-    "lat": -26.1112,
-    "lon": -49.805,
-    "count": 36,
+    "lat": -26.1583,
+    "lon": -49.8147,
+    "count": 39,
     "periodos": [
       "Permiano Inferior (Asseliano)",
       "Permiano Inferior (Cisuraliano)"
@@ -16,7 +16,9 @@
       "Symmoriiformes gen. et sp. nov.",
       "Chondrichthyes indet. (2 dentes)",
       "Crossopterygii (celacanto) — morfotipos de escamas"
-    ]
+    ],
+    "x": 466.9,
+    "y": 54.5
   },
   {
     "site": "Assembleia Taió",
@@ -34,7 +36,9 @@
       "Schizodus occidentalis",
       "Stutchiburia brasiliensis",
       "Edmondia sp."
-    ]
+    ],
+    "x": 447.4,
+    "y": 255.4
   },
   {
     "site": "Pedreira Águas Claras",
@@ -52,7 +56,9 @@
       "Diplopodichnus biformis",
       "Maculichna varia",
       "Umfolozia sinuosa"
-    ]
+    ],
+    "x": 486.5,
+    "y": 277.6
   },
   {
     "site": "Pedreiras de Trombudo Central",
@@ -70,7 +76,9 @@
       "Gluckstadtella elongata isp. nov.",
       "Helminthoidichnites tenuis",
       "Mermia carickensis"
-    ]
+    ],
+    "x": 469.1,
+    "y": 296.6
   },
   {
     "site": "Região de Itajaí / BR-470",
@@ -89,7 +97,9 @@
       "Cyclomedusa sp.",
       "Chancelloria sp.",
       "Aspidella sp."
-    ]
+    ],
+    "x": 598.7,
+    "y": 212.8
   },
   {
     "site": "Afloramentos do norte de SC/PR",
@@ -106,7 +116,9 @@
       "Glossopteris riorastensis (Rohn & Rösler, 1989)",
       "Glossopteris grafi (Rohn & Rösler, 1989)",
       "Glossopteris cf. G. indica / G. surangei (e outros morfotipos)"
-    ]
+    ],
+    "x": 457.1,
+    "y": 52.8
   },
   {
     "site": "Localidade Moema",
@@ -122,7 +134,9 @@
       "Heteropecten catharinae (Reed, 1930)",
       "Myonia costata (Reed, 1930)",
       "Myonia tayoensis (Reed, 1930)"
-    ]
+    ],
+    "x": 456.0,
+    "y": 92.9
   },
   {
     "site": "Pedreira Itaú-Itaúna",
@@ -138,7 +152,9 @@
       "Gordia molassica",
       "Kouphichnium minusculum / Kouphichnium isp.",
       "Isopodichnus isp. (sin. parcial de Cruziana problematica)"
-    ]
+    ],
+    "x": 469.1,
+    "y": 296.6
   },
   {
     "site": "Assembleia Taió (rio Taió)",
@@ -153,7 +169,9 @@
     "taxons_amostra": [
       "Phyllotheca australis (Brongniart, 1828)",
       "Paracalamites australis (Feistmantel, 1876)"
-    ]
+    ],
+    "x": 447.4,
+    "y": 255.4
   },
   {
     "site": "Localidade não especificada (SC)",
@@ -161,15 +179,16 @@
     "bacia": "Não especificado",
     "lat": -27.5,
     "lon": -49.5,
-    "count": 2,
+    "count": 1,
     "periodos": [
       "Cretáceo Inferior",
       "Permiano Inferior"
     ],
     "taxons_amostra": [
-      "Actinopterygii articulado (2 morfotipos)",
-      "Aracoaraichnium leonardii Buck et al., 2017"
-    ]
+      "Actinopterygii articulado (2 morfotipos)"
+    ],
+    "x": 502.9,
+    "y": 337.8
   },
   {
     "site": "Costa de Sombrio (plataforma continental)",
@@ -184,7 +203,9 @@
     "taxons_amostra": [
       "Stegomastodon waringi (Holland, 1920)",
       "Toxodon sp."
-    ]
+    ],
+    "x": 502.9,
+    "y": 700.9
   },
   {
     "site": "Região de Itajaí",
@@ -198,7 +219,9 @@
     ],
     "taxons_amostra": [
       "Acritarcos (Acritarcha indet.)"
-    ]
+    ],
+    "x": 598.7,
+    "y": 212.8
   },
   {
     "site": "Afloramento Bainha",
@@ -206,13 +229,19 @@
     "bacia": "Bacia do Paraná — Fm. Rio Bonito",
     "lat": -28.6775,
     "lon": -49.3697,
-    "count": 1,
+    "count": 58,
     "periodos": [
       "Permiano Inferior"
     ],
     "taxons_amostra": [
-      "Glossopteris sp. (flora de Glossopteris)"
-    ]
+      "Glossopteris browniana Brongniart",
+      "Gangamopteris rigbyi Bernardes-de-Oliveira",
+      "Notocalamites askosus Rigby (endêmico)",
+      "Arberiopsis boureaui Bernardes-de-Oliveira (endêmico)",
+      "Samaropsis bainhensis Millan"
+    ],
+    "x": 517.7,
+    "y": 586.4
   },
   {
     "site": "Geoparque Caminhos dos Cânions do Sul",
@@ -226,7 +255,9 @@
     ],
     "taxons_amostra": [
       "Paleotocas (icnofósseis de escavação — Dasypodidae / Mylodontidae)"
-    ]
+    ],
+    "x": 452.6,
+    "y": 694.6
   },
   {
     "site": "Planície litorânea sul de SC",
@@ -240,7 +271,9 @@
     ],
     "taxons_amostra": [
       "Tatu-gigante (Propraopus sp. / Glyptodon sp. — osteodermos)"
-    ]
+    ],
+    "x": 508.6,
+    "y": 643.9
   },
   {
     "site": "Lagoa do Sombrio",
@@ -254,7 +287,9 @@
     ],
     "taxons_amostra": [
       "Registro paleoambiental (fitólitos, palinomorfos)"
-    ]
+    ],
+    "x": 487.9,
+    "y": 678.4
   },
   {
     "site": "Afloramento de Rio dos Cedros",
@@ -268,7 +303,9 @@
     ],
     "taxons_amostra": [
       "Biota fóssil similar ao Campáleo (larvas, coprólitos, braquiópodes, esponjas, peixes)"
-    ]
+    ],
+    "x": 528.2,
+    "y": 158.0
   },
   {
     "site": "Lauro Müller",
@@ -282,7 +319,9 @@
     ],
     "taxons_amostra": [
       "Paleotoca (icnofóssil de escavação — Xenarthra: tatus, preguiças, tamanduás)"
-    ]
+    ],
+    "x": 516.4,
+    "y": 528.8
   },
   {
     "site": "Litoral sul de SC",
@@ -296,7 +335,9 @@
     ],
     "taxons_amostra": [
       "Theropoda indet. (afim. Carnosauria) — pista bípede"
-    ]
+    ],
+    "x": 508.6,
+    "y": 643.9
   },
   {
     "site": "Plataforma continental Passo de Torres–Araranguá",
@@ -310,7 +351,9 @@
     ],
     "taxons_amostra": [
       "Lestodon armatus Gervais, 1855"
-    ]
+    ],
+    "x": 497.1,
+    "y": 713.6
   },
   {
     "site": "Afloramento de Anitápolis",
@@ -324,7 +367,9 @@
     ],
     "taxons_amostra": [
       "Pterichnus mauryae isp. nov."
-    ]
+    ],
+    "x": 544.1,
+    "y": 419.5
   },
   {
     "site": "Morro Grande",
@@ -338,7 +383,9 @@
     ],
     "taxons_amostra": [
       "Paleotoca Furnas Xocleng (icnofóssil de escavação — Xenarthra)"
-    ]
+    ],
+    "x": 497.8,
+    "y": 582.9
   },
   {
     "site": "Timbé do Sul (rio Rocinha)",
@@ -352,7 +399,9 @@
     ],
     "taxons_amostra": [
       "Paleotoca Toca do Tatu (icnofóssil de escavação — Xenarthra)"
-    ]
+    ],
+    "x": 455.1,
+    "y": 617.4
   },
   {
     "site": "Paleotoca do Engenho Velho",
@@ -366,7 +415,9 @@
     ],
     "taxons_amostra": [
       "Paleotocas adicionais (Jacinto Machado e Praia Grande, SC)"
-    ]
+    ],
+    "x": 466.7,
+    "y": 661.5
   },
   {
     "site": "Entre Valões e Poço Preto",
@@ -380,6 +431,40 @@
     ],
     "taxons_amostra": [
       "Estheria sp. / Leaia sp. (filópodos)"
-    ]
+    ],
+    "x": 408.4,
+    "y": 404.6
+  },
+  {
+    "site": "Pedreira de Turvo",
+    "municipio": "Turvo",
+    "bacia": "Bacia do Paraná — Fm. Botucatu",
+    "lat": -28.9272,
+    "lon": -49.6831,
+    "count": 1,
+    "periodos": [
+      "Cretáceo Inferior"
+    ],
+    "taxons_amostra": [
+      "Mammaliaformes indet. (cf. Aracoaraichnium) — pista com 4 pegadas"
+    ],
+    "x": 481.9,
+    "y": 639.1
+  },
+  {
+    "site": "Rio Negro (Três Barras)",
+    "municipio": "Três Barras",
+    "bacia": "Bacia do Paraná — Fm. Irati",
+    "lat": -26.1056,
+    "lon": -50.3197,
+    "count": 1,
+    "periodos": [
+      "Permiano Inferior"
+    ],
+    "taxons_amostra": [
+      "Mesosauridae indet. (mesossauro)"
+    ],
+    "x": 409.2,
+    "y": 43.4
   }
 ]

@@ -1,0 +1,164 @@
+[
+  {
+    "uf": "AC",
+    "estado": "Acre",
+    "regiao": "Norte",
+    "registros": 8
+  },
+  {
+    "uf": "AM",
+    "estado": "Amazonas",
+    "regiao": "Norte",
+    "registros": 1
+  },
+  {
+    "uf": "PA",
+    "estado": "Pará",
+    "regiao": "Norte",
+    "registros": 1
+  },
+  {
+    "uf": "RR",
+    "estado": "Roraima",
+    "regiao": "Norte",
+    "registros": 1
+  },
+  {
+    "uf": "TO",
+    "estado": "Tocantins",
+    "regiao": "Norte",
+    "registros": 5
+  },
+  {
+    "uf": "AP",
+    "estado": "Amapá",
+    "regiao": "Norte",
+    "registros": 0
+  },
+  {
+    "uf": "RO",
+    "estado": "Rondônia",
+    "regiao": "Norte",
+    "registros": 0
+  },
+  {
+    "uf": "AL",
+    "estado": "Alagoas",
+    "regiao": "Nordeste",
+    "registros": 1
+  },
+  {
+    "uf": "BA",
+    "estado": "Bahia",
+    "regiao": "Nordeste",
+    "registros": 13
+  },
+  {
+    "uf": "CE",
+    "estado": "Ceará",
+    "regiao": "Nordeste",
+    "registros": 77
+  },
+  {
+    "uf": "PE",
+    "estado": "Pernambuco",
+    "regiao": "Nordeste",
+    "registros": 4
+  },
+  {
+    "uf": "PI",
+    "estado": "Piauí",
+    "regiao": "Nordeste",
+    "registros": 35
+  },
+  {
+    "uf": "RN",
+    "estado": "Rio Grande do Norte",
+    "regiao": "Nordeste",
+    "registros": 4
+  },
+  {
+    "uf": "MA",
+    "estado": "Maranhão",
+    "regiao": "Nordeste",
+    "registros": 0
+  },
+  {
+    "uf": "PB",
+    "estado": "Paraíba",
+    "regiao": "Nordeste",
+    "registros": 0
+  },
+  {
+    "uf": "SE",
+    "estado": "Sergipe",
+    "regiao": "Nordeste",
+    "registros": 0
+  },
+  {
+    "uf": "GO",
+    "estado": "Goiás",
+    "regiao": "Centro-Oeste",
+    "registros": 13
+  },
+  {
+    "uf": "MT",
+    "estado": "Mato Grosso",
+    "regiao": "Centro-Oeste",
+    "registros": 1
+  },
+  {
+    "uf": "MS",
+    "estado": "Mato Grosso do Sul",
+    "regiao": "Centro-Oeste",
+    "registros": 0
+  },
+  {
+    "uf": "DF",
+    "estado": "Distrito Federal",
+    "regiao": "Centro-Oeste",
+    "registros": 0
+  },
+  {
+    "uf": "MG",
+    "estado": "Minas Gerais",
+    "regiao": "Sudeste",
+    "registros": 174
+  },
+  {
+    "uf": "RJ",
+    "estado": "Rio de Janeiro",
+    "regiao": "Sudeste",
+    "registros": 38
+  },
+  {
+    "uf": "SP",
+    "estado": "São Paulo",
+    "regiao": "Sudeste",
+    "registros": 22
+  },
+  {
+    "uf": "ES",
+    "estado": "Espírito Santo",
+    "regiao": "Sudeste",
+    "registros": 0
+  },
+  {
+    "uf": "PR",
+    "estado": "Paraná",
+    "regiao": "Sul",
+    "registros": 1
+  },
+  {
+    "uf": "RS",
+    "estado": "Rio Grande do Sul",
+    "regiao": "Sul",
+    "registros": 5
+  },
+  {
+    "uf": "SC",
+    "estado": "Santa Catarina",
+    "regiao": "Sul",
+    "registros": 1
+  }
+]

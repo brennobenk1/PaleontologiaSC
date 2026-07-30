@@ -1,4 +1,18 @@
 #!/usr/bin/env python3
+# ============================================================
+#  OBSOLETO — NÃO USE
+# ------------------------------------------------------------
+#  Este script ia da planilha .xlsx para data/*.json, mas o site
+#  nunca leu a pasta data/, e as duas fontes divergiram (data/
+#  parou em 97 registros; o site já tinha 158).
+#
+#  O fluxo agora é o inverso e tem fonte única:
+#      js/dados.js  ->  scripts/exportar-dados.py  ->  data/*.json
+#
+#  Rodar este arquivo SOBRESCREVERIA data/ com dados antigos da
+#  planilha. Mantido apenas como referência histórica.
+# ============================================================
+
 """
 gerar_dados.py
 ================

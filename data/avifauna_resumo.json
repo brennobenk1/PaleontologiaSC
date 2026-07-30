@@ -1,0 +1,13 @@
+{
+  "total_registros_literatura": 669,
+  "generos_extintos_descritos": 19,
+  "especies_extintas_descritas": 22,
+  "taxons_total_catalogo": 25,
+  "intervalo_temporal": "Cretáceo Inferior (Aptiano, ~115 Ma) ao Holoceno mais recente",
+  "sitio_mais_diverso_nao_quaternario": "Formação Tremembé (Bacia de Taubaté, SP)",
+  "sitio_mais_completo_quaternario": "Carste de Lagoa Santa (MG)",
+  "mais_antigo_registro": "Kaririavis mater e Cratoavis cearensis — Formação Crato, Aptiano (~115 Ma)",
+  "fonte_principal": "Nascimento, R.S. & Silveira, L.F. (2024) Fossil and subfossil birds of Brazil. Zoologia 41: e23079.",
+  "fonte_secundaria": "Nascimento, R.S. (2022) Fossil Birds of Brazil. Dissertação de Mestrado, MZUSP.",
+  "nota_mesozoico": "Os 16 gêneros/20 espécies do levantamento original de Nascimento & Silveira (2024) cobrem o registro até a data de submissão; Navaornis hestiae (Chiappe et al., 2024, Nature) foi publicado de forma independente e é aqui somado aos táxons mesozoicos formalmente descritos."
+}
