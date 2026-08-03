@@ -393,7 +393,7 @@ function openFossilModal(id){
       <h4>Fontes / verificação</h4>
       <ul class="modal-sources">
         ${f.doi ? `<li><a class="fonte-doi" href="https://doi.org/${f.doi}" target="_blank" rel="noopener noreferrer"><i>DOI</i> ${f.doi}</a></li>` : ''}
-        ${f.fontes.map(u => u.startsWith('http')
+        ${f.fontes.filter(u => !(f.doi && u.includes('doi.org/' + f.doi))).map(u => u.startsWith('http')
           ? `<li><a href="${u}" target="_blank" rel="noopener noreferrer"><i class="fonte-tipo ${classeFonte(u)}">${rotuloFonte(u)}</i> ${u}</a></li>`
           : `<li>${u}</li>`).join('')}
       </ul>
@@ -1255,7 +1255,7 @@ function classeFonte(url){
   if(/doi\.org/.test(url)) return 'f-doi';
   if(/researchgate|academia\.edu/.test(url)) return 'f-repo';
   if(/wikipedia/.test(url)) return 'f-wiki';
-  if(/\.gov\.br|periodicos|revistas|scielo|sbpbrasil|lume\.ufrgs|repositorio|sciencedirect|cell\.com|carnetsgeol|sigep/.test(url)) return 'f-cientifica';
+  if(/\.gov\.br|periodicos|revistas|scielo|sbpbrasil|lume\.ufrgs|repositorio|sciencedirect|cell\.com|carnetsgeol|sigep|cambridge\.org|onlinelibrary\.wiley|nature\.com|springer|tandfonline|pubmed|royalsocietypublishing|rsdjournal|revistes\.ub\.edu|proceedings\.science/.test(url)) return 'f-cientifica';
   if(/ndmais|nsctotal|diariodoplanalto|revistaplaneta|portallitoral|destinofloripa|circuitomt|recantodos/.test(url)) return 'f-noticia';
   return 'f-outra';
 }
@@ -1295,7 +1295,7 @@ const CITACAO = {
   // senão a citação sai como "PALEO-SC. Paleo-SC — Banco de Dados..."
   entidade: 'Paleo-SC',
   titulo: 'Banco de Dados Paleontológico de Santa Catarina',
-  versao: '2026.07.5',
+  versao: '2026.07.7',
   ano: '2026',
   url: 'https://brennobenk1.github.io/PaleontologiaSC/'
 };

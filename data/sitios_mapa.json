@@ -555,5 +555,53 @@
     ],
     "x": 589.7,
     "y": 532.0
+  },
+  {
+    "site": "Paleotoca de Urubici (URU-01-P2)",
+    "municipio": "Urubici",
+    "bacia": "Bacia do Paraná / depósitos cenozóicos sobrepostos",
+    "lat": -27.9652,
+    "lon": -49.5092,
+    "count": 1,
+    "periodos": [
+      "Plioceno–Pleistoceno"
+    ],
+    "taxons_amostra": [
+      "Megaichnus major (paleotoca URU-01-P2)"
+    ],
+    "x": 501.8,
+    "y": 436.0
+  },
+  {
+    "site": "Paleotoca de Doutor Pedrinho",
+    "municipio": "Doutor Pedrinho",
+    "bacia": "Bacia do Paraná / depósitos cenozóicos sobrepostos",
+    "lat": -26.7217,
+    "lon": -49.4794,
+    "count": 1,
+    "periodos": [
+      "Plioceno–Pleistoceno"
+    ],
+    "taxons_amostra": [
+      "Megaichnus major (paleotoca de Doutor Pedrinho)"
+    ],
+    "x": 505.2,
+    "y": 173.4
+  },
+  {
+    "site": "Paleotocas de Porto União",
+    "municipio": "Porto União",
+    "bacia": "Bacia do Paraná / depósitos cenozóicos sobrepostos",
+    "lat": -26.2383,
+    "lon": -51.0772,
+    "count": 1,
+    "periodos": [
+      "Plioceno–Pleistoceno"
+    ],
+    "taxons_amostra": [
+      "Megaichnus isp. (paleotocas de Porto União)"
+    ],
+    "x": 322.6,
+    "y": 71.4
   }
 ]

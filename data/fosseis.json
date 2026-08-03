@@ -968,16 +968,19 @@
     "lon": -49.94,
     "bacia": "Bacia do Paraná — Fm. Botucatu / Cânions",
     "armazenamento": "Geoparque Caminhos dos Cânions do Sul (Morro Grande, Timbé do Sul, Araranguá)",
-    "descritor": "Frank et al. (vários); Simão, G. (geólogo Geoparque, 2025)",
+    "descritor": "Buchmann, F.S.C., Lopes, R.P. & Caron, F. (2009) — Revista Brasileira de Paleontologia 12(3):247–256; Lopes, R.P., Frank, H.T., Buchmann, F.S. & Caron, F. (2017) — Ichnos 24:133–145 (erige Megaichnus igen. nov.) — ocorrência divulgada por: Frank et al. (vários); Simão, G. (geólogo Geoparque, 2025)",
     "unidade_pesquisa": "UNESC / Geoparque UNESCO",
     "idade_ma": "5,33 – 0,012 Ma",
-    "observacoes": "Mais de 40 estruturas identificadas; algumas interconectadas atingem até 340 m; escavadas por preguiças e tatus-gigantes extintos",
+    "observacoes": "ICNOTAXONOMIA: desde Lopes et al. (2017) estas estruturas têm nome formal — o icnogênero Megaichnus, dividido em M. major (atribuído a preguiças-gigantes, Mylodontidae) e M. minor (atribuído a tatus-gigantes, Cingulata). Santa Catarina e Rio Grande do Sul concentram a maior abundância conhecida de paleotocas do mundo, com várias centenas de registros em cada estado. Mais de 40 estruturas identificadas; algumas interconectadas atingem até 340 m; escavadas por preguiças e tatus-gigantes extintos",
     "fontes": [
+      "https://doi.org/10.4072/rbp.2009.3.07",
+      "https://sbpbrasil.org/publications/index.php/rbp/article/download/428/254/9081",
       "https://www.sciencedirect.com/science/article/abs/pii/S0895981124004279 (More than fossils: Paleoburrows as geoheritage...)",
       "https://periodicos.ufpe.br/revistas/index.php/rbgfe/article/view/259418 (Proposta de classificação das paleotocas)",
       "https://ndmais.com.br/animais/cavernas-em-sc-guardam-rastros-de-preguicas-e-tatus-gigantes/"
     ],
-    "citacao_abnt": "VALDATI, J.; BECHTEL, A.P.; GOMES, M.C.V.; DOS SANTOS, Y.R.F.; RICETTI, J.H.Z.; WEINSCHÜTZ, L.C. 2024. More than fossils: Paleoburrows as geoheritage and paleoenvironmental archives in the Caminhos dos Cânions do Sul UNESCO Global Geopark, Southern Brazil. Journal of South American Earth Sciences, 149, 105205. DOI: 10.1016/j.jsames.2024.105205 [Fonte primária]. Disponível em: https://www.sciencedirect.com/science/article/abs/pii/S0895981124004279"
+    "citacao_abnt": "VALDATI, J.; BECHTEL, A.P.; GOMES, M.C.V.; DOS SANTOS, Y.R.F.; RICETTI, J.H.Z.; WEINSCHÜTZ, L.C. 2024. More than fossils: Paleoburrows as geoheritage and paleoenvironmental archives in the Caminhos dos Cânions do Sul UNESCO Global Geopark, Southern Brazil. Journal of South American Earth Sciences, 149, 105205. DOI: 10.1016/j.jsames.2024.105205 [Fonte primária]. Disponível em: https://www.sciencedirect.com/science/article/abs/pii/S0895981124004279",
+    "doi": "10.4072/rbp.2009.3.07"
   },
   {
     "id": 39,
@@ -1125,15 +1128,18 @@
     "lon": -49.3811,
     "bacia": "Bacia do Paraná — Fm. Rio Bonito",
     "armazenamento": "UDESC — Laboratório de Geografia/Geologia (FAED)",
-    "descritor": "Valdati, J. et al. (UDESC FAEd — divulgação 2025/2026)",
+    "descritor": "Buchmann, F.S.C., Lopes, R.P. & Caron, F. (2009) — Revista Brasileira de Paleontologia 12(3):247–256; Lopes, R.P., Frank, H.T., Buchmann, F.S. & Caron, F. (2017) — Ichnos 24:133–145 (erige Megaichnus igen. nov.)",
     "unidade_pesquisa": "UDESC",
     "idade_ma": "2,58 Ma – 11.700 a",
-    "observacoes": "1º registro documentado deste tipo de icnofóssil em rochas da Fm. Rio Bonito e na Depressão da Zona Carbonífera Catarinense; estrutura de habitação distinta das paleotocas já catalogadas no Geoparque Caminhos dos Cânions do Sul",
+    "observacoes": "ICNOTAXONOMIA: desde Lopes et al. (2017) estas estruturas têm nome formal — o icnogênero Megaichnus, dividido em M. major (atribuído a preguiças-gigantes, Mylodontidae) e M. minor (atribuído a tatus-gigantes, Cingulata). Santa Catarina e Rio Grande do Sul concentram a maior abundância conhecida de paleotocas do mundo, com várias centenas de registros em cada estado. 1º registro documentado deste tipo de icnofóssil em rochas da Fm. Rio Bonito e na Depressão da Zona Carbonífera Catarinense; estrutura de habitação distinta das paleotocas já catalogadas no Geoparque Caminhos dos Cânions do Sul",
     "fontes": [
+      "https://doi.org/10.4072/rbp.2009.3.07",
+      "https://sbpbrasil.org/publications/index.php/rbp/article/download/428/254/9081",
       "https://www.udesc.br/noticia/pesquisadores_da_udesc_faed_identificam_paleotoca_em_lauro_muller",
       "https://ndmais.com.br/turismo/tunel-misterioso-em-sc-revela-marcas-pre-historicas/"
     ],
-    "citacao_abnt": "VALDATI, J. et al. 2025. Identificação de paleotoca em Lauro Müller, SC. Nota técnica/divulgação institucional, UDESC FAEd. [Fonte secundária — publicação científica indexada não localizada no levantamento desta base]. Disponível em: https://www.udesc.br/noticia/pesquisadores_da_udesc_faed_identificam_paleotoca_em_lauro_muller"
+    "citacao_abnt": "VALDATI, J. et al. 2025. Identificação de paleotoca em Lauro Müller, SC. Nota técnica/divulgação institucional, UDESC FAEd. [Fonte secundária — publicação científica indexada não localizada no levantamento desta base]. Disponível em: https://www.udesc.br/noticia/pesquisadores_da_udesc_faed_identificam_paleotoca_em_lauro_muller",
+    "doi": "10.4072/rbp.2009.3.07"
   },
   {
     "id": 45,
@@ -1151,14 +1157,17 @@
     "lon": -49.8147,
     "bacia": "Bacia do Paraná — Grupo Itararé",
     "armazenamento": "CENPALEO / Museu da Terra e da Vida, UnC, Mafra, SC",
-    "descritor": "Mouro, L.D. et al. (2018, 2020) — Anuário IGEO-UFRJ; Palaeogeogr. Palaeoclimatol. Palaeoecol.",
+    "descritor": "Mouro, L.D., Pacheco, M.L.A.F., Ricetti, J.H.Z., Scomazzon, A.K., Horodyski, R.S., Fernandes, A.C.S., Carvalho, M.A., Weinschütz, L.C., Silva, M.S., Waichel, B.L. & Scherer, C.M.S. (2020) — Palaeogeography, Palaeoclimatology, Palaeoecology 555:109850; Mouro, L.D., Ricetti, J.H.Z., Weinschütz, L.C. & Pacheco, M.L.A.F. (2021) — \"Folhelho Lontras, uma Lagerstätte do Paleozoico brasileiro\", in Jelinek & Sommer (eds.), Contribuições à Geologia do RS e de SC, SBG/Compasso Lugar-Cultura, p.203–221",
     "unidade_pesquisa": "CENPALEO/UnC",
     "idade_ma": "ca. 298,9 Ma",
     "observacoes": "Pelo menos duas conchas comprimidas e não identificadas em nível específico; preservadas como filme carbonoso/pirita, sem carbonato de cálcio original; afinidade morfológica com Uraloceras",
     "fontes": [
+      "https://doi.org/10.1016/j.palaeo.2020.109850",
+      "https://www.sciencedirect.com/science/article/abs/pii/S0031018220302959",
       "https://en.wikipedia.org/wiki/Lontras_Shale_Lagerst%C3%A4tte (compila Mouro et al. 2018/2020)"
     ],
-    "citacao_abnt": "MOURO, L.D.; FERNANDES, A.C.S.; CARVALHO, M.A.; WEINSCHÜTZ, L.C. 2018. O Folhelho Lontras (Permiano, Bacia do Paraná) e seus fósseis: descoberta, identificação e conhecimento atual. Anuário do Instituto de Geociências – UFRJ, 41(2), 636–646. DOI: 10.11137/2018_2_636_646 [Fonte primária]. Disponível em: https://revistas.ufrj.br/index.php/aigeo | MOURO, L.D.; FERNANDES, A.C.S.; CARVALHO, M.A. et al. 2020. Lontras Shale (Paraná Basin, Brazil): Insightful analysis and commentaries on paleoenvironment and fossil preservation into a deglaciation pulse of the Late Paleozoic Ice Age. Palaeogeography, Palaeoclimatology, Palaeoecology, 555, 109850. DOI: 10.1016/j.palaeo.2020.109850 [Fonte primária]. Disponível em: https://www.sciencedirect.com/science/article/abs/pii/S0031018220302959"
+    "citacao_abnt": "MOURO, L.D.; FERNANDES, A.C.S.; CARVALHO, M.A.; WEINSCHÜTZ, L.C. 2018. O Folhelho Lontras (Permiano, Bacia do Paraná) e seus fósseis: descoberta, identificação e conhecimento atual. Anuário do Instituto de Geociências – UFRJ, 41(2), 636–646. DOI: 10.11137/2018_2_636_646 [Fonte primária]. Disponível em: https://revistas.ufrj.br/index.php/aigeo | MOURO, L.D.; FERNANDES, A.C.S.; CARVALHO, M.A. et al. 2020. Lontras Shale (Paraná Basin, Brazil): Insightful analysis and commentaries on paleoenvironment and fossil preservation into a deglaciation pulse of the Late Paleozoic Ice Age. Palaeogeography, Palaeoclimatology, Palaeoecology, 555, 109850. DOI: 10.1016/j.palaeo.2020.109850 [Fonte primária]. Disponível em: https://www.sciencedirect.com/science/article/abs/pii/S0031018220302959",
+    "doi": "10.1016/j.palaeo.2020.109850"
   },
   {
     "id": 46,
@@ -1176,14 +1185,17 @@
     "lon": -49.8147,
     "bacia": "Bacia do Paraná — Grupo Itararé",
     "armazenamento": "CENPALEO / Museu da Terra e da Vida, UnC, Mafra, SC",
-    "descritor": "Mouro, L.D. et al. (2018, 2020) — Anuário IGEO-UFRJ; Palaeogeogr. Palaeoclimatol. Palaeoecol.",
+    "descritor": "Mouro, L.D., Pacheco, M.L.A.F., Ricetti, J.H.Z., Scomazzon, A.K., Horodyski, R.S., Fernandes, A.C.S., Carvalho, M.A., Weinschütz, L.C., Silva, M.S., Waichel, B.L. & Scherer, C.M.S. (2020) — Palaeogeography, Palaeoclimatology, Palaeoecology 555:109850; Mouro, L.D., Ricetti, J.H.Z., Weinschütz, L.C. & Pacheco, M.L.A.F. (2021) — \"Folhelho Lontras, uma Lagerstätte do Paleozoico brasileiro\", in Jelinek & Sommer (eds.), Contribuições à Geologia do RS e de SC, SBG/Compasso Lugar-Cultura, p.203–221",
     "unidade_pesquisa": "CENPALEO/UnC",
     "idade_ma": "ca. 298,9 Ma",
     "observacoes": "Registro raro de gastrópode na biota do Folhelho Lontras",
     "fontes": [
-      "https://en.wikipedia.org/wiki/Lontras_Shale_Lagerst%C3%A4tte"
+      "https://doi.org/10.1016/j.palaeo.2020.109850",
+      "https://www.sciencedirect.com/science/article/abs/pii/S0031018220302959",
+      "https://en.wikipedia.org/wiki/Lontras_Shale_Lagerst%C3%A4tte (compilação secundária — referência primária no campo Descritor)"
     ],
-    "citacao_abnt": "MOURO, L.D.; FERNANDES, A.C.S.; CARVALHO, M.A.; WEINSCHÜTZ, L.C. 2018. O Folhelho Lontras (Permiano, Bacia do Paraná) e seus fósseis: descoberta, identificação e conhecimento atual. Anuário do Instituto de Geociências – UFRJ, 41(2), 636–646. DOI: 10.11137/2018_2_636_646 [Fonte primária]. Disponível em: https://revistas.ufrj.br/index.php/aigeo | MOURO, L.D.; FERNANDES, A.C.S.; CARVALHO, M.A. et al. 2020. Lontras Shale (Paraná Basin, Brazil): Insightful analysis and commentaries on paleoenvironment and fossil preservation into a deglaciation pulse of the Late Paleozoic Ice Age. Palaeogeography, Palaeoclimatology, Palaeoecology, 555, 109850. DOI: 10.1016/j.palaeo.2020.109850 [Fonte primária]. Disponível em: https://www.sciencedirect.com/science/article/abs/pii/S0031018220302959"
+    "citacao_abnt": "MOURO, L.D.; FERNANDES, A.C.S.; CARVALHO, M.A.; WEINSCHÜTZ, L.C. 2018. O Folhelho Lontras (Permiano, Bacia do Paraná) e seus fósseis: descoberta, identificação e conhecimento atual. Anuário do Instituto de Geociências – UFRJ, 41(2), 636–646. DOI: 10.11137/2018_2_636_646 [Fonte primária]. Disponível em: https://revistas.ufrj.br/index.php/aigeo | MOURO, L.D.; FERNANDES, A.C.S.; CARVALHO, M.A. et al. 2020. Lontras Shale (Paraná Basin, Brazil): Insightful analysis and commentaries on paleoenvironment and fossil preservation into a deglaciation pulse of the Late Paleozoic Ice Age. Palaeogeography, Palaeoclimatology, Palaeoecology, 555, 109850. DOI: 10.1016/j.palaeo.2020.109850 [Fonte primária]. Disponível em: https://www.sciencedirect.com/science/article/abs/pii/S0031018220302959",
+    "doi": "10.1016/j.palaeo.2020.109850"
   },
   {
     "id": 47,
@@ -1201,14 +1213,17 @@
     "lon": -49.8147,
     "bacia": "Bacia do Paraná — Grupo Itararé",
     "armazenamento": "CENPALEO / Museu da Terra e da Vida, UnC, Mafra, SC",
-    "descritor": "Mouro, L.D. et al. (2018, 2020) — Anuário IGEO-UFRJ; Palaeogeogr. Palaeoclimatol. Palaeoecol.",
+    "descritor": "Mouro, L.D., Pacheco, M.L.A.F., Ricetti, J.H.Z., Scomazzon, A.K., Horodyski, R.S., Fernandes, A.C.S., Carvalho, M.A., Weinschütz, L.C., Silva, M.S., Waichel, B.L. & Scherer, C.M.S. (2020) — Palaeogeography, Palaeoclimatology, Palaeoecology 555:109850; Mouro, L.D., Ricetti, J.H.Z., Weinschütz, L.C. & Pacheco, M.L.A.F. (2021) — \"Folhelho Lontras, uma Lagerstätte do Paleozoico brasileiro\", in Jelinek & Sommer (eds.), Contribuições à Geologia do RS e de SC, SBG/Compasso Lugar-Cultura, p.203–221",
     "unidade_pesquisa": "CENPALEO/UnC",
     "idade_ma": "ca. 298,9 Ma",
     "observacoes": "Braquiópode quonetídeo da biota do Campáleo; espécimes geralmente de tamanho diminuto",
     "fontes": [
-      "https://en.wikipedia.org/wiki/Lontras_Shale_Lagerst%C3%A4tte"
+      "https://doi.org/10.1016/j.palaeo.2020.109850",
+      "https://www.sciencedirect.com/science/article/abs/pii/S0031018220302959",
+      "https://en.wikipedia.org/wiki/Lontras_Shale_Lagerst%C3%A4tte (compilação secundária — referência primária no campo Descritor)"
     ],
-    "citacao_abnt": "MOURO, L.D.; FERNANDES, A.C.S.; CARVALHO, M.A.; WEINSCHÜTZ, L.C. 2018. O Folhelho Lontras (Permiano, Bacia do Paraná) e seus fósseis: descoberta, identificação e conhecimento atual. Anuário do Instituto de Geociências – UFRJ, 41(2), 636–646. DOI: 10.11137/2018_2_636_646 [Fonte primária]. Disponível em: https://revistas.ufrj.br/index.php/aigeo | MOURO, L.D.; FERNANDES, A.C.S.; CARVALHO, M.A. et al. 2020. Lontras Shale (Paraná Basin, Brazil): Insightful analysis and commentaries on paleoenvironment and fossil preservation into a deglaciation pulse of the Late Paleozoic Ice Age. Palaeogeography, Palaeoclimatology, Palaeoecology, 555, 109850. DOI: 10.1016/j.palaeo.2020.109850 [Fonte primária]. Disponível em: https://www.sciencedirect.com/science/article/abs/pii/S0031018220302959"
+    "citacao_abnt": "MOURO, L.D.; FERNANDES, A.C.S.; CARVALHO, M.A.; WEINSCHÜTZ, L.C. 2018. O Folhelho Lontras (Permiano, Bacia do Paraná) e seus fósseis: descoberta, identificação e conhecimento atual. Anuário do Instituto de Geociências – UFRJ, 41(2), 636–646. DOI: 10.11137/2018_2_636_646 [Fonte primária]. Disponível em: https://revistas.ufrj.br/index.php/aigeo | MOURO, L.D.; FERNANDES, A.C.S.; CARVALHO, M.A. et al. 2020. Lontras Shale (Paraná Basin, Brazil): Insightful analysis and commentaries on paleoenvironment and fossil preservation into a deglaciation pulse of the Late Paleozoic Ice Age. Palaeogeography, Palaeoclimatology, Palaeoecology, 555, 109850. DOI: 10.1016/j.palaeo.2020.109850 [Fonte primária]. Disponível em: https://www.sciencedirect.com/science/article/abs/pii/S0031018220302959",
+    "doi": "10.1016/j.palaeo.2020.109850"
   },
   {
     "id": 48,
@@ -1231,7 +1246,7 @@
     "idade_ma": "ca. 298,9 Ma",
     "observacoes": "Braquiópode lingulídeo; associado a icnofósseis de bioerosão (Arachnostega isp.) perfurando suas conchas",
     "fontes": [
-      "https://en.wikipedia.org/wiki/Lontras_Shale_Lagerst%C3%A4tte",
+      "https://en.wikipedia.org/wiki/Lontras_Shale_Lagerst%C3%A4tte (compilação secundária — referência primária no campo Descritor)",
       "https://carnetsgeol.net/cg/19/19/CG1919.pdf (Vinn et al. 2019)"
     ],
     "citacao_abnt": "MOURO, L.D.; FERNANDES, A.C.S.; CARVALHO, M.A.; WEINSCHÜTZ, L.C. 2018. O Folhelho Lontras (Permiano, Bacia do Paraná) e seus fósseis: descoberta, identificação e conhecimento atual. Anuário do Instituto de Geociências – UFRJ, 41(2), 636–646. DOI: 10.11137/2018_2_636_646 [Fonte primária]. Disponível em: https://revistas.ufrj.br/index.php/aigeo | MOURO, L.D.; FERNANDES, A.C.S.; CARVALHO, M.A. et al. 2020. Lontras Shale (Paraná Basin, Brazil): Insightful analysis and commentaries on paleoenvironment and fossil preservation into a deglaciation pulse of the Late Paleozoic Ice Age. Palaeogeography, Palaeoclimatology, Palaeoecology, 555, 109850. DOI: 10.1016/j.palaeo.2020.109850 [Fonte primária]. Disponível em: https://www.sciencedirect.com/science/article/abs/pii/S0031018220302959 | VINN, O.; MOURO, L.D.; FERNANDES, A.C.S. 2019. Serpulid polychaetes from the Lontras Shale (Late Pennsylvanian–Early Cisuralian), Paraná Basin, Brazil. Carnets Geol., 19(19), 439–444. DOI: 10.4267/2042/70514 [Fonte primária]. Disponível em: https://carnetsgeol.net/cg/19/19/CG1919.pdf"
@@ -1252,14 +1267,17 @@
     "lon": -49.8147,
     "bacia": "Bacia do Paraná — Grupo Itararé",
     "armazenamento": "CENPALEO / Museu da Terra e da Vida, UnC, Mafra, SC",
-    "descritor": "Mouro, L.D. et al. (2018, 2020) — Anuário IGEO-UFRJ; Palaeogeogr. Palaeoclimatol. Palaeoecol.",
+    "descritor": "Mouro, L.D., Pacheco, M.L.A.F., Ricetti, J.H.Z., Scomazzon, A.K., Horodyski, R.S., Fernandes, A.C.S., Carvalho, M.A., Weinschütz, L.C., Silva, M.S., Waichel, B.L. & Scherer, C.M.S. (2020) — Palaeogeography, Palaeoclimatology, Palaeoecology 555:109850; Mouro, L.D., Ricetti, J.H.Z., Weinschütz, L.C. & Pacheco, M.L.A.F. (2021) — \"Folhelho Lontras, uma Lagerstätte do Paleozoico brasileiro\", in Jelinek & Sommer (eds.), Contribuições à Geologia do RS e de SC, SBG/Compasso Lugar-Cultura, p.203–221",
     "unidade_pesquisa": "CENPALEO/UnC",
     "idade_ma": "ca. 298,9 Ma",
     "observacoes": "Braquiópode beecheriídeo da biota do Campáleo",
     "fontes": [
-      "https://en.wikipedia.org/wiki/Lontras_Shale_Lagerst%C3%A4tte"
+      "https://doi.org/10.1016/j.palaeo.2020.109850",
+      "https://www.sciencedirect.com/science/article/abs/pii/S0031018220302959",
+      "https://en.wikipedia.org/wiki/Lontras_Shale_Lagerst%C3%A4tte (compilação secundária — referência primária no campo Descritor)"
     ],
-    "citacao_abnt": "MOURO, L.D.; FERNANDES, A.C.S.; CARVALHO, M.A.; WEINSCHÜTZ, L.C. 2018. O Folhelho Lontras (Permiano, Bacia do Paraná) e seus fósseis: descoberta, identificação e conhecimento atual. Anuário do Instituto de Geociências – UFRJ, 41(2), 636–646. DOI: 10.11137/2018_2_636_646 [Fonte primária]. Disponível em: https://revistas.ufrj.br/index.php/aigeo | MOURO, L.D.; FERNANDES, A.C.S.; CARVALHO, M.A. et al. 2020. Lontras Shale (Paraná Basin, Brazil): Insightful analysis and commentaries on paleoenvironment and fossil preservation into a deglaciation pulse of the Late Paleozoic Ice Age. Palaeogeography, Palaeoclimatology, Palaeoecology, 555, 109850. DOI: 10.1016/j.palaeo.2020.109850 [Fonte primária]. Disponível em: https://www.sciencedirect.com/science/article/abs/pii/S0031018220302959"
+    "citacao_abnt": "MOURO, L.D.; FERNANDES, A.C.S.; CARVALHO, M.A.; WEINSCHÜTZ, L.C. 2018. O Folhelho Lontras (Permiano, Bacia do Paraná) e seus fósseis: descoberta, identificação e conhecimento atual. Anuário do Instituto de Geociências – UFRJ, 41(2), 636–646. DOI: 10.11137/2018_2_636_646 [Fonte primária]. Disponível em: https://revistas.ufrj.br/index.php/aigeo | MOURO, L.D.; FERNANDES, A.C.S.; CARVALHO, M.A. et al. 2020. Lontras Shale (Paraná Basin, Brazil): Insightful analysis and commentaries on paleoenvironment and fossil preservation into a deglaciation pulse of the Late Paleozoic Ice Age. Palaeogeography, Palaeoclimatology, Palaeoecology, 555, 109850. DOI: 10.1016/j.palaeo.2020.109850 [Fonte primária]. Disponível em: https://www.sciencedirect.com/science/article/abs/pii/S0031018220302959",
+    "doi": "10.1016/j.palaeo.2020.109850"
   },
   {
     "id": 50,
@@ -1277,14 +1295,17 @@
     "lon": -49.8147,
     "bacia": "Bacia do Paraná — Grupo Itararé",
     "armazenamento": "CENPALEO / Museu da Terra e da Vida, UnC, Mafra, SC",
-    "descritor": "Mouro, L.D. et al. (2018, 2020) — Anuário IGEO-UFRJ; Palaeogeogr. Palaeoclimatol. Palaeoecol.",
+    "descritor": "Mouro, L.D., Pacheco, M.L.A.F., Ricetti, J.H.Z., Scomazzon, A.K., Horodyski, R.S., Fernandes, A.C.S., Carvalho, M.A., Weinschütz, L.C., Silva, M.S., Waichel, B.L. & Scherer, C.M.S. (2020) — Palaeogeography, Palaeoclimatology, Palaeoecology 555:109850; Mouro, L.D., Ricetti, J.H.Z., Weinschütz, L.C. & Pacheco, M.L.A.F. (2021) — \"Folhelho Lontras, uma Lagerstätte do Paleozoico brasileiro\", in Jelinek & Sommer (eds.), Contribuições à Geologia do RS e de SC, SBG/Compasso Lugar-Cultura, p.203–221",
     "unidade_pesquisa": "CENPALEO/UnC",
     "idade_ma": "ca. 298,9 Ma",
     "observacoes": "Braquiópode amboceolídeo da biota do Campáleo",
     "fontes": [
-      "https://en.wikipedia.org/wiki/Lontras_Shale_Lagerst%C3%A4tte"
+      "https://doi.org/10.1016/j.palaeo.2020.109850",
+      "https://www.sciencedirect.com/science/article/abs/pii/S0031018220302959",
+      "https://en.wikipedia.org/wiki/Lontras_Shale_Lagerst%C3%A4tte (compilação secundária — referência primária no campo Descritor)"
     ],
-    "citacao_abnt": "MOURO, L.D.; FERNANDES, A.C.S.; CARVALHO, M.A.; WEINSCHÜTZ, L.C. 2018. O Folhelho Lontras (Permiano, Bacia do Paraná) e seus fósseis: descoberta, identificação e conhecimento atual. Anuário do Instituto de Geociências – UFRJ, 41(2), 636–646. DOI: 10.11137/2018_2_636_646 [Fonte primária]. Disponível em: https://revistas.ufrj.br/index.php/aigeo | MOURO, L.D.; FERNANDES, A.C.S.; CARVALHO, M.A. et al. 2020. Lontras Shale (Paraná Basin, Brazil): Insightful analysis and commentaries on paleoenvironment and fossil preservation into a deglaciation pulse of the Late Paleozoic Ice Age. Palaeogeography, Palaeoclimatology, Palaeoecology, 555, 109850. DOI: 10.1016/j.palaeo.2020.109850 [Fonte primária]. Disponível em: https://www.sciencedirect.com/science/article/abs/pii/S0031018220302959"
+    "citacao_abnt": "MOURO, L.D.; FERNANDES, A.C.S.; CARVALHO, M.A.; WEINSCHÜTZ, L.C. 2018. O Folhelho Lontras (Permiano, Bacia do Paraná) e seus fósseis: descoberta, identificação e conhecimento atual. Anuário do Instituto de Geociências – UFRJ, 41(2), 636–646. DOI: 10.11137/2018_2_636_646 [Fonte primária]. Disponível em: https://revistas.ufrj.br/index.php/aigeo | MOURO, L.D.; FERNANDES, A.C.S.; CARVALHO, M.A. et al. 2020. Lontras Shale (Paraná Basin, Brazil): Insightful analysis and commentaries on paleoenvironment and fossil preservation into a deglaciation pulse of the Late Paleozoic Ice Age. Palaeogeography, Palaeoclimatology, Palaeoecology, 555, 109850. DOI: 10.1016/j.palaeo.2020.109850 [Fonte primária]. Disponível em: https://www.sciencedirect.com/science/article/abs/pii/S0031018220302959",
+    "doi": "10.1016/j.palaeo.2020.109850"
   },
   {
     "id": 51,
@@ -1302,14 +1323,17 @@
     "lon": -49.8147,
     "bacia": "Bacia do Paraná — Grupo Itararé",
     "armazenamento": "CENPALEO / Museu da Terra e da Vida, UnC, Mafra, SC",
-    "descritor": "Mouro, L.D. et al. (2018, 2020) — Anuário IGEO-UFRJ; Palaeogeogr. Palaeoclimatol. Palaeoecol.",
+    "descritor": "Mouro, L.D., Pacheco, M.L.A.F., Ricetti, J.H.Z., Scomazzon, A.K., Horodyski, R.S., Fernandes, A.C.S., Carvalho, M.A., Weinschütz, L.C., Silva, M.S., Waichel, B.L. & Scherer, C.M.S. (2020) — Palaeogeography, Palaeoclimatology, Palaeoecology 555:109850; Mouro, L.D., Ricetti, J.H.Z., Weinschütz, L.C. & Pacheco, M.L.A.F. (2021) — \"Folhelho Lontras, uma Lagerstätte do Paleozoico brasileiro\", in Jelinek & Sommer (eds.), Contribuições à Geologia do RS e de SC, SBG/Compasso Lugar-Cultura, p.203–221",
     "unidade_pesquisa": "CENPALEO/UnC",
     "idade_ma": "ca. 298,9 Ma",
     "observacoes": "Braquiópode rugosoquonetídeo da biota do Campáleo",
     "fontes": [
-      "https://en.wikipedia.org/wiki/Lontras_Shale_Lagerst%C3%A4tte"
+      "https://doi.org/10.1016/j.palaeo.2020.109850",
+      "https://www.sciencedirect.com/science/article/abs/pii/S0031018220302959",
+      "https://en.wikipedia.org/wiki/Lontras_Shale_Lagerst%C3%A4tte (compilação secundária — referência primária no campo Descritor)"
     ],
-    "citacao_abnt": "MOURO, L.D.; FERNANDES, A.C.S.; CARVALHO, M.A.; WEINSCHÜTZ, L.C. 2018. O Folhelho Lontras (Permiano, Bacia do Paraná) e seus fósseis: descoberta, identificação e conhecimento atual. Anuário do Instituto de Geociências – UFRJ, 41(2), 636–646. DOI: 10.11137/2018_2_636_646 [Fonte primária]. Disponível em: https://revistas.ufrj.br/index.php/aigeo | MOURO, L.D.; FERNANDES, A.C.S.; CARVALHO, M.A. et al. 2020. Lontras Shale (Paraná Basin, Brazil): Insightful analysis and commentaries on paleoenvironment and fossil preservation into a deglaciation pulse of the Late Paleozoic Ice Age. Palaeogeography, Palaeoclimatology, Palaeoecology, 555, 109850. DOI: 10.1016/j.palaeo.2020.109850 [Fonte primária]. Disponível em: https://www.sciencedirect.com/science/article/abs/pii/S0031018220302959"
+    "citacao_abnt": "MOURO, L.D.; FERNANDES, A.C.S.; CARVALHO, M.A.; WEINSCHÜTZ, L.C. 2018. O Folhelho Lontras (Permiano, Bacia do Paraná) e seus fósseis: descoberta, identificação e conhecimento atual. Anuário do Instituto de Geociências – UFRJ, 41(2), 636–646. DOI: 10.11137/2018_2_636_646 [Fonte primária]. Disponível em: https://revistas.ufrj.br/index.php/aigeo | MOURO, L.D.; FERNANDES, A.C.S.; CARVALHO, M.A. et al. 2020. Lontras Shale (Paraná Basin, Brazil): Insightful analysis and commentaries on paleoenvironment and fossil preservation into a deglaciation pulse of the Late Paleozoic Ice Age. Palaeogeography, Palaeoclimatology, Palaeoecology, 555, 109850. DOI: 10.1016/j.palaeo.2020.109850 [Fonte primária]. Disponível em: https://www.sciencedirect.com/science/article/abs/pii/S0031018220302959",
+    "doi": "10.1016/j.palaeo.2020.109850"
   },
   {
     "id": 52,
@@ -1327,14 +1351,17 @@
     "lon": -49.8147,
     "bacia": "Bacia do Paraná — Grupo Itararé",
     "armazenamento": "CENPALEO / Museu da Terra e da Vida, UnC, Mafra, SC",
-    "descritor": "Mouro, L.D. et al. (2018, 2020) — Anuário IGEO-UFRJ; Palaeogeogr. Palaeoclimatol. Palaeoecol.",
+    "descritor": "Mouro, L.D., Pacheco, M.L.A.F., Ricetti, J.H.Z., Scomazzon, A.K., Horodyski, R.S., Fernandes, A.C.S., Carvalho, M.A., Weinschütz, L.C., Silva, M.S., Waichel, B.L. & Scherer, C.M.S. (2020) — Palaeogeography, Palaeoclimatology, Palaeoecology 555:109850; Mouro, L.D., Ricetti, J.H.Z., Weinschütz, L.C. & Pacheco, M.L.A.F. (2021) — \"Folhelho Lontras, uma Lagerstätte do Paleozoico brasileiro\", in Jelinek & Sommer (eds.), Contribuições à Geologia do RS e de SC, SBG/Compasso Lugar-Cultura, p.203–221",
     "unidade_pesquisa": "CENPALEO/UnC",
     "idade_ma": "ca. 298,9 Ma",
     "observacoes": "Família de braquiópodes adicional documentada na fauna do Campáleo, distinta de Orbiculoidea",
     "fontes": [
-      "https://en.wikipedia.org/wiki/Lontras_Shale_Lagerst%C3%A4tte"
+      "https://doi.org/10.1016/j.palaeo.2020.109850",
+      "https://www.sciencedirect.com/science/article/abs/pii/S0031018220302959",
+      "https://en.wikipedia.org/wiki/Lontras_Shale_Lagerst%C3%A4tte (compilação secundária — referência primária no campo Descritor)"
     ],
-    "citacao_abnt": "MOURO, L.D.; FERNANDES, A.C.S.; CARVALHO, M.A.; WEINSCHÜTZ, L.C. 2018. O Folhelho Lontras (Permiano, Bacia do Paraná) e seus fósseis: descoberta, identificação e conhecimento atual. Anuário do Instituto de Geociências – UFRJ, 41(2), 636–646. DOI: 10.11137/2018_2_636_646 [Fonte primária]. Disponível em: https://revistas.ufrj.br/index.php/aigeo | MOURO, L.D.; FERNANDES, A.C.S.; CARVALHO, M.A. et al. 2020. Lontras Shale (Paraná Basin, Brazil): Insightful analysis and commentaries on paleoenvironment and fossil preservation into a deglaciation pulse of the Late Paleozoic Ice Age. Palaeogeography, Palaeoclimatology, Palaeoecology, 555, 109850. DOI: 10.1016/j.palaeo.2020.109850 [Fonte primária]. Disponível em: https://www.sciencedirect.com/science/article/abs/pii/S0031018220302959"
+    "citacao_abnt": "MOURO, L.D.; FERNANDES, A.C.S.; CARVALHO, M.A.; WEINSCHÜTZ, L.C. 2018. O Folhelho Lontras (Permiano, Bacia do Paraná) e seus fósseis: descoberta, identificação e conhecimento atual. Anuário do Instituto de Geociências – UFRJ, 41(2), 636–646. DOI: 10.11137/2018_2_636_646 [Fonte primária]. Disponível em: https://revistas.ufrj.br/index.php/aigeo | MOURO, L.D.; FERNANDES, A.C.S.; CARVALHO, M.A. et al. 2020. Lontras Shale (Paraná Basin, Brazil): Insightful analysis and commentaries on paleoenvironment and fossil preservation into a deglaciation pulse of the Late Paleozoic Ice Age. Palaeogeography, Palaeoclimatology, Palaeoecology, 555, 109850. DOI: 10.1016/j.palaeo.2020.109850 [Fonte primária]. Disponível em: https://www.sciencedirect.com/science/article/abs/pii/S0031018220302959",
+    "doi": "10.1016/j.palaeo.2020.109850"
   },
   {
     "id": 53,
@@ -1352,12 +1379,13 @@
     "lon": -49.8147,
     "bacia": "Bacia do Paraná — Grupo Itararé",
     "armazenamento": "CENPALEO / Museu da Terra e da Vida, UnC, Mafra, SC",
-    "descritor": "Mouro, L.D. et al. (2020, 2021) — Palaeogeogr. Palaeoclimatol. Palaeoecol.; Geol. RS/SC",
+    "descritor": "Mouro, L.D., Fernandes, A.C.S., Rogerio, D.W. & Fonseca, V.M.M. (2014) — Journal of Paleontology 88(1)",
     "unidade_pesquisa": "CENPALEO/UnC",
     "idade_ma": "ca. 298,9 Ma",
-    "observacoes": "Quase uma centena de espécimes completos e articulados; considerados os fósseis de poríferos mais bem preservados do Brasil",
+    "observacoes": "PRIMEIRA esponja articulada do Paleozoico do Brasil e primeira esponja permiana articulada descrita para o país; segunda espécie conhecida do gênero. Atribuída a Hemidiscellidae (ordem Hemidiscosa). O material veio de exemplares mais completos que os analisados por Ruedemann no início do século XX, coletados no Campáleo. Quase uma centena de espécimes completos e articulados; considerados os fósseis de poríferos mais bem preservados do Brasil",
     "fontes": [
-      "https://en.wikipedia.org/wiki/Lontras_Shale_Lagerst%C3%A4tte"
+      "https://www.cambridge.org/core/journals/journal-of-paleontology/issue/C72F5CC47805A30566C7688AAC416D80",
+      "https://en.wikipedia.org/wiki/Lontras_Shale_Lagerst%C3%A4tte (compilação secundária)"
     ],
     "citacao_abnt": "MOURO, L.D.; FERNANDES, A.C.S.; CARVALHO, M.A.; WEINSCHÜTZ, L.C. 2018. O Folhelho Lontras (Permiano, Bacia do Paraná) e seus fósseis: descoberta, identificação e conhecimento atual. Anuário do Instituto de Geociências – UFRJ, 41(2), 636–646. DOI: 10.11137/2018_2_636_646 [Fonte primária]. Disponível em: https://revistas.ufrj.br/index.php/aigeo | MOURO, L.D.; FERNANDES, A.C.S.; CARVALHO, M.A. et al. 2020. Lontras Shale (Paraná Basin, Brazil): Insightful analysis and commentaries on paleoenvironment and fossil preservation into a deglaciation pulse of the Late Paleozoic Ice Age. Palaeogeography, Palaeoclimatology, Palaeoecology, 555, 109850. DOI: 10.1016/j.palaeo.2020.109850 [Fonte primária]. Disponível em: https://www.sciencedirect.com/science/article/abs/pii/S0031018220302959 | MOURO, L.D. et al. 2021. Taphonomy and paleoecology of the Lontras Shale Lagerstätte: Detailing the warming peak of a Late Paleozoic Ice Age temperate fjord. Palaeogeography, Palaeoclimatology, Palaeoecology, 111326. DOI: 10.1016/j.palaeo.2022.111326 [Fonte primária]. Disponível em: https://www.researchgate.net/publication/365485453"
   },
@@ -1377,14 +1405,17 @@
     "lon": -49.8147,
     "bacia": "Bacia do Paraná — Grupo Itararé",
     "armazenamento": "CENPALEO / Museu da Terra e da Vida, UnC, Mafra, SC",
-    "descritor": "Mouro, L.D. et al. (2020, 2021) — Palaeogeogr. Palaeoclimatol. Palaeoecol.",
+    "descritor": "Mouro, L.D., Pacheco, M.L.A.F., Ricetti, J.H.Z., Scomazzon, A.K., Horodyski, R.S., Fernandes, A.C.S., Carvalho, M.A., Weinschütz, L.C., Silva, M.S., Waichel, B.L. & Scherer, C.M.S. (2020) — Palaeogeography, Palaeoclimatology, Palaeoecology 555:109850; Mouro, L.D., Ricetti, J.H.Z., Weinschütz, L.C. & Pacheco, M.L.A.F. (2021) — \"Folhelho Lontras, uma Lagerstätte do Paleozoico brasileiro\", in Jelinek & Sommer (eds.), Contribuições à Geologia do RS e de SC, SBG/Compasso Lugar-Cultura, p.203–221",
     "unidade_pesquisa": "CENPALEO/UnC",
     "idade_ma": "ca. 298,9 Ma",
     "observacoes": "Ordem extinta de esponjas registrada na biota do Campáleo; possível demosponja também citada",
     "fontes": [
-      "https://en.wikipedia.org/wiki/Lontras_Shale_Lagerst%C3%A4tte"
+      "https://doi.org/10.1016/j.palaeo.2020.109850",
+      "https://www.sciencedirect.com/science/article/abs/pii/S0031018220302959",
+      "https://en.wikipedia.org/wiki/Lontras_Shale_Lagerst%C3%A4tte (compilação secundária — referência primária no campo Descritor)"
     ],
-    "citacao_abnt": "MOURO, L.D.; FERNANDES, A.C.S.; CARVALHO, M.A.; WEINSCHÜTZ, L.C. 2018. O Folhelho Lontras (Permiano, Bacia do Paraná) e seus fósseis: descoberta, identificação e conhecimento atual. Anuário do Instituto de Geociências – UFRJ, 41(2), 636–646. DOI: 10.11137/2018_2_636_646 [Fonte primária]. Disponível em: https://revistas.ufrj.br/index.php/aigeo | MOURO, L.D.; FERNANDES, A.C.S.; CARVALHO, M.A. et al. 2020. Lontras Shale (Paraná Basin, Brazil): Insightful analysis and commentaries on paleoenvironment and fossil preservation into a deglaciation pulse of the Late Paleozoic Ice Age. Palaeogeography, Palaeoclimatology, Palaeoecology, 555, 109850. DOI: 10.1016/j.palaeo.2020.109850 [Fonte primária]. Disponível em: https://www.sciencedirect.com/science/article/abs/pii/S0031018220302959 | MOURO, L.D. et al. 2021. Taphonomy and paleoecology of the Lontras Shale Lagerstätte: Detailing the warming peak of a Late Paleozoic Ice Age temperate fjord. Palaeogeography, Palaeoclimatology, Palaeoecology, 111326. DOI: 10.1016/j.palaeo.2022.111326 [Fonte primária]. Disponível em: https://www.researchgate.net/publication/365485453"
+    "citacao_abnt": "MOURO, L.D.; FERNANDES, A.C.S.; CARVALHO, M.A.; WEINSCHÜTZ, L.C. 2018. O Folhelho Lontras (Permiano, Bacia do Paraná) e seus fósseis: descoberta, identificação e conhecimento atual. Anuário do Instituto de Geociências – UFRJ, 41(2), 636–646. DOI: 10.11137/2018_2_636_646 [Fonte primária]. Disponível em: https://revistas.ufrj.br/index.php/aigeo | MOURO, L.D.; FERNANDES, A.C.S.; CARVALHO, M.A. et al. 2020. Lontras Shale (Paraná Basin, Brazil): Insightful analysis and commentaries on paleoenvironment and fossil preservation into a deglaciation pulse of the Late Paleozoic Ice Age. Palaeogeography, Palaeoclimatology, Palaeoecology, 555, 109850. DOI: 10.1016/j.palaeo.2020.109850 [Fonte primária]. Disponível em: https://www.sciencedirect.com/science/article/abs/pii/S0031018220302959 | MOURO, L.D. et al. 2021. Taphonomy and paleoecology of the Lontras Shale Lagerstätte: Detailing the warming peak of a Late Paleozoic Ice Age temperate fjord. Palaeogeography, Palaeoclimatology, Palaeoecology, 111326. DOI: 10.1016/j.palaeo.2022.111326 [Fonte primária]. Disponível em: https://www.researchgate.net/publication/365485453",
+    "doi": "10.1016/j.palaeo.2020.109850"
   },
   {
     "id": 55,
@@ -1407,7 +1438,7 @@
     "idade_ma": "ca. 298,9 Ma",
     "observacoes": "Novo táxon de tubarão symmoriiforme descrito formalmente a partir de dente isolado do Campáleo",
     "fontes": [
-      "https://en.wikipedia.org/wiki/Lontras_Shale_Lagerst%C3%A4tte",
+      "https://en.wikipedia.org/wiki/Lontras_Shale_Lagerst%C3%A4tte (compilação secundária — referência primária no campo Descritor)",
       "https://sbpbrasil.org/publications/index.php/rbp/article/view/327 (Pauliv et al. 2023)"
     ],
     "doi": "10.4072/rbp.2023.3.07",
@@ -1529,14 +1560,17 @@
     "lon": -49.8147,
     "bacia": "Bacia do Paraná — Grupo Itararé",
     "armazenamento": "CENPALEO / Museu da Terra e da Vida, UnC, Mafra, SC",
-    "descritor": "Mouro, L.D. et al. (2018, 2020, 2021)",
+    "descritor": "Mouro, L.D., Pacheco, M.L.A.F., Ricetti, J.H.Z., Scomazzon, A.K., Horodyski, R.S., Fernandes, A.C.S., Carvalho, M.A., Weinschütz, L.C., Silva, M.S., Waichel, B.L. & Scherer, C.M.S. (2020) — Palaeogeography, Palaeoclimatology, Palaeoecology 555:109850; Mouro, L.D., Ricetti, J.H.Z., Weinschütz, L.C. & Pacheco, M.L.A.F. (2021) — \"Folhelho Lontras, uma Lagerstätte do Paleozoico brasileiro\", in Jelinek & Sommer (eds.), Contribuições à Geologia do RS e de SC, SBG/Compasso Lugar-Cultura, p.203–221",
     "unidade_pesquisa": "CENPALEO/UnC",
     "idade_ma": "ca. 298,9 Ma",
     "observacoes": "Conhecido a partir de escamas; celacanto paleozoico do Folhelho Lontras",
     "fontes": [
-      "https://en.wikipedia.org/wiki/Lontras_Shale_Lagerst%C3%A4tte"
+      "https://doi.org/10.1016/j.palaeo.2020.109850",
+      "https://www.sciencedirect.com/science/article/abs/pii/S0031018220302959",
+      "https://en.wikipedia.org/wiki/Lontras_Shale_Lagerst%C3%A4tte (compilação secundária — referência primária no campo Descritor)"
     ],
-    "citacao_abnt": "MOURO, L.D.; FERNANDES, A.C.S.; CARVALHO, M.A.; WEINSCHÜTZ, L.C. 2018. O Folhelho Lontras (Permiano, Bacia do Paraná) e seus fósseis: descoberta, identificação e conhecimento atual. Anuário do Instituto de Geociências – UFRJ, 41(2), 636–646. DOI: 10.11137/2018_2_636_646 [Fonte primária]. Disponível em: https://revistas.ufrj.br/index.php/aigeo | MOURO, L.D.; FERNANDES, A.C.S.; CARVALHO, M.A. et al. 2020. Lontras Shale (Paraná Basin, Brazil): Insightful analysis and commentaries on paleoenvironment and fossil preservation into a deglaciation pulse of the Late Paleozoic Ice Age. Palaeogeography, Palaeoclimatology, Palaeoecology, 555, 109850. DOI: 10.1016/j.palaeo.2020.109850 [Fonte primária]. Disponível em: https://www.sciencedirect.com/science/article/abs/pii/S0031018220302959 | MOURO, L.D. et al. 2021. Taphonomy and paleoecology of the Lontras Shale Lagerstätte: Detailing the warming peak of a Late Paleozoic Ice Age temperate fjord. Palaeogeography, Palaeoclimatology, Palaeoecology, 111326. DOI: 10.1016/j.palaeo.2022.111326 [Fonte primária]. Disponível em: https://www.researchgate.net/publication/365485453"
+    "citacao_abnt": "MOURO, L.D.; FERNANDES, A.C.S.; CARVALHO, M.A.; WEINSCHÜTZ, L.C. 2018. O Folhelho Lontras (Permiano, Bacia do Paraná) e seus fósseis: descoberta, identificação e conhecimento atual. Anuário do Instituto de Geociências – UFRJ, 41(2), 636–646. DOI: 10.11137/2018_2_636_646 [Fonte primária]. Disponível em: https://revistas.ufrj.br/index.php/aigeo | MOURO, L.D.; FERNANDES, A.C.S.; CARVALHO, M.A. et al. 2020. Lontras Shale (Paraná Basin, Brazil): Insightful analysis and commentaries on paleoenvironment and fossil preservation into a deglaciation pulse of the Late Paleozoic Ice Age. Palaeogeography, Palaeoclimatology, Palaeoecology, 555, 109850. DOI: 10.1016/j.palaeo.2020.109850 [Fonte primária]. Disponível em: https://www.sciencedirect.com/science/article/abs/pii/S0031018220302959 | MOURO, L.D. et al. 2021. Taphonomy and paleoecology of the Lontras Shale Lagerstätte: Detailing the warming peak of a Late Paleozoic Ice Age temperate fjord. Palaeogeography, Palaeoclimatology, Palaeoecology, 111326. DOI: 10.1016/j.palaeo.2022.111326 [Fonte primária]. Disponível em: https://www.researchgate.net/publication/365485453",
+    "doi": "10.1016/j.palaeo.2020.109850"
   },
   {
     "id": 61,
@@ -1554,14 +1588,17 @@
     "lon": -49.8147,
     "bacia": "Bacia do Paraná — Grupo Itararé",
     "armazenamento": "CENPALEO / Museu da Terra e da Vida, UnC, Mafra, SC",
-    "descritor": "Ricetti, J.H.Z. & Weinschütz, L.C. (2011) — Bol. Inf. SBP nº 64:31-32; Mouro et al. (2018, 2020)",
+    "descritor": "Ricetti, J.H.Z. & Weinschütz, L.C. (2011) — Bol. Inf. SBP nº 64:31-32; Mouro et al. (2018, 2020); Mouro, L.D., Pacheco, M.L.A.F., Ricetti, J.H.Z., Scomazzon, A.K., Horodyski, R.S., Fernandes, A.C.S., Carvalho, M.A., Weinschütz, L.C., Silva, M.S., Waichel, B.L. & Scherer, C.M.S. (2020) — Palaeogeography, Palaeoclimatology, Palaeoecology 555:109850; Mouro, L.D., Ricetti, J.H.Z., Weinschütz, L.C. & Pacheco, M.L.A.F. (2021) — \"Folhelho Lontras, uma Lagerstätte do Paleozoico brasileiro\", in Jelinek & Sommer (eds.), Contribuições à Geologia do RS e de SC, SBG/Compasso Lugar-Cultura, p.203–221",
     "unidade_pesquisa": "CENPALEO/UnC",
     "idade_ma": "ca. 298,9 Ma",
     "observacoes": "Mais de 20 escolecodontes articulados (mandíbulas de poliquetas) preservados em concreções, alguns com possíveis vestígios de tecido mole e cerdas (quetas)",
     "fontes": [
-      "https://en.wikipedia.org/wiki/Lontras_Shale_Lagerst%C3%A4tte"
+      "https://doi.org/10.1016/j.palaeo.2020.109850",
+      "https://www.sciencedirect.com/science/article/abs/pii/S0031018220302959",
+      "https://en.wikipedia.org/wiki/Lontras_Shale_Lagerst%C3%A4tte (compilação secundária — referência primária no campo Descritor)"
     ],
-    "citacao_abnt": "RICETTI, J.H.Z.; WEINSCHÜTZ, L.C. 2011. Ocorrência de Escolecodontes (Annelida, Labidognatha) nas Formações Mafra e Rio do Sul, Permocarbonífero da Bacia do Paraná, Brasil. Boletim Informativo da Sociedade Brasileira de Paleontologia, 64, 31–32. [Fonte primária — nota em boletim de evento, sem DOI]. Nota: também citado como base do registro em Mouro et al. 2018/2020."
+    "citacao_abnt": "RICETTI, J.H.Z.; WEINSCHÜTZ, L.C. 2011. Ocorrência de Escolecodontes (Annelida, Labidognatha) nas Formações Mafra e Rio do Sul, Permocarbonífero da Bacia do Paraná, Brasil. Boletim Informativo da Sociedade Brasileira de Paleontologia, 64, 31–32. [Fonte primária — nota em boletim de evento, sem DOI]. Nota: também citado como base do registro em Mouro et al. 2018/2020.",
+    "doi": "10.1016/j.palaeo.2020.109850"
   },
   {
     "id": 62,
@@ -1579,14 +1616,17 @@
     "lon": -49.8147,
     "bacia": "Bacia do Paraná — Grupo Itararé",
     "armazenamento": "CENPALEO / Museu da Terra e da Vida, UnC, Mafra, SC",
-    "descritor": "Mouro, L.D. et al. (2018, 2020)",
+    "descritor": "Mouro, L.D., Pacheco, M.L.A.F., Ricetti, J.H.Z., Scomazzon, A.K., Horodyski, R.S., Fernandes, A.C.S., Carvalho, M.A., Weinschütz, L.C., Silva, M.S., Waichel, B.L. & Scherer, C.M.S. (2020) — Palaeogeography, Palaeoclimatology, Palaeoecology 555:109850; Mouro, L.D., Ricetti, J.H.Z., Weinschütz, L.C. & Pacheco, M.L.A.F. (2021) — \"Folhelho Lontras, uma Lagerstätte do Paleozoico brasileiro\", in Jelinek & Sommer (eds.), Contribuições à Geologia do RS e de SC, SBG/Compasso Lugar-Cultura, p.203–221",
     "unidade_pesquisa": "CENPALEO/UnC",
     "idade_ma": "ca. 298,9 Ma",
     "observacoes": "Malacostráceos muito fragmentários, raramente completos; ostracodes encontrados em pequenos agrupamentos (~175 μm)",
     "fontes": [
-      "https://en.wikipedia.org/wiki/Lontras_Shale_Lagerst%C3%A4tte"
+      "https://doi.org/10.1016/j.palaeo.2020.109850",
+      "https://www.sciencedirect.com/science/article/abs/pii/S0031018220302959",
+      "https://en.wikipedia.org/wiki/Lontras_Shale_Lagerst%C3%A4tte (compilação secundária — referência primária no campo Descritor)"
     ],
-    "citacao_abnt": "MOURO, L.D.; FERNANDES, A.C.S.; CARVALHO, M.A.; WEINSCHÜTZ, L.C. 2018. O Folhelho Lontras (Permiano, Bacia do Paraná) e seus fósseis: descoberta, identificação e conhecimento atual. Anuário do Instituto de Geociências – UFRJ, 41(2), 636–646. DOI: 10.11137/2018_2_636_646 [Fonte primária]. Disponível em: https://revistas.ufrj.br/index.php/aigeo | MOURO, L.D.; FERNANDES, A.C.S.; CARVALHO, M.A. et al. 2020. Lontras Shale (Paraná Basin, Brazil): Insightful analysis and commentaries on paleoenvironment and fossil preservation into a deglaciation pulse of the Late Paleozoic Ice Age. Palaeogeography, Palaeoclimatology, Palaeoecology, 555, 109850. DOI: 10.1016/j.palaeo.2020.109850 [Fonte primária]. Disponível em: https://www.sciencedirect.com/science/article/abs/pii/S0031018220302959"
+    "citacao_abnt": "MOURO, L.D.; FERNANDES, A.C.S.; CARVALHO, M.A.; WEINSCHÜTZ, L.C. 2018. O Folhelho Lontras (Permiano, Bacia do Paraná) e seus fósseis: descoberta, identificação e conhecimento atual. Anuário do Instituto de Geociências – UFRJ, 41(2), 636–646. DOI: 10.11137/2018_2_636_646 [Fonte primária]. Disponível em: https://revistas.ufrj.br/index.php/aigeo | MOURO, L.D.; FERNANDES, A.C.S.; CARVALHO, M.A. et al. 2020. Lontras Shale (Paraná Basin, Brazil): Insightful analysis and commentaries on paleoenvironment and fossil preservation into a deglaciation pulse of the Late Paleozoic Ice Age. Palaeogeography, Palaeoclimatology, Palaeoecology, 555, 109850. DOI: 10.1016/j.palaeo.2020.109850 [Fonte primária]. Disponível em: https://www.sciencedirect.com/science/article/abs/pii/S0031018220302959",
+    "doi": "10.1016/j.palaeo.2020.109850"
   },
   {
     "id": 63,
@@ -1610,7 +1650,7 @@
     "observacoes": "Traços de escavação no interior de conchas de braquiópodes lingulídeos, indicativos de colonização por poliquetas",
     "fontes": [
       "https://carnetsgeol.net/cg/19/19/CG1919.pdf (Vinn et al. 2019)",
-      "https://en.wikipedia.org/wiki/Lontras_Shale_Lagerst%C3%A4tte"
+      "https://en.wikipedia.org/wiki/Lontras_Shale_Lagerst%C3%A4tte (compilação secundária — referência primária no campo Descritor)"
     ],
     "citacao_abnt": "VINN, O.; MOURO, L.D.; FERNANDES, A.C.S. 2019. Serpulid polychaetes from the Lontras Shale (Late Pennsylvanian–Early Cisuralian), Paraná Basin, Brazil. Carnets Geol., 19(19), 439–444. DOI: 10.4267/2042/70514 [Fonte primária]. Disponível em: https://carnetsgeol.net/cg/19/19/CG1919.pdf"
   },
@@ -1630,14 +1670,17 @@
     "lon": -49.8147,
     "bacia": "Bacia do Paraná — Grupo Itararé",
     "armazenamento": "CENPALEO / Museu da Terra e da Vida, UnC, Mafra, SC",
-    "descritor": "Mouro, L.D. et al. (2020, 2021)",
+    "descritor": "Mouro, L.D., Pacheco, M.L.A.F., Ricetti, J.H.Z., Scomazzon, A.K., Horodyski, R.S., Fernandes, A.C.S., Carvalho, M.A., Weinschütz, L.C., Silva, M.S., Waichel, B.L. & Scherer, C.M.S. (2020) — Palaeogeography, Palaeoclimatology, Palaeoecology 555:109850; Mouro, L.D., Ricetti, J.H.Z., Weinschütz, L.C. & Pacheco, M.L.A.F. (2021) — \"Folhelho Lontras, uma Lagerstätte do Paleozoico brasileiro\", in Jelinek & Sommer (eds.), Contribuições à Geologia do RS e de SC, SBG/Compasso Lugar-Cultura, p.203–221",
     "unidade_pesquisa": "CENPALEO/UnC",
     "idade_ma": "ca. 298,9 Ma",
     "observacoes": "Perfurações em conchas de braquiópodes, evidência provável de predação",
     "fontes": [
-      "https://en.wikipedia.org/wiki/Lontras_Shale_Lagerst%C3%A4tte"
+      "https://doi.org/10.1016/j.palaeo.2020.109850",
+      "https://www.sciencedirect.com/science/article/abs/pii/S0031018220302959",
+      "https://en.wikipedia.org/wiki/Lontras_Shale_Lagerst%C3%A4tte (compilação secundária — referência primária no campo Descritor)"
     ],
-    "citacao_abnt": "MOURO, L.D.; FERNANDES, A.C.S.; CARVALHO, M.A.; WEINSCHÜTZ, L.C. 2018. O Folhelho Lontras (Permiano, Bacia do Paraná) e seus fósseis: descoberta, identificação e conhecimento atual. Anuário do Instituto de Geociências – UFRJ, 41(2), 636–646. DOI: 10.11137/2018_2_636_646 [Fonte primária]. Disponível em: https://revistas.ufrj.br/index.php/aigeo | MOURO, L.D.; FERNANDES, A.C.S.; CARVALHO, M.A. et al. 2020. Lontras Shale (Paraná Basin, Brazil): Insightful analysis and commentaries on paleoenvironment and fossil preservation into a deglaciation pulse of the Late Paleozoic Ice Age. Palaeogeography, Palaeoclimatology, Palaeoecology, 555, 109850. DOI: 10.1016/j.palaeo.2020.109850 [Fonte primária]. Disponível em: https://www.sciencedirect.com/science/article/abs/pii/S0031018220302959 | MOURO, L.D. et al. 2021. Taphonomy and paleoecology of the Lontras Shale Lagerstätte: Detailing the warming peak of a Late Paleozoic Ice Age temperate fjord. Palaeogeography, Palaeoclimatology, Palaeoecology, 111326. DOI: 10.1016/j.palaeo.2022.111326 [Fonte primária]. Disponível em: https://www.researchgate.net/publication/365485453"
+    "citacao_abnt": "MOURO, L.D.; FERNANDES, A.C.S.; CARVALHO, M.A.; WEINSCHÜTZ, L.C. 2018. O Folhelho Lontras (Permiano, Bacia do Paraná) e seus fósseis: descoberta, identificação e conhecimento atual. Anuário do Instituto de Geociências – UFRJ, 41(2), 636–646. DOI: 10.11137/2018_2_636_646 [Fonte primária]. Disponível em: https://revistas.ufrj.br/index.php/aigeo | MOURO, L.D.; FERNANDES, A.C.S.; CARVALHO, M.A. et al. 2020. Lontras Shale (Paraná Basin, Brazil): Insightful analysis and commentaries on paleoenvironment and fossil preservation into a deglaciation pulse of the Late Paleozoic Ice Age. Palaeogeography, Palaeoclimatology, Palaeoecology, 555, 109850. DOI: 10.1016/j.palaeo.2020.109850 [Fonte primária]. Disponível em: https://www.sciencedirect.com/science/article/abs/pii/S0031018220302959 | MOURO, L.D. et al. 2021. Taphonomy and paleoecology of the Lontras Shale Lagerstätte: Detailing the warming peak of a Late Paleozoic Ice Age temperate fjord. Palaeogeography, Palaeoclimatology, Palaeoecology, 111326. DOI: 10.1016/j.palaeo.2022.111326 [Fonte primária]. Disponível em: https://www.researchgate.net/publication/365485453",
+    "doi": "10.1016/j.palaeo.2020.109850"
   },
   {
     "id": 65,
@@ -1655,14 +1698,17 @@
     "lon": -49.8147,
     "bacia": "Bacia do Paraná — Grupo Itararé",
     "armazenamento": "CENPALEO / Museu da Terra e da Vida, UnC, Mafra, SC",
-    "descritor": "Mouro, L.D. et al. (2018, 2020)",
+    "descritor": "Mouro, L.D., Pacheco, M.L.A.F., Ricetti, J.H.Z., Scomazzon, A.K., Horodyski, R.S., Fernandes, A.C.S., Carvalho, M.A., Weinschütz, L.C., Silva, M.S., Waichel, B.L. & Scherer, C.M.S. (2020) — Palaeogeography, Palaeoclimatology, Palaeoecology 555:109850; Mouro, L.D., Ricetti, J.H.Z., Weinschütz, L.C. & Pacheco, M.L.A.F. (2021) — \"Folhelho Lontras, uma Lagerstätte do Paleozoico brasileiro\", in Jelinek & Sommer (eds.), Contribuições à Geologia do RS e de SC, SBG/Compasso Lugar-Cultura, p.203–221",
     "unidade_pesquisa": "CENPALEO/UnC",
     "idade_ma": "ca. 298,9 Ma",
     "observacoes": "Estruturas cilíndricas (~22 mm) preservadas por fosfatização, interpretadas como conteúdo intestinal de condrictes",
     "fontes": [
-      "https://en.wikipedia.org/wiki/Lontras_Shale_Lagerst%C3%A4tte"
+      "https://doi.org/10.1016/j.palaeo.2020.109850",
+      "https://www.sciencedirect.com/science/article/abs/pii/S0031018220302959",
+      "https://en.wikipedia.org/wiki/Lontras_Shale_Lagerst%C3%A4tte (compilação secundária — referência primária no campo Descritor)"
     ],
-    "citacao_abnt": "MOURO, L.D.; FERNANDES, A.C.S.; CARVALHO, M.A.; WEINSCHÜTZ, L.C. 2018. O Folhelho Lontras (Permiano, Bacia do Paraná) e seus fósseis: descoberta, identificação e conhecimento atual. Anuário do Instituto de Geociências – UFRJ, 41(2), 636–646. DOI: 10.11137/2018_2_636_646 [Fonte primária]. Disponível em: https://revistas.ufrj.br/index.php/aigeo | MOURO, L.D.; FERNANDES, A.C.S.; CARVALHO, M.A. et al. 2020. Lontras Shale (Paraná Basin, Brazil): Insightful analysis and commentaries on paleoenvironment and fossil preservation into a deglaciation pulse of the Late Paleozoic Ice Age. Palaeogeography, Palaeoclimatology, Palaeoecology, 555, 109850. DOI: 10.1016/j.palaeo.2020.109850 [Fonte primária]. Disponível em: https://www.sciencedirect.com/science/article/abs/pii/S0031018220302959"
+    "citacao_abnt": "MOURO, L.D.; FERNANDES, A.C.S.; CARVALHO, M.A.; WEINSCHÜTZ, L.C. 2018. O Folhelho Lontras (Permiano, Bacia do Paraná) e seus fósseis: descoberta, identificação e conhecimento atual. Anuário do Instituto de Geociências – UFRJ, 41(2), 636–646. DOI: 10.11137/2018_2_636_646 [Fonte primária]. Disponível em: https://revistas.ufrj.br/index.php/aigeo | MOURO, L.D.; FERNANDES, A.C.S.; CARVALHO, M.A. et al. 2020. Lontras Shale (Paraná Basin, Brazil): Insightful analysis and commentaries on paleoenvironment and fossil preservation into a deglaciation pulse of the Late Paleozoic Ice Age. Palaeogeography, Palaeoclimatology, Palaeoecology, 555, 109850. DOI: 10.1016/j.palaeo.2020.109850 [Fonte primária]. Disponível em: https://www.sciencedirect.com/science/article/abs/pii/S0031018220302959",
+    "doi": "10.1016/j.palaeo.2020.109850"
   },
   {
     "id": 66,
@@ -1680,14 +1726,17 @@
     "lon": -49.8147,
     "bacia": "Bacia do Paraná — Grupo Itararé",
     "armazenamento": "CENPALEO / Museu da Terra e da Vida, UnC, Mafra, SC",
-    "descritor": "Mouro, L.D. et al. (2020, 2021)",
+    "descritor": "Mouro, L.D., Pacheco, M.L.A.F., Ricetti, J.H.Z., Scomazzon, A.K., Horodyski, R.S., Fernandes, A.C.S., Carvalho, M.A., Weinschütz, L.C., Silva, M.S., Waichel, B.L. & Scherer, C.M.S. (2020) — Palaeogeography, Palaeoclimatology, Palaeoecology 555:109850; Mouro, L.D., Ricetti, J.H.Z., Weinschütz, L.C. & Pacheco, M.L.A.F. (2021) — \"Folhelho Lontras, uma Lagerstätte do Paleozoico brasileiro\", in Jelinek & Sommer (eds.), Contribuições à Geologia do RS e de SC, SBG/Compasso Lugar-Cultura, p.203–221",
     "unidade_pesquisa": "CENPALEO/UnC",
     "idade_ma": "ca. 298,9 Ma",
     "observacoes": "Restos lenhosos dispersos pelo folhelho, com fragmentos comuns; também há estruturas semelhantes a âmbar (resina fossilizada)",
     "fontes": [
-      "https://en.wikipedia.org/wiki/Lontras_Shale_Lagerst%C3%A4tte"
+      "https://doi.org/10.1016/j.palaeo.2020.109850",
+      "https://www.sciencedirect.com/science/article/abs/pii/S0031018220302959",
+      "https://en.wikipedia.org/wiki/Lontras_Shale_Lagerst%C3%A4tte (compilação secundária — referência primária no campo Descritor)"
     ],
-    "citacao_abnt": "MOURO, L.D.; FERNANDES, A.C.S.; CARVALHO, M.A.; WEINSCHÜTZ, L.C. 2018. O Folhelho Lontras (Permiano, Bacia do Paraná) e seus fósseis: descoberta, identificação e conhecimento atual. Anuário do Instituto de Geociências – UFRJ, 41(2), 636–646. DOI: 10.11137/2018_2_636_646 [Fonte primária]. Disponível em: https://revistas.ufrj.br/index.php/aigeo | MOURO, L.D.; FERNANDES, A.C.S.; CARVALHO, M.A. et al. 2020. Lontras Shale (Paraná Basin, Brazil): Insightful analysis and commentaries on paleoenvironment and fossil preservation into a deglaciation pulse of the Late Paleozoic Ice Age. Palaeogeography, Palaeoclimatology, Palaeoecology, 555, 109850. DOI: 10.1016/j.palaeo.2020.109850 [Fonte primária]. Disponível em: https://www.sciencedirect.com/science/article/abs/pii/S0031018220302959 | MOURO, L.D. et al. 2021. Taphonomy and paleoecology of the Lontras Shale Lagerstätte: Detailing the warming peak of a Late Paleozoic Ice Age temperate fjord. Palaeogeography, Palaeoclimatology, Palaeoecology, 111326. DOI: 10.1016/j.palaeo.2022.111326 [Fonte primária]. Disponível em: https://www.researchgate.net/publication/365485453"
+    "citacao_abnt": "MOURO, L.D.; FERNANDES, A.C.S.; CARVALHO, M.A.; WEINSCHÜTZ, L.C. 2018. O Folhelho Lontras (Permiano, Bacia do Paraná) e seus fósseis: descoberta, identificação e conhecimento atual. Anuário do Instituto de Geociências – UFRJ, 41(2), 636–646. DOI: 10.11137/2018_2_636_646 [Fonte primária]. Disponível em: https://revistas.ufrj.br/index.php/aigeo | MOURO, L.D.; FERNANDES, A.C.S.; CARVALHO, M.A. et al. 2020. Lontras Shale (Paraná Basin, Brazil): Insightful analysis and commentaries on paleoenvironment and fossil preservation into a deglaciation pulse of the Late Paleozoic Ice Age. Palaeogeography, Palaeoclimatology, Palaeoecology, 555, 109850. DOI: 10.1016/j.palaeo.2020.109850 [Fonte primária]. Disponível em: https://www.sciencedirect.com/science/article/abs/pii/S0031018220302959 | MOURO, L.D. et al. 2021. Taphonomy and paleoecology of the Lontras Shale Lagerstätte: Detailing the warming peak of a Late Paleozoic Ice Age temperate fjord. Palaeogeography, Palaeoclimatology, Palaeoecology, 111326. DOI: 10.1016/j.palaeo.2022.111326 [Fonte primária]. Disponível em: https://www.researchgate.net/publication/365485453",
+    "doi": "10.1016/j.palaeo.2020.109850"
   },
   {
     "id": 67,
@@ -2057,14 +2106,17 @@
     "lon": -49.5444,
     "bacia": "Bacia do Paraná — Fm. Botucatu",
     "armazenamento": "Geoparque Mundial da UNESCO Caminhos dos Cânions do Sul (geossítio aberto à visitação)",
-    "descritor": "Geoparque Caminhos dos Cânions do Sul (divulgação institucional); Bechtel, A.F. (doutorando em geografia, citado em reportagens, 2025/2026)",
+    "descritor": "Buchmann, F.S.C., Lopes, R.P. & Caron, F. (2009) — Revista Brasileira de Paleontologia 12(3):247–256; Lopes, R.P., Frank, H.T., Buchmann, F.S. & Caron, F. (2017) — Ichnos 24:133–145 (erige Megaichnus igen. nov.) — ocorrência divulgada por: Geoparque Caminhos dos Cânions do Sul (divulgação institucional); Bechtel, A.F. (doutorando em geografia, citado em reportagens, 2025/2026)",
     "unidade_pesquisa": "Geoparque UNESCO",
     "idade_ma": "5,33 Ma – 11.700 a",
-    "observacoes": "Três cavidades subterrâneas somando mais de 100 m de extensão; marcas de garras nas paredes; atribuída a tatus-gigantes (Glyptodon/Pampatherium) e/ou preguiças-gigantes",
+    "observacoes": "ICNOTAXONOMIA: desde Lopes et al. (2017) estas estruturas têm nome formal — o icnogênero Megaichnus, dividido em M. major (atribuído a preguiças-gigantes, Mylodontidae) e M. minor (atribuído a tatus-gigantes, Cingulata). Santa Catarina e Rio Grande do Sul concentram a maior abundância conhecida de paleotocas do mundo, com várias centenas de registros em cada estado. Três cavidades subterrâneas somando mais de 100 m de extensão; marcas de garras nas paredes; atribuída a tatus-gigantes (Glyptodon/Pampatherium) e/ou preguiças-gigantes",
     "fontes": [
+      "https://doi.org/10.4072/rbp.2009.3.07",
+      "https://sbpbrasil.org/publications/index.php/rbp/article/download/428/254/9081",
       "https://recantodoscanyons.com.br/o-que-fazer-em-praia-grande-sc/parques/geoparque-caminho-dos-canyons-do-sul/"
     ],
-    "citacao_abnt": "VALDATI, J.; BECHTEL, A.P.; GOMES, M.C.V.; DOS SANTOS, Y.R.F.; RICETTI, J.H.Z.; WEINSCHÜTZ, L.C. 2024. More than fossils: Paleoburrows as geoheritage and paleoenvironmental archives in the Caminhos dos Cânions do Sul UNESCO Global Geopark, Southern Brazil. Journal of South American Earth Sciences, 149, 105205. DOI: 10.1016/j.jsames.2024.105205 [Fonte primária]. Disponível em: https://www.sciencedirect.com/science/article/abs/pii/S0895981124004279"
+    "citacao_abnt": "VALDATI, J.; BECHTEL, A.P.; GOMES, M.C.V.; DOS SANTOS, Y.R.F.; RICETTI, J.H.Z.; WEINSCHÜTZ, L.C. 2024. More than fossils: Paleoburrows as geoheritage and paleoenvironmental archives in the Caminhos dos Cânions do Sul UNESCO Global Geopark, Southern Brazil. Journal of South American Earth Sciences, 149, 105205. DOI: 10.1016/j.jsames.2024.105205 [Fonte primária]. Disponível em: https://www.sciencedirect.com/science/article/abs/pii/S0895981124004279",
+    "doi": "10.4072/rbp.2009.3.07"
   },
   {
     "id": 82,
@@ -2082,14 +2134,17 @@
     "lon": -49.9183,
     "bacia": "Bacia do Paraná — Fm. Botucatu",
     "armazenamento": "Geoparque Mundial da UNESCO Caminhos dos Cânions do Sul (geossítio aberto à visitação)",
-    "descritor": "Geoparque Caminhos dos Cânions do Sul (divulgação institucional)",
+    "descritor": "Buchmann, F.S.C., Lopes, R.P. & Caron, F. (2009) — Revista Brasileira de Paleontologia 12(3):247–256; Lopes, R.P., Frank, H.T., Buchmann, F.S. & Caron, F. (2017) — Ichnos 24:133–145 (erige Megaichnus igen. nov.) — ocorrência divulgada por: Geoparque Caminhos dos Cânions do Sul (divulgação institucional)",
     "unidade_pesquisa": "Geoparque UNESCO",
     "idade_ma": "5,33 Ma – 11.700 a",
-    "observacoes": "Paleotoca de aproximadamente 48,5 m, escavada em arenitos da Fm. Botucatu; dois túneis convergindo numa câmara maior, com marcas de garras nas paredes; reocupada posteriormente por povos pré-colombianos (grafismos rupestres e baixos-relevos)",
+    "observacoes": "ICNOTAXONOMIA: desde Lopes et al. (2017) estas estruturas têm nome formal — o icnogênero Megaichnus, dividido em M. major (atribuído a preguiças-gigantes, Mylodontidae) e M. minor (atribuído a tatus-gigantes, Cingulata). Santa Catarina e Rio Grande do Sul concentram a maior abundância conhecida de paleotocas do mundo, com várias centenas de registros em cada estado. Paleotoca de aproximadamente 48,5 m, escavada em arenitos da Fm. Botucatu; dois túneis convergindo numa câmara maior, com marcas de garras nas paredes; reocupada posteriormente por povos pré-colombianos (grafismos rupestres e baixos-relevos)",
     "fontes": [
+      "https://doi.org/10.4072/rbp.2009.3.07",
+      "https://sbpbrasil.org/publications/index.php/rbp/article/download/428/254/9081",
       "https://recantodoscanyons.com.br/o-que-fazer-em-praia-grande-sc/parques/geoparque-caminho-dos-canyons-do-sul/"
     ],
-    "citacao_abnt": "VALDATI, J.; BECHTEL, A.P.; GOMES, M.C.V.; DOS SANTOS, Y.R.F.; RICETTI, J.H.Z.; WEINSCHÜTZ, L.C. 2024. More than fossils: Paleoburrows as geoheritage and paleoenvironmental archives in the Caminhos dos Cânions do Sul UNESCO Global Geopark, Southern Brazil. Journal of South American Earth Sciences, 149, 105205. DOI: 10.1016/j.jsames.2024.105205 [Fonte primária]. Disponível em: https://www.sciencedirect.com/science/article/abs/pii/S0895981124004279"
+    "citacao_abnt": "VALDATI, J.; BECHTEL, A.P.; GOMES, M.C.V.; DOS SANTOS, Y.R.F.; RICETTI, J.H.Z.; WEINSCHÜTZ, L.C. 2024. More than fossils: Paleoburrows as geoheritage and paleoenvironmental archives in the Caminhos dos Cânions do Sul UNESCO Global Geopark, Southern Brazil. Journal of South American Earth Sciences, 149, 105205. DOI: 10.1016/j.jsames.2024.105205 [Fonte primária]. Disponível em: https://www.sciencedirect.com/science/article/abs/pii/S0895981124004279",
+    "doi": "10.4072/rbp.2009.3.07"
   },
   {
     "id": 83,
@@ -2107,15 +2162,18 @@
     "lon": -49.8167,
     "bacia": "Bacia do Paraná — Fm. Botucatu / Cânions",
     "armazenamento": "Geoparque Mundial da UNESCO Caminhos dos Cânions do Sul",
-    "descritor": "ND Mais (2025); CircuitoMT (2025), citando especialistas do Geoparque",
+    "descritor": "Buchmann, F.S.C., Lopes, R.P. & Caron, F. (2009) — Revista Brasileira de Paleontologia 12(3):247–256; Lopes, R.P., Frank, H.T., Buchmann, F.S. & Caron, F. (2017) — Ichnos 24:133–145 (erige Megaichnus igen. nov.) — ocorrência divulgada por: ND Mais (2025); CircuitoMT (2025), citando especialistas do Geoparque",
     "unidade_pesquisa": "Geoparque UNESCO",
     "idade_ma": "5,33 Ma – 11.700 a",
-    "observacoes": "Registros de paleotocas adicionais em cinco municípios do Geoparque (quatro em SC: Morro Grande, Timbé do Sul, Jacinto Machado e Praia Grande); mais de 40 estruturas catalogadas no total, algumas interconectadas atingindo até 340 m de extensão",
+    "observacoes": "ICNOTAXONOMIA: desde Lopes et al. (2017) estas estruturas têm nome formal — o icnogênero Megaichnus, dividido em M. major (atribuído a preguiças-gigantes, Mylodontidae) e M. minor (atribuído a tatus-gigantes, Cingulata). Santa Catarina e Rio Grande do Sul concentram a maior abundância conhecida de paleotocas do mundo, com várias centenas de registros em cada estado. Registros de paleotocas adicionais em cinco municípios do Geoparque (quatro em SC: Morro Grande, Timbé do Sul, Jacinto Machado e Praia Grande); mais de 40 estruturas catalogadas no total, algumas interconectadas atingindo até 340 m de extensão",
     "fontes": [
+      "https://doi.org/10.4072/rbp.2009.3.07",
+      "https://sbpbrasil.org/publications/index.php/rbp/article/download/428/254/9081",
       "https://ndmais.com.br/animais/cavernas-em-sc-guardam-rastros-de-preguicas-e-tatus-gigantes/",
       "https://circuitomt.com.br/cavernas-pre-historicas-de-sc-guardam-registros-de-animais-gigantes-extintos-ha-10-mil-anos/"
     ],
-    "citacao_abnt": "VALDATI, J.; BECHTEL, A.P.; GOMES, M.C.V.; DOS SANTOS, Y.R.F.; RICETTI, J.H.Z.; WEINSCHÜTZ, L.C. 2024. More than fossils: Paleoburrows as geoheritage and paleoenvironmental archives in the Caminhos dos Cânions do Sul UNESCO Global Geopark, Southern Brazil. Journal of South American Earth Sciences, 149, 105205. DOI: 10.1016/j.jsames.2024.105205 [Fonte primária]. Disponível em: https://www.sciencedirect.com/science/article/abs/pii/S0895981124004279 | Divulgação jornalística: NDMAIS. 2025. Cavernas em SC guardam rastros de preguiças e tatus gigantes. Disponível em: https://ndmais.com.br/animais/cavernas-em-sc-guardam-rastros-de-preguicas-e-tatus-gigantes/ [Fonte secundária complementar]"
+    "citacao_abnt": "VALDATI, J.; BECHTEL, A.P.; GOMES, M.C.V.; DOS SANTOS, Y.R.F.; RICETTI, J.H.Z.; WEINSCHÜTZ, L.C. 2024. More than fossils: Paleoburrows as geoheritage and paleoenvironmental archives in the Caminhos dos Cânions do Sul UNESCO Global Geopark, Southern Brazil. Journal of South American Earth Sciences, 149, 105205. DOI: 10.1016/j.jsames.2024.105205 [Fonte primária]. Disponível em: https://www.sciencedirect.com/science/article/abs/pii/S0895981124004279 | Divulgação jornalística: NDMAIS. 2025. Cavernas em SC guardam rastros de preguiças e tatus gigantes. Disponível em: https://ndmais.com.br/animais/cavernas-em-sc-guardam-rastros-de-preguicas-e-tatus-gigantes/ [Fonte secundária complementar]",
+    "doi": "10.4072/rbp.2009.3.07"
   },
   {
     "id": 84,
@@ -4619,5 +4677,92 @@
     ],
     "x": 589.7,
     "y": 532.0
+  },
+  {
+    "id": 178,
+    "periodo": "Plioceno–Pleistoceno",
+    "era": "Cenozóico — Quaternário",
+    "periodo_ordem": 13,
+    "formacao": "Depósitos cenozóicos / rochas do Planalto Serrano",
+    "taxon": "Megaichnus major (paleotoca URU-01-P2)",
+    "categoria": "Icnofóssil — paleotoca (Xenarthra)",
+    "numero_catalogo": "URU-01-P2 (designação de campo)",
+    "local_coleta": "Paleotoca de Urubici (URU-01-P2), Urubici, SC",
+    "site": "Paleotoca de Urubici (URU-01-P2)",
+    "municipio": "Urubici",
+    "lat": -27.9652,
+    "lon": -49.5092,
+    "bacia": "Bacia do Paraná / depósitos cenozóicos sobrepostos",
+    "armazenamento": "Estrutura in situ (icnofóssil não coletável)",
+    "descritor": "Buchmann, F.S.C., Lopes, R.P. & Caron, F. (2009) — Revista Brasileira de Paleontologia 12(3):247–256; Lopes, R.P., Frank, H.T., Buchmann, F.S. & Caron, F. (2017) — Ichnos 24:133–145 (erige Megaichnus igen. nov.)",
+    "unidade_pesquisa": "UNESP-Litoral Paulista; UFRGS; UNIPAMPA",
+    "idade_ma": "Plioceno–Pleistoceno",
+    "observacoes": "ICNOTAXONOMIA: desde Lopes et al. (2017) estas estruturas têm nome formal — o icnogênero Megaichnus, dividido em M. major (atribuído a preguiças-gigantes, Mylodontidae) e M. minor (atribuído a tatus-gigantes, Cingulata). Santa Catarina e Rio Grande do Sul concentram a maior abundância conhecida de paleotocas do mundo, com várias centenas de registros em cada estado. Conjunto de túneis, trincheiras e dolinas a 1.036 m de altitude, com coordenada publicada (27°57′54,7″S, 49°30′33,2″O). Serviu de laboratório para experimentos de PROPAGAÇÃO SONORA dentro da estrutura: estimativas a partir do ouvido médio de Lestodon e Glossotherium robustum indicam faixa auditiva de 44 Hz a 16.490 Hz, e os testes avaliam a hipótese de comunicação acústica entre mylodontídeos fossoriais — coerente com as evidências de vida gregária em paleotocas (Buchmann et al., 2016).",
+    "doi": "10.4072/rbp.2009.3.07",
+    "fontes": [
+      "https://doi.org/10.4072/rbp.2009.3.07",
+      "https://sbpbrasil.org/publications/index.php/rbp/article/download/428/254/9081",
+      "https://sbpbrasil.org/publications/index.php/rbp/article/download/428/254/9081"
+    ],
+    "x": 501.8,
+    "y": 436.0
+  },
+  {
+    "id": 179,
+    "periodo": "Plioceno–Pleistoceno",
+    "era": "Cenozóico — Quaternário",
+    "periodo_ordem": 13,
+    "formacao": "Escavada na Fm. Taciba (Grupo Itararé, Permiano) — estrutura cenozóica",
+    "taxon": "Megaichnus major (paleotoca de Doutor Pedrinho)",
+    "categoria": "Icnofóssil — paleotoca (Xenarthra)",
+    "numero_catalogo": "-",
+    "local_coleta": "Paleotoca de Doutor Pedrinho, Doutor Pedrinho, SC",
+    "site": "Paleotoca de Doutor Pedrinho",
+    "municipio": "Doutor Pedrinho",
+    "lat": -26.7217,
+    "lon": -49.4794,
+    "bacia": "Bacia do Paraná / depósitos cenozóicos sobrepostos",
+    "armazenamento": "Estrutura in situ (icnofóssil não coletável)",
+    "descritor": "Buchmann, F.S.C., Lopes, R.P. & Caron, F. (2009) — Revista Brasileira de Paleontologia 12(3):247–256; Lopes, R.P., Frank, H.T., Buchmann, F.S. & Caron, F. (2017) — Ichnos 24:133–145 (erige Megaichnus igen. nov.)",
+    "unidade_pesquisa": "UNESP-Litoral Paulista; UFRGS; UNIPAMPA",
+    "idade_ma": "Plioceno–Pleistoceno",
+    "observacoes": "ICNOTAXONOMIA: desde Lopes et al. (2017) estas estruturas têm nome formal — o icnogênero Megaichnus, dividido em M. major (atribuído a preguiças-gigantes, Mylodontidae) e M. minor (atribuído a tatus-gigantes, Cingulata). Santa Catarina e Rio Grande do Sul concentram a maior abundância conhecida de paleotocas do mundo, com várias centenas de registros em cada estado. Paleotoca escavada no ARENITO DA FORMAÇÃO TACIBA (Permiano) — caso que ilustra bem a natureza destes icnofósseis: a estrutura é do Plioceno–Pleistoceno, mas a rocha escavada é ~270 milhões de anos mais antiga. Documentada por fotogrametria, com geração de modelo tridimensional.",
+    "doi": "10.4072/rbp.2009.3.07",
+    "fontes": [
+      "https://doi.org/10.4072/rbp.2009.3.07",
+      "https://sbpbrasil.org/publications/index.php/rbp/article/download/428/254/9081",
+      "https://www.researchgate.net/publication/365772145_Fotogrametria_de_um_icnofossil_escavado_por_preguicas-gigantes_Megaichnus_major"
+    ],
+    "x": 505.2,
+    "y": 173.4
+  },
+  {
+    "id": 180,
+    "periodo": "Plioceno–Pleistoceno",
+    "era": "Cenozóico — Quaternário",
+    "periodo_ordem": 13,
+    "formacao": "Depósitos cenozóicos / rochas sedimentares do Planalto Norte",
+    "taxon": "Megaichnus isp. (paleotocas de Porto União)",
+    "categoria": "Icnofóssil — paleotoca (Xenarthra)",
+    "numero_catalogo": "-",
+    "local_coleta": "Paleotocas de Porto União, Porto União, SC",
+    "site": "Paleotocas de Porto União",
+    "municipio": "Porto União",
+    "lat": -26.2383,
+    "lon": -51.0772,
+    "bacia": "Bacia do Paraná / depósitos cenozóicos sobrepostos",
+    "armazenamento": "Estrutura in situ (icnofóssil não coletável)",
+    "descritor": "Buchmann, F.S.C., Lopes, R.P. & Caron, F. (2009) — Revista Brasileira de Paleontologia 12(3):247–256; Lopes, R.P., Frank, H.T., Buchmann, F.S. & Caron, F. (2017) — Ichnos 24:133–145 (erige Megaichnus igen. nov.)",
+    "unidade_pesquisa": "UNESP-Litoral Paulista; UFRGS; UNIPAMPA",
+    "idade_ma": "Plioceno–Pleistoceno",
+    "observacoes": "ICNOTAXONOMIA: desde Lopes et al. (2017) estas estruturas têm nome formal — o icnogênero Megaichnus, dividido em M. major (atribuído a preguiças-gigantes, Mylodontidae) e M. minor (atribuído a tatus-gigantes, Cingulata). Santa Catarina e Rio Grande do Sul concentram a maior abundância conhecida de paleotocas do mundo, com várias centenas de registros em cada estado. Conjunto de paleotocas do Planalto Norte catarinense, analisadas em conjunto com as de União da Vitória (PR), do outro lado do rio Iguaçu. Levantadas pelo método de amostragem em bola de neve (snowball sampling), com medição de altura e largura dos túneis.",
+    "doi": "10.4072/rbp.2009.3.07",
+    "fontes": [
+      "https://doi.org/10.4072/rbp.2009.3.07",
+      "https://sbpbrasil.org/publications/index.php/rbp/article/download/428/254/9081",
+      "https://rsdjournal.org/rsd/article/view/19176"
+    ],
+    "x": 322.6,
+    "y": 71.4
   }
 ]

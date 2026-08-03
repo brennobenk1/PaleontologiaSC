@@ -6,6 +6,94 @@ saber o que havia nele naquele momento.
 
 Formato: as versões seguem `ANO.MÊS.N`.
 
+## 2026.07.7 — 03/08/2026 · reforço das fontes
+
+Ataque direto ao problema que a auditoria anterior apontou: 19
+registros sustentados só por imprensa ou enciclopédia.
+
+### Resultado
+- **19 → 2.** Sobram apenas o terópode de Nova Veneza (67) e o
+  mesossauro de Três Barras (101), ambos já com ressalva na ficha.
+- **Registros com DOI: 4 → 26.**
+
+### O que foi feito
+- **14 registros do Campáleo** receberam o DOI do artigo que já
+  constava no descritor: Mouro et al. (2020), *Palaeogeography,
+  Palaeoclimatology, Palaeoecology* 555:109850
+  (**10.1016/j.palaeo.2020.109850**), mais o capítulo de Mouro et al.
+  (2021) sobre o Folhelho Lontras.
+- **5 paleotocas** ganharam referência primária — Buchmann, Lopes &
+  Caron (2009), RBP 12(3):247–256 (**10.4072/rbp.2009.3.07**) — e,
+  sobretudo, a **icnotaxonomia formal que faltava**: desde Lopes et al.
+  (2017, *Ichnos* 24) estas estruturas são o icnogênero ***Megaichnus***,
+  com *M. major* (preguiças-gigantes) e *M. minor* (tatus-gigantes).
+
+### Registros novos (177 → 180)
+Três paleotocas catarinenses com referência publicada:
+- ***Megaichnus major*** **de Urubici** (URU-01-P2, coordenada
+  publicada, 1.036 m de altitude) — usada em experimentos de
+  propagação sonora que testam a hipótese de comunicação acústica
+  entre mylodontídeos fossoriais.
+- ***Megaichnus major*** **de Doutor Pedrinho** — escavada no arenito
+  da **Fm. Taciba (Permiano)**: a estrutura é cenozóica, mas a rocha é
+  ~270 milhões de anos mais velha. Documentada por fotogrametria.
+- ***Megaichnus* isp. de Porto União** — Planalto Norte, analisadas em
+  conjunto com as de União da Vitória (PR).
+
+Fica registrado o contexto: SC e RS concentram a **maior abundância
+conhecida de paleotocas do mundo**, com várias centenas em cada estado.
+
+### Interface
+- Classificador de fontes ampliado (Cambridge, Wiley, Nature, Springer,
+  PubMed, Royal Society e outros passam a ser rotulados como
+  "científica" em vez de "link").
+- Corrigida a exibição duplicada do DOI quando ele aparecia também
+  entre as fontes.
+
+## 2026.07.6 — 03/08/2026 · auditoria de veracidade
+
+Verificação dos registros já existentes. Oito checagens automáticas
+sobre os 177 registros de SC e os 27 de avifauna, mais conferência
+externa dos pontos que ficaram suspeitos.
+
+### Erro encontrado e corrigido
+- **Registro 53 (*Microhemidiscia greinerti*) citava periódico e ano
+  errados.** Constava "Mouro et al. (2020, 2021) — Palaeogeogr.
+  Palaeoclimatol. Palaeoecol.". A espécie foi de fato descrita em
+  **Mouro, Fernandes, Rogerio & Fonseca (2014), Journal of
+  Paleontology 88(1)**. Corrigido, com link para o periódico e a
+  observação completada: é a primeira esponja articulada do Paleozoico
+  do Brasil.
+
+### Transparência de fontes
+- **16 links da Wikipédia** foram rotulados como *"compilação
+  secundária — referência primária no campo Descritor"*. Não eram
+  invenção: o descritor desses registros sempre citou a literatura
+  primária (Mouro et al.), mas o link levava só à enciclopédia. Agora
+  isso fica explícito para quem lê a ficha.
+
+### Checagens sem irregularidade
+- Coordenadas × município declarado: nenhuma a mais de 35 km do centro
+  do município (o que também confirma a correção do Campáleo feita em
+  2026.07.1 — a coordenada bate com a publicada, 26°09'30"S 49°48'52"W).
+- Idade declarada × período: sem incompatibilidade real (dois alertas
+  foram falso positivo do detector, que leu "5,33" e "12.000 anos" como
+  valores em Ma).
+- Nomenclatura: nenhuma autoria indevidamente entre parênteses.
+- Nenhuma URL malformada, nenhuma ocorrência duplicada (mesmo táxon no
+  mesmo sítio), avifauna coerente entre período e idade.
+- Táxons do Folhelho Lontras citados na literatura (*Santosichthys
+  mafrensis*, *Roslerichthys riomafrensis*, *Irajapintoseidon
+  uruguayensis*, *Daphnaechelus*) conferidos: todos já presentes.
+
+### Limitação declarada desta auditoria
+Não foi possível conferir os 177 registros um a um contra a literatura
+primária. O que se fez foi: checagem automática de consistência interna
+em toda a base, e verificação externa dirigida aos registros que essas
+checagens apontaram como frágeis. **20 registros têm apenas fonte
+jornalística ou enciclopédica** — permanecem no catálogo, mas são os
+primeiros candidatos a receber referência primária.
+
 ## 2026.07.5 — 03/08/2026
 
 ### Santa Catarina (176 → 177)
