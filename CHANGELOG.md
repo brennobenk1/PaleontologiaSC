@@ -6,6 +6,54 @@ saber o que havia nele naquele momento.
 
 Formato: as versões seguem `ANO.MÊS.N`.
 
+## 2026.07.5 — 03/08/2026
+
+### Santa Catarina (176 → 177)
+- **Vermetídeos fósseis** dos costões entre o Cabo de Santa Marta e
+  Imbituba (SIGEP 075) — carapaças aragoníticas datadas por
+  radiocarbono, base da curva mais completa de variação do nível
+  relativo do mar da Região Sul nos últimos ~5.500 anos
+  (Angulo et al., 1999, *Marine Geology* 159:323–339).
+- Nova época na linha do tempo: **Holoceno**.
+- Ressalva registrada na ficha: os sambaquis da mesma região, embora
+  ricos em conchas, são depósitos **arqueológicos** (antrópicos) e por
+  isso ficam fora deste catálogo paleontológico.
+
+### Varredura sem resultado (registrado por transparência)
+- **Os sítios SIGEP de Santa Catarina estão esgotados**: 024 (Coluna
+  White), 075 (Complexo Lagunar), 082 (Bainha) e 126 (Canoinhas) estão
+  todos no catálogo. Os demais sítios catarinenses do SIGEP — 050
+  (Aparados da Serra) e 114 (Domo de Vargeão) — não são
+  paleontológicos.
+- **Avifauna: nenhum táxon novo confirmado nesta rodada.** Foram
+  verificados o material do Piauí (Toca da Janela da Barra do
+  Antonião — a fauna publicada é essencialmente de mamíferos, apesar
+  de Mourer-Chauviré constar como coautora) e descrições recentes de
+  aves fósseis brasileiras. Nada acrescentado sem confirmação.
+
+## 2026.07.4 — 03/08/2026
+
+### A planilha volta ao circuito
+- **`fosseis_santa_catarina_enriquecido.xlsx` estava parada em 97
+  registros** enquanto o banco já tinha 176. Ao inverter o fluxo de
+  dados (v2026.07.1), a planilha ficou órfã e isso não foi tratado.
+- Novo `scripts/exportar-planilha.py`: a planilha passa a ser
+  **artefato gerado** a partir de `js/dados.js`, como `data/*.json`.
+  Preserva título, ordem das 13 colunas originais e a aba
+  "Legenda e Fontes"; os campos que só existem no banco (nº do
+  registro, sítio, bacia, coordenadas, DOI) entram como colunas
+  adicionais ao final.
+- `scripts/validar.py` passa a **acusar planilha desatualizada**.
+
+### Dado recuperado
+- A coluna **"Citação Científica (ABNT)"** existia só na planilha e se
+  perdera na migração para o `app.js`. As **97 citações** foram
+  recuperadas e incorporadas ao banco (campo `citacao_abnt`). Quatro
+  delas exigiram mapeamento manual, por corresponderem a táxons
+  renomeados nas correções de nomenclatura e procedência.
+- Os 79 registros acrescentados depois ainda não têm citação ABNT — o
+  campo fica vazio, e a legenda da planilha explica isso.
+
 ## 2026.07.3 — 30/07/2026
 
 ### Santa Catarina (164 → 175)

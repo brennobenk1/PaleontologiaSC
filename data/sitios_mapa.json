@@ -539,5 +539,21 @@
     ],
     "x": 394.3,
     "y": 204.8
+  },
+  {
+    "site": "Costões Laguna–Imbituba",
+    "municipio": "Laguna / Imbituba",
+    "bacia": "Planície Costeira / Complexo Lagunar Centro-Sul Catarinense",
+    "lat": -28.42,
+    "lon": -48.74,
+    "count": 1,
+    "periodos": [
+      "Holoceno"
+    ],
+    "taxons_amostra": [
+      "Vermetidae indet. (tubos de gastrópode incrustante)"
+    ],
+    "x": 589.7,
+    "y": 532.0
   }
 ]

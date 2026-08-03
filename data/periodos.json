@@ -923,5 +923,24 @@
         ]
       }
     ]
+  },
+  {
+    "nome": "Holoceno",
+    "ordem": 18,
+    "era": "Cenozóico",
+    "inicio_ma": 0.0117,
+    "fim_ma": 0.0,
+    "cor": "#c2703a",
+    "descricao": "Época atual, iniciada há ~11.700 anos. Em Santa Catarina, registrada pelos depósitos da planície costeira e pelos indicadores biológicos de variação do nível relativo do mar.",
+    "total_registros": 1,
+    "taxons": [
+      {
+        "taxon": "Vermetidae indet. (tubos de gastrópode incrustante)",
+        "count": 1,
+        "ids": [
+          177
+        ]
+      }
+    ]
   }
 ]

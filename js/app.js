@@ -1295,7 +1295,7 @@ const CITACAO = {
   // senão a citação sai como "PALEO-SC. Paleo-SC — Banco de Dados..."
   entidade: 'Paleo-SC',
   titulo: 'Banco de Dados Paleontológico de Santa Catarina',
-  versao: '2026.07.3',
+  versao: '2026.07.5',
   ano: '2026',
   url: 'https://brennobenk1.github.io/PaleontologiaSC/'
 };

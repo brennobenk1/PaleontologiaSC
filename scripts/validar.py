@@ -129,6 +129,21 @@ try:
 except Exception as e:
     alertar(False, "não foi possível checar data/", str(e))
 
+# --- 9. a planilha também é artefato gerado; precisa estar em dia ---
+try:
+    import openpyxl
+    xlsx = RAIZ / "fosseis_santa_catarina_enriquecido.xlsx"
+    if xlsx.exists():
+        ws = openpyxl.load_workbook(xlsx, read_only=True)["Catálogo de Fósseis SC"]
+        na_planilha = ws.max_row - 3
+        checar(na_planilha == len(FOSSEIS),
+               f"planilha .xlsx em dia ({na_planilha} linhas)",
+               f"banco tem {len(FOSSEIS)} registros; rode: python3 scripts/exportar-planilha.py")
+    else:
+        alertar(False, "planilha .xlsx ausente")
+except ImportError:
+    alertar(False, "openpyxl indisponível — planilha não verificada")
+
 # --- avisos: não quebram o build, mas mostram dívida acumulada ---
 links = [u for d in FOSSEIS for u in d.get("fontes", [])]
 frageis = [u for u in links if re.search(r"researchgate|academia\.edu|wikipedia", u)]
