@@ -523,5 +523,21 @@
     ],
     "x": 517.8,
     "y": 586.4
+  },
+  {
+    "site": "Serra do Espigão",
+    "municipio": "Santa Cecília",
+    "bacia": "Bacia do Paraná — Fm. Rio do Rasto",
+    "lat": -26.87,
+    "lon": -50.45,
+    "count": 1,
+    "periodos": [
+      "Permiano Médio (Guadalupiano)"
+    ],
+    "taxons_amostra": [
+      "Parapytanga catarinensis Strapasson, Pinheiro & Soares, 2015"
+    ],
+    "x": 394.3,
+    "y": 204.8
   }
 ]

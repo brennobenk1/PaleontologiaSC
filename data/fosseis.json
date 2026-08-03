@@ -4449,7 +4449,7 @@
     "era": "Paleozóico — Permiano",
     "periodo_ordem": 10,
     "formacao": "Fm. Rio do Rasto / Grupo Passa Dois",
-    "taxon": "Anfíbio labirintodonte indet.",
+    "taxon": "Anfíbio labirintodonte indet. (Temnospondyli)",
     "categoria": "Vertebrado — anfíbio (Temnospondyli)",
     "numero_catalogo": "-",
     "local_coleta": "Rodovia SC-438, Serra do Rio do Rastro — Pontos 11-15",
@@ -4462,11 +4462,38 @@
     "descritor": "Orlandi Filho, V., Krebs, A.S.J. & Giffoni, L.E. (2006/2009) — SIGEP, Sítio 024, in Sítios Geológicos e Paleontológicos do Brasil, CPRM, v.2",
     "unidade_pesquisa": "CPRM — Serviço Geológico do Brasil",
     "idade_ma": "ca. 259–252 Ma",
-    "observacoes": "Anfíbio labirintodonte citado entre os elementos fossilíferos que datam a Fm. Rio do Rasto entre o Permiano Superior e o Triássico Inferior. Junto com pelecípodes, conchostráceos e restos vegetais, marca a transição de ambiente marinho raso para planície costeira e, no topo, sedimentação flúvio-deltaica. Seção da COLUNA WHITE, ao longo da rodovia SC-438 na Serra do Rio do Rastro — a coluna estratigráfica clássica do Gondwana no Brasil, definida por Israel Charles White no relatório de 1908 da Comissão de Estudos das Minas de Carvão de Pedra do Brazil. Foi aqui que White correlacionou o \"Systema de Santa Catharina\" ao \"Systema Karroo\" da África do Sul, um dos alicerces da teoria da deriva continental. A seção está demarcada no terreno por 17 marcos de concreto.",
+    "observacoes": "\"Labirintodonte\" é termo em desuso, referente ao padrão labiríntico de dobramento da dentina nos dentes — hoje o grupo é tratado como Temnospondyli. O capítulo SIGEP cita a ocorrência sem nomear táxon. Para o temnospôndilo catarinense FORMALMENTE NOMEADO, ver o registro de Parapytanga catarinensis (Serra do Espigão). Anfíbio labirintodonte citado entre os elementos fossilíferos que datam a Fm. Rio do Rasto entre o Permiano Superior e o Triássico Inferior. Junto com pelecípodes, conchostráceos e restos vegetais, marca a transição de ambiente marinho raso para planície costeira e, no topo, sedimentação flúvio-deltaica. Seção da COLUNA WHITE, ao longo da rodovia SC-438 na Serra do Rio do Rastro — a coluna estratigráfica clássica do Gondwana no Brasil, definida por Israel Charles White no relatório de 1908 da Comissão de Estudos das Minas de Carvão de Pedra do Brazil. Foi aqui que White correlacionou o \"Systema de Santa Catharina\" ao \"Systema Karroo\" da África do Sul, um dos alicerces da teoria da deriva continental. A seção está demarcada no terreno por 17 marcos de concreto.",
     "fontes": [
       "https://sigep.eco.br/sitio024/sitio024.pdf"
     ],
     "x": 506.9,
     "y": 525.4
+  },
+  {
+    "id": 176,
+    "periodo": "Permiano Médio (Guadalupiano)",
+    "era": "Paleozóico — Permiano",
+    "periodo_ordem": 9,
+    "formacao": "Fm. Rio do Rasto / Grupo Passa Dois",
+    "taxon": "Parapytanga catarinensis Strapasson, Pinheiro & Soares, 2015",
+    "categoria": "Vertebrado — anfíbio temnospôndilo (Stereospondylomorpha)",
+    "numero_catalogo": "UFRGS-PV-0355-P (holótipo)",
+    "local_coleta": "Serra do Espigão, região de Santa Cecília, SC (coordenada aproximada da localidade)",
+    "site": "Serra do Espigão",
+    "municipio": "Santa Cecília",
+    "lat": -26.87,
+    "lon": -50.45,
+    "bacia": "Bacia do Paraná — Fm. Rio do Rasto",
+    "armazenamento": "UFRGS — Depto. de Paleontologia e Estratigrafia (Porto Alegre, RS)",
+    "descritor": "Strapasson, A., Pinheiro, F.L. & Soares, M.B. (2015) — Acta Palaeontologica Polonica 60(4):843–855",
+    "unidade_pesquisa": "UFRGS; UNIPAMPA",
+    "idade_ma": "ca. 266–254 Ma (Wordiano–Wuchiapingiano)",
+    "observacoes": "O ÚNICO temnospôndilo formalmente nomeado de Santa Catarina, e um dos três descritos para toda a Fm. Rio do Rasto — os outros dois são Australerpeton cosgriffi (Serra do Cadeado, PR) e Bageherpeton longignathus (RS). Coletado em 1985 por equipe da UFRGS, mas só descrito em 2015. O material compreende elementos cranianos (região orbital, basicrânio, estapédio, hemimandíbula direita) e pós-cranianos (vértebras, costelas, cintura peitoral, fêmur direito e um conjunto de escamas). Difere dos rinesuquídeos pelo epipterigoide robusto e alongado e pelos bolsões musculares do parasfenoide mais profundos. De focinho curto e largo — ao contrário do focinho longo e delgado de Australerpeton e Bageherpeton. A análise filogenética o agrupa como táxon-irmão de Australerpeton, em posição transicional entre os temnospôndilos permianos da Plataforma Russa e os sul-africanos, sustentando uma conexão entre as faunas permianas do Brasil e do Leste Europeu. A Serra do Espigão é uma localidade fossilífera de tetrápodes inédita, que amplia geograficamente o registro da Fm. Rio do Rasto.",
+    "fontes": [
+      "https://lume.ufrgs.br/handle/10183/132382",
+      "https://www.lume.ufrgs.br/bitstream/handle/10183/132382/000915740.pdf?isAllowed=y&sequence=1"
+    ],
+    "x": 394.3,
+    "y": 204.8
   }
 ]

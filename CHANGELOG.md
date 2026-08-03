@@ -22,7 +22,13 @@ Formato: as versões seguem `ANO.MÊS.N`.
 - Registro de "*Loxomma*" (Criciúma, Putzer 1954) incluído **com
   ressalva explícita**: o gênero é um bafetídeo do Carbonífero europeu
   e a atribuição carece de revisão — não vale como identificação atual.
-- Novo município: Bom Jardim da Serra.
+- ***Parapytanga catarinensis*** (Strapasson, Pinheiro & Soares, 2015) —
+  o **único temnospôndilo formalmente nomeado de Santa Catarina**, e um
+  dos três descritos para toda a Fm. Rio do Rasto. Holótipo
+  UFRGS-PV-0355-P, da Serra do Espigão (Santa Cecília), coletado em 1985
+  e descrito só em 2015. O registro genérico "anfíbio labirintodonte" da
+  Coluna White passou a remeter a ele.
+- Novos municípios: Bom Jardim da Serra e Santa Cecília.
 
 ### Avifauna do Brasil (25 → 27)
 - ***Macranhinga paranensis*** — o material brasileiro do alto Rio Acre
