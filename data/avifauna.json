@@ -498,5 +498,55 @@
     "obs": "Fóssil de ave-do-terror mais recente já datado diretamente por radiocarbono (não por associação estratigráfica), estendendo a sobrevivência conhecida da família até o Pleistoceno terminal. Originalmente identificado como Cathartidae indet. por Alvarenga et al. (2008); redescrito como novo gênero em 2026. Psilopterinae de pequeno porte, massa estimada ~6 kg.",
     "x": 471.9,
     "y": 275.0
+  },
+  {
+    "taxon": "Macranhinga paranensis",
+    "autor_ano": "Noriega, 1992 (= Anhinga fraileyi Campbell, 1996)",
+    "familia": "Anhingidae",
+    "ordem": "Suliformes",
+    "categoria": "Vertebrado — ave",
+    "periodo": "Mioceno Superior",
+    "idade_ma": "~9–7 Ma (Huayqueriano)",
+    "formacao": "Formação Solimões",
+    "estado": "Acre",
+    "municipio": "Alto Rio Acre (localidades Patos e Cachoeira do Bandeira), fronteira Brasil–Peru",
+    "lat": -10.94,
+    "lon": -69.57,
+    "armazenamento": "Laboratório de Pesquisas Paleontológicas, UFAC (Rio Branco, AC)",
+    "holotipo": "LACM 4611 (localidade Patos = Acre 6)",
+    "descritor_ref": "Guilherme, E., D’Apolito, C., Muniz, F., Lomba, S.O., Aldrin, L. & Hsiou, A.S. (2024) — The Anatomical Record 307(6):2047–2064",
+    "obs": "Biáguar gigante do Mioceno Superior. O material brasileiro foi descrito por Campbell (1996) como espécie nova, Anhinga fraileyi, a partir da localidade Patos, no alto Rio Acre, na fronteira Brasil–Peru; hoje esse nome é tratado como sinônimo júnior de M. paranensis (Diederle, 2017). Os biáguares gigantes desapareceram da América do Sul no Plioceno inicial.",
+    "x": 69.6,
+    "y": 274.7,
+    "fontes": [
+      "https://doi.org/10.1002/ar.25329",
+      "https://pubmed.ncbi.nlm.nih.gov/37779325/",
+      "http://www.paleolab.com.br/assets/uploads/files/Guilherme_et_al_2023_New_fossil_anhingids_Miocene_Acre_compressed.pdf"
+    ]
+  },
+  {
+    "taxon": "Macranhinga sp.",
+    "autor_ano": "Guilherme et al., 2024",
+    "familia": "Anhingidae",
+    "ordem": "Suliformes",
+    "categoria": "Vertebrado — ave",
+    "periodo": "Mioceno Superior",
+    "idade_ma": "~9–7 Ma (Huayqueriano)",
+    "formacao": "Formação Solimões",
+    "estado": "Acre",
+    "municipio": "Alto Rio Acre (localidades Patos e Cachoeira do Bandeira), fronteira Brasil–Peru",
+    "lat": -10.94,
+    "lon": -69.57,
+    "armazenamento": "Laboratório de Pesquisas Paleontológicas, UFAC (Rio Branco, AC)",
+    "holotipo": "UFAC 6990 (cintura pélvica) e material associado",
+    "descritor_ref": "Guilherme, E., D’Apolito, C., Muniz, F., Lomba, S.O., Aldrin, L. & Hsiou, A.S. (2024) — The Anatomical Record 307(6):2047–2064",
+    "obs": "Fragmentos de cintura pélvica, fêmures e vértebras de um anhingídeo gigante recuperados do Membro Conglomerático Acre. Junto com Anhinga minuta — o menor biáguar conhecido — e com M. ranzii, indica a coexistência de até TRÊS táxons distintos de Anhingidae numa mesma localidade, provavelmente repartindo nicho para evitar competição direta por alimento e sítios reprodutivos.",
+    "x": 69.6,
+    "y": 274.7,
+    "fontes": [
+      "https://doi.org/10.1002/ar.25329",
+      "https://pubmed.ncbi.nlm.nih.gov/37779325/",
+      "http://www.paleolab.com.br/assets/uploads/files/Guilherme_et_al_2023_New_fossil_anhingids_Miocene_Acre_compressed.pdf"
+    ]
   }
 ]

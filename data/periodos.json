@@ -656,14 +656,68 @@
     ]
   },
   {
-    "nome": "Permiano Superior",
+    "nome": "Permiano Médio (Guadalupiano)",
     "ordem": 9,
+    "era": "Paleozóico",
+    "inicio_ma": 273.0,
+    "fim_ma": 259.1,
+    "cor": "#8fae66",
+    "descricao": "Época média do Permiano, ausente do catálogo até então. Representada pela Fm. Teresina (Grupo Passa Dois), depositada num grande corpo d’água raso sem conexão evidente com o oceano, sob aridização crescente do Gondwana ocidental.",
+    "total_registros": 10,
+    "taxons": [
+      {
+        "taxon": "Krauselcladus canoinhensis Yoshida emend. Fanton et al.",
+        "count": 1,
+        "ids": [
+          159
+        ]
+      },
+      {
+        "taxon": "Pinzonella neotropica",
+        "count": 1,
+        "ids": [
+          160
+        ]
+      },
+      {
+        "taxon": "cf. Jacquesia elongata",
+        "count": 1,
+        "ids": [
+          161
+        ]
+      },
+      {
+        "taxon": "?Lycopodiopsis derbyi (caules de licófita)",
+        "count": 1,
+        "ids": [
+          162
+        ]
+      },
+      {
+        "taxon": "Micrófilos permineralizados (indet.)",
+        "count": 1,
+        "ids": [
+          163
+        ]
+      },
+      {
+        "taxon": "Actinopterygii indet. (dentes e escamas em bone beds)",
+        "count": 1,
+        "ids": [
+          164
+        ]
+      }
+    ]
+  },
+  {
+    "nome": "Permiano Superior",
+    "ordem": 10,
     "era": "Paleozóico",
     "inicio_ma": 259.1,
     "fim_ma": 251.9,
     "cor": "#9bb86b",
     "descricao": "Permiano final, representado pela Fm. Rio do Rasto, com depósitos continentais lacustres-fluviais e tetrápodes e invertebrados associados.",
-    "total_registros": 5,
+    "total_registros": 12,
     "taxons": [
       {
         "taxon": "Schizoneura gondwanensis Feistmantel, 1876",
@@ -704,7 +758,7 @@
   },
   {
     "nome": "Jurássico Superior (?) – Cretáceo Inferior (?)",
-    "ordem": 10,
+    "ordem": 11,
     "era": "Mesozóico",
     "inicio_ma": 152,
     "fim_ma": 100,
@@ -723,7 +777,7 @@
   },
   {
     "nome": "Cretáceo Inferior",
-    "ordem": 11,
+    "ordem": 12,
     "era": "Mesozóico",
     "inicio_ma": 143.1,
     "fim_ma": 100.5,
@@ -742,7 +796,7 @@
   },
   {
     "nome": "Plioceno–Pleistoceno",
-    "ordem": 12,
+    "ordem": 13,
     "era": "Cenozóico",
     "inicio_ma": 5.33,
     "fim_ma": 0.012,
@@ -782,7 +836,7 @@
   },
   {
     "nome": "Pleistoceno",
-    "ordem": 13,
+    "ordem": 14,
     "era": "Cenozóico",
     "inicio_ma": 2.58,
     "fim_ma": 0.0117,
@@ -801,7 +855,7 @@
   },
   {
     "nome": "Pleistoceno Superior",
-    "ordem": 14,
+    "ordem": 15,
     "era": "Cenozóico",
     "inicio_ma": 0.129,
     "fim_ma": 0.0117,
@@ -834,7 +888,7 @@
   },
   {
     "nome": "Pleistoceno–Holoceno",
-    "ordem": 15,
+    "ordem": 16,
     "era": "Cenozóico",
     "inicio_ma": 0.0117,
     "fim_ma": 0,
@@ -853,7 +907,7 @@
   },
   {
     "nome": "Quaternário (Pleistoceno–Holoceno)",
-    "ordem": 16,
+    "ordem": 17,
     "era": "Cenozóico",
     "inicio_ma": 2.58,
     "fim_ma": 0,

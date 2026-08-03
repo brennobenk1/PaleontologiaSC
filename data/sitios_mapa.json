@@ -466,5 +466,62 @@
     ],
     "x": 409.2,
     "y": 43.4
+  },
+  {
+    "site": "Afloramento de Canoinhas",
+    "municipio": "Canoinhas",
+    "bacia": "Bacia do Paraná — Fm. Teresina",
+    "lat": -26.19994,
+    "lon": -50.433,
+    "count": 6,
+    "periodos": [
+      "Permiano Médio (Guadalupiano)"
+    ],
+    "taxons_amostra": [
+      "Krauselcladus canoinhensis Yoshida emend. Fanton et al.",
+      "Pinzonella neotropica",
+      "cf. Jacquesia elongata",
+      "?Lycopodiopsis derbyi (caules de licófita)",
+      "Micrófilos permineralizados (indet.)"
+    ],
+    "x": 396.2,
+    "y": 63.3
+  },
+  {
+    "site": "Coluna White (Serra do Rio do Rastro)",
+    "municipio": "Bom Jardim da Serra",
+    "bacia": "Bacia do Paraná — Grupos Guatá e Passa Dois",
+    "lat": -28.3889,
+    "lon": -49.4644,
+    "count": 10,
+    "periodos": [
+      "Permiano Médio (Guadalupiano)",
+      "Permiano Superior"
+    ],
+    "taxons_amostra": [
+      "Dadoxylon sp. (troncos fósseis silicificados)",
+      "Pelecypoda indet. (Fm. Palermo)",
+      "Palinoflora da Fm. Palermo (esporomorfos)",
+      "Restos de peixes indet. (Fm. Serra Alta)",
+      "Pelecypoda indet. (Fm. Serra Alta)"
+    ],
+    "x": 506.9,
+    "y": 525.4
+  },
+  {
+    "site": "Região de Criciúma (Fm. Palermo)",
+    "municipio": "Criciúma",
+    "bacia": "Bacia do Paraná — Fm. Palermo",
+    "lat": -28.6775,
+    "lon": -49.3697,
+    "count": 1,
+    "periodos": [
+      "Permiano Médio (Guadalupiano)"
+    ],
+    "taxons_amostra": [
+      "\"Loxomma\" sp. (tetrápode — identificação a revisar)"
+    ],
+    "x": 517.8,
+    "y": 586.4
   }
 ]

@@ -6,6 +6,33 @@ saber o que havia nele naquele momento.
 
 Formato: as versões seguem `ANO.MÊS.N`.
 
+## 2026.07.3 — 30/07/2026
+
+### Santa Catarina (164 → 175)
+- **+11 registros da Coluna White** (SIGEP 024), a seção estratigráfica
+  clássica do Gondwana no Brasil, na Serra do Rio do Rastro — onde
+  Israel C. White correlacionou, em 1908, o "Systema de Santa Catharina"
+  ao "Systema Karroo" da África do Sul.
+- Duas formações que faltavam por completo passam a ter registro:
+  **Fm. Palermo** (*Dadoxylon*, pelecípodes, palinoflora) e
+  **Fm. Serra Alta** (peixes, pelecípodes, conchostráceos).
+- Tafoflora do **Mb. Morro Pelado na sua localidade-tipo**
+  (*Schizoneura*, *Dizeugotheca*, *Dichophyllites*) e anfíbio
+  labirintodonte da Fm. Rio do Rasto.
+- Registro de "*Loxomma*" (Criciúma, Putzer 1954) incluído **com
+  ressalva explícita**: o gênero é um bafetídeo do Carbonífero europeu
+  e a atribuição carece de revisão — não vale como identificação atual.
+- Novo município: Bom Jardim da Serra.
+
+### Avifauna do Brasil (25 → 27)
+- ***Macranhinga paranensis*** — o material brasileiro do alto Rio Acre
+  foi descrito por Campbell (1996) como *Anhinga fraileyi*, hoje
+  sinônimo júnior.
+- ***Macranhinga* sp.** (Guilherme et al., 2024, *The Anatomical
+  Record*, DOI 10.1002/ar.25329): com *A. minuta* e *M. ranzii*,
+  evidencia **três** táxons de Anhingidae coexistindo na mesma
+  localidade do Mioceno amazônico.
+
 ## 2026.07.2 — 28/07/2026
 
 ### Acessibilidade
