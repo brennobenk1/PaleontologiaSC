@@ -6,6 +6,45 @@ saber o que havia nele naquele momento.
 
 Formato: as versões seguem `ANO.MÊS.N`.
 
+## 2026.07.8 — 03/08/2026
+
+### Acessibilidade — foco no modal
+Auditoria anterior mediu o elemento errado e acusou ARIA ausente.
+**Os atributos estavam corretos** (`role="dialog"`, `aria-modal`,
+`aria-labelledby` no `.modal-card`). O defeito real era o **foco**:
+- ao abrir a ficha, o foco ficava no cartão de trás;
+- o Tab escapava para a página coberta (16 Tabs, nenhum dentro).
+
+Corrigido: o foco entra no diálogo (o leitor de tela anuncia o título
+antes do conteúdo), fica preso com Tab e Shift+Tab, e volta ao
+elemento que abriu a ficha. Vale para o modal do catálogo e o da
+avifauna.
+
+### Caminho de correção
+- Botão **"reportar erro"** em cada ficha. Abre uma issue no GitHub já
+  preenchida com número do registro, táxon, permalink, versão do banco
+  e a fonte citada — o revisor não recomeça a investigação do zero.
+- Link também no rodapé.
+
+Motivo: erro numa ficha vira erro em todo trabalho que a citou, e este
+banco já teve erros reais (citação da *Microhemidiscia*, procedência do
+registro 96, nove contradições estratigráficas). Sem caminho de
+correção, quem percebe não tem o que fazer.
+
+### Navegação taxonômica
+O campo `categoria` já era hierárquico na prática ("Flora —
+Glossopteridopsida (folha)"), mas o filtro tratava a string inteira como
+valor único: dezenas de opções irmãs e nenhuma forma de pedir "todos os
+vertebrados". Agora há navegação de **dois níveis** acima do catálogo —
+Flora (73), Invertebrado (36), Icnofóssil (35), Vertebrado (23),
+Microfóssil (7), Metazoário (5) — e, ao escolher um grupo, seus
+subgrupos aparecem com contagem. Sem alterar o dado.
+
+### Fontes
+- Os 9 registros de Águas Claras passam de "Gandini et al. (2007)" para
+  a referência completa: *Gaea — Journal of Geoscience* (UNISINOS)
+  3(1):47–59.
+
 ## 2026.07.7 — 03/08/2026 · reforço das fontes
 
 Ataque direto ao problema que a auditoria anterior apontou: 19

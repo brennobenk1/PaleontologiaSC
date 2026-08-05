@@ -210,7 +210,7 @@ function initHome(){
    CATÁLOGO — busca, filtros, cartões/tabela, ficha (modal)
    =========================================================== */
 let __catalogMode = 'cards';
-let __catalogFilters = { periodo:'', categoria:'', municipio:'', instituicao:'', q:'' };
+let __catalogFilters = { periodo:'', categoria:'', municipio:'', instituicao:'', q:'', grupoTax:'', subTax:'' };
 
 function initCatalogo(){
   const periodoSel = document.getElementById('filterPeriodo');
@@ -236,7 +236,8 @@ function initCatalogo(){
   instSel.addEventListener('change', e => { __catalogFilters.instituicao = e.target.value; renderCatalog(); });
 
   document.getElementById('clearFilters').addEventListener('click', () => {
-    __catalogFilters = { periodo:'', categoria:'', municipio:'', instituicao:'', q:'' };
+    __catalogFilters = { periodo:'', categoria:'', municipio:'', instituicao:'', q:'', grupoTax:'', subTax:'' };
+    renderNavTaxonomica();
     document.getElementById('searchInput').value = '';
     document.querySelectorAll('.filter-row select').forEach(s => s.value = '');
     renderCatalog();
@@ -260,6 +261,8 @@ function applyCatalogFilters(list){
   return list.filter(f => {
     if(__catalogFilters.periodo && f.periodo !== __catalogFilters.periodo) return false;
     if(__catalogFilters.categoria && f.categoria !== __catalogFilters.categoria) return false;
+    if(__catalogFilters.grupoTax && grupoTaxonomico(f.categoria) !== __catalogFilters.grupoTax) return false;
+    if(__catalogFilters.subTax && subgrupoTaxonomico(f.categoria) !== __catalogFilters.subTax) return false;
     if(__catalogFilters.municipio && !municipiosDe(f.municipio).includes(__catalogFilters.municipio)) return false;
     if(__catalogFilters.instituicao && !guardasDe(f.armazenamento).includes(__catalogFilters.instituicao)) return false;
     if(q){
@@ -365,6 +368,8 @@ function openFossilModal(id){
   atualizarURL(null, '#/registro/' + id);
   document.getElementById('modalBody').innerHTML = `
     <p class="${categoriaPillClass(f.categoria)}" style="display:inline-block;margin-bottom:0.6rem;">${f.categoria}</p>
+    <a class="btn-reportar" target="_blank" rel="noopener noreferrer" title="Encontrou um erro neste registro? Abra uma correção"
+       href="${urlIssue(f)}">&#9873; reportar erro</a>
     <button type="button" class="btn-permalink" data-permalink="${urlDoRegistro(id)}" title="Copiar link para este registro">
       <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
         <path d="M10 13a5 5 0 0 0 7.5.5l3-3a5 5 0 0 0-7-7l-1.5 1.5"/>
@@ -400,6 +405,7 @@ function openFossilModal(id){
     </div>
   `;
   document.getElementById('modalOverlay').classList.add('open');
+  focarModal();
 }
 function closeFossilModal(){
   document.getElementById('modalOverlay').classList.remove('open');
@@ -752,6 +758,7 @@ function openAviModal(taxonName){
     </div>
   `;
   document.getElementById('modalOverlay').classList.add('open');
+  focarModal();
 }
 
 function renderAviStateTable(){
@@ -1295,7 +1302,7 @@ const CITACAO = {
   // senão a citação sai como "PALEO-SC. Paleo-SC — Banco de Dados..."
   entidade: 'Paleo-SC',
   titulo: 'Banco de Dados Paleontológico de Santa Catarina',
-  versao: '2026.07.7',
+  versao: '2026.07.8',
   ano: '2026',
   url: 'https://brennobenk1.github.io/PaleontologiaSC/'
 };
@@ -1361,3 +1368,148 @@ function initCitacao(){
   desenhar();
 }
 document.addEventListener('DOMContentLoaded', initCitacao);
+
+/* ===========================================================
+   ACESSIBILIDADE DO MODAL — foco
+   -----------------------------------------------------------
+   Os atributos ARIA (role=dialog, aria-modal, aria-labelledby)
+   já estavam corretos, mas o FOCO não: ao abrir a ficha ele
+   permanecia no cartão de trás, e o Tab passeava pela página
+   coberta pelo modal. Para quem navega por teclado ou usa
+   leitor de tela, a ficha era inalcançável.
+   =========================================================== */
+const FOCAVEIS = 'a[href], button:not([disabled]), input, select, textarea, [tabindex]:not([tabindex="-1"])';
+let __focoAnterior = null;
+
+function focarModal(){
+  const card = document.getElementById('modalCard');
+  if(!card) return;
+  __focoAnterior = document.activeElement;
+  card.setAttribute('tabindex','-1');
+  // foca o próprio diálogo: o leitor de tela anuncia o título (aria-labelledby)
+  // antes de o usuário começar a tabular pelo conteúdo
+  requestAnimationFrame(() => card.focus());
+}
+
+function prenderFoco(e){
+  if(e.key !== 'Tab') return;
+  const overlay = document.getElementById('modalOverlay');
+  if(!overlay || !overlay.classList.contains('open')) return;
+  const card = document.getElementById('modalCard');
+  const itens = [...card.querySelectorAll(FOCAVEIS)].filter(el => el.offsetParent !== null);
+  if(!itens.length){ e.preventDefault(); card.focus(); return; }
+  const primeiro = itens[0], ultimo = itens[itens.length - 1];
+  const atual = document.activeElement;
+  if(!card.contains(atual)){ e.preventDefault(); primeiro.focus(); return; }
+  if(e.shiftKey && atual === primeiro){ e.preventDefault(); ultimo.focus(); }
+  else if(!e.shiftKey && atual === ultimo){ e.preventDefault(); primeiro.focus(); }
+}
+document.addEventListener('keydown', prenderFoco, true);
+
+/* devolve o foco a quem abriu — senão o leitor volta ao topo da página */
+document.addEventListener('modal:close', () => {
+  if(__focoAnterior && document.contains(__focoAnterior)){
+    __focoAnterior.focus();
+    __focoAnterior = null;
+  }
+});
+
+
+/* ===========================================================
+   REPORTAR ERRO
+   -----------------------------------------------------------
+   Um banco citável precisa de caminho de correção: erro numa
+   ficha vira erro em todo trabalho que a citou. O permalink
+   torna isso preciso — a issue já nasce sabendo QUAL registro.
+   Pré-preenche número, táxon, versão e link, para que o revisor
+   não precise recomeçar a investigação do zero.
+   =========================================================== */
+const REPO_ISSUES = 'https://github.com/brennobenk1/PaleontologiaSC/issues/new';
+
+function urlIssue(f){
+  const titulo = `Correção — registro nº ${String(f.id).padStart(3,'0')}: ${f.taxon}`;
+  const corpo = [
+    `**Registro:** nº ${String(f.id).padStart(3,'0')} — ${f.taxon}`,
+    `**Link:** ${urlDoRegistro(f.id)}`,
+    `**Versão do banco:** ${CITACAO.versao}`,
+    `**Fonte citada na ficha:** ${f.descritor}`,
+    '',
+    '---',
+    '',
+    '**O que está incorreto?**',
+    '(campo, valor atual e valor correto)',
+    '',
+    '**Referência que sustenta a correção**',
+    '(DOI, artigo, capítulo — o que permitir verificar)',
+    ''
+  ].join('\n');
+  return `${REPO_ISSUES}?title=${encodeURIComponent(titulo)}&body=${encodeURIComponent(corpo)}`;
+}
+
+
+/* ===========================================================
+   NAVEGAÇÃO TAXONÔMICA (catálogo de SC)
+   -----------------------------------------------------------
+   O campo `categoria` já era hierárquico na prática — "Flora —
+   Glossopteridopsida (folha)" tem grande grupo e subgrupo
+   separados por travessão — mas o filtro tratava a string
+   inteira como valor único. Com 180 registros isso gerava
+   dezenas de opções irmãs e nenhuma forma de pedir, por
+   exemplo, "todos os vertebrados". Aqui a hierarquia implícita
+   vira navegação de dois níveis, sem alterar o dado.
+   =========================================================== */
+function grupoTaxonomico(cat){
+  const g = String(cat || '').split('—')[0].trim();
+  return g || 'Outros';
+}
+function subgrupoTaxonomico(cat){
+  const partes = String(cat || '').split('—');
+  if(partes.length < 2) return null;
+  return partes.slice(1).join('—').replace(/\(.*?\)/g, '').trim() || null;
+}
+
+function montarArvoreTaxonomica(){
+  const arv = {};
+  DB_FOSSEIS.forEach(f => {
+    const g = grupoTaxonomico(f.categoria), s = subgrupoTaxonomico(f.categoria);
+    arv[g] = arv[g] || { total: 0, subs: {} };
+    arv[g].total++;
+    if(s){ arv[g].subs[s] = (arv[g].subs[s] || 0) + 1; }
+  });
+  return arv;
+}
+
+function renderNavTaxonomica(){
+  const alvo = document.getElementById('navTaxonomica');
+  if(!alvo) return;
+  const arv = montarArvoreTaxonomica();
+  const ordem = Object.entries(arv).sort((a,b) => b[1].total - a[1].total);
+  const ativo = __catalogFilters.grupoTax || '';
+  const ativoSub = __catalogFilters.subTax || '';
+
+  alvo.innerHTML = `
+    <button type="button" class="tax-chip${!ativo ? ' ativo' : ''}" data-grupo="">
+      Todos <i>${DB_FOSSEIS.length}</i>
+    </button>
+    ${ordem.map(([g, o]) => `
+      <button type="button" class="tax-chip${ativo === g ? ' ativo' : ''}" data-grupo="${g}">
+        ${g} <i>${o.total}</i>
+      </button>`).join('')}
+    ${ativo && arv[ativo] ? `<div class="tax-subs">
+      ${Object.entries(arv[ativo].subs).sort((a,b) => b[1]-a[1]).map(([s,n]) => `
+        <button type="button" class="tax-sub${ativoSub === s ? ' ativo' : ''}" data-sub="${s}">
+          ${s} <i>${n}</i>
+        </button>`).join('')}
+    </div>` : ''}`;
+
+  alvo.querySelectorAll('.tax-chip').forEach(b => b.addEventListener('click', () => {
+    __catalogFilters.grupoTax = b.dataset.grupo;
+    __catalogFilters.subTax = '';
+    renderNavTaxonomica(); renderCatalog();
+  }));
+  alvo.querySelectorAll('.tax-sub').forEach(b => b.addEventListener('click', () => {
+    __catalogFilters.subTax = (__catalogFilters.subTax === b.dataset.sub) ? '' : b.dataset.sub;
+    renderNavTaxonomica(); renderCatalog();
+  }));
+}
+document.addEventListener('DOMContentLoaded', () => setTimeout(renderNavTaxonomica, 0));

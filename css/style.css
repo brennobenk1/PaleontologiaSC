@@ -796,3 +796,39 @@ body::before{
 .cards-sentinela span:nth-child(3){ animation-delay:.3s; }
 @keyframes pulsaPonto{ 0%,100%{opacity:.3; transform:scale(.8);} 50%{opacity:1; transform:scale(1);} }
 @media (prefers-reduced-motion: reduce){ .cards-sentinela span{ animation:none; opacity:.5; } }
+
+/* reportar erro — ao lado do permalink na ficha */
+.btn-reportar{
+  float:right; margin-left:0.4rem; text-decoration:none;
+  display:inline-flex; align-items:center; gap:0.3rem;
+  font-family: var(--font-mono); font-size:0.65rem; letter-spacing:0.03em;
+  border:1px solid var(--line-strong); border-radius:999px;
+  padding:0.28rem 0.7rem; color: var(--texto-suave);
+  transition: background .15s ease, color .15s ease, border-color .15s ease;
+}
+.btn-reportar:hover{ background: var(--terracotta-lt); color:#4a2607; border-color: var(--terracotta); }
+@media (max-width:880px){ .btn-reportar{ float:none; margin:0 0 0.5rem 0; } }
+
+/* navegação taxonômica de dois níveis */
+.nav-taxonomica{ display:flex; flex-wrap:wrap; gap:0.4rem; margin:0 0 1rem; align-items:center; }
+.tax-chip, .tax-sub{
+  font-family: var(--font-body); font-size:0.82rem;
+  background: var(--paper); border:1px solid var(--line-strong); border-radius:999px;
+  padding:0.3rem 0.8rem; color: var(--ink);
+  transition: background .15s ease, color .15s ease, border-color .15s ease;
+}
+.tax-chip i, .tax-sub i{
+  font-style:normal; font-family: var(--font-mono); font-size:0.66rem;
+  color: var(--texto-suave); margin-left:0.35rem;
+}
+.tax-chip:hover, .tax-sub:hover{ border-color: var(--petrol-lt); background: var(--stone-dk); }
+.tax-chip.ativo{ background: var(--petrol-dk); color: var(--paper); border-color: var(--petrol-dk); }
+.tax-chip.ativo i{ color: rgba(246,247,240,0.7); }
+.tax-subs{
+  flex-basis:100%; display:flex; flex-wrap:wrap; gap:0.35rem;
+  padding:0.6rem 0 0.1rem; margin-top:0.2rem; border-top:1px dashed var(--line);
+}
+.tax-sub{ font-size:0.76rem; padding:0.22rem 0.65rem; background: var(--stone-dk); }
+.tax-sub.ativo{ background: var(--moss); color: var(--paper); border-color: var(--moss-dk); }
+.tax-sub.ativo i{ color: rgba(246,247,240,0.75); }
+@media (max-width:880px){ .nav-taxonomica{ gap:0.3rem; } .tax-chip{ font-size:0.76rem; padding:0.28rem 0.65rem; } }
