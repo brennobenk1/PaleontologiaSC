@@ -6,6 +6,37 @@ saber o que havia nele naquele momento.
 
 Formato: as versões seguem `ANO.MÊS.N`.
 
+## 2026.07.9 — 05/08/2026
+
+### Coerência taxonômica das categorias
+A navegação por grupo, criada na versão anterior, expôs uma
+incoerência que a lista plana escondia: **"Metazoário" aparecia como
+irmão de "Invertebrado" e "Vertebrado"** — mas Metazoa contém os dois.
+Havia ainda uma categoria "Invertebrado / Vertebrado", que é mistura e
+não classificação.
+
+Os cinco registros afetados são os ediacaranos da Bacia do Itajaí
+(*Parvancorina*, *Charniodiscus*, *Cyclomedusa*, *Chancelloria*,
+*Aspidella*), cuja afinidade é **genuinamente incerta** na literatura —
+a ressalva estava certa, faltava explicitá-la. Agora:
+
+- "Metazoário" -> **"Metazoário de afinidade incerta"**
+- "Invertebrado / Vertebrado" -> **"Assembleia fóssil (biota mista)"**
+
+Na navegação, esses dois grupos vão por último, com borda tracejada e
+marcador "?", e explicam no tooltip que não são categorias equivalentes
+às demais. O dado não mudou — mudou o que ele afirma.
+
+### Instituições (12 -> 17)
+Cinco instituições citadas nos registros não constavam da aba:
+**UERJ, Museu do Contestado (Três Barras), UNESP, UNICAMP e
+UNIPAMPA**. Vieram das adições recentes (Turvo, mesossauros, Canoinhas,
+*Parapytanga*) e a sincronização passou batida.
+
+A ausência mais grave era a da UERJ, que guarda o holótipo UERJ-IC-170:
+quem abria a ficha do registro 96, ia à aba procurar a instituição e
+não encontrava nada.
+
 ## 2026.07.8 — 03/08/2026
 
 ### Acessibilidade — foco no modal

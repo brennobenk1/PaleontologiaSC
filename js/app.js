@@ -1302,7 +1302,7 @@ const CITACAO = {
   // senão a citação sai como "PALEO-SC. Paleo-SC — Banco de Dados..."
   entidade: 'Paleo-SC',
   titulo: 'Banco de Dados Paleontológico de Santa Catarina',
-  versao: '2026.07.8',
+  versao: '2026.07.9',
   ano: '2026',
   url: 'https://brennobenk1.github.io/PaleontologiaSC/'
 };
@@ -1483,7 +1483,14 @@ function renderNavTaxonomica(){
   const alvo = document.getElementById('navTaxonomica');
   if(!alvo) return;
   const arv = montarArvoreTaxonomica();
-  const ordem = Object.entries(arv).sort((a,b) => b[1].total - a[1].total);
+  // grupos de afinidade indeterminada vão por último e recebem marcação
+  // própria: "Metazoário de afinidade incerta" e "Assembleia fóssil"
+  // NÃO são irmãos de Vertebrado/Invertebrado — são caixas de material
+  // que a literatura não consegue posicionar, e exibi-los como se
+  // fossem categorias equivalentes induziria o leitor ao erro.
+  const indet = g => /afinidade incerta|Assembleia fóssil/.test(g);
+  const ordem = Object.entries(arv).sort((a,b) =>
+    (indet(a[0]) - indet(b[0])) || (b[1].total - a[1].total));
   const ativo = __catalogFilters.grupoTax || '';
   const ativoSub = __catalogFilters.subTax || '';
 
@@ -1492,8 +1499,9 @@ function renderNavTaxonomica(){
       Todos <i>${DB_FOSSEIS.length}</i>
     </button>
     ${ordem.map(([g, o]) => `
-      <button type="button" class="tax-chip${ativo === g ? ' ativo' : ''}" data-grupo="${g}">
-        ${g} <i>${o.total}</i>
+      <button type="button" class="tax-chip${ativo === g ? ' ativo' : ''}${indet(g) ? ' tax-indet' : ''}"
+              data-grupo="${g}"${indet(g) ? ' title="Material que a literatura não posiciona com segurança — não é um grupo equivalente aos demais"' : ''}>
+        ${indet(g) ? '<span class="tax-marca">?</span>' : ''}${g} <i>${o.total}</i>
       </button>`).join('')}
     ${ativo && arv[ativo] ? `<div class="tax-subs">
       ${Object.entries(arv[ativo].subs).sort((a,b) => b[1]-a[1]).map(([s,n]) => `

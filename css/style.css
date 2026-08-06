@@ -832,3 +832,13 @@ body::before{
 .tax-sub.ativo{ background: var(--moss); color: var(--paper); border-color: var(--moss-dk); }
 .tax-sub.ativo i{ color: rgba(246,247,240,0.75); }
 @media (max-width:880px){ .nav-taxonomica{ gap:0.3rem; } .tax-chip{ font-size:0.76rem; padding:0.28rem 0.65rem; } }
+
+/* grupos de afinidade indeterminada — não são irmãos dos demais */
+.tax-chip.tax-indet{ border-style:dashed; color: var(--texto-suave); }
+.tax-chip.tax-indet.ativo{ background: var(--moss-dk); color: var(--paper); border-style:solid; }
+.tax-marca{
+  display:inline-block; margin-right:0.35rem; width:14px; height:14px; line-height:14px;
+  text-align:center; border-radius:50%; background: var(--stone-dk); color: var(--moss-dk);
+  font-family: var(--font-mono); font-size:0.6rem; vertical-align:1px;
+}
+.tax-chip.tax-indet.ativo .tax-marca{ background: rgba(246,247,240,0.25); color: var(--paper); }
