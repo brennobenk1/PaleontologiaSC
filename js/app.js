@@ -386,7 +386,7 @@ function openFossilModal(id){
         <div><b>Bacia / unidade</b>${f.bacia}</div>
         <div><b>Armazenamento atual</b>${f.armazenamento}</div>
         <div><b>Unidade de pesquisa</b>${f.unidade_pesquisa}</div>
-        <div><b>Descritor(es) / referência</b>${f.descritor}</div>
+        <div><b>Descritor(es) / referência${f.tipo_fonte ? ` &middot; <span class="fonte-natureza ${classeNatureza(f.tipo_fonte)}">${f.tipo_fonte}</span>` : ''}</b>${f.descritor}</div>
       </div>
     </div>
     ${f.observacoes && f.observacoes !== '-' ? `
@@ -436,11 +436,68 @@ function initMapa(){
 
   // maiores primeiro => desenhados por baixo, para que sítios pequenos
   // sobrepostos por um vizinho grande continuem visíveis e clicáveis
+  /* Vários sítios legitimamente compartilham a MESMA coordenada: as três
+     localidades de Taió, os dois afloramentos de Doutor Pedrinho, o
+     Bainha e a região de Criciúma/Fm. Palermo. Desenhados sobre o mesmo
+     ponto, os menores ficavam totalmente cobertos pelos maiores e se
+     tornavam inalcançáveis (11 dos 45 sítios estavam nessa condição).
+     Aqui eles recebem um deslocamento radial pequeno e DETERMINÍSTICO —
+     apenas no desenho; lat/lon dos registros permanecem intactos. */
+  /* Agrupamento por PROXIMIDADE, não por coordenada idêntica: alguns
+     sítios diferem em frações de pixel (lat/lon ligeiramente distintas)
+     e, agrupados só por igualdade exata, escapavam do anel e voltavam a
+     se sobrepor. O limiar cobre o raio do maior símbolo possível. */
+  const visiveis = DB_SITIOS.filter(s => s.x != null);
+  const LIMIAR = 26;
+  const grupos = [];
+  visiveis.forEach(s => {
+    const g = grupos.find(g => Math.hypot(g[0].x - s.x, g[0].y - s.y) < LIMIAR);
+    if(g) g.push(s); else grupos.push([s]);
+  });
+  const porPonto = Object.fromEntries(grupos.map((g, i) => [i, g]));
+  const desloc = {};
+  Object.values(porPonto).forEach(grupo => {
+    if(grupo.length < 2) return;
+    /* TODOS entram no anel, inclusive o maior. Deixá-lo no centro
+       parecia natural, mas os satélites eram desenhados depois (ordem
+       decrescente de contagem) e cobriam justamente o sítio principal.
+       Com todos na circunferência, nenhum se sobrepõe ao outro. */
+    const ord = grupo.slice().sort((a, b) => b.count - a.count);
+    const raio = s => 4 + Math.sqrt(s.count) * 2.8;
+    const rs = ord.map(raio).sort((a, b) => b - a);
+    /* Dois vizinhos no anel não podem se sobrepor: a corda entre eles
+       precisa superar a soma dos dois maiores raios. Dimensionar pelo
+       raio médio deixava os grupos com um sítio grande (Bainha, 58
+       registros) ainda encobertos. */
+    const cordaMin = rs[0] + (rs[1] || rs[0]) + 6;
+    const raioAnel = Math.max(
+      rs[0] + 6,
+      cordaMin / (2 * Math.sin(Math.PI / Math.max(ord.length, 2)))
+    );
+    ord.forEach((s, i) => {
+      const ang = (2 * Math.PI * i) / ord.length - Math.PI / 2;
+      desloc[s.site] = [Math.cos(ang) * raioAnel, Math.sin(ang) * raioAnel];
+    });
+  });
+
+  /* Ordem de desenho: MAIORES primeiro (ficam ao fundo), menores por
+     cima. Assim um sítio pequeno nunca desaparece sob um grande.
+     O inverso — grandes por cima — escondia os pequenos.
+     Para que o grande continue clicável mesmo com um pequeno adjacente
+     sobreposto, o preenchimento dos símbolos não captura o ponteiro:
+     cada disco responde pela sua própria borda e área via CSS
+     (pointer-events="visiblePainted" no elemento, aplicado abaixo). */
   const circles = DB_SITIOS.filter(s => s.x != null)
     .slice().sort((a, b) => b.count - a.count)
     .map(s => {
     const r = (4 + Math.sqrt(s.count) * 2.8).toFixed(1);
-    return `<circle cx="${s.x}" cy="${s.y}" r="${r}" fill="#b5651d" fill-opacity="0.78" stroke="#7a3a10" stroke-width="1.4" class="site-dot" data-site="${encodeURIComponent(s.site)}"></circle>`;
+    const [dx, dy] = desloc[s.site] || [0, 0];
+    const cx = (s.x + dx).toFixed(1), cy = (s.y + dy).toFixed(1);
+    // linha-guia ligando o símbolo deslocado à sua posição real
+    const guia = (dx || dy)
+      ? `<line x1="${s.x}" y1="${s.y}" x2="${cx}" y2="${cy}" stroke="#7a3a10" stroke-width="0.8" stroke-opacity="0.45"></line>`
+      : '';
+    return `${guia}<circle cx="${cx}" cy="${cy}" r="${r}" fill="#b5651d" fill-opacity="0.78" stroke="#7a3a10" stroke-width="1.4" class="site-dot" data-site="${encodeURIComponent(s.site)}"></circle>`;
   }).join('');
 
   document.getElementById('svgMapWrap').innerHTML = `
@@ -1302,7 +1359,7 @@ const CITACAO = {
   // senão a citação sai como "PALEO-SC. Paleo-SC — Banco de Dados..."
   entidade: 'Paleo-SC',
   titulo: 'Banco de Dados Paleontológico de Santa Catarina',
-  versao: '2026.07.9',
+  versao: '2026.08.5',
   ano: '2026',
   url: 'https://brennobenk1.github.io/PaleontologiaSC/'
 };
@@ -1521,3 +1578,16 @@ function renderNavTaxonomica(){
   }));
 }
 document.addEventListener('DOMContentLoaded', () => setTimeout(renderNavTaxonomica, 0));
+
+
+/* natureza da referência — deixa explícito, na própria ficha, se o
+   registro se apoia em artigo revisado por pares, capítulo de sítio,
+   tese, resumo de evento ou apenas divulgação. */
+function classeNatureza(t){
+  if(/periódico/i.test(t)) return 'nat-periodico';
+  if(/SIGEP|sítio/i.test(t)) return 'nat-sigep';
+  if(/Tese|dissertação/i.test(t)) return 'nat-tese';
+  if(/Anais|resumo/i.test(t)) return 'nat-anais';
+  if(/imprensa|Divulgação/i.test(t)) return 'nat-imprensa';
+  return 'nat-outra';
+}

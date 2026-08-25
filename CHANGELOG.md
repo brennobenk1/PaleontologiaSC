@@ -6,6 +6,213 @@ saber o que havia nele naquele momento.
 
 Formato: as versões seguem `ANO.MÊS.N`.
 
+## 2026.08.5 — 07/08/2026 · rastreabilidade das fontes
+
+### Referências completadas
+Auditoria do campo `descritor` classificou cada registro por presença de
+autoria, ano e veículo de publicação. **131 de 199 estavam completas.**
+Após esta rodada, **163**.
+
+Os maiores blocos corrigidos:
+- **10 registros de Taió** que citavam apenas "síntese taphonômica
+  (Academia.edu)" passam a referenciar a análise tafonômica das
+  concentrações fossilíferas do Mb. Paraguaçu, publicada na *Revista
+  Brasileira de Paleontologia*, e a dissertação de Boardman (2006, UFRGS).
+- **5 icnofósseis** de Rio do Sul: Lima, Netto, Corrêa & Lavina (2015),
+  *Journal of South American Earth Sciences*.
+- **4 registros de Rohn & Röster** ganharam título e boletim completos.
+- **4 actinopterígios** do Lontras: Malabarba (1988), Hamel (2005),
+  Beltan (1975).
+- *Anthracoblattina mendesi*, *Orbiculoidea guaraunensis*, vermetídeos,
+  *Arachnostega* e outros receberam título do artigo e paginação.
+
+### Natureza da fonte, declarada em cada ficha
+Novo campo `tipo_fonte`, exibido como selo colorido ao lado do
+descritor. Não basta a referência estar completa: o leitor precisa saber
+**que tipo de evidência** sustenta o registro.
+
+| Natureza | Registros |
+|---|---|
+| Artigo em periódico | 76 |
+| Capítulo de sítio (SIGEP) | 74 |
+| Tese ou dissertação | 19 |
+| Divulgação ou imprensa | 17 |
+| Anais ou resumo de evento | 12 |
+| Citação em revisão | 1 |
+
+Fica explícito, por exemplo, que a pista de terópode de Nova Veneza se
+apoia em reportagem, enquanto os 58 táxons do Bainha vêm de capítulo de
+sítio revisado.
+
+A validação passa a **exigir** que todo registro declare a natureza da
+sua fonte, e reporta a composição no modo detalhado.
+
+## 2026.08.4 — 07/08/2026 · auditoria
+
+Verificação dos 199 registros: escopo geográfico, municípios, idade
+declarada vs período, coerência de coordenadas, duplicatas e campos
+obrigatórios.
+
+### Resultado da auditoria dos dados
+- **199/199 dentro de Santa Catarina**; todos os municípios conferidos
+  um a um como catarinenses.
+- Nenhuma incoerência entre idade declarada e período; nenhum táxon
+  duplicado; nenhum campo obrigatório vazio; coordenadas de registro e
+  de sítio batendo em 100% dos casos.
+- Oito registros citam "norte de SC e PR" no local de coleta. Não é
+  erro: Rohn (1987) e Rohn & Rösler tratam em conjunto os afloramentos
+  dos dois estados, e a ressalva já consta das fichas.
+- **13 registros declaram a própria limitação** — coordenada
+  aproximada, ausência de publicação formal ou identificação a revisar.
+
+### Defeito encontrado e corrigido — mapa
+A auditoria revelou que **11 dos 45 sítios eram inalcançáveis no
+mapa**: desenhados sobre a mesma coordenada de um vizinho maior,
+ficavam inteiramente cobertos e nenhum clique os atingia. Afetava as
+três localidades de Taió, os dois afloramentos de Doutor Pedrinho e a
+região de Criciúma sob o Afloramento Bainha.
+
+Sítios coincidentes passam a ser distribuídos em anel, com raio
+calculado pela corda entre vizinhos, e uma linha-guia liga cada símbolo
+à sua posição real. O agrupamento é por **proximidade**, não por
+coordenada idêntica — sítios que diferiam em frações de pixel escapavam
+do tratamento e voltavam a se sobrepor. Coordenadas dos registros
+permanecem inalteradas: o ajuste é apenas de desenho.
+
+Resultado verificado: **0 sítios inalcançáveis**, em desktop e mobile.
+
+## 2026.08.3 — 07/08/2026
+
+### Santa Catarina (194 → 199)
+
+Rodada a partir de **Balistieri, Netto & Sedorko (2021)**, revisão que
+reúne 17 trabalhos sobre a paleoicnologia do Grupo Itararé em SC
+(DOI 10.5212/TerraPlural.v.15.2118322.039).
+
+**Dois afloramentos que faltavam** — Campo da Lança e Bela Vista do Sul,
+ambos em Doutor Pedrinho, e ambos com icnofaunas descritas. O primeiro
+reúne oito icnogêneros; o segundo, no topo da Fm. Rio do Sul, tem
+*Cruziana*, *Diplichnites*, *Diplopodichnus*, *Lockeia*,
+*Protovirgularia* e *Rusophycus*.
+
+Entraram também icnogêneros ausentes da base: ***Rusophycus*** cf.
+*carbonarius*, ***Protichnites*** e ***Lockeia***.
+
+Contexto registrado: esses seis afloramentos, em cinco municípios, são
+**os únicos estudados** de toda a faixa aflorante das formações Mafra e
+Rio do Sul no estado. O registro icnológico catarinense do Grupo
+Itararé remonta a Maury (1927), em Anitápolis.
+
+### Qualidade das fontes
+Com esta rodada, a proporção de links frágeis caiu abaixo do limite de
+25% e **o aviso correspondente deixou de ser emitido** pela validação.
+Registros com DOI: 31 de 199.
+
+## 2026.08.2 — 07/08/2026
+
+### Santa Catarina (193 → 194)
+
+***Krauselcladus canoinhensis*** **em Major Vieira** — município novo.
+Segunda localidade conhecida do gênero, cuja **única ocorrência em toda
+a Bacia do Paraná é catarinense**. O espécime foi achado em 1º de maio
+de 2024 por participantes de uma caminhada religiosa e levado ao
+CENPALEO. Amplia o entendimento da distribuição paleogeográfica da
+espécie.
+
+Ressalva registrada na ficha: a identificação foi feita **a partir de
+fotos e vídeos**, não de exame direto do material, e não há publicação
+formal nem dado de tombamento. A ocorrência do gênero em SC, porém, é
+bem estabelecida (ver Afloramento de Canoinhas, SIGEP 126).
+
+### Buscas sem resultado (registrado para não repetir)
+
+- **Megafauna quaternária**: a bibliografia de plataforma continental e
+  de "tanques" é toda do RS e do Nordeste. Nada específico de SC além
+  do que já consta.
+- **Fm. Botucatu**: os icnofósseis do paleodeserto — *Brasilichnium*,
+  *Farlowichnus*, pistas de terópodes — são de São Paulo e Paraná. A
+  **única ocorrência catarinense é a de Turvo**, já catalogada, e o
+  próprio trabalho que a descreve afirma ser a primeira pegada de
+  tetrápode descrita para a formação no estado.
+
+Conclusão desta rodada: as duas maiores lacunas do catálogo —
+Mesozoico e Quaternário — **não são falhas de compilação**. Refletem o
+que existe publicado para Santa Catarina.
+
+## 2026.08.1 — 07/08/2026
+
+### Santa Catarina (188 → 193)
+
+**Taió tinha três localidades, não uma.** O material paleobotânico do
+município provém dos afloramentos Bruno Peiker, **Clube Caça e Tiro** e
+**Igreja** — os dois últimos ausentes do banco. Acrescentados
+*Gangamopteris* cf. *G. obovata* (Caça e Tiro), sementes tipo
+*Cordaicarpus*/*Samaropsis* (Igreja) e um **novo táxon de
+Notocalamitaceae** ainda sem denominação formal (Bruno Peiker), que
+difere de *Notocalamites askosus* — do Bainha — por não ter nós nem
+folhas modificadas junto à região fértil.
+
+Contexto registrado nas fichas: Taió era conhecida por seus depósitos
+**marinhos** do Mb. Paraguaçu; os níveis vegetais na base do mesmo
+membro ampliaram o registro e ajudam a reconstruir a evolução dos
+paleoambientes locais.
+
+**Paleoflora Siderópolis** (2 registros, município novo). Ocorre nas
+camadas de carvão superiores da Fm. Rio Bonito em **quatro áreas** do
+estado — Lauro Müller, Criciúma, São Marcos e Treviso. Glossopterídeas
+dominam, com *Glossopteris* sobre *Gangamopteris*, seguidas de
+*Noeggerathiopsis* e sementes; estruturas reprodutivas e coníferas são
+raras. Serve de referência fitoestratigráfica para correlação com
+outras macrofloras eopermianas da bacia. Entra também *Vertebraria*,
+o sistema radicular das glossopteridófitas, que faltava à base.
+
+Ressalva registrada: a coordenada da paleoflora Siderópolis é regional,
+já que a associação é tratada em conjunto para as quatro áreas.
+
+## 2026.08.0 — 07/08/2026
+
+### Santa Catarina (180 → 188)
+
+Rodada dirigida à Fm. Rio do Rasto, até então representada por apenas
+seis registros apesar de ser uma das unidades mais fossilíferas do
+Permiano catarinense.
+
+**Nova localidade — Afloramento de Ponte Alta** (município novo,
+próximo a Otacílio Costa). Descrito a partir de 58 amostras coletadas
+pelo Laboratório de Paleovertebrados da UFRGS e depositadas na FURB:
+fragmentos vegetais similares a *Calamites* e *Pecopteris*, e
+conchostráceos similares a *Cyzicus* e *Asmussia*. A ficha registra a
+ressalva dos próprios autores — o material não preserva caracteres
+diagnósticos suficientes para determinação genérica segura.
+
+**Conchostráceos da Fm. Rio do Rasto** (4 registros): *Palaeolimnadiopsis
+subalata*, *Falsisca brasiliensis*, *Monoleiolophus unicostatus* e
+*Hemicycloleaia mitchelli*. *F. brasiliensis* foi descrita como espécie
+nova por Ferreira-Oliveira & Rohn (2008) e marca a **primeira ocorrência
+do gênero *Falsisca* no Gondwana** — até então restrito ao Permiano
+Superior–Triássico Inferior da Europa e da Ásia. São os fósseis mais
+abundantes da formação: 13 espécies em pelo menos 192 afloramentos.
+
+***Paragiridia taioensis*** Boardman, Iannuzzi & Dutra, 2016
+(Afloramento Bruno Peiker, Taió) — **gênero e espécie novos erigidos
+sobre material catarinense**. Caso raro: a assembleia é monoespecífica
+e autóctone, com as partes da planta ainda conectadas entre si e alguns
+eixos em posição de vida, o que permitiu reconstruir a **planta
+inteira**. Os autores a interpretam como linhagem descendente direta
+das Archaeocalamitaceae carboníferas.
+
+***Australoxylon duartei*** (lenho permineralizado), inventariado na
+literatura, entra **com ressalva**: a fonte registra a ocorrência sem
+detalhar localidade, tombo ou depositário.
+
+**Registro removido.** cf. *Melosaurus* sp. foi incluído e, em seguida,
+retirado a pedido do mantenedor. A verificação posterior sustenta a
+remoção: os únicos temnospôndilos formalmente descritos para a Fm. Rio
+do Rasto são *Australerpeton cosgriffi*, *Bageherpeton longignathus* e
+*Parapytanga catarinensis*. *Melosaurus* aparece na literatura
+brasileira apenas como táxon de COMPARAÇÃO com material russo — a
+menção catarinense é citação frouxa, não ocorrência documentada.
+
 ## 2026.07.9 — 05/08/2026
 
 ### Coerência taxonômica das categorias

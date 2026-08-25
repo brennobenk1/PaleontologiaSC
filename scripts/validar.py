@@ -144,6 +144,18 @@ try:
 except ImportError:
     alertar(False, "openpyxl indisponível — planilha não verificada")
 
+# --- 10. toda ocorrência precisa declarar a natureza da sua fonte ---
+sem_tipo = [d["id"] for d in FOSSEIS if not d.get("tipo_fonte")]
+checar(not sem_tipo, "natureza da fonte declarada em todos os registros",
+       f"sem tipo_fonte: {sem_tipo[:10]}")
+
+from collections import Counter as _C
+_tipos = _C(d.get("tipo_fonte", "?") for d in FOSSEIS)
+if VERBOSO:
+    print("        composição das fontes:")
+    for t, n in _tipos.most_common():
+        print(f"          {n:4d}  {t}")
+
 # --- avisos: não quebram o build, mas mostram dívida acumulada ---
 links = [u for d in FOSSEIS for u in d.get("fontes", [])]
 frageis = [u for u in links if re.search(r"researchgate|academia\.edu|wikipedia", u)]

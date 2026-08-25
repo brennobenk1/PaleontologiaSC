@@ -603,5 +603,174 @@
     ],
     "x": 322.6,
     "y": 71.4
+  },
+  {
+    "site": "Afloramento de Ponte Alta",
+    "municipio": "Ponte Alta",
+    "bacia": "Bacia do Paraná — Fm. Rio do Rasto",
+    "lat": -27.4839,
+    "lon": -50.38,
+    "count": 2,
+    "periodos": [
+      "Permiano Médio (Guadalupiano)"
+    ],
+    "taxons_amostra": [
+      "Fragmentos vegetais indet. (similares a Calamites sp. e Pecopteris sp.)",
+      "Conchostraca indet. (similares a Cyzicus sp. e Asmussia sp.)"
+    ],
+    "x": 402.3,
+    "y": 334.4
+  },
+  {
+    "site": "Fm. Rio do Rasto — SC (localidade não detalhada)",
+    "municipio": "Não especificado",
+    "bacia": "Bacia do Paraná — Fm. Rio do Rasto",
+    "lat": -27.5,
+    "lon": -49.5,
+    "count": 1,
+    "periodos": [
+      "Permiano Superior"
+    ],
+    "taxons_amostra": [
+      "Australoxylon duartei (lenho fóssil permineralizado)"
+    ],
+    "x": 502.9,
+    "y": 337.8
+  },
+  {
+    "site": "Afloramentos do norte de SC/PR — conchostráceos",
+    "municipio": "Mafra (região)",
+    "bacia": "Bacia do Paraná — Fm. Rio do Rasto",
+    "lat": -26.15,
+    "lon": -49.9,
+    "count": 4,
+    "periodos": [
+      "Permiano Superior"
+    ],
+    "taxons_amostra": [
+      "Palaeolimnadiopsis subalata (Reed, 1929) Raymond, 1946",
+      "Falsisca brasiliensis Ferreira-Oliveira & Rohn, 2008",
+      "Monoleiolophus unicostatus (Leaiidae)",
+      "Hemicycloleaia mitchelli"
+    ],
+    "x": 457.2,
+    "y": 52.7
+  },
+  {
+    "site": "Afloramento Bruno Peiker",
+    "municipio": "Taió",
+    "bacia": "Bacia do Paraná — Fm. Rio Bonito",
+    "lat": -27.11,
+    "lon": -49.985,
+    "count": 2,
+    "periodos": [
+      "Permiano Inferior"
+    ],
+    "taxons_amostra": [
+      "Paragiridia taioensis Boardman, Iannuzzi & Dutra, 2016",
+      "Notocalamitaceae indet. (novo táxon em análise)"
+    ],
+    "x": 447.4,
+    "y": 255.4
+  },
+  {
+    "site": "Afloramento Clube Caça e Tiro",
+    "municipio": "Taió",
+    "bacia": "Bacia do Paraná — Fm. Rio Bonito",
+    "lat": -27.11,
+    "lon": -49.985,
+    "count": 1,
+    "periodos": [
+      "Permiano Inferior"
+    ],
+    "taxons_amostra": [
+      "Gangamopteris cf. G. obovata (Carruthers) White"
+    ],
+    "x": 447.4,
+    "y": 255.4
+  },
+  {
+    "site": "Afloramento Igreja",
+    "municipio": "Taió",
+    "bacia": "Bacia do Paraná — Fm. Rio Bonito",
+    "lat": -27.11,
+    "lon": -49.985,
+    "count": 1,
+    "periodos": [
+      "Permiano Inferior"
+    ],
+    "taxons_amostra": [
+      "Sementes tipo Cordaicarpus e Samaropsis (mal preservadas)"
+    ],
+    "x": 447.4,
+    "y": 255.4
+  },
+  {
+    "site": "Paleoflora Siderópolis (região carbonífera)",
+    "municipio": "Siderópolis (região)",
+    "bacia": "Bacia do Paraná — Fm. Rio Bonito",
+    "lat": -28.595,
+    "lon": -49.43,
+    "count": 2,
+    "periodos": [
+      "Permiano Inferior"
+    ],
+    "taxons_amostra": [
+      "Vertebraria isp. (sistema radicular de glossopteridófita)",
+      "Macroflora Siderópolis — associação glossopteridófita"
+    ],
+    "x": 510.9,
+    "y": 568.9
+  },
+  {
+    "site": "Major Vieira (nova ocorrência de Krauselcladus)",
+    "municipio": "Major Vieira",
+    "bacia": "Bacia do Paraná — Fm. Teresina",
+    "lat": -26.3717,
+    "lon": -50.3283,
+    "count": 1,
+    "periodos": [
+      "Permiano Médio (Guadalupiano)"
+    ],
+    "taxons_amostra": [
+      "Krauselcladus canoinhensis — nova ocorrência (Major Vieira)"
+    ],
+    "x": 408.2,
+    "y": 99.6
+  },
+  {
+    "site": "Afloramento Campo da Lança",
+    "municipio": "Doutor Pedrinho",
+    "bacia": "Bacia do Paraná — Grupo Itararé",
+    "lat": -26.7217,
+    "lon": -49.4794,
+    "count": 3,
+    "periodos": [
+      "Carbonífero – Permiano Inferior"
+    ],
+    "taxons_amostra": [
+      "Icnofauna do Afloramento Campo da Lança (8 icnogêneros)",
+      "Rusophycus cf. carbonarius Dawson (traço de repouso de artrópode)",
+      "Protichnites isp. (pista de artrópode)"
+    ],
+    "x": 505.2,
+    "y": 173.4
+  },
+  {
+    "site": "Afloramento Bela Vista do Sul",
+    "municipio": "Doutor Pedrinho",
+    "bacia": "Bacia do Paraná — Grupo Itararé",
+    "lat": -26.7217,
+    "lon": -49.4794,
+    "count": 2,
+    "periodos": [
+      "Carbonífero – Permiano Inferior"
+    ],
+    "taxons_amostra": [
+      "Icnofauna do Afloramento Bela Vista do Sul",
+      "Lockeia isp. (traço de repouso de bivalve)"
+    ],
+    "x": 505.2,
+    "y": 173.4
   }
 ]

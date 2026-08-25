@@ -167,7 +167,7 @@
     "fim_ma": 295,
     "cor": "#3d6b52",
     "descricao": "Intervalo glacial a pós-glacial do Grupo Itararé, com rica fauna de invertebrados marinhos e icnofósseis associados a ambientes deltaicos e marinhos rasos.",
-    "total_registros": 9,
+    "total_registros": 14,
     "taxons": [
       {
         "taxon": "Protovirgularia isp.",
@@ -525,7 +525,7 @@
     "fim_ma": 273.0,
     "cor": "#7fa66b",
     "descricao": "Período com ampla diversidade de invertebrados marinhos, flora glossopterídea e icnofósseis na Fm. Rio Bonito (Assembleia Taió) e no Grupo Itararé.",
-    "total_registros": 76,
+    "total_registros": 82,
     "taxons": [
       {
         "taxon": "Phyllotheca australis (Brongniart, 1828)",
@@ -663,7 +663,7 @@
     "fim_ma": 259.1,
     "cor": "#8fae66",
     "descricao": "Época média do Permiano, ausente do catálogo até então. Representada pela Fm. Teresina (Grupo Passa Dois), depositada num grande corpo d’água raso sem conexão evidente com o oceano, sob aridização crescente do Gondwana ocidental.",
-    "total_registros": 11,
+    "total_registros": 14,
     "taxons": [
       {
         "taxon": "Krauselcladus canoinhensis Yoshida emend. Fanton et al.",
@@ -717,7 +717,7 @@
     "fim_ma": 251.9,
     "cor": "#9bb86b",
     "descricao": "Permiano final, representado pela Fm. Rio do Rasto, com depósitos continentais lacustres-fluviais e tetrápodes e invertebrados associados.",
-    "total_registros": 12,
+    "total_registros": 17,
     "taxons": [
       {
         "taxon": "Schizoneura gondwanensis Feistmantel, 1876",
