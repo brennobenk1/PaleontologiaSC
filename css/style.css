@@ -854,3 +854,16 @@ body::before{
 .nat-anais{ background: var(--stone-dk); color: var(--moss-dk); border:1px solid var(--line-strong); }
 .nat-imprensa{ background: var(--terracotta-lt); color:#4a2607; }
 .nat-outra{ background: var(--stone-dk); color: var(--texto-suave); }
+
+/* barra proporcional na linha de cada período geológico */
+.period-barra{
+  flex: 0 0 120px; height:5px; border-radius:999px;
+  background: rgba(20,32,26,0.08); overflow:hidden; display:block;
+}
+.period-barra i{ display:block; height:100%; border-radius:999px; }
+@media (max-width:880px){ .period-barra{ display:none; } }
+
+/* a árvore, agora como bloco dentro da aba de avifauna */
+.section-arvore{
+  border-top:1px solid var(--line); margin-top:1.5rem; padding-top:2.2rem;
+}

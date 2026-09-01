@@ -44,7 +44,6 @@
       <button class="nav-link" data-view="periodos">Períodos Geológicos</button>
       <button class="nav-link" data-view="instituicoes">Instituições</button>
       <button class="nav-link" data-view="avifauna">Avifauna do Brasil</button>
-      <button class="nav-link" data-view="arvore">Árvore Genealógica</button>
       <button class="nav-link" data-view="sobre">Sobre &amp; Fontes</button>
     </nav>
 
@@ -113,10 +112,10 @@
         <p>Aba nacional dedicada às aves fósseis e subfósseis descritas no Brasil — espécies extintas, sítios-chave e cobertura por estado, do Cretáceo Inferior (Aptiano, ~115 Ma) ao Holoceno.</p>
         <span class="feature-go">Explorar avifauna <i>&rarr;</i></span>
       </article>
-      <article class="feature-card feature-card-accent" data-goto="arvore" tabindex="0" role="button">
+      <article class="feature-card feature-card-accent" data-goto="avifauna" tabindex="0" role="button">
         <h3>Árvore genealógica das aves</h3>
         <p>Dendrograma interativo das famílias de aves vivas no Brasil pelos clados da filogenômica moderna, com os táxons fósseis do catálogo encaixados em vermelho no ramo correto.</p>
-        <span class="feature-go">Abrir árvore <i>&rarr;</i></span>
+        <span class="feature-go">Ver a árvore <i>&rarr;</i></span>
       </article>
     </div>
   </section>
@@ -327,19 +326,17 @@
   <section class="section-block">
     <p class="muted avi-source-note" id="aviSourceNote"></p>
   </section>
-</section>
 
-<!-- ============ VIEW: ÁRVORE GENEALÓGICA ============ -->
-<section class="view view-arvore" id="view-arvore" data-view="arvore">
+<section class="section-block section-arvore" id="blocoArvore">
   <div class="view-header">
     <div class="section-head">
       <span class="section-num">Filogenia</span>
-      <h2>Árvore Genealógica das Aves do Brasil</h2>
+      <h2>Árvore genealógica das aves do Brasil</h2>
     </div>
     <p class="view-intro">
       As famílias de aves atualmente vivas no Brasil, organizadas por ordem e pelos grandes clados
       reconhecidos pela filogenômica moderna (Jarvis et al. 2014; Prum et al. 2015) — a mesma estrutura
-      de referência citada na plataforma <em>Ornitologia Avançada de Santa Catarina</em>. Os 24 táxons
+      de referência citada na plataforma <em>Ornitologia Avançada de Santa Catarina</em>. Os <b id="arvNumFosseis">—</b> táxons
       fósseis do catálogo de avifauna são encaixados no ramo correto: alguns pertencem a famílias que
       seguem vivas hoje (ex.: <em>Neochen pugil</em> em Anatidae, junto dos patos e marrecas atuais);
       outros pertencem a famílias ou ordens inteiras que não têm nenhum representante vivo — como as
@@ -385,6 +382,8 @@
     podem não estar todas representadas.
   </p>
 </section>
+</section>
+
 
 <!-- ============ VIEW: SOBRE ============ -->
 <section class="view view-sobre" id="view-sobre" data-view="sobre">
@@ -402,7 +401,7 @@
     </article>
     <article class="about-card">
       <h3>Origem dos dados — Avifauna do Brasil</h3>
-      <p>A aba de avifauna paleontológica nacional é baseada na revisão de Nascimento &amp; Silveira (2024, <em>Zoologia</em> 41: e23079) e na dissertação de mestrado de Nascimento (2022, MZUSP), que reúnem 669 registros da literatura, complementada com a descrição de <em>Navaornis hestiae</em> (Chiappe et al., 2024, <em>Nature</em>). Esta aba apresenta 24 táxons formalmente descritos (gêneros/espécies extintos) — incluindo os 3 mais antigos, do Cretáceo Inferior e Superior — com detalhamento de sítio, formação e instituição de guarda, além da síntese de cobertura por estado.</p>
+      <p>A aba de avifauna paleontológica nacional é baseada na revisão de Nascimento &amp; Silveira (2024, <em>Zoologia</em> 41: e23079) e na dissertação de mestrado de Nascimento (2022, MZUSP), que reúnem 669 registros da literatura, complementada com a descrição de <em>Navaornis hestiae</em> (Chiappe et al., 2024, <em>Nature</em>). Esta aba apresenta <b id="aviNumTaxons">—</b> táxons formalmente descritos (gêneros/espécies extintos) — incluindo os 3 mais antigos, do Cretáceo Inferior e Superior — com detalhamento de sítio, formação e instituição de guarda, além da síntese de cobertura por estado.</p>
     </article>
     <article class="about-card">
       <h3>Como ler os campos — catálogo de SC</h3>
@@ -431,7 +430,7 @@
     <p class="footer-note">Dados compilados de fontes públicas; consulte sempre as referências originais e as instituições de guarda para informações de tombamento oficial.</p>
     <p class="footer-versao">
       <span>Compilado por <b>Brenno Alef Benk</b></span>
-      <span>Versão <b>2026.08.5</b> &middot; <span id="footerTotal">—</span> registros</span>
+      <span>Versão <b>2026.08.8</b> &middot; <span id="footerTotal">—</span> registros</span>
       <a href="CHANGELOG.md" target="_blank" rel="noopener">histórico de alterações</a>
       <a href="LICENSE.md" target="_blank" rel="noopener">dados sob CC BY 4.0</a>
       <a href="https://github.com/brennobenk1/PaleontologiaSC/issues" target="_blank" rel="noopener">encontrou um erro? reporte</a>

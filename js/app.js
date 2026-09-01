@@ -555,6 +555,9 @@ function showBaciaDetail(b){
    PERÍODOS GEOLÓGICOS — accordion com táxons
    =========================================================== */
 function initPeriodos(){
+  // escala das barras: sem ela, um período com 1 registro parecia igual
+  // a outro com 83 na lista
+  const maxPeriodo = Math.max(...DB_PERIODOS.map(x => x.total_registros));
   const periodos = DB_PERIODOS.slice().sort((a,b)=>a.ordem-b.ordem);
 
   const total = periodos.reduce((s,p) => s + (p.inicio_ma - p.fim_ma), 0);
@@ -571,6 +574,7 @@ function initPeriodos(){
         <span class="period-swatch" style="background:${p.cor}"></span>
         <span class="period-title">${p.nome}</span>
         <span class="period-range">${p.inicio_ma}–${p.fim_ma} Ma</span>
+        <span class="period-barra" aria-hidden="true"><i style="width:${Math.max(4, p.total_registros / maxPeriodo * 100).toFixed(1)}%; background:${p.cor}"></i></span>
         <span class="period-count">${p.total_registros} registro${p.total_registros===1?'':'s'}</span>
         <svg class="period-chevron" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
       </button>
@@ -1127,6 +1131,12 @@ function initTreeZoomPan(){
 }
 
 function initArvore(){
+  // números que estavam fixos no HTML ("24 táxons") e ficaram defasados
+  // quando o catálogo cresceu para 27
+  const n = DB_AVIFAUNA.length;
+  const a = document.getElementById('arvNumFosseis'); if(a) a.textContent = n;
+  const v = document.getElementById('aviNumTaxons');  if(v) v.textContent = n;
+
   const stats = treeCountStats();
   document.getElementById('treeStats').innerHTML = `
     <div class="stat-card"><span class="stat-num">${stats.ordens}</span><span class="stat-label">Ordens</span></div>
@@ -1209,7 +1219,15 @@ function aplicarHash(){
   }
 
   const [view, query] = bruto.split('?');
-  const validas = ['inicio','catalogo','mapa','periodos','instituicoes','avifauna','arvore','sobre'];
+  const validas = ['inicio','catalogo','mapa','periodos','instituicoes','avifauna','sobre'];
+  // '#/arvore' era uma aba própria; agora a árvore vive dentro da aba
+  // de avifauna. Links antigos continuam funcionando: levam à aba certa
+  // e rolam até o bloco.
+  if(view === 'arvore'){
+    window.paleoShowView('avifauna', { semUrl:true });
+    setTimeout(() => document.getElementById('blocoArvore')?.scrollIntoView({behavior:'smooth'}), 120);
+    return;
+  }
   if(!validas.includes(view)) return;
 
   if(view === 'catalogo' && query){
@@ -1359,7 +1377,7 @@ const CITACAO = {
   // senão a citação sai como "PALEO-SC. Paleo-SC — Banco de Dados..."
   entidade: 'Paleo-SC',
   titulo: 'Banco de Dados Paleontológico de Santa Catarina',
-  versao: '2026.08.5',
+  versao: '2026.08.8',
   ano: '2026',
   url: 'https://brennobenk1.github.io/PaleontologiaSC/'
 };

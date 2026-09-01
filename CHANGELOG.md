@@ -6,6 +6,82 @@ saber o que havia nele naquele momento.
 
 Formato: as versões seguem `ANO.MÊS.N`.
 
+## 2026.08.8 — 01/09/2026
+
+### Reorganização — a árvore volta para casa
+A **árvore genealógica deixa de ser aba própria** e passa a ser um bloco
+dentro de *Avifauna do Brasil*, onde sempre pertenceu: ela existe para
+posicionar os táxons fósseis daquele catálogo, não como assunto
+independente. A navegação cai de 8 para 7 abas.
+
+Links antigos continuam válidos: `#/arvore` leva à aba de avifauna e
+rola até o bloco, em vez de quebrar.
+
+### Números que estavam congelados
+O texto afirmava "os **24** táxons fósseis" em dois pontos, enquanto o
+cartão ao lado já mostrava 27 — a prosa não acompanhou o crescimento do
+catálogo. Ambos passam a ler do banco.
+
+### Lista de períodos
+As 18 linhas eram visualmente idênticas: um período com 1 registro
+parecia igual a outro com 83. Cada linha ganhou uma **barra
+proporcional**, na cor do próprio período, dando leitura imediata da
+magnitude sem precisar comparar números.
+
+## 2026.08.7 — 25/08/2026
+
+### Santa Catarina (204 → 207)
+
+***Protovirgularia dichotoma*** — traço de locomoção do pé de bivalve.
+Com ele, **as dez icnoespécies reconhecidas por Lima et al. (2015) nos
+ritmitos de Trombudo Central estão todas no catálogo**: *Cruziana
+problematica*, *Diplichnites gouldi*, *Diplopodichnus biformis*,
+*Glaciichnium liebegastensis*, *Gluckstadtella elongata*,
+*Helminthoidichnites tenuis*, *Mermia carickensis*, *Protovirgularia
+dichotoma*, *Treptichnus pollardi* e *Umfolozia sinuosa*.
+
+**Presidente Getúlio** (município novo) — icnofósseis das formações
+Campo Mourão e Taciba, em sucessão de 17 litofácies que definem
+subambientes de um **sistema de fiorde**. O tamanho reduzido dos traços
+e a baixa diversidade, frente ao esperado para ambiente plenamente
+marinho, são o próprio argumento paleoambiental da interpretação.
+
+**Bom Retiro** (município novo) — folhelhos betuminosos da **Fm.
+Irati**, que passa de uma para duas ocorrências no catálogo. A unidade
+é mundialmente conhecida pela associação de mesossaurídeos,
+correlacionada à Fm. Whitehill sul-africana.
+
+Ambos entram **com ressalva**: os trabalhos são de natureza
+estratigráfica e sedimentológica, e não determinam os fósseis em nível
+taxonômico — constam como ocorrência da unidade fossilífera, não como
+táxon identificado.
+
+## 2026.08.6 — 25/08/2026
+
+### Santa Catarina (199 → 204)
+
+Rodada a partir da revisão de Balistieri, Netto & Sedorko (2021) e das
+referências que ela indexa.
+
+**Duas pedreiras que faltavam** — **Waltrick** e **Fama**, ambas em
+Trombudo Central, estudadas por Lima, Netto, Corrêa & Lavina (2015)
+junto com a Itaú-Itaúna. As três expõem os mesmos ritmitos de
+deglaciação do topo da Fm. Rio do Sul, com coordenadas UTM publicadas.
+
+**Três icnogêneros** ausentes da assembleia da Itaú-Itaúna:
+*Neonereites*, *Gluckstadtella* e *Rusophycus*.
+
+Contexto registrado nas fichas: a Fm. Rio do Sul concentra a **maior
+diversidade fossilífera do Grupo Itararé**, com cerca de 17 icnogêneros.
+A assembleia compõe duas suítes — uma de pistas de artrópodes e
+escavações rasas, ligada à icnofácies Scoyenia; outra dominada por
+*Helminthoidichnites*, indicando pastagem subaquática. A análise
+paleobiológica indica colonização por animais terrestres (milípedes) e
+aquáticos (crustáceos e larvas de insetos).
+
+Referência da Itaú-Itaúna completada: Nogueira & Netto (2001a, 2001b),
+*Acta Geologica Leopoldensia* 52/53, com paginação.
+
 ## 2026.08.5 — 07/08/2026 · rastreabilidade das fontes
 
 ### Referências completadas

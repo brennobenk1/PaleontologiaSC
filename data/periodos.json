@@ -167,7 +167,7 @@
     "fim_ma": 295,
     "cor": "#3d6b52",
     "descricao": "Intervalo glacial a pós-glacial do Grupo Itararé, com rica fauna de invertebrados marinhos e icnofósseis associados a ambientes deltaicos e marinhos rasos.",
-    "total_registros": 14,
+    "total_registros": 21,
     "taxons": [
       {
         "taxon": "Protovirgularia isp.",
@@ -525,7 +525,7 @@
     "fim_ma": 273.0,
     "cor": "#7fa66b",
     "descricao": "Período com ampla diversidade de invertebrados marinhos, flora glossopterídea e icnofósseis na Fm. Rio Bonito (Assembleia Taió) e no Grupo Itararé.",
-    "total_registros": 82,
+    "total_registros": 83,
     "taxons": [
       {
         "taxon": "Phyllotheca australis (Brongniart, 1828)",
