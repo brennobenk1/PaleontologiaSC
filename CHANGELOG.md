@@ -6,6 +6,48 @@ saber o que havia nele naquele momento.
 
 Formato: as versões seguem `ANO.MÊS.N`.
 
+## 2026.09.0 — 09/09/2026 · malha municipal e mapa interativo
+
+### Municípios no mapa
+O mapa era um contorno único de Santa Catarina. Passa a exibir a
+**malha dos 293 municípios**, obtida do IBGE (via tbrugz/geodata-br),
+projetada no mesmo sistema do contorno existente e simplificada por
+Douglas-Peucker (tolerância 0,6 unidade do viewBox) para caber sem
+inchar a página.
+
+Validação do alinhamento: 39 dos 44 sítios caem dentro do polígono do
+município que declaram. As cinco exceções são coerentes — três são de
+**plataforma continental** (mar, fora de qualquer município) e duas têm
+coordenada regional declarada.
+
+Os **32 municípios com ocorrência publicada** recebem preenchimento
+distinto: o mapa passa a mostrar, sozinho, a razão entre o que foi
+estudado e os 293 municípios do estado — leitura direta do viés
+amostral já documentado.
+
+Clicar num município abre um painel com seus registros e sítios, e leva
+ao catálogo já filtrado. Municípios sem registro exibem a ressalva de
+que a ausência reflete o que foi publicado, não a ausência de fósseis.
+
+### Zoom e deslocamento
+Arrastar para mover, rolar para ampliar (até 8×), pinça de dois dedos no
+toque, e botões de aproximar/afastar/enquadrar. A transformação é
+aplicada ao grupo SVG, não ao viewBox, o que mantém a espessura dos
+traços constante e deixa a operação acelerada pelo navegador.
+
+### Desempenho preservado
+Embutida no arquivo de dados, a malha **dobrava a carga inicial**
+(998 → 1825 ms em 4G). Ela foi movida para `js/municipios.js`, baixado
+**sob demanda** na primeira vez que a aba Mapa é aberta — verificado:
+não aparece entre os recursos da carga inicial.
+
+### Correção encontrada nos testes
+No mobile, os botões de zoom sobre o mapa cobriam sítios: primeiro os de
+Itajaí, à direita; movidos para baixo, passaram a cobrir os dos Cânions
+e da plataforma sul. Como a área é estreita e todo canto tem sítio, os
+controles saíram de cima do mapa e viraram uma barra abaixo dele.
+Resultado: os 49 sítios respondem ao toque em ambos os tamanhos.
+
 ## 2026.08.8 — 01/09/2026
 
 ### Reorganização — a árvore volta para casa

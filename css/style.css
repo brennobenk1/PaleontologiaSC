@@ -867,3 +867,50 @@ body::before{
 .section-arvore{
   border-top:1px solid var(--line); margin-top:1.5rem; padding-top:2.2rem;
 }
+
+/* =========================================================
+   MAPA — malha municipal, zoom e deslocamento
+   ========================================================= */
+.muni{
+  fill: rgba(255,255,255,0.16); stroke: #1f4e5f; stroke-width:0.35;
+  stroke-opacity:0.30; cursor:pointer;
+  transition: fill .15s ease, stroke-opacity .15s ease;
+}
+/* municípios que já têm ocorrência publicada */
+.muni-com-registro{ fill: rgba(122,58,16,0.13); stroke-opacity:0.5; }
+.muni:hover{ fill: rgba(31,78,95,0.20); stroke-opacity:0.85; }
+.muni-ativo{ fill: rgba(181,101,29,0.30); stroke: #7a3a10; stroke-width:1; stroke-opacity:1; }
+/* o detalhe da divisa só compensa a partir de certa ampliação */
+.mapa-ampliado .muni{ stroke-width:0.5; stroke-opacity:0.55; }
+
+#scMapSvg{ cursor:grab; touch-action:none; }
+#scMapSvg.arrastando{ cursor:grabbing; }
+.map-canvas{ position:relative; }
+
+.mapa-zoom-btns{
+  position:absolute; top:0.9rem; right:0.9rem; z-index:4;
+  display:flex; flex-direction:column; gap:0.4rem;
+}
+.mapa-zoom-btns button{
+  width:34px; height:34px; border-radius: var(--radius-sm); border:none;
+  background: var(--petrol-dk); color: var(--paper); font-size:1.05rem; line-height:1;
+  box-shadow: var(--shadow-sm); transition: background .15s ease, transform .15s ease;
+}
+.mapa-zoom-btns button:hover{ background: var(--petrol); transform: translateY(-1px); }
+.mapa-dica{
+  position:absolute; left:1rem; bottom:0.7rem; margin:0; pointer-events:none;
+  font-family: var(--font-mono); font-size:0.64rem; color: var(--texto-suave);
+}
+@media (max-width:880px){
+  .mapa-dica{ font-size:0.58rem; left:0.6rem; }
+  /* No mobile a área útil é estreita e QUALQUER canto do mapa tem sítio:
+     à direita ficam os de Itajaí, embaixo os dos Cânions e da plataforma
+     sul. Em vez de procurar um canto livre, os controles saem de cima do
+     mapa e viram uma barra abaixo dele. */
+  .mapa-zoom-btns{
+    position:static; flex-direction:row; justify-content:center;
+    margin-top:0.6rem; gap:0.5rem;
+  }
+  .mapa-zoom-btns button{ width:44px; height:38px; }
+  .mapa-dica{ display:none; }
+}

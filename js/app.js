@@ -135,7 +135,11 @@ function periodoCor(nomePeriodo){
 
     initHome();
     initCatalogo();
-    initMapa();
+    // o mapa (e sua malha municipal) só é montado ao abrir a aba
+    let mapaPronto = false;
+    document.addEventListener('view:show', e => {
+      if(e.detail.name === 'mapa' && !mapaPronto){ mapaPronto = true; initMapa(); }
+    });
     initPeriodos();
     initInstituicoes();
     initAvifauna();
@@ -424,7 +428,24 @@ window.gotoCatalogWithTaxon = function(taxon){
 /* ===========================================================
    MAPA — SVG nativo do contorno de SC, sem dependências externas
    =========================================================== */
-function initMapa(){
+/* A malha municipal só é baixada quando a aba Mapa é aberta pela
+   primeira vez — mantém a carga inicial leve para quem nunca abre o mapa. */
+let __malhaCarregada = null;
+function carregarMalhaMunicipal(){
+  if(typeof SC_MUNICIPIOS !== 'undefined') return Promise.resolve();
+  if(__malhaCarregada) return __malhaCarregada;
+  __malhaCarregada = new Promise(resolve => {
+    const s = document.createElement('script');
+    s.src = 'js/municipios.js';
+    s.onload = resolve;
+    s.onerror = () => resolve();   // sem a malha, o mapa ainda funciona
+    document.head.appendChild(s);
+  });
+  return __malhaCarregada;
+}
+
+async function initMapa(){
+  await carregarMalhaMunicipal();
   const legendList = document.getElementById('bacenLegend');
   legendList.innerHTML = DB_BACIAS.map(b =>
     `<li><span class="legend-swatch" style="background:${b.cor}"></span><span>${b.nome}</span></li>`
@@ -500,15 +521,47 @@ function initMapa(){
     return `${guia}<circle cx="${cx}" cy="${cy}" r="${r}" fill="#b5651d" fill-opacity="0.78" stroke="#7a3a10" stroke-width="1.4" class="site-dot" data-site="${encodeURIComponent(s.site)}"></circle>`;
   }).join('');
 
+  /* Malha municipal. Os municípios com registro recebem preenchimento
+     mais forte — o mapa passa a comunicar, sozinho, quais dos 293
+     municípios catarinenses já têm ocorrência publicada. */
+  const comRegistro = new Set();
+  DB_FOSSEIS.forEach(f => {
+    f.municipio.replace(/\s*\(região\)\s*/gi, '').split('/').forEach(m => comRegistro.add(m.trim()));
+  });
+  const municipios = (typeof SC_MUNICIPIOS !== 'undefined' ? SC_MUNICIPIOS : []).map(m => {
+    const tem = comRegistro.has(m.n);
+    return `<path d="${m.d}" class="muni${tem ? ' muni-com-registro' : ''}" data-muni="${encodeURIComponent(m.n)}"></path>`;
+  }).join('');
+
   document.getElementById('svgMapWrap').innerHTML = `
-    <svg viewBox="${SC_MAP_VIEWBOX}" id="scMapSvg" role="img" aria-label="Mapa de Santa Catarina com sítios fossilíferos">
-      <path d="${SC_MAP_PATH}" fill="#ece1c8" stroke="#1f4e5f" stroke-width="2.2"></path>
-      ${polygons}
-      ${circles}
+    <svg viewBox="${SC_MAP_VIEWBOX}" id="scMapSvg" role="img" aria-label="Mapa de Santa Catarina com municípios e sítios fossilíferos">
+      <g id="mapaZoom">
+        <path d="${SC_MAP_PATH}" fill="#ece1c8" stroke="none"></path>
+        <g id="camadaMunicipios">${municipios}</g>
+        <path d="${SC_MAP_PATH}" fill="none" stroke="#1f4e5f" stroke-width="2.2" pointer-events="none"></path>
+        ${polygons}
+        ${circles}
+      </g>
     </svg>
+    <div class="mapa-zoom-btns">
+      <button type="button" id="mapaMais" aria-label="Aproximar">+</button>
+      <button type="button" id="mapaMenos" aria-label="Afastar">&minus;</button>
+      <button type="button" id="mapaReset" aria-label="Enquadrar">&#9678;</button>
+    </div>
+    <p class="mapa-dica">Arraste para mover &middot; role para aproximar &middot; clique num município ou sítio</p>
   `;
 
   const svgEl = document.getElementById('scMapSvg');
+  initMapaZoom(svgEl);
+
+  svgEl.querySelectorAll('.muni').forEach(mp => {
+    mp.addEventListener('click', e => {
+      e.stopPropagation();
+      showMunicipioDetail(decodeURIComponent(mp.dataset.muni));
+      svgEl.querySelectorAll('.muni').forEach(x => x.classList.remove('muni-ativo'));
+      mp.classList.add('muni-ativo');
+    });
+  });
   svgEl.querySelectorAll('.site-dot').forEach(dot => {
     dot.addEventListener('click', () => {
       const siteName = decodeURIComponent(dot.dataset.site);
@@ -526,6 +579,113 @@ function initMapa(){
     });
   });
 }
+
+/* ---------------------------------------------------------------
+   ZOOM E DESLOCAMENTO DO MAPA
+   Com a malha municipal, o mapa passou a ter detalhe que não se lê
+   no enquadramento inteiro. Aplica-se transform ao grupo, não ao
+   viewBox: assim as espessuras de traço permanecem constantes e o
+   navegador acelera a transformação.
+   --------------------------------------------------------------- */
+function initMapaZoom(svgEl){
+  const g = svgEl.querySelector('#mapaZoom');
+  let k = 1, tx = 0, ty = 0, arrastando = false, x0 = 0, y0 = 0, tx0 = 0, ty0 = 0;
+  const aplicar = () => {
+    g.setAttribute('transform', `translate(${tx},${ty}) scale(${k})`);
+    svgEl.classList.toggle('mapa-ampliado', k > 1.02);
+  };
+  const zoomPara = (novoK, cx, cy) => {
+    novoK = Math.min(8, Math.max(1, novoK));
+    // mantém sob o cursor o mesmo ponto do mapa
+    tx = cx - (cx - tx) * (novoK / k);
+    ty = cy - (cy - ty) * (novoK / k);
+    k = novoK;
+    if(k <= 1.001){ k = 1; tx = 0; ty = 0; }
+    aplicar();
+  };
+  const emSVG = e => {
+    const r = svgEl.getBoundingClientRect();
+    const vb = svgEl.viewBox.baseVal;
+    return [(e.clientX - r.left) / r.width * vb.width, (e.clientY - r.top) / r.height * vb.height];
+  };
+
+  svgEl.addEventListener('wheel', e => {
+    e.preventDefault();
+    const [cx, cy] = emSVG(e);
+    zoomPara(k * (e.deltaY > 0 ? 0.86 : 1.16), cx, cy);
+  }, { passive:false });
+
+  svgEl.addEventListener('mousedown', e => {
+    arrastando = true; svgEl.classList.add('arrastando');
+    x0 = e.clientX; y0 = e.clientY; tx0 = tx; ty0 = ty;
+  });
+  window.addEventListener('mousemove', e => {
+    if(!arrastando) return;
+    const r = svgEl.getBoundingClientRect(), vb = svgEl.viewBox.baseVal;
+    tx = tx0 + (e.clientX - x0) / r.width * vb.width;
+    ty = ty0 + (e.clientY - y0) / r.height * vb.height;
+    aplicar();
+  });
+  window.addEventListener('mouseup', () => { arrastando = false; svgEl.classList.remove('arrastando'); });
+
+  // toque: um dedo desloca, dois dedos ampliam
+  let dist0 = 0, k0 = 1;
+  svgEl.addEventListener('touchstart', e => {
+    if(e.touches.length === 1){
+      arrastando = true; x0 = e.touches[0].clientX; y0 = e.touches[0].clientY; tx0 = tx; ty0 = ty;
+    } else if(e.touches.length === 2){
+      arrastando = false; k0 = k;
+      dist0 = Math.hypot(e.touches[0].clientX - e.touches[1].clientX, e.touches[0].clientY - e.touches[1].clientY);
+    }
+  }, { passive:true });
+  svgEl.addEventListener('touchmove', e => {
+    const r = svgEl.getBoundingClientRect(), vb = svgEl.viewBox.baseVal;
+    if(e.touches.length === 1 && arrastando){
+      tx = tx0 + (e.touches[0].clientX - x0) / r.width * vb.width;
+      ty = ty0 + (e.touches[0].clientY - y0) / r.height * vb.height;
+      aplicar();
+    } else if(e.touches.length === 2 && dist0){
+      const d = Math.hypot(e.touches[0].clientX - e.touches[1].clientX, e.touches[0].clientY - e.touches[1].clientY);
+      zoomPara(k0 * (d / dist0), vb.width / 2, vb.height / 2);
+    }
+  }, { passive:true });
+  svgEl.addEventListener('touchend', () => { arrastando = false; dist0 = 0; });
+
+  const meio = () => [svgEl.viewBox.baseVal.width / 2, svgEl.viewBox.baseVal.height / 2];
+  document.getElementById('mapaMais').addEventListener('click', () => zoomPara(k * 1.4, ...meio()));
+  document.getElementById('mapaMenos').addEventListener('click', () => zoomPara(k / 1.4, ...meio()));
+  document.getElementById('mapaReset').addEventListener('click', () => { k = 1; tx = 0; ty = 0; aplicar(); });
+}
+
+/* painel do município: quantos registros e quais sítios ele reúne */
+function showMunicipioDetail(nome){
+  const regs = DB_FOSSEIS.filter(f =>
+    f.municipio.replace(/\s*\(região\)\s*/gi, '').split('/').map(x => x.trim()).includes(nome));
+  const sitios = [...new Set(regs.map(r => r.site))];
+  const el = document.getElementById('mapSiteDetail');
+  if(!regs.length){
+    el.innerHTML = `<h5>${nome}</h5>
+      <p class="muted">Nenhum registro catalogado para este município.</p>
+      <p class="muted" style="font-size:0.78rem;">A ausência reflete o que foi publicado, não necessariamente
+      a ausência de fósseis — ver a ressalva de viés amostral na página inicial.</p>`;
+    return;
+  }
+  el.innerHTML = `
+    <h5>${nome}</h5>
+    <p style="margin-bottom:0.4rem;"><b>${regs.length}</b> registro${regs.length===1?'':'s'} em
+      ${sitios.length} sítio${sitios.length===1?'':'s'}</p>
+    <ul class="site-taxon-list">${sitios.map(s => `<li>${s}</li>`).join('')}</ul>
+    <button class="btn-text" onclick="gotoCatalogWithMunicipio('${nome.replace(/'/g,"\\'")}')">Ver no catálogo &rarr;</button>`;
+}
+window.gotoCatalogWithMunicipio = function(mun){
+  window.paleoShowView('catalogo');
+  setTimeout(() => {
+    __catalogFilters.municipio = mun;
+    const sel = document.getElementById('filterMunicipio');
+    if(sel) sel.value = mun;
+    renderCatalog();
+  }, 80);
+};
 
 function showSiteDetail(s){
   const el = document.getElementById('mapSiteDetail');
@@ -1377,7 +1537,7 @@ const CITACAO = {
   // senão a citação sai como "PALEO-SC. Paleo-SC — Banco de Dados..."
   entidade: 'Paleo-SC',
   titulo: 'Banco de Dados Paleontológico de Santa Catarina',
-  versao: '2026.08.8',
+  versao: '2026.09.0',
   ano: '2026',
   url: 'https://brennobenk1.github.io/PaleontologiaSC/'
 };
