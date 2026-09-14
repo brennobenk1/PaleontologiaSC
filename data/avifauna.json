@@ -282,8 +282,8 @@
   {
     "taxon": "Eutreptodactylus itaboraiensis",
     "autor_ano": "Baird & Vickers-Rich, 1997",
-    "familia": "Cuculidae",
-    "ordem": "Cuculiformes",
+    "familia": "Gracilitarsidae",
+    "ordem": "?Piciformes (posição incerta)",
     "categoria": "Vertebrado — ave",
     "periodo": "Paleoceno Médio – Eoceno Inferior",
     "idade_ma": "~56–53 Ma",
@@ -294,8 +294,8 @@
     "lon": -42.8617,
     "armazenamento": "Museu Nacional/UFRJ (MN) — material posteriormente perdido, restam moldes/ilustrações",
     "holotipo": "Tarsometatarso incompleto (coletado por Ney Vidal, 1950)",
-    "descritor_ref": "Baird, R.F. & Vickers-Rich, P. (1997) Alcheringa, 21, 123–127.",
-    "obs": "Um dos mais antigos cuculídeos conhecidos no mundo, possivelmente de uma nova subfamília.",
+    "descritor_ref": "Baird, R.F. & Vickers-Rich, P. (1997) Alcheringa 21:123–127 (descrição original); reclassificado em Nascimento, R.S. & Silveira, L.F. (2022) \"Fossil Birds of Brazil\", Dissertação de Mestrado, MZUSP; ver também Mayr, G. (2005) Neues Jahrbuch für Geologie und Paläontologie, Monatshefte 2005(1):1–16",
+    "obs": "Descrito em 1997 como \"um dos mais antigos cuculídeos do mundo\" (Cuculiformes), mas a revisão de Nascimento & Silveira (2022) o trata como GRACILITARSÍDEO — família globalmente extinta de pequenas aves terrestres do Paleógeno, cuja posição sistemática é debatida (Mayr, 2005, sugere ?Piciformes). Com isso, Gracilitarsidae passa a ser uma das seis famílias globalmente extintas com registro no Brasil, ao lado de Quercymegapodiidae, Pelagornithidae, Palaelodidae, Teratornithidae e Phorusrhacidae. ATENÇÃO: o holótipo (tarsometatarso incompleto, coletado por Ney Vidal em 1950) foi POSTERIORMENTE PERDIDO; restam moldes e ilustrações. Uma das quatro únicas espécies de aves descritas para a Bacia de São José de Itaboraí, e a única voadora entre elas.",
     "x": 446.7,
     "y": 472.1
   },
@@ -547,6 +547,80 @@
       "https://doi.org/10.1002/ar.25329",
       "https://pubmed.ncbi.nlm.nih.gov/37779325/",
       "http://www.paleolab.com.br/assets/uploads/files/Guilherme_et_al_2023_New_fossil_anhingids_Miocene_Acre_compressed.pdf"
+    ]
+  },
+  {
+    "taxon": "Aves indet. — carpometacarpo de morfologia singular",
+    "autor_ano": "Mayr, Alvarenga & Clarke, 2011",
+    "familia": "Aves indet.",
+    "ordem": "Incertae sedis",
+    "categoria": "Vertebrado — ave",
+    "periodo": "Paleoceno Médio – Eoceno Inferior",
+    "idade_ma": "~56–53 Ma",
+    "formacao": "Bacia de São José de Itaboraí",
+    "estado": "Rio de Janeiro",
+    "municipio": "Itaboraí",
+    "lat": -22.7567,
+    "lon": -42.8617,
+    "armazenamento": "Museu Nacional/UFRJ (MN)",
+    "holotipo": "Carpometacarpo (MN, coleção de Itaboraí)",
+    "descritor_ref": "Mayr, G., Alvarenga, H. & Clarke, J.A. (2011) \"An Elaphrocnemus-like landbird and other avian remains from the late Paleocene of Brazil\", Acta Palaeontologica Polonica 56(4):679–684",
+    "obs": "Osso descrito no mesmo trabalho que erigiu Itaboravis, exibindo morfologia NÃO ENCONTRADA EM NENHUM OUTRO TÁXON DE AVE. Compartilha algumas feições com os tinamídeos e tem tamanho compatível com Itaboravis elaphrocnemoides, mas os autores não o atribuem a essa espécie com segurança. Permanece como registro de afinidade indeterminada — e potencialmente de um táxon ainda não nomeado.",
+    "x": 446.7,
+    "y": 472.1,
+    "doi": "10.4202/app.2010.0099",
+    "fontes": [
+      "https://doi.org/10.4202/app.2010.0099",
+      "https://www.app.pan.pl/archive/published/app56/app20100099.pdf"
+    ]
+  },
+  {
+    "taxon": "Aves indet. — quatro tibiotarsos distais morfologicamente distintos",
+    "autor_ano": "Mayr, Alvarenga & Clarke, 2011",
+    "familia": "Aves indet.",
+    "ordem": "Incertae sedis",
+    "categoria": "Vertebrado — ave",
+    "periodo": "Paleoceno Médio – Eoceno Inferior",
+    "idade_ma": "~56–53 Ma",
+    "formacao": "Bacia de São José de Itaboraí",
+    "estado": "Rio de Janeiro",
+    "municipio": "Itaboraí",
+    "lat": -22.7567,
+    "lon": -42.8617,
+    "armazenamento": "Museu Nacional/UFRJ (MN)",
+    "holotipo": "Quatro tibiotarsos distais (MN)",
+    "descritor_ref": "Mayr, G., Alvarenga, H. & Clarke, J.A. (2011) \"An Elaphrocnemus-like landbird and other avian remains from the late Paleocene of Brazil\", Acta Palaeontologica Polonica 56(4):679–684",
+    "obs": "Quatro tibiotarsos distais de morfologias diferentes entre si, reportados junto à descrição de Itaboravis. Um deles pode pertencer a Eutreptodactylus itaboraiensis. Indicam que a diversidade de aves de Itaboraí era MAIOR que as quatro espécies formalmente nomeadas para a bacia.",
+    "x": 446.7,
+    "y": 472.1,
+    "doi": "10.4202/app.2010.0099",
+    "fontes": [
+      "https://doi.org/10.4202/app.2010.0099",
+      "https://www.app.pan.pl/archive/published/app56/app20100099.pdf"
+    ]
+  },
+  {
+    "taxon": "Enantiornithes indet. (bonebed de Presidente Prudente)",
+    "autor_ano": "Alvarenga & Nava, 2005; Chiappe et al., 2018, 2019",
+    "familia": "Enantiornithes indet.",
+    "ordem": "Enantiornithes",
+    "categoria": "Vertebrado — ave (ave-do-tronco mesozoica)",
+    "periodo": "Cretáceo Superior (Campaniano–Maastrichtiano)",
+    "idade_ma": "~80–71.7 Ma",
+    "formacao": "Formação Adamantina, Grupo Bauru (sítio William's Quarry)",
+    "estado": "São Paulo",
+    "municipio": "Presidente Prudente",
+    "lat": -22.1256,
+    "lon": -51.3889,
+    "armazenamento": "Museu de Paleontologia de Marília (SP)",
+    "holotipo": "Diversos espécimes, incluindo restos cranianos preservados em três dimensões (Museu de Paleontologia de Marília)",
+    "descritor_ref": "Alvarenga, H. & Nava, W.R. (2005) \"Aves Enantiornithes do Cretáceo Superior da Formação Adamantina do Estado de São Paulo, Brasil\", II Congresso Latino-Americano de Paleontologia de Vertebrados, Boletim de Resumos, p.20; Chiappe, L. et al. (2018, 2019) resumos em congressos internacionais",
+    "obs": "Concentração excepcional de aves enantiornitinas no afloramento de Presidente Prudente — descrita na literatura como um bonebed ÚNICO para o Cretáceo do Brasil. Foi desse material que saiu Navaornis hestiae, mas o conjunto reúne vários outros espécimes, incluindo restos cranianos preservados tridimensionalmente, raridade num grupo cujo material costuma chegar achatado pelo peso do sedimento. ATENÇÃO: apesar de reportados desde 2005 e apresentados em congressos internacionais, estes espécimes PERMANECEM SEM DESCRIÇÃO FORMAL publicada. Entram aqui como Enantiornithes indet. — clado inteiramente extinto no limite Cretáceo–Paleógeno —, não como táxon nomeado. Sua descrição deve ampliar significativamente o conhecimento das aves cretácicas brasileiras.",
+    "x": 326.3,
+    "y": 461.6,
+    "tipo_fonte": "Anais ou resumo de evento",
+    "fontes": [
+      "https://www.researchgate.net/publication/303142425_Aves_Enantiornithes_do_Cretaceo_Superior_da_Formacao_Adamantina_do_Estado_de_Sao_Paulo_Brasil"
     ]
   }
 ]

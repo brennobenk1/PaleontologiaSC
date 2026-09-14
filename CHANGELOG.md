@@ -6,6 +6,113 @@ saber o que havia nele naquele momento.
 
 Formato: as versões seguem `ANO.MÊS.N`.
 
+## 2026.09.3 — 14/09/2026 · avifauna
+
+### Registro novo (29 → 30)
+**Enantiornithes indet. — bonebed de Presidente Prudente.** Concentração
+excepcional de aves enantiornitinas na Fm. Adamantina, descrita na
+literatura como um bonebed único para o Cretáceo brasileiro. Foi desse
+material que saiu *Navaornis hestiae*, mas o conjunto reúne vários
+outros espécimes, **incluindo restos cranianos preservados em três
+dimensões** — raridade num grupo cujo material costuma chegar achatado
+pelo peso do sedimento.
+
+Ressalva registrada: apesar de reportados desde Alvarenga & Nava (2005)
+e apresentados em congressos internacionais por Chiappe e colaboradores,
+estes espécimes **permanecem sem descrição formal publicada**. Entram
+como *Enantiornithes* indet. — clado inteiramente extinto no limite
+Cretáceo–Paleógeno —, não como táxon nomeado. Com isso o catálogo passa
+a quatro táxons mesozoicos.
+
+### Escopo confirmado
+Mantido o critério de **apenas táxons extintos**. Os cerca de 250
+registros quaternários de cavernas compilados por Nascimento (2022)
+são quase todos de espécies **viventes** e permanecem fora do catálogo.
+
+## 2026.09.2 — 09/09/2026 · avifauna
+
+Rodada a partir de Nascimento, R.S. (2022) "Fossil Birds of Brazil"
+(MZUSP) — a compilação mais completa já feita da paleornitologia
+brasileira, com 378 registros.
+
+### Correção taxonômica
+***Eutreptodactylus itaboraiensis*** constava como **Cuculidae**,
+seguindo a descrição original de Baird & Vickers-Rich (1997), que o
+anunciou como "um dos mais antigos cuculídeos do mundo". A revisão de
+2022 o trata como **gracilitarsídeo** — família globalmente extinta de
+pequenas aves paleógenas, de posição sistemática debatida (Mayr 2005
+sugere ?Piciformes).
+
+Com a correção, **Gracilitarsidae passa a figurar entre as seis
+famílias globalmente extintas com registro no Brasil**, ao lado de
+Quercymegapodiidae, Pelagornithidae, Palaelodidae, Teratornithidae e
+Phorusrhacidae — todas já presentes. A árvore genealógica foi
+reorganizada: o táxon saiu de Cuculidae e passou a um novo nó
+Gracilitarsidae sob Piciformes.
+
+Registrada também a ressalva de que o **holótipo foi perdido**
+(tarsometatarso coletado por Ney Vidal em 1950); restam moldes e
+ilustrações.
+
+### Registros novos (27 → 29)
+Dois táxons indeterminados descritos por Mayr, Alvarenga & Clarke
+(2011, *Acta Palaeontologica Polonica*, DOI 10.4202/app.2010.0099) no
+mesmo trabalho que erigiu *Itaboravis*:
+- um **carpometacarpo de morfologia não encontrada em nenhum outro
+  táxon de ave**, com afinidades tinamídeas e tamanho compatível com
+  *Itaboravis*, mas não atribuível a ele com segurança;
+- **quatro tibiotarsos distais morfologicamente distintos**, um dos
+  quais pode ser de *Eutreptodactylus*.
+
+Ambos indicam que a diversidade de aves da Bacia de São José de
+Itaboraí era maior que as quatro espécies formalmente nomeadas.
+
+### Verificação de completude
+Conferida a lista de 21 espécies extintas nomeadas da revisão de 2022:
+**todas já constavam do catálogo**, que inclui ainda quatro descritas
+ou reconhecidas depois — *Navaornis hestiae* (2024), *Eschatornis
+aterradora* (2026), *Macranhinga paranensis* e *Macranhinga* sp. O
+catálogo está, portanto, mais atualizado que a compilação de
+referência.
+
+## 2026.09.1 — 09/09/2026
+
+### Icnofauna ediacarana da Fm. Campo Alegre (207 → 212)
+A Bacia do Itajaí constava com seis fósseis corpóreos, mas **nenhum dos
+icnofósseis** descritos por Netto & Zucatti da Rosa (1997) nos siltitos
+prodeltaicos da base da Fm. Campo Alegre. Acrescentados:
+
+- *Gordia* isp. e *Diplocraterion* isp., frequentemente **associados a
+  impressões de espículas de esponjas hexactinélidas** — associação que
+  liga a icnofauna à fauna corpórea da bacia;
+- *Helminthoidichnites* isp., de organismo vermiforme epifaunal,
+  indicativo de ambiente marinho profundo e substrato lamoso;
+- ?*Oldhamia* isp. / ?*Choia* sp., registrado com dupla interrogação
+  pelos próprios autores: a leitura como icnofóssil-guia cambriano ou
+  como esponja demospongia altera a natureza do registro e sua
+  implicação cronoestratigráfica;
+- ?*Arumberia* sp., impressões de repouso de medusoides.
+
+As fichas registram que a associação tem **baixa diversidade** e traços
+de tamanho muito inferior ao usual, interpretados como estresse
+ambiental — e que estes icnofósseis sustentaram idade cambriana para a
+bacia, em contraposição às datações Pb/U, que apontam o Ediacarano.
+A divergência permanece em aberto.
+
+### Homonímia documentada
+Existem **dois "Campo Alegre"** na geologia catarinense, sem relação
+entre si, e a confusão entre eles é um erro plausível:
+
+- a **Fm. Campo Alegre** é unidade da Bacia do Itajaí, no vale do
+  Itajaí, e é fossilífera — é ela que aparece no catálogo;
+- a **Bacia de Campo Alegre** fica no nordeste do estado, junto ao
+  município homônimo, e é vulcanossedimentar (riolitos, traquitos,
+  tufos; vulcanismo em ~602 Ma), **sem registro paleontológico
+  conhecido**, o que é esperado pela litologia.
+
+Os 11 registros da formação passam a trazer essa ressalva, para que
+nenhum deles seja atribuído ao município de Campo Alegre.
+
 ## 2026.09.0 — 09/09/2026 · malha municipal e mapa interativo
 
 ### Municípios no mapa

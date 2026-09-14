@@ -86,7 +86,7 @@
     "bacia": "Bacia do Itajaí",
     "lat": -26.9078,
     "lon": -48.6614,
-    "count": 5,
+    "count": 10,
     "periodos": [
       "Ediacarano (Neoproterozóico)",
       "Ediacarano / Cambriano"
@@ -96,7 +96,8 @@
       "Charniodiscus? sp.",
       "Cyclomedusa sp.",
       "Chancelloria sp.",
-      "Aspidella sp."
+      "Aspidella sp.",
+      "Gordia isp. (Fm. Campo Alegre)"
     ],
     "x": 598.7,
     "y": 212.8
