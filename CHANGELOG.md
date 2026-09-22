@@ -6,6 +6,51 @@ saber o que havia nele naquele momento.
 
 Formato: as versões seguem `ANO.MÊS.N`.
 
+## 2026.09.4 — 14/09/2026 · paleta e hierarquia visual
+
+### Nova paleta, derivada do logo
+O logo é **teal profundo, pergaminho quente e sálvia**; o site usava um
+fundo **cinza-esverdeado frio** (#dde1d3) e cinco famílias de cor
+competindo (petróleo, musgo, ouro, terracota, pedra). A desarmonia vinha
+daí. A paleta foi refeita a partir das cores extraídas do próprio logo:
+
+- **fundo** pergaminho quente #efe8da (do creme do logo);
+- **primária** teal #17505b (do teal do logo);
+- **secundária** sálvia #617558;
+- **um único acento quente**, cobre #8f4c1c — complementar do teal.
+
+Todos os pares de texto conferidos contra WCAG AA antes de aplicar; o
+cobre foi escurecido de #a85f28 para #8f4c1c porque a primeira versão
+dava 3,98:1 sobre o fundo. A categoria "Microfóssil", que era roxa e
+estava fora de qualquer família, passou a ocre. O entorno dos mapas
+recebeu um tom de mar (#d7e1df), separando terra e água.
+
+### Defeito latente encontrado: a hierarquia de texto tinha sumido
+O token `--texto-suave` era **usado 17 vezes e nunca definido**. O
+navegador não acusa erro nesse caso — cai no valor herdado —, então por
+várias versões **todo texto secundário saiu na mesma cor do principal**,
+sem nada parecer quebrado. Confirmado por medição: na versão publicada,
+guarda e corpo de texto tinham a mesma cor, rgb(27,36,32). Parte da
+impressão de site "chapado" vinha disso. Token definido (0,72, >=4,79:1).
+
+### Validação — duas checagens novas
+- **Variáveis CSS**: toda `var(--x)` usada precisa estar definida, no CSS
+  ou inline pelo JS. Testado contra a versão defeituosa: reprova.
+- **Vocabulário controlado de categorias**: um registro entrara como
+  "Icnofóssil / Porifera" e criara, sozinho, um grupo espúrio na
+  navegação. Reclassificado para "Metazoário de afinidade incerta", que é
+  o que ele é (icnofóssil *ou* esponja).
+
+### Ajuste de interface
+A pílula "Metazoário de afinidade incerta" esmagava o nome do táxon e
+forçava quebra de linha. Passa a exibir "Afinidade incerta"; a ficha
+mantém o nome completo.
+
+### Busca sem resultado
+Cavernas calcárias do Grupo Brusque, a começar pela **Gruta de
+Botuverá**: sem registro fóssil publicado. A gruta é referência em
+**paleoclima** (isótopos de espeleotemas), não em paleontologia.
+
 ## 2026.09.3 — 14/09/2026 · avifauna
 
 ### Registro novo (29 → 30)

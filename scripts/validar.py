@@ -156,6 +156,32 @@ if VERBOSO:
     for t, n in _tipos.most_common():
         print(f"          {n:4d}  {t}")
 
+# --- 11. toda variável CSS usada precisa estar definida ---
+# Motivo: --texto-suave foi usado 17 vezes e nunca definido. O navegador
+# não acusa erro — cai no valor herdado —, então o defeito passou várias
+# versões invisível, apagando a hierarquia entre texto principal e secundário.
+css = (RAIZ / "css" / "style.css").read_text(encoding="utf-8")
+usadas = set(re.findall(r"var\((--[\w-]+)", css))
+definidas = set(re.findall(r"(--[\w-]+)\s*:", css))
+# variáveis também podem ser definidas inline pelo JS (ex.: style="--per-cor:..."
+# em cada cartão do catálogo) — essas são legítimas
+js = (RAIZ / "js" / "app.js").read_text(encoding="utf-8")
+definidas |= set(re.findall(r"(--[\w-]+)\s*:", js))
+indefinidas = sorted(usadas - definidas)
+checar(not indefinidas, f"variáveis CSS definidas ({len(usadas)} usadas)",
+       f"usadas mas nunca definidas: {indefinidas}")
+
+# --- 12. o grande grupo da categoria precisa ser um dos reconhecidos ---
+# Motivo: um registro entrou como "Icnofóssil / Porifera — ..." e criou,
+# sozinho, um grupo novo na navegação taxonômica. Vocabulário controlado
+# evita que cada adição invente uma categoria.
+GRUPOS_VALIDOS = {"Flora", "Invertebrado", "Vertebrado", "Icnofóssil", "Microfóssil",
+                  "Metazoário de afinidade incerta", "Assembleia fóssil (biota mista)"}
+fora_vocab = sorted({(d["id"], d["categoria"].split("—")[0].strip()) for d in FOSSEIS
+                     if d["categoria"].split("—")[0].strip() not in GRUPOS_VALIDOS})
+checar(not fora_vocab, "categorias dentro do vocabulário controlado",
+       f"grupos não reconhecidos: {fora_vocab[:8]}")
+
 # --- avisos: não quebram o build, mas mostram dívida acumulada ---
 links = [u for d in FOSSEIS for u in d.get("fontes", [])]
 frageis = [u for u in links if re.search(r"researchgate|academia\.edu|wikipedia", u)]

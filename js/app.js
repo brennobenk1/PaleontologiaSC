@@ -71,7 +71,18 @@ function dbCategoriaGrupo(categoria){
   if(c.startsWith('metazoário') || c.startsWith('metazoario')) return 'meta';
   return 'invert';
 }
-function categoriaShort(categoria){ return categoria.split('—')[0].trim(); }
+/* rótulo curto da pílula. "Metazoário de afinidade incerta" é o nome
+   correto do grupo (ver CHANGELOG 2026.07.9), mas longo demais para a
+   pílula: esmagava o nome do táxon e forçava quebra de linha. A ficha
+   completa continua mostrando a categoria por extenso. */
+const CATEGORIA_CURTA = {
+  'Metazoário de afinidade incerta': 'Afinidade incerta',
+  'Assembleia fóssil (biota mista)': 'Biota mista',
+};
+function categoriaShort(categoria){
+  const g = categoria.split('—')[0].trim();
+  return CATEGORIA_CURTA[g] || g;
+}
 function categoriaPillClass(categoria){ return 'cat-pill cat-' + dbCategoriaGrupo(categoria); }
 
 /* Cor estratigráfica do período — a MESMA paleta da coluna-testemunho do
@@ -449,7 +460,7 @@ async function initMapa(){
   const legendList = document.getElementById('bacenLegend');
   legendList.innerHTML = DB_BACIAS.map(b =>
     `<li><span class="legend-swatch" style="background:${b.cor}"></span><span>${b.nome}</span></li>`
-  ).join('') + `<li><span class="legend-swatch" style="background:#b5651d;border-radius:50%;"></span><span>Sítio de coleta (tamanho = nº de registros)</span></li>`;
+  ).join('') + `<li><span class="legend-swatch" style="background:#a85f28;border-radius:50%;"></span><span>Sítio de coleta (tamanho = nº de registros)</span></li>`;
 
   const polygons = DB_BACIAS.map(b =>
     `<polygon points="${b.svg_points}" fill="${b.cor}" fill-opacity="0.22" stroke="${b.cor}" stroke-width="1.5" stroke-dasharray="4,3" data-bacia="${encodeURIComponent(b.nome)}"></polygon>`
@@ -518,7 +529,7 @@ async function initMapa(){
     const guia = (dx || dy)
       ? `<line x1="${s.x}" y1="${s.y}" x2="${cx}" y2="${cy}" stroke="#7a3a10" stroke-width="0.8" stroke-opacity="0.45"></line>`
       : '';
-    return `${guia}<circle cx="${cx}" cy="${cy}" r="${r}" fill="#b5651d" fill-opacity="0.78" stroke="#7a3a10" stroke-width="1.4" class="site-dot" data-site="${encodeURIComponent(s.site)}"></circle>`;
+    return `${guia}<circle cx="${cx}" cy="${cy}" r="${r}" fill="#a85f28" fill-opacity="0.82" stroke="#6e3812" stroke-width="1.4" class="site-dot" data-site="${encodeURIComponent(s.site)}"></circle>`;
   }).join('');
 
   /* Malha municipal. Os municípios com registro recebem preenchimento
@@ -1537,7 +1548,7 @@ const CITACAO = {
   // senão a citação sai como "PALEO-SC. Paleo-SC — Banco de Dados..."
   entidade: 'Paleo-SC',
   titulo: 'Banco de Dados Paleontológico de Santa Catarina',
-  versao: '2026.09.3',
+  versao: '2026.09.4',
   ano: '2026',
   url: 'https://brennobenk1.github.io/PaleontologiaSC/'
 };

@@ -16,22 +16,29 @@
    ========================================================= */
 
 :root{
-  --ink:        #1b2420;
-  --petrol:     #1f4e5f;
-  --petrol-dk:  #0f2b35;
-  --petrol-lt:  #4a8397;
-  --moss:       #5c7a52;
-  --moss-dk:    #3d5536;
-  --moss-lt:    #8a9b6f;
-  --stone:      #dde1d3;
-  --stone-dk:   #c9d0b9;
-  --paper:      #f6f7f0;
-  --terracotta: #b5651d;
-  --terracotta-lt: #d68a42;
-  --gold:       #8a6a1f;
-  --gold-lt:    #c69a2e;
-  --line:       rgba(20,32,26,0.14);
-  --line-strong: rgba(20,32,26,0.32);
+  --ink:        #172a2e;
+  --petrol:     #17505b;
+  --petrol-dk:  #0c3238;
+  --petrol-lt:  #4e8590;
+  --moss:       #617558;
+  --moss-dk:    #44543b;
+  --moss-lt:    #9aa887;
+  --stone:      #efe8da;
+  --stone-dk:   #e3d9c6;
+  --paper:      #fbf8f2;
+  --terracotta: #a9542a;
+  --terracotta-lt: #d08a5c;
+  --gold:       #8f4c1c;
+  --gold-lt:    #c98a4e;
+  /* texto secundário: 0.72 garante >=4.79:1 (WCAG AA) sobre --stone-dk
+     (#e3d9c6), o fundo mais escuro em uso. NÃO reduzir.
+     ATENÇÃO: este token ficou INDEFINIDO por várias versões sem que nada
+     quebrasse visivelmente — o navegador caía no valor herdado e todo texto
+     secundário saía na cor do principal. validar.py agora acusa isso. */
+  --texto-suave: rgba(23,42,46,0.72);
+  --texto-suave-forte: rgba(23,42,46,0.84);
+  --line:       rgba(23,42,46,0.13);
+  --line-strong: rgba(23,42,46,0.30);
   --shadow-sm:  0 1px 2px rgba(15,43,53,0.10);
   --shadow-md:  0 10px 26px rgba(15,43,53,0.14);
   --shadow-lg:  0 22px 52px rgba(15,43,53,0.24);
@@ -76,9 +83,9 @@ body::before{
   content:"";
   position: fixed; inset:0; pointer-events:none; z-index:0;
   background-image:
-    radial-gradient(circle at 14% 8%, rgba(31,78,95,0.05), transparent 42%),
-    radial-gradient(circle at 88% 84%, rgba(92,122,82,0.05), transparent 46%),
-    repeating-linear-gradient(115deg, rgba(20,32,26,0.018) 0px, rgba(20,32,26,0.018) 1px, transparent 1px, transparent 5px);
+    radial-gradient(circle at 14% 8%, rgba(23,80,91,0.045), transparent 42%),
+    radial-gradient(circle at 88% 84%, rgba(168,95,40,0.05), transparent 46%),
+    repeating-linear-gradient(115deg, rgba(143,76,28,0.022) 0px, rgba(143,76,28,0.022) 1px, transparent 1px, transparent 5px);
 }
 
 @media (prefers-reduced-motion: reduce){
@@ -351,7 +358,7 @@ body::before{
 .cat-pill.cat-invert{ background: var(--petrol-lt); }
 .cat-pill.cat-flora{ background: var(--moss); }
 .cat-pill.cat-icno{ background: var(--moss-dk); }
-.cat-pill.cat-micro{ background: #6d5c85; }
+.cat-pill.cat-micro{ background: #7d6a44; }
 .cat-pill.cat-meta{ background: var(--petrol-dk); }
 
 /* rótulo em versalete acima do valor — repetir "Formação:" inline em
@@ -403,7 +410,7 @@ body::before{
 }
 .map-site-detail h5{ font-family: var(--font-display); margin: 0 0 0.4rem; color: var(--petrol-dk); font-size: 1.05rem; }
 .map-site-detail .site-taxon-list{ margin: 0.5rem 0 0; padding-left: 1.1rem; font-size:0.83rem; }
-.map-canvas{ border-radius: var(--radius-md); overflow:hidden; border:1px solid var(--line); box-shadow: var(--shadow-sm); background: var(--stone-dk); display:flex; align-items:center; justify-content:center; padding: 1rem; }
+.map-canvas{ border-radius: var(--radius-md); overflow:hidden; border:1px solid var(--line); box-shadow: var(--shadow-sm); background: #d7e1df; display:flex; align-items:center; justify-content:center; padding: 1rem; }
 .map-canvas svg{ width:100%; height:auto; max-height: 640px; display:block; }
 .site-dot{ cursor:pointer; transition: r .15s ease, fill-opacity .15s ease; }
 .site-dot:hover{ fill-opacity: 1; }
@@ -501,7 +508,7 @@ body::before{
 .avi-layout{ display:grid; grid-template-columns: 320px 1fr; gap: 1.4rem; margin-bottom: 2.5rem; }
 .avi-sidebar h4{ font-family: var(--font-mono); font-size:0.78rem; text-transform:uppercase; letter-spacing:0.04em; color: var(--moss-dk); margin: 0 0 0.6rem; }
 .avi-map-canvas{
-  border-radius: var(--radius-md); border:1px solid var(--line); background: var(--stone-dk);
+  border-radius: var(--radius-md); border:1px solid var(--line); background: #d7e1df;
   display:flex; align-items:center; justify-content:center; padding: 0.6rem; box-shadow: var(--shadow-sm);
 }
 .avi-map-canvas svg{ width:100%; height:auto; display:block; }
@@ -877,9 +884,9 @@ body::before{
   transition: fill .15s ease, stroke-opacity .15s ease;
 }
 /* municípios que já têm ocorrência publicada */
-.muni-com-registro{ fill: rgba(122,58,16,0.13); stroke-opacity:0.5; }
+.muni-com-registro{ fill: rgba(168,95,40,0.16); stroke-opacity:0.5; }
 .muni:hover{ fill: rgba(31,78,95,0.20); stroke-opacity:0.85; }
-.muni-ativo{ fill: rgba(181,101,29,0.30); stroke: #7a3a10; stroke-width:1; stroke-opacity:1; }
+.muni-ativo{ fill: rgba(168,95,40,0.32); stroke: #6e3812; stroke-width:1; stroke-opacity:1; }
 /* o detalhe da divisa só compensa a partir de certa ampliação */
 .mapa-ampliado .muni{ stroke-width:0.5; stroke-opacity:0.55; }
 
