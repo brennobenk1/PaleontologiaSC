@@ -6,6 +6,38 @@ saber o que havia nele naquele momento.
 
 Formato: as versões seguem `ANO.MÊS.N`.
 
+## 2026.09.5 — 22/09/2026 · tema com as cores da bandeira
+
+Nova paleta opcional baseada na bandeira de Santa Catarina (Lei estadual
+nº 975/1953): tres faixas horizontais iguais — vermelha, branca,
+vermelha — e um losango verde-claro ao centro, com as Armas do Estado.
+
+- **Vermelho** como cor primaria, **verde-claro do losango** como
+  secundaria, **branco** da faixa central como fundo e o **dourado das
+  estrelas do brasao** como acento.
+- O cabecalho ganha a propria bandeira reduzida a uma **faixa tricolor**
+  no topo, e as etiquetas de secao recebem um **losango verde**.
+- No mapa as cores passam a carregar dado: municipios com registro em
+  verde, sitios de coleta em vermelho.
+
+A lei nao fixa codigos de cor; os tons sao representativos e foram
+conferidos contra WCAG AA antes de entrar. O verde-claro do losango
+reprova como texto (4,04:1), entao aparece apenas em preenchimentos —
+textos usam o verde escuro (6,47:1).
+
+**Implementado como tema alternavel, nao como substituicao.** Um botao
+no cabecalho troca entre a paleta classica e a da bandeira; a escolha
+fica no localStorage e e aplicada por um script inline no <head>, antes
+da pintura, para nao piscar o tema errado no carregamento. Sem
+localStorage disponivel, a troca vale para a sessao.
+
+Para tornar a bandeira o tema padrao, basta acrescentar
+data-tema="bandeira" a tag <html> em index.html.
+
+Testado nos dois temas, em desktop e mobile: 6 abas sem erro de
+JavaScript e os 49 sitios do mapa respondendo ao toque em todos os
+cenarios.
+
 ## 2026.09.4 — 14/09/2026 · paleta e hierarquia visual
 
 ### Nova paleta, derivada do logo

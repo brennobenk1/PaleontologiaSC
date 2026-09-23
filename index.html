@@ -23,6 +23,14 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,450;0,9..144,600;0,9..144,700;1,9..144,400;1,9..144,500;1,9..144,600&family=Source+Serif+4:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="css/style.css">
+<script>
+  /* Tema aplicado antes da pintura, para não piscar o tema errado no
+     carregamento. Inline de propósito: arquivo externo chegaria tarde. */
+  (function(){
+    try{ var t = localStorage.getItem('paleo-tema'); if(t) document.documentElement.dataset.tema = t; }
+    catch(e){ /* localStorage bloqueado: segue no tema padrão */ }
+  })();
+</script>
 </head>
 <body>
 
@@ -46,6 +54,11 @@
       <button class="nav-link" data-view="avifauna">Avifauna do Brasil</button>
       <button class="nav-link" data-view="sobre">Sobre &amp; Fontes</button>
     </nav>
+
+    <button class="btn-tema" id="btnTema" type="button" aria-pressed="false"
+            title="Alternar entre a paleta clássica e as cores da bandeira de Santa Catarina">
+      <span class="tema-losango" aria-hidden="true"></span><span class="tema-rotulo">Bandeira</span>
+    </button>
 
     <button class="nav-toggle" id="navToggle" aria-label="Abrir menu" aria-expanded="false">
       <span></span><span></span><span></span>
@@ -430,7 +443,7 @@
     <p class="footer-note">Dados compilados de fontes públicas; consulte sempre as referências originais e as instituições de guarda para informações de tombamento oficial.</p>
     <p class="footer-versao">
       <span>Compilado por <b>Brenno Alef Benk</b></span>
-      <span>Versão <b>2026.09.4</b> &middot; <span id="footerTotal">—</span> registros</span>
+      <span>Versão <b>2026.09.5</b> &middot; <span id="footerTotal">—</span> registros</span>
       <a href="CHANGELOG.md" target="_blank" rel="noopener">histórico de alterações</a>
       <a href="LICENSE.md" target="_blank" rel="noopener">dados sob CC BY 4.0</a>
       <a href="https://github.com/brennobenk1/PaleontologiaSC/issues" target="_blank" rel="noopener">encontrou um erro? reporte</a>

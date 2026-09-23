@@ -1548,7 +1548,7 @@ const CITACAO = {
   // senão a citação sai como "PALEO-SC. Paleo-SC — Banco de Dados..."
   entidade: 'Paleo-SC',
   titulo: 'Banco de Dados Paleontológico de Santa Catarina',
-  versao: '2026.09.4',
+  versao: '2026.09.5',
   ano: '2026',
   url: 'https://brennobenk1.github.io/PaleontologiaSC/'
 };
@@ -1780,3 +1780,35 @@ function classeNatureza(t){
   if(/imprensa|Divulgação/i.test(t)) return 'nat-imprensa';
   return 'nat-outra';
 }
+
+/* ===========================================================
+   TEMA — paleta clássica ou cores da bandeira de SC
+   -----------------------------------------------------------
+   A escolha fica no localStorage e é aplicada por um script
+   inline no <head>, antes da pintura, para não piscar o tema
+   errado. Aqui só ficam o botão e a persistência.
+   =========================================================== */
+function initTema(){
+  const btn = document.getElementById('btnTema');
+  if(!btn) return;
+  const rotulo = btn.querySelector('.tema-rotulo');
+  const pintar = () => {
+    const bandeira = document.documentElement.dataset.tema === 'bandeira';
+    btn.setAttribute('aria-pressed', bandeira ? 'true' : 'false');
+    if(rotulo) rotulo.textContent = bandeira ? 'Clássico' : 'Bandeira';
+    btn.setAttribute('aria-label', bandeira
+      ? 'Voltar à paleta clássica' : 'Usar as cores da bandeira de Santa Catarina');
+  };
+  btn.addEventListener('click', () => {
+    const bandeira = document.documentElement.dataset.tema === 'bandeira';
+    if(bandeira) delete document.documentElement.dataset.tema;
+    else document.documentElement.dataset.tema = 'bandeira';
+    try{
+      if(bandeira) localStorage.removeItem('paleo-tema');
+      else localStorage.setItem('paleo-tema', 'bandeira');
+    }catch(e){ /* sem localStorage: vale só nesta sessão */ }
+    pintar();
+  });
+  pintar();
+}
+document.addEventListener('DOMContentLoaded', initTema);

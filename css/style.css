@@ -921,3 +921,76 @@ body::before{
   .mapa-zoom-btns button{ width:44px; height:38px; }
   .mapa-dica{ display:none; }
 }
+
+/* =========================================================
+   TEMA BANDEIRA DE SANTA CATARINA
+   ---------------------------------------------------------
+   Lei estadual nº 975/1953: três faixas horizontais iguais —
+   vermelha, branca, vermelha — e um losango VERDE-CLARO ao
+   centro, com as Armas do Estado. A lei não fixa códigos de
+   cor; os tons abaixo são representativos e foram conferidos
+   contra WCAG AA antes de entrar. O verde-claro do losango
+   reprova como texto (4,04:1), por isso aparece só em
+   preenchimentos; textos usam o verde escuro (6,47:1).
+   ========================================================= */
+:root[data-tema="bandeira"]{
+  --ink:        #1c1a1c;
+  --petrol:     #c8102e;   /* vermelho da bandeira: cor primária */
+  --petrol-dk:  #9b0c23;
+  --petrol-lt:  #d9455c;
+  --moss:       #3f8f3a;   /* verde-claro do losango */
+  --moss-dk:    #2c6b2a;
+  --moss-lt:    #7fb97a;
+  --stone:      #f6f5f3;   /* a faixa branca central */
+  --stone-dk:   #ebe9e5;
+  --paper:      #ffffff;
+  --terracotta: #b03027;
+  --terracotta-lt: #e08b84;
+  --gold:       #8c6d13;   /* dourado das estrelas do brasão */
+  --gold-lt:    #c9a227;
+  --line:       rgba(28,26,28,0.14);
+  --line-strong: rgba(28,26,28,0.30);
+  --texto-suave: rgba(28,26,28,0.68);
+  --texto-suave-forte: rgba(28,26,28,0.82);
+  --shadow-sm:  0 1px 2px rgba(28,26,28,0.10);
+  --shadow-md:  0 10px 26px rgba(28,26,28,0.13);
+  --shadow-lg:  0 22px 52px rgba(28,26,28,0.22);
+}
+:root[data-tema="bandeira"] body::before{
+  background-image:
+    radial-gradient(circle at 14% 8%, rgba(200,16,46,0.045), transparent 42%),
+    radial-gradient(circle at 88% 84%, rgba(63,143,58,0.05), transparent 46%),
+    repeating-linear-gradient(115deg, rgba(28,26,28,0.016) 0px, rgba(28,26,28,0.016) 1px, transparent 1px, transparent 5px);
+}
+/* a própria bandeira, reduzida a uma faixa no topo do cabeçalho */
+:root[data-tema="bandeira"] .site-header::after{
+  content:""; position:absolute; left:0; right:0; top:0; height:5px; z-index:2;
+  background: linear-gradient(90deg, #c8102e 0 46%, #ffffff 46% 54%, #c8102e 54% 100%);
+}
+/* losango verde marcando as etiquetas de seção */
+:root[data-tema="bandeira"] .section-num::before{
+  content:""; display:inline-block; width:7px; height:7px; margin-right:0.45rem;
+  background: #3f8f3a; transform: rotate(45deg); vertical-align:1px;
+}
+/* SVG com cor fixa no atributo: a regra CSS vence o atributo de apresentação */
+:root[data-tema="bandeira"] .site-dot{ fill:#c8102e; stroke:#7d0a1c; }
+:root[data-tema="bandeira"] .muni-com-registro{ fill: rgba(63,143,58,0.20); }
+:root[data-tema="bandeira"] .muni-ativo{ fill: rgba(200,16,46,0.28); stroke:#7d0a1c; }
+:root[data-tema="bandeira"] .map-canvas,
+:root[data-tema="bandeira"] .avi-map-canvas{ background:#e7eaec; }
+
+/* botão de troca de tema */
+.btn-tema{
+  display:inline-flex; align-items:center; gap:0.4rem; margin-left:0.6rem;
+  font-family: var(--font-mono); font-size:0.62rem; letter-spacing:0.04em;
+  text-transform:uppercase; background:none; border:1px solid var(--line-strong);
+  border-radius:999px; padding:0.3rem 0.7rem; color: var(--texto-suave);
+  transition: border-color .15s ease, color .15s ease;
+}
+.btn-tema:hover{ border-color: var(--petrol); color: var(--petrol); }
+.tema-losango{
+  width:9px; height:9px; transform: rotate(45deg); flex-shrink:0;
+  background: linear-gradient(135deg, #c8102e 50%, #3f8f3a 50%);
+}
+:root[data-tema="bandeira"] .btn-tema{ border-color: var(--petrol); color: var(--petrol); }
+@media (max-width:880px){ .btn-tema{ margin-left:auto; margin-right:0.4rem; } .tema-rotulo{ display:none; } }
