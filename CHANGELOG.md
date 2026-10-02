@@ -6,6 +6,131 @@ saber o que havia nele naquele momento.
 
 Formato: as versões seguem `ANO.MÊS.N`.
 
+## 2026.09.7 — 28/09/2026 · auditoria das tabelas
+
+Auditoria cruzada entre as tabelas — registros, sítios, períodos e
+instituições —, que a validação não cobria. Catálogo: 221 → 224.
+
+### Defeitos visíveis no site
+- **Aba Períodos incompleta.** As listas de táxons de cada período eram
+  cópias mantidas à mão e tinham ficado para trás: o Permiano Inferior
+  listava 18 dos 90 registros, e um botão apontava para o registro
+  removido nº 017 e levava a catálogo vazio. Agora todos os 224
+  registros aparecem; na amostra testada, nenhum botão leva a catálogo
+  vazio.
+- **Painel dos sítios no mapa** exibia nomes anteriores às correções de
+  nomenclatura, e o botão "explorar" filtrava pelo primeiro deles: no
+  Bainha, o catálogo vinha vazio. O botão passou a aplicar um **filtro
+  exato por sítio**, visível e removível. O Bainha retorna seus 58
+  registros (uma busca por texto trazia 60, incluindo outros sítios que
+  o citam).
+- A busca do catálogo passa a cobrir também sítio e local de coleta.
+
+### Correções de dados
+- **Campo da Lança fica em Mafra**, não em Doutor Pedrinho (Netto et al.,
+  2007, perfil do afloramento na região de Mafra; Balistieri & Netto,
+  2002). Segundo erro de município da mesma rodada que atribuíra Bela
+  Vista do Sul a Doutor Pedrinho.
+- **Coluna White** atravessa dois municípios: a seção sobe a SC-438 de
+  Lauro Müller ao topo da serra, em Bom Jardim da Serra. Município
+  registrado como "Lauro Müller / Bom Jardim da Serra".
+- **Furna Xocleng (Morro Grande):** a coordenada caía no município
+  vizinho de Nova Veneza. Passou à sede de Morro Grande, com a localidade
+  (comunidade de Três Barras) descrita na ficha.
+- **Referências:** título completo de Netto et al. (2009),
+  *Palaeogeography, Palaeoclimatology, Palaeoecology* 272: 240–255, e
+  título truncado removido de Nogueira & Netto (2001b). DOI da descrição
+  original de *Anthracoblattina mendesi* (Pinto & Sedor, 2000).
+- **Link repetido** nas fontes do registro nº 178.
+- **FURB** incluída na aba Instituições: guarda o material de Ponte Alta.
+
+### Registros novos
+- ***Taiophlebia niloriclasodae*** Martins-Neto et al., 2007: inseto do
+  Carbonífero Superior com **holótipo de Taió**; o gênero leva o nome do
+  município.
+- **Trilha de salto de artrópode** (*Ichnos* 28(4), 2021): primeira
+  ocorrência em depósitos glaciais do Paleozoico da Bacia do Paraná, numa
+  pedreira de Trombudo Central. Indica exposição subaérea.
+- **Escavações tipo *Gyrolithes*** da suíte Glossifungites do Campo da
+  Lança (Netto et al., 2007).
+
+### Estrutura
+- Novo `scripts/recalcular-derivados.py`: recalcula a partir dos
+  registros os campos de sítios (contagem, períodos, amostra de táxons)
+  e de períodos (total, lista de táxons).
+- Validação (13 → 14 verificações): campos derivados precisam bater com
+  os registros. Testada contra a versão publicada: reprova.
+
+## 2026.09.6 — 28/09/2026
+
+Reúne a rodada de busca aprofundada (ainda não publicada) e as mudanças
+pedidas para os peixes e os mesossauros. Catálogo: 212 → 221.
+
+### Correções de dados
+- **Bela Vista do Sul é distrito de Mafra**, não de Doutor Pedrinho, onde
+  dois registros (nº 199 e 200) estavam por engano. O Campo da Lança
+  permanece em Doutor Pedrinho, onde a literatura situa a suíte
+  Glossifungites.
+- ***Stegomastodon waringi* → *Notiomastodon platensis*** (Ameghino, 1888),
+  conforme Mothé et al. (2012, *Quaternary International*), com a
+  sinonímia registrada na ficha.
+- **Duplicata removida.** O registro nº 017, "Symmoriiformes gen. et sp.
+  nov.", era o mesmo dente que no mesmo artigo recebeu o nome
+  *Crioselache wittigi* (nº 055). O tubarão contava duas vezes.
+- **Números de tombo falsos.** 14 registros traziam marcadores como
+  "CENPALEO-MP-[múltiplos]", que imitam número de tombo. Foram reescritos
+  como "Coleção CENPALEO — … (número de tombo não informado na fonte)".
+  Só 9 registros têm número real de espécime, e não 25, como uma
+  contagem anterior indicava.
+
+### Peixes num só grupo
+Os 15 registros de peixe estavam em 9 subgrupos ("peixe actinopterígio",
+"peixe ósseo", "condrictio", "tubarão Symmoriiformes"…). Agora formam o
+subgrupo único **peixes**, e a classificação anterior de cada um abre a
+descrição da ficha ("Classificação: …").
+
+### Mesossauros
+Não há descrição formal de mesossauro catarinense: a compilação de
+vertebrados fósseis de SC da UFSC o afirma, e a busca confirmou. Ficam
+documentadas três ocorrências, todas como Mesosauridae indet.:
+- **Três Barras**: ficha reforçada; achados nas estiagens de 2018 e 2020
+  (a ficha dizia só 2020) e várias amostras no CENPALEO;
+- **Papanduva** (novo): citado por Karl, Gröning & Brauckmann (2007,
+  *Clausthaler Geowissenschaften* 6: 63–78), a única menção a mesossauro
+  catarinense em periódico científico;
+- **Ribeirão das Pedras, Taió** (novo): exemplar exposto em museu do
+  município, conhecido por divulgação.
+
+As fichas registram a taxonomia atual: *Mesosaurus tenuidens* seria a
+única espécie válida da família (Verrière & Fröbisch, 2022, *PeerJ*).
+
+Também entra o primeiro **peixe da Fm. Irati** catalogado para SC:
+paleoniscídeos de Três Barras (Nizer & Weinschütz, 2015, resumo).
+
+### Rodada de busca aprofundada (Mafra)
+- Pedreira Butiá (Fm. Taciba): *Myonia argentinensis*, *Aviculopecten
+  multiscalptus* e braquiópodes productídeos (Simões et al., 2012).
+- Bela Vista do Sul: ***Lyonia rochacamposi*** Taboada et al., 2016,
+  espécie nova, assembleia monotípica com cerca de 110 indivíduos/m².
+- Fazenda Potreiro (Fm. Mafra): *Hormosiroidea meandrica*, *Undichna
+  consulca* (trilha de nadadeira de peixe) e *Gordia*.
+
+### Mapa
+O anel que separa sítios de mesma coordenada não impedia que **grupos
+vizinhos** colidissem: com o sítio novo de Taió, o "Clube Caça e Tiro"
+ficou coberto pela "Pedreira Fama", de Trombudo Central. Uma etapa de
+relaxação passou a afastar qualquer par sobreposto, deslocando só
+símbolos já deslocados. Verificado: os 53 sítios respondem ao toque, em
+computador e celular.
+
+### Interface
+O permalink de um registro removido abria um modal vazio. Agora explica
+o motivo (casos nº 017 e nº 184) ou informa que o número não existe.
+
+### Validação (12 → 13 verificações)
+Nova checagem: número de tombo sem marcadores entre colchetes. Testada
+contra a versão publicada: reprova.
+
 ## 2026.09.5 — 22/09/2026 · tema com as cores da bandeira
 
 Nova paleta opcional baseada na bandeira de Santa Catarina (Lei estadual

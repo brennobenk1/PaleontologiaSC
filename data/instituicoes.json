@@ -16,6 +16,22 @@
     "acervo_obs": "Maior custodiante de material do banco (>40% dos registros)."
   },
   {
+    "sigla": "FURB",
+    "nome": "Universidade Regional de Blumenau — Laboratório de Geociências",
+    "tipo": "Universidade",
+    "cidade": "Blumenau",
+    "uf": "SC",
+    "endereco": "Blumenau, SC",
+    "lat": -26.9046,
+    "lon": -49.0796,
+    "email": "Não informado na fonte consultada",
+    "site": "https://www.furb.br/",
+    "telefone": "Não informado na fonte consultada",
+    "gestor": "Laboratório de Geociências (consultar site institucional para responsável atual)",
+    "descricao": "Guarda o material do Afloramento de Ponte Alta (Fm. Rio do Rasto), 58 amostras coletadas pelo Laboratório de Paleovertebrados da UFRGS.",
+    "acervo_obs": "Material da Fm. Rio do Rasto de Ponte Alta."
+  },
+  {
     "sigla": "Geoparque UNESCO",
     "nome": "Geoparque Mundial da UNESCO — Caminhos dos Cânions do Sul",
     "tipo": "Geoparque / Unidade de Conservação Geológica",

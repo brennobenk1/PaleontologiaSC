@@ -43,6 +43,41 @@
         "ids": [
           84
         ]
+      },
+      {
+        "taxon": "Gordia isp. (Fm. Campo Alegre)",
+        "count": 1,
+        "ids": [
+          209
+        ]
+      },
+      {
+        "taxon": "Diplocraterion isp. (Fm. Campo Alegre)",
+        "count": 1,
+        "ids": [
+          210
+        ]
+      },
+      {
+        "taxon": "Helminthoidichnites isp. (Fm. Campo Alegre)",
+        "count": 1,
+        "ids": [
+          211
+        ]
+      },
+      {
+        "taxon": "?Oldhamia isp. / ?Choia sp.",
+        "count": 1,
+        "ids": [
+          212
+        ]
+      },
+      {
+        "taxon": "?Arumberia sp. (impressão de repouso de medusoide)",
+        "count": 1,
+        "ids": [
+          213
+        ]
       }
     ]
   },
@@ -73,7 +108,7 @@
     "fim_ma": 298.9,
     "cor": "#3d6b52",
     "descricao": "Período de grandes glaciações no Gondwana; na Bacia do Paraná corresponde aos depósitos glaciogênicos e periglaciais do Grupo Itararé.",
-    "total_registros": 9,
+    "total_registros": 11,
     "taxons": [
       {
         "taxon": "Cruziana problematica",
@@ -137,6 +172,20 @@
         "ids": [
           80
         ]
+      },
+      {
+        "taxon": "Trilha de salto de artrópode (jumping trackway)",
+        "count": 1,
+        "ids": [
+          225
+        ]
+      },
+      {
+        "taxon": "Taiophlebia niloriclasodae Martins-Neto, Gallego, Brauckmann & Cruz, 2007",
+        "count": 1,
+        "ids": [
+          226
+        ]
       }
     ]
   },
@@ -167,7 +216,7 @@
     "fim_ma": 295,
     "cor": "#3d6b52",
     "descricao": "Intervalo glacial a pós-glacial do Grupo Itararé, com rica fauna de invertebrados marinhos e icnofósseis associados a ambientes deltaicos e marinhos rasos.",
-    "total_registros": 21,
+    "total_registros": 25,
     "taxons": [
       {
         "taxon": "Protovirgularia isp.",
@@ -231,6 +280,118 @@
         "ids": [
           14
         ]
+      },
+      {
+        "taxon": "Icnofauna do Afloramento Campo da Lança (8 icnogêneros)",
+        "count": 1,
+        "ids": [
+          196
+        ]
+      },
+      {
+        "taxon": "Rusophycus cf. carbonarius Dawson (traço de repouso de artrópode)",
+        "count": 1,
+        "ids": [
+          197
+        ]
+      },
+      {
+        "taxon": "Protichnites isp. (pista de artrópode)",
+        "count": 1,
+        "ids": [
+          198
+        ]
+      },
+      {
+        "taxon": "Icnofauna do Afloramento Bela Vista do Sul",
+        "count": 1,
+        "ids": [
+          199
+        ]
+      },
+      {
+        "taxon": "Lockeia siliquaria (traço de repouso de bivalve)",
+        "count": 1,
+        "ids": [
+          200
+        ]
+      },
+      {
+        "taxon": "Neonereites isp.",
+        "count": 1,
+        "ids": [
+          201
+        ]
+      },
+      {
+        "taxon": "Gluckstadtella isp.",
+        "count": 1,
+        "ids": [
+          202
+        ]
+      },
+      {
+        "taxon": "Rusophycus isp. (Pedreira Itaú-Itaúna)",
+        "count": 1,
+        "ids": [
+          203
+        ]
+      },
+      {
+        "taxon": "Icnofauna da Pedreira Waltrick",
+        "count": 1,
+        "ids": [
+          204
+        ]
+      },
+      {
+        "taxon": "Icnofauna da Pedreira Fama",
+        "count": 1,
+        "ids": [
+          205
+        ]
+      },
+      {
+        "taxon": "Protovirgularia dichotoma",
+        "count": 1,
+        "ids": [
+          206
+        ]
+      },
+      {
+        "taxon": "Icnofósseis indet. de sistema de fiorde (Presidente Getúlio)",
+        "count": 1,
+        "ids": [
+          207
+        ]
+      },
+      {
+        "taxon": "Hormosiroidea meandrica (Fazenda Potreiro)",
+        "count": 1,
+        "ids": [
+          218
+        ]
+      },
+      {
+        "taxon": "Undichna consulca",
+        "count": 1,
+        "ids": [
+          219
+        ]
+      },
+      {
+        "taxon": "Gordia arcuata e Gordia marina",
+        "count": 1,
+        "ids": [
+          220
+        ]
+      },
+      {
+        "taxon": "Escavações tipo Gyrolithes (Gyrolithes-like burrows)",
+        "count": 1,
+        "ids": [
+          224
+        ]
       }
     ]
   },
@@ -242,7 +403,7 @@
     "fim_ma": 295,
     "cor": "#6b8f5e",
     "descricao": "Primeiro andar do Permiano Inferior (Cisuraliano); em Mafra corresponde ao Folhelho Lontras, com o mais importante conjunto de tetrápodes permianos de Santa Catarina.",
-    "total_registros": 39,
+    "total_registros": 38,
     "taxons": [
       {
         "taxon": "Actinopterygii indet. (paleoniscídeos) — morfotipo 1",
@@ -256,13 +417,6 @@
         "count": 1,
         "ids": [
           16
-        ]
-      },
-      {
-        "taxon": "Symmoriiformes gen. et sp. nov.",
-        "count": 1,
-        "ids": [
-          17
         ]
       },
       {
@@ -495,6 +649,27 @@
         "ids": [
           66
         ]
+      },
+      {
+        "taxon": "Actinopterygii indet. — dois morfotipos com encéfalo e tecidos moles preservados em 3D",
+        "count": 1,
+        "ids": [
+          98
+        ]
+      },
+      {
+        "taxon": "Foraminifera bentônicos aglutinantes (indet.)",
+        "count": 1,
+        "ids": [
+          99
+        ]
+      },
+      {
+        "taxon": "Palinoflora do Campáleo (esporos, grãos de pólen, fungos e algas)",
+        "count": 1,
+        "ids": [
+          100
+        ]
       }
     ]
   },
@@ -525,7 +700,7 @@
     "fim_ma": 273.0,
     "cor": "#7fa66b",
     "descricao": "Período com ampla diversidade de invertebrados marinhos, flora glossopterídea e icnofósseis na Fm. Rio Bonito (Assembleia Taió) e no Grupo Itararé.",
-    "total_registros": 83,
+    "total_registros": 90,
     "taxons": [
       {
         "taxon": "Phyllotheca australis (Brongniart, 1828)",
@@ -570,7 +745,7 @@
         ]
       },
       {
-        "taxon": "Glossopteris sp. (flora de Glossopteris)",
+        "taxon": "Glossopteris browniana Brongniart",
         "count": 1,
         "ids": [
           32
@@ -652,6 +827,510 @@
         "ids": [
           94
         ]
+      },
+      {
+        "taxon": "Mesosauridae indet. (mesossauro)",
+        "count": 1,
+        "ids": [
+          101
+        ]
+      },
+      {
+        "taxon": "Phyllotheca australis Brongniart",
+        "count": 1,
+        "ids": [
+          102
+        ]
+      },
+      {
+        "taxon": "Phyllotheca griesbachii Zeiller",
+        "count": 1,
+        "ids": [
+          103
+        ]
+      },
+      {
+        "taxon": "Notocalamites askosus Rigby",
+        "count": 1,
+        "ids": [
+          104
+        ]
+      },
+      {
+        "taxon": "Paracalamites australis Rigby",
+        "count": 1,
+        "ids": [
+          105
+        ]
+      },
+      {
+        "taxon": "Frutificação de Sphenophyta (?)",
+        "count": 1,
+        "ids": [
+          106
+        ]
+      },
+      {
+        "taxon": "Ponsotheca lobifolia Bernardes-de-Oliveira",
+        "count": 1,
+        "ids": [
+          107
+        ]
+      },
+      {
+        "taxon": "Pecopteris aff. P. cambuyensis Read",
+        "count": 1,
+        "ids": [
+          108
+        ]
+      },
+      {
+        "taxon": "Pecopteris sp.",
+        "count": 1,
+        "ids": [
+          109
+        ]
+      },
+      {
+        "taxon": "Sphenopteris lobifolia Morris",
+        "count": 1,
+        "ids": [
+          110
+        ]
+      },
+      {
+        "taxon": "Sphenopteris sp.",
+        "count": 1,
+        "ids": [
+          111
+        ]
+      },
+      {
+        "taxon": "Notoangaridium criciumensis (Rigby) Bernardes-de-Oliveira",
+        "count": 1,
+        "ids": [
+          112
+        ]
+      },
+      {
+        "taxon": "Chiropteris reniformis Kawasaki",
+        "count": 1,
+        "ids": [
+          113
+        ]
+      },
+      {
+        "taxon": "Arberia minasica (White) emend. Rigby",
+        "count": 1,
+        "ids": [
+          114
+        ]
+      },
+      {
+        "taxon": "Arberia sp.",
+        "count": 1,
+        "ids": [
+          115
+        ]
+      },
+      {
+        "taxon": "Arberiopsis boureaui Bernardes-de-Oliveira",
+        "count": 1,
+        "ids": [
+          116
+        ]
+      },
+      {
+        "taxon": "Arberiopsis sp. A (?)",
+        "count": 1,
+        "ids": [
+          117
+        ]
+      },
+      {
+        "taxon": "Problematicum sp. A Rigby",
+        "count": 1,
+        "ids": [
+          118
+        ]
+      },
+      {
+        "taxon": "Gangamopteris intermedia Maithy",
+        "count": 1,
+        "ids": [
+          119
+        ]
+      },
+      {
+        "taxon": "Gangamopteris mosesii Dolianiti",
+        "count": 1,
+        "ids": [
+          120
+        ]
+      },
+      {
+        "taxon": "Gangamopteris obovata (Carruthers) White",
+        "count": 1,
+        "ids": [
+          121
+        ]
+      },
+      {
+        "taxon": "Gangamopteris rigbyi Bernardes-de-Oliveira",
+        "count": 1,
+        "ids": [
+          122
+        ]
+      },
+      {
+        "taxon": "Gangamopteris cf. G. buriadica Feistmantel",
+        "count": 1,
+        "ids": [
+          123
+        ]
+      },
+      {
+        "taxon": "Glossopteris ampla Dana",
+        "count": 1,
+        "ids": [
+          124
+        ]
+      },
+      {
+        "taxon": "Glossopteris angustifolia Brongniart",
+        "count": 1,
+        "ids": [
+          125
+        ]
+      },
+      {
+        "taxon": "Glossopteris communis Feistmantel",
+        "count": 1,
+        "ids": [
+          126
+        ]
+      },
+      {
+        "taxon": "Glossopteris spathulato-cordata Feistmantel emend. Barnejee & Ghosh var. dolianiti Bernardes-de-Oliveira",
+        "count": 1,
+        "ids": [
+          127
+        ]
+      },
+      {
+        "taxon": "Glossopteris taenioides Feistmantel",
+        "count": 1,
+        "ids": [
+          128
+        ]
+      },
+      {
+        "taxon": "Glossopteris cf. G. formosa Feistmantel",
+        "count": 1,
+        "ids": [
+          129
+        ]
+      },
+      {
+        "taxon": "Glossopteris cf. G. occidentalis White",
+        "count": 1,
+        "ids": [
+          130
+        ]
+      },
+      {
+        "taxon": "Glossopteris cf. G. sewardii Plumstead",
+        "count": 1,
+        "ids": [
+          131
+        ]
+      },
+      {
+        "taxon": "Ottokaria sancta-catharinae Dolianiti",
+        "count": 1,
+        "ids": [
+          132
+        ]
+      },
+      {
+        "taxon": "Ottokaria sp.",
+        "count": 1,
+        "ids": [
+          133
+        ]
+      },
+      {
+        "taxon": "Frutificação do tipo Ottokaria sp. A",
+        "count": 1,
+        "ids": [
+          134
+        ]
+      },
+      {
+        "taxon": "Frutificação do tipo Ottokaria sp. B",
+        "count": 1,
+        "ids": [
+          135
+        ]
+      },
+      {
+        "taxon": "Rhabdotaenia criciumensis (Dolianiti) Bernardes-de-Oliveira (?)",
+        "count": 1,
+        "ids": [
+          136
+        ]
+      },
+      {
+        "taxon": "Cordaicarpus irapuensis Oliveira",
+        "count": 1,
+        "ids": [
+          137
+        ]
+      },
+      {
+        "taxon": "Cordaicarpus rocha-camposii Oliveira",
+        "count": 1,
+        "ids": [
+          138
+        ]
+      },
+      {
+        "taxon": "Cordaicarpus zeillerii Maithy",
+        "count": 1,
+        "ids": [
+          139
+        ]
+      },
+      {
+        "taxon": "Cordaicarpus sp. A",
+        "count": 1,
+        "ids": [
+          140
+        ]
+      },
+      {
+        "taxon": "Cordaicarpus sp. B",
+        "count": 1,
+        "ids": [
+          141
+        ]
+      },
+      {
+        "taxon": "Noeggerathiopsis hislopii (Bunbury) Feistmantel",
+        "count": 1,
+        "ids": [
+          142
+        ]
+      },
+      {
+        "taxon": "Noeggerathiopsis sp. A (?)",
+        "count": 1,
+        "ids": [
+          143
+        ]
+      },
+      {
+        "taxon": "Noeggerathiopsis sp. B (?)",
+        "count": 1,
+        "ids": [
+          144
+        ]
+      },
+      {
+        "taxon": "Samaropsis bainhensis Millan",
+        "count": 1,
+        "ids": [
+          145
+        ]
+      },
+      {
+        "taxon": "Samaropsis criciumensis Millan",
+        "count": 1,
+        "ids": [
+          146
+        ]
+      },
+      {
+        "taxon": "Samaropsis mendesii Rigby",
+        "count": 1,
+        "ids": [
+          147
+        ]
+      },
+      {
+        "taxon": "Samaropsis millaniana Oliveira",
+        "count": 1,
+        "ids": [
+          148
+        ]
+      },
+      {
+        "taxon": "Samaropsis sp. B",
+        "count": 1,
+        "ids": [
+          149
+        ]
+      },
+      {
+        "taxon": "Brasilocladus acicularis Yoshida",
+        "count": 1,
+        "ids": [
+          150
+        ]
+      },
+      {
+        "taxon": "Buriadia mendesii Bernardes-de-Oliveira",
+        "count": 1,
+        "ids": [
+          151
+        ]
+      },
+      {
+        "taxon": "Cornucarpus furcata (Surange & Lele) Maithy",
+        "count": 1,
+        "ids": [
+          152
+        ]
+      },
+      {
+        "taxon": "Fragmento de rizomorfo",
+        "count": 1,
+        "ids": [
+          153
+        ]
+      },
+      {
+        "taxon": "Palmatophyllites sp.",
+        "count": 1,
+        "ids": [
+          154
+        ]
+      },
+      {
+        "taxon": "Plumsteadiella apedicellata Millan",
+        "count": 1,
+        "ids": [
+          155
+        ]
+      },
+      {
+        "taxon": "Plumsteadiella sp.",
+        "count": 1,
+        "ids": [
+          156
+        ]
+      },
+      {
+        "taxon": "Giridia indica Maithy",
+        "count": 1,
+        "ids": [
+          157
+        ]
+      },
+      {
+        "taxon": "Giridia quiteriensis Boardman & Iannuzzi",
+        "count": 1,
+        "ids": [
+          158
+        ]
+      },
+      {
+        "taxon": "Paragiridia taioensis Boardman, Iannuzzi & Dutra, 2016",
+        "count": 1,
+        "ids": [
+          189
+        ]
+      },
+      {
+        "taxon": "Gangamopteris cf. G. obovata (Carruthers) White",
+        "count": 1,
+        "ids": [
+          190
+        ]
+      },
+      {
+        "taxon": "Sementes tipo Cordaicarpus e Samaropsis (mal preservadas)",
+        "count": 1,
+        "ids": [
+          191
+        ]
+      },
+      {
+        "taxon": "Notocalamitaceae indet. (novo táxon em análise)",
+        "count": 1,
+        "ids": [
+          192
+        ]
+      },
+      {
+        "taxon": "Vertebraria isp. (sistema radicular de glossopteridófita)",
+        "count": 1,
+        "ids": [
+          193
+        ]
+      },
+      {
+        "taxon": "Macroflora Siderópolis — associação glossopteridófita",
+        "count": 1,
+        "ids": [
+          194
+        ]
+      },
+      {
+        "taxon": "Folhelhos betuminosos fossilíferos da Fm. Irati (Bom Retiro)",
+        "count": 1,
+        "ids": [
+          208
+        ]
+      },
+      {
+        "taxon": "Myonia argentinensis (Harrington, 1955)",
+        "count": 1,
+        "ids": [
+          214
+        ]
+      },
+      {
+        "taxon": "Aviculopecten multiscalptus (Thomas, 1928)",
+        "count": 1,
+        "ids": [
+          215
+        ]
+      },
+      {
+        "taxon": "Productida indet. (braquiópodes productídeos)",
+        "count": 1,
+        "ids": [
+          216
+        ]
+      },
+      {
+        "taxon": "Lyonia rochacamposi Taboada et al., 2016",
+        "count": 1,
+        "ids": [
+          217
+        ]
+      },
+      {
+        "taxon": "Mesosauridae indet. (mesossauro de Papanduva)",
+        "count": 1,
+        "ids": [
+          221
+        ]
+      },
+      {
+        "taxon": "Mesosauridae indet. (mesossauro de Ribeirão das Pedras)",
+        "count": 1,
+        "ids": [
+          222
+        ]
+      },
+      {
+        "taxon": "Palaeonisciformes indet. (Fm. Irati, Três Barras)",
+        "count": 1,
+        "ids": [
+          223
+        ]
       }
     ]
   },
@@ -706,6 +1385,62 @@
         "ids": [
           164
         ]
+      },
+      {
+        "taxon": "Dadoxylon sp. (troncos fósseis silicificados)",
+        "count": 1,
+        "ids": [
+          165
+        ]
+      },
+      {
+        "taxon": "Pelecypoda indet. (Fm. Palermo)",
+        "count": 1,
+        "ids": [
+          166
+        ]
+      },
+      {
+        "taxon": "Palinoflora da Fm. Palermo (esporomorfos)",
+        "count": 1,
+        "ids": [
+          167
+        ]
+      },
+      {
+        "taxon": "\"Loxomma\" sp. (tetrápode — identificação a revisar)",
+        "count": 1,
+        "ids": [
+          168
+        ]
+      },
+      {
+        "taxon": "Parapytanga catarinensis Strapasson, Pinheiro & Soares, 2015",
+        "count": 1,
+        "ids": [
+          176
+        ]
+      },
+      {
+        "taxon": "Fragmentos vegetais indet. (similares a Calamites sp. e Pecopteris sp.)",
+        "count": 1,
+        "ids": [
+          181
+        ]
+      },
+      {
+        "taxon": "Conchostraca indet. (similares a Cyzicus sp. e Asmussia sp.)",
+        "count": 1,
+        "ids": [
+          182
+        ]
+      },
+      {
+        "taxon": "Krauselcladus canoinhensis — nova ocorrência (Major Vieira)",
+        "count": 1,
+        "ids": [
+          195
+        ]
       }
     ]
   },
@@ -727,14 +1462,14 @@
         ]
       },
       {
-        "taxon": "Glossopteris riorastensis (Rohn & Rösler, 1989)",
+        "taxon": "Glossopteris riorastensis Rohn & Rösler, 1989",
         "count": 1,
         "ids": [
           34
         ]
       },
       {
-        "taxon": "Glossopteris grafi (Rohn & Rösler, 1989)",
+        "taxon": "Glossopteris grafi Rohn & Rösler, 1989",
         "count": 1,
         "ids": [
           35
@@ -752,6 +1487,90 @@
         "count": 1,
         "ids": [
           97
+        ]
+      },
+      {
+        "taxon": "Restos de peixes indet. (Fm. Serra Alta)",
+        "count": 1,
+        "ids": [
+          169
+        ]
+      },
+      {
+        "taxon": "Pelecypoda indet. (Fm. Serra Alta)",
+        "count": 1,
+        "ids": [
+          170
+        ]
+      },
+      {
+        "taxon": "Conchostraca indet. (Fm. Serra Alta)",
+        "count": 1,
+        "ids": [
+          171
+        ]
+      },
+      {
+        "taxon": "Schizoneura sp.",
+        "count": 1,
+        "ids": [
+          172
+        ]
+      },
+      {
+        "taxon": "Dizeugotheca sp.",
+        "count": 1,
+        "ids": [
+          173
+        ]
+      },
+      {
+        "taxon": "Dichophyllites sp.",
+        "count": 1,
+        "ids": [
+          174
+        ]
+      },
+      {
+        "taxon": "Anfíbio labirintodonte indet. (Temnospondyli)",
+        "count": 1,
+        "ids": [
+          175
+        ]
+      },
+      {
+        "taxon": "Australoxylon duartei (lenho fóssil permineralizado)",
+        "count": 1,
+        "ids": [
+          183
+        ]
+      },
+      {
+        "taxon": "Palaeolimnadiopsis subalata (Reed, 1929) Raymond, 1946",
+        "count": 1,
+        "ids": [
+          185
+        ]
+      },
+      {
+        "taxon": "Falsisca brasiliensis Ferreira-Oliveira & Rohn, 2008",
+        "count": 1,
+        "ids": [
+          186
+        ]
+      },
+      {
+        "taxon": "Monoleiolophus unicostatus (Leaiidae)",
+        "count": 1,
+        "ids": [
+          187
+        ]
+      },
+      {
+        "taxon": "Hemicycloleaia mitchelli",
+        "count": 1,
+        "ids": [
+          188
         ]
       }
     ]
@@ -786,7 +1605,7 @@
     "total_registros": 1,
     "taxons": [
       {
-        "taxon": "Aracoaraichnium leonardii Buck et al., 2017",
+        "taxon": "Mammaliaformes indet. (cf. Aracoaraichnium) — pista com 4 pegadas",
         "count": 1,
         "ids": [
           96
@@ -831,6 +1650,27 @@
         "ids": [
           83
         ]
+      },
+      {
+        "taxon": "Megaichnus major (paleotoca URU-01-P2)",
+        "count": 1,
+        "ids": [
+          178
+        ]
+      },
+      {
+        "taxon": "Megaichnus major (paleotoca de Doutor Pedrinho)",
+        "count": 1,
+        "ids": [
+          179
+        ]
+      },
+      {
+        "taxon": "Megaichnus isp. (paleotocas de Porto União)",
+        "count": 1,
+        "ids": [
+          180
+        ]
       }
     ]
   },
@@ -864,7 +1704,7 @@
     "total_registros": 3,
     "taxons": [
       {
-        "taxon": "Stegomastodon waringi (Holland, 1920)",
+        "taxon": "Notiomastodon platensis (Ameghino, 1888)",
         "count": 1,
         "ids": [
           68

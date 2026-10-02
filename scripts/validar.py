@@ -182,6 +182,23 @@ fora_vocab = sorted({(d["id"], d["categoria"].split("—")[0].strip()) for d in 
 checar(not fora_vocab, "categorias dentro do vocabulário controlado",
        f"grupos não reconhecidos: {fora_vocab[:8]}")
 
+# --- 13. número de tombo: nada de marcador que imite número real ---
+# Motivo: 16 registros traziam "CENPALEO-MP-[múltiplos]" e afins, que parecem
+# números de tombo mas não são — e chegaram a inflar uma estatística (25 em
+# vez de 9 registros com número real de espécime).
+falsos = [d["id"] for d in FOSSEIS if re.search(r"\[[^\]]*\]", d.get("numero_catalogo", ""))]
+checar(not falsos, "número de tombo sem marcadores falsos", f"marcadores entre colchetes: {falsos[:10]}")
+
+# --- 14. campos derivados (sítios e períodos) em dia com os registros ---
+# Motivo: eram mantidos à mão e ficaram defasados — a aba Períodos listava
+# 18 de 90 táxons e o painel do mapa exibia nomes antigos.
+import importlib.util as _ilu
+_sp = _ilu.spec_from_file_location("rd", RAIZ / "scripts" / "recalcular-derivados.py")
+_rd = _ilu.module_from_spec(_sp); _sp.loader.exec_module(_rd)
+_txt = (RAIZ / "js" / "dados.js").read_text(encoding="utf-8")
+checar(_rd.recalcular(_txt) == _txt, "campos derivados de sítios e períodos em dia",
+       "rode: python3 scripts/recalcular-derivados.py")
+
 # --- avisos: não quebram o build, mas mostram dívida acumulada ---
 links = [u for d in FOSSEIS for u in d.get("fontes", [])]
 frageis = [u for u in links if re.search(r"researchgate|academia\.edu|wikipedia", u)]

@@ -225,7 +225,7 @@ function initHome(){
    CATÁLOGO — busca, filtros, cartões/tabela, ficha (modal)
    =========================================================== */
 let __catalogMode = 'cards';
-let __catalogFilters = { periodo:'', categoria:'', municipio:'', instituicao:'', q:'', grupoTax:'', subTax:'' };
+let __catalogFilters = { periodo:'', categoria:'', municipio:'', instituicao:'', q:'', grupoTax:'', subTax:'', site:'' };
 
 function initCatalogo(){
   const periodoSel = document.getElementById('filterPeriodo');
@@ -251,7 +251,7 @@ function initCatalogo(){
   instSel.addEventListener('change', e => { __catalogFilters.instituicao = e.target.value; renderCatalog(); });
 
   document.getElementById('clearFilters').addEventListener('click', () => {
-    __catalogFilters = { periodo:'', categoria:'', municipio:'', instituicao:'', q:'', grupoTax:'', subTax:'' };
+    __catalogFilters = { periodo:'', categoria:'', municipio:'', instituicao:'', q:'', grupoTax:'', subTax:'', site:'' };
     renderNavTaxonomica();
     document.getElementById('searchInput').value = '';
     document.querySelectorAll('.filter-row select').forEach(s => s.value = '');
@@ -276,12 +276,13 @@ function applyCatalogFilters(list){
   return list.filter(f => {
     if(__catalogFilters.periodo && f.periodo !== __catalogFilters.periodo) return false;
     if(__catalogFilters.categoria && f.categoria !== __catalogFilters.categoria) return false;
+    if(__catalogFilters.site && f.site !== __catalogFilters.site) return false;
     if(__catalogFilters.grupoTax && grupoTaxonomico(f.categoria) !== __catalogFilters.grupoTax) return false;
     if(__catalogFilters.subTax && subgrupoTaxonomico(f.categoria) !== __catalogFilters.subTax) return false;
     if(__catalogFilters.municipio && !municipiosDe(f.municipio).includes(__catalogFilters.municipio)) return false;
     if(__catalogFilters.instituicao && !guardasDe(f.armazenamento).includes(__catalogFilters.instituicao)) return false;
     if(q){
-      const hay = [f.taxon, f.formacao, f.municipio, f.descritor, f.categoria, f.observacoes, f.armazenamento].join(' ').toLowerCase();
+      const hay = [f.taxon, f.formacao, f.municipio, f.site, f.local_coleta, f.descritor, f.categoria, f.observacoes, f.armazenamento].join(' ').toLowerCase();
       if(!hay.includes(q)) return false;
     }
     return true;
@@ -292,7 +293,16 @@ function renderCatalog(){
   // mantém a URL espelhando os filtros, para que a busca seja compartilhável
   if(document.querySelector('.view-catalogo.active')) atualizarURL('catalogo');
   const filtered = applyCatalogFilters(DB_FOSSEIS);
-  document.getElementById('resultCount').textContent = `${filtered.length} registro${filtered.length===1?'':'s'}`;
+  const rc = document.getElementById('resultCount');
+  rc.textContent = `${filtered.length} registro${filtered.length===1?'':'s'}`;
+  if(__catalogFilters.site){
+    const tag = document.createElement('button');
+    tag.type = 'button'; tag.className = 'filtro-sitio';
+    tag.title = 'Remover o filtro de sítio';
+    tag.textContent = `sítio: ${__catalogFilters.site} ×`;
+    tag.addEventListener('click', () => { __catalogFilters.site = ''; renderCatalog(); });
+    rc.append(' ', tag);
+  }
   document.getElementById('emptyState').classList.toggle('hidden', filtered.length !== 0);
   document.getElementById('catalogCards').classList.toggle('hidden', filtered.length === 0 || __catalogMode !== 'cards');
   document.getElementById('catalogTableWrap').classList.toggle('hidden', filtered.length === 0 || __catalogMode !== 'table');
@@ -377,9 +387,25 @@ function renderCatalogTable(list){
   tbody.querySelectorAll('tr').forEach(row => row.addEventListener('click', () => openFossilModal(parseInt(row.dataset.id))));
 }
 
+/* Números de registro que deixaram de existir. Um permalink já citado não
+   pode simplesmente abrir um modal vazio: explica-se o que houve. */
+const REGISTROS_REMOVIDOS = {
+  17:  'Duplicata do registro nº 055 (Crioselache wittigi): era o mesmo dente, cadastrado antes de receber nome. Removido na versão 2026.09.7.',
+  184: 'Registro de cf. Melosaurus sp., retirado na versão 2026.08 por não haver ocorrência documentada desse gênero em Santa Catarina.'
+};
+
 function openFossilModal(id){
   const f = dbFindFossil(id);
-  if(!f) return;
+  if(!f){
+    const motivo = REGISTROS_REMOVIDOS[id];
+    document.getElementById('modalBody').innerHTML = `
+      <h3 id="modalTitle">Registro nº ${String(id).padStart(3,'0')} ${motivo ? 'removido' : 'não encontrado'}</h3>
+      <p>${motivo || 'Não existe registro com este número no catálogo.'}</p>
+      <p class="muted">Os números de registro não são reaproveitados.</p>`;
+    document.getElementById('modalOverlay').classList.add('open');
+    focarModal();
+    return;
+  }
   atualizarURL(null, '#/registro/' + id);
   document.getElementById('modalBody').innerHTML = `
     <p class="${categoriaPillClass(f.categoria)}" style="display:inline-block;margin-bottom:0.6rem;">${f.categoria}</p>
@@ -426,6 +452,18 @@ function closeFossilModal(){
   document.getElementById('modalOverlay').classList.remove('open');
   document.dispatchEvent(new CustomEvent('modal:close'));
 }
+
+/* filtro EXATO por sítio: a busca por texto também trazia registros de outros
+   sítios cujas descrições mencionam o nome (o Bainha retornava 60 em vez de 58) */
+window.gotoCatalogWithSite = function(site){
+  window.paleoShowView('catalogo');
+  setTimeout(() => {
+    document.getElementById('searchInput').value = '';
+    __catalogFilters.q = '';
+    __catalogFilters.site = site;
+    renderCatalog();
+  }, 50);
+};
 
 window.gotoCatalogWithTaxon = function(taxon){
   window.paleoShowView('catalogo');
@@ -519,14 +557,42 @@ async function initMapa(){
      sobreposto, o preenchimento dos símbolos não captura o ponteiro:
      cada disco responde pela sua própria borda e área via CSS
      (pointer-events="visiblePainted" no elemento, aplicado abaixo). */
+  /* RELAXAÇÃO entre grupos. O anel separa sítios DENTRO de um grupo, mas
+     grupos vizinhos colidem quando um deles cresce — foi o que aconteceu
+     entre Taió e Trombudo Central ao entrar um sítio novo em Taió. Algumas
+     iterações afastam qualquer par sobreposto. Só se movem símbolos já
+     deslocados; os que estão na coordenada real permanecem fixos. */
+  const pos = {};
+  DB_SITIOS.filter(s => s.x != null).forEach(s => {
+    const [dx, dy] = desloc[s.site] || [0, 0];
+    pos[s.site] = { x: s.x + dx, y: s.y + dy, r: 4 + Math.sqrt(s.count) * 2.8, livre: !!desloc[s.site] };
+  });
+  const lista = Object.values(pos);
+  for(let it = 0; it < 120; it++){
+    let mexeu = false;
+    for(let i = 0; i < lista.length; i++) for(let j = i + 1; j < lista.length; j++){
+      const a = lista[i], b = lista[j];
+      if(!a.livre && !b.livre) continue;
+      let ddx = b.x - a.x, ddy = b.y - a.y, d = Math.hypot(ddx, ddy);
+      if(d < 0.01){ ddx = 1; ddy = 0; d = 1; }
+      const minimo = a.r + b.r + 2;
+      if(d >= minimo) continue;
+      const ux = ddx / d, uy = ddy / d, falta = minimo - d;
+      const pa = (a.livre && b.livre) ? 0.5 : (a.livre ? 1 : 0);
+      a.x -= ux * falta * pa;       a.y -= uy * falta * pa;
+      b.x += ux * falta * (1 - pa); b.y += uy * falta * (1 - pa);
+      mexeu = true;
+    }
+    if(!mexeu) break;
+  }
+
   const circles = DB_SITIOS.filter(s => s.x != null)
     .slice().sort((a, b) => b.count - a.count)
     .map(s => {
     const r = (4 + Math.sqrt(s.count) * 2.8).toFixed(1);
-    const [dx, dy] = desloc[s.site] || [0, 0];
-    const cx = (s.x + dx).toFixed(1), cy = (s.y + dy).toFixed(1);
+    const cx = pos[s.site].x.toFixed(1), cy = pos[s.site].y.toFixed(1);
     // linha-guia ligando o símbolo deslocado à sua posição real
-    const guia = (dx || dy)
+    const guia = (Math.abs(pos[s.site].x - s.x) > 0.05 || Math.abs(pos[s.site].y - s.y) > 0.05)
       ? `<line x1="${s.x}" y1="${s.y}" x2="${cx}" y2="${cy}" stroke="#7a3a10" stroke-width="0.8" stroke-opacity="0.45"></line>`
       : '';
     return `${guia}<circle cx="${cx}" cy="${cy}" r="${r}" fill="#a85f28" fill-opacity="0.82" stroke="#6e3812" stroke-width="1.4" class="site-dot" data-site="${encodeURIComponent(s.site)}"></circle>`;
@@ -711,7 +777,7 @@ function showSiteDetail(s){
     </ul>
     <button class="btn btn-text" id="mapExploreBtn">Ver no catálogo →</button>
   `;
-  document.getElementById('mapExploreBtn').addEventListener('click', () => window.gotoCatalogWithTaxon(s.taxons_amostra[0] || ''));
+  document.getElementById('mapExploreBtn').addEventListener('click', () => window.gotoCatalogWithSite(s.site));
 }
 
 function showBaciaDetail(b){
@@ -1548,7 +1614,7 @@ const CITACAO = {
   // senão a citação sai como "PALEO-SC. Paleo-SC — Banco de Dados..."
   entidade: 'Paleo-SC',
   titulo: 'Banco de Dados Paleontológico de Santa Catarina',
-  versao: '2026.09.5',
+  versao: '2026.09.7',
   ano: '2026',
   url: 'https://brennobenk1.github.io/PaleontologiaSC/'
 };
