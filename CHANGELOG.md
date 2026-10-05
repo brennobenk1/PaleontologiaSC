@@ -6,6 +6,49 @@ saber o que havia nele naquele momento.
 
 Formato: as versões seguem `ANO.MÊS.N`.
 
+## 2026.09.9 — 05/10/2026 · correções de nomenclatura e de referências
+
+A partir de uma dúvida sobre o registro nº 014, revisão das referências
+e dos links da base.
+
+### Registro nº 014
+- Nome grafado errado: "Gluckstadella cooperi" → ***Gluckstadtella
+  cooperi* Savage, 1971** (com "t"), com autoria.
+- A ficha estava sem descrição. Agora traz: impressão de repouso de
+  artrópode, descrita nos ritmitos periglaciais do Grupo Dwyka (África do
+  Sul) e interpretada como de crustáceos sincarídeos ou pericarídeos.
+- A localidade, pedreira de Águas Claras (Rio do Sul), estava correta
+  (Gandini, Netto & Souza, 2007).
+- O registro nº 074 afirmava que *G. cooperi* estava "registrada no
+  Campáleo" — sem fonte. Passa a remeter a Águas Claras (nº 014).
+
+### Referências que não correspondiam ao link
+Nova checagem automática: o código de um link do ScienceDirect embute o
+ISSN da revista, e ele tem de bater com a revista citada na ficha. Na
+versão publicada, sete fichas divergiam:
+- **Registro nº 084:** citava "Sanchez et al. (2010) — *Sedimentary
+  Geology*", referência que não corresponde a trabalho algum. O correto é
+  **Guadagnin et al. (2010), *Precambrian Research***, que data a Bacia
+  do Itajaí entre 563 e 549 Ma. Erro introduzido na rodada de
+  referências de 2026.08.5.
+- **Registro nº 100:** citava *Review of Palaeobotany and Palynology*; o
+  artigo é da ***Sedimentary Geology* (2023)**. A ficha passa a registrar
+  que esse trabalho situa o Campáleo perto do limite Carbonífero–Permiano
+  (provavelmente Gzheliano), enquanto outras fontes o põem no início do
+  Permiano. Também erro da rodada 2026.08.5.
+- **Registros nº 072, 201–203:** linkavam um artigo de 2015 enquanto
+  citavam Nogueira & Netto (2001). Os links passam à revisão de
+  Balistieri et al. (2021), que indexa o trabalho.
+- **Registro nº 038:** link de um trabalho de 2024 que a ficha não cita;
+  removido.
+
+### DOIs confirmados
+- Lima et al. (2015): **10.1016/j.jsames.2015.07.008**, *J. South Am.
+  Earth Sci.* 63: 137–148 — 8 registros.
+- Netto et al. (2009): **10.1016/j.palaeo.2008.10.028** — 3 registros.
+
+Registros com DOI: 34 → 45. Validação: 15 → 16 verificações.
+
 ## 2026.09.8 — 28/09/2026 · revisão de erros e novos registros
 
 Catálogo: 224 → 227 registros; 54 → 56 sítios; 34 → 35 municípios.

@@ -217,6 +217,24 @@ for d in FOSSEIS:
 _dups = [sorted(v) for g in _grupos.values() for v in g.values() if len(v) > 1]
 checar(not _dups, "subcategorias sem sinônimos duplicados", f"variações do mesmo termo: {_dups}")
 
+# --- 16. link do ScienceDirect aponta para a revista citada na ficha ---
+# O código do link embute o ISSN da revista (S0031-0182 = Palaeo3...). Motivo:
+# três fichas citavam uma revista e linkavam outra — numa delas, a referência
+# escrita não correspondia a trabalho nenhum.
+_ISSN = {"00310182": "Palaeogeography", "08959811": "South American Earth Sciences",
+         "10406182": "Quaternary International", "00253227": "Marine Geology",
+         "00346667": "Review of Palaeobotany", "00370738": "Sedimentary Geology",
+         "03019268": "Precambrian Research"}
+_div = []
+for d in FOSSEIS:
+    for u in d.get("fontes", []):
+        mm = re.search(r"/pii/S(\d{8})", u)
+        if mm:
+            rev = _ISSN.get(mm.group(1))
+            if rev is None or rev.lower() not in d["descritor"].lower():
+                _div.append((d["id"], rev or mm.group(1)))
+checar(not _div, "links do ScienceDirect coerentes com a revista citada", f"divergências: {_div}")
+
 # --- avisos: não quebram o build, mas mostram dívida acumulada ---
 links = [u for d in FOSSEIS for u in d.get("fontes", [])]
 frageis = [u for u in links if re.search(r"researchgate|academia\.edu|wikipedia", u)]

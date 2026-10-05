@@ -361,7 +361,7 @@
     "era": "Paleozóico — Carbonífero",
     "periodo_ordem": 5,
     "formacao": "Grupo Itararé / Fm. Rio do Sul",
-    "taxon": "Gluckstadella cooperi",
+    "taxon": "Gluckstadtella cooperi Savage, 1971",
     "categoria": "Icnofóssil — impressão de repouso de artrópode",
     "numero_catalogo": "-",
     "local_coleta": "Pedreira Águas Claras, Rio do Sul, SC",
@@ -374,7 +374,7 @@
     "descritor": "Gandini, R., Netto, R.G. & Souza, P.A. (2007) — \"Paleoicnologia e a palinologia dos ritmitos do Grupo Itararé na pedreira de Águas Claras (Santa Catarina, Brasil)\", Gaea — Journal of Geoscience (UNISINOS) 3(1):47–59",
     "unidade_pesquisa": "UFRGS / UNISINOS",
     "idade_ma": "ca. 300–295 Ma",
-    "observacoes": "-",
+    "observacoes": "Impressão de repouso de artrópode. Savage (1971) a descreveu nos ritmitos periglaciais do Grupo Dwyka (Bacia do Karoo, África do Sul) e a interpretou como impressão de crustáceos sincarídeos ou pericarídeos. Na pedreira de Águas Claras, a assembleia é dominada por trilhas de moluscos e por pistas de crustáceos e merostomados, preservadas como subimpressões (Gandini, Netto & Souza, 2007). CORREÇÃO (2026.09.9): o nome estava grafado \"Gluckstadella\", sem o \"t\", e sem autoria.",
     "fontes": [
       "https://www.researchgate.net/publication/256186437_Paleoicnologia_e_a_palinologia_dos_ritmitos_do_Grupo_Itarare_na_pedreira_de_Aguas_Claras_Santa_Catarina_Brasil",
       "https://www.academia.edu/3535049/Paleoicnologia_e_a_palinologia_dos_ritmitos_do_Grupo_Itarar%C3%A9_na_pedreira_de_%C3%81guas_Claras_Santa_Catarina_Brasil_"
@@ -985,7 +985,6 @@
     "fontes": [
       "https://doi.org/10.4072/rbp.2009.3.07",
       "https://sbpbrasil.org/publications/index.php/rbp/article/download/428/254/9081",
-      "https://www.sciencedirect.com/science/article/abs/pii/S0895981124004279 (More than fossils: Paleoburrows as geoheritage...)",
       "https://periodicos.ufpe.br/revistas/index.php/rbgfe/article/view/259418 (Proposta de classificação das paleotocas)",
       "https://ndmais.com.br/animais/cavernas-em-sc-guardam-rastros-de-preguicas-e-tatus-gigantes/",
       "https://jornal.unesp.br/2022/01/18/uma-visita-a-casa-dos-gigantes/"
@@ -1933,7 +1932,7 @@
     "idade_ma": "ca. 300–295 Ma",
     "observacoes": "Classificação: pista de artrópode (locomoção tipo trilobita). Espécimes raros e pequenos; associados a Diplichnites e Diplopodichnus; sugerem comunidade bentônica de artrópodes com comportamento de deslocamento similar a trilobitas",
     "fontes": [
-      "https://www.sciencedirect.com/science/article/abs/pii/S0895981115300274"
+      "https://revistas.uepg.br/index.php/tp/article/view/18322"
     ],
     "citacao_abnt": "BALISTIERI, P.R.M.N.; NETTO, R.G. et al. 2015. In: Lima, Netto, Corrêa & Lavina (2015) — citação inferida via ScienceDirect. Fonte primária principal para este registro: LIMA, J.H.D.; NETTO, R.G.; CORRÊA, C.G.; LAVINA, E.L.C. 2015. Ichnology of deglaciation deposits from the Upper Carboniferous Rio do Sul Formation (Itararé Group, Paraná Basin) at central-east Santa Catarina State (southern Brazil). Journal of South American Earth Sciences, 64, 339–352. DOI: 10.1016/j.jsames.2015.09.006 [Fonte primária]. Disponível em: https://www.sciencedirect.com/science/article/abs/pii/S0895981115300274",
     "tipo_fonte": "Artigo em periódico"
@@ -1954,15 +1953,16 @@
     "lon": -49.795,
     "bacia": "Bacia do Paraná — Grupo Itararé",
     "armazenamento": "Coleção de icnofósseis LaViGea/UNISINOS (São Leopoldo, RS), siglas UMVT/ULVG",
-    "descritor": "Lima, J.H.D., Netto, R.G., Corrêa, C.G. & Lavina, E.L.C. (2015) — \"Ichnology of deglaciation deposits from the Upper Carboniferous Rio do Sul Formation (Itararé Group, Paraná Basin) at central-east Santa Catarina State (southern Brazil)\", Journal of South American Earth Sciences",
+    "descritor": "Lima, J.H.D., Netto, R.G., Corrêa, C.G. & Lavina, E.L.C. (2015) — \"Ichnology of deglaciation deposits from the Upper Carboniferous Rio do Sul Formation (Itararé Group, Paraná Basin) at central-east Santa Catarina State (southern Brazil)\", Journal of South American Earth Sciences 63:137–148",
     "unidade_pesquisa": "UNISINOS",
     "idade_ma": "ca. 300–295 Ma",
     "observacoes": "Icnotáxon associado a ambientes glaciolacustres; reportado na revisão da icnofauna da Fm. Rio do Sul em Trombudo Central",
     "fontes": [
-      "https://www.sciencedirect.com/science/article/abs/pii/S0895981115300274"
+      "https://doi.org/10.1016/j.jsames.2015.07.008"
     ],
     "citacao_abnt": "LIMA, J.H.D.; NETTO, R.G.; CORRÊA, C.G.; LAVINA, E.L.C. 2015. Ichnology of deglaciation deposits from the Upper Carboniferous Rio do Sul Formation (Itararé Group, Paraná Basin) at central-east Santa Catarina State (southern Brazil). Journal of South American Earth Sciences, 64, 339–352. DOI: 10.1016/j.jsames.2015.09.006 [Fonte primária]. Disponível em: https://www.sciencedirect.com/science/article/abs/pii/S0895981115300274",
-    "tipo_fonte": "Artigo em periódico"
+    "tipo_fonte": "Artigo em periódico",
+    "doi": "10.1016/j.jsames.2015.07.008"
   },
   {
     "id": 74,
@@ -1980,15 +1980,16 @@
     "lon": -49.795,
     "bacia": "Bacia do Paraná — Grupo Itararé",
     "armazenamento": "Coleção de icnofósseis LaViGea/UNISINOS (São Leopoldo, RS), siglas UMVT/ULVG",
-    "descritor": "Lima, J.H.D., Netto, R.G., Corrêa, C.G. & Lavina, E.L.C. (2015) — \"Ichnology of deglaciation deposits from the Upper Carboniferous Rio do Sul Formation (Itararé Group, Paraná Basin) at central-east Santa Catarina State (southern Brazil)\", Journal of South American Earth Sciences",
+    "descritor": "Lima, J.H.D., Netto, R.G., Corrêa, C.G. & Lavina, E.L.C. (2015) — \"Ichnology of deglaciation deposits from the Upper Carboniferous Rio do Sul Formation (Itararé Group, Paraná Basin) at central-east Santa Catarina State (southern Brazil)\", Journal of South American Earth Sciences 63:137–148",
     "unidade_pesquisa": "UNISINOS",
     "idade_ma": "ca. 300–295 Ma",
-    "observacoes": "Nova icnoespécie descrita para os ritmitos de Trombudo Central, distinta de Gluckstadella cooperi (já registrada no Campáleo)",
+    "observacoes": "Nova icnoespécie descrita para os ritmitos de Trombudo Central, distinta de Gluckstadtella cooperi Savage, 1971, registrada na pedreira de Águas Claras, Rio do Sul (registro nº 014)",
     "fontes": [
-      "https://www.sciencedirect.com/science/article/abs/pii/S0895981115300274"
+      "https://doi.org/10.1016/j.jsames.2015.07.008"
     ],
     "citacao_abnt": "LIMA, J.H.D.; NETTO, R.G.; CORRÊA, C.G.; LAVINA, E.L.C. 2015. Ichnology of deglaciation deposits from the Upper Carboniferous Rio do Sul Formation (Itararé Group, Paraná Basin) at central-east Santa Catarina State (southern Brazil). Journal of South American Earth Sciences, 64, 339–352. DOI: 10.1016/j.jsames.2015.09.006 [Fonte primária]. Disponível em: https://www.sciencedirect.com/science/article/abs/pii/S0895981115300274",
-    "tipo_fonte": "Artigo em periódico"
+    "tipo_fonte": "Artigo em periódico",
+    "doi": "10.1016/j.jsames.2015.07.008"
   },
   {
     "id": 75,
@@ -2006,15 +2007,16 @@
     "lon": -49.795,
     "bacia": "Bacia do Paraná — Grupo Itararé",
     "armazenamento": "Coleção de icnofósseis LaViGea/UNISINOS (São Leopoldo, RS), siglas UMVT/ULVG",
-    "descritor": "Lima, J.H.D., Netto, R.G., Corrêa, C.G. & Lavina, E.L.C. (2015) — \"Ichnology of deglaciation deposits from the Upper Carboniferous Rio do Sul Formation (Itararé Group, Paraná Basin) at central-east Santa Catarina State (southern Brazil)\", Journal of South American Earth Sciences",
+    "descritor": "Lima, J.H.D., Netto, R.G., Corrêa, C.G. & Lavina, E.L.C. (2015) — \"Ichnology of deglaciation deposits from the Upper Carboniferous Rio do Sul Formation (Itararé Group, Paraná Basin) at central-east Santa Catarina State (southern Brazil)\", Journal of South American Earth Sciences 63:137–148",
     "unidade_pesquisa": "UNISINOS",
     "idade_ma": "ca. 300–295 Ma",
     "observacoes": "Classificação: escavação superficial de organismo vermiforme. Icnoespécie dominante na suíte de 'mineradores sob o tapete microbiano' (undermat miners), indicando pastadores de superfície (larvas de inseto, isópodes, anfípodes)",
     "fontes": [
-      "https://www.sciencedirect.com/science/article/abs/pii/S0895981115300274"
+      "https://doi.org/10.1016/j.jsames.2015.07.008"
     ],
     "citacao_abnt": "LIMA, J.H.D.; NETTO, R.G.; CORRÊA, C.G.; LAVINA, E.L.C. 2015. Ichnology of deglaciation deposits from the Upper Carboniferous Rio do Sul Formation (Itararé Group, Paraná Basin) at central-east Santa Catarina State (southern Brazil). Journal of South American Earth Sciences, 64, 339–352. DOI: 10.1016/j.jsames.2015.09.006 [Fonte primária]. Disponível em: https://www.sciencedirect.com/science/article/abs/pii/S0895981115300274",
-    "tipo_fonte": "Artigo em periódico"
+    "tipo_fonte": "Artigo em periódico",
+    "doi": "10.1016/j.jsames.2015.07.008"
   },
   {
     "id": 76,
@@ -2032,15 +2034,16 @@
     "lon": -49.795,
     "bacia": "Bacia do Paraná — Grupo Itararé",
     "armazenamento": "Coleção de icnofósseis LaViGea/UNISINOS (São Leopoldo, RS), siglas UMVT/ULVG",
-    "descritor": "Lima, J.H.D., Netto, R.G., Corrêa, C.G. & Lavina, E.L.C. (2015) — \"Ichnology of deglaciation deposits from the Upper Carboniferous Rio do Sul Formation (Itararé Group, Paraná Basin) at central-east Santa Catarina State (southern Brazil)\", Journal of South American Earth Sciences",
+    "descritor": "Lima, J.H.D., Netto, R.G., Corrêa, C.G. & Lavina, E.L.C. (2015) — \"Ichnology of deglaciation deposits from the Upper Carboniferous Rio do Sul Formation (Itararé Group, Paraná Basin) at central-east Santa Catarina State (southern Brazil)\", Journal of South American Earth Sciences 63:137–148",
     "unidade_pesquisa": "UNISINOS",
     "idade_ma": "ca. 300–295 Ma",
     "observacoes": "Associada à icnofácies Mermia, indicativa de ambiente lacustre de água doce associado a degelo glacial",
     "fontes": [
-      "https://www.sciencedirect.com/science/article/abs/pii/S0895981115300274"
+      "https://doi.org/10.1016/j.jsames.2015.07.008"
     ],
     "citacao_abnt": "LIMA, J.H.D.; NETTO, R.G.; CORRÊA, C.G.; LAVINA, E.L.C. 2015. Ichnology of deglaciation deposits from the Upper Carboniferous Rio do Sul Formation (Itararé Group, Paraná Basin) at central-east Santa Catarina State (southern Brazil). Journal of South American Earth Sciences, 64, 339–352. DOI: 10.1016/j.jsames.2015.09.006 [Fonte primária]. Disponível em: https://www.sciencedirect.com/science/article/abs/pii/S0895981115300274",
-    "tipo_fonte": "Artigo em periódico"
+    "tipo_fonte": "Artigo em periódico",
+    "doi": "10.1016/j.jsames.2015.07.008"
   },
   {
     "id": 77,
@@ -2058,15 +2061,16 @@
     "lon": -49.795,
     "bacia": "Bacia do Paraná — Grupo Itararé",
     "armazenamento": "Coleção de icnofósseis LaViGea/UNISINOS (São Leopoldo, RS), siglas UMVT/ULVG",
-    "descritor": "Lima, J.H.D., Netto, R.G., Corrêa, C.G. & Lavina, E.L.C. (2015) — \"Ichnology of deglaciation deposits from the Upper Carboniferous Rio do Sul Formation (Itararé Group, Paraná Basin) at central-east Santa Catarina State (southern Brazil)\", Journal of South American Earth Sciences",
+    "descritor": "Lima, J.H.D., Netto, R.G., Corrêa, C.G. & Lavina, E.L.C. (2015) — \"Ichnology of deglaciation deposits from the Upper Carboniferous Rio do Sul Formation (Itararé Group, Paraná Basin) at central-east Santa Catarina State (southern Brazil)\", Journal of South American Earth Sciences 63:137–148",
     "unidade_pesquisa": "UNISINOS",
     "idade_ma": "ca. 300–295 Ma",
     "observacoes": "Icnoespécie de Treptichnus distinta da Treptichnus isp. já registrada no afloramento Campáleo (Mafra)",
     "fontes": [
-      "https://www.sciencedirect.com/science/article/abs/pii/S0895981115300274"
+      "https://doi.org/10.1016/j.jsames.2015.07.008"
     ],
     "citacao_abnt": "LIMA, J.H.D.; NETTO, R.G.; CORRÊA, C.G.; LAVINA, E.L.C. 2015. Ichnology of deglaciation deposits from the Upper Carboniferous Rio do Sul Formation (Itararé Group, Paraná Basin) at central-east Santa Catarina State (southern Brazil). Journal of South American Earth Sciences, 64, 339–352. DOI: 10.1016/j.jsames.2015.09.006 [Fonte primária]. Disponível em: https://www.sciencedirect.com/science/article/abs/pii/S0895981115300274",
-    "tipo_fonte": "Artigo em periódico"
+    "tipo_fonte": "Artigo em periódico",
+    "doi": "10.1016/j.jsames.2015.07.008"
   },
   {
     "id": 78,
@@ -2258,10 +2262,10 @@
     "lon": -48.6614,
     "bacia": "Bacia do Itajaí",
     "armazenamento": "UNISINOS — LaViGæa (São Leopoldo, RS)",
-    "descritor": "Zucatti da Rosa, A.L. (2005, 2006) — \"Evidências de vida no Ediacarano inferior da Bacia do Itajaí, SC\", Dissertação de Mestrado, Programa de Pós-Graduação em Geologia, UNISINOS; Da Rosa et al. (1997); Sanchez et al. (2010) — Sedimentary Geology",
+    "descritor": "Zucatti da Rosa, A.L. (2005, 2006) — \"Evidências de vida no Ediacarano inferior da Bacia do Itajaí, SC\", Dissertação de Mestrado, Programa de Pós-Graduação em Geologia, UNISINOS; Da Rosa et al. (1997); Guadagnin, F. et al. (2010) — \"Depositional age and provenance of the Itajaí Basin, Santa Catarina State, Brazil: Implications for SW Gondwana correlation\", Precambrian Research (idade deposicional entre 563 ± 3 e 549 ± 4 Ma)",
     "unidade_pesquisa": "UNISINOS / PPG Geologia",
     "idade_ma": "ca. 563–580 Ma",
-    "observacoes": "Disco basal ediacarano amplamente documentado na Bacia do Itajaí; um dos fósseis-chave (junto com Charniodiscus e Cyclomedusa) usados para confirmar idade ediacarana dos sedimentos por correlação com a Bacia de Avalon HOMONÍMIA — ATENÇÃO: existem dois \"Campo Alegre\" na geologia catarinense, sem relação entre si. (1) A Fm. CAMPO ALEGRE, desta ficha, é unidade da BACIA DO ITAJAÍ, no vale do Itajaí, e é fossilífera. (2) A BACIA DE CAMPO ALEGRE fica no NORDESTE do estado, junto ao município homônimo, cobre ~500 km² e é vulcanossedimentar — riolitos, traquitos, tufos e sedimentos vulcanogênicos, com vulcanismo datado em ~602 Ma. Não há registro paleontológico conhecido para ela, o que é esperado dada a litologia predominantemente vulcânica. Um registro da Fm. Campo Alegre NÃO deve ser atribuído ao município de Campo Alegre.",
+    "observacoes": "Disco basal ediacarano amplamente documentado na Bacia do Itajaí; um dos fósseis-chave (junto com Charniodiscus e Cyclomedusa) usados para confirmar idade ediacarana dos sedimentos por correlação com a Bacia de Avalon HOMONÍMIA — ATENÇÃO: existem dois \"Campo Alegre\" na geologia catarinense, sem relação entre si. (1) A Fm. CAMPO ALEGRE, desta ficha, é unidade da BACIA DO ITAJAÍ, no vale do Itajaí, e é fossilífera. (2) A BACIA DE CAMPO ALEGRE fica no NORDESTE do estado, junto ao município homônimo, cobre ~500 km² e é vulcanossedimentar — riolitos, traquitos, tufos e sedimentos vulcanogênicos, com vulcanismo datado em ~602 Ma. Não há registro paleontológico conhecido para ela, o que é esperado dada a litologia predominantemente vulcânica. Um registro da Fm. Campo Alegre NÃO deve ser atribuído ao município de Campo Alegre. CORREÇÃO (2026.09.9): a referência de 2010 estava registrada como \"Sanchez et al. — Sedimentary Geology\", que não corresponde ao trabalho do link; o correto é Guadagnin et al. (2010), Precambrian Research.",
     "fontes": [
       "https://www.researchgate.net/publication/234111844_Depositional_age_and_provenance_of_the_Itajai_Basin_Santa_Catarina_State_Brazil_Implications_for_SW_Gondwana_correlation",
       "https://www.sciencedirect.com/science/article/abs/pii/S0301926810000987"
@@ -2684,8 +2688,8 @@
     "id": 100,
     "taxon": "Palinoflora do Campáleo (esporos, grãos de pólen, fungos e algas)",
     "categoria": "Microfóssil — palinomorfos",
-    "descritor": "Análise palinológica do Afloramento Campáleo — Review of Palaeobotany and Palynology (2023)",
-    "observacoes": "Assembleias palinológicas recuperadas de 12 horizontes estratigráficos do Campáleo, com esporos, grãos de pólen, fungos e algas bem preservados — 10 amostras férteis vindas de 1,15 m de folhelhos negros fossilíferos (incluindo uma concreção calcária) e 2 dos ritmitos subjacentes com dropstones. Sustentam o posicionamento do Folhelho Lontras na biozona Vittatina costabilis, uma das principais bases da datação relativa da unidade.",
+    "descritor": "\"Palynological analysis (biochronostratigraphy and paleoenvironments) from a fossil-Lagerstätte section within the Late Paleozoic Ice Age unit of the Paraná Basin (Itararé Group), Western Gondwana\", Sedimentary Geology (2023)",
+    "observacoes": "Assembleias palinológicas recuperadas de 12 horizontes estratigráficos do Campáleo, com esporos, grãos de pólen, fungos e algas bem preservados — 10 amostras férteis vindas de 1,15 m de folhelhos negros fossilíferos (incluindo uma concreção calcária) e 2 dos ritmitos subjacentes com dropstones. Sustentam o posicionamento do Folhelho Lontras na biozona Vittatina costabilis, uma das principais bases da datação relativa da unidade. IDADE: o trabalho situa o Campáleo perto do limite Carbonífero–Permiano, provavelmente no Gzheliano (fim do Carbonífero); outras fontes o posicionam no início do Permiano — a idade do afloramento segue em discussão. CORREÇÃO (2026.09.9): a revista estava registrada como Review of Palaeobotany and Palynology.",
     "fontes": [
       "https://www.sciencedirect.com/science/article/abs/pii/S0037073823002154"
     ],
@@ -5482,7 +5486,7 @@
     "observacoes": "Escavação rasa que complementa a assembleia dominada por pistas de artrópodes. A Fm. Rio do Sul registra a MAIOR DIVERSIDADE FOSSILÍFERA do Grupo Itararé, com cerca de 17 icnogêneros descritos. Na pedreira Itaú-Itaúna a assembleia é dominada por pistas de locomoção (Umfolozia, Diplopodichnus, Diplichnites), complementadas por escavações rasas. Compõe duas suítes: uma de pistas de artrópodes e escavações rasas, ligada à icnofácies Scoyenia; outra dominada por Helminthoidichnites, indicando pastagem em ambiente subaquático. A análise paleobiológica indica que animais terrestres (milípedes) e aquáticos (crustáceos e larvas de insetos) colonizaram os substratos, num ambiente deposicional dinâmico.",
     "tipo_fonte": "Artigo em periódico",
     "fontes": [
-      "https://www.sciencedirect.com/science/article/abs/pii/S0895981115300031"
+      "https://revistas.uepg.br/index.php/tp/article/view/18322"
     ],
     "x": 469.1,
     "y": 296.6
@@ -5509,7 +5513,7 @@
     "observacoes": "Escavação rasa presente na assembleia da Fm. Rio do Sul em Trombudo Central. A Fm. Rio do Sul registra a MAIOR DIVERSIDADE FOSSILÍFERA do Grupo Itararé, com cerca de 17 icnogêneros descritos. Na pedreira Itaú-Itaúna a assembleia é dominada por pistas de locomoção (Umfolozia, Diplopodichnus, Diplichnites), complementadas por escavações rasas. Compõe duas suítes: uma de pistas de artrópodes e escavações rasas, ligada à icnofácies Scoyenia; outra dominada por Helminthoidichnites, indicando pastagem em ambiente subaquático. A análise paleobiológica indica que animais terrestres (milípedes) e aquáticos (crustáceos e larvas de insetos) colonizaram os substratos, num ambiente deposicional dinâmico.",
     "tipo_fonte": "Artigo em periódico",
     "fontes": [
-      "https://www.sciencedirect.com/science/article/abs/pii/S0895981115300031"
+      "https://revistas.uepg.br/index.php/tp/article/view/18322"
     ],
     "x": 469.1,
     "y": 296.6
@@ -5536,7 +5540,7 @@
     "observacoes": "Traço de repouso de artrópode, componente menos frequente da assembleia. A Fm. Rio do Sul registra a MAIOR DIVERSIDADE FOSSILÍFERA do Grupo Itararé, com cerca de 17 icnogêneros descritos. Na pedreira Itaú-Itaúna a assembleia é dominada por pistas de locomoção (Umfolozia, Diplopodichnus, Diplichnites), complementadas por escavações rasas. Compõe duas suítes: uma de pistas de artrópodes e escavações rasas, ligada à icnofácies Scoyenia; outra dominada por Helminthoidichnites, indicando pastagem em ambiente subaquático. A análise paleobiológica indica que animais terrestres (milípedes) e aquáticos (crustáceos e larvas de insetos) colonizaram os substratos, num ambiente deposicional dinâmico.",
     "tipo_fonte": "Artigo em periódico",
     "fontes": [
-      "https://www.sciencedirect.com/science/article/abs/pii/S0895981115300031"
+      "https://revistas.uepg.br/index.php/tp/article/view/18322"
     ],
     "x": 469.1,
     "y": 296.6
@@ -5557,16 +5561,17 @@
     "lon": -49.795,
     "bacia": "Bacia do Paraná — Grupo Itararé",
     "armazenamento": "Coleções UNISINOS / UFRGS",
-    "descritor": "Lima, J.H.D., Netto, R.G., Corrêa, C.G. & Lavina, E.L.C. (2015) — \"Ichnology of deglaciation deposits from the Upper Carboniferous Rio do Sul Formation (Itararé Group, Paraná Basin) at central-east Santa Catarina State (southern Brazil)\", Journal of South American Earth Sciences",
+    "descritor": "Lima, J.H.D., Netto, R.G., Corrêa, C.G. & Lavina, E.L.C. (2015) — \"Ichnology of deglaciation deposits from the Upper Carboniferous Rio do Sul Formation (Itararé Group, Paraná Basin) at central-east Santa Catarina State (southern Brazil)\", Journal of South American Earth Sciences 63:137–148",
     "unidade_pesquisa": "UNISINOS; UFRGS",
     "idade_ma": "ca. 300–295 Ma",
     "observacoes": "Terceira pedreira de ritmitos estudada na área de Trombudo Central (UTM 620026/6981727), ao lado de Itaú-Itaúna e Fama. Integra o conjunto de afloramentos que documenta a icnofauna dos depósitos de deglaciação da Fm. Rio do Sul. A Fm. Rio do Sul registra a MAIOR DIVERSIDADE FOSSILÍFERA do Grupo Itararé, com cerca de 17 icnogêneros descritos. Na pedreira Itaú-Itaúna a assembleia é dominada por pistas de locomoção (Umfolozia, Diplopodichnus, Diplichnites), complementadas por escavações rasas. Compõe duas suítes: uma de pistas de artrópodes e escavações rasas, ligada à icnofácies Scoyenia; outra dominada por Helminthoidichnites, indicando pastagem em ambiente subaquático. A análise paleobiológica indica que animais terrestres (milípedes) e aquáticos (crustáceos e larvas de insetos) colonizaram os substratos, num ambiente deposicional dinâmico.",
     "tipo_fonte": "Artigo em periódico",
     "fontes": [
-      "https://www.sciencedirect.com/science/article/abs/pii/S0895981115300031"
+      "https://doi.org/10.1016/j.jsames.2015.07.008"
     ],
     "x": 469.1,
-    "y": 296.6
+    "y": 296.6,
+    "doi": "10.1016/j.jsames.2015.07.008"
   },
   {
     "id": 205,
@@ -5584,16 +5589,17 @@
     "lon": -49.795,
     "bacia": "Bacia do Paraná — Grupo Itararé",
     "armazenamento": "Coleções UNISINOS / UFRGS",
-    "descritor": "Lima, J.H.D., Netto, R.G., Corrêa, C.G. & Lavina, E.L.C. (2015) — \"Ichnology of deglaciation deposits from the Upper Carboniferous Rio do Sul Formation (Itararé Group, Paraná Basin) at central-east Santa Catarina State (southern Brazil)\", Journal of South American Earth Sciences",
+    "descritor": "Lima, J.H.D., Netto, R.G., Corrêa, C.G. & Lavina, E.L.C. (2015) — \"Ichnology of deglaciation deposits from the Upper Carboniferous Rio do Sul Formation (Itararé Group, Paraná Basin) at central-east Santa Catarina State (southern Brazil)\", Journal of South American Earth Sciences 63:137–148",
     "unidade_pesquisa": "UNISINOS; UFRGS",
     "idade_ma": "ca. 300–295 Ma",
     "observacoes": "Pedreira de ritmitos (UTM 619813/6981938) estudada em conjunto com Itaú-Itaúna e Waltrick, compondo o registro icnológico dos depósitos de deglaciação do topo do Grupo Itararé. A Fm. Rio do Sul registra a MAIOR DIVERSIDADE FOSSILÍFERA do Grupo Itararé, com cerca de 17 icnogêneros descritos. Na pedreira Itaú-Itaúna a assembleia é dominada por pistas de locomoção (Umfolozia, Diplopodichnus, Diplichnites), complementadas por escavações rasas. Compõe duas suítes: uma de pistas de artrópodes e escavações rasas, ligada à icnofácies Scoyenia; outra dominada por Helminthoidichnites, indicando pastagem em ambiente subaquático. A análise paleobiológica indica que animais terrestres (milípedes) e aquáticos (crustáceos e larvas de insetos) colonizaram os substratos, num ambiente deposicional dinâmico.",
     "tipo_fonte": "Artigo em periódico",
     "fontes": [
-      "https://www.sciencedirect.com/science/article/abs/pii/S0895981115300031"
+      "https://doi.org/10.1016/j.jsames.2015.07.008"
     ],
     "x": 469.1,
-    "y": 296.6
+    "y": 296.6,
+    "doi": "10.1016/j.jsames.2015.07.008"
   },
   {
     "id": 206,
@@ -5611,16 +5617,17 @@
     "lon": -49.795,
     "bacia": "Bacia do Paraná — Grupo Itararé",
     "armazenamento": "Coleções UNISINOS / UFRGS",
-    "descritor": "Lima, J.H.D., Netto, R.G., Corrêa, C.G. & Lavina, E.L.C. (2015) — \"Ichnology of deglaciation deposits from the Upper Carboniferous Rio do Sul Formation (Itararé Group, Paraná Basin) at central-east Santa Catarina State (southern Brazil)\", Journal of South American Earth Sciences",
+    "descritor": "Lima, J.H.D., Netto, R.G., Corrêa, C.G. & Lavina, E.L.C. (2015) — \"Ichnology of deglaciation deposits from the Upper Carboniferous Rio do Sul Formation (Itararé Group, Paraná Basin) at central-east Santa Catarina State (southern Brazil)\", Journal of South American Earth Sciences 63:137–148",
     "unidade_pesquisa": "UNISINOS; UFRGS",
     "idade_ma": "ca. 300–295 Ma",
     "tipo_fonte": "Artigo em periódico",
     "observacoes": "Traço de locomoção produzido pelo pé de um bivalve. Completa as DEZ icnoespécies reconhecidas por Lima et al. (2015) nos ritmitos de Trombudo Central: Cruziana problematica, Diplichnites gouldi, Diplopodichnus biformis, Glaciichnium liebegastensis, Gluckstadtella elongata, Helminthoidichnites tenuis, Mermia carickensis, Protovirgularia dichotoma, Treptichnus pollardi e Umfolozia sinuosa — todas agora presentes neste catálogo.",
     "fontes": [
-      "https://www.sciencedirect.com/science/article/abs/pii/S0895981115300274"
+      "https://doi.org/10.1016/j.jsames.2015.07.008"
     ],
     "x": 469.1,
-    "y": 296.6
+    "y": 296.6,
+    "doi": "10.1016/j.jsames.2015.07.008"
   },
   {
     "id": 207,
@@ -5946,11 +5953,12 @@
     "tipo_fonte": "Artigo em periódico",
     "observacoes": "Icnoespécie proposta como nova por Balistieri e colaboradores (2002–2003) a partir dos ritmitos da região de Mafra (SC) e Rio Negro (PR). ATENÇÃO: a fonte consultada não permite afirmar em qual dos afloramentos — o catarinense ou o paranaense — está o material-tipo; por isso esta ficha NÃO a trata como localidade-tipo. Escavação meandrante rasa, preservada sobretudo como crista hipicnial. Fazenda Potreiro, Mafra: ritmitos da Fm. Mafra interpretados como depósitos de LAGOS RASOS DE ÁGUA DOCE da glaciação neopaleozoica. A suíte é dominada por escavações rasas de pastagem e alimentação (icnocenose Mermia), evidência de colonização subaquática de substratos moles por organismos não marinhos. Material na coleção do CENPALEO (sigla CP/P). RESSALVA DE COORDENADA: a fonte não publica a coordenada exata da localidade; usa-se a da sede municipal de Mafra.",
     "fontes": [
-      "https://www.sciencedirect.com/science/article/abs/pii/S0031018208006135",
+      "https://doi.org/10.1016/j.palaeo.2008.10.028",
       "https://revistas.uepg.br/index.php/tp/article/view/18322"
     ],
     "x": 468.0,
-    "y": 44.6
+    "y": 44.6,
+    "doi": "10.1016/j.palaeo.2008.10.028"
   },
   {
     "id": 219,
@@ -5974,11 +5982,12 @@
     "tipo_fonte": "Artigo em periódico",
     "observacoes": "Trilha deixada pela nadadeira de um PEIXE ao roçar o fundo lamoso — um dos raros registros de atividade de vertebrado na icnofauna do Grupo Itararé catarinense. Aparece recoberta por trilhas de Diplichnites gouldi, em preservação palimpséstica. Fazenda Potreiro, Mafra: ritmitos da Fm. Mafra interpretados como depósitos de LAGOS RASOS DE ÁGUA DOCE da glaciação neopaleozoica. A suíte é dominada por escavações rasas de pastagem e alimentação (icnocenose Mermia), evidência de colonização subaquática de substratos moles por organismos não marinhos. Material na coleção do CENPALEO (sigla CP/P). RESSALVA DE COORDENADA: a fonte não publica a coordenada exata da localidade; usa-se a da sede municipal de Mafra.",
     "fontes": [
-      "https://www.sciencedirect.com/science/article/abs/pii/S0031018208006135",
+      "https://doi.org/10.1016/j.palaeo.2008.10.028",
       "https://revistas.uepg.br/index.php/tp/article/view/18322"
     ],
     "x": 468.0,
-    "y": 44.6
+    "y": 44.6,
+    "doi": "10.1016/j.palaeo.2008.10.028"
   },
   {
     "id": 220,
@@ -6002,11 +6011,12 @@
     "tipo_fonte": "Artigo em periódico",
     "observacoes": "Escavações de pastagem finas e sinuosas, componentes da suíte de escavações rasas dos ritmitos lacustres. Fazenda Potreiro, Mafra: ritmitos da Fm. Mafra interpretados como depósitos de LAGOS RASOS DE ÁGUA DOCE da glaciação neopaleozoica. A suíte é dominada por escavações rasas de pastagem e alimentação (icnocenose Mermia), evidência de colonização subaquática de substratos moles por organismos não marinhos. Material na coleção do CENPALEO (sigla CP/P). RESSALVA DE COORDENADA: a fonte não publica a coordenada exata da localidade; usa-se a da sede municipal de Mafra.",
     "fontes": [
-      "https://www.sciencedirect.com/science/article/abs/pii/S0031018208006135",
+      "https://doi.org/10.1016/j.palaeo.2008.10.028",
       "https://revistas.uepg.br/index.php/tp/article/view/18322"
     ],
     "x": 468.0,
-    "y": 44.6
+    "y": 44.6,
+    "doi": "10.1016/j.palaeo.2008.10.028"
   },
   {
     "numero_catalogo": "-",
