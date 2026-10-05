@@ -700,7 +700,7 @@
     "fim_ma": 273.0,
     "cor": "#7fa66b",
     "descricao": "Período com ampla diversidade de invertebrados marinhos, flora glossopterídea e icnofósseis na Fm. Rio Bonito (Assembleia Taió) e no Grupo Itararé.",
-    "total_registros": 90,
+    "total_registros": 92,
     "taxons": [
       {
         "taxon": "Phyllotheca australis (Brongniart, 1828)",
@@ -1331,6 +1331,20 @@
         "ids": [
           223
         ]
+      },
+      {
+        "taxon": "Carvão vegetal fóssil (macro-charcoal) de gimnospermas",
+        "count": 1,
+        "ids": [
+          228
+        ]
+      },
+      {
+        "taxon": "Brasilodendron pedroanum (Carruthers) Chaloner, Leistikow & Hill",
+        "count": 1,
+        "ids": [
+          229
+        ]
       }
     ]
   },
@@ -1618,7 +1632,7 @@
     "ordem": 13,
     "era": "Cenozóico",
     "inicio_ma": 5.33,
-    "fim_ma": 0.012,
+    "fim_ma": 0.0117,
     "cor": "#b5651d",
     "descricao": "Transição entre o Plioceno e o Pleistoceno, com depósitos da plataforma continental e registros de megafauna marinha e continental.",
     "total_registros": 7,
@@ -1682,13 +1696,20 @@
     "fim_ma": 0.0117,
     "cor": "#b5651d",
     "descricao": "Época das grandes glaciações; em SC corresponde aos depósitos quaternários com megafauna continental.",
-    "total_registros": 1,
+    "total_registros": 2,
     "taxons": [
       {
         "taxon": "Tatu-gigante (Propraopus sp. / Glyptodon sp. — osteodermos)",
         "count": 1,
         "ids": [
           39
+        ]
+      },
+      {
+        "taxon": "Paleotoca da Cavidade Linha Mimosa (icnofóssil de escavação de megafauna)",
+        "count": 1,
+        "ids": [
+          227
         ]
       }
     ]
@@ -1727,13 +1748,13 @@
     ]
   },
   {
-    "nome": "Pleistoceno–Holoceno",
+    "nome": "Pleistoceno Superior – Holoceno",
     "ordem": 16,
     "era": "Cenozóico",
-    "inicio_ma": 0.0117,
+    "inicio_ma": 0.129,
     "fim_ma": 0,
     "cor": "#a85a2e",
-    "descricao": "Transição entre o Pleistoceno e o Holoceno (atual), com depósitos lagunares e aluvionares recentes.",
+    "descricao": "Transição entre o Pleistoceno e o Holoceno (atual), com depósitos lagunares e aluvionares recentes. Intervalo corrigido em 2026.09.8: antes trazia os mesmos limites do Holoceno (0,0117–0 Ma), o que deixava fora dele o registro datado de 12.000 anos.",
     "total_registros": 1,
     "taxons": [
       {

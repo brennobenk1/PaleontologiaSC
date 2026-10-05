@@ -199,6 +199,24 @@ _txt = (RAIZ / "js" / "dados.js").read_text(encoding="utf-8")
 checar(_rd.recalcular(_txt) == _txt, "campos derivados de sítios e períodos em dia",
        "rode: python3 scripts/recalcular-derivados.py")
 
+# --- 15. subcategorias sem sinônimos duplicados ---
+# Motivo: conviviam "semente"/"sementes", "conodonto"/"conodonte", três
+# variações de "esponja"... cada uma virava um item separado na navegação.
+import unicodedata as _ud
+from collections import defaultdict as _dd
+def _norm(s):
+    s = re.sub(r"\(.*?\)", "", s).strip().lower()
+    s = "".join(ch for ch in _ud.normalize("NFD", s) if _ud.category(ch) != "Mn")
+    s = re.sub(r"s$", "", s)
+    return re.sub(r"[aeo]$", "", s)
+_grupos = _dd(lambda: _dd(set))
+for d in FOSSEIS:
+    g, _, sub = d["categoria"].partition("—")
+    sub = re.sub(r"\s*\(.*?\)", "", sub).strip()
+    _grupos[g.strip()][_norm(sub)].add(sub)
+_dups = [sorted(v) for g in _grupos.values() for v in g.values() if len(v) > 1]
+checar(not _dups, "subcategorias sem sinônimos duplicados", f"variações do mesmo termo: {_dups}")
+
 # --- avisos: não quebram o build, mas mostram dívida acumulada ---
 links = [u for d in FOSSEIS for u in d.get("fontes", [])]
 frageis = [u for u in links if re.search(r"researchgate|academia\.edu|wikipedia", u)]

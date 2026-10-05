@@ -6,6 +6,62 @@ saber o que havia nele naquele momento.
 
 Formato: as versões seguem `ANO.MÊS.N`.
 
+## 2026.09.8 — 28/09/2026 · revisão de erros e novos registros
+
+Catálogo: 224 → 227 registros; 54 → 56 sítios; 34 → 35 municípios.
+
+### Erros corrigidos
+- **Contradição entre fichas.** O registro nº 159 ainda dizia que
+  Canoinhas é a "única localidade" do *Krauselcladus* em toda a Bacia do
+  Paraná, embora o próprio catálogo tenha a ocorrência de Major Vieira
+  (nº 195). Agora: "até 2024, única localidade conhecida".
+- **Afirmação datada.** O *Parapytanga* era dado como "um dos três
+  temnospôndilos da Fm. Rio do Rasto"; outros foram descritos depois de
+  2015. A contagem passou a ser situada no tempo ("na época da
+  descrição").
+- **Período com limites errados.** "Pleistoceno–Holoceno" tinha os mesmos
+  limites do Holoceno (0,0117–0 Ma), e o registro datado de 12.000 anos
+  ficava fora dele. Passou a "Pleistoceno Superior – Holoceno"
+  (0,129–0 Ma). O "Plioceno–Pleistoceno" foi alinhado ao limite oficial
+  (0,0117 Ma).
+- **Superlativo sem fonte.** Oito fichas de paleotoca diziam que SC e RS
+  têm "a maior abundância de paleotocas do mundo"; as referências citadas
+  não dizem isso. A frase foi trocada por uma afirmação atribuída: segundo
+  F. S. C. Buchmann (*Jornal da Unesp*, 2022), há mais de 2 mil
+  paleotocas no Brasil, 99% delas entre o sul de SC e o norte do RS.
+- **Toca do Tatu (Timbé do Sul):** a coordenada estava cerca de 6 km fora
+  da publicada, e a ficha se apoiava em divulgação, embora exista artigo
+  sobre a caverna (Frank et al., 2012, *Espeleo-Tema* 23(2): 87–101).
+  Ambos corrigidos.
+- **Grafia:** "bioestratifráfico" → "bioestratigráfico". (Conferido:
+  "pteridófila" está correto — é o termo para folhagem de aspecto de
+  samambaia de afinidade incerta.)
+
+### Subcategorias unificadas
+Sinônimos e variações que viravam itens separados na navegação:
+"semente/sementes", "conodonto/conodonte", três variações de "esponja",
+"pista/trilha de artrópode", duas de "bioerosão", duas de "escavação de
+organismo vermiforme", "conchostráceo/crustáceo conchostráceo",
+"gastrópode" (2), "equinodermas". Os quatro mamíferos passam a formar o
+subgrupo **mamífero**, e os anfíbios, **anfíbio**. As **9 paleotocas**,
+antes em 4 subcategorias, ficam em **paleotoca**. Em todos os casos o
+rótulo detalhado foi para a descrição ("Classificação: …").
+
+### Registros novos
+- **Paleotoca da Cavidade Linha Mimosa, Lindóia do Sul** (Budke, Lima &
+  Carbonera, 2020): o **primeiro registro do oeste catarinense** no
+  catálogo.
+- **Carvão vegetal fóssil** do afloramento Porongos, Lauro Müller
+  (Benicio et al., 2019, *PLoS ONE*): evidência de incêndios recorrentes
+  nas turfeiras do Permiano Inferior, presente nos seis níveis carbonosos
+  da camada Barro Branco.
+- ***Brasilodendron pedroanum***, licófita subarborescente da mina
+  Bonito I (Manfroi et al., 2012, *Revista Brasileira de Paleontologia*).
+
+### Validação (14 → 15 verificações)
+Nova checagem: subcategorias que diferem só no plural ou na vogal final
+são reprovadas. Testada contra a versão publicada: reprova.
+
 ## 2026.09.7 — 28/09/2026 · auditoria das tabelas
 
 Auditoria cruzada entre as tabelas — registros, sítios, períodos e

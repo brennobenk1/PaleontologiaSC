@@ -548,7 +548,7 @@
     "periodo_ordem": 6,
     "formacao": "Grupo Itararé / Folhelho Lontras",
     "taxon": "Poríferos (Porifera indet.)",
-    "categoria": "Invertebrado — esponja marinha",
+    "categoria": "Invertebrado — esponja",
     "numero_catalogo": "Coleção CENPALEO — múltiplos espécimes (número de tombo não informado na fonte)",
     "local_coleta": "Afloramento Campáleo, Mafra, SC",
     "site": "Afloramento Campáleo (Mafra)",
@@ -560,7 +560,7 @@
     "descritor": "Weinschütz et al.; Ribeiro (NSC Total, 2021)",
     "unidade_pesquisa": "CENPALEO/UnC",
     "idade_ma": "ca. 298,9 Ma",
-    "observacoes": "Citados como integrantes da biota do Campáleo",
+    "observacoes": "Classificação: esponja marinha. Citados como integrantes da biota do Campáleo",
     "fontes": [
       "https://www.researchgate.net/publication/348390467_Uma_nova_localidade_equivalente_ao_Folhelho_Lontras_Pensilvaniano-Cisuraliano_Bacia_do_Parana_Santa_Catarina_Brasil"
     ],
@@ -574,7 +574,7 @@
     "periodo_ordem": 6,
     "formacao": "Grupo Itararé / Folhelho Lontras",
     "taxon": "Conodontes (Conodonta indet.) — 5–6 espécies",
-    "categoria": "Microfóssil — conodonto",
+    "categoria": "Microfóssil — conodonte",
     "numero_catalogo": "Coleção CENPALEO — múltiplos espécimes (número de tombo não informado na fonte)",
     "local_coleta": "Afloramento Campáleo, Mafra, SC",
     "site": "Afloramento Campáleo (Mafra)",
@@ -586,7 +586,7 @@
     "descritor": "Weinschütz & Wilner (UnC); NSC Total (2021)",
     "unidade_pesquisa": "CENPALEO/UnC",
     "idade_ma": "ca. 298,9–295 Ma",
-    "observacoes": "Conhecidos desde 1908; 5–6 espécies estimadas; importantes para bioestratigrafia e datação",
+    "observacoes": "Classificação: conodonto. Conhecidos desde 1908; 5–6 espécies estimadas; importantes para bioestratigrafia e datação",
     "fontes": [
       "https://lume.ufrgs.br/handle/10183/94761",
       "https://revistas.unisinos.br/index.php/gaea/article/download/gaea.2016.91.02/5352/40172"
@@ -969,7 +969,7 @@
     "periodo_ordem": 13,
     "formacao": "Depósitos superficiais / aluvionares",
     "taxon": "Paleotocas (icnofósseis de escavação — Dasypodidae / Mylodontidae)",
-    "categoria": "Icnofóssil — túnel de escavação (bioerosão)",
+    "categoria": "Icnofóssil — paleotoca",
     "numero_catalogo": "-",
     "local_coleta": "Municípios do Sul de SC (Geoparque Caminhos dos Cânions do Sul)",
     "site": "Geoparque Caminhos dos Cânions do Sul",
@@ -981,13 +981,14 @@
     "descritor": "Buchmann, F.S.C., Lopes, R.P. & Caron, F. (2009) — Revista Brasileira de Paleontologia 12(3):247–256; Lopes, R.P., Frank, H.T., Buchmann, F.S. & Caron, F. (2017) — Ichnos 24:133–145 (erige Megaichnus igen. nov.) — ocorrência divulgada por: Frank et al. (vários); Simão, G. (geólogo Geoparque, 2025)",
     "unidade_pesquisa": "UNESC / Geoparque UNESCO",
     "idade_ma": "5,33 – 0,012 Ma",
-    "observacoes": "ICNOTAXONOMIA: desde Lopes et al. (2017) estas estruturas têm nome formal — o icnogênero Megaichnus, dividido em M. major (atribuído a preguiças-gigantes, Mylodontidae) e M. minor (atribuído a tatus-gigantes, Cingulata). Santa Catarina e Rio Grande do Sul concentram a maior abundância conhecida de paleotocas do mundo, com várias centenas de registros em cada estado. Mais de 40 estruturas identificadas; algumas interconectadas atingem até 340 m; escavadas por preguiças e tatus-gigantes extintos",
+    "observacoes": "Classificação: paleotoca — estrutura de habitação (Domichnia) escavada por mamíferos da megafauna. ICNOTAXONOMIA: desde Lopes et al. (2017) estas estruturas têm nome formal — o icnogênero Megaichnus, dividido em M. major (atribuído a preguiças-gigantes, Mylodontidae) e M. minor (atribuído a tatus-gigantes, Cingulata). Segundo F. S. C. Buchmann, em entrevista ao Jornal da Unesp (2022), mais de duas mil paleotocas foram registradas no Brasil, 99% delas entre o sul de Santa Catarina e o norte do Rio Grande do Sul. Mais de 40 estruturas identificadas; algumas interconectadas atingem até 340 m; escavadas por preguiças e tatus-gigantes extintos",
     "fontes": [
       "https://doi.org/10.4072/rbp.2009.3.07",
       "https://sbpbrasil.org/publications/index.php/rbp/article/download/428/254/9081",
       "https://www.sciencedirect.com/science/article/abs/pii/S0895981124004279 (More than fossils: Paleoburrows as geoheritage...)",
       "https://periodicos.ufpe.br/revistas/index.php/rbgfe/article/view/259418 (Proposta de classificação das paleotocas)",
-      "https://ndmais.com.br/animais/cavernas-em-sc-guardam-rastros-de-preguicas-e-tatus-gigantes/"
+      "https://ndmais.com.br/animais/cavernas-em-sc-guardam-rastros-de-preguicas-e-tatus-gigantes/",
+      "https://jornal.unesp.br/2022/01/18/uma-visita-a-casa-dos-gigantes/"
     ],
     "citacao_abnt": "VALDATI, J.; BECHTEL, A.P.; GOMES, M.C.V.; DOS SANTOS, Y.R.F.; RICETTI, J.H.Z.; WEINSCHÜTZ, L.C. 2024. More than fossils: Paleoburrows as geoheritage and paleoenvironmental archives in the Caminhos dos Cânions do Sul UNESCO Global Geopark, Southern Brazil. Journal of South American Earth Sciences, 149, 105205. DOI: 10.1016/j.jsames.2024.105205 [Fonte primária]. Disponível em: https://www.sciencedirect.com/science/article/abs/pii/S0895981124004279",
     "doi": "10.4072/rbp.2009.3.07",
@@ -1000,7 +1001,7 @@
     "periodo_ordem": 14,
     "formacao": "Depósitos litorâneos / lacustres",
     "taxon": "Tatu-gigante (Propraopus sp. / Glyptodon sp. — osteodermos)",
-    "categoria": "Vertebrado — Xenarthra (Cingulata)",
+    "categoria": "Vertebrado — mamífero",
     "numero_catalogo": "-",
     "local_coleta": "Planície litorânea sul de SC (localidades imprecisas)",
     "site": "Planície litorânea sul de SC",
@@ -1012,7 +1013,7 @@
     "descritor": "Paula-Couto, C. (1980) — Anais ABC 52(3):527-531",
     "unidade_pesquisa": "Museu Nacional / UFRJ (coleção histórica)",
     "idade_ma": "ca. 2,58 Ma – 11.700 a",
-    "observacoes": "Primeiro registro de tatu-gigante para SC reportado por Paula-Couto (1980)",
+    "observacoes": "Classificação: Xenarthra (Cingulata). Primeiro registro de tatu-gigante para SC reportado por Paula-Couto (1980)",
     "fontes": [
       "Artigo original (Paula-Couto, 1980, Anais ABC 52(3):527-531) não localizado em acesso direto",
       "citado em: https://www.academia.edu/15400290/Icnof%C3%B3sseis_paleotocas_e_crotovinas_atribu%C3%ADdos_a_mam%C3%ADferos_extintos_no_sudeste_e_sul_do_Brasil",
@@ -1023,12 +1024,12 @@
   },
   {
     "id": 40,
-    "periodo": "Pleistoceno–Holoceno",
+    "periodo": "Pleistoceno Superior – Holoceno",
     "era": "Cenozóico — Quaternário",
     "periodo_ordem": 16,
     "formacao": "Planície costeira sul de SC (depósitos lagunares)",
     "taxon": "Registro paleoambiental (fitólitos, palinomorfos)",
-    "categoria": "Microfóssil — material bioestratifráfico",
+    "categoria": "Microfóssil — fitólitos e palinomorfos",
     "numero_catalogo": "-",
     "local_coleta": "Lagoa do Sombrio, SC",
     "site": "Lagoa do Sombrio",
@@ -1040,7 +1041,7 @@
     "descritor": "SBP Boletim nº 63 (resumo)",
     "unidade_pesquisa": "UFRGS / UNISINOS",
     "idade_ma": "ca. 12.000 – 3.000 a",
-    "observacoes": "Indicadores de paleoníveis marinhos holocênicos na planície costeira",
+    "observacoes": "Classificação: material bioestratigráfico. Indicadores de paleoníveis marinhos holocênicos na planície costeira",
     "fontes": [
       "https://www.researchgate.net/publication/344329477_RECONSTITUICAO_PALEOAMBIENTAL_ATRAVES_DE_FITOLITOS_NO_SAMBAQUI_CASA_DE_PEDRA_SAO_FRANCISCO_DO_SUL-SC_BRASIL"
     ],
@@ -1135,7 +1136,7 @@
     "periodo_ordem": 17,
     "formacao": "Depósitos superficiais sobre a Fm. Rio Bonito / Depressão da Zona Carbonífera Catarinense",
     "taxon": "Paleotoca (icnofóssil de escavação — Xenarthra: tatus, preguiças, tamanduás)",
-    "categoria": "Icnofóssil — estrutura de habitação (Domichnia)",
+    "categoria": "Icnofóssil — paleotoca",
     "numero_catalogo": "-",
     "local_coleta": "Lauro Müller, SC",
     "site": "Lauro Müller",
@@ -1147,12 +1148,13 @@
     "descritor": "Buchmann, F.S.C., Lopes, R.P. & Caron, F. (2009) — Revista Brasileira de Paleontologia 12(3):247–256; Lopes, R.P., Frank, H.T., Buchmann, F.S. & Caron, F. (2017) — Ichnos 24:133–145 (erige Megaichnus igen. nov.)",
     "unidade_pesquisa": "UDESC",
     "idade_ma": "2,58 Ma – 11.700 a",
-    "observacoes": "ICNOTAXONOMIA: desde Lopes et al. (2017) estas estruturas têm nome formal — o icnogênero Megaichnus, dividido em M. major (atribuído a preguiças-gigantes, Mylodontidae) e M. minor (atribuído a tatus-gigantes, Cingulata). Santa Catarina e Rio Grande do Sul concentram a maior abundância conhecida de paleotocas do mundo, com várias centenas de registros em cada estado. 1º registro documentado deste tipo de icnofóssil em rochas da Fm. Rio Bonito e na Depressão da Zona Carbonífera Catarinense; estrutura de habitação distinta das paleotocas já catalogadas no Geoparque Caminhos dos Cânions do Sul",
+    "observacoes": "Classificação: paleotoca — estrutura de habitação (Domichnia) escavada por mamíferos da megafauna. ICNOTAXONOMIA: desde Lopes et al. (2017) estas estruturas têm nome formal — o icnogênero Megaichnus, dividido em M. major (atribuído a preguiças-gigantes, Mylodontidae) e M. minor (atribuído a tatus-gigantes, Cingulata). Segundo F. S. C. Buchmann, em entrevista ao Jornal da Unesp (2022), mais de duas mil paleotocas foram registradas no Brasil, 99% delas entre o sul de Santa Catarina e o norte do Rio Grande do Sul. 1º registro documentado deste tipo de icnofóssil em rochas da Fm. Rio Bonito e na Depressão da Zona Carbonífera Catarinense; estrutura de habitação distinta das paleotocas já catalogadas no Geoparque Caminhos dos Cânions do Sul",
     "fontes": [
       "https://doi.org/10.4072/rbp.2009.3.07",
       "https://sbpbrasil.org/publications/index.php/rbp/article/download/428/254/9081",
       "https://www.udesc.br/noticia/pesquisadores_da_udesc_faed_identificam_paleotoca_em_lauro_muller",
-      "https://ndmais.com.br/turismo/tunel-misterioso-em-sc-revela-marcas-pre-historicas/"
+      "https://ndmais.com.br/turismo/tunel-misterioso-em-sc-revela-marcas-pre-historicas/",
+      "https://jornal.unesp.br/2022/01/18/uma-visita-a-casa-dos-gigantes/"
     ],
     "citacao_abnt": "VALDATI, J. et al. 2025. Identificação de paleotoca em Lauro Müller, SC. Nota técnica/divulgação institucional, UDESC FAEd. [Fonte secundária — publicação científica indexada não localizada no levantamento desta base]. Disponível em: https://www.udesc.br/noticia/pesquisadores_da_udesc_faed_identificam_paleotoca_em_lauro_muller",
     "doi": "10.4072/rbp.2009.3.07",
@@ -1194,7 +1196,7 @@
     "periodo_ordem": 6,
     "formacao": "Grupo Itararé / Folhelho Lontras",
     "taxon": "Gastropoda indet.",
-    "categoria": "Invertebrado — molusco gastrópode",
+    "categoria": "Invertebrado — gastrópode",
     "numero_catalogo": "-",
     "local_coleta": "Afloramento Campáleo, Mafra, SC",
     "site": "Afloramento Campáleo (Mafra)",
@@ -1206,7 +1208,7 @@
     "descritor": "Mouro, L.D., Pacheco, M.L.A.F., Ricetti, J.H.Z., Scomazzon, A.K., Horodyski, R.S., Fernandes, A.C.S., Carvalho, M.A., Weinschütz, L.C., Silva, M.S., Waichel, B.L. & Scherer, C.M.S. (2020) — Palaeogeography, Palaeoclimatology, Palaeoecology 555:109850; Mouro, L.D., Ricetti, J.H.Z., Weinschütz, L.C. & Pacheco, M.L.A.F. (2021) — \"Folhelho Lontras, uma Lagerstätte do Paleozoico brasileiro\", in Jelinek & Sommer (eds.), Contribuições à Geologia do RS e de SC, SBG/Compasso Lugar-Cultura, p.203–221",
     "unidade_pesquisa": "CENPALEO/UnC",
     "idade_ma": "ca. 298,9 Ma",
-    "observacoes": "Registro raro de gastrópode na biota do Folhelho Lontras",
+    "observacoes": "Classificação: molusco gastrópode. Registro raro de gastrópode na biota do Folhelho Lontras",
     "fontes": [
       "https://doi.org/10.1016/j.palaeo.2020.109850",
       "https://www.sciencedirect.com/science/article/abs/pii/S0031018220302959",
@@ -1395,7 +1397,7 @@
     "periodo_ordem": 6,
     "formacao": "Grupo Itararé / Folhelho Lontras",
     "taxon": "Microhemidiscia greinerti",
-    "categoria": "Invertebrado — esponja hexactinelídea (vítrea)",
+    "categoria": "Invertebrado — esponja",
     "numero_catalogo": "-",
     "local_coleta": "Afloramento Campáleo, Mafra, SC",
     "site": "Afloramento Campáleo (Mafra)",
@@ -1407,7 +1409,7 @@
     "descritor": "Mouro, L.D., Fernandes, A.C.S., Rogerio, D.W. & Fonseca, V.M.M. (2014) — Journal of Paleontology 88(1)",
     "unidade_pesquisa": "CENPALEO/UnC",
     "idade_ma": "ca. 298,9 Ma",
-    "observacoes": "PRIMEIRA esponja articulada do Paleozoico do Brasil e primeira esponja permiana articulada descrita para o país; segunda espécie conhecida do gênero. Atribuída a Hemidiscellidae (ordem Hemidiscosa). O material veio de exemplares mais completos que os analisados por Ruedemann no início do século XX, coletados no Campáleo. Quase uma centena de espécimes completos e articulados; considerados os fósseis de poríferos mais bem preservados do Brasil",
+    "observacoes": "Classificação: esponja hexactinelídea (vítrea). PRIMEIRA esponja articulada do Paleozoico do Brasil e primeira esponja permiana articulada descrita para o país; segunda espécie conhecida do gênero. Atribuída a Hemidiscellidae (ordem Hemidiscosa). O material veio de exemplares mais completos que os analisados por Ruedemann no início do século XX, coletados no Campáleo. Quase uma centena de espécimes completos e articulados; considerados os fósseis de poríferos mais bem preservados do Brasil",
     "fontes": [
       "https://www.cambridge.org/core/journals/journal-of-paleontology/issue/C72F5CC47805A30566C7688AAC416D80",
       "https://en.wikipedia.org/wiki/Lontras_Shale_Lagerst%C3%A4tte (compilação secundária)"
@@ -1670,7 +1672,7 @@
     "periodo_ordem": 6,
     "formacao": "Grupo Itararé / Folhelho Lontras",
     "taxon": "Arachnostega isp.",
-    "categoria": "Icnofóssil — escavação de bioerosão em concha",
+    "categoria": "Icnofóssil — bioerosão em concha",
     "numero_catalogo": "-",
     "local_coleta": "Afloramento Campáleo, Mafra, SC",
     "site": "Afloramento Campáleo (Mafra)",
@@ -1682,7 +1684,7 @@
     "descritor": "Vinn, O., Wilson, M.A., Mouro, L.D. & Fernandes, A.C.S. (2019) — Carnets de Géologie 19(19):439–444",
     "unidade_pesquisa": "CENPALEO/UnC",
     "idade_ma": "ca. 298,9 Ma",
-    "observacoes": "Traços de escavação no interior de conchas de braquiópodes lingulídeos, indicativos de colonização por poliquetas",
+    "observacoes": "Classificação: escavação de bioerosão em concha. Traços de escavação no interior de conchas de braquiópodes lingulídeos, indicativos de colonização por poliquetas",
     "fontes": [
       "https://carnetsgeol.net/cg/19/19/CG1919.pdf (Vinn et al. 2019)",
       "https://en.wikipedia.org/wiki/Lontras_Shale_Lagerst%C3%A4tte (compilação secundária — referência primária no campo Descritor)"
@@ -1810,7 +1812,7 @@
     "periodo_ordem": 15,
     "formacao": "Fm. Laguna-Barreira (depósitos da plataforma continental)",
     "taxon": "Notiomastodon platensis (Ameghino, 1888)",
-    "categoria": "Vertebrado — mastodonte (Proboscidea, Gomphotheriidae)",
+    "categoria": "Vertebrado — mamífero",
     "numero_catalogo": "-",
     "local_coleta": "Costa de Sombrio, SC (encontrado a ~23 m de profundidade, rede de arrasto)",
     "site": "Costa de Sombrio (plataforma continental)",
@@ -1822,7 +1824,7 @@
     "descritor": "Soto, J. (coord. Museus Univali), divulgação Univali / imprensa regional (2024); nome atualizado segundo Mothé, D., Avilla, L.S., Cozzuol, M. & Winck, G.R. (2012) — \"Taxonomic revision of the Quaternary gomphotheres (Mammalia: Proboscidea: Gomphotheriidae) from the South American lowlands\", Quaternary International 276–277:2–7",
     "unidade_pesquisa": "Univali",
     "idade_ma": "ca. 30.000 anos (Pleistoceno Superior)",
-    "observacoes": "ATUALIZAÇÃO TAXONÔMICA: registro publicado originalmente como Stegomastodon waringi (Holland, 1920). Mothé, Avilla, Cozzuol & Winck (2012, Quaternary International) revisaram os gonfotérios das terras baixas sul-americanas com amostra ampla e concluíram que os caracteres usados para separar S. waringi de S. platensis variam dentro de uma mesma população — há um único gonfotério de terras baixas na América do Sul, sob a nova combinação Notiomastodon platensis. Parte da literatura (Lucas e colaboradores) ainda defende duas espécies, mas a combinação de 2012 é a adotada majoritariamente. Metade esquerda de mandíbula de macho adulto, achada por pescadores; espécie rara em SC, mais comum no RS; estimativa de ~5 m de comprimento e ~3,5 t",
+    "observacoes": "Classificação: mastodonte (Proboscidea, Gomphotheriidae). ATUALIZAÇÃO TAXONÔMICA: registro publicado originalmente como Stegomastodon waringi (Holland, 1920). Mothé, Avilla, Cozzuol & Winck (2012, Quaternary International) revisaram os gonfotérios das terras baixas sul-americanas com amostra ampla e concluíram que os caracteres usados para separar S. waringi de S. platensis variam dentro de uma mesma população — há um único gonfotério de terras baixas na América do Sul, sob a nova combinação Notiomastodon platensis. Parte da literatura (Lucas e colaboradores) ainda defende duas espécies, mas a combinação de 2012 é a adotada majoritariamente. Metade esquerda de mandíbula de macho adulto, achada por pescadores; espécie rara em SC, mais comum no RS; estimativa de ~5 m de comprimento e ~3,5 t",
     "fontes": [
       "https://destinoflorianopolis.com.br/fossil-de-elefante-pre-historico-e-encontrado-em-santa-catarina/",
       "https://portallitoralsul.com.br/noticia/2248/fossil-de-elefante-pre-historico-e-encontrado-em-sombrio",
@@ -1838,7 +1840,7 @@
     "periodo_ordem": 15,
     "formacao": "Fm. Laguna-Barreira (depósitos da plataforma continental)",
     "taxon": "Lestodon armatus Gervais, 1855",
-    "categoria": "Vertebrado — preguiça-gigante (Xenarthra, Mylodontidae)",
+    "categoria": "Vertebrado — mamífero",
     "numero_catalogo": "-",
     "local_coleta": "Plataforma continental entre Passo de Torres e Araranguá, SC (rede de arrasto de camarão)",
     "site": "Plataforma continental Passo de Torres–Araranguá",
@@ -1850,7 +1852,7 @@
     "descritor": "Divulgação Museu Oceanográfico Univali (2022)",
     "unidade_pesquisa": "Univali",
     "idade_ma": "ca. 30.000 anos (Pleistoceno Superior)",
-    "observacoes": "Pelo menos dois espécimes; primeiro registro da espécie em Santa Catarina; esqueleto montado é atração do Museu Oceanográfico Univali; estimativa de ~4,5 m de altura e ~3 t",
+    "observacoes": "Classificação: preguiça-gigante (Xenarthra, Mylodontidae). Pelo menos dois espécimes; primeiro registro da espécie em Santa Catarina; esqueleto montado é atração do Museu Oceanográfico Univali; estimativa de ~4,5 m de altura e ~3 t",
     "fontes": [
       "https://www.univali.br/noticias/Paginas/Esqueleto-de-Pregui%C3%A7a-Gigante-%C3%A9-atra%C3%A7%C3%A3o-no-Museu-Oceanogr%C3%A1fico.aspx"
     ],
@@ -1864,7 +1866,7 @@
     "periodo_ordem": 15,
     "formacao": "Fm. Laguna-Barreira (depósitos da plataforma continental)",
     "taxon": "Toxodon sp.",
-    "categoria": "Vertebrado — toxodonte (Notoungulata, Toxodontidae)",
+    "categoria": "Vertebrado — mamífero",
     "numero_catalogo": "-",
     "local_coleta": "Costa de Sombrio, SC (vértebra torácica, rede de arrasto)",
     "site": "Costa de Sombrio (plataforma continental)",
@@ -1876,7 +1878,7 @@
     "descritor": "Soto, J. (coord. Museus Univali), divulgação Univali / imprensa regional (2024)",
     "unidade_pesquisa": "Univali",
     "idade_ma": "ca. 30.000 anos (Pleistoceno Superior)",
-    "observacoes": "Vértebra torácica recuperada junto à mandíbula de Stegomastodon waringi; toxodontes são notoungulados de grande porte, descritos como morfologicamente convergentes com hipopótamos",
+    "observacoes": "Classificação: toxodonte (Notoungulata, Toxodontidae). Vértebra torácica recuperada junto à mandíbula de Stegomastodon waringi; toxodontes são notoungulados de grande porte, descritos como morfologicamente convergentes com hipopótamos",
     "fontes": [
       "https://destinoflorianopolis.com.br/fossil-de-elefante-pre-historico-e-encontrado-em-santa-catarina/",
       "https://portallitoralsul.com.br/noticia/2248/fossil-de-elefante-pre-historico-e-encontrado-em-sombrio"
@@ -1891,7 +1893,7 @@
     "periodo_ordem": 4,
     "formacao": "Grupo Itararé (ritmitos correlatos)",
     "taxon": "Pterichnus mauryae isp. nov.",
-    "categoria": "Icnofóssil — pista de artrópode (possível crustáceo)",
+    "categoria": "Icnofóssil — trilha de artrópode",
     "numero_catalogo": "-",
     "local_coleta": "Afloramento de Anitápolis, SC",
     "site": "Afloramento de Anitápolis",
@@ -1903,7 +1905,7 @@
     "descritor": "Descrita formalmente em: Balistieri, P.R.M.N., Netto, R.G. & Sedorko, D. (2021) — Terr@Plural 15:1-17",
     "unidade_pesquisa": "UNISINOS",
     "idade_ma": "ca. 300–295 Ma",
-    "observacoes": "Primeira ocorrência do icnogênero Pterichnus no Brasil e a mais antiga registrada no mundo; reavaliação do material originalmente descrito como o anelídeo 'Oliveirania santa catharinae' por Maury (1927); os corpos fósseis atribuídos a anelídeo foram reinterpretados como pseudofósseis de origem inorgânica, mas a pista associada é icnofóssil genuíno",
+    "observacoes": "Classificação: pista de artrópode (possível crustáceo). Primeira ocorrência do icnogênero Pterichnus no Brasil e a mais antiga registrada no mundo; reavaliação do material originalmente descrito como o anelídeo 'Oliveirania santa catharinae' por Maury (1927); os corpos fósseis atribuídos a anelídeo foram reinterpretados como pseudofósseis de origem inorgânica, mas a pista associada é icnofóssil genuíno",
     "fontes": [
       "https://www.researchgate.net/publication/357414983_Review_of_Oliveirania_santa_catharinae_sic_Maury_1927_and_associated_ichnofossils_Itarare_Group_Late_Carboniferous_of_Parana_Basin_Brazil"
     ],
@@ -1917,7 +1919,7 @@
     "periodo_ordem": 3,
     "formacao": "Grupo Itararé / Fm. Rio do Sul — pedreiras Itaú-Itaúna, Waltrick e Fama",
     "taxon": "Cruziana problematica",
-    "categoria": "Icnofóssil — pista de artrópode (locomoção tipo trilobita)",
+    "categoria": "Icnofóssil — trilha de artrópode",
     "numero_catalogo": "-",
     "local_coleta": "Pedreiras de Trombudo Central, SC",
     "site": "Pedreiras de Trombudo Central",
@@ -1929,7 +1931,7 @@
     "descritor": "Balistieri, P.R.M.N., Netto, R.G. et al. (2015) — citado em ScienceDirect; Marques-Toigo et al. (1989)",
     "unidade_pesquisa": "UNISINOS",
     "idade_ma": "ca. 300–295 Ma",
-    "observacoes": "Espécimes raros e pequenos; associados a Diplichnites e Diplopodichnus; sugerem comunidade bentônica de artrópodes com comportamento de deslocamento similar a trilobitas",
+    "observacoes": "Classificação: pista de artrópode (locomoção tipo trilobita). Espécimes raros e pequenos; associados a Diplichnites e Diplopodichnus; sugerem comunidade bentônica de artrópodes com comportamento de deslocamento similar a trilobitas",
     "fontes": [
       "https://www.sciencedirect.com/science/article/abs/pii/S0895981115300274"
     ],
@@ -1995,7 +1997,7 @@
     "periodo_ordem": 3,
     "formacao": "Grupo Itararé / Fm. Rio do Sul — pedreiras Itaú-Itaúna, Waltrick e Fama",
     "taxon": "Helminthoidichnites tenuis",
-    "categoria": "Icnofóssil — escavação superficial de organismo vermiforme",
+    "categoria": "Icnofóssil — escavação de organismo vermiforme",
     "numero_catalogo": "-",
     "local_coleta": "Pedreiras de Trombudo Central, SC",
     "site": "Pedreiras de Trombudo Central",
@@ -2007,7 +2009,7 @@
     "descritor": "Lima, J.H.D., Netto, R.G., Corrêa, C.G. & Lavina, E.L.C. (2015) — \"Ichnology of deglaciation deposits from the Upper Carboniferous Rio do Sul Formation (Itararé Group, Paraná Basin) at central-east Santa Catarina State (southern Brazil)\", Journal of South American Earth Sciences",
     "unidade_pesquisa": "UNISINOS",
     "idade_ma": "ca. 300–295 Ma",
-    "observacoes": "Icnoespécie dominante na suíte de 'mineradores sob o tapete microbiano' (undermat miners), indicando pastadores de superfície (larvas de inseto, isópodes, anfípodes)",
+    "observacoes": "Classificação: escavação superficial de organismo vermiforme. Icnoespécie dominante na suíte de 'mineradores sob o tapete microbiano' (undermat miners), indicando pastadores de superfície (larvas de inseto, isópodes, anfípodes)",
     "fontes": [
       "https://www.sciencedirect.com/science/article/abs/pii/S0895981115300274"
     ],
@@ -2125,7 +2127,7 @@
     "periodo_ordem": 3,
     "formacao": "Grupo Itararé / Fm. Rio do Sul — pedreira Itaú-Itaúna",
     "taxon": "Isopodichnus isp. (sin. parcial de Cruziana problematica)",
-    "categoria": "Icnofóssil — pista de artrópode (isópode/anostraca)",
+    "categoria": "Icnofóssil — trilha de artrópode",
     "numero_catalogo": "-",
     "local_coleta": "Pedreira Itaú-Itaúna, Trombudo Central, SC",
     "site": "Pedreira Itaú-Itaúna",
@@ -2137,7 +2139,7 @@
     "descritor": "Marques-Toigo, M. et al. (1989); Balistieri, P.R.M.N., Netto, R.G. & Lavina, E.L.C. (2002) — revisão icnológica do Grupo Itararé em Santa Catarina",
     "unidade_pesquisa": "UNISINOS",
     "idade_ma": "ca. 300–295 Ma",
-    "observacoes": "Espécimes originalmente descritos como Isopodichnus por Marques-Toigo et al. (1989) foram posteriormente colocados em sinonímia com Cruziana cf. problematica por revisão de Balistieri et al. (2002)",
+    "observacoes": "Classificação: pista de artrópode (isópode/anostraca). Espécimes originalmente descritos como Isopodichnus por Marques-Toigo et al. (1989) foram posteriormente colocados em sinonímia com Cruziana cf. problematica por revisão de Balistieri et al. (2002)",
     "fontes": [
       "https://repositorio.jesuita.org.br/bitstream/handle/UNISINOS/4247/Raquel%20Elisa%20Lermen3.pdf?sequence=2&isAllowed=y"
     ],
@@ -2151,7 +2153,7 @@
     "periodo_ordem": 13,
     "formacao": "Fm. Botucatu (arenito eólico) — geossítio do Geoparque",
     "taxon": "Paleotoca Furnas Xocleng (icnofóssil de escavação — Xenarthra)",
-    "categoria": "Icnofóssil — estrutura de habitação (Domichnia)",
+    "categoria": "Icnofóssil — paleotoca",
     "numero_catalogo": "-",
     "local_coleta": "Comunidade de Três Barras, interior de Morro Grande, SC — a cerca de 14 a 18 km do centro (coordenada da sede municipal; a do geossítio não é publicada)",
     "site": "Morro Grande",
@@ -2163,11 +2165,12 @@
     "descritor": "Buchmann, F.S.C., Lopes, R.P. & Caron, F. (2009) — Revista Brasileira de Paleontologia 12(3):247–256; Lopes, R.P., Frank, H.T., Buchmann, F.S. & Caron, F. (2017) — Ichnos 24:133–145 (erige Megaichnus igen. nov.) — ocorrência divulgada por: Geoparque Caminhos dos Cânions do Sul (divulgação institucional); Bechtel, A.F. (doutorando em geografia, citado em reportagens, 2025/2026)",
     "unidade_pesquisa": "Geoparque UNESCO",
     "idade_ma": "5,33 Ma – 11.700 a",
-    "observacoes": "ICNOTAXONOMIA: desde Lopes et al. (2017) estas estruturas têm nome formal — o icnogênero Megaichnus, dividido em M. major (atribuído a preguiças-gigantes, Mylodontidae) e M. minor (atribuído a tatus-gigantes, Cingulata). Santa Catarina e Rio Grande do Sul concentram a maior abundância conhecida de paleotocas do mundo, com várias centenas de registros em cada estado. Três cavidades subterrâneas somando mais de 100 m de extensão; marcas de garras nas paredes; atribuída a tatus-gigantes (Glyptodon/Pampatherium) e/ou preguiças-gigantes CORREÇÃO (2026.09.7): a coordenada anterior caía no município vizinho de Nova Veneza; passou a ser a da sede de Morro Grande.",
+    "observacoes": "Classificação: paleotoca — estrutura de habitação (Domichnia) escavada por mamíferos da megafauna. ICNOTAXONOMIA: desde Lopes et al. (2017) estas estruturas têm nome formal — o icnogênero Megaichnus, dividido em M. major (atribuído a preguiças-gigantes, Mylodontidae) e M. minor (atribuído a tatus-gigantes, Cingulata). Segundo F. S. C. Buchmann, em entrevista ao Jornal da Unesp (2022), mais de duas mil paleotocas foram registradas no Brasil, 99% delas entre o sul de Santa Catarina e o norte do Rio Grande do Sul. Três cavidades subterrâneas somando mais de 100 m de extensão; marcas de garras nas paredes; atribuída a tatus-gigantes (Glyptodon/Pampatherium) e/ou preguiças-gigantes CORREÇÃO (2026.09.7): a coordenada anterior caía no município vizinho de Nova Veneza; passou a ser a da sede de Morro Grande.",
     "fontes": [
       "https://doi.org/10.4072/rbp.2009.3.07",
       "https://sbpbrasil.org/publications/index.php/rbp/article/download/428/254/9081",
-      "https://recantodoscanyons.com.br/o-que-fazer-em-praia-grande-sc/parques/geoparque-caminho-dos-canyons-do-sul/"
+      "https://recantodoscanyons.com.br/o-que-fazer-em-praia-grande-sc/parques/geoparque-caminho-dos-canyons-do-sul/",
+      "https://jornal.unesp.br/2022/01/18/uma-visita-a-casa-dos-gigantes/"
     ],
     "citacao_abnt": "VALDATI, J.; BECHTEL, A.P.; GOMES, M.C.V.; DOS SANTOS, Y.R.F.; RICETTI, J.H.Z.; WEINSCHÜTZ, L.C. 2024. More than fossils: Paleoburrows as geoheritage and paleoenvironmental archives in the Caminhos dos Cânions do Sul UNESCO Global Geopark, Southern Brazil. Journal of South American Earth Sciences, 149, 105205. DOI: 10.1016/j.jsames.2024.105205 [Fonte primária]. Disponível em: https://www.sciencedirect.com/science/article/abs/pii/S0895981124004279",
     "doi": "10.4072/rbp.2009.3.07",
@@ -2182,27 +2185,31 @@
     "periodo_ordem": 13,
     "formacao": "Fm. Botucatu (arenito eólico) — geossítio do Geoparque",
     "taxon": "Paleotoca Toca do Tatu (icnofóssil de escavação — Xenarthra)",
-    "categoria": "Icnofóssil — estrutura de habitação (Domichnia)",
+    "categoria": "Icnofóssil — paleotoca",
     "numero_catalogo": "-",
-    "local_coleta": "Timbé do Sul, SC (a ~7,3 km do município, junto ao rio Rocinha)",
+    "local_coleta": "Toca do Tatu, Timbé do Sul, SC (28°46'21,2\"S, 49°53'45,9\"W, coordenada publicada)",
     "site": "Timbé do Sul (rio Rocinha)",
     "municipio": "Timbé do Sul",
-    "lat": -28.8244,
-    "lon": -49.9183,
+    "lat": -28.7726,
+    "lon": -49.8961,
     "bacia": "Bacia do Paraná — Fm. Botucatu",
     "armazenamento": "Geoparque Mundial da UNESCO Caminhos dos Cânions do Sul (geossítio aberto à visitação)",
-    "descritor": "Buchmann, F.S.C., Lopes, R.P. & Caron, F. (2009) — Revista Brasileira de Paleontologia 12(3):247–256; Lopes, R.P., Frank, H.T., Buchmann, F.S. & Caron, F. (2017) — Ichnos 24:133–145 (erige Megaichnus igen. nov.) — ocorrência divulgada por: Geoparque Caminhos dos Cânions do Sul (divulgação institucional)",
+    "descritor": "Frank, H.T., Oliveira, L.D., Vicroski, F.N., Breier, R., Pasqualon, N.G., Araújo, T., Buchmann, F.S.C., Fornari, M., Lima, L.G., Lopes, R.P. & Caron, F. (2012) — \"The complex history of a sandstone-hosted cave in the state of Santa Catarina, Brazil\", Espeleo-Tema 23(2):87–101; Buchmann, F.S.C., Lopes, R.P. & Caron, F. (2009) — Revista Brasileira de Paleontologia 12(3):247–256; Lopes, R.P., Frank, H.T., Buchmann, F.S. & Caron, F. (2017) — Ichnos 24:133–145 (erige Megaichnus igen. nov.)",
     "unidade_pesquisa": "Geoparque UNESCO",
     "idade_ma": "5,33 Ma – 11.700 a",
-    "observacoes": "ICNOTAXONOMIA: desde Lopes et al. (2017) estas estruturas têm nome formal — o icnogênero Megaichnus, dividido em M. major (atribuído a preguiças-gigantes, Mylodontidae) e M. minor (atribuído a tatus-gigantes, Cingulata). Santa Catarina e Rio Grande do Sul concentram a maior abundância conhecida de paleotocas do mundo, com várias centenas de registros em cada estado. Paleotoca de aproximadamente 48,5 m, escavada em arenitos da Fm. Botucatu; dois túneis convergindo numa câmara maior, com marcas de garras nas paredes; reocupada posteriormente por povos pré-colombianos (grafismos rupestres e baixos-relevos)",
+    "observacoes": "Classificação: paleotoca — estrutura de habitação (Domichnia) escavada por mamíferos da megafauna. ICNOTAXONOMIA: desde Lopes et al. (2017) estas estruturas têm nome formal — o icnogênero Megaichnus, dividido em M. major (atribuído a preguiças-gigantes, Mylodontidae) e M. minor (atribuído a tatus-gigantes, Cingulata). Segundo F. S. C. Buchmann, em entrevista ao Jornal da Unesp (2022), mais de duas mil paleotocas foram registradas no Brasil, 99% delas entre o sul de Santa Catarina e o norte do Rio Grande do Sul. Paleotoca de aproximadamente 48,5 m, escavada em arenitos da Fm. Botucatu; dois túneis convergindo numa câmara maior, com marcas de garras nas paredes; reocupada posteriormente por povos pré-colombianos (grafismos rupestres e baixos-relevos) CORREÇÃO (2026.09.8): coordenada substituída pela publicada por Frank et al. (2012) — a anterior ficava a cerca de 6 km —, e a ficha passou a se apoiar no artigo que descreve a caverna.",
     "fontes": [
+      "https://www.semanticscholar.org/paper/THE-COMPLEX-HISTORY-OF-A-SANDSTONE-HOSTED-CAVE-IN-,-Frank-Oliveira/352ac79d172767f56f9a572deea5da8581b08db2",
       "https://doi.org/10.4072/rbp.2009.3.07",
       "https://sbpbrasil.org/publications/index.php/rbp/article/download/428/254/9081",
-      "https://recantodoscanyons.com.br/o-que-fazer-em-praia-grande-sc/parques/geoparque-caminho-dos-canyons-do-sul/"
+      "https://recantodoscanyons.com.br/o-que-fazer-em-praia-grande-sc/parques/geoparque-caminho-dos-canyons-do-sul/",
+      "https://jornal.unesp.br/2022/01/18/uma-visita-a-casa-dos-gigantes/"
     ],
     "citacao_abnt": "VALDATI, J.; BECHTEL, A.P.; GOMES, M.C.V.; DOS SANTOS, Y.R.F.; RICETTI, J.H.Z.; WEINSCHÜTZ, L.C. 2024. More than fossils: Paleoburrows as geoheritage and paleoenvironmental archives in the Caminhos dos Cânions do Sul UNESCO Global Geopark, Southern Brazil. Journal of South American Earth Sciences, 149, 105205. DOI: 10.1016/j.jsames.2024.105205 [Fonte primária]. Disponível em: https://www.sciencedirect.com/science/article/abs/pii/S0895981124004279",
     "doi": "10.4072/rbp.2009.3.07",
-    "tipo_fonte": "Divulgação ou imprensa"
+    "tipo_fonte": "Artigo em periódico",
+    "x": 457.6,
+    "y": 606.4
   },
   {
     "id": 83,
@@ -2211,7 +2218,7 @@
     "periodo_ordem": 13,
     "formacao": "Depósitos superficiais / arenitos diversos — geossítios do Geoparque",
     "taxon": "Paleotocas adicionais (Jacinto Machado e Praia Grande, SC)",
-    "categoria": "Icnofóssil — estrutura de habitação (Domichnia)",
+    "categoria": "Icnofóssil — paleotoca",
     "numero_catalogo": "-",
     "local_coleta": "Jacinto Machado, SC (Paleotoca do Engenho Velho); Praia Grande, SC",
     "site": "Paleotoca do Engenho Velho",
@@ -2223,12 +2230,13 @@
     "descritor": "Buchmann, F.S.C., Lopes, R.P. & Caron, F. (2009) — Revista Brasileira de Paleontologia 12(3):247–256; Lopes, R.P., Frank, H.T., Buchmann, F.S. & Caron, F. (2017) — Ichnos 24:133–145 (erige Megaichnus igen. nov.) — ocorrência divulgada por: ND Mais (2025); CircuitoMT (2025), citando especialistas do Geoparque",
     "unidade_pesquisa": "Geoparque UNESCO",
     "idade_ma": "5,33 Ma – 11.700 a",
-    "observacoes": "ICNOTAXONOMIA: desde Lopes et al. (2017) estas estruturas têm nome formal — o icnogênero Megaichnus, dividido em M. major (atribuído a preguiças-gigantes, Mylodontidae) e M. minor (atribuído a tatus-gigantes, Cingulata). Santa Catarina e Rio Grande do Sul concentram a maior abundância conhecida de paleotocas do mundo, com várias centenas de registros em cada estado. Registros de paleotocas adicionais em cinco municípios do Geoparque (quatro em SC: Morro Grande, Timbé do Sul, Jacinto Machado e Praia Grande); mais de 40 estruturas catalogadas no total, algumas interconectadas atingindo até 340 m de extensão",
+    "observacoes": "Classificação: paleotoca — estrutura de habitação (Domichnia) escavada por mamíferos da megafauna. ICNOTAXONOMIA: desde Lopes et al. (2017) estas estruturas têm nome formal — o icnogênero Megaichnus, dividido em M. major (atribuído a preguiças-gigantes, Mylodontidae) e M. minor (atribuído a tatus-gigantes, Cingulata). Segundo F. S. C. Buchmann, em entrevista ao Jornal da Unesp (2022), mais de duas mil paleotocas foram registradas no Brasil, 99% delas entre o sul de Santa Catarina e o norte do Rio Grande do Sul. Registros de paleotocas adicionais em cinco municípios do Geoparque (quatro em SC: Morro Grande, Timbé do Sul, Jacinto Machado e Praia Grande); mais de 40 estruturas catalogadas no total, algumas interconectadas atingindo até 340 m de extensão",
     "fontes": [
       "https://doi.org/10.4072/rbp.2009.3.07",
       "https://sbpbrasil.org/publications/index.php/rbp/article/download/428/254/9081",
       "https://ndmais.com.br/animais/cavernas-em-sc-guardam-rastros-de-preguicas-e-tatus-gigantes/",
-      "https://circuitomt.com.br/cavernas-pre-historicas-de-sc-guardam-registros-de-animais-gigantes-extintos-ha-10-mil-anos/"
+      "https://circuitomt.com.br/cavernas-pre-historicas-de-sc-guardam-registros-de-animais-gigantes-extintos-ha-10-mil-anos/",
+      "https://jornal.unesp.br/2022/01/18/uma-visita-a-casa-dos-gigantes/"
     ],
     "citacao_abnt": "VALDATI, J.; BECHTEL, A.P.; GOMES, M.C.V.; DOS SANTOS, Y.R.F.; RICETTI, J.H.Z.; WEINSCHÜTZ, L.C. 2024. More than fossils: Paleoburrows as geoheritage and paleoenvironmental archives in the Caminhos dos Cânions do Sul UNESCO Global Geopark, Southern Brazil. Journal of South American Earth Sciences, 149, 105205. DOI: 10.1016/j.jsames.2024.105205 [Fonte primária]. Disponível em: https://www.sciencedirect.com/science/article/abs/pii/S0895981124004279 | Divulgação jornalística: NDMAIS. 2025. Cavernas em SC guardam rastros de preguiças e tatus gigantes. Disponível em: https://ndmais.com.br/animais/cavernas-em-sc-guardam-rastros-de-preguicas-e-tatus-gigantes/ [Fonte secundária complementar]",
     "doi": "10.4072/rbp.2009.3.07",
@@ -2398,7 +2406,7 @@
     "periodo_ordem": 8,
     "formacao": "Fm. Rio Bonito / Grupo Guatá — Assembleia Taió",
     "taxon": "Warthia sp.",
-    "categoria": "Invertebrado — molusco gastrópode",
+    "categoria": "Invertebrado — gastrópode",
     "numero_catalogo": "-",
     "local_coleta": "Município de Taió, SC",
     "site": "Assembleia Taió",
@@ -2410,7 +2418,7 @@
     "descritor": "Análise tafonômica das concentrações fossilíferas da Formação Rio Bonito na região de Taió (Sul do Brasil) — Revista Brasileira de Paleontologia; assembleia listada em Boardman, D.R. (2006), \"Tafoflora de Taió, Santa Catarina (Permiano Inferior, Formação Rio Bonito, Bacia do Paraná)\", Dissertação de Mestrado, Instituto de Geociências, UFRGS, 112p.",
     "unidade_pesquisa": "CENPALEO/UnC; IGc-USP",
     "idade_ma": "ca. 280–290 Ma",
-    "observacoes": "Gastrópode subordinado na tafocenose, dominada por bivalves, de Taió",
+    "observacoes": "Classificação: molusco gastrópode. Gastrópode subordinado na tafocenose, dominada por bivalves, de Taió",
     "fontes": [
       "https://www.academia.edu/1074810/BIVALVES_F%C3%93SSEIS_COMO_INDICADORES_DA_DIN%C3%82MICA_SEDIMENTAR_UM_ESTUDO_DE_CASOS_DO_PALEOZ%C3%93ICO_SUPERIOR_DA_BACIA_DO_PARAN%C3%81_BRASIL (Ghilardi et al. — taphonomia da Fm. Rio Bonito, Taió, SC)"
     ],
@@ -2450,7 +2458,7 @@
     "periodo_ordem": 8,
     "formacao": "Fm. Rio Bonito / Grupo Guatá — Assembleia Taió",
     "taxon": "Asteroidea indet. / Ophiuroidea indet.",
-    "categoria": "Invertebrado — equinodermas (estrela-do-mar e ofiuroide)",
+    "categoria": "Invertebrado — equinoderma",
     "numero_catalogo": "-",
     "local_coleta": "Município de Taió, SC",
     "site": "Assembleia Taió",
@@ -2462,7 +2470,7 @@
     "descritor": "Análise tafonômica das concentrações fossilíferas da Formação Rio Bonito na região de Taió (Sul do Brasil) — Revista Brasileira de Paleontologia; assembleia listada em Boardman, D.R. (2006), \"Tafoflora de Taió, Santa Catarina (Permiano Inferior, Formação Rio Bonito, Bacia do Paraná)\", Dissertação de Mestrado, Instituto de Geociências, UFRGS, 112p.",
     "unidade_pesquisa": "CENPALEO/UnC; IGc-USP",
     "idade_ma": "ca. 280–290 Ma",
-    "observacoes": "Registro raro de equinodermas paleozoicos no Brasil; componentes subordinados da tafocenose de Taió",
+    "observacoes": "Classificação: equinodermas (estrela-do-mar e ofiuroide). Registro raro de equinodermas paleozoicos no Brasil; componentes subordinados da tafocenose de Taió",
     "fontes": [
       "https://www.academia.edu/1074810/BIVALVES_F%C3%93SSEIS_COMO_INDICADORES_DA_DIN%C3%82MICA_SEDIMENTAR_UM_ESTUDO_DE_CASOS_DO_PALEOZ%C3%93ICO_SUPERIOR_DA_BACIA_DO_PARAN%C3%81_BRASIL (Ghilardi et al. — taphonomia da Fm. Rio Bonito, Taió, SC)"
     ],
@@ -2502,7 +2510,7 @@
     "periodo_ordem": 8,
     "formacao": "Fm. Rio Bonito / Grupo Guatá — Assembleia Taió",
     "taxon": "Clionolithes isp. / Entobia isp. / Oichnus ovalis",
-    "categoria": "Icnofóssil — bioerosão em conchas de Heteropecten catharinae",
+    "categoria": "Icnofóssil — bioerosão em concha",
     "numero_catalogo": "-",
     "local_coleta": "Município de Taió, SC",
     "site": "Assembleia Taió",
@@ -2514,7 +2522,7 @@
     "descritor": "Análise tafonômica das concentrações fossilíferas da Formação Rio Bonito na região de Taió (Sul do Brasil) — Revista Brasileira de Paleontologia; assembleia listada em Boardman, D.R. (2006), \"Tafoflora de Taió, Santa Catarina (Permiano Inferior, Formação Rio Bonito, Bacia do Paraná)\", Dissertação de Mestrado, Instituto de Geociências, UFRGS, 112p.",
     "unidade_pesquisa": "CENPALEO/UnC; IGc-USP",
     "idade_ma": "ca. 280–290 Ma",
-    "observacoes": "Traços de bioerosão (perfuração e escavação) registrados especificamente nas valvas do bivalve Heteropecten catharinae",
+    "observacoes": "Classificação: bioerosão em conchas de Heteropecten catharinae. Traços de bioerosão (perfuração e escavação) registrados especificamente nas valvas do bivalve Heteropecten catharinae",
     "fontes": [
       "https://www.academia.edu/1074810/BIVALVES_F%C3%93SSEIS_COMO_INDICADORES_DA_DIN%C3%82MICA_SEDIMENTAR_UM_ESTUDO_DE_CASOS_DO_PALEOZ%C3%93ICO_SUPERIOR_DA_BACIA_DO_PARAN%C3%81_BRASIL (Ghilardi et al. — taphonomia da Fm. Rio Bonito, Taió, SC)"
     ],
@@ -2582,7 +2590,7 @@
     "periodo_ordem": 10,
     "formacao": "Grupo Passa Dois (limite Fm. Rio do Rasto / base Fm. Pirambóia)",
     "taxon": "Estheria sp. / Leaia sp. (filópodos)",
-    "categoria": "Invertebrado — crustáceo conchostráceo (Branchiopoda)",
+    "categoria": "Invertebrado — conchostráceo",
     "numero_catalogo": "-",
     "local_coleta": "Entre Valões e Poço Preto, Lages, SC (estrada Lombo Alto–Lages, próx. km 65)",
     "site": "Entre Valões e Poço Preto",
@@ -2594,7 +2602,7 @@
     "descritor": "Reed, F.R.C. (citado em: Beurlen, K. — Breves Notícias Sobre a Geologia dos Estados do Paraná e Santa Catarina; trad. port. em SciELO)",
     "unidade_pesquisa": "Não especificado na fonte consultada",
     "idade_ma": "ca. 259–252 Ma",
-    "observacoes": "Filópodos (conchostráceos) permianos descritos por F.R. Cowper Reed em horizontes vermelhos e argilosos entre Valões e Poço Preto, Lages, SC; a fonte ressalva explicitamente que estes horizontes NÃO pertencem às camadas Estrada Nova, situando-se no contexto Rio do Rasto/Pirambóia",
+    "observacoes": "Classificação: crustáceo conchostráceo (Branchiopoda). Filópodos (conchostráceos) permianos descritos por F.R. Cowper Reed em horizontes vermelhos e argilosos entre Valões e Poço Preto, Lages, SC; a fonte ressalva explicitamente que estes horizontes NÃO pertencem às camadas Estrada Nova, situando-se no contexto Rio do Rasto/Pirambóia",
     "fontes": [
       "https://scielo.br/scielo.php?pid=S1516-89132001000500010&script=sci_arttext (tradução de Beurlen 1957, citando Reed)"
     ],
@@ -4330,7 +4338,7 @@
     "descritor": "Fanton, J., Rohn, R., Ricardi-Branco, F. & Rösler, O. (2009) — SIGEP, Sítio 126, in Sítios Geológicos e Paleontológicos do Brasil, CPRM, v.2:381–388",
     "unidade_pesquisa": "UNICAMP; UNESP-Rio Claro; IGc-USP",
     "idade_ma": "ca. 273–265 Ma (Guadalupiano inferior, Roadiano)",
-    "observacoes": "ÚNICA localidade de ocorrência do gênero em toda a Bacia do Paraná, e única conífera formalmente conhecida do Guadalupiano da porção gondwânica brasileira. Ramos estéreis com quatro ordens de ramificação, cutícula excepcionalmente preservada — o que permitiu análise anatômica da epiderme. Cutículas grossas, estômatos afundados e ductos resiníferos são adaptações xeromórficas, coerentes com o clima seco interpretado para a Fm. Teresina. Fanton et al. (2006) sinonimizaram K. catarinensis Yoshida em K. canoinhensis. Afloramento de Canoinhas — sítio SIGEP 126, no km 242 da BR-280, 6 km a sudoeste de Canoinhas. Expõe 40 m da porção superior da Fm. Teresina, reunindo numa única localidade um conjunto de litofácies que raramente aparece junto. Registra a aridização gradual do Gondwana ocidental a partir do fim do Eopermiano. RISCO: o depósito fica no acostamento da rodovia e já foi parcialmente recoberto por obras; os autores do capítulo SIGEP pedem medidas de proteção.",
+    "observacoes": "Localidade-tipo e, até 2024, ÚNICA localidade conhecida do gênero em toda a Bacia do Paraná (nova ocorrência, em identificação preliminar, em Major Vieira — registro nº 195), e única conífera formalmente conhecida do Guadalupiano da porção gondwânica brasileira. Ramos estéreis com quatro ordens de ramificação, cutícula excepcionalmente preservada — o que permitiu análise anatômica da epiderme. Cutículas grossas, estômatos afundados e ductos resiníferos são adaptações xeromórficas, coerentes com o clima seco interpretado para a Fm. Teresina. Fanton et al. (2006) sinonimizaram K. catarinensis Yoshida em K. canoinhensis. Afloramento de Canoinhas — sítio SIGEP 126, no km 242 da BR-280, 6 km a sudoeste de Canoinhas. Expõe 40 m da porção superior da Fm. Teresina, reunindo numa única localidade um conjunto de litofácies que raramente aparece junto. Registra a aridização gradual do Gondwana ocidental a partir do fim do Eopermiano. RISCO: o depósito fica no acostamento da rodovia e já foi parcialmente recoberto por obras; os autores do capítulo SIGEP pedem medidas de proteção.",
     "fontes": [
       "https://sigep.eco.br/sitio126/sitio126.pdf",
       "https://www.sbpbrasil.org/revista/edicoes/9_2/RBP9-2-fanton.pdf"
@@ -4783,7 +4791,7 @@
     "periodo_ordem": 9,
     "formacao": "Fm. Rio do Rasto / Grupo Passa Dois",
     "taxon": "Parapytanga catarinensis Strapasson, Pinheiro & Soares, 2015",
-    "categoria": "Vertebrado — anfíbio temnospôndilo (Stereospondylomorpha)",
+    "categoria": "Vertebrado — anfíbio",
     "numero_catalogo": "UFRGS-PV-0355-P (holótipo)",
     "local_coleta": "Serra do Espigão, região de Santa Cecília, SC (coordenada aproximada da localidade)",
     "site": "Serra do Espigão",
@@ -4795,7 +4803,7 @@
     "descritor": "Strapasson, A., Pinheiro, F.L. & Soares, M.B. (2015) — Acta Palaeontologica Polonica 60(4):843–855",
     "unidade_pesquisa": "UFRGS; UNIPAMPA",
     "idade_ma": "ca. 266–254 Ma (Wordiano–Wuchiapingiano)",
-    "observacoes": "O ÚNICO temnospôndilo formalmente nomeado de Santa Catarina, e um dos três descritos para toda a Fm. Rio do Rasto — os outros dois são Australerpeton cosgriffi (Serra do Cadeado, PR) e Bageherpeton longignathus (RS). Coletado em 1985 por equipe da UFRGS, mas só descrito em 2015. O material compreende elementos cranianos (região orbital, basicrânio, estapédio, hemimandíbula direita) e pós-cranianos (vértebras, costelas, cintura peitoral, fêmur direito e um conjunto de escamas). Difere dos rinesuquídeos pelo epipterigoide robusto e alongado e pelos bolsões musculares do parasfenoide mais profundos. De focinho curto e largo — ao contrário do focinho longo e delgado de Australerpeton e Bageherpeton. A análise filogenética o agrupa como táxon-irmão de Australerpeton, em posição transicional entre os temnospôndilos permianos da Plataforma Russa e os sul-africanos, sustentando uma conexão entre as faunas permianas do Brasil e do Leste Europeu. A Serra do Espigão é uma localidade fossilífera de tetrápodes inédita, que amplia geograficamente o registro da Fm. Rio do Rasto.",
+    "observacoes": "Classificação: anfíbio temnospôndilo (Stereospondylomorpha). O ÚNICO temnospôndilo formalmente nomeado de Santa Catarina, e na época da descrição (2015), um dos três temnospôndilos conhecidos da Fm. Rio do Rasto — os outros dois são Australerpeton cosgriffi (Serra do Cadeado, PR) e Bageherpeton longignathus (RS). Coletado em 1985 por equipe da UFRGS, mas só descrito em 2015. O material compreende elementos cranianos (região orbital, basicrânio, estapédio, hemimandíbula direita) e pós-cranianos (vértebras, costelas, cintura peitoral, fêmur direito e um conjunto de escamas). Difere dos rinesuquídeos pelo epipterigoide robusto e alongado e pelos bolsões musculares do parasfenoide mais profundos. De focinho curto e largo — ao contrário do focinho longo e delgado de Australerpeton e Bageherpeton. A análise filogenética o agrupa como táxon-irmão de Australerpeton, em posição transicional entre os temnospôndilos permianos da Plataforma Russa e os sul-africanos, sustentando uma conexão entre as faunas permianas do Brasil e do Leste Europeu. A Serra do Espigão é uma localidade fossilífera de tetrápodes inédita, que amplia geograficamente o registro da Fm. Rio do Rasto.",
     "fontes": [
       "https://lume.ufrgs.br/handle/10183/132382",
       "https://www.lume.ufrgs.br/bitstream/handle/10183/132382/000915740.pdf?isAllowed=y&sequence=1"
@@ -4811,7 +4819,7 @@
     "periodo_ordem": 18,
     "formacao": "Depósitos costeiros holocênicos — incrustações em costões rochosos do embasamento proterozóico",
     "taxon": "Vermetidae indet. (tubos de gastrópode incrustante)",
-    "categoria": "Invertebrado — gastrópode incrustante",
+    "categoria": "Invertebrado — gastrópode",
     "numero_catalogo": "-",
     "local_coleta": "Costões rochosos entre o Cabo de Santa Marta (Laguna) e Imbituba, SC",
     "site": "Costões Laguna–Imbituba",
@@ -4823,7 +4831,7 @@
     "descritor": "Angulo, R.J., Giannini, P.C.F., Suguio, K. & Pessenda, L.C.R. (1999) — \"Relative sea-level changes in the last 5500 years in southern Brazil (Laguna–Imbituba region, Santa Catarina State) based on vermetid 14C ages\", Marine Geology 159:323–339; sítio descrito em Giannini, P.C.F. (2002), SIGEP 075, CPRM/DNPM v.1:213–222",
     "unidade_pesquisa": "IGc-USP; UFPR",
     "idade_ma": "últimos ~5.500 anos AP (datação radiocarbônica)",
-    "observacoes": "Carapaças aragoníticas de vermetídeos fósseis — gastrópodes de hábito incrustante que vivem numa faixa estreita e previsível em relação ao nível do mar, o que os torna um dos principais INDICADORES BIOLÓGICOS DE PALEONÍVEL MARINHO usados no Brasil. A curva mais completa de variação do nível relativo do mar da Região Sul foi construída a partir da altura e da datação radiocarbônica destes espécimes, coletados entre o Cabo de Santa Marta e Imbituba. O registro só é possível neste trecho porque, ao sul do cabo, a costa passa a ser dominada por planícies largas e os costões rochosos — substrato indispensável ao vermetídeo — tornam-se muito raros. RESSALVA DE ESCOPO: o SIGEP 075 é classificado como sítio SEDIMENTOLÓGICO. Os sambaquis da mesma região, embora ricos em conchas, são depósitos ARQUEOLÓGICOS (antrópicos) e por isso não integram este catálogo paleontológico.",
+    "observacoes": "Classificação: gastrópode incrustante. Carapaças aragoníticas de vermetídeos fósseis — gastrópodes de hábito incrustante que vivem numa faixa estreita e previsível em relação ao nível do mar, o que os torna um dos principais INDICADORES BIOLÓGICOS DE PALEONÍVEL MARINHO usados no Brasil. A curva mais completa de variação do nível relativo do mar da Região Sul foi construída a partir da altura e da datação radiocarbônica destes espécimes, coletados entre o Cabo de Santa Marta e Imbituba. O registro só é possível neste trecho porque, ao sul do cabo, a costa passa a ser dominada por planícies largas e os costões rochosos — substrato indispensável ao vermetídeo — tornam-se muito raros. RESSALVA DE ESCOPO: o SIGEP 075 é classificado como sítio SEDIMENTOLÓGICO. Os sambaquis da mesma região, embora ricos em conchas, são depósitos ARQUEOLÓGICOS (antrópicos) e por isso não integram este catálogo paleontológico.",
     "fontes": [
       "https://sigep.eco.br/sitio075/sitio075.pdf",
       "https://www.sciencedirect.com/science/article/abs/pii/S0025322798001655"
@@ -4839,7 +4847,7 @@
     "periodo_ordem": 13,
     "formacao": "Depósitos cenozóicos / rochas do Planalto Serrano",
     "taxon": "Megaichnus major (paleotoca URU-01-P2)",
-    "categoria": "Icnofóssil — paleotoca (Xenarthra)",
+    "categoria": "Icnofóssil — paleotoca",
     "numero_catalogo": "URU-01-P2 (designação de campo)",
     "local_coleta": "Paleotoca de Urubici (URU-01-P2), Urubici, SC",
     "site": "Paleotoca de Urubici (URU-01-P2)",
@@ -4851,11 +4859,12 @@
     "descritor": "Buchmann, F.S.C., Lopes, R.P. & Caron, F. (2009) — Revista Brasileira de Paleontologia 12(3):247–256; Lopes, R.P., Frank, H.T., Buchmann, F.S. & Caron, F. (2017) — Ichnos 24:133–145 (erige Megaichnus igen. nov.)",
     "unidade_pesquisa": "UNESP-Litoral Paulista; UFRGS; UNIPAMPA",
     "idade_ma": "Plioceno–Pleistoceno",
-    "observacoes": "ICNOTAXONOMIA: desde Lopes et al. (2017) estas estruturas têm nome formal — o icnogênero Megaichnus, dividido em M. major (atribuído a preguiças-gigantes, Mylodontidae) e M. minor (atribuído a tatus-gigantes, Cingulata). Santa Catarina e Rio Grande do Sul concentram a maior abundância conhecida de paleotocas do mundo, com várias centenas de registros em cada estado. Conjunto de túneis, trincheiras e dolinas a 1.036 m de altitude, com coordenada publicada (27°57′54,7″S, 49°30′33,2″O). Serviu de laboratório para experimentos de PROPAGAÇÃO SONORA dentro da estrutura: estimativas a partir do ouvido médio de Lestodon e Glossotherium robustum indicam faixa auditiva de 44 Hz a 16.490 Hz, e os testes avaliam a hipótese de comunicação acústica entre mylodontídeos fossoriais — coerente com as evidências de vida gregária em paleotocas (Buchmann et al., 2016).",
+    "observacoes": "Classificação: paleotoca — estrutura de habitação (Domichnia) escavada por mamíferos da megafauna. ICNOTAXONOMIA: desde Lopes et al. (2017) estas estruturas têm nome formal — o icnogênero Megaichnus, dividido em M. major (atribuído a preguiças-gigantes, Mylodontidae) e M. minor (atribuído a tatus-gigantes, Cingulata). Segundo F. S. C. Buchmann, em entrevista ao Jornal da Unesp (2022), mais de duas mil paleotocas foram registradas no Brasil, 99% delas entre o sul de Santa Catarina e o norte do Rio Grande do Sul. Conjunto de túneis, trincheiras e dolinas a 1.036 m de altitude, com coordenada publicada (27°57′54,7″S, 49°30′33,2″O). Serviu de laboratório para experimentos de PROPAGAÇÃO SONORA dentro da estrutura: estimativas a partir do ouvido médio de Lestodon e Glossotherium robustum indicam faixa auditiva de 44 Hz a 16.490 Hz, e os testes avaliam a hipótese de comunicação acústica entre mylodontídeos fossoriais — coerente com as evidências de vida gregária em paleotocas (Buchmann et al., 2016).",
     "doi": "10.4072/rbp.2009.3.07",
     "fontes": [
       "https://doi.org/10.4072/rbp.2009.3.07",
-      "https://sbpbrasil.org/publications/index.php/rbp/article/download/428/254/9081"
+      "https://sbpbrasil.org/publications/index.php/rbp/article/download/428/254/9081",
+      "https://jornal.unesp.br/2022/01/18/uma-visita-a-casa-dos-gigantes/"
     ],
     "x": 501.8,
     "y": 436.0,
@@ -4868,7 +4877,7 @@
     "periodo_ordem": 13,
     "formacao": "Escavada na Fm. Taciba (Grupo Itararé, Permiano) — estrutura cenozóica",
     "taxon": "Megaichnus major (paleotoca de Doutor Pedrinho)",
-    "categoria": "Icnofóssil — paleotoca (Xenarthra)",
+    "categoria": "Icnofóssil — paleotoca",
     "numero_catalogo": "-",
     "local_coleta": "Paleotoca de Doutor Pedrinho, Doutor Pedrinho, SC",
     "site": "Paleotoca de Doutor Pedrinho",
@@ -4880,12 +4889,13 @@
     "descritor": "Buchmann, F.S.C., Lopes, R.P. & Caron, F. (2009) — Revista Brasileira de Paleontologia 12(3):247–256; Lopes, R.P., Frank, H.T., Buchmann, F.S. & Caron, F. (2017) — Ichnos 24:133–145 (erige Megaichnus igen. nov.)",
     "unidade_pesquisa": "UNESP-Litoral Paulista; UFRGS; UNIPAMPA",
     "idade_ma": "Plioceno–Pleistoceno",
-    "observacoes": "ICNOTAXONOMIA: desde Lopes et al. (2017) estas estruturas têm nome formal — o icnogênero Megaichnus, dividido em M. major (atribuído a preguiças-gigantes, Mylodontidae) e M. minor (atribuído a tatus-gigantes, Cingulata). Santa Catarina e Rio Grande do Sul concentram a maior abundância conhecida de paleotocas do mundo, com várias centenas de registros em cada estado. Paleotoca escavada no ARENITO DA FORMAÇÃO TACIBA (Permiano) — caso que ilustra bem a natureza destes icnofósseis: a estrutura é do Plioceno–Pleistoceno, mas a rocha escavada é ~270 milhões de anos mais antiga. Documentada por fotogrametria, com geração de modelo tridimensional.",
+    "observacoes": "Classificação: paleotoca — estrutura de habitação (Domichnia) escavada por mamíferos da megafauna. ICNOTAXONOMIA: desde Lopes et al. (2017) estas estruturas têm nome formal — o icnogênero Megaichnus, dividido em M. major (atribuído a preguiças-gigantes, Mylodontidae) e M. minor (atribuído a tatus-gigantes, Cingulata). Segundo F. S. C. Buchmann, em entrevista ao Jornal da Unesp (2022), mais de duas mil paleotocas foram registradas no Brasil, 99% delas entre o sul de Santa Catarina e o norte do Rio Grande do Sul. Paleotoca escavada no ARENITO DA FORMAÇÃO TACIBA (Permiano) — caso que ilustra bem a natureza destes icnofósseis: a estrutura é do Plioceno–Pleistoceno, mas a rocha escavada é ~270 milhões de anos mais antiga. Documentada por fotogrametria, com geração de modelo tridimensional.",
     "doi": "10.4072/rbp.2009.3.07",
     "fontes": [
       "https://doi.org/10.4072/rbp.2009.3.07",
       "https://sbpbrasil.org/publications/index.php/rbp/article/download/428/254/9081",
-      "https://www.researchgate.net/publication/365772145_Fotogrametria_de_um_icnofossil_escavado_por_preguicas-gigantes_Megaichnus_major"
+      "https://www.researchgate.net/publication/365772145_Fotogrametria_de_um_icnofossil_escavado_por_preguicas-gigantes_Megaichnus_major",
+      "https://jornal.unesp.br/2022/01/18/uma-visita-a-casa-dos-gigantes/"
     ],
     "x": 505.2,
     "y": 173.4,
@@ -4898,7 +4908,7 @@
     "periodo_ordem": 13,
     "formacao": "Depósitos cenozóicos / rochas sedimentares do Planalto Norte",
     "taxon": "Megaichnus isp. (paleotocas de Porto União)",
-    "categoria": "Icnofóssil — paleotoca (Xenarthra)",
+    "categoria": "Icnofóssil — paleotoca",
     "numero_catalogo": "-",
     "local_coleta": "Paleotocas de Porto União, Porto União, SC",
     "site": "Paleotocas de Porto União",
@@ -4910,12 +4920,13 @@
     "descritor": "Buchmann, F.S.C., Lopes, R.P. & Caron, F. (2009) — Revista Brasileira de Paleontologia 12(3):247–256; Lopes, R.P., Frank, H.T., Buchmann, F.S. & Caron, F. (2017) — Ichnos 24:133–145 (erige Megaichnus igen. nov.)",
     "unidade_pesquisa": "UNESP-Litoral Paulista; UFRGS; UNIPAMPA",
     "idade_ma": "Plioceno–Pleistoceno",
-    "observacoes": "ICNOTAXONOMIA: desde Lopes et al. (2017) estas estruturas têm nome formal — o icnogênero Megaichnus, dividido em M. major (atribuído a preguiças-gigantes, Mylodontidae) e M. minor (atribuído a tatus-gigantes, Cingulata). Santa Catarina e Rio Grande do Sul concentram a maior abundância conhecida de paleotocas do mundo, com várias centenas de registros em cada estado. Conjunto de paleotocas do Planalto Norte catarinense, analisadas em conjunto com as de União da Vitória (PR), do outro lado do rio Iguaçu. Levantadas pelo método de amostragem em bola de neve (snowball sampling), com medição de altura e largura dos túneis.",
+    "observacoes": "Classificação: paleotoca — estrutura de habitação (Domichnia) escavada por mamíferos da megafauna. ICNOTAXONOMIA: desde Lopes et al. (2017) estas estruturas têm nome formal — o icnogênero Megaichnus, dividido em M. major (atribuído a preguiças-gigantes, Mylodontidae) e M. minor (atribuído a tatus-gigantes, Cingulata). Segundo F. S. C. Buchmann, em entrevista ao Jornal da Unesp (2022), mais de duas mil paleotocas foram registradas no Brasil, 99% delas entre o sul de Santa Catarina e o norte do Rio Grande do Sul. Conjunto de paleotocas do Planalto Norte catarinense, analisadas em conjunto com as de União da Vitória (PR), do outro lado do rio Iguaçu. Levantadas pelo método de amostragem em bola de neve (snowball sampling), com medição de altura e largura dos túneis.",
     "doi": "10.4072/rbp.2009.3.07",
     "fontes": [
       "https://doi.org/10.4072/rbp.2009.3.07",
       "https://sbpbrasil.org/publications/index.php/rbp/article/download/428/254/9081",
-      "https://rsdjournal.org/rsd/article/view/19176"
+      "https://rsdjournal.org/rsd/article/view/19176",
+      "https://jornal.unesp.br/2022/01/18/uma-visita-a-casa-dos-gigantes/"
     ],
     "x": 322.6,
     "y": 71.4,
@@ -5174,7 +5185,7 @@
     "periodo_ordem": 8,
     "formacao": "Fm. Rio Bonito, Mb. Paraguaçu / Grupo Guatá",
     "taxon": "Sementes tipo Cordaicarpus e Samaropsis (mal preservadas)",
-    "categoria": "Flora — sementes (Cordaitophyta)",
+    "categoria": "Flora — semente",
     "numero_catalogo": "-",
     "local_coleta": "Afloramento Igreja, próximo à margem esquerda do rio Taió, Taió, SC",
     "site": "Afloramento Igreja",
@@ -5186,7 +5197,7 @@
     "descritor": "Boardman, D.R. (2006) — \"Tafoflora de Taió, Santa Catarina (Permiano Inferior, Formação Rio Bonito, Bacia do Paraná)\", Dissertação de Mestrado, UFRGS; Boardman, Iannuzzi & Dutra — \"Esfenófitas da Formação Rio Bonito (Permiano Inferior) na região de Taió, Santa Catarina, Brasil\"",
     "unidade_pesquisa": "UFRGS; UNISINOS",
     "idade_ma": "ca. 290–272 Ma (Permiano Inferior)",
-    "observacoes": "Associação de sementes mal preservadas, com raros fragmentos vegetais não identificáveis. Taió era conhecida por suas exposições de depósitos MARINHOS, com pectinídeos e equinodermas do Membro Paraguaçu. O achado de níveis com restos vegetais na BASE do mesmo membro, próximo aos afloramentos já conhecidos, ampliou o registro fossilífero local e ajuda a entender a evolução dos paleoambientes deposicionais nesta porção da bacia. O material paleobotânico de Taió provém de três localidades distintas: afloramentos Bruno Peiker, Clube Caça e Tiro e Igreja.",
+    "observacoes": "Classificação: sementes (Cordaitophyta). Associação de sementes mal preservadas, com raros fragmentos vegetais não identificáveis. Taió era conhecida por suas exposições de depósitos MARINHOS, com pectinídeos e equinodermas do Membro Paraguaçu. O achado de níveis com restos vegetais na BASE do mesmo membro, próximo aos afloramentos já conhecidos, ampliou o registro fossilífero local e ajuda a entender a evolução dos paleoambientes deposicionais nesta porção da bacia. O material paleobotânico de Taió provém de três localidades distintas: afloramentos Bruno Peiker, Clube Caça e Tiro e Igreja.",
     "fontes": [
       "https://lume.ufrgs.br/handle/10183/9988",
       "https://www.researchgate.net/publication/260136127_Esfenofitas_da_Formacao_Rio_Bonito_Permiano_Inferior_na_regiao_de_Taio_Santa_Catarina_Brasil"
@@ -6161,5 +6172,89 @@
     "tipo_fonte": "Artigo em periódico",
     "x": 447.4,
     "y": 255.4
+  },
+  {
+    "id": 227,
+    "periodo": "Pleistoceno",
+    "era": "Cenozóico — Quaternário",
+    "periodo_ordem": 14,
+    "formacao": "Estrutura cenozoica (paleotoca) — rocha encaixante não informada na fonte consultada",
+    "taxon": "Paleotoca da Cavidade Linha Mimosa (icnofóssil de escavação de megafauna)",
+    "categoria": "Icnofóssil — paleotoca",
+    "numero_catalogo": "-",
+    "local_coleta": "Cavidade Linha Mimosa, zona rural de Lindóia do Sul, SC (coordenada do município; a da cavidade não foi identificada na fonte consultada)",
+    "site": "Linha Mimosa (Lindóia do Sul)",
+    "municipio": "Lindóia do Sul",
+    "lat": -27.0268,
+    "lon": -52.0515,
+    "bacia": "Bacia do Paraná — paleotoca cenozoica",
+    "armazenamento": "Estrutura in situ (icnofóssil não coletável)",
+    "descritor": "Budke, A., Lima, G.L. & Carbonera, M. (2020) — \"Análise de cavidades naturais presentes no oeste de Santa Catarina: um estudo de caso no município de Lindóia do Sul\", Boletim Paranaense de Geociências 77:1–12",
+    "unidade_pesquisa": "UFFS — Campus Chapecó",
+    "idade_ma": "Pleistoceno",
+    "tipo_fonte": "Artigo em periódico",
+    "observacoes": "Classificação: paleotoca — estrutura de habitação (Domichnia) escavada por mamíferos da megafauna. Das três cavidades naturais investigadas na zona rural de Lindóia do Sul, os autores concluíram que a Cavidade Linha Mimosa é uma PALEOTOCA, esculpida por processos biogênicos de mamíferos da megafauna do Pleistoceno; as outras duas não foram atribuídas a megafauna. É o primeiro registro paleontológico do OESTE catarinense neste catálogo. RESSALVA: a fonte consultada publica coordenadas de duas das cavidades, mas não foi possível identificar qual corresponde à Linha Mimosa — usa-se a coordenada central do município.",
+    "fontes": [
+      "https://rd.uffs.edu.br/bitstream/prefix/2879/1/BUDKE.pdf",
+      "https://jornalgeograficouffs.wordpress.com/2020/09/02/um-estudo-sobre-cavidades-naturais/"
+    ],
+    "x": 211.3,
+    "y": 237.9
+  },
+  {
+    "id": 228,
+    "periodo": "Permiano Inferior",
+    "era": "Paleozóico — Permiano",
+    "periodo_ordem": 8,
+    "formacao": "Fm. Rio Bonito, Mb. Siderópolis / Grupo Guatá — camada de carvão Barro Branco",
+    "taxon": "Carvão vegetal fóssil (macro-charcoal) de gimnospermas",
+    "categoria": "Flora — carvão vegetal fóssil",
+    "numero_catalogo": "-",
+    "local_coleta": "Afloramento Porongos, Lauro Müller, SC (28°25'21,4\"S, 49°26'24,0\"W, coordenada publicada)",
+    "site": "Afloramento Porongos (Lauro Müller)",
+    "municipio": "Lauro Müller",
+    "lat": -28.4226,
+    "lon": -49.44,
+    "bacia": "Bacia do Paraná — Fm. Rio Bonito",
+    "armazenamento": "Não informado na fonte consultada",
+    "descritor": "Benicio, J.R.W., Jasper, A., Spiekermann, R., Garavaglia, L., Pires-Oliveira, E.F., Machado, N.T.G. & Uhl, D. (2019) — \"Recurrent palaeo-wildfires in a Cisuralian coal seam: A palaeobotanical view on high-inertinite coals from the Lower Permian of the Paraná Basin, Brazil\", PLoS ONE 14(3):e0213854",
+    "doi": "10.1371/journal.pone.0213854",
+    "unidade_pesquisa": "Univates; Senckenberg (Frankfurt)",
+    "idade_ma": "ca. 290–283 Ma (Artinskiano)",
+    "tipo_fonte": "Artigo em periódico",
+    "observacoes": "Primeira análise detalhada de carvão vegetal fóssil (macro-charcoal) da camada Barro Branco. O carvão aparece nos SEIS níveis carbonosos da sucessão de 2,85 m, o que confirma INCÊNDIOS RECORRENTES durante a formação da turfa. Os dados paleobotânicos e petrológicos indicam vegetação dominada por gimnospermas submetida repetidamente ao fogo, e reforçam a hipótese de que as turfeiras gondwânicas do Cisuraliano eram sistemas de fogo frequente.",
+    "fontes": [
+      "https://doi.org/10.1371/journal.pone.0213854"
+    ],
+    "x": 509.7,
+    "y": 532.5
+  },
+  {
+    "id": 229,
+    "periodo": "Permiano Inferior",
+    "era": "Paleozóico — Permiano",
+    "periodo_ordem": 8,
+    "formacao": "Fm. Rio Bonito, Mb. Siderópolis / Grupo Guatá — nível acima da camada de carvão Bonito",
+    "taxon": "Brasilodendron pedroanum (Carruthers) Chaloner, Leistikow & Hill",
+    "categoria": "Flora — Lycopodiopsida (licófita)",
+    "numero_catalogo": "-",
+    "local_coleta": "Mina Bonito I, bacia carbonífera de Santa Catarina (município não informado na fonte consultada)",
+    "site": "Paleoflora Siderópolis (região carbonífera)",
+    "municipio": "Siderópolis (região)",
+    "lat": -28.595,
+    "lon": -49.43,
+    "bacia": "Bacia do Paraná — Fm. Rio Bonito",
+    "armazenamento": "Não informado na fonte consultada",
+    "descritor": "Manfroi, J., Jasper, A., Guerra-Sommer, M. & Uhl, D. (2012) — \"Sub-arborescent lycophytes in coal-bearing strata from the Artinskian (Early Permian/Cisuralian) of the Santa Catarina coalfield (Paraná Basin, SC, Brazil)\", Revista Brasileira de Paleontologia 15(2):135–140",
+    "doi": "10.4072/rbp.2012.2.02",
+    "unidade_pesquisa": "Univates; UFRGS; Senckenberg (Frankfurt)",
+    "idade_ma": "Artinskiano (Permiano Inferior)",
+    "tipo_fonte": "Artigo em periódico",
+    "observacoes": "Fragmentos de caule comprimidos de licófitas subarborescentes, preservados como moldes, de um nível clástico sobreposto à camada de carvão Bonito, na mina Bonito I. Os autores interpretam as plantas com esse tipo de almofada foliar como componente importante das associações formadoras de turfa costeira do Permiano Inferior, e como contribuintes relevantes para a biomassa original dos carvões. RESSALVA: a fonte consultada não informa o município da mina; o registro usa a coordenada regional da bacia carbonífera.",
+    "fontes": [
+      "https://www.sbpbrasil.org/revista/edicoes/15_2/RBP_02_Manfroi_et_al_Final.pdf"
+    ],
+    "x": 510.9,
+    "y": 568.9
   }
 ]

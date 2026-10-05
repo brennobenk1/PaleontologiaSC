@@ -390,7 +390,7 @@ function renderCatalogTable(list){
 /* Números de registro que deixaram de existir. Um permalink já citado não
    pode simplesmente abrir um modal vazio: explica-se o que houve. */
 const REGISTROS_REMOVIDOS = {
-  17:  'Duplicata do registro nº 055 (Crioselache wittigi): era o mesmo dente, cadastrado antes de receber nome. Removido na versão 2026.09.7.',
+  17:  'Duplicata do registro nº 055 (Crioselache wittigi): era o mesmo dente, cadastrado antes de receber nome. Removido na versão 2026.09.8.',
   184: 'Registro de cf. Melosaurus sp., retirado na versão 2026.08 por não haver ocorrência documentada desse gênero em Santa Catarina.'
 };
 
@@ -1614,7 +1614,7 @@ const CITACAO = {
   // senão a citação sai como "PALEO-SC. Paleo-SC — Banco de Dados..."
   entidade: 'Paleo-SC',
   titulo: 'Banco de Dados Paleontológico de Santa Catarina',
-  versao: '2026.09.7',
+  versao: '2026.09.8',
   ano: '2026',
   url: 'https://brennobenk1.github.io/PaleontologiaSC/'
 };

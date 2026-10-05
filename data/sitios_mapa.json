@@ -292,7 +292,7 @@
     "lon": -49.6306,
     "count": 1,
     "periodos": [
-      "Pleistoceno–Holoceno"
+      "Pleistoceno Superior – Holoceno"
     ],
     "taxons_amostra": [
       "Registro paleoambiental (fitólitos, palinomorfos)"
@@ -400,8 +400,8 @@
     "site": "Timbé do Sul (rio Rocinha)",
     "municipio": "Timbé do Sul",
     "bacia": "Bacia do Paraná — Fm. Botucatu",
-    "lat": -28.8244,
-    "lon": -49.9183,
+    "lat": -28.7726,
+    "lon": -49.8961,
     "count": 1,
     "periodos": [
       "Plioceno–Pleistoceno"
@@ -409,8 +409,8 @@
     "taxons_amostra": [
       "Paleotoca Toca do Tatu (icnofóssil de escavação — Xenarthra)"
     ],
-    "x": 455.1,
-    "y": 617.4
+    "x": 457.6,
+    "y": 606.4
   },
   {
     "site": "Paleotoca do Engenho Velho",
@@ -723,13 +723,14 @@
     "bacia": "Bacia do Paraná — Fm. Rio Bonito",
     "lat": -28.595,
     "lon": -49.43,
-    "count": 2,
+    "count": 3,
     "periodos": [
       "Permiano Inferior"
     ],
     "taxons_amostra": [
       "Vertebraria isp. (sistema radicular de glossopteridófita)",
-      "Macroflora Siderópolis — associação glossopteridófita"
+      "Macroflora Siderópolis — associação glossopteridófita",
+      "Brasilodendron pedroanum (Carruthers) Chaloner, Leistikow & Hill"
     ],
     "x": 510.9,
     "y": 568.9
@@ -935,5 +936,37 @@
     ],
     "x": 447.4,
     "y": 255.4
+  },
+  {
+    "site": "Linha Mimosa (Lindóia do Sul)",
+    "municipio": "Lindóia do Sul",
+    "bacia": "Bacia do Paraná — paleotoca cenozoica",
+    "lat": -27.0268,
+    "lon": -52.0515,
+    "count": 1,
+    "periodos": [
+      "Pleistoceno"
+    ],
+    "taxons_amostra": [
+      "Paleotoca da Cavidade Linha Mimosa (icnofóssil de escavação de megafauna)"
+    ],
+    "x": 211.3,
+    "y": 237.9
+  },
+  {
+    "site": "Afloramento Porongos (Lauro Müller)",
+    "municipio": "Lauro Müller",
+    "bacia": "Bacia do Paraná — Fm. Rio Bonito",
+    "lat": -28.4226,
+    "lon": -49.44,
+    "count": 1,
+    "periodos": [
+      "Permiano Inferior"
+    ],
+    "taxons_amostra": [
+      "Carvão vegetal fóssil (macro-charcoal) de gimnospermas"
+    ],
+    "x": 509.7,
+    "y": 532.5
   }
 ]
