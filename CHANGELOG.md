@@ -6,6 +6,73 @@ saber o que havia nele naquele momento.
 
 Formato: as versões seguem `ANO.MÊS.N`.
 
+## 2026.09.10 — 05/10/2026 · revisão do Campáleo pelo artigo de referência
+
+Revisão dos registros do Afloramento Campáleo contra o texto completo de
+**Mouro et al. (2020)**, *Palaeogeography, Palaeoclimatology,
+Palaeoecology* 555: 109850 — fonte principal do sítio.
+
+### Unidade, idade e localização (38 registros)
+- O Folhelho Lontras passa a constar como **topo da Fm. Campo Mourão**
+  (França & Potter, 1988); na nomenclatura de superfície de SC, base da
+  Fm. Rio do Sul. Antes, metade das fichas citava uma unidade e metade a
+  outra.
+- **A idade está em discussão** na fonte: conodontes (*Mesogondolella*
+  spp.) e palinologia (Zona *Vittatina costabilis*) indicam Cisuraliano;
+  datações U-Pb em zircão apontam Pennsylvaniano, e a palinologia de 2023
+  sugere Gzheliano. As fichas afirmavam "Permiano Inferior (Asseliano)"
+  como fato e passam ao intervalo **Carbonífero – Permiano Inferior**
+  (ca. 303–295 Ma), com a divergência explicada. O período "Permiano
+  Inferior (Cisuraliano)" ficou sem registros e saiu da linha do tempo
+  (18 → 17 intervalos).
+- Localização conforme o artigo: BR-280, a 2 km do entroncamento com a
+  BR-116 (26°09′30,22″S, 49°48′52,82″W).
+
+### Duplicatas removidas
+- **Nº 016** repetia os dois morfotipos de peixe com encéfalo preservado
+  do nº 098, com ano errado ("Figueroa et al., 2025"; o artigo é de 2024)
+  e link para o artigo de outra localidade.
+- **Nº 023** ("Conodontes — 5–6 espécies", apoiado em reportagem) repetia
+  o nº 095, *Mesogondolella* spp.
+
+### Fichas corrigidas
+- **Nº 015** passa a representar a ictiofauna de actinopterígios basais
+  (mais de 200 exemplares; exemplar figurado CP.V 5202a). Saíram o ano
+  errado e a preservação de "coração", que não tinha fonte.
+- **Nº 022** passa a ser a possível **demosponja** descrita por Mouro
+  (2017), de amostra coletada por Oliveira em 1927 e guardada no New York
+  State Museum.
+- **Nº 042**: insetos das ordens **Blattodea e Grylloblattodea** (a ficha
+  dizia "ordens não determinadas").
+- *Biconvexiella* sp. → ***Biconvexiella roxoi***; *Beecheria* e
+  *Quinquenella* ganham "?", como na fonte.
+- *Microhemidiscia greinerti*: referência completa (*J. Paleontol.*
+  88(1): 171–178) e quase cem exemplares completos.
+- *Anthracoblattina mendesi*: cerca de 54% dos mais de cem insetos; número
+  de espécime CP/E 3755b.
+
+### Registros novos
+- **Estojos larvais de Trichoptera/Permotrichoptera** — possivelmente os
+  mais antigos conhecidos (Mouro et al., 2016, *Scientific Reports*
+  6: 19215).
+- **Estrutura semelhante a âmbar**, comunicada como possível primeiro
+  âmbar paleozoico da Bacia do Paraná — com a ressalva de que segue em
+  descrição.
+
+### Navegação (defeito também presente no site publicado)
+- **O botão "voltar" saía do site.** Toda navegação substituía o endereço
+  sem criar entrada no histórico; quem abria uma ficha e apertava
+  "voltar" — no celular, o gesto natural para fechá-la — deixava o
+  Paleo-SC. Agora trocar de aba ou abrir uma ficha cria entrada no
+  histórico, e mexer só nos filtros continua substituindo, para não
+  acumular uma entrada por letra digitada.
+- **Mudar de rota deixava a ficha aberta** por cima da nova aba. Agora a
+  ficha fecha.
+- Fechar a ficha no X ou no Esc equivale a voltar, sem pares repetidos no
+  histórico. Endereço sem rota mostra o Início.
+
+Catálogo: 227 registros (−2 duplicatas, +2 novos).
+
 ## 2026.09.9 — 05/10/2026 · correções de nomenclatura e de referências
 
 A partir de uma dúvida sobre o registro nº 014, revisão das referências

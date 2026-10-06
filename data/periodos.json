@@ -216,7 +216,7 @@
     "fim_ma": 295,
     "cor": "#3d6b52",
     "descricao": "Intervalo glacial a pós-glacial do Grupo Itararé, com rica fauna de invertebrados marinhos e icnofósseis associados a ambientes deltaicos e marinhos rasos.",
-    "total_registros": 25,
+    "total_registros": 63,
     "taxons": [
       {
         "taxon": "Protovirgularia isp.",
@@ -279,6 +279,258 @@
         "count": 1,
         "ids": [
           14
+        ]
+      },
+      {
+        "taxon": "Palaeoniscidae / Actinopterygii basais (ictiofauna do Campáleo)",
+        "count": 1,
+        "ids": [
+          15
+        ]
+      },
+      {
+        "taxon": "Chondrichthyes indet. (2 dentes)",
+        "count": 1,
+        "ids": [
+          18
+        ]
+      },
+      {
+        "taxon": "Crossopterygii (celacanto) — morfotipos de escamas",
+        "count": 1,
+        "ids": [
+          19
+        ]
+      },
+      {
+        "taxon": "Anthracoblattina mendesi Pinto & Sedor, 2000",
+        "count": 1,
+        "ids": [
+          20
+        ]
+      },
+      {
+        "taxon": "Braquiópodes indet. (Brachiopoda)",
+        "count": 1,
+        "ids": [
+          21
+        ]
+      },
+      {
+        "taxon": "?Demospongiae indet. (possível demosponja)",
+        "count": 1,
+        "ids": [
+          22
+        ]
+      },
+      {
+        "taxon": "Restos vegetais (fragmentos)",
+        "count": 1,
+        "ids": [
+          24
+        ]
+      },
+      {
+        "taxon": "Coprólitos (Coprolita espiralada)",
+        "count": 1,
+        "ids": [
+          25
+        ]
+      },
+      {
+        "taxon": "Orbiculoidea guaraunensis Oliveira, 1930",
+        "count": 1,
+        "ids": [
+          41
+        ]
+      },
+      {
+        "taxon": "Insecta — Blattodea e Grylloblattodea (morfotipos além de Anthracoblattina mendesi)",
+        "count": 1,
+        "ids": [
+          42
+        ]
+      },
+      {
+        "taxon": "Ammonoidea indet. (afim. Uraloceras)",
+        "count": 1,
+        "ids": [
+          45
+        ]
+      },
+      {
+        "taxon": "Gastropoda indet.",
+        "count": 1,
+        "ids": [
+          46
+        ]
+      },
+      {
+        "taxon": "Chonetes rionegrensis",
+        "count": 1,
+        "ids": [
+          47
+        ]
+      },
+      {
+        "taxon": "Langella imbituvensis",
+        "count": 1,
+        "ids": [
+          48
+        ]
+      },
+      {
+        "taxon": "Beecheria? sp.",
+        "count": 1,
+        "ids": [
+          49
+        ]
+      },
+      {
+        "taxon": "Biconvexiella roxoi",
+        "count": 1,
+        "ids": [
+          50
+        ]
+      },
+      {
+        "taxon": "Quinquenella? sp.",
+        "count": 1,
+        "ids": [
+          51
+        ]
+      },
+      {
+        "taxon": "Discinidae indet.",
+        "count": 1,
+        "ids": [
+          52
+        ]
+      },
+      {
+        "taxon": "Microhemidiscia greinerti",
+        "count": 1,
+        "ids": [
+          53
+        ]
+      },
+      {
+        "taxon": "Reticulosa indet.",
+        "count": 1,
+        "ids": [
+          54
+        ]
+      },
+      {
+        "taxon": "Crioselache wittigi",
+        "count": 1,
+        "ids": [
+          55
+        ]
+      },
+      {
+        "taxon": "Daphnaechelus sp.",
+        "count": 1,
+        "ids": [
+          56
+        ]
+      },
+      {
+        "taxon": "Irajapintoseidon uruguayensis Beltan, 1975",
+        "count": 1,
+        "ids": [
+          57
+        ]
+      },
+      {
+        "taxon": "Roslerichthys riomafrensis Hamel, 2005",
+        "count": 1,
+        "ids": [
+          58
+        ]
+      },
+      {
+        "taxon": "Santosichthys mafrensis Malabarba, 1988",
+        "count": 1,
+        "ids": [
+          59
+        ]
+      },
+      {
+        "taxon": "Coelacanthus sp.",
+        "count": 1,
+        "ids": [
+          60
+        ]
+      },
+      {
+        "taxon": "Annelida indet. (escolecodontes) / Paulinitidae / Polychaetaspidae",
+        "count": 1,
+        "ids": [
+          61
+        ]
+      },
+      {
+        "taxon": "Eumalacostraca indet. / Ostracoda indet.",
+        "count": 1,
+        "ids": [
+          62
+        ]
+      },
+      {
+        "taxon": "Arachnostega isp.",
+        "count": 1,
+        "ids": [
+          63
+        ]
+      },
+      {
+        "taxon": "Oichnus paraboloides / O. simplex",
+        "count": 1,
+        "ids": [
+          64
+        ]
+      },
+      {
+        "taxon": "Enterospira (espiral intestinal)",
+        "count": 1,
+        "ids": [
+          65
+        ]
+      },
+      {
+        "taxon": "Agathoxylon sp. / Abietopitys sp.",
+        "count": 1,
+        "ids": [
+          66
+        ]
+      },
+      {
+        "taxon": "Mesogondolella spp.",
+        "count": 1,
+        "ids": [
+          95
+        ]
+      },
+      {
+        "taxon": "Actinopterygii indet. — dois morfotipos com encéfalo e tecidos moles preservados em 3D",
+        "count": 1,
+        "ids": [
+          98
+        ]
+      },
+      {
+        "taxon": "Foraminifera bentônicos aglutinantes (indet.)",
+        "count": 1,
+        "ids": [
+          99
+        ]
+      },
+      {
+        "taxon": "Palinoflora do Campáleo (esporos, grãos de pólen, fungos e algas)",
+        "count": 1,
+        "ids": [
+          100
         ]
       },
       {
@@ -392,6 +644,20 @@
         "ids": [
           224
         ]
+      },
+      {
+        "taxon": "Estojos larvais de Trichoptera / Permotrichoptera",
+        "count": 1,
+        "ids": [
+          230
+        ]
+      },
+      {
+        "taxon": "Estrutura semelhante a âmbar (possível resina fóssil)",
+        "count": 1,
+        "ids": [
+          231
+        ]
       }
     ]
   },
@@ -403,291 +669,13 @@
     "fim_ma": 295,
     "cor": "#6b8f5e",
     "descricao": "Primeiro andar do Permiano Inferior (Cisuraliano); em Mafra corresponde ao Folhelho Lontras, com o mais importante conjunto de tetrápodes permianos de Santa Catarina.",
-    "total_registros": 38,
+    "total_registros": 1,
     "taxons": [
-      {
-        "taxon": "Actinopterygii indet. (paleoniscídeos) — morfotipo 1",
-        "count": 1,
-        "ids": [
-          15
-        ]
-      },
-      {
-        "taxon": "Actinopterygii indet. — morfotipo 2",
-        "count": 1,
-        "ids": [
-          16
-        ]
-      },
-      {
-        "taxon": "Chondrichthyes indet. (2 dentes)",
-        "count": 1,
-        "ids": [
-          18
-        ]
-      },
-      {
-        "taxon": "Crossopterygii (celacanto) — morfotipos de escamas",
-        "count": 1,
-        "ids": [
-          19
-        ]
-      },
-      {
-        "taxon": "Anthracoblattina mendesi Pinto & Sedor, 2000",
-        "count": 1,
-        "ids": [
-          20
-        ]
-      },
-      {
-        "taxon": "Braquiópodes indet. (Brachiopoda)",
-        "count": 1,
-        "ids": [
-          21
-        ]
-      },
-      {
-        "taxon": "Poríferos (Porifera indet.)",
-        "count": 1,
-        "ids": [
-          22
-        ]
-      },
-      {
-        "taxon": "Conodontes (Conodonta indet.) — 5–6 espécies",
-        "count": 1,
-        "ids": [
-          23
-        ]
-      },
-      {
-        "taxon": "Restos vegetais (fragmentos)",
-        "count": 1,
-        "ids": [
-          24
-        ]
-      },
-      {
-        "taxon": "Coprólitos (Coprolita espiralada)",
-        "count": 1,
-        "ids": [
-          25
-        ]
-      },
-      {
-        "taxon": "Orbiculoidea guaraunensis Oliveira, 1930",
-        "count": 1,
-        "ids": [
-          41
-        ]
-      },
-      {
-        "taxon": "Insecta indet. (morfotipos adicionais, ordens não determinadas)",
-        "count": 1,
-        "ids": [
-          42
-        ]
-      },
       {
         "taxon": "Biota fóssil similar ao Campáleo (larvas, coprólitos, braquiópodes, esponjas, peixes)",
         "count": 1,
         "ids": [
           43
-        ]
-      },
-      {
-        "taxon": "Ammonoidea indet. (afim. Uraloceras)",
-        "count": 1,
-        "ids": [
-          45
-        ]
-      },
-      {
-        "taxon": "Gastropoda indet.",
-        "count": 1,
-        "ids": [
-          46
-        ]
-      },
-      {
-        "taxon": "Chonetes rionegrensis",
-        "count": 1,
-        "ids": [
-          47
-        ]
-      },
-      {
-        "taxon": "Langella imbituvensis",
-        "count": 1,
-        "ids": [
-          48
-        ]
-      },
-      {
-        "taxon": "Beecheria sp.",
-        "count": 1,
-        "ids": [
-          49
-        ]
-      },
-      {
-        "taxon": "Biconvexiella sp.",
-        "count": 1,
-        "ids": [
-          50
-        ]
-      },
-      {
-        "taxon": "Quinquenella sp.",
-        "count": 1,
-        "ids": [
-          51
-        ]
-      },
-      {
-        "taxon": "Discinidae indet.",
-        "count": 1,
-        "ids": [
-          52
-        ]
-      },
-      {
-        "taxon": "Microhemidiscia greinerti",
-        "count": 1,
-        "ids": [
-          53
-        ]
-      },
-      {
-        "taxon": "Reticulosa indet.",
-        "count": 1,
-        "ids": [
-          54
-        ]
-      },
-      {
-        "taxon": "Crioselache wittigi",
-        "count": 1,
-        "ids": [
-          55
-        ]
-      },
-      {
-        "taxon": "Daphnaechelus sp.",
-        "count": 1,
-        "ids": [
-          56
-        ]
-      },
-      {
-        "taxon": "Irajapintoseidon uruguayensis Beltan, 1975",
-        "count": 1,
-        "ids": [
-          57
-        ]
-      },
-      {
-        "taxon": "Roslerichthys riomafrensis Hamel, 2005",
-        "count": 1,
-        "ids": [
-          58
-        ]
-      },
-      {
-        "taxon": "Santosichthys mafrensis Malabarba, 1988",
-        "count": 1,
-        "ids": [
-          59
-        ]
-      },
-      {
-        "taxon": "Coelacanthus sp.",
-        "count": 1,
-        "ids": [
-          60
-        ]
-      },
-      {
-        "taxon": "Annelida indet. (escolecodontes) / Paulinitidae / Polychaetaspidae",
-        "count": 1,
-        "ids": [
-          61
-        ]
-      },
-      {
-        "taxon": "Eumalacostraca indet. / Ostracoda indet.",
-        "count": 1,
-        "ids": [
-          62
-        ]
-      },
-      {
-        "taxon": "Arachnostega isp.",
-        "count": 1,
-        "ids": [
-          63
-        ]
-      },
-      {
-        "taxon": "Oichnus paraboloides / O. simplex",
-        "count": 1,
-        "ids": [
-          64
-        ]
-      },
-      {
-        "taxon": "Enterospira (espiral intestinal)",
-        "count": 1,
-        "ids": [
-          65
-        ]
-      },
-      {
-        "taxon": "Agathoxylon sp. / Abietopitys sp.",
-        "count": 1,
-        "ids": [
-          66
-        ]
-      },
-      {
-        "taxon": "Actinopterygii indet. — dois morfotipos com encéfalo e tecidos moles preservados em 3D",
-        "count": 1,
-        "ids": [
-          98
-        ]
-      },
-      {
-        "taxon": "Foraminifera bentônicos aglutinantes (indet.)",
-        "count": 1,
-        "ids": [
-          99
-        ]
-      },
-      {
-        "taxon": "Palinoflora do Campáleo (esporos, grãos de pólen, fungos e algas)",
-        "count": 1,
-        "ids": [
-          100
-        ]
-      }
-    ]
-  },
-  {
-    "nome": "Permiano Inferior (Cisuraliano)",
-    "ordem": 7,
-    "era": "Paleozóico",
-    "inicio_ma": 298.9,
-    "fim_ma": 279.3,
-    "cor": "#6b8f5e",
-    "descricao": "Série Cisuraliano do Permiano Inferior, abrangendo o intervalo de deposição do Grupo Itararé/Guatá em SC.",
-    "total_registros": 1,
-    "taxons": [
-      {
-        "taxon": "Mesogondolella spp.",
-        "count": 1,
-        "ids": [
-          95
         ]
       }
     ]

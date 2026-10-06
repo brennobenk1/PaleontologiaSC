@@ -390,8 +390,10 @@ function renderCatalogTable(list){
 /* Números de registro que deixaram de existir. Um permalink já citado não
    pode simplesmente abrir um modal vazio: explica-se o que houve. */
 const REGISTROS_REMOVIDOS = {
-  17:  'Duplicata do registro nº 055 (Crioselache wittigi): era o mesmo dente, cadastrado antes de receber nome. Removido na versão 2026.09.9.',
-  184: 'Registro de cf. Melosaurus sp., retirado na versão 2026.08 por não haver ocorrência documentada desse gênero em Santa Catarina.'
+  17:  'Duplicata do registro nº 055 (Crioselache wittigi): era o mesmo dente, cadastrado antes de receber nome. Removido na versão 2026.09.10.',
+  184: 'Registro de cf. Melosaurus sp., retirado na versão 2026.08 por não haver ocorrência documentada desse gênero em Santa Catarina.',
+  16:  'Duplicata do registro nº 098: os mesmos dois morfotipos de peixe com encéfalo preservado (Figueroa et al., 2024). Removido na versão 2026.09.10.',
+  23:  'Duplicata do registro nº 095 (Mesogondolella spp.), apoiada apenas em reportagem. Removido na versão 2026.09.10.'
 };
 
 function openFossilModal(id){
@@ -1429,7 +1431,14 @@ function atualizarURL(view, extra){
   if(extra) h = extra;
   if(location.hash !== h){
     __ignorarHash = true;
-    history.replaceState(null, '', h);
+    /* Trocar de rota (outra aba, abrir uma ficha) CRIA entrada no histórico;
+       mudar só os filtros do catálogo SUBSTITUI a atual. Antes tudo usava
+       replaceState, e o botão "voltar" — no celular, o gesto natural para
+       fechar uma ficha — saía do site em vez de voltar ao catálogo. */
+    const rota = s => s.split('?')[0];
+    const ehFicha = /^#\/(registro|ave)\//.test(h);
+    if(rota(location.hash) !== rota(h)) history.pushState(ehFicha ? { paleoFicha: true } : null, '', h);
+    else history.replaceState(history.state, '', h);
     setTimeout(() => { __ignorarHash = false; }, 0);
   }
 }
@@ -1438,9 +1447,20 @@ function urlDoRegistro(id){
   return location.origin + location.pathname + '#/registro/' + id;
 }
 
+let __fechandoPorNavegacao = false;
 function aplicarHash(){
   const bruto = decodeURIComponent(location.hash.replace(/^#\/?/, ''));
-  if(!bruto) return;
+  /* Ao navegar para uma rota que não é ficha (botão "voltar", link, endereço
+     digitado), uma ficha aberta precisa fechar — antes ficava por cima da
+     nova aba. O fechamento aqui não mexe na URL: ela já é a de destino. */
+  const overlay = document.getElementById('modalOverlay');
+  if(!/^(registro|ave)\//.test(bruto) && overlay && overlay.classList.contains('open')){
+    __fechandoPorNavegacao = true;
+    closeFossilModal();
+    __fechandoPorNavegacao = false;
+  }
+  // endereço sem rota (a página inicial, alcançada pelo "voltar") mostra o Início
+  if(!bruto){ window.paleoShowView('inicio', { semUrl:true }); return; }
 
   const mReg = bruto.match(/^registro\/(\d+)/);
   if(mReg){
@@ -1504,6 +1524,10 @@ document.addEventListener('click', async e => {
 
 /* ao fechar a ficha, a URL volta para a aba — senão o link fica preso no registro */
 document.addEventListener('modal:close', () => {
+  if(__fechandoPorNavegacao) return;
+  // a ficha foi aberta criando entrada no histórico: fechar = voltar,
+  // assim o histórico não acumula pares ficha/aba repetidos
+  if(history.state && history.state.paleoFicha){ history.back(); return; }
   const ativa = document.querySelector('.view.active');
   if(ativa) atualizarURL(ativa.dataset.view);
 });
@@ -1614,7 +1638,7 @@ const CITACAO = {
   // senão a citação sai como "PALEO-SC. Paleo-SC — Banco de Dados..."
   entidade: 'Paleo-SC',
   titulo: 'Banco de Dados Paleontológico de Santa Catarina',
-  versao: '2026.09.9',
+  versao: '2026.09.10',
   ano: '2026',
   url: 'https://brennobenk1.github.io/PaleontologiaSC/'
 };

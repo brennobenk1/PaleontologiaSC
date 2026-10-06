@@ -7,16 +7,15 @@
     "lon": -49.8147,
     "count": 38,
     "periodos": [
-      "Permiano Inferior (Asseliano)",
-      "Permiano Inferior (Cisuraliano)"
+      "Carbonífero – Permiano Inferior"
     ],
     "taxons_amostra": [
-      "Actinopterygii indet. (paleoniscídeos) — morfotipo 1",
-      "Actinopterygii indet. — morfotipo 2",
+      "Palaeoniscidae / Actinopterygii basais (ictiofauna do Campáleo)",
       "Chondrichthyes indet. (2 dentes)",
       "Crossopterygii (celacanto) — morfotipos de escamas",
       "Anthracoblattina mendesi Pinto & Sedor, 2000",
-      "Braquiópodes indet. (Brachiopoda)"
+      "Braquiópodes indet. (Brachiopoda)",
+      "?Demospongiae indet. (possível demosponja)"
     ],
     "x": 466.9,
     "y": 54.5
