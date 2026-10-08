@@ -1002,3 +1002,32 @@ body::before{
   padding:0.12rem 0.6rem; color: var(--petrol-dk); cursor:pointer;
 }
 .filtro-sitio:hover{ border-color: var(--petrol); background: var(--paper); }
+
+/* aba Sobre & Fontes — lista completa de referências */
+.about-card-wide{ grid-column: 1 / -1; }
+.fontes-barra{ display:flex; justify-content:flex-end; margin:0.4rem 0 0; }
+.lista-fontes{ margin-top:0.3rem; }
+.fontes-grupo{ border-top:1px solid var(--line); padding:0.7rem 0 0.3rem; }
+.fontes-grupo > summary{
+  cursor:pointer; font-family: var(--font-mono); font-size:0.78rem; letter-spacing:0.04em;
+  text-transform:uppercase; color: var(--petrol-dk); padding:0.2rem 0;
+}
+.fontes-cont{ color: var(--texto-suave); text-transform:none; letter-spacing:0; margin-left:0.5rem; }
+.fontes-nota{ margin:0.3rem 0 0; font-size:0.8rem; color: var(--texto-suave); }
+.fontes-lista{ list-style:decimal; padding-left:1.5rem; margin:0.5rem 0 0.4rem; }
+.fonte-item{
+  display:flex; flex-wrap:wrap; gap:0.25rem 1rem; justify-content:space-between;
+  padding:0.5rem 0; border-bottom:1px dashed var(--line); font-size:0.88rem; line-height:1.5;
+}
+.fonte-texto{ flex:1 1 30rem; min-width:0; overflow-wrap:anywhere; }
+.fonte-acoes{
+  display:flex; gap:0.7rem; align-items:baseline; flex-wrap:wrap;
+  font-family: var(--font-mono); font-size:0.7rem;
+}
+.fonte-acoes a{ color: var(--petrol); }
+.fonte-ver{
+  font-family: inherit; font-size:inherit; background:none; border:1px solid var(--line-strong);
+  border-radius:999px; padding:0.1rem 0.6rem; color: var(--petrol-dk); cursor:pointer;
+  transition: border-color .15s ease, background .15s ease;
+}
+.fonte-ver:hover{ border-color: var(--petrol); background: var(--stone); }

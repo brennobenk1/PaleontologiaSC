@@ -235,6 +235,36 @@ for d in FOSSEIS:
                 _div.append((d["id"], rev or mm.group(1)))
 checar(not _div, "links do ScienceDirect coerentes com a revista citada", f"divergências: {_div}")
 
+# --- 17. referência com autoria — não pode começar direto pelo título ---
+# Motivo: dois registros tinham o campo "descritor" começando por aspas,
+# ou seja, sem autor nem ano antes do título do trabalho.
+sem_autoria = [d["id"] for d in FOSSEIS if re.match(r'^["\u201c]', d["descritor"].strip())]
+checar(not sem_autoria, "toda referência tem autoria antes do título",
+       f"descritor sem autor: {sem_autoria}")
+
+# --- 18. DOI do registro tem de estar no próprio descritor ---
+# Motivo: o registro 224 trazia o DOI da revisão de 2021 (Balistieri et al.) em vez
+# do DOI do artigo que o descritor cita (Netto et al. 2007).
+_doi_fora = []
+for d in FOSSEIS:
+    if d.get("doi"):
+        _no_texto = {x.rstrip(".,;)") for x in re.findall(r"10\.\d{4,9}/[^\s;,)\"”]+", d["descritor"])}
+        if _no_texto and d["doi"] not in _no_texto:
+            _doi_fora.append(d["id"])
+        elif not _no_texto and d["doi"].lower() not in d["descritor"].lower():
+            _doi_fora.append(d["id"])
+checar(not _doi_fora, "DOI do registro consta no descritor", f"DOI sem correspondência no descritor: {_doi_fora}")
+
+# --- 19. citação ABNT exportada tem de ser da MESMA obra do descritor ---
+# Motivo: 42 dos 98 registros que tinham citacao_abnt carregavam a citação de outro
+# trabalho (a planilha e data/fosseis.json exportam esse campo; o site não o mostra).
+import importlib.util as _iu
+_spec = _iu.spec_from_file_location("citacoes_abnt", RAIZ / "scripts" / "citacoes-abnt.py")
+_cit = _iu.module_from_spec(_spec); _spec.loader.exec_module(_cit)
+_ruim = [d["id"] for d in FOSSEIS if not d.get("citacao_abnt") or not _cit.coerente(d)]
+checar(not _ruim, "citacao_abnt coerente com o descritor",
+       f"ids: {_ruim[:15]} — rode: python3 scripts/citacoes-abnt.py")
+
 # --- avisos: não quebram o build, mas mostram dívida acumulada ---
 links = [u for d in FOSSEIS for u in d.get("fontes", [])]
 frageis = [u for u in links if re.search(r"researchgate|academia\.edu|wikipedia", u)]
@@ -245,6 +275,30 @@ com_doi = sum(1 for d in FOSSEIS if d.get("doi"))
 alertar(com_doi / max(len(FOSSEIS), 1) > 0.5,
         f"registros com DOI: {com_doi}/{len(FOSSEIS)}",
         "DOI é o identificador que não apodrece")
+
+# --- obras citadas sem título (citação incompleta) ---
+# A aba Sobre & Fontes lista cada obra uma vez. Obra científica sem título
+# entre aspas é citação incompleta: o aviso mantém a pendência visível.
+def _partes(desc, tipo):
+    if tipo in ("Divulgação ou imprensa", "Citação em revisão"):
+        return [desc]
+    out = []
+    for b in [s.strip() for s in re.split(r";\s+", desc) if s.strip()]:
+        if out and re.match(r"^[a-zà-ú(]", b):
+            out[-1] += "; " + b
+        else:
+            out.append(b)
+    return out
+_obras = {}
+for d in FOSSEIS:
+    for t in set(_partes(d["descritor"], d["tipo_fonte"])):
+        _obras.setdefault(t, set()).add(d["tipo_fonte"])
+_incompletas = [t for t, tp in _obras.items()
+                if not tp <= {"Divulgação ou imprensa", "Citação em revisão"}
+                and '"' not in t and not re.search(r"SIGEP|Dissert|Tese|Trabalho de Conclus", t)]
+alertar(len(_incompletas) == 0,
+        f"obras citadas com título: {len(_obras) - len(_incompletas)}/{len(_obras)} (incompletas: {len(_incompletas)})",
+        "complete autor, ano, título e veículo das obras listadas na aba Sobre & Fontes")
 
 print()
 if falhas:

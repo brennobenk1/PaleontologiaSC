@@ -408,9 +408,13 @@
   </div>
 
   <div class="about-grid">
-    <article class="about-card">
+    <article class="about-card about-card-wide" id="fontesSC">
       <h3>Origem dos dados — Santa Catarina</h3>
-      <p>O catálogo de Santa Catarina foi compilado a partir da literatura paleontológica publicada sobre o estado — periódicos científicos, anais de congresso e teses/dissertações — com atualização até meados de 2025–2026. As instituições de referência citadas com maior frequência são o CENPALEO/UnC, a UFRGS, a UNISINOS e a UFSC, entre outras.</p>
+      <p>O catálogo de Santa Catarina foi compilado a partir da literatura paleontológica publicada sobre o estado — periódicos científicos, capítulos do SIGEP, anais de congresso e teses/dissertações —, com atualização até meados de 2025–2026. Os <b id="fontesNumRegistros">—</b> registros apoiam-se em <b id="fontesNumRefs">—</b> obras distintas, <b>todas listadas abaixo</b>, agrupadas pela natureza da fonte; cada obra é citada uma única vez e leva aos registros que sustenta. O material está depositado em <b id="fontesNumInst">—</b> instituições, descritas na aba Instituições.</p>
+      <div class="fontes-barra">
+        <button type="button" class="btn-text" id="fontesAlternar">Recolher todas</button>
+      </div>
+      <div class="lista-fontes" id="listaFontes"></div>
     </article>
     <article class="about-card">
       <h3>Origem dos dados — Avifauna do Brasil</h3>
@@ -423,7 +427,7 @@
     <article class="about-card">
       <h3>Limitações</h3>
       <ul class="limit-list">
-        <li><strong>Cobertura (SC):</strong> este banco de dados inclui apenas registros com publicações científicas indexadas (artigos publicados em periódicos e revistas com rastreabilidade biblioteconômica — ISBN, ISSN, DOI etc.). Este registro não busca catalogar as coleções paleontológicas de cada instituição.</li>
+        <li><strong>Cobertura (SC):</strong> o banco reúne ocorrências com publicação rastreável — artigos em periódicos, capítulos do SIGEP, teses e dissertações e resumos de eventos científicos. Uma parcela pequena apoia-se apenas em divulgação (imprensa ou comunicados institucionais); essas ocorrências recebem o selo <em>Divulgação ou imprensa</em> na ficha e declaram a limitação. O banco não busca catalogar as coleções paleontológicas de cada instituição.</li>
         <li><strong>Tombamento (SC):</strong> nem todas as publicações identificam o número de referência/tombo dos seus fósseis ou a instituição de depósito. As informações aqui contidas são baseadas exclusivamente em suas referências bibliográficas.</li>
         <li><strong>Avifauna do Brasil:</strong> a tabela de cobertura por estado reflete registros citados na literatura revisada, não o número real de espécies que existiram — viés de pesquisa e preservação afetam fortemente esses números.</li>
         <li><strong>Atualização:</strong> dados compilados até meados de 2025–2026. O banco de dados está constantemente sendo atualizado.</li>
@@ -443,7 +447,7 @@
     <p class="footer-note">Dados compilados de fontes públicas; consulte sempre as referências originais e as instituições de guarda para informações de tombamento oficial.</p>
     <p class="footer-versao">
       <span>Compilado por <b>Brenno Alef Benk</b></span>
-      <span>Versão <b>2026.09.10</b> &middot; <span id="footerTotal">—</span> registros</span>
+      <span>Versão <b>2026.09.13</b> &middot; <span id="footerTotal">—</span> registros</span>
       <a href="CHANGELOG.md" target="_blank" rel="noopener">histórico de alterações</a>
       <a href="LICENSE.md" target="_blank" rel="noopener">dados sob CC BY 4.0</a>
       <a href="https://github.com/brennobenk1/PaleontologiaSC/issues" target="_blank" rel="noopener">encontrou um erro? reporte</a>

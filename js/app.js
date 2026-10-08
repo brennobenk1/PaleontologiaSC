@@ -153,6 +153,7 @@ function periodoCor(nomePeriodo){
     });
     initPeriodos();
     initInstituicoes();
+    initFontes();
     initAvifauna();
     initArvore();
     // restaura o estado vindo da URL (permalink) depois de tudo pronto
@@ -225,7 +226,7 @@ function initHome(){
    CATÁLOGO — busca, filtros, cartões/tabela, ficha (modal)
    =========================================================== */
 let __catalogMode = 'cards';
-let __catalogFilters = { periodo:'', categoria:'', municipio:'', instituicao:'', q:'', grupoTax:'', subTax:'', site:'' };
+let __catalogFilters = { periodo:'', categoria:'', municipio:'', instituicao:'', q:'', grupoTax:'', subTax:'', site:'', fonte:'' };
 
 function initCatalogo(){
   const periodoSel = document.getElementById('filterPeriodo');
@@ -251,7 +252,7 @@ function initCatalogo(){
   instSel.addEventListener('change', e => { __catalogFilters.instituicao = e.target.value; renderCatalog(); });
 
   document.getElementById('clearFilters').addEventListener('click', () => {
-    __catalogFilters = { periodo:'', categoria:'', municipio:'', instituicao:'', q:'', grupoTax:'', subTax:'', site:'' };
+    __catalogFilters = { periodo:'', categoria:'', municipio:'', instituicao:'', q:'', grupoTax:'', subTax:'', site:'', fonte:'' };
     renderNavTaxonomica();
     document.getElementById('searchInput').value = '';
     document.querySelectorAll('.filter-row select').forEach(s => s.value = '');
@@ -277,6 +278,7 @@ function applyCatalogFilters(list){
     if(__catalogFilters.periodo && f.periodo !== __catalogFilters.periodo) return false;
     if(__catalogFilters.categoria && f.categoria !== __catalogFilters.categoria) return false;
     if(__catalogFilters.site && f.site !== __catalogFilters.site) return false;
+    if(__catalogFilters.fonte && !partesDaReferencia(f.descritor, f.tipo_fonte).includes(__catalogFilters.fonte)) return false;
     if(__catalogFilters.grupoTax && grupoTaxonomico(f.categoria) !== __catalogFilters.grupoTax) return false;
     if(__catalogFilters.subTax && subgrupoTaxonomico(f.categoria) !== __catalogFilters.subTax) return false;
     if(__catalogFilters.municipio && !municipiosDe(f.municipio).includes(__catalogFilters.municipio)) return false;
@@ -295,14 +297,18 @@ function renderCatalog(){
   const filtered = applyCatalogFilters(DB_FOSSEIS);
   const rc = document.getElementById('resultCount');
   rc.textContent = `${filtered.length} registro${filtered.length===1?'':'s'}`;
-  if(__catalogFilters.site){
+  /* etiquetas dos filtros EXATOS (vindos do mapa ou da lista de fontes):
+     visíveis e removíveis com um clique */
+  const abrevia = s => s.length > 78 ? s.slice(0, 77) + '…' : s;
+  [['sítio', 'site'], ['fonte', 'fonte']].forEach(([rotulo, chave]) => {
+    if(!__catalogFilters[chave]) return;
     const tag = document.createElement('button');
     tag.type = 'button'; tag.className = 'filtro-sitio';
-    tag.title = 'Remover o filtro de sítio';
-    tag.textContent = `sítio: ${__catalogFilters.site} ×`;
-    tag.addEventListener('click', () => { __catalogFilters.site = ''; renderCatalog(); });
+    tag.title = `${__catalogFilters[chave]} — clique para remover o filtro`;
+    tag.textContent = `${rotulo}: ${abrevia(__catalogFilters[chave])} ×`;
+    tag.addEventListener('click', () => { __catalogFilters[chave] = ''; renderCatalog(); });
     rc.append(' ', tag);
-  }
+  });
   document.getElementById('emptyState').classList.toggle('hidden', filtered.length !== 0);
   document.getElementById('catalogCards').classList.toggle('hidden', filtered.length === 0 || __catalogMode !== 'cards');
   document.getElementById('catalogTableWrap').classList.toggle('hidden', filtered.length === 0 || __catalogMode !== 'table');
@@ -390,10 +396,11 @@ function renderCatalogTable(list){
 /* Números de registro que deixaram de existir. Um permalink já citado não
    pode simplesmente abrir um modal vazio: explica-se o que houve. */
 const REGISTROS_REMOVIDOS = {
-  17:  'Duplicata do registro nº 055 (Crioselache wittigi): era o mesmo dente, cadastrado antes de receber nome. Removido na versão 2026.09.10.',
+  17:  'Duplicata do registro nº 055 (Crioselache wittigi): era o mesmo dente, cadastrado antes de receber nome. Removido na versão 2026.09.12.',
   184: 'Registro de cf. Melosaurus sp., retirado na versão 2026.08 por não haver ocorrência documentada desse gênero em Santa Catarina.',
-  16:  'Duplicata do registro nº 098: os mesmos dois morfotipos de peixe com encéfalo preservado (Figueroa et al., 2024). Removido na versão 2026.09.10.',
-  23:  'Duplicata do registro nº 095 (Mesogondolella spp.), apoiada apenas em reportagem. Removido na versão 2026.09.10.'
+  16:  'Duplicata do registro nº 098: os mesmos dois morfotipos de peixe com encéfalo preservado (Figueroa et al., 2024). Removido na versão 2026.09.12.',
+  23:  'Duplicata do registro nº 095 (Mesogondolella spp.), apoiada apenas em reportagem. Removido na versão 2026.09.12.',
+  40:  'Registro "fitólitos e palinomorfos — Lagoa do Sombrio": a ficha misturava três fontes sem relação entre si (um estudo de fitólitos em sambaqui de São Francisco do Sul, um resumo sobre dinoflagelados da plataforma de Itajaí e a localidade de Sombrio) e nenhuma delas sustentava o conteúdo declarado. Removido na versão 2026.09.13.'
 };
 
 function openFossilModal(id){
@@ -463,6 +470,18 @@ window.gotoCatalogWithSite = function(site){
     document.getElementById('searchInput').value = '';
     __catalogFilters.q = '';
     __catalogFilters.site = site;
+    renderCatalog();
+  }, 50);
+};
+
+/* filtro EXATO por fonte: leva da aba Sobre & Fontes aos registros que
+   cada referência sustenta */
+window.gotoCatalogWithFonte = function(referencia){
+  window.paleoShowView('catalogo');
+  setTimeout(() => {
+    document.getElementById('searchInput').value = '';
+    __catalogFilters.q = '';
+    __catalogFilters.fonte = referencia;
     renderCatalog();
   }, 50);
 };
@@ -891,6 +910,106 @@ function initInstituicoes(){
     ['Idade Estimada (Ma)', 'Milhões de anos antes do presente, conforme idades publicadas para a unidade ou datações citadas.'],
   ];
   document.getElementById('fieldGlossary').innerHTML = glossary.map(([k,v]) => `<dt>${k}</dt><dd>${v}</dd>`).join('');
+}
+
+/* ===========================================================
+   FONTES CITADAS — aba Sobre & Fontes
+   -----------------------------------------------------------
+   A lista é gerada a partir dos próprios registros, portanto não
+   pode ficar defasada nem omitir uma referência: toda referência
+   usada por algum registro aparece aqui, com seus links e a contagem
+   de registros que ela sustenta.
+   =========================================================== */
+/* Cada campo "descritor" pode citar várias obras, separadas por ";".
+   Esta função as separa. Um fragmento que começa em minúscula ou parêntese
+   é continuação da obra anterior ("...; revisado por X"); registros de
+   divulgação/revisão entram inteiros, pois não seguem o formato de citação. */
+const __cachePartes = new Map();
+function partesDaReferencia(desc, tipo){
+  const chave = desc + '\u0001' + tipo;
+  if(__cachePartes.has(chave)) return __cachePartes.get(chave);
+  let partes;
+  if(tipo === 'Divulgação ou imprensa' || tipo === 'Citação em revisão'){
+    partes = [desc];
+  } else {
+    partes = [];
+    desc.split(/;\s+/).map(s => s.trim()).filter(Boolean).forEach(b => {
+      if(partes.length && /^[a-zà-ú(]/.test(b)) partes[partes.length - 1] += '; ' + b;
+      else partes.push(b);
+    });
+  }
+  __cachePartes.set(chave, partes);
+  return partes;
+}
+
+function initFontes(){
+  const alvo = document.getElementById('listaFontes');
+  if(!alvo) return;
+  const esc = s => String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
+  const ORDEM = ['Artigo em periódico', 'Capítulo de sítio (SIGEP)', 'Monografia ou boletim institucional',
+                 'Tese ou dissertação', 'Anais ou resumo de evento', 'Divulgação ou imprensa', 'Citação em revisão'];
+  const NOTA = {
+    'Divulgação ou imprensa': 'Ocorrências conhecidas apenas por divulgação; cada ficha declara essa limitação.',
+    'Anais ou resumo de evento': 'Resumos de congressos e reuniões científicas, em geral sem revisão por pares.',
+    'Citação em revisão': 'Ocorrências citadas em trabalhos de revisão, sem localização do material original.'
+  };
+  /* natureza da OBRA (não do registro): um mesmo trabalho pode sustentar
+     registros de naturezas diferentes */
+  const natureza = (txt, soTipos) => {
+    if(soTipos.size === 1 && (soTipos.has('Divulgação ou imprensa') || soTipos.has('Citação em revisão'))) return [...soTipos][0];
+    if(/SIGEP/.test(txt)) return 'Capítulo de sítio (SIGEP)';
+    if(/Dissertação|Tese de|Trabalho de Conclusão|Ph\.D\./.test(txt)) return 'Tese ou dissertação';
+    if(/Departamento Nacional da Produção Mineral|DNPM, Divisão/.test(txt)) return 'Monografia ou boletim institucional';
+    if(/Paleontologia em Destaque|Anais|Congr\.|Boletim de Resumos|resumo|SICITE|Simpósio|Seminário/i.test(txt)) return 'Anais ou resumo de evento';
+    return 'Artigo em periódico';
+  };
+  const obras = new Map();
+  DB_FOSSEIS.forEach(f => {
+    const partes = partesDaReferencia(f.descritor, f.tipo_fonte);
+    // uma obra citada duas vezes no mesmo registro conta uma vez só
+    [...new Set(partes)].forEach(txt => {
+      if(!obras.has(txt)) obras.set(txt, { ref:txt, n:0, tipos:new Set(), urls:new Set() });
+      const o = obras.get(txt);
+      o.n++; o.tipos.add(f.tipo_fonte);
+      // só os links de registros que citam UMA obra pertencem, sem ambiguidade, a ela
+      if(partes.length === 1) (f.fontes || []).forEach(u => {
+        const m = String(u).match(/^https?:\/\/\S+/);
+        if(m && !/doi\.org/.test(m[0])) o.urls.add(m[0]);
+      });
+    });
+  });
+  const lista = [...obras.values()].sort((a, b) => a.ref.localeCompare(b.ref, 'pt'));
+  lista.forEach(o => { o.nat = natureza(o.ref, o.tipos); o.doi = (o.ref.match(/DOI\s*(10\.\d{4,9}\/[^\s;,)]+)/) || [])[1] || ''; });
+  const grupos = ORDEM.filter(t => lista.some(o => o.nat === t));
+  alvo.innerHTML = grupos.map(t => {
+    const itens = lista.filter(o => o.nat === t);
+    return `<details class="fontes-grupo" open>
+      <summary>${esc(t)} <span class="fontes-cont">${itens.length} obra${itens.length===1?'':'s'}</span></summary>
+      ${NOTA[t] ? `<p class="fontes-nota">${esc(NOTA[t])}</p>` : ''}
+      <ol class="fontes-lista">${itens.map(o => `<li class="fonte-item">
+        <span class="fonte-texto">${esc(o.ref)}</span>
+        <span class="fonte-acoes">
+          ${o.doi ? `<a href="https://doi.org/${esc(o.doi)}" target="_blank" rel="noopener">DOI ↗</a>` : ''}
+          ${[...o.urls].slice(0, 2).map(u => `<a href="${esc(u)}" target="_blank" rel="noopener">link ↗</a>`).join('')}
+          <button type="button" class="fonte-ver" data-i="${lista.indexOf(o)}">${o.n} registro${o.n===1?'':'s'} →</button>
+        </span></li>`).join('')}</ol>
+    </details>`;
+  }).join('');
+  alvo.addEventListener('click', e => {
+    const b = e.target.closest('.fonte-ver');
+    if(b) window.gotoCatalogWithFonte(lista[+b.dataset.i].ref);
+  });
+  const set = (id, v) => { const el = document.getElementById(id); if(el) el.textContent = v; };
+  set('fontesNumRegistros', DB_FOSSEIS.length);
+  set('fontesNumRefs', lista.length);
+  set('fontesNumInst', DB_INSTITUICOES.length);
+  const alt = document.getElementById('fontesAlternar');
+  if(alt) alt.addEventListener('click', () => {
+    const abrir = alt.dataset.estado === 'recolhido';
+    alvo.querySelectorAll('details').forEach(d => { d.open = abrir; });
+    alt.dataset.estado = abrir ? '' : 'recolhido';
+    alt.textContent = abrir ? 'Recolher todas' : 'Expandir todas';
+  });
 }
 
 /* ===========================================================
@@ -1638,7 +1757,7 @@ const CITACAO = {
   // senão a citação sai como "PALEO-SC. Paleo-SC — Banco de Dados..."
   entidade: 'Paleo-SC',
   titulo: 'Banco de Dados Paleontológico de Santa Catarina',
-  versao: '2026.09.10',
+  versao: '2026.09.13',
   ano: '2026',
   url: 'https://brennobenk1.github.io/PaleontologiaSC/'
 };

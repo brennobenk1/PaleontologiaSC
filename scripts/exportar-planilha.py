@@ -145,7 +145,7 @@ def main():
         ("Regenerar", "python3 scripts/exportar-planilha.py"),
         ("Validar", "python3 scripts/validar.py"),
         ("gerar_dados.py", "OBSOLETO. Ia da planilha para data/*.json; rodá-lo sobrescreveria o banco com dados antigos."),
-        ("Citação ABNT", "Preenchida nos 97 registros originais. Os acrescentados depois ainda não têm — o campo fica vazio."),
+        ("Citação ABNT", "Gerada a partir do campo Descritor (scripts/citacoes-abnt.py), obra por obra, separadas por \" | \". Obras sem formato bibliográfico (reportagem, nota) aparecem entre colchetes, transcritas — nunca completadas por suposição. Em 2026.09.13 as citações antigas foram substituídas porque 42 delas eram de outro trabalho."),
         ("Escopo", "Apenas material COLETADO em Santa Catarina. Guarda em outro estado não descaracteriza o registro."),
         ("Viés amostral", "A densidade reflete esforço de publicação, não riqueza fossilífera."),
     ]

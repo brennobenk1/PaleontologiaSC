@@ -688,7 +688,7 @@
     "fim_ma": 273.0,
     "cor": "#7fa66b",
     "descricao": "Período com ampla diversidade de invertebrados marinhos, flora glossopterídea e icnofósseis na Fm. Rio Bonito (Assembleia Taió) e no Grupo Itararé.",
-    "total_registros": 92,
+    "total_registros": 93,
     "taxons": [
       {
         "taxon": "Phyllotheca australis (Brongniart, 1828)",
@@ -712,14 +712,14 @@
         ]
       },
       {
-        "taxon": "Myonia costata (Reed, 1930)",
+        "taxon": "Myonia costata Rocha-Campos, 1970",
         "count": 1,
         "ids": [
           29
         ]
       },
       {
-        "taxon": "Myonia tayoensis (Reed, 1930)",
+        "taxon": "Myonia tayoensis? Reed, 1930",
         "count": 1,
         "ids": [
           30
@@ -1333,6 +1333,13 @@
         "ids": [
           229
         ]
+      },
+      {
+        "taxon": "?Hexactinellida indet. (espículas de esponjas silicosas)",
+        "count": 1,
+        "ids": [
+          232
+        ]
       }
     ]
   },
@@ -1731,25 +1738,6 @@
         "count": 1,
         "ids": [
           70
-        ]
-      }
-    ]
-  },
-  {
-    "nome": "Pleistoceno Superior – Holoceno",
-    "ordem": 16,
-    "era": "Cenozóico",
-    "inicio_ma": 0.129,
-    "fim_ma": 0,
-    "cor": "#a85a2e",
-    "descricao": "Transição entre o Pleistoceno e o Holoceno (atual), com depósitos lagunares e aluvionares recentes. Intervalo corrigido em 2026.09.8: antes trazia os mesmos limites do Holoceno (0,0117–0 Ma), o que deixava fora dele o registro datado de 12.000 anos.",
-    "total_registros": 1,
-    "taxons": [
-      {
-        "taxon": "Registro paleoambiental (fitólitos, palinomorfos)",
-        "count": 1,
-        "ids": [
-          40
         ]
       }
     ]

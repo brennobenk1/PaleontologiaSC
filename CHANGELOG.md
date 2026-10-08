@@ -6,6 +6,190 @@ saber o que havia nele naquele momento.
 
 Formato: as versões seguem `ANO.MÊS.N`.
 
+## 2026.09.13 — 08/10/2026 · referências completadas, citações ABNT refeitas, 1 registro removido
+
+Banco: **227 registros** (era 228), 56 sítios, 99 obras na bibliografia.
+
+### Registro removido
+- **nº 040 — "Registro paleoambiental (fitólitos, palinomorfos)", Lagoa do Sombrio.**
+  A ficha misturava três fontes sem relação entre si: o link apontava um estudo
+  de fitólitos em sambaqui de São Francisco do Sul; a citação exportada era um
+  resumo sobre dinoflagelados da plataforma de Itajaí (Menezes et al. 2009); e a
+  localidade era Sombrio. Nenhuma sustentava "fitólitos e palinomorfos" na Lagoa
+  do Sombrio, nem a idade "12.000–3.000 a". Removido junto com o sítio e o
+  período que só ele usava. Fontes que existem e podem virar registros próprios,
+  se for do interesse: Cancelli, Souza & Neves (2012), *Acta Botanica Brasilica*
+  26(1):20–37, DOI 10.1590/S0102-33062012000100004 (54 palinomorfos holocênicos,
+  testemunhos de Santa Rosa do Sul e São João do Sul); e resumos do Salão de
+  Iniciação Científica da UFRGS (2015, 2016) sobre diatomáceas da Lagoa do Sombrio
+  (autoria não listada na página consultada).
+
+### Citação ABNT exportada: 42 de 98 eram de outro trabalho
+O campo `citacao_abnt` não aparece no site, mas vai para a planilha e para
+`data/fosseis.json`. Auditoria: 42 registros traziam a citação de **outra obra**
+(o registro das larvas de tricóptero levava a citação de uma barata fóssil;
+os fósseis de Taió levavam a de Rocha-Campos & Simões 1993 em vez da de
+Schmidt-Neto et al. 2014; o 063 levava um título de artigo que não corresponde
+ao trabalho citado). Além disso, 129 registros não tinham o campo.
+- Novo `scripts/citacoes-abnt.py`: gera a citação **a partir do descritor**,
+  obra por obra; o que não tem formato bibliográfico é transcrito entre
+  colchetes, nunca completado por suposição.
+- Todos os 227 registros têm agora `citacao_abnt` coerente com o descritor.
+  Citações antigas com detalhes não verificáveis (periódico/volume/DOI que o
+  descritor não confirma) foram descartadas. Mantidas só as notas-padrão de
+  reportagem/divulgação (ids 67, 68, 70).
+- `validar.py` ganhou duas checagens que reprovam o build: (18) o DOI do
+  registro tem de constar no descritor; (19) a citação ABNT tem de ser da
+  mesma obra do descritor (autor, ano e início do título).
+
+### Referências completadas (verificadas na revisão de Balistieri, Netto & Sedorko 2021 e em páginas das próprias obras)
+- **Bainha (56 registros):** a tese citada como "Bernardes-de-Oliveira (1977)"
+  é *"Tafoflora eogondvânica da camada Irapuá, Formação Rio Bonito (Grupo
+  Tubarão), SC"*, Tese de Doutoramento, IG-USP, 301 p., 36 est. (2 vol.).
+  O título do capítulo SIGEP 082 foi corrigido para o da página oficial
+  ("Afloramento Bainha (Criciúma), SC — Flora Glossopteris do Permiano
+  Inferior"), e uma repetição "v.1:23–31, v.1:23–31" foi removida.
+- **Balistieri, Netto & Lavina (2002)** — *Revista Brasileira de Paleontologia*
+  4:13–26, ritmitos de **Mafra** (ids 218–220).
+- **Nogueira & Netto (2001b)** — título completo, *Acta Geologica Leopoldensia*
+  52/53:387–396 (ids 201–203).
+- **Netto, Buatois, Mángano & Balistieri (2007)** — "Gyrolithes as a multipurpose
+  burrow", *RBP* 10(3):157–168, DOI 10.4072/rbp.2007.3.03 (id 224).
+- **Marques-Toigo et al. (1989)** — título e páginas dos Anais do XI Congresso
+  Brasileiro de Paleontologia (ids 72, 78, 79, 80).
+- **Paim, Leipnitz, Zucatti da Rosa & Da Rosa (1997)** — *Chancelloria*,
+  *Revista Brasileira de Geociências* 27(3):303–308 (id 4).
+
+### Erros corrigidos
+- **nº 224:** o campo DOI trazia o da revisão de 2021 (Balistieri, Netto &
+  Sedorko), não o do artigo citado (Netto et al. 2007).
+- **nº 048 e 063:** Vinn et al. (2019) estava com autores errados ("Vinn,
+  Wilson, Mouro & Fernandes"). O artigo é de **Vinn, Zabini & Weinschütz**,
+  *Carnets de Géologie* 2019(19):439–444, DOI 10.4267/2042/70636, "Ichnofossils
+  associated with lingulide shells from the Lower Permian of Brazil". A página
+  consultada diz só "Permiano Inferior do Brasil"; a ligação ao Campáleo vem da
+  compilação do Folhelho Lontras e fica declarada na ficha.
+- **nº 080:** a sinonímia *Isopodichnus* → *Cruziana* cf. *problematica* era
+  atribuída a Balistieri et al. (2002), trabalho que trata dos ritmitos de
+  Mafra e não de Trombudo Central. Atribuição retirada; tipo da fonte corrigido
+  para anais.
+- **nº 004:** "Leipnitz et al. (1997)" não pôde ser confirmado como trabalho
+  distinto de Paim et al. (1997) e foi retirado.
+- **nº 037:** classificado como "Divulgação ou imprensa", mas é uma publicação
+  científica; reclassificado provisoriamente como anais/resumo (veículo ainda
+  não confirmado, declarado na ficha).
+
+### Ressalvas novas nas fichas da Bacia do Itajaí (Ediacarano)
+- Becker-Kerber et al. (2024, *Precambrian Research* 403:107307, DOI
+  10.1016/j.precamres.2024.107307) interpretam como **tectógrafos**
+  (pseudofósseis) marcas horizontais da Bacia do Itajaí parecidas com icnofósseis
+  simples. O resumo consultado não diz se os icnofósseis de Netto & Zucatti da
+  Rosa foram reavaliados; os registros 209–213 agora trazem essa ressalva.
+- Becker-Kerber et al. (2020, *Gondwana Research* 84:211–228, DOI
+  10.1016/j.gr.2020.03.007) citam *Aspidella* e *Nimbia* (sustenta o 084), mas o
+  resumo não menciona *Parvancorina*, *Charniodiscus* nem *Cyclomedusa*: os
+  registros 001–003 passam a declarar que a identificação vem da dissertação e
+  deve ser conferida no texto completo.
+
+### Ainda sem citação completa (declarado na própria ficha, 9 obras)
+Da Rosa et al. (1997) [ids 1, 2, 3, 5, 84]; Netto & Zucatti da Rosa (1997)
+[209–213]; Reed (1930), Beurlen (1954, 1957) e Rocha-Campos (1964–1993) [31];
+Paula-Couto (1980) [39]; Pigão & Mouro (2019) [99]; "Nova localidade fossilífera
+da Fm. Rio do Rasto" (2017) [181–183]; Nizer & Weinschütz (2015) [223]. Nada foi
+completado por suposição; o aviso do validador continua visível.
+
+## 2026.09.12 — 07/10/2026 · bibliografia completa e auditoria das fontes
+
+### Aba Sobre & Fontes — todas as fontes citadas
+O texto citava só quatro instituições e não listava nenhuma fonte. A seção
+"Origem dos dados — Santa Catarina" agora traz a **bibliografia completa**:
+**103 obras**, cada uma citada uma única vez, agrupadas pela natureza
+(artigo em periódico, capítulo SIGEP, monografia, tese, anais, divulgação,
+revisão). A lista é **gerada a partir dos próprios registros**, por isso não
+pode omitir uma fonte nem ficar defasada. Cada obra mostra seu DOI (15
+obras) e links, e um botão "N registros →" abre o catálogo filtrado por
+aquela obra, com etiqueta removível. Verificado com clique real: os 103
+botões levam exatamente aos registros que a obra sustenta, e nenhum registro
+ficou sem fonte.
+
+### Correções de texto na mesma aba
+- O texto afirmava que as instituições mais citadas eram "CENPALEO/UnC,
+  UFRGS, UNISINOS e UFSC". Nos dados, a UFSC aparece em 3 registros; lideram
+  USP/IGc (94), UFRGS (91), CENPALEO (73) e UNISINOS (55). Frase substituída
+  por contagens lidas do banco.
+- "Limitações" dizia que o banco inclui **apenas** publicações científicas
+  indexadas, mas o catálogo contém resumos de eventos e registros de
+  divulgação (sinalizados na ficha). Texto corrigido.
+
+### Erros encontrados nas referências ao montar a lista
+- **Título inventado.** Malabarba (1988) constava como "Revisão dos peixes
+  paleoniscóides do Grupo Itararé". O título real é "A new genus and species
+  of stem group actinopteran fish from the Lower Permian of Santa Catarina
+  State, Brazil", Zool. J. Linn. Soc. 94:287-299. A citação "Beltan (1975)",
+  que o acompanhava, não pôde ser confirmada e foi removida.
+- **Fonte trocada.** Os 10 registros de bivalves e equinodermos de Taió
+  citavam, ao lado do artigo certo, a dissertação de Boardman (2006), que
+  trata da macroflora, não da fauna marinha. Passam a citar Schmidt-Neto,
+  Netto & Tognoli (2014), Rev. Bras. Paleontol., que antes estava sem
+  autores. A dissertação segue nos registros de plantas, onde pertence; as
+  "112 p." que constavam não foram confirmadas e saíram.
+- Cruziana problematica citava "Balistieri, Netto et al. (2015) - citado em
+  ScienceDirect"; é uma das dez icnoespécies de Lima et al. (2015).
+- Autoria afirmada sem confirmação: "Boardman, Iannuzzi & Dutra (2007)"
+  passa a "Boardman et al. (2007)", única forma confirmada.
+- Duas referências estavam sem autores (Boardman et al. 2023, Silva et al.
+  2021) e Balistieri et al. (2021) tinha dois localizadores diferentes.
+- Gangamopteris e sementes de Taió citavam um artigo sobre esfenófitas.
+- Completadas com título, autoria, veículo e paginação: Hamel (2005),
+  Richter (1991), Martins-Neto (2005), Carvalho et al. (1942), Mouro et al.
+  (2018), Mouro (2017), Pinto & Sedor (2000), Ricetti et al. (2016),
+  Ricetti & Weinschütz (2011), Wilner et al. (2016), Kegel & Costa (1951),
+  Ferreira-Oliveira & Rohn (2008), Buchmann et al. (2009), Lopes et al.
+  (2017) e os títulos dos quatro capítulos SIGEP. DOIs agora fazem parte do
+  texto de cada citação.
+
+### Pendências declaradas
+21 obras ainda sem título completo, herdadas da planilha original, sem fonte
+localizada nesta rodada: Beurlen (1954, 1957); Reed (1930); Rocha-Campos
+(1964-1993); Paim et al. (1997); Leipnitz et al. (1997); Da Rosa et al.
+(1997); Marques-Toigo et al. (1989); Paula-Couto (1980); Pigão & Mouro
+(2019); Balistieri, Netto & Lavina (2002); Netto & Zucatti da Rosa (1997);
+Netto et al. (2007); Nizer & Weinschütz (2015); Nogueira & Netto (2001b);
+Vinn et al. (2019); Bernardes-de-Oliveira (1977); boletim SBP nº 63; e três
+entradas da Fm. Rio do Rasto. A validação agora emite aviso permanente com
+esse número.
+
+## 2026.09.11 — 06/10/2026 · varredura dirigida — Itaiópolis
+
+### Correção de autoria
+- ***Myonia costata*** estava atribuída a **Reed, 1930**; a autoria
+  correta é **Rocha-Campos, 1970**, confirmada em Gibathe, Neves &
+  Weinschütz (2019). *M. tayoensis* passa a trazer o "?" que o próprio
+  estudo usa — identificação tentativa.
+
+### Registros enriquecidos (Localidade Moema)
+Os três bivalves da fauna de Itaiópolis (*Heteropecten catharinae*,
+*Myonia costata*, *Myonia tayoensis*) ganharam descrição morfológica e a
+referência completa: **Weinschütz, Wilner, Ricetti & Greinert (2015)**,
+que relatou a ocorrência pela primeira vez, e **Gibathe, Neves &
+Weinschütz (2019)**, estudo taxonômico de 120 espécimes do CENPALEO.
+
+Contexto que passou a constar: a fauna de Itaiópolis fica a **130 km**
+da de Taió e compartilha as mesmas três espécies — o que sugere
+biocorrelação entre as duas ocorrências. *H. catharinae*, até este
+estudo, só era conhecida em Taió.
+
+### Registro novo
+- **Espículas de esponjas silicosas** (?Hexactinellida), de uma
+  localidade do interior de Itaiópolis distinta de Moema (Bremem &
+  Weinschütz, 2008). Ocorrem no intervalo **superior** da Fm. Rio do
+  Sul — outros achados do grupo no Itararé catarinense estão em
+  unidades medianas (Fm. Mafra e base da Rio do Sul). Entra com
+  ressalva: os autores não classificam além do nível de classe, por
+  não haver espículas interligadas em rede.
+
+Catálogo: 227 → 228 registros.
+
 ## 2026.09.10 — 05/10/2026 · revisão do Campáleo pelo artigo de referência
 
 Revisão dos registros do Afloramento Campáleo contra o texto completo de
