@@ -200,7 +200,7 @@
   {
     "site": "Costa de Sombrio (plataforma continental)",
     "municipio": "Sombrio",
-    "bacia": "Plataforma Continental — Fm. Laguna-Barreira",
+    "bacia": "Plataforma Continental (formação não informada na reportagem)",
     "lat": -29.22,
     "lon": -49.5,
     "count": 2,
@@ -209,7 +209,7 @@
     ],
     "taxons_amostra": [
       "Notiomastodon platensis (Ameghino, 1888)",
-      "Toxodon sp."
+      "Toxodontidae indet. (“toxodonte” na reportagem; anteriormente rotulado Toxodon sp.)"
     ],
     "x": 502.9,
     "y": 700.9
@@ -286,15 +286,15 @@
   {
     "site": "Afloramento de Rio dos Cedros",
     "municipio": "Rio dos Cedros",
-    "bacia": "Bacia do Itajaí",
+    "bacia": "Bacia do Paraná — Grupo Itararé (equivalente possível do Folhelho Lontras)",
     "lat": -26.6483,
     "lon": -49.2783,
     "count": 1,
     "periodos": [
-      "Permiano Inferior (Asseliano)"
+      "Carbonífero – Permiano Inferior"
     ],
     "taxons_amostra": [
-      "Biota fóssil similar ao Campáleo (larvas, coprólitos, braquiópodes, esponjas, peixes)"
+      "Folhelho fossilífero de Rio dos Cedros (possível equivalente do Folhelho Lontras)"
     ],
     "x": 528.2,
     "y": 158.0
@@ -310,7 +310,7 @@
       "Quaternário (Pleistoceno–Holoceno)"
     ],
     "taxons_amostra": [
-      "Paleotoca (icnofóssil de escavação — Xenarthra: tatus, preguiças, tamanduás)"
+      "Paleotoca Amaral de Baixo (icnofóssil de escavação — provável tatu extinto)"
     ],
     "x": 516.4,
     "y": 528.8
@@ -318,15 +318,15 @@
   {
     "site": "Litoral sul de SC",
     "municipio": "Litoral sul (região)",
-    "bacia": "Planície Costeira — Depósitos Quaternários",
+    "bacia": "Bacia do Paraná (inferência do compilador; a reportagem não cita bacia)",
     "lat": -28.95,
     "lon": -49.45,
     "count": 1,
     "periodos": [
-      "Jurássico Superior (?) – Cretáceo Inferior (?)"
+      "Jurássico (segundo a reportagem)"
     ],
     "taxons_amostra": [
-      "Theropoda indet. (afim. Carnosauria) — pista bípede"
+      "Theropoda indet. (afim. Carnosauria) — pegadas bípedes"
     ],
     "x": 508.6,
     "y": 643.9
@@ -374,7 +374,7 @@
       "Plioceno–Pleistoceno"
     ],
     "taxons_amostra": [
-      "Paleotoca Furnas Xocleng (icnofóssil de escavação — Xenarthra)"
+      "Paleotoca Xocleng (icnofóssil de escavação — Xenarthra)"
     ],
     "x": 477.6,
     "y": 612.4
@@ -396,7 +396,7 @@
     "y": 606.4
   },
   {
-    "site": "Paleotoca do Engenho Velho",
+    "site": "Jacinto Machado e Praia Grande (paleotocas do Geoparque)",
     "municipio": "Jacinto Machado / Praia Grande",
     "bacia": "Bacia do Paraná — Fm. Botucatu / Cânions",
     "lat": -29.0333,
@@ -554,7 +554,7 @@
   {
     "site": "Paleotoca de Urubici (URU-01-P2)",
     "municipio": "Urubici",
-    "bacia": "Bacia do Paraná / depósitos cenozóicos sobrepostos",
+    "bacia": "Bacia do Paraná (inferência do compilador; o artigo não cita bacia nem formação)",
     "lat": -27.9652,
     "lon": -49.5092,
     "count": 1,
@@ -586,7 +586,7 @@
   {
     "site": "Paleotocas de Porto União",
     "municipio": "Porto União",
-    "bacia": "Bacia do Paraná / depósitos cenozóicos sobrepostos",
+    "bacia": "Bacia do Paraná — Fm. Botucatu",
     "lat": -26.2383,
     "lon": -51.0772,
     "count": 1,
@@ -721,7 +721,7 @@
   {
     "site": "Major Vieira (nova ocorrência de Krauselcladus)",
     "municipio": "Major Vieira",
-    "bacia": "Bacia do Paraná — Fm. Teresina",
+    "bacia": "Bacia do Paraná (formação não informada na reportagem)",
     "lat": -26.3717,
     "lon": -50.3283,
     "count": 1,
@@ -967,5 +967,21 @@
     ],
     "x": 456.0,
     "y": 92.9
+  },
+  {
+    "site": "Planície Costeira sul-catarinense (turfeiras de Santa Rosa do Sul e São João do Sul)",
+    "municipio": "Santa Rosa do Sul / São João do Sul",
+    "bacia": "Planície Costeira — Depósitos Quaternários",
+    "lat": -29.1613,
+    "lon": -49.7767,
+    "count": 1,
+    "periodos": [
+      "Holoceno"
+    ],
+    "taxons_amostra": [
+      "Palinomorfos holocênicos (54 morfotipos: fungos, algas, briófitas, pteridófitas, pólen de gimnospermas e outros)"
+    ],
+    "x": 471.2,
+    "y": 688.9
   }
 ]

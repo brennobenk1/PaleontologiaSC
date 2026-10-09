@@ -326,9 +326,10 @@ body::before{
 }
 /* faixa estratigráfica: cor do período geológico do próprio registro —
    mesma paleta da coluna-testemunho do topo da página.
-   NÃO usar overflow:hidden no card: a etiqueta de tombo fica em top:-8px,
-   propositalmente para fora, e seria decepada. A própria faixa é
-   arredondada para acompanhar o canto do cartão. */
+   A faixa é arredondada para acompanhar o canto do cartão (sem
+   overflow:hidden no card). A etiqueta "Nº" fica DENTRO do cartão,
+   como primeira linha — antes ela avançava sobre a borda superior e
+   disputava espaço com a pílula de categoria. */
 .fossil-card::before{
   content:""; position:absolute; left:0; top:0; bottom:0; width:5px;
   background: var(--per-cor, var(--moss-lt));
@@ -342,12 +343,12 @@ body::before{
   background: var(--per-cor, var(--moss-lt)); margin-right:0.45rem;
 }
 .fossil-tagno{
-  position:absolute; top:-8px; right:14px;
-  font-family: var(--font-mono); font-size: 0.62rem; letter-spacing:0.03em; color: var(--gold);
-  background: var(--paper); border:1px solid var(--line-strong); border-radius: 3px; padding: 0.1rem 0.4rem;
-  transform: rotate(2deg);
+  align-self:flex-start;
+  font-family: var(--font-mono); font-size: 0.62rem; letter-spacing:0.06em; color: var(--texto-suave);
+  border:1px solid var(--line-strong); border-radius: 3px; padding: 0.08rem 0.4rem; line-height:1.4;
+  margin-bottom: -0.1rem;
 }
-.card-top{ display:flex; justify-content:space-between; align-items:flex-start; gap:0.5rem; margin-top: 0.3rem; }
+.card-top{ display:flex; justify-content:space-between; align-items:flex-start; gap:0.5rem; }
 .fossil-taxon{ font-family: var(--font-display); font-style: italic; font-size: 1.1rem; color: var(--petrol-dk); margin:0; line-height:1.25; }
 .cat-pill{
   font-family: var(--font-mono); font-size: 0.64rem; text-transform:uppercase; letter-spacing:0.03em;
@@ -854,12 +855,29 @@ body::before{
 .fonte-natureza{
   font-family: var(--font-mono); font-size:0.58rem; text-transform:none;
   letter-spacing:0.02em; border-radius:3px; padding:0.08rem 0.4rem; margin-left:0.15rem;
+  white-space:nowrap;
 }
 .nat-periodico{ background: var(--moss); color: var(--paper); }
 .nat-sigep{ background: var(--petrol-lt); color: var(--paper); }
 .nat-tese{ background: var(--stone-dk); color: var(--petrol-dk); border:1px solid var(--line-strong); }
 .nat-anais{ background: var(--stone-dk); color: var(--moss-dk); border:1px solid var(--line-strong); }
-.nat-imprensa{ background: var(--terracotta-lt); color:#4a2607; }
+.nat-midia{ background: var(--terracotta-lt); color:#4a2607; }
+.nat-revisao{ background: var(--stone-dk); color: var(--petrol-dk); border:1px dashed var(--line-strong); }
+.selo-midia{
+  display:inline-block; align-self:flex-start; margin:0.1rem 0 0.35rem;
+  padding:0.12rem 0.5rem; border-radius:999px;
+  font-size:0.68rem; font-weight:700; letter-spacing:0.04em; text-transform:uppercase;
+  background: var(--terracotta-lt); color:#4a2607; border:1px solid rgba(74,38,7,0.25);
+}
+.selo-midia.selo-revisao{ background: var(--stone-dk); color: var(--petrol-dk); border:1px dashed var(--line-strong); }
+.aviso-fonte{
+  margin:0.5rem 0 0.8rem; padding:0.65rem 0.85rem; border-radius:8px;
+  font-size:0.88rem; line-height:1.45; border-left:4px solid var(--terracotta);
+  background: #f6e4d5; color: var(--ink);
+}
+.aviso-fonte b{ color: var(--terracotta); }
+.aviso-fonte.aviso-revisao{ border-left-color: var(--petrol-lt); background: var(--stone); }
+.aviso-fonte.aviso-revisao b{ color: var(--petrol); }
 .nat-outra{ background: var(--stone-dk); color: var(--texto-suave); }
 
 /* barra proporcional na linha de cada período geológico */
@@ -1031,3 +1049,5 @@ body::before{
   transition: border-color .15s ease, background .15s ease;
 }
 .fonte-ver:hover{ border-color: var(--petrol); background: var(--stone); }
+
+.fonte-anotacao{ font-size:0.82rem; color: var(--texto-suave); }

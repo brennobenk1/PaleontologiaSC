@@ -26,17 +26,18 @@ import json, re, sys, pathlib, unicodedata
 
 RAIZ = pathlib.Path(__file__).resolve().parent.parent
 ARQ = RAIZ / "js" / "dados.js"
-SEM_FORMATO = ("Divulgação ou imprensa", "Citação em revisão")
+# Citações de mídia: cada obra do descritor que começa com este prefixo é reportagem ou
+# divulgação institucional, não publicação científica. O registro que a usa leva
+# tipo_fonte = "Citação de mídia" (validar.py confere os dois lados).
+PREF_MIDIA = "Citação de mídia"
 
 
 def semacento(s):
     return unicodedata.normalize("NFKD", s).encode("ascii", "ignore").decode().lower().strip()
 
 
-def partes(desc, tipo):
+def partes(desc, tipo=None):
     """Mesma regra de partesDaReferencia() do app.js."""
-    if tipo in SEM_FORMATO:
-        return [desc]
     out = []
     for b in [s.strip() for s in re.split(r";\s+", desc) if s.strip()]:
         if out and re.match(r"^[a-zà-ú(]", b):
@@ -103,7 +104,14 @@ def fmt_resto(resto):
     return r + "." + (f" DOI: {doi}" if doi else "")
 
 
+def eh_midia(parte):
+    return parte.lstrip().startswith(PREF_MIDIA)
+
+
 def gerar_parte(parte):
+    if eh_midia(parte):
+        resto = re.sub(r"^" + PREF_MIDIA + r"\s*[—–-]\s*", "", parte.strip())
+        return f"[Citação de mídia, sem publicação científica primária identificada: {resto}]"
     m = ESTRUT.match(parte)
     if not m or not parece_autoria(m.group("aut")):
         return f"[referência sem formato bibliográfico, transcrita do descritor: {parte}]"
@@ -121,7 +129,7 @@ def gerar_parte(parte):
     aut = fmt_autores(m.group("aut"))
     out = f"{aut} {ano}."
     if titulo:
-        out += f" {titulo.rstrip('.')}."
+        out += " " + (titulo if titulo.rstrip().endswith(("?", "!", ".")) else titulo + ".")
     r = fmt_resto(resto) if not resto.strip().startswith("[") else resto.strip()
     if r:
         out += " " + r
@@ -132,12 +140,14 @@ def obras_do_descritor(f):
     """Conjunto de (sobrenome, ano) das obras estruturadas do descritor."""
     s = set()
     for p in partes_abnt(f["descritor"]):
+        if eh_midia(p):
+            continue
         m = ESTRUT.match(p)
         if not m or not parece_autoria(m.group("aut")):
             continue
         pares, _ = autores(m.group("aut"))
         sob = semacento(pares[0][0])
-        for a in re.findall(r"\b(1[89]\d\d|20\d\d)\b", m.group("ano")):
+        for a in re.findall(r"\b(1[89]\d\d|20\d\d)[a-z]?\b", m.group("ano")):
             s.add((sob, a))
     return s
 
@@ -148,20 +158,36 @@ def coerente(f):
     obras = obras_do_descritor(f)
     if not obras:
         return bool(c)
-    primeiro = c.split(" | ")[0]
-    if f["tipo_fonte"] in SEM_FORMATO and primeiro.startswith("Fonte primária científica indexada não localizada"):
-        return True  # nota padrão das reportagens/divulgações: sem obra científica a conferir
+    # a conferência vale para a 1ª obra com formato bibliográfico (as de mídia e as
+    # transcritas entre colchetes não têm autor/ano para conferir)
+    estruturadas = [p for p in c.split(" | ") if not p.startswith("[")]
+    if not estruturadas:
+        return False
+    primeiro = estruturadas[0]
     m = re.match(r"\s*([^\d,;.]+?)(?:\s+et al)?\s*[,;.\d]", primeiro)
-    ano = re.search(r"\b(1[89]\d\d|20\d\d)\b", primeiro)
+    ano = re.search(r"\b(1[89]\d\d|20\d\d)[a-z]?\b", primeiro)
     if not m or not ano:
         return False
-    if (semacento(m.group(1)), ano.group(1)) not in obras:
+    sob = semacento(m.group(1))
+    ano = re.match(r"\d{4}", ano.group(0)).group(0)
+    if (sob, ano) not in obras:
         return False
-    mt = re.search(r'"([^"]{20,})"', f["descritor"].split("; ")[0])
-    if mt:
-        chave = re.sub(r"[^a-z0-9]", "", semacento(mt.group(1)))[:30]
-        if chave not in re.sub(r"[^a-z0-9]", "", semacento(primeiro)):
-            return False
+    # se a obra correspondente do descritor tem título entre aspas, ele tem de estar na citação
+    for parte in partes_abnt(f["descritor"]):
+        if eh_midia(parte):
+            continue
+        mp = ESTRUT.match(parte)
+        if not mp or not parece_autoria(mp.group("aut")):
+            continue
+        pares, _ = autores(mp.group("aut"))
+        if semacento(pares[0][0]) != sob or ano not in re.findall(r"\b(1[89]\d\d|20\d\d)", mp.group("ano")):
+            continue
+        mt = re.search(r'"([^"]{20,})"', parte)
+        if mt:
+            chave = re.sub(r"[^a-z0-9]", "", semacento(mt.group(1)))[:30]
+            if chave not in re.sub(r"[^a-z0-9]", "", semacento(primeiro)):
+                return False
+        break
     return True
 
 

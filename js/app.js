@@ -324,6 +324,7 @@ function cardHTML(f){
         <span class="${categoriaPillClass(f.categoria)}">${categoriaShort(f.categoria)}</span>
       </div>
       <span class="fossil-period"><i class="per-dot"></i>${f.periodo} &middot; ${f.idade_ma}</span>
+      ${f.tipo_fonte === 'Citação de mídia' ? '<span class="selo-midia" title="Registro conhecido por reportagem ou divulgação, sem publicação científica primária localizada">Citação de mídia</span>' : (f.tipo_fonte === 'Citação em revisão' ? '<span class="selo-midia selo-revisao" title="Ocorrência citada em trabalho de revisão; material original não examinado">Citação em revisão</span>' : '')}
       <div class="fossil-meta">
         <span><b>Formação</b>${f.formacao}</span>
         <span><b>Município</b>${f.municipio}</span>
@@ -400,7 +401,7 @@ const REGISTROS_REMOVIDOS = {
   184: 'Registro de cf. Melosaurus sp., retirado na versão 2026.08 por não haver ocorrência documentada desse gênero em Santa Catarina.',
   16:  'Duplicata do registro nº 098: os mesmos dois morfotipos de peixe com encéfalo preservado (Figueroa et al., 2024). Removido na versão 2026.09.12.',
   23:  'Duplicata do registro nº 095 (Mesogondolella spp.), apoiada apenas em reportagem. Removido na versão 2026.09.12.',
-  40:  'Registro "fitólitos e palinomorfos — Lagoa do Sombrio": a ficha misturava três fontes sem relação entre si (um estudo de fitólitos em sambaqui de São Francisco do Sul, um resumo sobre dinoflagelados da plataforma de Itajaí e a localidade de Sombrio) e nenhuma delas sustentava o conteúdo declarado. Removido na versão 2026.09.13.'
+  40:  'Registro "fitólitos e palinomorfos — Lagoa do Sombrio": a ficha misturava três fontes sem relação entre si (um estudo de fitólitos em sambaqui de São Francisco do Sul, um resumo sobre dinoflagelados da plataforma de Itajaí e a localidade de Sombrio) e nenhuma delas sustentava o conteúdo declarado. Removido na versão 2026.09.13. Os palinomorfos holocênicos do litoral sul catarinense agora têm registro próprio, com fonte (nº 233, Cancelli et al., 2012).'
 };
 
 function openFossilModal(id){
@@ -428,6 +429,7 @@ function openFossilModal(id){
     </button>
     <h3 id="modalTitle" style="font-size:1.5rem;margin-bottom:0.2rem;">${f.taxon}</h3>
     <p class="muted" style="margin-bottom:0.4rem;">${f.periodo} &middot; idade estimada ${f.idade_ma}</p>
+    ${avisoDeFonte(f)}
     <div class="modal-section">
       <div class="modal-grid">
         <div><b>Formação / Grupo</b>${f.formacao}</div>
@@ -448,14 +450,34 @@ function openFossilModal(id){
       <h4>Fontes / verificação</h4>
       <ul class="modal-sources">
         ${f.doi ? `<li><a class="fonte-doi" href="https://doi.org/${f.doi}" target="_blank" rel="noopener noreferrer"><i>DOI</i> ${f.doi}</a></li>` : ''}
-        ${f.fontes.filter(u => !(f.doi && u.includes('doi.org/' + f.doi))).map(u => u.startsWith('http')
-          ? `<li><a href="${u}" target="_blank" rel="noopener noreferrer"><i class="fonte-tipo ${classeFonte(u)}">${rotuloFonte(u)}</i> ${u}</a></li>`
-          : `<li>${u}</li>`).join('')}
+        ${f.fontes.filter(u => !(f.doi && u.includes('doi.org/' + f.doi))).map(u => {
+          /* o campo pode trazer "URL (anotação)": o link usa só a URL, a anotação vira texto ao lado */
+          const m = String(u).match(/^(https?:\/\/\S+)(?:\s+(.+))?$/);
+          return m
+            ? `<li><a href="${m[1]}" target="_blank" rel="noopener noreferrer"><i class="fonte-tipo ${classeFonte(m[1])}">${rotuloFonte(m[1])}</i> ${m[1]}</a>${m[2] ? ` <span class="fonte-anotacao">${m[2]}</span>` : ''}</li>`
+            : `<li>${u}</li>`;
+        }).join('')}
       </ul>
     </div>
   `;
   document.getElementById('modalOverlay').classList.add('open');
   focarModal();
+}
+/* Aviso visível no topo da ficha quando o registro NÃO se apoia em publicação científica
+   primária. Política do projeto: nada é removido por isso, mas precisa estar explícito. */
+function avisoDeFonte(f){
+  if(f.tipo_fonte === 'Citação de mídia') return `
+    <div class="aviso-fonte aviso-midia" role="note">
+      <b>Citação de mídia</b> — este registro é conhecido por reportagem ou divulgação institucional.
+      Não foi localizada publicação científica primária sobre este material; o que está descrito abaixo
+      reproduz o que a matéria afirma, e o que ela não informa está marcado como “não informado”.
+    </div>`;
+  if(f.tipo_fonte === 'Citação em revisão') return `
+    <div class="aviso-fonte aviso-revisao" role="note">
+      <b>Citação em revisão</b> — a ocorrência é mencionada em um trabalho de revisão; o material
+      original não foi examinado por este banco.
+    </div>`;
+  return '';
 }
 function closeFossilModal(){
   document.getElementById('modalOverlay').classList.remove('open');
@@ -701,11 +723,17 @@ function initMapaZoom(svgEl){
     if(k <= 1.001){ k = 1; tx = 0; ty = 0; }
     aplicar();
   };
+  /* Coordenadas do ponteiro no espaço do viewBox. A matriz da tela
+     (getScreenCTM) já considera as faixas vazias que o navegador deixa
+     quando o SVG não preenche o contêiner e a origem do viewBox; a regra
+     de três por largura/altura ignorava as duas, e o ponto sob o cursor
+     se deslocava ao ampliar. */
   const emSVG = e => {
-    const r = svgEl.getBoundingClientRect();
-    const vb = svgEl.viewBox.baseVal;
-    return [(e.clientX - r.left) / r.width * vb.width, (e.clientY - r.top) / r.height * vb.height];
+    const pt = svgEl.createSVGPoint(); pt.x = e.clientX; pt.y = e.clientY;
+    const q = pt.matrixTransform(svgEl.getScreenCTM().inverse());
+    return [q.x, q.y];
   };
+  const pxPorUnidade = () => svgEl.getScreenCTM().a;
 
   svgEl.addEventListener('wheel', e => {
     e.preventDefault();
@@ -719,9 +747,8 @@ function initMapaZoom(svgEl){
   });
   window.addEventListener('mousemove', e => {
     if(!arrastando) return;
-    const r = svgEl.getBoundingClientRect(), vb = svgEl.viewBox.baseVal;
-    tx = tx0 + (e.clientX - x0) / r.width * vb.width;
-    ty = ty0 + (e.clientY - y0) / r.height * vb.height;
+    tx = tx0 + (e.clientX - x0) / pxPorUnidade();
+    ty = ty0 + (e.clientY - y0) / pxPorUnidade();
     aplicar();
   });
   window.addEventListener('mouseup', () => { arrastando = false; svgEl.classList.remove('arrastando'); });
@@ -737,19 +764,18 @@ function initMapaZoom(svgEl){
     }
   }, { passive:true });
   svgEl.addEventListener('touchmove', e => {
-    const r = svgEl.getBoundingClientRect(), vb = svgEl.viewBox.baseVal;
     if(e.touches.length === 1 && arrastando){
-      tx = tx0 + (e.touches[0].clientX - x0) / r.width * vb.width;
-      ty = ty0 + (e.touches[0].clientY - y0) / r.height * vb.height;
+      tx = tx0 + (e.touches[0].clientX - x0) / pxPorUnidade();
+      ty = ty0 + (e.touches[0].clientY - y0) / pxPorUnidade();
       aplicar();
     } else if(e.touches.length === 2 && dist0){
       const d = Math.hypot(e.touches[0].clientX - e.touches[1].clientX, e.touches[0].clientY - e.touches[1].clientY);
-      zoomPara(k0 * (d / dist0), vb.width / 2, vb.height / 2);
+      zoomPara(k0 * (d / dist0), ...meio());
     }
   }, { passive:true });
   svgEl.addEventListener('touchend', () => { arrastando = false; dist0 = 0; });
 
-  const meio = () => [svgEl.viewBox.baseVal.width / 2, svgEl.viewBox.baseVal.height / 2];
+  const meio = () => { const v = svgEl.viewBox.baseVal; return [v.x + v.width / 2, v.y + v.height / 2]; };
   document.getElementById('mapaMais').addEventListener('click', () => zoomPara(k * 1.4, ...meio()));
   document.getElementById('mapaMenos').addEventListener('click', () => zoomPara(k / 1.4, ...meio()));
   document.getElementById('mapaReset').addEventListener('click', () => { k = 1; tx = 0; ty = 0; aplicar(); });
@@ -922,22 +948,17 @@ function initInstituicoes(){
    =========================================================== */
 /* Cada campo "descritor" pode citar várias obras, separadas por ";".
    Esta função as separa. Um fragmento que começa em minúscula ou parêntese
-   é continuação da obra anterior ("...; revisado por X"); registros de
-   divulgação/revisão entram inteiros, pois não seguem o formato de citação. */
+   é continuação da obra anterior ("...; revisado por X"). Obras de mídia
+   começam por "Citação de mídia —" e são separadas como qualquer outra. */
 const __cachePartes = new Map();
 function partesDaReferencia(desc, tipo){
-  const chave = desc + '\u0001' + tipo;
+  const chave = desc;
   if(__cachePartes.has(chave)) return __cachePartes.get(chave);
-  let partes;
-  if(tipo === 'Divulgação ou imprensa' || tipo === 'Citação em revisão'){
-    partes = [desc];
-  } else {
-    partes = [];
-    desc.split(/;\s+/).map(s => s.trim()).filter(Boolean).forEach(b => {
-      if(partes.length && /^[a-zà-ú(]/.test(b)) partes[partes.length - 1] += '; ' + b;
-      else partes.push(b);
-    });
-  }
+  const partes = [];
+  desc.split(/;\s+/).map(s => s.trim()).filter(Boolean).forEach(b => {
+    if(partes.length && /^[a-zà-ú(]/.test(b)) partes[partes.length - 1] += '; ' + b;
+    else partes.push(b);
+  });
   __cachePartes.set(chave, partes);
   return partes;
 }
@@ -947,16 +968,15 @@ function initFontes(){
   if(!alvo) return;
   const esc = s => String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
   const ORDEM = ['Artigo em periódico', 'Capítulo de sítio (SIGEP)', 'Monografia ou boletim institucional',
-                 'Tese ou dissertação', 'Anais ou resumo de evento', 'Divulgação ou imprensa', 'Citação em revisão'];
+                 'Tese ou dissertação', 'Anais ou resumo de evento', 'Citação de mídia'];
   const NOTA = {
-    'Divulgação ou imprensa': 'Ocorrências conhecidas apenas por divulgação; cada ficha declara essa limitação.',
-    'Anais ou resumo de evento': 'Resumos de congressos e reuniões científicas, em geral sem revisão por pares.',
-    'Citação em revisão': 'Ocorrências citadas em trabalhos de revisão, sem localização do material original.'
+    'Citação de mídia': 'Reportagens e divulgação institucional — NÃO são fontes científicas. Foram mantidas porque registram ocorrências reais conhecidas só por essa via; cada ficha traz o selo “Citação de mídia” e declara o que a matéria afirma e o que não informa.',
+    'Anais ou resumo de evento': 'Resumos de congressos e reuniões científicas, em geral sem revisão por pares.'
   };
   /* natureza da OBRA (não do registro): um mesmo trabalho pode sustentar
      registros de naturezas diferentes */
-  const natureza = (txt, soTipos) => {
-    if(soTipos.size === 1 && (soTipos.has('Divulgação ou imprensa') || soTipos.has('Citação em revisão'))) return [...soTipos][0];
+  const natureza = (txt) => {
+    if(/^Citação de mídia/.test(txt)) return 'Citação de mídia';
     if(/SIGEP/.test(txt)) return 'Capítulo de sítio (SIGEP)';
     if(/Dissertação|Tese de|Trabalho de Conclusão|Ph\.D\./.test(txt)) return 'Tese ou dissertação';
     if(/Departamento Nacional da Produção Mineral|DNPM, Divisão/.test(txt)) return 'Monografia ou boletim institucional';
@@ -979,7 +999,7 @@ function initFontes(){
     });
   });
   const lista = [...obras.values()].sort((a, b) => a.ref.localeCompare(b.ref, 'pt'));
-  lista.forEach(o => { o.nat = natureza(o.ref, o.tipos); o.doi = (o.ref.match(/DOI\s*(10\.\d{4,9}\/[^\s;,)]+)/) || [])[1] || ''; });
+  lista.forEach(o => { o.nat = natureza(o.ref); o.doi = (o.ref.match(/DOI\s*(10\.\d{4,9}\/[^\s;,)]+)/) || [])[1] || ''; });
   const grupos = ORDEM.filter(t => lista.some(o => o.nat === t));
   alvo.innerHTML = grupos.map(t => {
     const itens = lista.filter(o => o.nat === t);
@@ -1278,7 +1298,8 @@ function treeCountStats(){
    { nome, tipo: 'clado'|'ordem'|'familia'|'fossil', extinta?, viva?,
      introduzida?, nota?, filhos:[...] } — clados podem aninhar
    outros clados livremente (ex.: Neoaves contém Mirandornithes,
-   Columbea, Aequornithes, Telluraves etc. como filhos diretos),
+   Columbaves → Otidimorphae/Columbimorphae, Gruimorphae,
+   Phaethoquornithes → Aequornithes, Telluraves etc.),
    em vez de uma lista plana de grupos irmãos. */
 function hydrateTreeNode(raw, typeOverride){
   const type = typeOverride || raw.tipo;
@@ -1403,6 +1424,7 @@ function renderTreeSVG(){
     const daggerPrefix = isFossil ? '&#8224; ' : ((n.type==='ordem' && n.extinta) || (n.type==='familia' && n.viva===false) ? '&#8224; ' : '');
     return `
       <g class="tree-node tree-node-${n.type}${matched?' tree-node-match':''}" data-id="${n.id}" transform="translate(${n._x},${n._y})" tabindex="0">
+        ${n.nota ? `<title>${n.nota.replace(/&/g,'&amp;').replace(/</g,'&lt;')}</title>` : ''}
         <rect class="tree-hit" x="-8" y="-12" width="170" height="24" fill="transparent"></rect>
         <circle r="${r}" fill="${hasHiddenChildren && n._collapsed ? color : (isFossil ? color : 'var(--paper)')}" stroke="${color}" stroke-width="2"></circle>
         ${marker}
@@ -1757,7 +1779,7 @@ const CITACAO = {
   // senão a citação sai como "PALEO-SC. Paleo-SC — Banco de Dados..."
   entidade: 'Paleo-SC',
   titulo: 'Banco de Dados Paleontológico de Santa Catarina',
-  versao: '2026.09.13',
+  versao: '2026.09.14',
   ano: '2026',
   url: 'https://brennobenk1.github.io/PaleontologiaSC/'
 };
@@ -1986,7 +2008,8 @@ function classeNatureza(t){
   if(/SIGEP|sítio/i.test(t)) return 'nat-sigep';
   if(/Tese|dissertação/i.test(t)) return 'nat-tese';
   if(/Anais|resumo/i.test(t)) return 'nat-anais';
-  if(/imprensa|Divulgação/i.test(t)) return 'nat-imprensa';
+  if(/mídia|imprensa|Divulgação/i.test(t)) return 'nat-midia';
+  if(/revisão/i.test(t)) return 'nat-revisao';
   return 'nat-outra';
 }
 

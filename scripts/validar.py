@@ -279,9 +279,7 @@ alertar(com_doi / max(len(FOSSEIS), 1) > 0.5,
 # --- obras citadas sem título (citação incompleta) ---
 # A aba Sobre & Fontes lista cada obra uma vez. Obra científica sem título
 # entre aspas é citação incompleta: o aviso mantém a pendência visível.
-def _partes(desc, tipo):
-    if tipo in ("Divulgação ou imprensa", "Citação em revisão"):
-        return [desc]
+def _partes(desc, tipo=None):
     out = []
     for b in [s.strip() for s in re.split(r";\s+", desc) if s.strip()]:
         if out and re.match(r"^[a-zà-ú(]", b):
@@ -294,11 +292,28 @@ for d in FOSSEIS:
     for t in set(_partes(d["descritor"], d["tipo_fonte"])):
         _obras.setdefault(t, set()).add(d["tipo_fonte"])
 _incompletas = [t for t, tp in _obras.items()
-                if not tp <= {"Divulgação ou imprensa", "Citação em revisão"}
+                if not t.startswith("Citação de mídia")
                 and '"' not in t and not re.search(r"SIGEP|Dissert|Tese|Trabalho de Conclus", t)]
 alertar(len(_incompletas) == 0,
         f"obras citadas com título: {len(_obras) - len(_incompletas)}/{len(_obras)} (incompletas: {len(_incompletas)})",
         "complete autor, ano, título e veículo das obras listadas na aba Sobre & Fontes")
+
+# --- 20. citação de mídia tem de ser EXPLÍCITA, nos dois sentidos ---
+# Regra do projeto: registro sustentado por reportagem ou divulgação não é removido,
+# mas precisa declarar isso. Três pontas têm de concordar: o tipo_fonte, o prefixo
+# "Citação de mídia —" na obra do descritor e o aviso "CITAÇÃO DE MÍDIA" nas observações.
+_PM = "Citação de mídia"
+_incoer = []
+for d in FOSSEIS:
+    tem_parte = any(p.lstrip().startswith(_PM) for p in _partes(d["descritor"]))
+    eh_tipo = d["tipo_fonte"] == _PM
+    tem_aviso = "CITAÇÃO DE MÍDIA" in d.get("observacoes", "")
+    if not (tem_parte == eh_tipo == tem_aviso):
+        _incoer.append((d["id"], f"parte={tem_parte} tipo={eh_tipo} aviso={tem_aviso}"))
+    if d["tipo_fonte"] == "Divulgação ou imprensa":
+        _incoer.append((d["id"], "rótulo antigo 'Divulgação ou imprensa'"))
+checar(not _incoer, "citações de mídia explícitas (tipo, descritor e observações concordam)",
+       f"incoerências: {_incoer}")
 
 print()
 if falhas:

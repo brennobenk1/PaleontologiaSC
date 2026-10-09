@@ -101,7 +101,7 @@
     "lat": -26.9078,
     "lon": -48.6614,
     "bacia": "Bacia do Itajaí",
-    "armazenamento": "-",
+    "armazenamento": "Não informado na fonte consultada",
     "descritor": "Paim, P.S.G., Leipnitz, I.I., Zucatti da Rosa, A.L. & Da Rosa, A.A.S. (1997) — \"Preliminary report on the occurrence of Chancelloria sp. in the Itajaí Basin, southern Brazil\", Revista Brasileira de Geociências 27(3):303–308, DOI 10.25249/0375-7536.1997303308",
     "unidade_pesquisa": "UNISINOS / IGC-USP",
     "idade_ma": "ca. 563–542 Ma",
@@ -402,14 +402,14 @@
     "lon": -49.8147,
     "bacia": "Bacia do Paraná — Grupo Itararé",
     "armazenamento": "CENPALEO / Museu da Terra e da Vida, UnC, Mafra, SC",
-    "descritor": "Mouro, L.D., Pacheco, M.L.A.F., Ricetti, J.H.Z., Scomazzon, A.K., Horodyski, R.S., Fernandes, A.C.S., Carvalho, M.A., Weinschütz, L.C., Silva, M.S., Waichel, B.L. & Scherer, C.M.S. (2020) — \"Lontras Shale (Paraná Basin, Brazil): Insightful analysis and commentaries on paleoenvironment and fossil preservation into a deglaciation pulse of the Late Paleozoic Ice Age\", Palaeogeography, Palaeoclimatology, Palaeoecology 555:109850, DOI 10.1016/j.palaeo.2020.109850; Malabarba, M.C.S.L. (1988) — \"A new genus and species of stem group actinopteran fish from the Lower Permian of Santa Catarina State, Brazil\", Zoological Journal of the Linnean Society 94:287–299; Richter, M. (1991) — \"A New Marine Ichthyofauna from the Permian of the Paraná Basin of Southern Brazil\", Tese de Doutorado (Ph.D.), King's College London, University of London, 233 pp.; Hamel, M.-H. (2005) — \"A new actinopterygian from the Early Permian of the Paraná Basin, Brazil\", Journal of Vertebrate Paleontology 25(1):19–26",
+    "descritor": "Mouro, L.D., Pacheco, M.L.A.F., Ricetti, J.H.Z., Scomazzon, A.K., Horodyski, R.S., Fernandes, A.C.S., Carvalho, M.A., Weinschütz, L.C., Silva, M.S., Waichel, B.L. & Scherer, C.M.S. (2020) — \"Lontras Shale (Paraná Basin, Brazil): Insightful analysis and commentaries on paleoenvironment and fossil preservation into a deglaciation pulse of the Late Paleozoic Ice Age\", Palaeogeography, Palaeoclimatology, Palaeoecology 555:109850, DOI 10.1016/j.palaeo.2020.109850; Malabarba, M.C.S.L. (1988) — \"A new genus and species of stem group actinopteran fish from the Lower Permian of Santa Catarina State, Brazil\", Zoological Journal of the Linnean Society 94:287–299; Richter, M. (1991) — \"A New Marine Ichthyofauna from the Permian of the Paraná Basin of Southern Brazil\", Tese de Doutorado (Ph.D.), King's College London, University of London, 233 pp.; Hamel, M.-H. (2005) — \"A new lower actinopterygian from the Early Permian of the Paraná Basin, Brazil\", Journal of Vertebrate Paleontology 25(1):19–26",
     "unidade_pesquisa": "CENPALEO/UnC; Uppsala Univ. (colaboração)",
     "idade_ma": "ca. 303–295 Ma (limite Carbonífero–Permiano; idade em discussão)",
     "observacoes": "Classificação: peixe actinopterígio basal (paleoniscídeo). Pelo menos duzentos exemplares completos de actinopterígios basais, jovens e adultos, são conhecidos do afloramento — preservados sem compressão em concreções fosfáticas ou achatados no folhelho (Hamel, 2005). As espécies nomeadas estão em registros próprios. CORREÇÃO (2026.09.10): a ficha citava \"Figueroa et al. (2025)\" e a preservação de \"coração\", sem fonte, e apontava para o artigo de outra localidade; os morfotipos com encéfalo preservado estão no registro nº 098. UNIDADE E IDADE (Mouro et al., 2020): o Folhelho Lontras é o topo da Fm. Campo Mourão (França & Potter, 1988) — na nomenclatura de superfície de SC, base da Fm. Rio do Sul. A idade está em discussão: conodontes (Mesogondolella spp.) e palinologia (Zona Vittatina costabilis) indicam Cisuraliano; datações U-Pb em zircão apontam Pennsylvaniano.",
     "fontes": [
       "https://doi.org/10.1016/j.palaeo.2020.109850"
     ],
-    "citacao_abnt": "MOURO, L.D.; PACHECO, M.L.A.F.; RICETTI, J.H.Z. et al. 2020. Lontras Shale (Paraná Basin, Brazil): Insightful analysis and commentaries on paleoenvironment and fossil preservation into a deglaciation pulse of the Late Paleozoic Ice Age. Palaeogeography, Palaeoclimatology, Palaeoecology, 555, 109850. DOI: 10.1016/j.palaeo.2020.109850 | MALABARBA, M.C.S.L. 1988. A new genus and species of stem group actinopteran fish from the Lower Permian of Santa Catarina State, Brazil. Zoological Journal of the Linnean Society, 94, 287–299. | RICHTER, M. 1991. A New Marine Ichthyofauna from the Permian of the Paraná Basin of Southern Brazil. Tese de Doutorado (Ph.D.), King's College London, University of London, 233 pp. | HAMEL, M.-H. 2005. A new actinopterygian from the Early Permian of the Paraná Basin, Brazil. Journal of Vertebrate Paleontology, 25(1), 19–26.",
+    "citacao_abnt": "MOURO, L.D.; PACHECO, M.L.A.F.; RICETTI, J.H.Z. et al. 2020. Lontras Shale (Paraná Basin, Brazil): Insightful analysis and commentaries on paleoenvironment and fossil preservation into a deglaciation pulse of the Late Paleozoic Ice Age. Palaeogeography, Palaeoclimatology, Palaeoecology, 555, 109850. DOI: 10.1016/j.palaeo.2020.109850 | MALABARBA, M.C.S.L. 1988. A new genus and species of stem group actinopteran fish from the Lower Permian of Santa Catarina State, Brazil. Zoological Journal of the Linnean Society, 94, 287–299. | RICHTER, M. 1991. A New Marine Ichthyofauna from the Permian of the Paraná Basin of Southern Brazil. Tese de Doutorado (Ph.D.), King's College London, University of London, 233 pp. | HAMEL, M.-H. 2005. A new lower actinopterygian from the Early Permian of the Paraná Basin, Brazil. Journal of Vertebrate Paleontology, 25(1), 19–26.",
     "tipo_fonte": "Artigo em periódico",
     "doi": "10.1016/j.palaeo.2020.109850"
   },
@@ -432,7 +432,7 @@
     "descritor": "Pauliv, V.E., Dias, E.V., Sedor, F.A., Weinschütz, L.C. & Ribeiro, A.M. (2023) — \"A new symmoriiform shark and other chondrichthyan teeth from the earliest Permian of southern Brazil\", Revista Brasileira de Paleontologia 26(3):227–237, DOI 10.4072/rbp.2023.3.07",
     "unidade_pesquisa": "CENPALEO/UnC",
     "idade_ma": "ca. 303–295 Ma (limite Carbonífero–Permiano; idade em discussão)",
-    "observacoes": "Classificação: condrictio. Dois dentes isolados adicionais atribuídos a condrictios indeterminados UNIDADE E IDADE (Mouro et al., 2020): o Folhelho Lontras é o topo da Fm. Campo Mourão (França & Potter, 1988) — na nomenclatura de superfície de SC, base da Fm. Rio do Sul. A idade está em discussão: conodontes (Mesogondolella spp.) e palinologia (Zona Vittatina costabilis) indicam Cisuraliano; datações U-Pb em zircão apontam Pennsylvaniano.",
+    "observacoes": "Classificação: condrictio. Dois dentes isolados adicionais atribuídos a condrictios indeterminados. UNIDADE E IDADE (Mouro et al., 2020): o Folhelho Lontras é o topo da Fm. Campo Mourão (França & Potter, 1988) — na nomenclatura de superfície de SC, base da Fm. Rio do Sul. A idade está em discussão: conodontes (Mesogondolella spp.) e palinologia (Zona Vittatina costabilis) indicam Cisuraliano; datações U-Pb em zircão apontam Pennsylvaniano.",
     "fontes": [
       "https://sbpbrasil.org/publications/index.php/rbp/article/view/327",
       "https://www.researchgate.net/publication/374930987_A_new_symmoriiform_shark_and_other_chondrichthyan_teeth_from_the_earliest_Permian_of_southern_Brazil"
@@ -460,7 +460,7 @@
     "descritor": "Mouro, L.D., Pacheco, M.L.A.F., Ricetti, J.H.Z., Scomazzon, A.K., Horodyski, R.S., Fernandes, A.C.S., Carvalho, M.A., Weinschütz, L.C., Silva, M.S., Waichel, B.L. & Scherer, C.M.S. (2020) — \"Lontras Shale (Paraná Basin, Brazil): Insightful analysis and commentaries on paleoenvironment and fossil preservation into a deglaciation pulse of the Late Paleozoic Ice Age\", Palaeogeography, Palaeoclimatology, Palaeoecology 555:109850, DOI 10.1016/j.palaeo.2020.109850",
     "unidade_pesquisa": "CENPALEO/UnC",
     "idade_ma": "ca. 303–295 Ma (limite Carbonífero–Permiano; idade em discussão)",
-    "observacoes": "Classificação: peixe de nadadeira lobada. Pelo menos 3 morfotipos de escamas distintos dos conhecidos para o Paleozoico da Bacia do Paraná UNIDADE E IDADE (Mouro et al., 2020): o Folhelho Lontras é o topo da Fm. Campo Mourão (França & Potter, 1988) — na nomenclatura de superfície de SC, base da Fm. Rio do Sul. A idade está em discussão: conodontes (Mesogondolella spp.) e palinologia (Zona Vittatina costabilis) indicam Cisuraliano; datações U-Pb em zircão apontam Pennsylvaniano.",
+    "observacoes": "Classificação: peixe de nadadeira lobada. Pelo menos 3 morfotipos de escamas distintos dos conhecidos para o Paleozoico da Bacia do Paraná. UNIDADE E IDADE (Mouro et al., 2020): o Folhelho Lontras é o topo da Fm. Campo Mourão (França & Potter, 1988) — na nomenclatura de superfície de SC, base da Fm. Rio do Sul. A idade está em discussão: conodontes (Mesogondolella spp.) e palinologia (Zona Vittatina costabilis) indicam Cisuraliano; datações U-Pb em zircão apontam Pennsylvaniano.",
     "fontes": [
       "https://doi.org/10.1016/j.palaeo.2020.109850",
       "https://www.researchgate.net/publication/348390467_Uma_nova_localidade_equivalente_ao_Folhelho_Lontras_Pensilvaniano-Cisuraliano_Bacia_do_Parana_Santa_Catarina_Brasil"
@@ -516,7 +516,7 @@
     "descritor": "Mouro, L.D., Pacheco, M.L.A.F., Ricetti, J.H.Z., Scomazzon, A.K., Horodyski, R.S., Fernandes, A.C.S., Carvalho, M.A., Weinschütz, L.C., Silva, M.S., Waichel, B.L. & Scherer, C.M.S. (2020) — \"Lontras Shale (Paraná Basin, Brazil): Insightful analysis and commentaries on paleoenvironment and fossil preservation into a deglaciation pulse of the Late Paleozoic Ice Age\", Palaeogeography, Palaeoclimatology, Palaeoecology 555:109850, DOI 10.1016/j.palaeo.2020.109850",
     "unidade_pesquisa": "CENPALEO/UnC",
     "idade_ma": "ca. 303–295 Ma (limite Carbonífero–Permiano; idade em discussão)",
-    "observacoes": "Presente na biota geral do Folhelho Lontras; detalhes taxonômicos em estudos em andamento UNIDADE E IDADE (Mouro et al., 2020): o Folhelho Lontras é o topo da Fm. Campo Mourão (França & Potter, 1988) — na nomenclatura de superfície de SC, base da Fm. Rio do Sul. A idade está em discussão: conodontes (Mesogondolella spp.) e palinologia (Zona Vittatina costabilis) indicam Cisuraliano; datações U-Pb em zircão apontam Pennsylvaniano.",
+    "observacoes": "Presente na biota geral do Folhelho Lontras; detalhes taxonômicos em estudos em andamento. UNIDADE E IDADE (Mouro et al., 2020): o Folhelho Lontras é o topo da Fm. Campo Mourão (França & Potter, 1988) — na nomenclatura de superfície de SC, base da Fm. Rio do Sul. A idade está em discussão: conodontes (Mesogondolella spp.) e palinologia (Zona Vittatina costabilis) indicam Cisuraliano; datações U-Pb em zircão apontam Pennsylvaniano.",
     "fontes": [
       "https://doi.org/10.1016/j.palaeo.2020.109850",
       "https://www.researchgate.net/publication/348390467_Uma_nova_localidade_equivalente_ao_Folhelho_Lontras_Pensilvaniano-Cisuraliano_Bacia_do_Parana_Santa_Catarina_Brasil"
@@ -571,7 +571,7 @@
     "descritor": "Mouro, L.D., Pacheco, M.L.A.F., Ricetti, J.H.Z., Scomazzon, A.K., Horodyski, R.S., Fernandes, A.C.S., Carvalho, M.A., Weinschütz, L.C., Silva, M.S., Waichel, B.L. & Scherer, C.M.S. (2020) — \"Lontras Shale (Paraná Basin, Brazil): Insightful analysis and commentaries on paleoenvironment and fossil preservation into a deglaciation pulse of the Late Paleozoic Ice Age\", Palaeogeography, Palaeoclimatology, Palaeoecology 555:109850, DOI 10.1016/j.palaeo.2020.109850",
     "unidade_pesquisa": "CENPALEO/UnC",
     "idade_ma": "ca. 303–295 Ma (limite Carbonífero–Permiano; idade em discussão)",
-    "observacoes": "Fragmentos de plantas presentes na biota geral do Campáleo UNIDADE E IDADE (Mouro et al., 2020): o Folhelho Lontras é o topo da Fm. Campo Mourão (França & Potter, 1988) — na nomenclatura de superfície de SC, base da Fm. Rio do Sul. A idade está em discussão: conodontes (Mesogondolella spp.) e palinologia (Zona Vittatina costabilis) indicam Cisuraliano; datações U-Pb em zircão apontam Pennsylvaniano.",
+    "observacoes": "Fragmentos de plantas presentes na biota geral do Campáleo. UNIDADE E IDADE (Mouro et al., 2020): o Folhelho Lontras é o topo da Fm. Campo Mourão (França & Potter, 1988) — na nomenclatura de superfície de SC, base da Fm. Rio do Sul. A idade está em discussão: conodontes (Mesogondolella spp.) e palinologia (Zona Vittatina costabilis) indicam Cisuraliano; datações U-Pb em zircão apontam Pennsylvaniano.",
     "fontes": [
       "https://doi.org/10.1016/j.palaeo.2020.109850",
       "https://www.researchgate.net/publication/348390467_Uma_nova_localidade_equivalente_ao_Folhelho_Lontras_Pensilvaniano-Cisuraliano_Bacia_do_Parana_Santa_Catarina_Brasil"
@@ -599,7 +599,7 @@
     "descritor": "Mouro, L.D., Pacheco, M.L.A.F., Ricetti, J.H.Z., Scomazzon, A.K., Horodyski, R.S., Fernandes, A.C.S., Carvalho, M.A., Weinschütz, L.C., Silva, M.S., Waichel, B.L. & Scherer, C.M.S. (2020) — \"Lontras Shale (Paraná Basin, Brazil): Insightful analysis and commentaries on paleoenvironment and fossil preservation into a deglaciation pulse of the Late Paleozoic Ice Age\", Palaeogeography, Palaeoclimatology, Palaeoecology 555:109850, DOI 10.1016/j.palaeo.2020.109850",
     "unidade_pesquisa": "CENPALEO/UnC",
     "idade_ma": "ca. 303–295 Ma (limite Carbonífero–Permiano; idade em discussão)",
-    "observacoes": "Coprólitos espiralados atribuídos a peixes UNIDADE E IDADE (Mouro et al., 2020): o Folhelho Lontras é o topo da Fm. Campo Mourão (França & Potter, 1988) — na nomenclatura de superfície de SC, base da Fm. Rio do Sul. A idade está em discussão: conodontes (Mesogondolella spp.) e palinologia (Zona Vittatina costabilis) indicam Cisuraliano; datações U-Pb em zircão apontam Pennsylvaniano.",
+    "observacoes": "Coprólitos espiralados atribuídos a peixes. UNIDADE E IDADE (Mouro et al., 2020): o Folhelho Lontras é o topo da Fm. Campo Mourão (França & Potter, 1988) — na nomenclatura de superfície de SC, base da Fm. Rio do Sul. A idade está em discussão: conodontes (Mesogondolella spp.) e palinologia (Zona Vittatina costabilis) indicam Cisuraliano; datações U-Pb em zircão apontam Pennsylvaniano.",
     "fontes": [
       "https://doi.org/10.1016/j.palaeo.2020.109850",
       "https://www.researchgate.net/publication/348390467_Uma_nova_localidade_equivalente_ao_Folhelho_Lontras_Pensilvaniano-Cisuraliano_Bacia_do_Parana_Santa_Catarina_Brasil"
@@ -917,7 +917,7 @@
     "descritor": "Weinschütz et al. (2021) — \"Uma nova localidade equivalente ao Folhelho Lontras (Pensilvaniano-Cisuraliano, Bacia do Paraná), Santa Catarina, Brasil\" [título conforme o registro no ResearchGate; veículo não confirmado]",
     "unidade_pesquisa": "CENPALEO/UnC",
     "idade_ma": "ca. 298,9–300 Ma",
-    "observacoes": "Classificação: peixe ósseo. Inclui escamas de celacanto, coprólitos espiralados, braquiópodes, vegetais e poríferos",
+    "observacoes": "Classificação: peixe ósseo. Inclui escamas de celacanto, coprólitos espiralados, braquiópodes, vegetais e poríferos POSSÍVEL LIGAÇÃO: a 'nova localidade' pode ser a de Rio dos Cedros (registro 43), único depósito equivalente ao Folhelho Lontras citado em Saldanha et al. (2023); não confirmado, porque o resumo não pôde ser aberto.",
     "fontes": [
       "https://www.researchgate.net/publication/348390467_Uma_nova_localidade_equivalente_ao_Folhelho_Lontras_Pensilvaniano-Cisuraliano_Bacia_do_Parana_Santa_Catarina_Brasil"
     ],
@@ -929,7 +929,7 @@
     "periodo": "Plioceno–Pleistoceno",
     "era": "Cenozóico — Quaternário",
     "periodo_ordem": 13,
-    "formacao": "Depósitos superficiais / aluvionares",
+    "formacao": "Não informada nas reportagens (ver observações)",
     "taxon": "Paleotocas (icnofósseis de escavação — Dasypodidae / Mylodontidae)",
     "categoria": "Icnofóssil — paleotoca",
     "numero_catalogo": "-",
@@ -940,20 +940,18 @@
     "lon": -49.94,
     "bacia": "Bacia do Paraná — Fm. Botucatu / Cânions",
     "armazenamento": "Geoparque Caminhos dos Cânions do Sul (Morro Grande, Timbé do Sul, Araranguá)",
-    "descritor": "Buchmann, F.S.C., Lopes, R.P. & Caron, F. (2009) — \"Icnofósseis (paleotocas e crotovinas) atribuídos a mamíferos extintos no sudeste e sul do Brasil\", Revista Brasileira de Paleontologia 12(3):247–256, DOI 10.4072/rbp.2009.3.07; Lopes, R.P., Frank, H.T., Buchmann, F.S.C. & Caron, F. (2017) — \"Megaichnus igen. nov.: giant paleoburrows attributed to extinct Cenozoic mammals from South America\", Ichnos 24(2):133–145 (erige Megaichnus igen. nov.) — ocorrência divulgada por: Frank et al. (vários); Simão, G. (geólogo Geoparque, 2025)",
+    "descritor": "Citação de mídia — ND Mais (10/08/2025), reportagem «Cavernas em SC guardam rastros de preguiças e tatus gigantes», que cita o geólogo do Geoparque G. Simão; Citação de mídia — Jornal da Unesp (18/01/2022), reportagem «Uma visita à casa dos gigantes», que relata declaração de F. S. C. Buchmann",
     "unidade_pesquisa": "UNESC / Geoparque UNESCO",
     "idade_ma": "5,33 – 0,012 Ma",
-    "observacoes": "Classificação: paleotoca — estrutura de habitação (Domichnia) escavada por mamíferos da megafauna. ICNOTAXONOMIA: desde Lopes et al. (2017) estas estruturas têm nome formal — o icnogênero Megaichnus, dividido em M. major (atribuído a preguiças-gigantes, Mylodontidae) e M. minor (atribuído a tatus-gigantes, Cingulata). Segundo F. S. C. Buchmann, em entrevista ao Jornal da Unesp (2022), mais de duas mil paleotocas foram registradas no Brasil, 99% delas entre o sul de Santa Catarina e o norte do Rio Grande do Sul. Mais de 40 estruturas identificadas; algumas interconectadas atingem até 340 m; escavadas por preguiças e tatus-gigantes extintos",
+    "observacoes": "Classificação: paleotoca — estrutura de habitação (Domichnia) escavada por mamíferos da megafauna. CITAÇÃO DE MÍDIA: a ocorrência e os números deste registro (paleotocas no Geoparque Caminhos dos Cânions do Sul, Praia Grande, Timbé do Sul e municípios vizinhos) vêm de reportagens. O ND Mais (10/08/2025) informa 'mais de 40 estruturas escavadas por essa megafauna' identificadas na região, alguns túneis do Sul do estado com até 340 m e diâmetros de 0,7 a 4 m, extinção 'há mais de 10 mil anos' e nenhum fóssil associado às tocas. Segundo o Jornal da Unesp (18/01/2022), que relata declaração de F. S. C. Buchmann, há mais de duas mil paleotocas registradas no Brasil, 99% delas entre o sul de Santa Catarina e o norte do Rio Grande do Sul [citação de mídia]. Litologia não informada nas reportagens. CONTEXTO CIENTÍFICO (sobre o tipo de estrutura, não sobre este local): Lopes, Frank, Buchmann & Caron (2017, Ichnos 24(2):133–145) erigiram o icnogênero Megaichnus (M. major, atribuído a preguiças-gigantes, Mylodontidae; M. minor, a tatus-gigantes, Cingulata); Buchmann, Lopes & Caron (2009, Revista Brasileira de Paleontologia 12(3):247–256, DOI 10.4072/rbp.2009.3.07) tratam de paleotocas e crotovinas do sudeste e sul do Brasil. Sobre o Geoparque: Valdati, Gomes, Weinschütz, Ricetti & Bechtel (2024, Revista Brasileira de Geografia Física 17(3):1905–1920, DOI 10.26848/rbgf.v17.3.p1905-1920) catalogam paleotocas do Geoparque Caminhos dos Cânions do Sul e descrevem três delas (duas nas Escarpas da Serra Geral, uma no Planalto dos Campos Gerais); um resumo expandido da UDESC (Bechtel & Valdati, sem data na cópia consultada) informa que, de 17 paleotocas novas catalogadas, 16 estão em arenitos da Fm. Botucatu e uma em basalto intemperizado. Esses trabalhos não individualizam as cavidades deste registro. ",
     "fontes": [
-      "https://doi.org/10.4072/rbp.2009.3.07",
-      "https://sbpbrasil.org/publications/index.php/rbp/article/download/428/254/9081",
-      "https://periodicos.ufpe.br/revistas/index.php/rbgfe/article/view/259418 (Proposta de classificação das paleotocas)",
       "https://ndmais.com.br/animais/cavernas-em-sc-guardam-rastros-de-preguicas-e-tatus-gigantes/",
-      "https://jornal.unesp.br/2022/01/18/uma-visita-a-casa-dos-gigantes/"
+      "https://jornal.unesp.br/2022/01/18/uma-visita-a-casa-dos-gigantes/",
+      "https://doi.org/10.4072/rbp.2009.3.07",
+      "https://periodicos.ufpe.br/revistas/index.php/rbgfe/article/view/259418 (Valdati et al. 2024, contexto do Geoparque)"
     ],
-    "citacao_abnt": "BUCHMANN, F.S.C.; LOPES, R.P.; CARON, F. 2009. Icnofósseis (paleotocas e crotovinas) atribuídos a mamíferos extintos no sudeste e sul do Brasil. Revista Brasileira de Paleontologia, 12(3), 247–256. DOI: 10.4072/rbp.2009.3.07 | LOPES, R.P.; FRANK, H.T.; BUCHMANN, F.S.C. et al. 2017. Megaichnus igen. nov.: giant paleoburrows attributed to extinct Cenozoic mammals from South America. Ichnos, 24(2), 133–145 (erige Megaichnus igen. nov.) — ocorrência divulgada por: Frank et al. (vários). | SIMÃO, G. geólogo Geoparque, 2025.",
-    "doi": "10.4072/rbp.2009.3.07",
-    "tipo_fonte": "Divulgação ou imprensa"
+    "citacao_abnt": "[Citação de mídia, sem publicação científica primária identificada: ND Mais (10/08/2025), reportagem «Cavernas em SC guardam rastros de preguiças e tatus gigantes», que cita o geólogo do Geoparque G. Simão] | [Citação de mídia, sem publicação científica primária identificada: Jornal da Unesp (18/01/2022), reportagem «Uma visita à casa dos gigantes», que relata declaração de F. S. C. Buchmann]",
+    "tipo_fonte": "Citação de mídia"
   },
   {
     "id": 39,
@@ -970,7 +968,7 @@
     "lat": -28.95,
     "lon": -49.45,
     "bacia": "Planície Costeira — Depósitos Quaternários",
-    "armazenamento": "-",
+    "armazenamento": "Não informado na fonte consultada",
     "descritor": "Paula-Couto, C. (1980) — Anais da Academia Brasileira de Ciências 52(3):527–531 [artigo original não consultado; citado em Buchmann et al.]",
     "unidade_pesquisa": "Museu Nacional / UFRJ (coleção histórica)",
     "idade_ma": "ca. 2,58 Ma – 11.700 a",
@@ -1002,7 +1000,7 @@
     "descritor": "Oliveira, E.P. (1930) — \"Fósseis marinhos na Série Itararé no Estado de Santa Catharina\", Anais da Academia Brasileira de Ciências 2(1):17–21; Carvalho, P.F., Miranda, J. & Alvim, P.A. (1942) — \"Geologia de Mafra\", Rio de Janeiro: Ministério da Agricultura, Departamento Nacional da Produção Mineral, Divisão de Geologia e Paleontologia, Boletim (41 p.); Ricetti, J.H.Z., Schneider, J.W., Iannuzzi, R. & Weinschütz, L.C. (2016) — \"Anthracoblattina mendesi Pinto & Sedor (Blattodea, Phyloblattidae): the most completely preserved South American Palaeozoic cockroach\", Revista Brasileira de Paleontologia 19(2):181–194",
     "unidade_pesquisa": "CENPALEO/UnC",
     "idade_ma": "ca. 303–295 Ma (limite Carbonífero–Permiano; idade em discussão)",
-    "observacoes": "Um dos primeiros táxons descritos para o Folhelho Lontras; já citado nos trabalhos pioneiros de Ruedemann (1929) e Carvalho et al. (1942) sobre a fauna de Mafra UNIDADE E IDADE (Mouro et al., 2020): o Folhelho Lontras é o topo da Fm. Campo Mourão (França & Potter, 1988) — na nomenclatura de superfície de SC, base da Fm. Rio do Sul. A idade está em discussão: conodontes (Mesogondolella spp.) e palinologia (Zona Vittatina costabilis) indicam Cisuraliano; datações U-Pb em zircão apontam Pennsylvaniano.",
+    "observacoes": "Um dos primeiros táxons descritos para o Folhelho Lontras; já citado nos trabalhos pioneiros de Ruedemann (1929) e Carvalho et al. (1942) sobre a fauna de Mafra. UNIDADE E IDADE (Mouro et al., 2020): o Folhelho Lontras é o topo da Fm. Campo Mourão (França & Potter, 1988) — na nomenclatura de superfície de SC, base da Fm. Rio do Sul. A idade está em discussão: conodontes (Mesogondolella spp.) e palinologia (Zona Vittatina costabilis) indicam Cisuraliano; datações U-Pb em zircão apontam Pennsylvaniano.",
     "fontes": [
       "https://sbpbrasil.org/assets/uploads/files/03_Ricetti_et_al_pg181a194_web.pdf",
       "https://www.researchgate.net/publication/307526049_Anthracoblattina_Mendesi_Pinto_Et_Sedor_Blattodea_Phyloblattidae_The_most_completely_preserved_South_American_Palaeozoic_cockroach"
@@ -1041,11 +1039,11 @@
   },
   {
     "id": 43,
-    "periodo": "Permiano Inferior (Asseliano)",
-    "era": "Paleozóico — Permiano",
-    "periodo_ordem": 6,
+    "periodo": "Carbonífero – Permiano Inferior",
+    "era": "Paleozóico — Carbonífero",
+    "periodo_ordem": 5,
     "formacao": "Grupo Itararé / Fm. Campo Mourão (equivalente lateral do Folhelho Lontras)",
-    "taxon": "Biota fóssil similar ao Campáleo (larvas, coprólitos, braquiópodes, esponjas, peixes)",
+    "taxon": "Folhelho fossilífero de Rio dos Cedros (possível equivalente do Folhelho Lontras)",
     "categoria": "Assembleia fóssil (biota mista) — biota mista",
     "numero_catalogo": "-",
     "local_coleta": "Afloramento de Rio dos Cedros, SC",
@@ -1053,17 +1051,17 @@
     "municipio": "Rio dos Cedros",
     "lat": -26.6483,
     "lon": -49.2783,
-    "bacia": "Bacia do Paraná — Grupo Itararé",
-    "armazenamento": "-",
-    "descritor": "Citado em revisões do Lontras Shale Lagerstätte (cf. Ricetti et al. 2016 e referências associadas)",
-    "unidade_pesquisa": "CENPALEO/UnC",
-    "idade_ma": "ca. 298,9 Ma",
-    "observacoes": "Camada de folhelho com menos de 1 m de espessura, situada a cerca de 85 km do afloramento Campáleo; possível extensão lateral do mesmo Lagerstätte, ainda pouco estudada",
+    "bacia": "Bacia do Paraná — Grupo Itararé (equivalente possível do Folhelho Lontras)",
+    "armazenamento": "Não informado na fonte consultada",
+    "descritor": "Saldanha, J.P. et al. (2023) — \"Exploring the restricted Lontras Shale fossil record: Data biases or preservational casualties?\", Sedimentary Geology 458:106533",
+    "unidade_pesquisa": "Não informada na fonte",
+    "idade_ma": "Não datado para Rio dos Cedros (o Folhelho Lontras, em Mafra, tem ca. 298,9 Ma por U-Pb)",
+    "observacoes": "CITAÇÃO EM REVISÃO — o material não foi examinado por este banco. Segundo a síntese da Wikipédia sobre o Lagerstätte Folhelho Lontras, que remete a Saldanha et al. (2023, Sedimentary Geology 458:106533), há em Rio dos Cedros um depósito de folhelho com menos de 1 m de espessura, a cerca de 85 km do Folhelho Lontras (afloramento Campáleo, Mafra); não está claro se ele pertence ao mesmo Lagerstätte ou é um nível distinto, porque há poucos estudos. O texto integral do artigo não pôde ser aberto (acesso bloqueado). CONTEÚDO FOSSILÍFERO: a lista 'larvas, coprólitos, braquiópodes, esponjas, peixes' que constava neste registro NÃO foi confirmada em nenhuma fonte consultada e foi retirada do título. HISTÓRICO DE CORREÇÃO: o registro citava Ricetti et al. (2016, Rev. Bras. Paleontol. 19(2)) e Oliveira (1930), trabalhos que não mencionam Rio dos Cedros; foram substituídos pela fonte acima. POSSÍVEL LIGAÇÃO: o registro 37 cita um resumo sobre uma 'nova localidade equivalente ao Folhelho Lontras' que pode se referir a este mesmo depósito — não foi possível confirmar (o resumo não pôde ser aberto).",
     "fontes": [
-      "https://sbpbrasil.org/assets/uploads/files/03_Ricetti_et_al_pg181a194_web.pdf",
-      "https://www.researchgate.net/publication/307526049_Anthracoblattina_Mendesi_Pinto_Et_Sedor_Blattodea_Phyloblattidae_The_most_completely_preserved_South_American_Palaeozoic_cockroach"
+      "https://www.sciencedirect.com/science/article/abs/pii/S0037073823002051",
+      "https://en.wikipedia.org/wiki/Lontras_Shale_Lagerst%C3%A4tte (síntese que cita Saldanha et al. 2023 — o artigo integral não foi aberto)"
     ],
-    "citacao_abnt": "RICETTI, J.H.Z.; SCHNEIDER, J.W.; IANNUZZI, R.; WEINSCHÜTZ, L.C. 2016. Anthracoblattina mendesi Pinto et Sedor (Blattodea, Phyloblattidae): the most completely preserved South American Palaeozoic cockroach. Revista Brasileira de Paleontologia, 19(2), 181–194. DOI: 10.4072/rbp.2016.2.02 [Fonte primária]. Disponível em: https://sbpbrasil.org/assets/uploads/files/03_Ricetti_et_al_pg181a194_web.pdf | OLIVEIRA, E.P. 1930. História e descripção da geologia do Brasil. Serv. Geol. Mineral., Rio de Janeiro, 109 p. [Fonte primária histórica — sem DOI, publicação pré-digital]",
+    "citacao_abnt": "SALDANHA, J.P. et al. 2023. Exploring the restricted Lontras Shale fossil record: Data biases or preservational casualties?. Sedimentary Geology, 458, 106533.",
     "tipo_fonte": "Citação em revisão"
   },
   {
@@ -1071,31 +1069,27 @@
     "periodo": "Quaternário (Pleistoceno–Holoceno)",
     "era": "Cenozóico — Quaternário",
     "periodo_ordem": 17,
-    "formacao": "Depósitos superficiais sobre a Fm. Rio Bonito / Depressão da Zona Carbonífera Catarinense",
-    "taxon": "Paleotoca (icnofóssil de escavação — Xenarthra: tatus, preguiças, tamanduás)",
+    "formacao": "Fm. Rio Bonito (segundo o comunicado da UDESC e a reportagem do ND Mais)",
+    "taxon": "Paleotoca Amaral de Baixo (icnofóssil de escavação — provável tatu extinto)",
     "categoria": "Icnofóssil — paleotoca",
     "numero_catalogo": "-",
-    "local_coleta": "Lauro Müller, SC",
+    "local_coleta": "Localidade Rio Amaral Gruta, Lauro Müller, SC (coordenada do município)",
     "site": "Lauro Müller",
     "municipio": "Lauro Müller",
     "lat": -28.4047,
     "lon": -49.3811,
     "bacia": "Bacia do Paraná — Fm. Rio Bonito",
-    "armazenamento": "UDESC — Laboratório de Geografia/Geologia (FAED)",
-    "descritor": "Buchmann, F.S.C., Lopes, R.P. & Caron, F. (2009) — \"Icnofósseis (paleotocas e crotovinas) atribuídos a mamíferos extintos no sudeste e sul do Brasil\", Revista Brasileira de Paleontologia 12(3):247–256, DOI 10.4072/rbp.2009.3.07; Lopes, R.P., Frank, H.T., Buchmann, F.S.C. & Caron, F. (2017) — \"Megaichnus igen. nov.: giant paleoburrows attributed to extinct Cenozoic mammals from South America\", Ichnos 24(2):133–145 (erige Megaichnus igen. nov.)",
-    "unidade_pesquisa": "UDESC",
-    "idade_ma": "2,58 Ma – 11.700 a",
-    "observacoes": "Classificação: paleotoca — estrutura de habitação (Domichnia) escavada por mamíferos da megafauna. ICNOTAXONOMIA: desde Lopes et al. (2017) estas estruturas têm nome formal — o icnogênero Megaichnus, dividido em M. major (atribuído a preguiças-gigantes, Mylodontidae) e M. minor (atribuído a tatus-gigantes, Cingulata). Segundo F. S. C. Buchmann, em entrevista ao Jornal da Unesp (2022), mais de duas mil paleotocas foram registradas no Brasil, 99% delas entre o sul de Santa Catarina e o norte do Rio Grande do Sul. 1º registro documentado deste tipo de icnofóssil em rochas da Fm. Rio Bonito e na Depressão da Zona Carbonífera Catarinense; estrutura de habitação distinta das paleotocas já catalogadas no Geoparque Caminhos dos Cânions do Sul",
+    "armazenamento": "Estrutura in situ (icnofóssil não coletável)",
+    "descritor": "Citação de mídia — UDESC (08/04/2026), notícia «Pesquisadores da Udesc Faed identificam paleotoca em Lauro Müller», que cita o prof. Jairo Valdati (coordenador do LGEF); Citação de mídia — ND Mais (24/03/2026), reportagem «Túnel misterioso em SC revela marcas pré-históricas», que cita o geólogo G. Simão (Geoparque Caminhos dos Cânions do Sul)",
+    "unidade_pesquisa": "UDESC — Laboratório de Geografia Física (LGEF), grupo BioGeo, FAED (segundo o comunicado da UDESC); equipe técnica do Geoparque (segundo o ND Mais)",
+    "idade_ma": "Não datada; a reportagem fala em animais que viveram 'há cerca de 10 mil anos'",
+    "observacoes": "Classificação: paleotoca — estrutura de habitação (Domichnia) escavada por mamíferos da megafauna. CITAÇÃO DE MÍDIA — não foi localizada publicação científica (a UDESC informa que os dados serão apresentados no 4º Encontro Luso-Brasileiro de Patrimônio Geomorfológico e Geoconservação, em Pelotas/RS, em outubro). Segundo a UDESC (08/04/2026), a 'Paleotoca Amaral de Baixo', na localidade Rio Amaral Gruta, tem cerca de 25,9 m de comprimento, com uma ramificação, está na Fm. Rio Bonito (Depressão da Zona Carbonífera Catarinense) — 'primeiro registro documentado desse tipo de icnofóssil nessas rochas e nesse relevo' — e teria sido 'provavelmente' escavada por tatus extintos, com base nas marcas de garras e na posição elevada, próxima a cursos d'água. O ND Mais (24/03/2026) fala em cerca de 20 m de extensão e 1 m de diâmetro, ramificação obstruída, marcas de garras (G. Simão) e 'tatus gigantes, que viveram há cerca de 10 mil anos', e diz que a maioria das paleotocas do Sul do Brasil está em outras formações. Não há datação, coordenadas nem identificação da espécie. HISTÓRICO DE CORREÇÃO: o táxon constava como 'Xenarthra: tatus, preguiças, tamanduás' e a formação como 'depósitos superficiais sobre a Fm. Rio Bonito'; o comunicado cita preguiças e tamanduás só como exemplos do grupo e fala em Fm. Rio Bonito. CONTEXTO CIENTÍFICO (sobre o tipo de estrutura, não sobre este local): Lopes, Frank, Buchmann & Caron (2017, Ichnos 24(2):133–145) erigiram o icnogênero Megaichnus (M. major, atribuído a preguiças-gigantes, Mylodontidae; M. minor, a tatus-gigantes, Cingulata); Buchmann, Lopes & Caron (2009, Revista Brasileira de Paleontologia 12(3):247–256, DOI 10.4072/rbp.2009.3.07) tratam de paleotocas e crotovinas do sudeste e sul do Brasil. ",
     "fontes": [
-      "https://doi.org/10.4072/rbp.2009.3.07",
-      "https://sbpbrasil.org/publications/index.php/rbp/article/download/428/254/9081",
       "https://www.udesc.br/noticia/pesquisadores_da_udesc_faed_identificam_paleotoca_em_lauro_muller",
-      "https://ndmais.com.br/turismo/tunel-misterioso-em-sc-revela-marcas-pre-historicas/",
-      "https://jornal.unesp.br/2022/01/18/uma-visita-a-casa-dos-gigantes/"
+      "https://ndmais.com.br/turismo/tunel-misterioso-em-sc-revela-marcas-pre-historicas/"
     ],
-    "citacao_abnt": "BUCHMANN, F.S.C.; LOPES, R.P.; CARON, F. 2009. Icnofósseis (paleotocas e crotovinas) atribuídos a mamíferos extintos no sudeste e sul do Brasil. Revista Brasileira de Paleontologia, 12(3), 247–256. DOI: 10.4072/rbp.2009.3.07 | LOPES, R.P.; FRANK, H.T.; BUCHMANN, F.S.C. et al. 2017. Megaichnus igen. nov.: giant paleoburrows attributed to extinct Cenozoic mammals from South America. Ichnos, 24(2), 133–145 (erige Megaichnus igen. nov.).",
-    "doi": "10.4072/rbp.2009.3.07",
-    "tipo_fonte": "Artigo em periódico"
+    "citacao_abnt": "[Citação de mídia, sem publicação científica primária identificada: UDESC (08/04/2026), notícia «Pesquisadores da Udesc Faed identificam paleotoca em Lauro Müller», que cita o prof. Jairo Valdati (coordenador do LGEF)] | [Citação de mídia, sem publicação científica primária identificada: ND Mais (24/03/2026), reportagem «Túnel misterioso em SC revela marcas pré-históricas», que cita o geólogo G. Simão (Geoparque Caminhos dos Cânions do Sul)]",
+    "tipo_fonte": "Citação de mídia"
   },
   {
     "id": 45,
@@ -1116,7 +1110,7 @@
     "descritor": "Mouro, L.D., Pacheco, M.L.A.F., Ricetti, J.H.Z., Scomazzon, A.K., Horodyski, R.S., Fernandes, A.C.S., Carvalho, M.A., Weinschütz, L.C., Silva, M.S., Waichel, B.L. & Scherer, C.M.S. (2020) — \"Lontras Shale (Paraná Basin, Brazil): Insightful analysis and commentaries on paleoenvironment and fossil preservation into a deglaciation pulse of the Late Paleozoic Ice Age\", Palaeogeography, Palaeoclimatology, Palaeoecology 555:109850, DOI 10.1016/j.palaeo.2020.109850; Mouro, L.D., Ricetti, J.H.Z., Weinschütz, L.C. & Pacheco, M.L.A.F. (2021) — \"Folhelho Lontras, uma Lagerstätte do Paleozoico brasileiro\", in Jelinek & Sommer (eds.), Contribuições à Geologia do RS e de SC, SBG/Compasso Lugar-Cultura, p.203–221",
     "unidade_pesquisa": "CENPALEO/UnC",
     "idade_ma": "ca. 303–295 Ma (limite Carbonífero–Permiano; idade em discussão)",
-    "observacoes": "Pelo menos duas conchas comprimidas e não identificadas em nível específico; preservadas como filme carbonoso/pirita, sem carbonato de cálcio original; afinidade morfológica com Uraloceras UNIDADE E IDADE (Mouro et al., 2020): o Folhelho Lontras é o topo da Fm. Campo Mourão (França & Potter, 1988) — na nomenclatura de superfície de SC, base da Fm. Rio do Sul. A idade está em discussão: conodontes (Mesogondolella spp.) e palinologia (Zona Vittatina costabilis) indicam Cisuraliano; datações U-Pb em zircão apontam Pennsylvaniano.",
+    "observacoes": "Pelo menos duas conchas comprimidas e não identificadas em nível específico; preservadas como filme carbonoso/pirita, sem carbonato de cálcio original; afinidade morfológica com Uraloceras. UNIDADE E IDADE (Mouro et al., 2020): o Folhelho Lontras é o topo da Fm. Campo Mourão (França & Potter, 1988) — na nomenclatura de superfície de SC, base da Fm. Rio do Sul. A idade está em discussão: conodontes (Mesogondolella spp.) e palinologia (Zona Vittatina costabilis) indicam Cisuraliano; datações U-Pb em zircão apontam Pennsylvaniano.",
     "fontes": [
       "https://doi.org/10.1016/j.palaeo.2020.109850",
       "https://www.sciencedirect.com/science/article/abs/pii/S0031018220302959",
@@ -1145,7 +1139,7 @@
     "descritor": "Mouro, L.D., Pacheco, M.L.A.F., Ricetti, J.H.Z., Scomazzon, A.K., Horodyski, R.S., Fernandes, A.C.S., Carvalho, M.A., Weinschütz, L.C., Silva, M.S., Waichel, B.L. & Scherer, C.M.S. (2020) — \"Lontras Shale (Paraná Basin, Brazil): Insightful analysis and commentaries on paleoenvironment and fossil preservation into a deglaciation pulse of the Late Paleozoic Ice Age\", Palaeogeography, Palaeoclimatology, Palaeoecology 555:109850, DOI 10.1016/j.palaeo.2020.109850; Mouro, L.D., Ricetti, J.H.Z., Weinschütz, L.C. & Pacheco, M.L.A.F. (2021) — \"Folhelho Lontras, uma Lagerstätte do Paleozoico brasileiro\", in Jelinek & Sommer (eds.), Contribuições à Geologia do RS e de SC, SBG/Compasso Lugar-Cultura, p.203–221",
     "unidade_pesquisa": "CENPALEO/UnC",
     "idade_ma": "ca. 303–295 Ma (limite Carbonífero–Permiano; idade em discussão)",
-    "observacoes": "Classificação: molusco gastrópode. Registro raro de gastrópode na biota do Folhelho Lontras UNIDADE E IDADE (Mouro et al., 2020): o Folhelho Lontras é o topo da Fm. Campo Mourão (França & Potter, 1988) — na nomenclatura de superfície de SC, base da Fm. Rio do Sul. A idade está em discussão: conodontes (Mesogondolella spp.) e palinologia (Zona Vittatina costabilis) indicam Cisuraliano; datações U-Pb em zircão apontam Pennsylvaniano.",
+    "observacoes": "Classificação: molusco gastrópode. Registro raro de gastrópode na biota do Folhelho Lontras. UNIDADE E IDADE (Mouro et al., 2020): o Folhelho Lontras é o topo da Fm. Campo Mourão (França & Potter, 1988) — na nomenclatura de superfície de SC, base da Fm. Rio do Sul. A idade está em discussão: conodontes (Mesogondolella spp.) e palinologia (Zona Vittatina costabilis) indicam Cisuraliano; datações U-Pb em zircão apontam Pennsylvaniano.",
     "fontes": [
       "https://doi.org/10.1016/j.palaeo.2020.109850",
       "https://www.sciencedirect.com/science/article/abs/pii/S0031018220302959",
@@ -1174,7 +1168,7 @@
     "descritor": "Mouro, L.D., Pacheco, M.L.A.F., Ricetti, J.H.Z., Scomazzon, A.K., Horodyski, R.S., Fernandes, A.C.S., Carvalho, M.A., Weinschütz, L.C., Silva, M.S., Waichel, B.L. & Scherer, C.M.S. (2020) — \"Lontras Shale (Paraná Basin, Brazil): Insightful analysis and commentaries on paleoenvironment and fossil preservation into a deglaciation pulse of the Late Paleozoic Ice Age\", Palaeogeography, Palaeoclimatology, Palaeoecology 555:109850, DOI 10.1016/j.palaeo.2020.109850; Mouro, L.D., Ricetti, J.H.Z., Weinschütz, L.C. & Pacheco, M.L.A.F. (2021) — \"Folhelho Lontras, uma Lagerstätte do Paleozoico brasileiro\", in Jelinek & Sommer (eds.), Contribuições à Geologia do RS e de SC, SBG/Compasso Lugar-Cultura, p.203–221",
     "unidade_pesquisa": "CENPALEO/UnC",
     "idade_ma": "ca. 303–295 Ma (limite Carbonífero–Permiano; idade em discussão)",
-    "observacoes": "Braquiópode quonetídeo da biota do Campáleo; espécimes geralmente de tamanho diminuto UNIDADE E IDADE (Mouro et al., 2020): o Folhelho Lontras é o topo da Fm. Campo Mourão (França & Potter, 1988) — na nomenclatura de superfície de SC, base da Fm. Rio do Sul. A idade está em discussão: conodontes (Mesogondolella spp.) e palinologia (Zona Vittatina costabilis) indicam Cisuraliano; datações U-Pb em zircão apontam Pennsylvaniano.",
+    "observacoes": "Braquiópode quonetídeo da biota do Campáleo; espécimes geralmente de tamanho diminuto. UNIDADE E IDADE (Mouro et al., 2020): o Folhelho Lontras é o topo da Fm. Campo Mourão (França & Potter, 1988) — na nomenclatura de superfície de SC, base da Fm. Rio do Sul. A idade está em discussão: conodontes (Mesogondolella spp.) e palinologia (Zona Vittatina costabilis) indicam Cisuraliano; datações U-Pb em zircão apontam Pennsylvaniano.",
     "fontes": [
       "https://doi.org/10.1016/j.palaeo.2020.109850",
       "https://www.sciencedirect.com/science/article/abs/pii/S0031018220302959",
@@ -1203,7 +1197,7 @@
     "descritor": "Mouro, L.D., Fernandes, A.C.S., Carvalho, M.A. & Weinschütz, L.C. (2018) — \"O Folhelho Lontras (Permiano, Bacia do Paraná) e seus fósseis: descoberta, identificação e conhecimento atual\", Anuário do Instituto de Geociências 41(2):636–646; Mouro, L.D., Pacheco, M.L.A.F., Ricetti, J.H.Z., Scomazzon, A.K., Horodyski, R.S., Fernandes, A.C.S., Carvalho, M.A., Weinschütz, L.C., Silva, M.S., Waichel, B.L. & Scherer, C.M.S. (2020) — \"Lontras Shale (Paraná Basin, Brazil): Insightful analysis and commentaries on paleoenvironment and fossil preservation into a deglaciation pulse of the Late Paleozoic Ice Age\", Palaeogeography, Palaeoclimatology, Palaeoecology 555:109850, DOI 10.1016/j.palaeo.2020.109850; Vinn, O., Zabini, C. & Weinschütz, L.C. (2019) — \"Ichnofossils associated with lingulide shells from the Lower Permian of Brazil\", Carnets de Géologie 2019(19):439–444, DOI 10.4267/2042/70636",
     "unidade_pesquisa": "CENPALEO/UnC",
     "idade_ma": "ca. 303–295 Ma (limite Carbonífero–Permiano; idade em discussão)",
-    "observacoes": "Braquiópode lingulídeo; associado a icnofósseis de bioerosão (Arachnostega isp.) perfurando suas conchas UNIDADE E IDADE (Mouro et al., 2020): o Folhelho Lontras é o topo da Fm. Campo Mourão (França & Potter, 1988) — na nomenclatura de superfície de SC, base da Fm. Rio do Sul. A idade está em discussão: conodontes (Mesogondolella spp.) e palinologia (Zona Vittatina costabilis) indicam Cisuraliano; datações U-Pb em zircão apontam Pennsylvaniano.",
+    "observacoes": "Braquiópode lingulídeo; associado a icnofósseis de bioerosão (Arachnostega isp.) perfurando suas conchas. UNIDADE E IDADE (Mouro et al., 2020): o Folhelho Lontras é o topo da Fm. Campo Mourão (França & Potter, 1988) — na nomenclatura de superfície de SC, base da Fm. Rio do Sul. A idade está em discussão: conodontes (Mesogondolella spp.) e palinologia (Zona Vittatina costabilis) indicam Cisuraliano; datações U-Pb em zircão apontam Pennsylvaniano.",
     "fontes": [
       "https://en.wikipedia.org/wiki/Lontras_Shale_Lagerst%C3%A4tte (compilação secundária — referência primária no campo Descritor)",
       "https://carnetsgeol.net/cg/19/19/CG1919.pdf (Vinn et al. 2019)"
@@ -1230,7 +1224,7 @@
     "descritor": "Mouro, L.D., Pacheco, M.L.A.F., Ricetti, J.H.Z., Scomazzon, A.K., Horodyski, R.S., Fernandes, A.C.S., Carvalho, M.A., Weinschütz, L.C., Silva, M.S., Waichel, B.L. & Scherer, C.M.S. (2020) — \"Lontras Shale (Paraná Basin, Brazil): Insightful analysis and commentaries on paleoenvironment and fossil preservation into a deglaciation pulse of the Late Paleozoic Ice Age\", Palaeogeography, Palaeoclimatology, Palaeoecology 555:109850, DOI 10.1016/j.palaeo.2020.109850; Mouro, L.D., Ricetti, J.H.Z., Weinschütz, L.C. & Pacheco, M.L.A.F. (2021) — \"Folhelho Lontras, uma Lagerstätte do Paleozoico brasileiro\", in Jelinek & Sommer (eds.), Contribuições à Geologia do RS e de SC, SBG/Compasso Lugar-Cultura, p.203–221",
     "unidade_pesquisa": "CENPALEO/UnC",
     "idade_ma": "ca. 303–295 Ma (limite Carbonífero–Permiano; idade em discussão)",
-    "observacoes": "Braquiópode beecheriídeo da biota do Campáleo UNIDADE E IDADE (Mouro et al., 2020): o Folhelho Lontras é o topo da Fm. Campo Mourão (França & Potter, 1988) — na nomenclatura de superfície de SC, base da Fm. Rio do Sul. A idade está em discussão: conodontes (Mesogondolella spp.) e palinologia (Zona Vittatina costabilis) indicam Cisuraliano; datações U-Pb em zircão apontam Pennsylvaniano.",
+    "observacoes": "Braquiópode beecheriídeo da biota do Campáleo. UNIDADE E IDADE (Mouro et al., 2020): o Folhelho Lontras é o topo da Fm. Campo Mourão (França & Potter, 1988) — na nomenclatura de superfície de SC, base da Fm. Rio do Sul. A idade está em discussão: conodontes (Mesogondolella spp.) e palinologia (Zona Vittatina costabilis) indicam Cisuraliano; datações U-Pb em zircão apontam Pennsylvaniano.",
     "fontes": [
       "https://doi.org/10.1016/j.palaeo.2020.109850",
       "https://www.sciencedirect.com/science/article/abs/pii/S0031018220302959",
@@ -1259,7 +1253,7 @@
     "descritor": "Mouro, L.D., Pacheco, M.L.A.F., Ricetti, J.H.Z., Scomazzon, A.K., Horodyski, R.S., Fernandes, A.C.S., Carvalho, M.A., Weinschütz, L.C., Silva, M.S., Waichel, B.L. & Scherer, C.M.S. (2020) — \"Lontras Shale (Paraná Basin, Brazil): Insightful analysis and commentaries on paleoenvironment and fossil preservation into a deglaciation pulse of the Late Paleozoic Ice Age\", Palaeogeography, Palaeoclimatology, Palaeoecology 555:109850, DOI 10.1016/j.palaeo.2020.109850; Mouro, L.D., Ricetti, J.H.Z., Weinschütz, L.C. & Pacheco, M.L.A.F. (2021) — \"Folhelho Lontras, uma Lagerstätte do Paleozoico brasileiro\", in Jelinek & Sommer (eds.), Contribuições à Geologia do RS e de SC, SBG/Compasso Lugar-Cultura, p.203–221",
     "unidade_pesquisa": "CENPALEO/UnC",
     "idade_ma": "ca. 303–295 Ma (limite Carbonífero–Permiano; idade em discussão)",
-    "observacoes": "Braquiópode amboceolídeo da biota do Campáleo UNIDADE E IDADE (Mouro et al., 2020): o Folhelho Lontras é o topo da Fm. Campo Mourão (França & Potter, 1988) — na nomenclatura de superfície de SC, base da Fm. Rio do Sul. A idade está em discussão: conodontes (Mesogondolella spp.) e palinologia (Zona Vittatina costabilis) indicam Cisuraliano; datações U-Pb em zircão apontam Pennsylvaniano.",
+    "observacoes": "Braquiópode amboceolídeo da biota do Campáleo. UNIDADE E IDADE (Mouro et al., 2020): o Folhelho Lontras é o topo da Fm. Campo Mourão (França & Potter, 1988) — na nomenclatura de superfície de SC, base da Fm. Rio do Sul. A idade está em discussão: conodontes (Mesogondolella spp.) e palinologia (Zona Vittatina costabilis) indicam Cisuraliano; datações U-Pb em zircão apontam Pennsylvaniano.",
     "fontes": [
       "https://doi.org/10.1016/j.palaeo.2020.109850",
       "https://www.sciencedirect.com/science/article/abs/pii/S0031018220302959",
@@ -1288,7 +1282,7 @@
     "descritor": "Mouro, L.D., Pacheco, M.L.A.F., Ricetti, J.H.Z., Scomazzon, A.K., Horodyski, R.S., Fernandes, A.C.S., Carvalho, M.A., Weinschütz, L.C., Silva, M.S., Waichel, B.L. & Scherer, C.M.S. (2020) — \"Lontras Shale (Paraná Basin, Brazil): Insightful analysis and commentaries on paleoenvironment and fossil preservation into a deglaciation pulse of the Late Paleozoic Ice Age\", Palaeogeography, Palaeoclimatology, Palaeoecology 555:109850, DOI 10.1016/j.palaeo.2020.109850; Mouro, L.D., Ricetti, J.H.Z., Weinschütz, L.C. & Pacheco, M.L.A.F. (2021) — \"Folhelho Lontras, uma Lagerstätte do Paleozoico brasileiro\", in Jelinek & Sommer (eds.), Contribuições à Geologia do RS e de SC, SBG/Compasso Lugar-Cultura, p.203–221",
     "unidade_pesquisa": "CENPALEO/UnC",
     "idade_ma": "ca. 303–295 Ma (limite Carbonífero–Permiano; idade em discussão)",
-    "observacoes": "Braquiópode rugosoquonetídeo da biota do Campáleo UNIDADE E IDADE (Mouro et al., 2020): o Folhelho Lontras é o topo da Fm. Campo Mourão (França & Potter, 1988) — na nomenclatura de superfície de SC, base da Fm. Rio do Sul. A idade está em discussão: conodontes (Mesogondolella spp.) e palinologia (Zona Vittatina costabilis) indicam Cisuraliano; datações U-Pb em zircão apontam Pennsylvaniano.",
+    "observacoes": "Braquiópode rugosoquonetídeo da biota do Campáleo. UNIDADE E IDADE (Mouro et al., 2020): o Folhelho Lontras é o topo da Fm. Campo Mourão (França & Potter, 1988) — na nomenclatura de superfície de SC, base da Fm. Rio do Sul. A idade está em discussão: conodontes (Mesogondolella spp.) e palinologia (Zona Vittatina costabilis) indicam Cisuraliano; datações U-Pb em zircão apontam Pennsylvaniano.",
     "fontes": [
       "https://doi.org/10.1016/j.palaeo.2020.109850",
       "https://www.sciencedirect.com/science/article/abs/pii/S0031018220302959",
@@ -1317,7 +1311,7 @@
     "descritor": "Mouro, L.D., Pacheco, M.L.A.F., Ricetti, J.H.Z., Scomazzon, A.K., Horodyski, R.S., Fernandes, A.C.S., Carvalho, M.A., Weinschütz, L.C., Silva, M.S., Waichel, B.L. & Scherer, C.M.S. (2020) — \"Lontras Shale (Paraná Basin, Brazil): Insightful analysis and commentaries on paleoenvironment and fossil preservation into a deglaciation pulse of the Late Paleozoic Ice Age\", Palaeogeography, Palaeoclimatology, Palaeoecology 555:109850, DOI 10.1016/j.palaeo.2020.109850; Mouro, L.D., Ricetti, J.H.Z., Weinschütz, L.C. & Pacheco, M.L.A.F. (2021) — \"Folhelho Lontras, uma Lagerstätte do Paleozoico brasileiro\", in Jelinek & Sommer (eds.), Contribuições à Geologia do RS e de SC, SBG/Compasso Lugar-Cultura, p.203–221",
     "unidade_pesquisa": "CENPALEO/UnC",
     "idade_ma": "ca. 303–295 Ma (limite Carbonífero–Permiano; idade em discussão)",
-    "observacoes": "Família de braquiópodes adicional documentada na fauna do Campáleo, distinta de Orbiculoidea UNIDADE E IDADE (Mouro et al., 2020): o Folhelho Lontras é o topo da Fm. Campo Mourão (França & Potter, 1988) — na nomenclatura de superfície de SC, base da Fm. Rio do Sul. A idade está em discussão: conodontes (Mesogondolella spp.) e palinologia (Zona Vittatina costabilis) indicam Cisuraliano; datações U-Pb em zircão apontam Pennsylvaniano.",
+    "observacoes": "Família de braquiópodes adicional documentada na fauna do Campáleo, distinta de Orbiculoidea. UNIDADE E IDADE (Mouro et al., 2020): o Folhelho Lontras é o topo da Fm. Campo Mourão (França & Potter, 1988) — na nomenclatura de superfície de SC, base da Fm. Rio do Sul. A idade está em discussão: conodontes (Mesogondolella spp.) e palinologia (Zona Vittatina costabilis) indicam Cisuraliano; datações U-Pb em zircão apontam Pennsylvaniano.",
     "fontes": [
       "https://doi.org/10.1016/j.palaeo.2020.109850",
       "https://www.sciencedirect.com/science/article/abs/pii/S0031018220302959",
@@ -1374,7 +1368,7 @@
     "descritor": "Mouro, L.D., Pacheco, M.L.A.F., Ricetti, J.H.Z., Scomazzon, A.K., Horodyski, R.S., Fernandes, A.C.S., Carvalho, M.A., Weinschütz, L.C., Silva, M.S., Waichel, B.L. & Scherer, C.M.S. (2020) — \"Lontras Shale (Paraná Basin, Brazil): Insightful analysis and commentaries on paleoenvironment and fossil preservation into a deglaciation pulse of the Late Paleozoic Ice Age\", Palaeogeography, Palaeoclimatology, Palaeoecology 555:109850, DOI 10.1016/j.palaeo.2020.109850; Mouro, L.D., Ricetti, J.H.Z., Weinschütz, L.C. & Pacheco, M.L.A.F. (2021) — \"Folhelho Lontras, uma Lagerstätte do Paleozoico brasileiro\", in Jelinek & Sommer (eds.), Contribuições à Geologia do RS e de SC, SBG/Compasso Lugar-Cultura, p.203–221",
     "unidade_pesquisa": "CENPALEO/UnC",
     "idade_ma": "ca. 303–295 Ma (limite Carbonífero–Permiano; idade em discussão)",
-    "observacoes": "Ordem extinta de esponjas registrada na biota do Campáleo; possível demosponja também citada UNIDADE E IDADE (Mouro et al., 2020): o Folhelho Lontras é o topo da Fm. Campo Mourão (França & Potter, 1988) — na nomenclatura de superfície de SC, base da Fm. Rio do Sul. A idade está em discussão: conodontes (Mesogondolella spp.) e palinologia (Zona Vittatina costabilis) indicam Cisuraliano; datações U-Pb em zircão apontam Pennsylvaniano.",
+    "observacoes": "Ordem extinta de esponjas registrada na biota do Campáleo; possível demosponja também citada. UNIDADE E IDADE (Mouro et al., 2020): o Folhelho Lontras é o topo da Fm. Campo Mourão (França & Potter, 1988) — na nomenclatura de superfície de SC, base da Fm. Rio do Sul. A idade está em discussão: conodontes (Mesogondolella spp.) e palinologia (Zona Vittatina costabilis) indicam Cisuraliano; datações U-Pb em zircão apontam Pennsylvaniano.",
     "fontes": [
       "https://doi.org/10.1016/j.palaeo.2020.109850",
       "https://www.sciencedirect.com/science/article/abs/pii/S0031018220302959",
@@ -1428,15 +1422,15 @@
     "lon": -49.8147,
     "bacia": "Bacia do Paraná — Grupo Itararé",
     "armazenamento": "CENPALEO / Museu da Terra e da Vida, UnC, Mafra, SC",
-    "descritor": "Malabarba, M.C.S.L. (1988) — \"A new genus and species of stem group actinopteran fish from the Lower Permian of Santa Catarina State, Brazil\", Zoological Journal of the Linnean Society 94:287–299 — \"A new genus and species of stem group actinopteran fish from the Lower Permian of Santa Catarina State, Brazil\", Zoological Journal of the Linnean Society 94:287–299; Hamel, M.-H. (2005) — \"A new actinopterygian from the Early Permian of the Paraná Basin, Brazil\", Journal of Vertebrate Paleontology 25(1):19–26 — \"A new actinopterygian from the Early Permian of the Paraná Basin, Brazil\", Journal of Vertebrate Paleontology 25(1):19–26; Richter, M. (1991) — \"A New Marine Ichthyofauna from the Permian of the Paraná Basin of Southern Brazil\", Tese de Doutorado (Ph.D.), King's College London, University of London, 233 pp. — \"A New Marine Ichthyofauna from the Permian of the Paraná Basin of Southern Brazil\", Tese de Doutorado (Ph.D.), King's College London, University of London, 233 pp.",
+    "descritor": "Citação de mídia — Wikipédia (enciclopédia on-line), verbete «Lontras Shale Lagerstätte», tabela de fósseis do afloramento Campáleo, que lista o táxon como «a ray-finned fish» sem autoria, ano nem referência primária",
     "unidade_pesquisa": "CENPALEO/UnC",
     "idade_ma": "ca. 303–295 Ma (limite Carbonífero–Permiano; idade em discussão)",
-    "observacoes": "Classificação: peixe actinopterígio. Um dos gêneros de peixe de nadadeira raiada (Actinopterygii) com nome formal documentados para o Campáleo UNIDADE E IDADE (Mouro et al., 2020): o Folhelho Lontras é o topo da Fm. Campo Mourão (França & Potter, 1988) — na nomenclatura de superfície de SC, base da Fm. Rio do Sul. A idade está em discussão: conodontes (Mesogondolella spp.) e palinologia (Zona Vittatina costabilis) indicam Cisuraliano; datações U-Pb em zircão apontam Pennsylvaniano.",
+    "observacoes": "CITAÇÃO DE MÍDIA — não foi localizada publicação científica que trate deste táxon. A Wikipédia (verbete «Lontras Shale Lagerstätte») lista Daphnaechelus sp. no afloramento Campáleo como «a ray-finned fish», sem autoria, ano nem referência para o táxon; o texto de Mouro et al. (2020) não cita o gênero. A classificação como peixe actinopterígio e a atribuição ao Campáleo seguem apenas esse verbete. CORREÇÃO (2026.09.14): a ficha citava Malabarba (1988), Hamel (2005) e Richter (1991), obras que tratam de outros táxons ou da ictiofauna em geral, e apontava para um artigo sobre larvas de tricóptero; ambos foram retirados. UNIDADE E IDADE (Mouro et al., 2020): o Folhelho Lontras é o topo da Fm. Campo Mourão (França & Potter, 1988) — na nomenclatura de superfície de SC, base da Fm. Rio do Sul. A idade está em discussão: conodontes (Mesogondolella spp.) e palinologia (Zona Vittatina costabilis) indicam Cisuraliano; datações U-Pb em zircão apontam Pennsylvaniano.",
     "fontes": [
-      "https://www.researchgate.net/publication/290429860_Larval_cases_of_caddisfly_Insecta_Trichoptera_affinity_in_Early_Permian_marine_environments_of_Gondwana"
+      "https://en.wikipedia.org/wiki/Lontras_Shale_Lagerst%C3%A4tte (listagem de fósseis do Campáleo — compilação secundária, sem referência por táxon)"
     ],
-    "citacao_abnt": "MALABARBA, M.C.S.L. 1988. A new genus and species of stem group actinopteran fish from the Lower Permian of Santa Catarina State, Brazil. Zoological Journal of the Linnean Society, 94, 287–299 — \"A new genus and species of stem group actinopteran fish from the Lower Permian of Santa Catarina State, Brazil\", Zoological Journal of the Linnean Society 94:287–299. | HAMEL, M.-H. 2005. A new actinopterygian from the Early Permian of the Paraná Basin, Brazil. Journal of Vertebrate Paleontology, 25(1), 19–26 — \"A new actinopterygian from the Early Permian of the Paraná Basin, Brazil\", Journal of Vertebrate Paleontology 25(1):19–26. | RICHTER, M. 1991. A New Marine Ichthyofauna from the Permian of the Paraná Basin of Southern Brazil. Tese de Doutorado (Ph.D.), King's College London, University of London, 233 pp. — \"A New Marine Ichthyofauna from the Permian of the Paraná Basin of Southern Brazil\", Tese de Doutorado (Ph.D.), King's College London, University of London, 233 pp.",
-    "tipo_fonte": "Artigo em periódico"
+    "citacao_abnt": "[Citação de mídia, sem publicação científica primária identificada: Wikipédia (enciclopédia on-line), verbete «Lontras Shale Lagerstätte», tabela de fósseis do afloramento Campáleo, que lista o táxon como «a ray-finned fish» sem autoria, ano nem referência primária]",
+    "tipo_fonte": "Citação de mídia"
   },
   {
     "id": 57,
@@ -1444,7 +1438,7 @@
     "era": "Paleozóico — Carbonífero",
     "periodo_ordem": 5,
     "formacao": "Grupo Itararé / Folhelho Lontras",
-    "taxon": "Irajapintoseidon uruguayensis Beltan, 1975",
+    "taxon": "Irajapintoseidon uruguayensis",
     "categoria": "Vertebrado — peixes",
     "numero_catalogo": "-",
     "local_coleta": "Afloramento Campáleo — BR-280, a 2 km do entroncamento com a BR-116, área urbana de Mafra, SC (26°09′30,22″S, 49°48′52,82″W; Mouro et al., 2020)",
@@ -1454,15 +1448,15 @@
     "lon": -49.8147,
     "bacia": "Bacia do Paraná — Grupo Itararé",
     "armazenamento": "CENPALEO / Museu da Terra e da Vida, UnC, Mafra, SC",
-    "descritor": "Malabarba, M.C.S.L. (1988) — \"A new genus and species of stem group actinopteran fish from the Lower Permian of Santa Catarina State, Brazil\", Zoological Journal of the Linnean Society 94:287–299 — \"A new genus and species of stem group actinopteran fish from the Lower Permian of Santa Catarina State, Brazil\", Zoological Journal of the Linnean Society 94:287–299; Hamel, M.-H. (2005) — \"A new actinopterygian from the Early Permian of the Paraná Basin, Brazil\", Journal of Vertebrate Paleontology 25(1):19–26 — \"A new actinopterygian from the Early Permian of the Paraná Basin, Brazil\", Journal of Vertebrate Paleontology 25(1):19–26; Richter, M. (1991) — \"A New Marine Ichthyofauna from the Permian of the Paraná Basin of Southern Brazil\", Tese de Doutorado (Ph.D.), King's College London, University of London, 233 pp. — \"A New Marine Ichthyofauna from the Permian of the Paraná Basin of Southern Brazil\", Tese de Doutorado (Ph.D.), King's College London, University of London, 233 pp.",
+    "descritor": "Citação de mídia — Wikipédia (enciclopédia on-line), verbete «Lontras Shale Lagerstätte», tabela de fósseis do afloramento Campáleo, que lista o táxon como «a ray-finned fish» sem autoria, ano nem referência primária",
     "unidade_pesquisa": "CENPALEO/UnC",
     "idade_ma": "ca. 303–295 Ma (limite Carbonífero–Permiano; idade em discussão)",
-    "observacoes": "Classificação: peixe actinopterígio. Espécie de actinopterígio nomeada formalmente, registrada no Campáleo UNIDADE E IDADE (Mouro et al., 2020): o Folhelho Lontras é o topo da Fm. Campo Mourão (França & Potter, 1988) — na nomenclatura de superfície de SC, base da Fm. Rio do Sul. A idade está em discussão: conodontes (Mesogondolella spp.) e palinologia (Zona Vittatina costabilis) indicam Cisuraliano; datações U-Pb em zircão apontam Pennsylvaniano.",
+    "observacoes": "CITAÇÃO DE MÍDIA — não foi localizada publicação científica que trate deste táxon. A Wikipédia (verbete «Lontras Shale Lagerstätte») lista Irajapintoseidon uruguayensis no afloramento Campáleo como «a ray-finned fish», sem autoria, ano nem referência para o táxon; o texto de Mouro et al. (2020) não cita a espécie. A classificação como peixe actinopterígio e a atribuição ao Campáleo seguem apenas esse verbete. CORREÇÃO (2026.09.14): a ficha trazia a autoria «Beltan, 1975», que não foi confirmada em nenhuma fonte consultada e foi retirada; também citava Malabarba (1988), Hamel (2005) e Richter (1991), que tratam de outros táxons ou da ictiofauna em geral, e um artigo sobre larvas de tricóptero, todos retirados. UNIDADE E IDADE (Mouro et al., 2020): o Folhelho Lontras é o topo da Fm. Campo Mourão (França & Potter, 1988) — na nomenclatura de superfície de SC, base da Fm. Rio do Sul. A idade está em discussão: conodontes (Mesogondolella spp.) e palinologia (Zona Vittatina costabilis) indicam Cisuraliano; datações U-Pb em zircão apontam Pennsylvaniano.",
     "fontes": [
-      "https://www.researchgate.net/publication/290429860_Larval_cases_of_caddisfly_Insecta_Trichoptera_affinity_in_Early_Permian_marine_environments_of_Gondwana"
+      "https://en.wikipedia.org/wiki/Lontras_Shale_Lagerst%C3%A4tte (listagem de fósseis do Campáleo — compilação secundária, sem referência por táxon)"
     ],
-    "citacao_abnt": "MALABARBA, M.C.S.L. 1988. A new genus and species of stem group actinopteran fish from the Lower Permian of Santa Catarina State, Brazil. Zoological Journal of the Linnean Society, 94, 287–299 — \"A new genus and species of stem group actinopteran fish from the Lower Permian of Santa Catarina State, Brazil\", Zoological Journal of the Linnean Society 94:287–299. | HAMEL, M.-H. 2005. A new actinopterygian from the Early Permian of the Paraná Basin, Brazil. Journal of Vertebrate Paleontology, 25(1), 19–26 — \"A new actinopterygian from the Early Permian of the Paraná Basin, Brazil\", Journal of Vertebrate Paleontology 25(1):19–26. | RICHTER, M. 1991. A New Marine Ichthyofauna from the Permian of the Paraná Basin of Southern Brazil. Tese de Doutorado (Ph.D.), King's College London, University of London, 233 pp. — \"A New Marine Ichthyofauna from the Permian of the Paraná Basin of Southern Brazil\", Tese de Doutorado (Ph.D.), King's College London, University of London, 233 pp.",
-    "tipo_fonte": "Artigo em periódico"
+    "citacao_abnt": "[Citação de mídia, sem publicação científica primária identificada: Wikipédia (enciclopédia on-line), verbete «Lontras Shale Lagerstätte», tabela de fósseis do afloramento Campáleo, que lista o táxon como «a ray-finned fish» sem autoria, ano nem referência primária]",
+    "tipo_fonte": "Citação de mídia"
   },
   {
     "id": 58,
@@ -1480,14 +1474,16 @@
     "lon": -49.8147,
     "bacia": "Bacia do Paraná — Grupo Itararé",
     "armazenamento": "CENPALEO / Museu da Terra e da Vida, UnC, Mafra, SC",
-    "descritor": "Malabarba, M.C.S.L. (1988) — \"A new genus and species of stem group actinopteran fish from the Lower Permian of Santa Catarina State, Brazil\", Zoological Journal of the Linnean Society 94:287–299 — \"A new genus and species of stem group actinopteran fish from the Lower Permian of Santa Catarina State, Brazil\", Zoological Journal of the Linnean Society 94:287–299; Hamel, M.-H. (2005) — \"A new actinopterygian from the Early Permian of the Paraná Basin, Brazil\", Journal of Vertebrate Paleontology 25(1):19–26 — \"A new actinopterygian from the Early Permian of the Paraná Basin, Brazil\", Journal of Vertebrate Paleontology 25(1):19–26; Richter, M. (1991) — \"A New Marine Ichthyofauna from the Permian of the Paraná Basin of Southern Brazil\", Tese de Doutorado (Ph.D.), King's College London, University of London, 233 pp. — \"A New Marine Ichthyofauna from the Permian of the Paraná Basin of Southern Brazil\", Tese de Doutorado (Ph.D.), King's College London, University of London, 233 pp.",
+    "descritor": "Hamel, M.-H. (2005) — \"A new lower actinopterygian from the Early Permian of the Paraná Basin, Brazil\", Journal of Vertebrate Paleontology 25(1):19–26; Mouro, L.D., Pacheco, M.L.A.F., Ricetti, J.H.Z., Scomazzon, A.K., Horodyski, R.S., Fernandes, A.C.S., Carvalho, M.A., Weinschütz, L.C., Silva, M.S., Waichel, B.L. & Scherer, C.M.S. (2020) — \"Lontras Shale (Paraná Basin, Brazil): Insightful analysis and commentaries on paleoenvironment and fossil preservation into a deglaciation pulse of the Late Paleozoic Ice Age\", Palaeogeography, Palaeoclimatology, Palaeoecology 555:109850, DOI 10.1016/j.palaeo.2020.109850",
     "unidade_pesquisa": "CENPALEO/UnC",
     "idade_ma": "ca. 303–295 Ma (limite Carbonífero–Permiano; idade em discussão)",
-    "observacoes": "Classificação: peixe actinopterígio. Epíteto específico faz referência ao rio Mafra; um dos peixes formalmente descritos do Lagerstätte UNIDADE E IDADE (Mouro et al., 2020): o Folhelho Lontras é o topo da Fm. Campo Mourão (França & Potter, 1988) — na nomenclatura de superfície de SC, base da Fm. Rio do Sul. A idade está em discussão: conodontes (Mesogondolella spp.) e palinologia (Zona Vittatina costabilis) indicam Cisuraliano; datações U-Pb em zircão apontam Pennsylvaniano.",
+    "observacoes": "Classificação: peixe actinopterígio; o título da obra que descreve o táxon fala em «lower actinopterygian». CONTEXTO CIENTÍFICO: Mouro et al. (2020) afirmam que cerca de duzentos actinopterígios basais completos do Folhelho Lontras 'foram há muito descritos' citando Malabarba (1988), Richter (1991) e Hamel (2005), mas o texto não nomeia as espécies. A atribuição da espécie ao afloramento Campáleo segue a listagem do verbete «Lontras Shale Lagerstätte» (Wikipédia, secundária). CORREÇÃO (2026.09.14): a ficha repetia as mesmas três obras dos demais peixes do Campáleo (inclusive Malabarba, 1988, que trata de outra espécie) e uma frase sobre a origem do epíteto que não tinha fonte; ambas retiradas. UNIDADE E IDADE (Mouro et al., 2020): o Folhelho Lontras é o topo da Fm. Campo Mourão (França & Potter, 1988) — na nomenclatura de superfície de SC, base da Fm. Rio do Sul. A idade está em discussão: conodontes (Mesogondolella spp.) e palinologia (Zona Vittatina costabilis) indicam Cisuraliano; datações U-Pb em zircão apontam Pennsylvaniano.",
     "fontes": [
-      "https://www.researchgate.net/publication/290429860_Larval_cases_of_caddisfly_Insecta_Trichoptera_affinity_in_Early_Permian_marine_environments_of_Gondwana"
+      "https://www.researchgate.net/publication/232677809_A_new_lower_actinopterygian_from_the_Early_Permian_of_the_Parana_Basin_Brazil (página da obra de Hamel, 2005 — texto integral não consultado)",
+      "https://doi.org/10.1016/j.palaeo.2020.109850 (contexto do Folhelho Lontras — Mouro et al., 2020; não nomeia a espécie)",
+      "https://en.wikipedia.org/wiki/Lontras_Shale_Lagerst%C3%A4tte (listagem de fósseis do Campáleo — compilação secundária)"
     ],
-    "citacao_abnt": "MALABARBA, M.C.S.L. 1988. A new genus and species of stem group actinopteran fish from the Lower Permian of Santa Catarina State, Brazil. Zoological Journal of the Linnean Society, 94, 287–299 — \"A new genus and species of stem group actinopteran fish from the Lower Permian of Santa Catarina State, Brazil\", Zoological Journal of the Linnean Society 94:287–299. | HAMEL, M.-H. 2005. A new actinopterygian from the Early Permian of the Paraná Basin, Brazil. Journal of Vertebrate Paleontology, 25(1), 19–26 — \"A new actinopterygian from the Early Permian of the Paraná Basin, Brazil\", Journal of Vertebrate Paleontology 25(1):19–26. | RICHTER, M. 1991. A New Marine Ichthyofauna from the Permian of the Paraná Basin of Southern Brazil. Tese de Doutorado (Ph.D.), King's College London, University of London, 233 pp. — \"A New Marine Ichthyofauna from the Permian of the Paraná Basin of Southern Brazil\", Tese de Doutorado (Ph.D.), King's College London, University of London, 233 pp.",
+    "citacao_abnt": "HAMEL, M.-H. 2005. A new lower actinopterygian from the Early Permian of the Paraná Basin, Brazil. Journal of Vertebrate Paleontology, 25(1), 19–26. | MOURO, L.D.; PACHECO, M.L.A.F.; RICETTI, J.H.Z. et al. 2020. Lontras Shale (Paraná Basin, Brazil): Insightful analysis and commentaries on paleoenvironment and fossil preservation into a deglaciation pulse of the Late Paleozoic Ice Age. Palaeogeography, Palaeoclimatology, Palaeoecology, 555, 109850. DOI: 10.1016/j.palaeo.2020.109850",
     "tipo_fonte": "Artigo em periódico"
   },
   {
@@ -1506,14 +1502,15 @@
     "lon": -49.8147,
     "bacia": "Bacia do Paraná — Grupo Itararé",
     "armazenamento": "CENPALEO / Museu da Terra e da Vida, UnC, Mafra, SC",
-    "descritor": "Malabarba, M.C.S.L. (1988) — \"A new genus and species of stem group actinopteran fish from the Lower Permian of Santa Catarina State, Brazil\", Zoological Journal of the Linnean Society 94:287–299 — \"A new genus and species of stem group actinopteran fish from the Lower Permian of Santa Catarina State, Brazil\", Zoological Journal of the Linnean Society 94:287–299; Hamel, M.-H. (2005) — \"A new actinopterygian from the Early Permian of the Paraná Basin, Brazil\", Journal of Vertebrate Paleontology 25(1):19–26 — \"A new actinopterygian from the Early Permian of the Paraná Basin, Brazil\", Journal of Vertebrate Paleontology 25(1):19–26; Richter, M. (1991) — \"A New Marine Ichthyofauna from the Permian of the Paraná Basin of Southern Brazil\", Tese de Doutorado (Ph.D.), King's College London, University of London, 233 pp. — \"A New Marine Ichthyofauna from the Permian of the Paraná Basin of Southern Brazil\", Tese de Doutorado (Ph.D.), King's College London, University of London, 233 pp.",
+    "descritor": "Malabarba, M.C.S.L. (1988) — \"A new genus and species of stem group actinopteran fish from the Lower Permian of Santa Catarina State, Brazil\", Zoological Journal of the Linnean Society 94:287–299; Mouro, L.D., Pacheco, M.L.A.F., Ricetti, J.H.Z., Scomazzon, A.K., Horodyski, R.S., Fernandes, A.C.S., Carvalho, M.A., Weinschütz, L.C., Silva, M.S., Waichel, B.L. & Scherer, C.M.S. (2020) — \"Lontras Shale (Paraná Basin, Brazil): Insightful analysis and commentaries on paleoenvironment and fossil preservation into a deglaciation pulse of the Late Paleozoic Ice Age\", Palaeogeography, Palaeoclimatology, Palaeoecology 555:109850, DOI 10.1016/j.palaeo.2020.109850",
     "unidade_pesquisa": "CENPALEO/UnC",
     "idade_ma": "ca. 303–295 Ma (limite Carbonífero–Permiano; idade em discussão)",
-    "observacoes": "Classificação: peixe actinopterígio. Epíteto específico faz referência ao município de Mafra UNIDADE E IDADE (Mouro et al., 2020): o Folhelho Lontras é o topo da Fm. Campo Mourão (França & Potter, 1988) — na nomenclatura de superfície de SC, base da Fm. Rio do Sul. A idade está em discussão: conodontes (Mesogondolella spp.) e palinologia (Zona Vittatina costabilis) indicam Cisuraliano; datações U-Pb em zircão apontam Pennsylvaniano.",
+    "observacoes": "Classificação: peixe actinopterígio; o título da obra que descreve o táxon fala em «stem group actinopteran fish». CONTEXTO CIENTÍFICO: Mouro et al. (2020) afirmam que cerca de duzentos actinopterígios basais completos do Folhelho Lontras 'foram há muito descritos' citando Malabarba (1988), Richter (1991) e Hamel (2005), mas o texto não nomeia as espécies. A atribuição da espécie ao afloramento Campáleo segue a listagem do verbete «Lontras Shale Lagerstätte» (Wikipédia, secundária). CORREÇÃO (2026.09.14): a ficha repetia as mesmas três obras dos demais peixes do Campáleo (inclusive Hamel, 2005, que trata de outra espécie) e uma frase sobre a origem do epíteto que não tinha fonte; ambas retiradas. UNIDADE E IDADE (Mouro et al., 2020): o Folhelho Lontras é o topo da Fm. Campo Mourão (França & Potter, 1988) — na nomenclatura de superfície de SC, base da Fm. Rio do Sul. A idade está em discussão: conodontes (Mesogondolella spp.) e palinologia (Zona Vittatina costabilis) indicam Cisuraliano; datações U-Pb em zircão apontam Pennsylvaniano.",
     "fontes": [
-      "https://www.researchgate.net/publication/290429860_Larval_cases_of_caddisfly_Insecta_Trichoptera_affinity_in_Early_Permian_marine_environments_of_Gondwana"
+      "https://doi.org/10.1016/j.palaeo.2020.109850 (contexto do Folhelho Lontras — Mouro et al., 2020; não nomeia a espécie)",
+      "https://en.wikipedia.org/wiki/Lontras_Shale_Lagerst%C3%A4tte (listagem de fósseis do Campáleo — compilação secundária)"
     ],
-    "citacao_abnt": "MALABARBA, M.C.S.L. 1988. A new genus and species of stem group actinopteran fish from the Lower Permian of Santa Catarina State, Brazil. Zoological Journal of the Linnean Society, 94, 287–299 — \"A new genus and species of stem group actinopteran fish from the Lower Permian of Santa Catarina State, Brazil\", Zoological Journal of the Linnean Society 94:287–299. | HAMEL, M.-H. 2005. A new actinopterygian from the Early Permian of the Paraná Basin, Brazil. Journal of Vertebrate Paleontology, 25(1), 19–26 — \"A new actinopterygian from the Early Permian of the Paraná Basin, Brazil\", Journal of Vertebrate Paleontology 25(1):19–26. | RICHTER, M. 1991. A New Marine Ichthyofauna from the Permian of the Paraná Basin of Southern Brazil. Tese de Doutorado (Ph.D.), King's College London, University of London, 233 pp. — \"A New Marine Ichthyofauna from the Permian of the Paraná Basin of Southern Brazil\", Tese de Doutorado (Ph.D.), King's College London, University of London, 233 pp.",
+    "citacao_abnt": "MALABARBA, M.C.S.L. 1988. A new genus and species of stem group actinopteran fish from the Lower Permian of Santa Catarina State, Brazil. Zoological Journal of the Linnean Society, 94, 287–299. | MOURO, L.D.; PACHECO, M.L.A.F.; RICETTI, J.H.Z. et al. 2020. Lontras Shale (Paraná Basin, Brazil): Insightful analysis and commentaries on paleoenvironment and fossil preservation into a deglaciation pulse of the Late Paleozoic Ice Age. Palaeogeography, Palaeoclimatology, Palaeoecology, 555, 109850. DOI: 10.1016/j.palaeo.2020.109850",
     "tipo_fonte": "Artigo em periódico"
   },
   {
@@ -1535,7 +1532,7 @@
     "descritor": "Mouro, L.D., Pacheco, M.L.A.F., Ricetti, J.H.Z., Scomazzon, A.K., Horodyski, R.S., Fernandes, A.C.S., Carvalho, M.A., Weinschütz, L.C., Silva, M.S., Waichel, B.L. & Scherer, C.M.S. (2020) — \"Lontras Shale (Paraná Basin, Brazil): Insightful analysis and commentaries on paleoenvironment and fossil preservation into a deglaciation pulse of the Late Paleozoic Ice Age\", Palaeogeography, Palaeoclimatology, Palaeoecology 555:109850, DOI 10.1016/j.palaeo.2020.109850; Mouro, L.D., Ricetti, J.H.Z., Weinschütz, L.C. & Pacheco, M.L.A.F. (2021) — \"Folhelho Lontras, uma Lagerstätte do Paleozoico brasileiro\", in Jelinek & Sommer (eds.), Contribuições à Geologia do RS e de SC, SBG/Compasso Lugar-Cultura, p.203–221",
     "unidade_pesquisa": "CENPALEO/UnC",
     "idade_ma": "ca. 303–295 Ma (limite Carbonífero–Permiano; idade em discussão)",
-    "observacoes": "Classificação: peixe de nadadeira lobada (Crossopterygii). Conhecido a partir de escamas; celacanto paleozoico do Folhelho Lontras UNIDADE E IDADE (Mouro et al., 2020): o Folhelho Lontras é o topo da Fm. Campo Mourão (França & Potter, 1988) — na nomenclatura de superfície de SC, base da Fm. Rio do Sul. A idade está em discussão: conodontes (Mesogondolella spp.) e palinologia (Zona Vittatina costabilis) indicam Cisuraliano; datações U-Pb em zircão apontam Pennsylvaniano.",
+    "observacoes": "Classificação: peixe de nadadeira lobada (Crossopterygii). Conhecido a partir de escamas; celacanto paleozoico do Folhelho Lontras. UNIDADE E IDADE (Mouro et al., 2020): o Folhelho Lontras é o topo da Fm. Campo Mourão (França & Potter, 1988) — na nomenclatura de superfície de SC, base da Fm. Rio do Sul. A idade está em discussão: conodontes (Mesogondolella spp.) e palinologia (Zona Vittatina costabilis) indicam Cisuraliano; datações U-Pb em zircão apontam Pennsylvaniano.",
     "fontes": [
       "https://doi.org/10.1016/j.palaeo.2020.109850",
       "https://www.sciencedirect.com/science/article/abs/pii/S0031018220302959",
@@ -1622,7 +1619,7 @@
     "descritor": "Vinn, O., Zabini, C. & Weinschütz, L.C. (2019) — \"Ichnofossils associated with lingulide shells from the Lower Permian of Brazil\", Carnets de Géologie 2019(19):439–444, DOI 10.4267/2042/70636",
     "unidade_pesquisa": "CENPALEO/UnC",
     "idade_ma": "ca. 303–295 Ma (limite Carbonífero–Permiano; idade em discussão)",
-    "observacoes": "Classificação: escavação de bioerosão em concha. Traços de escavação no interior de conchas de braquiópodes lingulídeos, indicativos de colonização por poliquetas UNIDADE E IDADE (Mouro et al., 2020): o Folhelho Lontras é o topo da Fm. Campo Mourão (França & Potter, 1988) — na nomenclatura de superfície de SC, base da Fm. Rio do Sul. A idade está em discussão: conodontes (Mesogondolella spp.) e palinologia (Zona Vittatina costabilis) indicam Cisuraliano; datações U-Pb em zircão apontam Pennsylvaniano. Verificação (2026.09.13): a autoria anterior desta ficha (Vinn, Wilson, Mouro & Fernandes) estava incorreta; a página bibliográfica consultada informa apenas 'Permiano Inferior do Brasil', e a procedência no afloramento Campáleo (Folhelho Lontras, Mafra) vem da compilação secundária do Folhelho Lontras e da coautoria de Weinschütz (CENPALEO/UnC). O mesmo artigo cita Oichnus paraboloides e O. simplex em conchas de lingulídeos.",
+    "observacoes": "Classificação: escavação de bioerosão em concha. Traços de escavação no interior de conchas de braquiópodes lingulídeos, indicativos de colonização por poliquetas. UNIDADE E IDADE (Mouro et al., 2020): o Folhelho Lontras é o topo da Fm. Campo Mourão (França & Potter, 1988) — na nomenclatura de superfície de SC, base da Fm. Rio do Sul. A idade está em discussão: conodontes (Mesogondolella spp.) e palinologia (Zona Vittatina costabilis) indicam Cisuraliano; datações U-Pb em zircão apontam Pennsylvaniano. Verificação (2026.09.13): a autoria anterior desta ficha (Vinn, Wilson, Mouro & Fernandes) estava incorreta; a página bibliográfica consultada informa apenas 'Permiano Inferior do Brasil', e a procedência no afloramento Campáleo (Folhelho Lontras, Mafra) vem da compilação secundária do Folhelho Lontras e da coautoria de Weinschütz (CENPALEO/UnC). O mesmo artigo cita Oichnus paraboloides e O. simplex em conchas de lingulídeos.",
     "fontes": [
       "https://carnetsgeol.net/cg/19/19/CG1919.pdf (Vinn et al. 2019)",
       "https://en.wikipedia.org/wiki/Lontras_Shale_Lagerst%C3%A4tte (compilação secundária — referência primária no campo Descritor)"
@@ -1650,7 +1647,7 @@
     "descritor": "Mouro, L.D., Pacheco, M.L.A.F., Ricetti, J.H.Z., Scomazzon, A.K., Horodyski, R.S., Fernandes, A.C.S., Carvalho, M.A., Weinschütz, L.C., Silva, M.S., Waichel, B.L. & Scherer, C.M.S. (2020) — \"Lontras Shale (Paraná Basin, Brazil): Insightful analysis and commentaries on paleoenvironment and fossil preservation into a deglaciation pulse of the Late Paleozoic Ice Age\", Palaeogeography, Palaeoclimatology, Palaeoecology 555:109850, DOI 10.1016/j.palaeo.2020.109850; Mouro, L.D., Ricetti, J.H.Z., Weinschütz, L.C. & Pacheco, M.L.A.F. (2021) — \"Folhelho Lontras, uma Lagerstätte do Paleozoico brasileiro\", in Jelinek & Sommer (eds.), Contribuições à Geologia do RS e de SC, SBG/Compasso Lugar-Cultura, p.203–221",
     "unidade_pesquisa": "CENPALEO/UnC",
     "idade_ma": "ca. 303–295 Ma (limite Carbonífero–Permiano; idade em discussão)",
-    "observacoes": "Perfurações em conchas de braquiópodes, evidência provável de predação UNIDADE E IDADE (Mouro et al., 2020): o Folhelho Lontras é o topo da Fm. Campo Mourão (França & Potter, 1988) — na nomenclatura de superfície de SC, base da Fm. Rio do Sul. A idade está em discussão: conodontes (Mesogondolella spp.) e palinologia (Zona Vittatina costabilis) indicam Cisuraliano; datações U-Pb em zircão apontam Pennsylvaniano.",
+    "observacoes": "Perfurações em conchas de braquiópodes, evidência provável de predação. UNIDADE E IDADE (Mouro et al., 2020): o Folhelho Lontras é o topo da Fm. Campo Mourão (França & Potter, 1988) — na nomenclatura de superfície de SC, base da Fm. Rio do Sul. A idade está em discussão: conodontes (Mesogondolella spp.) e palinologia (Zona Vittatina costabilis) indicam Cisuraliano; datações U-Pb em zircão apontam Pennsylvaniano.",
     "fontes": [
       "https://doi.org/10.1016/j.palaeo.2020.109850",
       "https://www.sciencedirect.com/science/article/abs/pii/S0031018220302959",
@@ -1679,7 +1676,7 @@
     "descritor": "Mouro, L.D., Pacheco, M.L.A.F., Ricetti, J.H.Z., Scomazzon, A.K., Horodyski, R.S., Fernandes, A.C.S., Carvalho, M.A., Weinschütz, L.C., Silva, M.S., Waichel, B.L. & Scherer, C.M.S. (2020) — \"Lontras Shale (Paraná Basin, Brazil): Insightful analysis and commentaries on paleoenvironment and fossil preservation into a deglaciation pulse of the Late Paleozoic Ice Age\", Palaeogeography, Palaeoclimatology, Palaeoecology 555:109850, DOI 10.1016/j.palaeo.2020.109850; Mouro, L.D., Ricetti, J.H.Z., Weinschütz, L.C. & Pacheco, M.L.A.F. (2021) — \"Folhelho Lontras, uma Lagerstätte do Paleozoico brasileiro\", in Jelinek & Sommer (eds.), Contribuições à Geologia do RS e de SC, SBG/Compasso Lugar-Cultura, p.203–221",
     "unidade_pesquisa": "CENPALEO/UnC",
     "idade_ma": "ca. 303–295 Ma (limite Carbonífero–Permiano; idade em discussão)",
-    "observacoes": "Estruturas cilíndricas (~22 mm) preservadas por fosfatização, interpretadas como conteúdo intestinal de condrictes UNIDADE E IDADE (Mouro et al., 2020): o Folhelho Lontras é o topo da Fm. Campo Mourão (França & Potter, 1988) — na nomenclatura de superfície de SC, base da Fm. Rio do Sul. A idade está em discussão: conodontes (Mesogondolella spp.) e palinologia (Zona Vittatina costabilis) indicam Cisuraliano; datações U-Pb em zircão apontam Pennsylvaniano.",
+    "observacoes": "Estruturas cilíndricas (~22 mm) preservadas por fosfatização, interpretadas como conteúdo intestinal de condrictes. UNIDADE E IDADE (Mouro et al., 2020): o Folhelho Lontras é o topo da Fm. Campo Mourão (França & Potter, 1988) — na nomenclatura de superfície de SC, base da Fm. Rio do Sul. A idade está em discussão: conodontes (Mesogondolella spp.) e palinologia (Zona Vittatina costabilis) indicam Cisuraliano; datações U-Pb em zircão apontam Pennsylvaniano.",
     "fontes": [
       "https://doi.org/10.1016/j.palaeo.2020.109850",
       "https://www.sciencedirect.com/science/article/abs/pii/S0031018220302959",
@@ -1720,57 +1717,58 @@
   },
   {
     "id": 67,
-    "periodo": "Jurássico Superior (?) – Cretáceo Inferior (?)",
+    "periodo": "Jurássico (segundo a reportagem)",
     "era": "Mesozóico",
     "periodo_ordem": 11,
-    "formacao": "Fm. Botucatu (depósitos eólicos do paleodeserto)",
-    "taxon": "Theropoda indet. (afim. Carnosauria) — pista bípede",
+    "formacao": "Não informada na reportagem (que cita apenas 'Jurássico')",
+    "taxon": "Theropoda indet. (afim. Carnosauria) — pegadas bípedes",
     "categoria": "Icnofóssil — pegada de dinossauro terópode",
     "numero_catalogo": "-",
-    "local_coleta": "Litoral sul de Santa Catarina, SC (localidade não especificada na fonte)",
+    "local_coleta": "Litoral sul de SC (segundo a reportagem; município e localidade não informados — coordenada aproximada da região)",
     "site": "Litoral sul de SC",
     "municipio": "Litoral sul (região)",
     "lat": -28.95,
     "lon": -49.45,
-    "bacia": "Bacia do Paraná — Fm. Botucatu",
-    "armazenamento": "CENPALEO/UnC",
-    "descritor": "Weinschütz, L.C. (CENPALEO/UnC), citado em reportagem ND Mais (2023)",
-    "unidade_pesquisa": "CENPALEO/UnC",
-    "idade_ma": "ca. 150–145 Ma (Jurássico Superior, estimativa indicativa)",
-    "observacoes": "Único registro de dinossauro (icnofóssil) atualmente conhecido para SC; trata-se de pista de animal bípede de porte médio (cerca de 1,7 m), atribuída a terópode do grupo Carnosauria; nenhum osso corporal de dinossauro foi descrito para o Estado até o momento; localidade precisa não divulgada na fonte consultada",
+    "bacia": "Bacia do Paraná (inferência do compilador; a reportagem não cita bacia)",
+    "armazenamento": "Não informado na reportagem",
+    "descritor": "Citação de mídia — ND Mais (2023), reportagem «Descobrindo os antigos habitantes: uma jornada pelas espécies de dinossauros de SC», que tem como fonte o paleontólogo L.C. Weinschütz (CENPALEO/UnC)",
+    "unidade_pesquisa": "Não informada (a reportagem cita L.C. Weinschütz, CENPALEO/UnC, como fonte, sem dizer que ele estudou estas pegadas)",
+    "idade_ma": "Jurássico (a reportagem não indica idade numérica)",
+    "observacoes": "CITAÇÃO DE MÍDIA — não foi localizada publicação científica que descreva estas pegadas. A reportagem (ND Mais, 2023), com o paleontólogo L.C. Weinschütz (coordenador do CENPALEO/UnC) como fonte, diz que em Santa Catarina 'ainda não encontramos ossos fossilizados de dinossauros, mas já encontramos algumas pegadas', de terópodes bípedes 'não muito grande (+/-1,7m)' e 'provavelmente do grupo Carnosauria', 'principalmente no litoral sul do estado', e situa as ocorrências do Estado no Jurássico. Não informa formação, município, depósito, número de tombo nem datação, e não diz explicitamente que Weinschütz tenha estudado essas pegadas. Os campos de formação e bacia NÃO constam na reportagem. HISTÓRICO DE CORREÇÃO: versões anteriores deste banco atribuíam o registro à Fm. Botucatu, a 'ca. 150–145 Ma' e ao CENPALEO como depositário — informações que a fonte não traz e foram retiradas. Para pegadas de tetrápodes na Fm. Botucatu em SC com respaldo científico, ver o registro 96 (mamaliaformes, Turvo).",
     "fontes": [
       "https://ndmais.com.br/animais/descobrindo-os-antigos-habitantes-uma-jornada-pelas-especies-de-dinossauros-de-sc/ (ND Mais, 2023)"
     ],
-    "citacao_abnt": "Fonte primária científica indexada não localizada no levantamento desta base. Citação baseada em divulgação jornalística: NDMAIS. 2023. Descobrindo os antigos habitantes: uma jornada pelas espécies de dinossauros de SC. Disponível em: https://ndmais.com.br/animais/descobrindo-os-antigos-habitantes-uma-jornada-pelas-especies-de-dinossauros-de-sc/ [Fonte secundária — sem publicação científica primária identificada no levantamento desta base]",
-    "tipo_fonte": "Divulgação ou imprensa"
+    "citacao_abnt": "[Citação de mídia, sem publicação científica primária identificada: ND Mais (2023), reportagem «Descobrindo os antigos habitantes: uma jornada pelas espécies de dinossauros de SC», que tem como fonte o paleontólogo L.C. Weinschütz (CENPALEO/UnC)]",
+    "tipo_fonte": "Citação de mídia"
   },
   {
     "id": 68,
     "periodo": "Pleistoceno Superior",
     "era": "Cenozóico — Quaternário",
     "periodo_ordem": 15,
-    "formacao": "Fm. Laguna-Barreira (depósitos da plataforma continental)",
+    "formacao": "Plataforma continental (formação não informada na reportagem)",
     "taxon": "Notiomastodon platensis (Ameghino, 1888)",
     "categoria": "Vertebrado — mamífero",
     "numero_catalogo": "-",
-    "local_coleta": "Costa de Sombrio, SC (encontrado a ~23 m de profundidade, rede de arrasto)",
+    "local_coleta": "Costa de Sombrio, SC (a ~23 m de profundidade, em pesca de arrasto, no fim de março de 2018 — coordenada aproximada)",
     "site": "Costa de Sombrio (plataforma continental)",
     "municipio": "Sombrio",
     "lat": -29.22,
     "lon": -49.5,
-    "bacia": "Plataforma Continental — Fm. Laguna-Barreira",
-    "armazenamento": "Museu Oceanográfico Univali, Balneário Piçarras/Penha, SC",
-    "descritor": "Soto, J. (coord. Museus Univali), divulgação Univali / imprensa regional (2024); nome atualizado segundo Mothé, D., Avilla, L.S., Cozzuol, M. & Winck, G.R. (2012) — \"Taxonomic revision of the Quaternary gomphotheres (Mammalia: Proboscidea: Gomphotheriidae) from the South American lowlands\", Quaternary International 276–277:2–7",
+    "bacia": "Plataforma Continental (formação não informada na reportagem)",
+    "armazenamento": "Não informado na reportagem (a descoberta foi divulgada pelo Museu Oceanográfico Univali)",
+    "descritor": "Citação de mídia — Destino Florianópolis (26/04/2018), reportagem «Fóssil de elefante pré-histórico é encontrado em Santa Catarina», e Portal Litoral Sul, reportagem «Fóssil de elefante pré-histórico é encontrado em Sombrio» (que cita o G1), que atribuem a identificação a pesquisadores da Univali (prof. Jules Soto, coordenador dos museus da universidade); Mothé, D., Avilla, L.S., Cozzuol, M. & Winck, G.R. (2012) — \"Taxonomic revision of the Quaternary gomphotheres (Mammalia: Proboscidea: Gomphotheriidae) from the South American lowlands\", Quaternary International 276–277:2–7",
     "unidade_pesquisa": "Univali",
-    "idade_ma": "ca. 30.000 anos (Pleistoceno Superior)",
-    "observacoes": "Classificação: mastodonte (Proboscidea, Gomphotheriidae). ATUALIZAÇÃO TAXONÔMICA: registro publicado originalmente como Stegomastodon waringi (Holland, 1920). Mothé, Avilla, Cozzuol & Winck (2012, Quaternary International) revisaram os gonfotérios das terras baixas sul-americanas com amostra ampla e concluíram que os caracteres usados para separar S. waringi de S. platensis variam dentro de uma mesma população — há um único gonfotério de terras baixas na América do Sul, sob a nova combinação Notiomastodon platensis. Parte da literatura (Lucas e colaboradores) ainda defende duas espécies, mas a combinação de 2012 é a adotada majoritariamente. Metade esquerda de mandíbula de macho adulto, achada por pescadores; espécie rara em SC, mais comum no RS; estimativa de ~5 m de comprimento e ~3,5 t",
+    "idade_ma": "ca. 30.000 anos, segundo a reportagem (método de datação não informado)",
+    "observacoes": "CITAÇÃO DE MÍDIA — não foi localizada publicação científica sobre este espécime. Segundo as reportagens, pescadores recolheram no fim de março de 2018 a metade esquerda da mandíbula de um macho adulto, a cerca de 23 m de profundidade, em pesca de arrasto na costa de Sombrio; pesquisadores da Univali a identificaram como Stegomastodon waringi, de cerca de 30 mil anos, com estimativa de ~5 m de comprimento, ~2,5 m de altura e ~3,5 t; fósseis dessa espécie seriam raros em SC e mais comuns no RS. Local de guarda, número de tombo e formação NÃO são informados. HISTÓRICO TAXONÔMICO: a reportagem usa Stegomastodon waringi (Holland, 1920). Mothé, Avilla, Cozzuol & Winck (2012, Quaternary International) revisaram os gonfotérios das terras baixas sul-americanas com amostra ampla e concluíram que os caracteres usados para separar S. waringi de S. platensis variam dentro de uma mesma população — há um único gonfotério de terras baixas na América do Sul, sob a combinação Notiomastodon platensis; parte da literatura (Lucas e colaboradores) ainda defende duas espécies, mas a combinação de 2012 é a adotada majoritariamente. O nome do registro segue essa revisão; a reportagem não o usa. CONTEXTO CIENTÍFICO (não trata deste espécime): Lopes & Buchmann (2011, Journal of South American Earth Sciences 31(1):17–27, DOI 10.1016/j.jsames.2010.11.003) relatam, para a plataforma continental do sul do Brasil (o resumo fala em 'porção mais meridional da costa', com palavra-chave Rio Grande do Sul), restos de Toxodon sp. e um molar de Stegomastodon waringi recolhidos por pescadores a cerca de 20 m de profundidade.",
     "fontes": [
       "https://destinoflorianopolis.com.br/fossil-de-elefante-pre-historico-e-encontrado-em-santa-catarina/",
-      "https://portallitoralsul.com.br/noticia/2248/fossil-de-elefante-pre-historico-e-encontrado-em-sombrio",
-      "https://www.sciencedirect.com/science/article/abs/pii/S1040618211002916"
+      "https://portallitoralsul.com.br/fossil-de-elefante-pre-historico-e-encontrado-em-sombrio/",
+      "https://www.sciencedirect.com/science/article/abs/pii/S1040618211002916",
+      "https://doi.org/10.1016/j.jsames.2010.11.003"
     ],
-    "citacao_abnt": "Fonte primária científica indexada não localizada no levantamento desta base. Citação baseada em divulgação institucional/jornalística: Univali / Portal Litoral Sul (2024). Disponível em: https://portallitoralsul.com.br e https://destinoflorianopolis.com.br [Fonte secundária — sem publicação científica primária identificada]",
-    "tipo_fonte": "Divulgação ou imprensa"
+    "citacao_abnt": "[Citação de mídia, sem publicação científica primária identificada: Destino Florianópolis (26/04/2018), reportagem «Fóssil de elefante pré-histórico é encontrado em Santa Catarina», e Portal Litoral Sul, reportagem «Fóssil de elefante pré-histórico é encontrado em Sombrio» (que cita o G1), que atribuem a identificação a pesquisadores da Univali (prof. Jules Soto, coordenador dos museus da universidade)] | MOTHÉ, D.; AVILLA, L.S.; COZZUOL, M. et al. 2012. Taxonomic revision of the Quaternary gomphotheres (Mammalia: Proboscidea: Gomphotheriidae) from the South American lowlands. Quaternary International 276–277:2–7.",
+    "tipo_fonte": "Citação de mídia"
   },
   {
     "id": 69,
@@ -1781,49 +1779,50 @@
     "taxon": "Lestodon armatus Gervais, 1855",
     "categoria": "Vertebrado — mamífero",
     "numero_catalogo": "-",
-    "local_coleta": "Plataforma continental entre Passo de Torres e Araranguá, SC (rede de arrasto de camarão)",
+    "local_coleta": "Plataforma continental entre Passo de Torres e Araranguá, SC (redes de arrasto de camarão — coordenada aproximada)",
     "site": "Plataforma continental Passo de Torres–Araranguá",
     "municipio": "Passo de Torres / Araranguá (região)",
     "lat": -29.28,
     "lon": -49.55,
     "bacia": "Plataforma Continental — Fm. Laguna-Barreira",
     "armazenamento": "Museu Oceanográfico Univali, Balneário Piçarras, SC",
-    "descritor": "Divulgação Museu Oceanográfico Univali (2022)",
+    "descritor": "Citação de mídia — Museu Oceanográfico Univali, divulgação «Esqueleto de Preguiça-Gigante é atração no Museu Oceanográfico» (julho de 2022; página original indisponível em 08/10/2026), conforme reproduzida por Novo Momento (25/07/2022)",
     "unidade_pesquisa": "Univali",
-    "idade_ma": "ca. 30.000 anos (Pleistoceno Superior)",
-    "observacoes": "Classificação: preguiça-gigante (Xenarthra, Mylodontidae). Pelo menos dois espécimes; primeiro registro da espécie em Santa Catarina; esqueleto montado é atração do Museu Oceanográfico Univali; estimativa de ~4,5 m de altura e ~3 t",
+    "idade_ma": "ca. 30.000 anos antes do presente, segundo a divulgação (método não informado)",
+    "observacoes": "CITAÇÃO DE MÍDIA — não foi localizada publicação científica. Segundo a divulgação, fósseis de lestodonte (Lestodon armatus) saíram de redes de arrasto de camarão na plataforma continental entre Passo de Torres e Araranguá, pertencem à 'formação Laguna-Barreira' e são 'datados de cerca de 30 mil anos antes do presente'; a equipe do museu encontrou 'ao menos dois' lestodontes, 'tratando-se do primeiro registro desta espécie no Estado'. A altura (~4,5 m) e o peso (~3 t) citados descrevem a espécie em geral, não o exemplar. O esqueleto montado está exposto no Museu Oceanográfico Univali (Balneário Piçarras). Não são informados identificador, tombo, data da coleta nem método de datação.",
     "fontes": [
-      "https://www.univali.br/noticias/Paginas/Esqueleto-de-Pregui%C3%A7a-Gigante-%C3%A9-atra%C3%A7%C3%A3o-no-Museu-Oceanogr%C3%A1fico.aspx"
+      "https://novomomento.com.br/preguica-gigante-museu-oceanografico/",
+      "https://www.univali.br/noticias/Paginas/Esqueleto-de-Pregui%C3%A7a-Gigante-%C3%A9-atra%C3%A7%C3%A3o-no-Museu-Oceanogr%C3%A1fico.aspx (página original; indisponível em 08/10/2026)"
     ],
-    "citacao_abnt": "DIVULGAÇÃO MUSEU OCEANOGRÁFICO UNIVALI 2022.",
-    "tipo_fonte": "Divulgação ou imprensa"
+    "citacao_abnt": "[Citação de mídia, sem publicação científica primária identificada: Museu Oceanográfico Univali, divulgação «Esqueleto de Preguiça-Gigante é atração no Museu Oceanográfico» (julho de 2022; página original indisponível em 08/10/2026), conforme reproduzida por Novo Momento (25/07/2022)]",
+    "tipo_fonte": "Citação de mídia"
   },
   {
     "id": 70,
     "periodo": "Pleistoceno Superior",
     "era": "Cenozóico — Quaternário",
     "periodo_ordem": 15,
-    "formacao": "Fm. Laguna-Barreira (depósitos da plataforma continental)",
-    "taxon": "Toxodon sp.",
+    "formacao": "Plataforma continental (formação não informada na reportagem)",
+    "taxon": "Toxodontidae indet. (“toxodonte” na reportagem; anteriormente rotulado Toxodon sp.)",
     "categoria": "Vertebrado — mamífero",
     "numero_catalogo": "-",
-    "local_coleta": "Costa de Sombrio, SC (vértebra torácica, rede de arrasto)",
+    "local_coleta": "Costa de Sombrio, SC (vértebra torácica; achado em pesca de arrasto — coordenada aproximada)",
     "site": "Costa de Sombrio (plataforma continental)",
     "municipio": "Sombrio",
     "lat": -29.22,
     "lon": -49.5,
-    "bacia": "Plataforma Continental — Fm. Laguna-Barreira",
-    "armazenamento": "Museu Oceanográfico Univali, Balneário Piçarras/Penha, SC",
-    "descritor": "Soto, J. (coord. Museus Univali), divulgação Univali / imprensa regional (2024)",
+    "bacia": "Plataforma Continental (formação não informada na reportagem)",
+    "armazenamento": "Não informado na reportagem (a descoberta foi divulgada pelo Museu Oceanográfico Univali)",
+    "descritor": "Citação de mídia — Portal Litoral Sul, reportagem «Fóssil de elefante pré-histórico é encontrado em Sombrio» (que cita o G1), sobre achado divulgado pelo Museu Oceanográfico Univali (prof. Jules Soto, coordenador dos museus da universidade)",
     "unidade_pesquisa": "Univali",
-    "idade_ma": "ca. 30.000 anos (Pleistoceno Superior)",
-    "observacoes": "Classificação: toxodonte (Notoungulata, Toxodontidae). Vértebra torácica recuperada junto à mandíbula de Stegomastodon waringi; toxodontes são notoungulados de grande porte, descritos como morfologicamente convergentes com hipopótamos",
+    "idade_ma": "ca. 30.000 anos, segundo a reportagem para o conjunto do achado (método não informado)",
+    "observacoes": "CITAÇÃO DE MÍDIA — não foi localizada publicação científica sobre este achado. A reportagem do Portal Litoral Sul diz que, junto à mandíbula do mastodonte (registro 68), foi recuperada 'uma vértebra torácica de um toxodonte, um animal parecido com o atual hipopótamo'. A reportagem usa apenas o nome popular 'toxodonte' (não menciona o gênero Toxodon); por isso o registro está em Toxodontidae indet. — o rótulo anterior deste banco, 'Toxodon sp.', ia além da fonte. Formação, tombo e local de guarda NÃO são informados. A segunda reportagem usada no registro 68 (Destino Florianópolis) não menciona o toxodonte. CONTEXTO CIENTÍFICO (não trata deste achado): Lopes & Buchmann (2011, Journal of South American Earth Sciences 31(1):17–27, DOI 10.1016/j.jsames.2010.11.003) relatam restos de Toxodon sp. recolhidos por pescadores a cerca de 20 m na plataforma do sul do Brasil (o resumo cita Rio Grande do Sul).",
     "fontes": [
-      "https://destinoflorianopolis.com.br/fossil-de-elefante-pre-historico-e-encontrado-em-santa-catarina/",
-      "https://portallitoralsul.com.br/noticia/2248/fossil-de-elefante-pre-historico-e-encontrado-em-sombrio"
+      "https://portallitoralsul.com.br/fossil-de-elefante-pre-historico-e-encontrado-em-sombrio/",
+      "https://doi.org/10.1016/j.jsames.2010.11.003"
     ],
-    "citacao_abnt": "Fonte primária científica indexada não localizada no levantamento desta base. Citação baseada em divulgação institucional/jornalística: Univali / Portal Litoral Sul (2024). Disponível em: https://portallitoralsul.com.br e https://destinoflorianopolis.com.br [Fonte secundária — sem publicação científica primária identificada]",
-    "tipo_fonte": "Divulgação ou imprensa"
+    "citacao_abnt": "[Citação de mídia, sem publicação científica primária identificada: Portal Litoral Sul, reportagem «Fóssil de elefante pré-histórico é encontrado em Sombrio» (que cita o G1), sobre achado divulgado pelo Museu Oceanográfico Univali (prof. Jules Soto, coordenador dos museus da universidade)]",
+    "tipo_fonte": "Citação de mídia"
   },
   {
     "id": 71,
@@ -2098,8 +2097,8 @@
     "periodo": "Plioceno–Pleistoceno",
     "era": "Cenozóico — Quaternário",
     "periodo_ordem": 13,
-    "formacao": "Fm. Botucatu (arenito eólico) — geossítio do Geoparque",
-    "taxon": "Paleotoca Furnas Xocleng (icnofóssil de escavação — Xenarthra)",
+    "formacao": "Fm. Botucatu? (não informada para esta cavidade; ver observações)",
+    "taxon": "Paleotoca Xocleng (icnofóssil de escavação — Xenarthra)",
     "categoria": "Icnofóssil — paleotoca",
     "numero_catalogo": "-",
     "local_coleta": "Comunidade de Três Barras, interior de Morro Grande, SC — a cerca de 14 a 18 km do centro (coordenada da sede municipal; a do geossítio não é publicada)",
@@ -2109,19 +2108,17 @@
     "lon": -49.7208,
     "bacia": "Bacia do Paraná — Fm. Botucatu",
     "armazenamento": "Geoparque Mundial da UNESCO Caminhos dos Cânions do Sul (geossítio aberto à visitação)",
-    "descritor": "Buchmann, F.S.C., Lopes, R.P. & Caron, F. (2009) — \"Icnofósseis (paleotocas e crotovinas) atribuídos a mamíferos extintos no sudeste e sul do Brasil\", Revista Brasileira de Paleontologia 12(3):247–256, DOI 10.4072/rbp.2009.3.07; Lopes, R.P., Frank, H.T., Buchmann, F.S.C. & Caron, F. (2017) — \"Megaichnus igen. nov.: giant paleoburrows attributed to extinct Cenozoic mammals from South America\", Ichnos 24(2):133–145 (erige Megaichnus igen. nov.) — ocorrência divulgada por: Geoparque Caminhos dos Cânions do Sul (divulgação institucional); Bechtel, A.F. (doutorando em geografia, citado em reportagens, 2025/2026)",
+    "descritor": "Citação de mídia — Geoparque Caminhos dos Cânions do Sul, página «Geossítios» (geossítio Paleotoca Xocleng, Morro Grande); Citação de mídia — Recanto dos Canyons, página «Geoparque Caminho dos Canyons do Sul: guia completo» (Paleotoca Xocleng, Morro Grande)",
     "unidade_pesquisa": "Geoparque UNESCO",
     "idade_ma": "5,33 Ma – 11.700 a",
-    "observacoes": "Classificação: paleotoca — estrutura de habitação (Domichnia) escavada por mamíferos da megafauna. ICNOTAXONOMIA: desde Lopes et al. (2017) estas estruturas têm nome formal — o icnogênero Megaichnus, dividido em M. major (atribuído a preguiças-gigantes, Mylodontidae) e M. minor (atribuído a tatus-gigantes, Cingulata). Segundo F. S. C. Buchmann, em entrevista ao Jornal da Unesp (2022), mais de duas mil paleotocas foram registradas no Brasil, 99% delas entre o sul de Santa Catarina e o norte do Rio Grande do Sul. Três cavidades subterrâneas somando mais de 100 m de extensão; marcas de garras nas paredes; atribuída a tatus-gigantes (Glyptodon/Pampatherium) e/ou preguiças-gigantes CORREÇÃO (2026.09.7): a coordenada anterior caía no município vizinho de Nova Veneza; passou a ser a da sede de Morro Grande.",
+    "observacoes": "Classificação: paleotoca — estrutura de habitação (Domichnia) escavada por mamíferos da megafauna. CITAÇÃO DE MÍDIA: a existência e a descrição desta paleotoca são conhecidas por divulgação institucional e turística. A página do Geoparque descreve o geossítio como 'um conjunto de 3 estruturas subterrâneas', com acesso a cerca de 18 km do centro de Morro Grande; o guia turístico registra marcas de garras nas paredes e extensão somada superior a 100 m, e cita preguiças-gigantes e tatus como possíveis escavadores. Nenhuma das duas páginas informa a unidade geológica desta cavidade, idade ou estudo científico específico. CONTEXTO CIENTÍFICO (sobre o tipo de estrutura, não sobre este local): Lopes, Frank, Buchmann & Caron (2017, Ichnos 24(2):133–145) erigiram o icnogênero Megaichnus (M. major, atribuído a preguiças-gigantes, Mylodontidae; M. minor, a tatus-gigantes, Cingulata); Buchmann, Lopes & Caron (2009, Revista Brasileira de Paleontologia 12(3):247–256, DOI 10.4072/rbp.2009.3.07) tratam de paleotocas e crotovinas do sudeste e sul do Brasil. Sobre o Geoparque: Valdati, Gomes, Weinschütz, Ricetti & Bechtel (2024, Revista Brasileira de Geografia Física 17(3):1905–1920, DOI 10.26848/rbgf.v17.3.p1905-1920) catalogam paleotocas do Geoparque Caminhos dos Cânions do Sul e descrevem três delas (duas nas Escarpas da Serra Geral, uma no Planalto dos Campos Gerais); um resumo expandido da UDESC (Bechtel & Valdati, sem data na cópia consultada) informa que, de 17 paleotocas novas catalogadas, 16 estão em arenitos da Fm. Botucatu e uma em basalto intemperizado. Esses trabalhos não individualizam as cavidades deste registro. HISTÓRICO DE NOME: este banco chamava o registro de 'Furnas Xocleng'; esse nome não consta nas fontes consultadas, que usam 'Xocleng' (Geoparque) e 'Paleotoca Xocleng' (guia). CORREÇÃO (2026.09.7): a coordenada anterior caía no município vizinho de Nova Veneza; passou a ser a da sede de Morro Grande.",
     "fontes": [
-      "https://doi.org/10.4072/rbp.2009.3.07",
-      "https://sbpbrasil.org/publications/index.php/rbp/article/download/428/254/9081",
+      "https://canionsdosul.org/geossitios/?lang=en-us",
       "https://recantodoscanyons.com.br/o-que-fazer-em-praia-grande-sc/parques/geoparque-caminho-dos-canyons-do-sul/",
-      "https://jornal.unesp.br/2022/01/18/uma-visita-a-casa-dos-gigantes/"
+      "https://doi.org/10.4072/rbp.2009.3.07"
     ],
-    "citacao_abnt": "BUCHMANN, F.S.C.; LOPES, R.P.; CARON, F. 2009. Icnofósseis (paleotocas e crotovinas) atribuídos a mamíferos extintos no sudeste e sul do Brasil. Revista Brasileira de Paleontologia, 12(3), 247–256. DOI: 10.4072/rbp.2009.3.07 | LOPES, R.P.; FRANK, H.T.; BUCHMANN, F.S.C. et al. 2017. Megaichnus igen. nov.: giant paleoburrows attributed to extinct Cenozoic mammals from South America. Ichnos, 24(2), 133–145 (erige Megaichnus igen. nov.) — ocorrência divulgada por: Geoparque Caminhos dos Cânions do Sul (divulgação institucional). | BECHTEL, A.F. doutorando em geografia, citado em reportagens, 2025/2026.",
-    "doi": "10.4072/rbp.2009.3.07",
-    "tipo_fonte": "Divulgação ou imprensa",
+    "citacao_abnt": "[Citação de mídia, sem publicação científica primária identificada: Geoparque Caminhos dos Cânions do Sul, página «Geossítios» (geossítio Paleotoca Xocleng, Morro Grande)] | [Citação de mídia, sem publicação científica primária identificada: Recanto dos Canyons, página «Geoparque Caminho dos Canyons do Sul: guia completo» (Paleotoca Xocleng, Morro Grande)]",
+    "tipo_fonte": "Citação de mídia",
     "x": 477.6,
     "y": 612.4
   },
@@ -2141,19 +2138,17 @@
     "lon": -49.8961,
     "bacia": "Bacia do Paraná — Fm. Botucatu",
     "armazenamento": "Geoparque Mundial da UNESCO Caminhos dos Cânions do Sul (geossítio aberto à visitação)",
-    "descritor": "Frank, H.T., Oliveira, L.D., Vicroski, F.N., Breier, R., Pasqualon, N.G., Araújo, T., Buchmann, F.S.C., Fornari, M., Lima, L.G., Lopes, R.P. & Caron, F. (2012) — \"The complex history of a sandstone-hosted cave in the state of Santa Catarina, Brazil\", Espeleo-Tema 23(2):87–101; Buchmann, F.S.C., Lopes, R.P. & Caron, F. (2009) — \"Icnofósseis (paleotocas e crotovinas) atribuídos a mamíferos extintos no sudeste e sul do Brasil\", Revista Brasileira de Paleontologia 12(3):247–256, DOI 10.4072/rbp.2009.3.07; Lopes, R.P., Frank, H.T., Buchmann, F.S.C. & Caron, F. (2017) — \"Megaichnus igen. nov.: giant paleoburrows attributed to extinct Cenozoic mammals from South America\", Ichnos 24(2):133–145 (erige Megaichnus igen. nov.)",
+    "descritor": "Frank, H.T., Oliveira, L.D., Vicroski, F.N., Breier, R., Pasqualon, N.G., Araújo, T., Buchmann, F.S.C., Fornari, M., Lima, L.G., Lopes, R.P. & Caron, F. (2012) — \"The complex history of a sandstone-hosted cave in the state of Santa Catarina, Brazil\", Espeleo-Tema 23(2):87–101",
     "unidade_pesquisa": "Geoparque UNESCO",
     "idade_ma": "5,33 Ma – 11.700 a",
-    "observacoes": "Classificação: paleotoca — estrutura de habitação (Domichnia) escavada por mamíferos da megafauna. ICNOTAXONOMIA: desde Lopes et al. (2017) estas estruturas têm nome formal — o icnogênero Megaichnus, dividido em M. major (atribuído a preguiças-gigantes, Mylodontidae) e M. minor (atribuído a tatus-gigantes, Cingulata). Segundo F. S. C. Buchmann, em entrevista ao Jornal da Unesp (2022), mais de duas mil paleotocas foram registradas no Brasil, 99% delas entre o sul de Santa Catarina e o norte do Rio Grande do Sul. Paleotoca de aproximadamente 48,5 m, escavada em arenitos da Fm. Botucatu; dois túneis convergindo numa câmara maior, com marcas de garras nas paredes; reocupada posteriormente por povos pré-colombianos (grafismos rupestres e baixos-relevos) CORREÇÃO (2026.09.8): coordenada substituída pela publicada por Frank et al. (2012) — a anterior ficava a cerca de 6 km —, e a ficha passou a se apoiar no artigo que descreve a caverna.",
+    "observacoes": "Classificação: paleotoca — estrutura de habitação (Domichnia) escavada por mamíferos da megafauna. Paleotoca de aproximadamente 48,5 m, escavada em arenitos da Fm. Botucatu; dois túneis convergindo numa câmara maior, com marcas de garras nas paredes; reocupada posteriormente por povos pré-colombianos (grafismos rupestres e baixos-relevos) CORREÇÃO (2026.09.8): coordenada substituída pela publicada por Frank et al. (2012) — a anterior ficava a cerca de 6 km —, e a ficha passou a se apoiar no artigo que descreve a caverna. A página de geossítios do Geoparque confirma: 'paleotoca de 48,5 m desenvolvida nos arenitos da Formação Botucatu', em Timbé do Sul. CONTEXTO CIENTÍFICO (sobre o tipo de estrutura, não sobre este local): Lopes, Frank, Buchmann & Caron (2017, Ichnos 24(2):133–145) erigiram o icnogênero Megaichnus (M. major, atribuído a preguiças-gigantes, Mylodontidae; M. minor, a tatus-gigantes, Cingulata); Buchmann, Lopes & Caron (2009, Revista Brasileira de Paleontologia 12(3):247–256, DOI 10.4072/rbp.2009.3.07) tratam de paleotocas e crotovinas do sudeste e sul do Brasil. ",
     "fontes": [
       "https://www.semanticscholar.org/paper/THE-COMPLEX-HISTORY-OF-A-SANDSTONE-HOSTED-CAVE-IN-,-Frank-Oliveira/352ac79d172767f56f9a572deea5da8581b08db2",
       "https://doi.org/10.4072/rbp.2009.3.07",
-      "https://sbpbrasil.org/publications/index.php/rbp/article/download/428/254/9081",
       "https://recantodoscanyons.com.br/o-que-fazer-em-praia-grande-sc/parques/geoparque-caminho-dos-canyons-do-sul/",
-      "https://jornal.unesp.br/2022/01/18/uma-visita-a-casa-dos-gigantes/"
+      "https://canionsdosul.org/geossitios/?lang=en-us"
     ],
-    "citacao_abnt": "FRANK, H.T.; OLIVEIRA, L.D.; VICROSKI, F.N. et al. 2012. The complex history of a sandstone-hosted cave in the state of Santa Catarina, Brazil. Espeleo-Tema, 23(2), 87–101. | BUCHMANN, F.S.C.; LOPES, R.P.; CARON, F. 2009. Icnofósseis (paleotocas e crotovinas) atribuídos a mamíferos extintos no sudeste e sul do Brasil. Revista Brasileira de Paleontologia, 12(3), 247–256. DOI: 10.4072/rbp.2009.3.07 | LOPES, R.P.; FRANK, H.T.; BUCHMANN, F.S.C. et al. 2017. Megaichnus igen. nov.: giant paleoburrows attributed to extinct Cenozoic mammals from South America. Ichnos, 24(2), 133–145 (erige Megaichnus igen. nov.).",
-    "doi": "10.4072/rbp.2009.3.07",
+    "citacao_abnt": "FRANK, H.T.; OLIVEIRA, L.D.; VICROSKI, F.N. et al. 2012. The complex history of a sandstone-hosted cave in the state of Santa Catarina, Brazil. Espeleo-Tema, 23(2), 87–101.",
     "tipo_fonte": "Artigo em periódico",
     "x": 457.6,
     "y": 606.4
@@ -2163,31 +2158,28 @@
     "periodo": "Plioceno–Pleistoceno",
     "era": "Cenozóico — Quaternário",
     "periodo_ordem": 13,
-    "formacao": "Depósitos superficiais / arenitos diversos — geossítios do Geoparque",
+    "formacao": "Não informada nas reportagens (ver observações)",
     "taxon": "Paleotocas adicionais (Jacinto Machado e Praia Grande, SC)",
     "categoria": "Icnofóssil — paleotoca",
     "numero_catalogo": "-",
-    "local_coleta": "Jacinto Machado, SC (Paleotoca do Engenho Velho); Praia Grande, SC",
-    "site": "Paleotoca do Engenho Velho",
+    "local_coleta": "Jacinto Machado e Praia Grande, SC (cavidades não individualizadas nas reportagens; coordenada de Jacinto Machado)",
+    "site": "Jacinto Machado e Praia Grande (paleotocas do Geoparque)",
     "municipio": "Jacinto Machado / Praia Grande",
     "lat": -29.0333,
     "lon": -49.8167,
     "bacia": "Bacia do Paraná — Fm. Botucatu / Cânions",
     "armazenamento": "Geoparque Mundial da UNESCO Caminhos dos Cânions do Sul",
-    "descritor": "Buchmann, F.S.C., Lopes, R.P. & Caron, F. (2009) — \"Icnofósseis (paleotocas e crotovinas) atribuídos a mamíferos extintos no sudeste e sul do Brasil\", Revista Brasileira de Paleontologia 12(3):247–256, DOI 10.4072/rbp.2009.3.07; Lopes, R.P., Frank, H.T., Buchmann, F.S.C. & Caron, F. (2017) — \"Megaichnus igen. nov.: giant paleoburrows attributed to extinct Cenozoic mammals from South America\", Ichnos 24(2):133–145 (erige Megaichnus igen. nov.) — ocorrência divulgada por: ND Mais (2025); CircuitoMT (2025), citando especialistas do Geoparque",
+    "descritor": "Citação de mídia — ND Mais (10/08/2025), reportagem «Cavernas em SC guardam rastros de preguiças e tatus gigantes»; Citação de mídia — CircuitoMT (11/08/2025), reportagem «Cavernas pré-históricas de SC guardam registros de animais gigantes extintos há 10 mil anos»",
     "unidade_pesquisa": "Geoparque UNESCO",
     "idade_ma": "5,33 Ma – 11.700 a",
-    "observacoes": "Classificação: paleotoca — estrutura de habitação (Domichnia) escavada por mamíferos da megafauna. ICNOTAXONOMIA: desde Lopes et al. (2017) estas estruturas têm nome formal — o icnogênero Megaichnus, dividido em M. major (atribuído a preguiças-gigantes, Mylodontidae) e M. minor (atribuído a tatus-gigantes, Cingulata). Segundo F. S. C. Buchmann, em entrevista ao Jornal da Unesp (2022), mais de duas mil paleotocas foram registradas no Brasil, 99% delas entre o sul de Santa Catarina e o norte do Rio Grande do Sul. Registros de paleotocas adicionais em cinco municípios do Geoparque (quatro em SC: Morro Grande, Timbé do Sul, Jacinto Machado e Praia Grande); mais de 40 estruturas catalogadas no total, algumas interconectadas atingindo até 340 m de extensão",
+    "observacoes": "Classificação: paleotoca — estrutura de habitação (Domichnia) escavada por mamíferos da megafauna. CITAÇÃO DE MÍDIA: as duas reportagens (ND Mais, 10/08/2025; CircuitoMT, 11/08/2025), que têm o geólogo do Geoparque G. Simão como único especialista citado, listam paleotocas em cinco municípios do território do Geoparque — Morro Grande, Timbé do Sul, Jacinto Machado e Praia Grande (SC) e Cambará do Sul (RS) —, mais de 40 estruturas no total, algumas com até 340 m, e três abertas à visitação. Não informam quantas há em cada município nem nomeiam as de Jacinto Machado e Praia Grande. CONTEXTO CIENTÍFICO (sobre o tipo de estrutura, não sobre este local): Lopes, Frank, Buchmann & Caron (2017, Ichnos 24(2):133–145) erigiram o icnogênero Megaichnus (M. major, atribuído a preguiças-gigantes, Mylodontidae; M. minor, a tatus-gigantes, Cingulata); Buchmann, Lopes & Caron (2009, Revista Brasileira de Paleontologia 12(3):247–256, DOI 10.4072/rbp.2009.3.07) tratam de paleotocas e crotovinas do sudeste e sul do Brasil. Sobre o Geoparque: Valdati, Gomes, Weinschütz, Ricetti & Bechtel (2024, Revista Brasileira de Geografia Física 17(3):1905–1920, DOI 10.26848/rbgf.v17.3.p1905-1920) catalogam paleotocas do Geoparque Caminhos dos Cânions do Sul e descrevem três delas (duas nas Escarpas da Serra Geral, uma no Planalto dos Campos Gerais); um resumo expandido da UDESC (Bechtel & Valdati, sem data na cópia consultada) informa que, de 17 paleotocas novas catalogadas, 16 estão em arenitos da Fm. Botucatu e uma em basalto intemperizado. Esses trabalhos não individualizam as cavidades deste registro. HISTÓRICO DE NOME: o sítio deste registro constava como 'Paleotoca do Engenho Velho'; esse nome não foi encontrado em nenhuma fonte consultada (nem na página de geossítios do Geoparque) e foi substituído por uma descrição genérica.",
     "fontes": [
-      "https://doi.org/10.4072/rbp.2009.3.07",
-      "https://sbpbrasil.org/publications/index.php/rbp/article/download/428/254/9081",
       "https://ndmais.com.br/animais/cavernas-em-sc-guardam-rastros-de-preguicas-e-tatus-gigantes/",
       "https://circuitomt.com.br/cavernas-pre-historicas-de-sc-guardam-registros-de-animais-gigantes-extintos-ha-10-mil-anos/",
-      "https://jornal.unesp.br/2022/01/18/uma-visita-a-casa-dos-gigantes/"
+      "https://doi.org/10.4072/rbp.2009.3.07"
     ],
-    "citacao_abnt": "BUCHMANN, F.S.C.; LOPES, R.P.; CARON, F. 2009. Icnofósseis (paleotocas e crotovinas) atribuídos a mamíferos extintos no sudeste e sul do Brasil. Revista Brasileira de Paleontologia, 12(3), 247–256. DOI: 10.4072/rbp.2009.3.07 | LOPES, R.P.; FRANK, H.T.; BUCHMANN, F.S.C. et al. 2017. Megaichnus igen. nov.: giant paleoburrows attributed to extinct Cenozoic mammals from South America. Ichnos, 24(2), 133–145 (erige Megaichnus igen. nov.) — ocorrência divulgada por: ND Mais (2025). | CIRCUITOMT 2025. citando especialistas do Geoparque.",
-    "doi": "10.4072/rbp.2009.3.07",
-    "tipo_fonte": "Divulgação ou imprensa"
+    "citacao_abnt": "[Citação de mídia, sem publicação científica primária identificada: ND Mais (10/08/2025), reportagem «Cavernas em SC guardam rastros de preguiças e tatus gigantes»] | [Citação de mídia, sem publicação científica primária identificada: CircuitoMT (11/08/2025), reportagem «Cavernas pré-históricas de SC guardam registros de animais gigantes extintos há 10 mil anos»]",
+    "tipo_fonte": "Citação de mídia"
   },
   {
     "id": 84,
@@ -2520,16 +2512,19 @@
     "lon": -49.6831,
     "bacia": "Bacia do Paraná — Fm. Botucatu",
     "armazenamento": "LABPALEO/UERJ (Universidade do Estado do Rio de Janeiro)",
-    "descritor": "Buck, P.V. et al. (2022b) — \"As maiores pegadas atribuídas a Mammaliaformes da Formação Botucatu (Cretáceo Inferior), estado de Santa Catarina, Brasil\", Paleontologia em Destaque",
+    "descritor": "Buck, P.V. et al. (2022b) — \"As maiores pegadas atribuídas a Mammaliaformes da Formação Botucatu (Cretáceo Inferior), estado de Santa Catarina, Brasil\", Paleontologia em Destaque; Buck, P.V., Ghilardi, A.M., Aureliano, T., Ade, M.V.B., Dino, R., Antonioli, L., Geremias, M.L., Fernandes, M.A. & Araújo-Júnior, H.I. (2026) — \"Remarkably large mammal-like tracks from the Botucatu Formation (Lower Cretaceous), Paraná Basin, Brazil: implications for the evolution of large size in Mammaliaformes\", Journal of South American Earth Sciences (artigo 106223), DOI 10.1016/j.jsames.2026.106223",
     "unidade_pesquisa": "LABPALEO/UERJ",
     "idade_ma": "ca. 130–113 Ma",
-    "observacoes": "Laje de arenito com pista de quatro pegadas em epirrelevo côncavo, atribuídas aos pés de um produtor quadrúpede. São as maiores pegadas atribuídas a Mammaliaformes da Fm. Botucatu e possivelmente do Mesozoico — MAIORES que as de Aracoaraichnium, razão pela qual o espécime é atribuído apenas tentativamente ao mesmo morfotipo, e não à icnoespécie A. leonardii (cujo material-tipo provém de Araraquara, SP). Primeiro registro de pegadas de tetrápode descrito para a Fm. Botucatu em Santa Catarina.",
+    "observacoes": "Laje de arenito com pista de quatro pegadas em epirrelevo côncavo, atribuídas aos pés de um produtor quadrúpede. São as maiores pegadas atribuídas a Mammaliaformes da Fm. Botucatu e possivelmente do Mesozoico — MAIORES que as de Aracoaraichnium, razão pela qual o espécime é atribuído apenas tentativamente ao mesmo morfotipo, e não à icnoespécie A. leonardii (cujo material-tipo provém de Araraquara, SP). Primeiro registro de pegadas de tetrápode descrito para a Fm. Botucatu em Santa Catarina. HISTÓRICO TAXONÔMICO: o resumo de 2022 atribui o material, com ressalva, ao morfotipo de Aracoaraichnium. A versão completa parece ter sido publicada em Buck et al. (2026, J. South Am. Earth Sci.): segundo a cobertura jornalística do artigo (Diário de Pernambuco; IFLScience; Daily Galaxy), as maiores pegadas medem 11,4 cm de comprimento por 13,4 cm de largura, com passada de ~40 cm, e são atribuídas à família Chelichnopodidae, sem designação de icnoespécie — ou seja, a atribuição provisória a Aracoaraichnium não é mantida em nível de icnogênero nessa cobertura. A correspondência entre o espécime UERJ-IC-170 e o artigo de 2026 é inferida (mesmo grupo de autores, pedreira de Turvo e tema); o texto integral do artigo não foi aberto — conferir antes de citar.",
     "fontes": [
       "https://www.researchgate.net/publication/367511513_AS_MAIORES_PEGADAS_ATRIBUIDAS_A_MAMMALIAFORMES_DA_FORMACAO_BOTUCATU_CRETACEO_INFERIOR_ESTADO_DE_SANTA_CATARINA_BRASIL",
-      "https://www.researchgate.net/publication/317731251_A_new_ichnotaxon_classification_of_large_mammaliform_trackways_from_the_Lower_Cretaceous_Botucatu_Formation_Parana_Basin_Brazil"
+      "https://www.researchgate.net/publication/317731251_A_new_ichnotaxon_classification_of_large_mammaliform_trackways_from_the_Lower_Cretaceous_Botucatu_Formation_Parana_Basin_Brazil",
+      "https://doi.org/10.1016/j.jsames.2026.106223",
+      "https://www.diariodepernambuco.com.br/dptrends/pegadas-encontradas-em-santa-catarina-indicam-que-um-mamifero-do-tamanho-de-um-puma-viveu-entre-os-dinossauros/"
     ],
-    "citacao_abnt": "BUCK, P.V. et al. 2022b. As maiores pegadas atribuídas a Mammaliaformes da Formação Botucatu (Cretáceo Inferior), estado de Santa Catarina, Brasil. Paleontologia em Destaque.",
-    "tipo_fonte": "Anais ou resumo de evento"
+    "citacao_abnt": "BUCK, P.V. et al. 2022b. As maiores pegadas atribuídas a Mammaliaformes da Formação Botucatu (Cretáceo Inferior), estado de Santa Catarina, Brasil. Paleontologia em Destaque. | BUCK, P.V.; GHILARDI, A.M.; AURELIANO, T. et al. 2026. Remarkably large mammal-like tracks from the Botucatu Formation (Lower Cretaceous), Paraná Basin, Brazil: implications for the evolution of large size in Mammaliaformes. Journal of South American Earth Sciences (artigo 106223). DOI: 10.1016/j.jsames.2026.106223",
+    "tipo_fonte": "Anais ou resumo de evento",
+    "doi": "10.1016/j.jsames.2026.106223"
   },
   {
     "id": 97,
@@ -2648,7 +2643,7 @@
   {
     "numero_catalogo": "-",
     "bacia": "Bacia do Paraná — Fm. Irati",
-    "armazenamento": "CENPALEO/UnC, Mafra, SC (parte do material destinada ao Museu do Contestado, Três Barras, SC)",
+    "armazenamento": "Preparação no CENPALEO/UnC (Mafra), segundo a reportagem de 2020; em 2022, 20 peças transferidas do CENPALEO foram expostas no Museu do Patrimônio Histórico João Bedrechuk, Três Barras (Prefeitura de Três Barras)",
     "unidade_pesquisa": "CENPALEO/UnC",
     "site": "Rio Negro (Três Barras)",
     "municipio": "Três Barras",
@@ -2659,22 +2654,23 @@
     "periodo": "Permiano Inferior",
     "era": "Paleozóico — Permiano",
     "periodo_ordem": 8,
-    "idade_ma": "ca. 280 Ma",
+    "idade_ma": "ca. 280 Ma, segundo a reportagem (método de datação não informado)",
     "id": 101,
     "taxon": "Mesosauridae indet. (mesossauro)",
     "categoria": "Vertebrado — réptil aquático (Mesosauridae)",
-    "descritor": "Identificação inicial por C.E. Fiolek (Museu do Contestado); estudo por equipe do CENPALEO/UnC (L.C. Weinschütz, E. Wilner, J.H.Z. Ricetti), divulgado em 2020; Luiz, E. R. — \"Vertebrados fósseis de Santa Catarina: uma cartilha sobre o patrimônio paleontológico catarinense\", Trabalho de Conclusão de Curso, UFSC",
-    "observacoes": "Répteis aquáticos de 80 cm a 1 m, com membranas entre os dedos e dieta de pequenos crustáceos, que habitaram o \"Golfo Irati\". Estruturas expostas nas margens do Rio Negro durante estiagens que rebaixaram o rio (achados divulgados em 2018 e em 2020), que rebaixou o nível do rio. Os mesossauros ocorrem tanto no sul do Brasil quanto na África do Sul (Fm. Whitehill), e essa correspondência foi uma das evidências históricas da deriva continental. ATENÇÃO: registro divulgado pela imprensa a partir de identificação do CENPALEO; não foi localizada publicação científica formal descrevendo este material específico — a ocorrência de Mesosauridae na Fm. Irati em SC, contudo, é bem estabelecida na literatura. Mesossauros da Fm. Irati concentram-se, na região, em Três Barras (SC) e São Mateus do Sul (PR), e o CENPALEO guarda várias amostras. Segundo a compilação de vertebrados fósseis de SC da UFSC, não há trabalho de descrição do material de mesossauros do estado. TAXONOMIA: estudos recentes indicam que Mesosaurus tenuidens é a única espécie válida de Mesosauridae — \"Stereosternum tumidum\" e \"Brazilosaurus sanpauloensis\" representariam estágios imaturos ou exemplares incompletos de Mesosaurus (Verrière & Fröbisch, 2022, PeerJ, DOI 10.7717/peerj.13866). Como NENHUM exemplar catarinense foi descrito formalmente, os registros de SC permanecem como Mesosauridae indet.",
+    "descritor": "Citação de mídia — NSC Total (18/05/2020), reportagem «Seca leva à descoberta de fósseis de 280 milhões de anos em Três Barras, no Norte de SC», que atribui a identificação inicial a C.E. Fiolek (coordenador do museu de Três Barras) e a pesquisa ao CENPALEO/UnC; Citação de mídia — Prefeitura de Três Barras (05/05/2022), notícia «Fósseis de mesossauro já estão em exposição no Museu de Três Barras»; Elias, R.L. (2020) — \"Vertebrados fósseis de Santa Catarina: uma cartilha sobre o patrimônio paleontológico catarinense\", Trabalho de Conclusão de Curso (Geografia), Universidade Federal de Santa Catarina",
+    "observacoes": "CITAÇÃO DE MÍDIA — não foi localizada publicação científica sobre este material; Elias (2020) registra que nenhum dos achados de mesossauro de SC foi descrito em periódico científico. Segundo o NSC Total (18/05/2020), a estiagem de março de 2020 rebaixou o Rio Negro e expôs, em Três Barras, leitos rochosos com fósseis de mesossauro, vistos por pessoas da comunidade e identificados inicialmente por Carlos Eduardo Fiolek; a pesquisa é do Cenpaleo-UnC (Mafra). A matéria descreve os mesossauros em geral como répteis de 80 cm a 1 m, com membranas entre os dedos, que comiam pequenos crustáceos e viviam no 'Golfo Irati', há cerca de 280 milhões de anos — descrição do grupo, não medição deste material. O material seria preparado no Cenpaleo e parte dele cedida ao museu de Três Barras; a Prefeitura informou em 05/05/2022 que 20 peças transferidas do CENPALEO estavam expostas. As reportagens não citam formação, espécie, número de espécimes nem datação; a atribuição à Fm. Irati é a da literatura geral para mesossaurídeos da Bacia do Paraná (Elias 2020 registra também paleoniscídeos da Fm. Irati em Três Barras). TAXONOMIA: estudos recentes indicam que Mesosaurus tenuidens é a única espécie válida de Mesosauridae — \"Stereosternum tumidum\" e \"Brazilosaurus sanpauloensis\" representariam estágios imaturos ou exemplares incompletos de Mesosaurus (Verrière & Fröbisch, 2022, PeerJ, DOI 10.7717/peerj.13866). Como NENHUM exemplar catarinense foi descrito formalmente, os registros de SC permanecem como Mesosauridae indet.",
     "fontes": [
       "https://www.nsctotal.com.br/noticias/seca-leva-a-descoberta-de-fosseis-de-280-milhoes-de-anos-em-tres-barras-no-norte-de-sc",
+      "https://www.tresbarras.sc.gov.br/cultura/fosseis-de-mesossauro-ja-estao-em-exposicao-no-museu-de-tres-barras/",
       "https://www.diariodoplanalto.com.br/seca-do-rio-negro-revela-f%C3%B3ssil-de-animal-pr%C3%A9-hist%C3%B3rico-em-tr%C3%AAs-barras-1.2089668",
       "https://revistaplaneta.com.br/seca-em-santa-catarina-expoe-fosseis-de-mais-de-280-milhoes-de-anos",
       "https://repositorio.ufsc.br/bitstream/handle/123456789/225085/TCC.pdf?sequence=1&isAllowed=y"
     ],
     "x": 409.2,
     "y": 43.4,
-    "tipo_fonte": "Divulgação ou imprensa",
-    "citacao_abnt": "[referência sem formato bibliográfico, transcrita do descritor: Identificação inicial por C.E. Fiolek (Museu do Contestado); estudo por equipe do CENPALEO/UnC (L.C. Weinschütz, E. Wilner, J.H.Z. Ricetti), divulgado em 2020; Luiz, E. R. — \"Vertebrados fósseis de Santa Catarina: uma cartilha sobre o patrimônio paleontológico catarinense\", Trabalho de Conclusão de Curso, UFSC]"
+    "tipo_fonte": "Citação de mídia",
+    "citacao_abnt": "[Citação de mídia, sem publicação científica primária identificada: NSC Total (18/05/2020), reportagem «Seca leva à descoberta de fósseis de 280 milhões de anos em Três Barras, no Norte de SC», que atribui a identificação inicial a C.E. Fiolek (coordenador do museu de Três Barras) e a pesquisa ao CENPALEO/UnC] | [Citação de mídia, sem publicação científica primária identificada: Prefeitura de Três Barras (05/05/2022), notícia «Fósseis de mesossauro já estão em exposição no Museu de Três Barras»] | ELIAS, R.L. 2020. Vertebrados fósseis de Santa Catarina: uma cartilha sobre o patrimônio paleontológico catarinense. Trabalho de Conclusão de Curso (Geografia), Universidade Federal de Santa Catarina."
   },
   {
     "id": 102,
@@ -4872,7 +4868,7 @@
     "periodo": "Plioceno–Pleistoceno",
     "era": "Cenozóico — Quaternário",
     "periodo_ordem": 13,
-    "formacao": "Depósitos cenozóicos / rochas do Planalto Serrano",
+    "formacao": "Não informada no artigo (Munhoz et al. 2024)",
     "taxon": "Megaichnus major (paleotoca URU-01-P2)",
     "categoria": "Icnofóssil — paleotoca",
     "numero_catalogo": "URU-01-P2 (designação de campo)",
@@ -4881,22 +4877,21 @@
     "municipio": "Urubici",
     "lat": -27.9652,
     "lon": -49.5092,
-    "bacia": "Bacia do Paraná / depósitos cenozóicos sobrepostos",
+    "bacia": "Bacia do Paraná (inferência do compilador; o artigo não cita bacia nem formação)",
     "armazenamento": "Estrutura in situ (icnofóssil não coletável)",
-    "descritor": "Buchmann, F.S.C., Lopes, R.P. & Caron, F. (2009) — \"Icnofósseis (paleotocas e crotovinas) atribuídos a mamíferos extintos no sudeste e sul do Brasil\", Revista Brasileira de Paleontologia 12(3):247–256, DOI 10.4072/rbp.2009.3.07; Lopes, R.P., Frank, H.T., Buchmann, F.S.C. & Caron, F. (2017) — \"Megaichnus igen. nov.: giant paleoburrows attributed to extinct Cenozoic mammals from South America\", Ichnos 24(2):133–145 (erige Megaichnus igen. nov.)",
-    "unidade_pesquisa": "UNESP-Litoral Paulista; UFRGS; UNIPAMPA",
+    "descritor": "Munhoz, M.S., Audi, C. & Buchmann, F.S.C. (2024) — \"Propagação sonora em Megaichnus major (paleotocas) como evidência de comunicação acústica de Mylodontoidea fossoriais\", Revista Brasileira de Paleontologia 27(4):e20240428, DOI 10.4072/rbp.2024.4.0428",
+    "unidade_pesquisa": "UNESP — Campus do Litoral Paulista (afiliação de F.S.C. Buchmann; demais afiliações a conferir no artigo)",
     "idade_ma": "Plioceno–Pleistoceno",
-    "observacoes": "Classificação: paleotoca — estrutura de habitação (Domichnia) escavada por mamíferos da megafauna. ICNOTAXONOMIA: desde Lopes et al. (2017) estas estruturas têm nome formal — o icnogênero Megaichnus, dividido em M. major (atribuído a preguiças-gigantes, Mylodontidae) e M. minor (atribuído a tatus-gigantes, Cingulata). Segundo F. S. C. Buchmann, em entrevista ao Jornal da Unesp (2022), mais de duas mil paleotocas foram registradas no Brasil, 99% delas entre o sul de Santa Catarina e o norte do Rio Grande do Sul. Conjunto de túneis, trincheiras e dolinas a 1.036 m de altitude, com coordenada publicada (27°57′54,7″S, 49°30′33,2″O). Serviu de laboratório para experimentos de PROPAGAÇÃO SONORA dentro da estrutura: estimativas a partir do ouvido médio de Lestodon e Glossotherium robustum indicam faixa auditiva de 44 Hz a 16.490 Hz, e os testes avaliam a hipótese de comunicação acústica entre mylodontídeos fossoriais — coerente com as evidências de vida gregária em paleotocas (Buchmann et al., 2016).",
-    "doi": "10.4072/rbp.2009.3.07",
+    "observacoes": "Classificação: paleotoca — estrutura de habitação (Domichnia) escavada por mamíferos da megafauna. Conjunto de túneis, trincheiras e dolinas a 1.036 m de altitude, com coordenada publicada (27°57′54,7″S, 49°30′33,2″O). Serviu de laboratório para experimentos de PROPAGAÇÃO SONORA dentro da estrutura: estimativas a partir do ouvido médio de Lestodon e Glossotherium robustum indicam faixa auditiva de 44 Hz a 16.490 Hz, e os testes avaliam a hipótese de comunicação acústica entre mylodontídeos fossoriais — coerente com as evidências de vida gregária em paleotocas (Buchmann et al., 2016). O artigo analisa apenas o túnel URU-01-P2 (15 m, sem ramificações) da 'paleotoca Caverna do Rio dos Bugres, URU-01', e informa que a identidade do escavador é incerta (não há fósseis associados); formação e rocha NÃO são informadas. CONTEXTO CIENTÍFICO (sobre o tipo de estrutura, não sobre este local): Lopes, Frank, Buchmann & Caron (2017, Ichnos 24(2):133–145) erigiram o icnogênero Megaichnus (M. major, atribuído a preguiças-gigantes, Mylodontidae; M. minor, a tatus-gigantes, Cingulata); Buchmann, Lopes & Caron (2009, Revista Brasileira de Paleontologia 12(3):247–256, DOI 10.4072/rbp.2009.3.07) tratam de paleotocas e crotovinas do sudeste e sul do Brasil. ",
+    "doi": "10.4072/rbp.2024.4.0428",
     "fontes": [
-      "https://doi.org/10.4072/rbp.2009.3.07",
-      "https://sbpbrasil.org/publications/index.php/rbp/article/download/428/254/9081",
-      "https://jornal.unesp.br/2022/01/18/uma-visita-a-casa-dos-gigantes/"
+      "https://doi.org/10.4072/rbp.2024.4.0428",
+      "https://sbpbrasil.org/publications/index.php/rbp/article/download/428/254/9081"
     ],
     "x": 501.8,
     "y": 436.0,
     "tipo_fonte": "Artigo em periódico",
-    "citacao_abnt": "BUCHMANN, F.S.C.; LOPES, R.P.; CARON, F. 2009. Icnofósseis (paleotocas e crotovinas) atribuídos a mamíferos extintos no sudeste e sul do Brasil. Revista Brasileira de Paleontologia, 12(3), 247–256. DOI: 10.4072/rbp.2009.3.07 | LOPES, R.P.; FRANK, H.T.; BUCHMANN, F.S.C. et al. 2017. Megaichnus igen. nov.: giant paleoburrows attributed to extinct Cenozoic mammals from South America. Ichnos, 24(2), 133–145 (erige Megaichnus igen. nov.)."
+    "citacao_abnt": "MUNHOZ, M.S.; AUDI, C.; BUCHMANN, F.S.C. 2024. Propagação sonora em Megaichnus major (paleotocas) como evidência de comunicação acústica de Mylodontoidea fossoriais. Revista Brasileira de Paleontologia, 27(4), e20240428. DOI: 10.4072/rbp.2024.4.0428"
   },
   {
     "id": 179,
@@ -4914,28 +4909,25 @@
     "lon": -49.4794,
     "bacia": "Bacia do Paraná / depósitos cenozóicos sobrepostos",
     "armazenamento": "Estrutura in situ (icnofóssil não coletável)",
-    "descritor": "Buchmann, F.S.C., Lopes, R.P. & Caron, F. (2009) — \"Icnofósseis (paleotocas e crotovinas) atribuídos a mamíferos extintos no sudeste e sul do Brasil\", Revista Brasileira de Paleontologia 12(3):247–256, DOI 10.4072/rbp.2009.3.07; Lopes, R.P., Frank, H.T., Buchmann, F.S.C. & Caron, F. (2017) — \"Megaichnus igen. nov.: giant paleoburrows attributed to extinct Cenozoic mammals from South America\", Ichnos 24(2):133–145 (erige Megaichnus igen. nov.)",
-    "unidade_pesquisa": "UNESP-Litoral Paulista; UFRGS; UNIPAMPA",
+    "descritor": "Audi, C. (2022) — \"Fotogrametria de uma paleotoca escavada por preguiças-gigantes (Megaichnus major)\", Dissertação de Mestrado, Universidade Estadual Paulista (Unesp), Programa de Pós-graduação em Biodiversidade de Ambientes Costeiros, campus do Litoral Paulista (orientador: F.S.C. Buchmann)",
+    "unidade_pesquisa": "Unesp — Campus do Litoral Paulista (Pós-graduação em Biodiversidade de Ambientes Costeiros)",
     "idade_ma": "Plioceno–Pleistoceno",
-    "observacoes": "Classificação: paleotoca — estrutura de habitação (Domichnia) escavada por mamíferos da megafauna. ICNOTAXONOMIA: desde Lopes et al. (2017) estas estruturas têm nome formal — o icnogênero Megaichnus, dividido em M. major (atribuído a preguiças-gigantes, Mylodontidae) e M. minor (atribuído a tatus-gigantes, Cingulata). Segundo F. S. C. Buchmann, em entrevista ao Jornal da Unesp (2022), mais de duas mil paleotocas foram registradas no Brasil, 99% delas entre o sul de Santa Catarina e o norte do Rio Grande do Sul. Paleotoca escavada no ARENITO DA FORMAÇÃO TACIBA (Permiano) — caso que ilustra bem a natureza destes icnofósseis: a estrutura é do Plioceno–Pleistoceno, mas a rocha escavada é ~270 milhões de anos mais antiga. Documentada por fotogrametria, com geração de modelo tridimensional.",
-    "doi": "10.4072/rbp.2009.3.07",
+    "observacoes": "Classificação: paleotoca — estrutura de habitação (Domichnia) escavada por mamíferos da megafauna. Paleotoca escavada no ARENITO DA FORMAÇÃO TACIBA (Permiano) — caso que ilustra bem a natureza destes icnofósseis: a estrutura é do Plioceno–Pleistoceno, mas a rocha escavada é ~270 milhões de anos mais antiga. Documentada por fotogrametria, com geração de modelo tridimensional. O resumo da dissertação localiza a paleotoca em Doutor Pedrinho (SC) e informa que a estrutura foi escavada no arenito da Fm. Taciba; não informa dimensões. CONTEXTO CIENTÍFICO (sobre o tipo de estrutura, não sobre este local): Lopes, Frank, Buchmann & Caron (2017, Ichnos 24(2):133–145) erigiram o icnogênero Megaichnus (M. major, atribuído a preguiças-gigantes, Mylodontidae; M. minor, a tatus-gigantes, Cingulata); Buchmann, Lopes & Caron (2009, Revista Brasileira de Paleontologia 12(3):247–256, DOI 10.4072/rbp.2009.3.07) tratam de paleotocas e crotovinas do sudeste e sul do Brasil. ",
     "fontes": [
-      "https://doi.org/10.4072/rbp.2009.3.07",
-      "https://sbpbrasil.org/publications/index.php/rbp/article/download/428/254/9081",
-      "https://www.researchgate.net/publication/365772145_Fotogrametria_de_um_icnofossil_escavado_por_preguicas-gigantes_Megaichnus_major",
-      "https://jornal.unesp.br/2022/01/18/uma-visita-a-casa-dos-gigantes/"
+      "https://repositorio.unesp.br/items/a7a21c5b-d669-4f0c-b86a-cf6d4ced7815",
+      "https://jornal.unesp.br/2022/01/18/uma-visita-a-casa-dos-gigantes/ (notícia sobre a paleotoca digitalizada de Doutor Pedrinho)"
     ],
     "x": 505.2,
     "y": 173.4,
-    "tipo_fonte": "Artigo em periódico",
-    "citacao_abnt": "BUCHMANN, F.S.C.; LOPES, R.P.; CARON, F. 2009. Icnofósseis (paleotocas e crotovinas) atribuídos a mamíferos extintos no sudeste e sul do Brasil. Revista Brasileira de Paleontologia, 12(3), 247–256. DOI: 10.4072/rbp.2009.3.07 | LOPES, R.P.; FRANK, H.T.; BUCHMANN, F.S.C. et al. 2017. Megaichnus igen. nov.: giant paleoburrows attributed to extinct Cenozoic mammals from South America. Ichnos, 24(2), 133–145 (erige Megaichnus igen. nov.)."
+    "tipo_fonte": "Tese ou dissertação",
+    "citacao_abnt": "AUDI, C. 2022. Fotogrametria de uma paleotoca escavada por preguiças-gigantes (Megaichnus major). Dissertação de Mestrado, Universidade Estadual Paulista (Unesp), Programa de Pós-graduação em Biodiversidade de Ambientes Costeiros, campus do Litoral Paulista (orientador: F.S.C. Buchmann)."
   },
   {
     "id": 180,
     "periodo": "Plioceno–Pleistoceno",
     "era": "Cenozóico — Quaternário",
     "periodo_ordem": 13,
-    "formacao": "Depósitos cenozóicos / rochas sedimentares do Planalto Norte",
+    "formacao": "Fm. Botucatu (arenitos), segundo Santos et al. (2021)",
     "taxon": "Megaichnus isp. (paleotocas de Porto União)",
     "categoria": "Icnofóssil — paleotoca",
     "numero_catalogo": "-",
@@ -4944,23 +4936,21 @@
     "municipio": "Porto União",
     "lat": -26.2383,
     "lon": -51.0772,
-    "bacia": "Bacia do Paraná / depósitos cenozóicos sobrepostos",
+    "bacia": "Bacia do Paraná — Fm. Botucatu",
     "armazenamento": "Estrutura in situ (icnofóssil não coletável)",
-    "descritor": "Buchmann, F.S.C., Lopes, R.P. & Caron, F. (2009) — \"Icnofósseis (paleotocas e crotovinas) atribuídos a mamíferos extintos no sudeste e sul do Brasil\", Revista Brasileira de Paleontologia 12(3):247–256, DOI 10.4072/rbp.2009.3.07; Lopes, R.P., Frank, H.T., Buchmann, F.S.C. & Caron, F. (2017) — \"Megaichnus igen. nov.: giant paleoburrows attributed to extinct Cenozoic mammals from South America\", Ichnos 24(2):133–145 (erige Megaichnus igen. nov.)",
-    "unidade_pesquisa": "UNESP-Litoral Paulista; UFRGS; UNIPAMPA",
+    "descritor": "Santos, R.F., Schipanski, H.J., Martello, A.R. & Vogel, H.F. (2021) — \"Preliminary analysis of paleoburrows in Porto União-SC and União da Vitória-PR, Brazil\", Research, Society and Development 10(11):e330101119176, DOI 10.33448/rsd-v10i11.19176",
+    "unidade_pesquisa": "Não informada no resumo consultado",
     "idade_ma": "Plioceno–Pleistoceno",
-    "observacoes": "Classificação: paleotoca — estrutura de habitação (Domichnia) escavada por mamíferos da megafauna. ICNOTAXONOMIA: desde Lopes et al. (2017) estas estruturas têm nome formal — o icnogênero Megaichnus, dividido em M. major (atribuído a preguiças-gigantes, Mylodontidae) e M. minor (atribuído a tatus-gigantes, Cingulata). Segundo F. S. C. Buchmann, em entrevista ao Jornal da Unesp (2022), mais de duas mil paleotocas foram registradas no Brasil, 99% delas entre o sul de Santa Catarina e o norte do Rio Grande do Sul. Conjunto de paleotocas do Planalto Norte catarinense, analisadas em conjunto com as de União da Vitória (PR), do outro lado do rio Iguaçu. Levantadas pelo método de amostragem em bola de neve (snowball sampling), com medição de altura e largura dos túneis.",
-    "doi": "10.4072/rbp.2009.3.07",
+    "observacoes": "Classificação: paleotoca — estrutura de habitação (Domichnia) escavada por mamíferos da megafauna. Conjunto de paleotocas do Planalto Norte catarinense, analisadas em conjunto com as de União da Vitória (PR), do outro lado do rio Iguaçu. Levantadas pelo método de amostragem em bola de neve (snowball sampling), com medição de altura e largura dos túneis. Segundo o resumo, foram achadas 13 paleotocas livres ou parcialmente obstruídas e 6 crotovinas, todas em arenitos, somando União da Vitória (PR) e Porto União (SC) — o resumo não separa as contagens por município —, com quatro morfologias de túnel e cinco tipos de icnofósseis, alguns atribuídos a Mylodontidae; não nomeia localidades dentro de Porto União. CONTEXTO CIENTÍFICO (sobre o tipo de estrutura, não sobre este local): Lopes, Frank, Buchmann & Caron (2017, Ichnos 24(2):133–145) erigiram o icnogênero Megaichnus (M. major, atribuído a preguiças-gigantes, Mylodontidae; M. minor, a tatus-gigantes, Cingulata); Buchmann, Lopes & Caron (2009, Revista Brasileira de Paleontologia 12(3):247–256, DOI 10.4072/rbp.2009.3.07) tratam de paleotocas e crotovinas do sudeste e sul do Brasil. ",
+    "doi": "10.33448/rsd-v10i11.19176",
     "fontes": [
-      "https://doi.org/10.4072/rbp.2009.3.07",
-      "https://sbpbrasil.org/publications/index.php/rbp/article/download/428/254/9081",
-      "https://rsdjournal.org/rsd/article/view/19176",
-      "https://jornal.unesp.br/2022/01/18/uma-visita-a-casa-dos-gigantes/"
+      "https://doi.org/10.33448/rsd-v10i11.19176",
+      "https://rsdjournal.org/rsd/article/view/19176"
     ],
     "x": 322.6,
     "y": 71.4,
     "tipo_fonte": "Artigo em periódico",
-    "citacao_abnt": "BUCHMANN, F.S.C.; LOPES, R.P.; CARON, F. 2009. Icnofósseis (paleotocas e crotovinas) atribuídos a mamíferos extintos no sudeste e sul do Brasil. Revista Brasileira de Paleontologia, 12(3), 247–256. DOI: 10.4072/rbp.2009.3.07 | LOPES, R.P.; FRANK, H.T.; BUCHMANN, F.S.C. et al. 2017. Megaichnus igen. nov.: giant paleoburrows attributed to extinct Cenozoic mammals from South America. Ichnos, 24(2), 133–145 (erige Megaichnus igen. nov.)."
+    "citacao_abnt": "SANTOS, R.F.; SCHIPANSKI, H.J.; MARTELLO, A.R. et al. 2021. Preliminary analysis of paleoburrows in Porto União-SC and União da Vitória-PR, Brazil. Research, Society and Development, 10(11), e330101119176. DOI: 10.33448/rsd-v10i11.19176"
   },
   {
     "id": 181,
@@ -5336,7 +5326,7 @@
     "periodo": "Permiano Médio (Guadalupiano)",
     "era": "Paleozóico — Permiano",
     "periodo_ordem": 9,
-    "formacao": "Fm. Teresina / Grupo Passa Dois",
+    "formacao": "Não informada na reportagem (ocorrência-tipo do gênero: Fm. Teresina, Canoinhas — registro 159)",
     "taxon": "Krauselcladus canoinhensis — nova ocorrência (Major Vieira)",
     "categoria": "Flora — Coniferophyta (conífera)",
     "numero_catalogo": "-",
@@ -5345,19 +5335,19 @@
     "municipio": "Major Vieira",
     "lat": -26.3717,
     "lon": -50.3283,
-    "bacia": "Bacia do Paraná — Fm. Teresina",
+    "bacia": "Bacia do Paraná (formação não informada na reportagem)",
     "armazenamento": "Não informado na fonte consultada",
-    "descritor": "Identificação pelo CENPALEO/UnC (Mafra), divulgada em agosto de 2024",
+    "descritor": "Citação de mídia — Notisul (22/08/2024), reportagem «Fóssil de 270 milhões de anos é encontrado em SC», que informa a identificação pelo Centro de Pesquisa Paleontológica da Universidade do Contestado (Mafra) a partir de fotos e vídeos",
     "unidade_pesquisa": "CENPALEO/UnC",
-    "idade_ma": "ca. 273–265 Ma (Guadalupiano)",
-    "observacoes": "SEGUNDA localidade conhecida de Krauselcladus canoinhensis — gênero cuja ÚNICA ocorrência em toda a Bacia do Paraná é catarinense, descrito originalmente no Afloramento de Canoinhas (SIGEP 126). O espécime foi encontrado em 1º de maio de 2024 por participantes de uma caminhada religiosa e levado para análise. A nova localidade fica próxima a Canoinhas e amplia o entendimento da distribuição paleogeográfica da espécie. ATENÇÃO: a identificação foi feita pelo CENPALEO A PARTIR DE FOTOS E VÍDEOS enviados pelos descobridores, e não a partir de exame direto do material; não foi localizada publicação científica formal sobre esta ocorrência, nem informação de tombamento ou depositário. A ocorrência do gênero em SC, contudo, é bem estabelecida na literatura (ver registro do Afloramento de Canoinhas).",
+    "idade_ma": "ca. 270 Ma, segundo a reportagem (método de datação não informado)",
+    "observacoes": "CITAÇÃO DE MÍDIA — não foi localizada publicação científica sobre esta ocorrência. Segundo o Notisul (22/08/2024), o fóssil foi descoberto em 1º de maio de 2024 por dois participantes de uma caminhada religiosa no interior de Major Vieira e identificado como Krauselcladus canoinhensis ('planta aparentada das atuais araucárias') pelo centro de pesquisa da Universidade do Contestado A PARTIR DE FOTOS E VÍDEOS enviados pelos descobridores, sem exame direto do material documentado na reportagem; a idade de 270 milhões de anos é a da reportagem. A reportagem não informa localidade precisa, nome de quem identificou, tombo nem depositário. Se confirmada, seria uma segunda localidade do gênero, descrito no Afloramento de Canoinhas (SIGEP 126; registro 159).",
     "fontes": [
       "https://www.notisul.com.br/fossil-de-270-milhoes-de-anos-e-encontrado-em-sc/"
     ],
     "x": 408.2,
     "y": 99.6,
-    "tipo_fonte": "Divulgação ou imprensa",
-    "citacao_abnt": "[referência sem formato bibliográfico, transcrita do descritor: Identificação pelo CENPALEO/UnC (Mafra), divulgada em agosto de 2024]"
+    "tipo_fonte": "Citação de mídia",
+    "citacao_abnt": "[Citação de mídia, sem publicação científica primária identificada: Notisul (22/08/2024), reportagem «Fóssil de 270 milhões de anos é encontrado em SC», que informa a identificação pelo Centro de Pesquisa Paleontológica da Universidade do Contestado (Mafra) a partir de fotos e vídeos]"
   },
   {
     "id": 196,
@@ -6001,7 +5991,7 @@
     "formacao": "Grupo Itararé / Fm. Mafra",
     "taxon": "Hormosiroidea meandrica (Fazenda Potreiro)",
     "categoria": "Icnofóssil — invertebrado",
-    "numero_catalogo": "CP/P (coleção CENPALEO)",
+    "numero_catalogo": "-",
     "local_coleta": "Fazenda Potreiro, Mafra, SC",
     "site": "Fazenda Potreiro",
     "municipio": "Mafra",
@@ -6101,7 +6091,7 @@
     "id": 221,
     "taxon": "Mesosauridae indet. (mesossauro de Papanduva)",
     "categoria": "Vertebrado — réptil aquático (Mesosauridae)",
-    "descritor": "Karl, H.-V., Gröning, E. & Brauckmann, C. (2007) — \"The Mesosauria in the collections of Göttingen and Clausthal: implications for a modified classification\", Clausthaler Geowissenschaften 6:63–78; Luiz, E. R. — \"Vertebrados fósseis de Santa Catarina: uma cartilha sobre o patrimônio paleontológico catarinense\", Trabalho de Conclusão de Curso, UFSC",
+    "descritor": "Karl, H.-V., Gröning, E. & Brauckmann, C. (2007) — \"The Mesosauria in the collections of Göttingen and Clausthal: implications for a modified classification\", Clausthaler Geowissenschaften 6:63–78; Elias, R.L. (2020) — \"Vertebrados fósseis de Santa Catarina: uma cartilha sobre o patrimônio paleontológico catarinense\", Trabalho de Conclusão de Curso (Geografia), Universidade Federal de Santa Catarina",
     "observacoes": "Exemplar mencionado por Karl, Gröning & Brauckmann (2007) numa listagem de fósseis de mesossauros de coleções do mundo — a ÚNICA citação de mesossauro catarinense em periódico científico localizada. A compilação da UFSC registra o ano como 2008; o volume é de 2007. RESSALVA: coordenada da sede municipal; a fonte não informa a localidade nem o tombo. Segundo a compilação de vertebrados fósseis de SC da UFSC, não há trabalho de descrição do material de mesossauros do estado. TAXONOMIA: estudos recentes indicam que Mesosaurus tenuidens é a única espécie válida de Mesosauridae — \"Stereosternum tumidum\" e \"Brazilosaurus sanpauloensis\" representariam estágios imaturos ou exemplares incompletos de Mesosaurus (Verrière & Fröbisch, 2022, PeerJ, DOI 10.7717/peerj.13866). Como NENHUM exemplar catarinense foi descrito formalmente, os registros de SC permanecem como Mesosauridae indet.",
     "fontes": [
       "https://www.researchgate.net/publication/286871120_The_Mesosauria_in_the_collections_of_Gottingen_and_Clausthal_implications_for_a_modified_classification",
@@ -6110,19 +6100,19 @@
     "x": 429.2,
     "y": 99.3,
     "tipo_fonte": "Artigo em periódico",
-    "citacao_abnt": "KARL, H.-V.; GRÖNING, E.; BRAUCKMANN, C. 2007. The Mesosauria in the collections of Göttingen and Clausthal: implications for a modified classification. Clausthaler Geowissenschaften, 6, 63–78. | [referência sem formato bibliográfico, transcrita do descritor: Luiz, E. R. — \"Vertebrados fósseis de Santa Catarina: uma cartilha sobre o patrimônio paleontológico catarinense\", Trabalho de Conclusão de Curso, UFSC]"
+    "citacao_abnt": "KARL, H.-V.; GRÖNING, E.; BRAUCKMANN, C. 2007. The Mesosauria in the collections of Göttingen and Clausthal: implications for a modified classification. Clausthaler Geowissenschaften, 6, 63–78. | ELIAS, R.L. 2020. Vertebrados fósseis de Santa Catarina: uma cartilha sobre o patrimônio paleontológico catarinense. Trabalho de Conclusão de Curso (Geografia), Universidade Federal de Santa Catarina."
   },
   {
     "numero_catalogo": "-",
     "bacia": "Bacia do Paraná — Fm. Irati",
-    "armazenamento": "Exposto em museu do município de Taió, SC",
+    "armazenamento": "Museu Paleo-Arqueológico e Histórico Prefeito Bertoldo Jacobsen, Taió, SC (exposição, segundo a Prefeitura de Taió, 2017)",
     "unidade_pesquisa": "Não informado na fonte consultada",
     "site": "Ribeirão das Pedras (Taió)",
     "municipio": "Taió",
     "local_coleta": "Localidade de Ribeirão das Pedras, Taió, SC",
     "lat": -27.11,
     "lon": -49.985,
-    "formacao": "Fm. Irati / Grupo Passa Dois",
+    "formacao": "Fm. Irati? (inferida do grupo; não informada na fonte)",
     "periodo": "Permiano Inferior",
     "era": "Paleozóico — Permiano",
     "periodo_ordem": 8,
@@ -6130,15 +6120,16 @@
     "id": 222,
     "taxon": "Mesosauridae indet. (mesossauro de Ribeirão das Pedras)",
     "categoria": "Vertebrado — réptil aquático (Mesosauridae)",
-    "descritor": "Prefeitura de Taió (2017), divulgação; Luiz, E. R. — \"Vertebrados fósseis de Santa Catarina: uma cartilha sobre o patrimônio paleontológico catarinense\", Trabalho de Conclusão de Curso, UFSC",
-    "observacoes": "Exemplar encontrado em Ribeirão das Pedras e hoje exposto ao público em museu de Taió. Conhecido apenas por divulgação da prefeitura, compilada pela UFSC. RESSALVA: coordenada do município; sem tombo nem descrição. Segundo a compilação de vertebrados fósseis de SC da UFSC, não há trabalho de descrição do material de mesossauros do estado. TAXONOMIA: estudos recentes indicam que Mesosaurus tenuidens é a única espécie válida de Mesosauridae — \"Stereosternum tumidum\" e \"Brazilosaurus sanpauloensis\" representariam estágios imaturos ou exemplares incompletos de Mesosaurus (Verrière & Fröbisch, 2022, PeerJ, DOI 10.7717/peerj.13866). Como NENHUM exemplar catarinense foi descrito formalmente, os registros de SC permanecem como Mesosauridae indet.",
+    "descritor": "Citação de mídia — Prefeitura de Taió (28/04/2017), notícia «Museu Paleo-Arqueológico e Histórico Prefeito Bertoldo Jacobsen abre Exposição de fóssil de Mesossauro em Taió», conforme citada por Elias (2020); Elias, R.L. (2020) — \"Vertebrados fósseis de Santa Catarina: uma cartilha sobre o patrimônio paleontológico catarinense\", Trabalho de Conclusão de Curso (Geografia), Universidade Federal de Santa Catarina",
+    "observacoes": "CITAÇÃO DE MÍDIA — o exemplar é conhecido apenas por divulgação municipal. Segundo Elias (2020), que cita a notícia da Prefeitura de Taió (28/04/2017) e atribui o achado à diretora do museu, um exemplar de mesossauro encontrado em Ribeirão das Pedras (Taió) está exposto no museu local. Sem número de tombo e sem descrição científica; coordenada do município. Elias (2020) registra que nenhum dos achados de mesossauro de SC foi descrito em periódico científico. A fonte não informa a formação: a atribuição à Fm. Irati é inferida do grupo (mesossaurídeos da Bacia do Paraná). TAXONOMIA: estudos recentes indicam que Mesosaurus tenuidens é a única espécie válida de Mesosauridae — \"Stereosternum tumidum\" e \"Brazilosaurus sanpauloensis\" representariam estágios imaturos ou exemplares incompletos de Mesosaurus (Verrière & Fröbisch, 2022, PeerJ, DOI 10.7717/peerj.13866). Como NENHUM exemplar catarinense foi descrito formalmente, os registros de SC permanecem como Mesosauridae indet.",
     "fontes": [
+      "https://www.taio.sc.gov.br/noticias/index/ver/codMapaItem/20161/codNoticia/419871 (notícia da Prefeitura de Taió, 28/04/2017, conforme citada por Elias 2020)",
       "https://repositorio.ufsc.br/bitstream/handle/123456789/225085/TCC.pdf?sequence=1&isAllowed=y"
     ],
     "x": 447.4,
     "y": 255.4,
-    "tipo_fonte": "Divulgação ou imprensa",
-    "citacao_abnt": "PREFEITURA DE TAIÓ 2017. divulgação. | [referência sem formato bibliográfico, transcrita do descritor: Luiz, E. R. — \"Vertebrados fósseis de Santa Catarina: uma cartilha sobre o patrimônio paleontológico catarinense\", Trabalho de Conclusão de Curso, UFSC]"
+    "tipo_fonte": "Citação de mídia",
+    "citacao_abnt": "[Citação de mídia, sem publicação científica primária identificada: Prefeitura de Taió (28/04/2017), notícia «Museu Paleo-Arqueológico e Histórico Prefeito Bertoldo Jacobsen abre Exposição de fóssil de Mesossauro em Taió», conforme citada por Elias (2020)] | ELIAS, R.L. 2020. Vertebrados fósseis de Santa Catarina: uma cartilha sobre o patrimônio paleontológico catarinense. Trabalho de Conclusão de Curso (Geografia), Universidade Federal de Santa Catarina."
   },
   {
     "numero_catalogo": "-",
@@ -6158,7 +6149,7 @@
     "id": 223,
     "taxon": "Palaeonisciformes indet. (Fm. Irati, Três Barras)",
     "categoria": "Vertebrado — peixes",
-    "descritor": "Nizer & Weinschütz (2015) — Paleontologia em Destaque 68:140 [título e autoria completa não localizados nesta revisão]; Luiz, E. R. — \"Vertebrados fósseis de Santa Catarina: uma cartilha sobre o patrimônio paleontológico catarinense\", Trabalho de Conclusão de Curso, UFSC",
+    "descritor": "Nizer & Weinschütz (2015) — Paleontologia em Destaque 68:140 [título e autoria completa não localizados nesta revisão]; Elias, R.L. (2020) — \"Vertebrados fósseis de Santa Catarina: uma cartilha sobre o patrimônio paleontológico catarinense\", Trabalho de Conclusão de Curso (Geografia), Universidade Federal de Santa Catarina",
     "observacoes": "Classificação: peixe actinopterígio paleoniscídeo. Quatro amostras com dentes, escamas, crânio e nadadeiras, da mesma unidade e localidade dos mesossauros de Três Barras — o primeiro registro de peixe da Fm. Irati catalogado para Santa Catarina. Publicado como resumo.",
     "fontes": [
       "https://repositorio.ufsc.br/bitstream/handle/123456789/225085/TCC.pdf?sequence=1&isAllowed=y"
@@ -6166,7 +6157,7 @@
     "x": 409.2,
     "y": 43.4,
     "tipo_fonte": "Anais ou resumo de evento",
-    "citacao_abnt": "[referência sem formato bibliográfico, transcrita do descritor: Nizer & Weinschütz (2015) — Paleontologia em Destaque 68:140 [título e autoria completa não localizados nesta revisão]] | [referência sem formato bibliográfico, transcrita do descritor: Luiz, E. R. — \"Vertebrados fósseis de Santa Catarina: uma cartilha sobre o patrimônio paleontológico catarinense\", Trabalho de Conclusão de Curso, UFSC]"
+    "citacao_abnt": "[referência sem formato bibliográfico, transcrita do descritor: Nizer & Weinschütz (2015) — Paleontologia em Destaque 68:140 [título e autoria completa não localizados nesta revisão]] | ELIAS, R.L. 2020. Vertebrados fósseis de Santa Catarina: uma cartilha sobre o patrimônio paleontológico catarinense. Trabalho de Conclusão de Curso (Geografia), Universidade Federal de Santa Catarina."
   },
   {
     "id": 224,
@@ -6418,5 +6409,33 @@
     ],
     "citacao_abnt": "BREMEM, A.C.; WEINSCHÜTZ, L.C. 2008. Ocorrência de espículas de poríferas no intervalo superior da Formação Rio do Sul (Permiano) do Grupo Itararé, no município de Itaiópolis/SC. Paleontologia em Destaque, Boletim Informativo da SBP, n. 61, p. 11 (resumo, Paleo 2007).",
     "tipo_fonte": "Anais ou resumo de evento"
+  },
+  {
+    "id": 233,
+    "periodo": "Holoceno",
+    "era": "Cenozóico — Quaternário",
+    "periodo_ordem": 18,
+    "formacao": "Depósitos turfosos holocênicos da Planície Costeira (unidade litoestratigráfica não informada no resumo)",
+    "taxon": "Palinomorfos holocênicos (54 morfotipos: fungos, algas, briófitas, pteridófitas, pólen de gimnospermas e outros)",
+    "categoria": "Microfóssil — palinomorfos",
+    "numero_catalogo": "-",
+    "local_coleta": "Duas seções com turfa na Planície Costeira sul-catarinense, nos municípios de Santa Rosa do Sul e São João do Sul, SC (nomes das turfeiras e coordenadas não informados no resumo consultado; ponto aproximado, entre os centros dos dois municípios)",
+    "site": "Planície Costeira sul-catarinense (turfeiras de Santa Rosa do Sul e São João do Sul)",
+    "municipio": "Santa Rosa do Sul / São João do Sul",
+    "lat": -29.1613,
+    "lon": -49.7767,
+    "bacia": "Planície Costeira — Depósitos Quaternários",
+    "armazenamento": "Não informado no resumo consultado",
+    "descritor": "Cancelli, R.R., Souza, P.A. & Neves, P.C.P. (2012) — \"Fungos, criptógamas e outros palinomorfos holocênicos (7908±30 anos AP-atual) da Planície Costeira sul-catarinense, Brasil\", Acta Botanica Brasilica 26(1):20–37, DOI 10.1590/S0102-33062012000100004",
+    "unidade_pesquisa": "UFRGS (Porto Alegre) e Universidade Luterana do Brasil (Canoas) — afiliações dos autores",
+    "idade_ma": "ca. 7.908 anos AP (base do testemunho de Santa Rosa do Sul) até o presente — 0,0079 Ma",
+    "observacoes": "Segundo o resumo, o estudo apresenta resultados palinológicos de duas seções com turfa na Planície Costeira sul-catarinense, em Santa Rosa do Sul e São João do Sul; uma amostra basal do testemunho de Santa Rosa do Sul foi datada em 7908 ± 33 anos AP (Holoceno Inferior; o título cita ± 30). Foram descritos e ilustrados 54 palinomorfos: 21 fungos, 5 algas, 1 acritarco, 1 incertae sedis, 2 briófitas, 15 pteridófitas, 2 pólens de gimnospermas e 7 outros (uma cápsula de briófita, 4 fragmentos de invertebrados e 2 palinoforaminíferos indeterminados). Nomes das turfeiras, coordenadas, espessura dos testemunhos e táxons individuais NÃO constam no resumo consultado (o texto integral não foi aberto); por isso o ponto no mapa é aproximado. REGISTRO NOVO (2026.09.14), com fonte própria; não deve ser confundido com o nº 040 (Lagoa do Sombrio), removido em 2026.09.13.",
+    "fontes": [
+      "https://doi.org/10.1590/S0102-33062012000100004",
+      "https://paperity.org/p/187352977/fungos-criptogamas-e-outros-palinomorfos-holocenicos-7908-30-anos-ap-atual-da-planicie"
+    ],
+    "citacao_abnt": "CANCELLI, R.R.; SOUZA, P.A.; NEVES, P.C.P. 2012. Fungos, criptógamas e outros palinomorfos holocênicos (7908±30 anos AP-atual) da Planície Costeira sul-catarinense, Brasil. Acta Botanica Brasilica, 26(1), 20–37. DOI: 10.1590/S0102-33062012000100004",
+    "tipo_fonte": "Artigo em periódico",
+    "doi": "10.1590/S0102-33062012000100004"
   }
 ]

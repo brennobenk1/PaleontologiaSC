@@ -6,6 +6,105 @@ saber o que havia nele naquele momento.
 
 Formato: as versões seguem `ANO.MÊS.N`.
 
+## 2026.09.14 — 08/10/2026 · tudo com fonte científica ou com "citação de mídia" explícita
+
+Banco: **228 registros** (era 227), **57 sítios**, 15 intervalos de tempo, 107 obras na bibliografia, 52 registros com DOI
+(eram 56: foram retirados DOIs genéricos que não identificavam a ocorrência).
+
+### Política nova: nada especulado, nada removido sem prova de invenção
+Pedido do autor: registros só saem se parecerem inventados; reportagem pode ficar, mas
+**declarada como citação de mídia**. Aplicado assim:
+- **Novo `tipo_fonte` "Citação de mídia"** (13 registros: 38, 44, 56, 57, 67, 68, 69, 70, 81, 83, 101,
+  195, 222). Substitui "Divulgação ou imprensa", que o validador agora recusa. Cada obra de mídia
+  no descritor começa com "Citação de mídia — "; a observação começa com "CITAÇÃO DE MÍDIA"; a ficha
+  mostra uma faixa de aviso; o card, um selo; a bibliografia, um grupo próprio; e a citação ABNT sai entre
+  colchetes ("sem publicação científica primária identificada"). A verificação nº 20 do
+  `scripts/validar.py` confere os três lados.
+- **Descritor só com obra que documenta aquela ocorrência.** Trabalhos genéricos de contexto saíram do
+  descritor e foram para a observação ("CONTEXTO CIENTÍFICO"). O que a fonte não diz (formação, idade,
+  depositário, autoria) fica como "não informado na fonte" ou marcado como inferência.
+
+### Afirmações sem lastro corrigidas
+- **67** (pegadas de terópode): período passa a "Jurássico (segundo a reportagem)"; sem formação nem datação.
+- **68** (*Notiomastodon platensis*): histórico taxonômico registrado — a reportagem usa *Stegomastodon
+  waringi*; o táxon é tratado hoje como *N. platensis* (Mothé et al. 2012).
+- **69, 101, 195, 222**: reescritos só com o que a reportagem ou o resumo diz; "não informado" onde a
+  fonte não informa tombo, depositário ou localidade.
+- **70**: rótulo "Toxodon sp." era da ficha, não da reportagem — agora "Toxodontidae indet. («toxodonte»
+  na reportagem)".
+- **81**: "Furnas Xocleng" não aparece em nenhuma fonte; renomeado **Paleotoca Xocleng**.
+- **83**: nome "Paleotoca do Engenho Velho" não achado em fonte; sítio renomeado para
+  "Jacinto Machado e Praia Grande (paleotocas do Geoparque)".
+- **44** (Paleotoca Amaral de Baixo, Lauro Müller): reescrita só com o que as duas notícias dizem (UDESC
+  08/04/2026 e ND Mais 24/03/2026); a Fm. Rio Bonito é a informada pela UDESC, e a autoria "tatus
+  extintos" aparece como "provável".
+- **Paleotocas, fontes locais:** 178 → Munhoz et al. (2024, DOI 10.4072/rbp.2024.4.0428); 179 → Audi
+  (2022, dissertação); 180 → Santos et al. (2021, DOI 10.33448/rsd-v10i11.19176, Fm. Botucatu); 82 →
+  Frank et al. (2012). O DOI genérico de Buchmann et al. (2009) saiu do campo `doi` de 38, 44, 81, 82, 83
+  e 179 (descrevia o fenômeno em geral, não cada paleotoca).
+- **TCC citado com autoria errada** (ids 101, 221, 222, 223): "Luiz, E. R." → **Elias, R.L. (2020)**,
+  "Vertebrados fósseis de Santa Catarina: uma cartilha…", UFSC.
+- **43** (Rio dos Cedros): os artigos do descritor não mencionam Rio dos Cedros. Agora cita Saldanha
+  et al. (2023, *Sedimentary Geology* 458:106533), como "Citação em revisão" — o resumo foi lido por
+  fonte secundária (a Wikipédia que o resume); o artigo integral não foi aberto. O registro 37 recebeu
+  nota de referência cruzada (podem ser a mesma localidade; não confirmado).
+- **96**: acrescentado Buck et al. (2026, DOI 10.1016/j.jsames.2026.106223) e o histórico taxonômico de
+  *Aracoaraichnium* (→ Chelichnopodidae). O DOI veio de lista de discussão, não do artigo.
+- **Peixes do Campáleo (56–59):** os quatro repetiam as mesmas três obras (e o 56–59 apontavam para um
+  artigo sobre larvas de tricóptero). Agora cada um cita só a obra do próprio táxon:
+  58 → Hamel (2005); 59 → Malabarba (1988); ambos + Mouro et al. (2020) como contexto. **56 e 57
+  só têm a listagem da Wikipédia** (sem autoria nem referência por táxon) e viraram citação explícita.
+  A autoria "Beltan, 1975" de *Irajapintoseidon uruguayensis* não foi confirmada e foi retirada. O título
+  de Hamel (2005) foi corrigido para "A new **lower** actinopterygian…" (a lista de referências de Mouro
+  et al. 2020 o omite).
+- **218**: o campo de tombo trazia só o prefixo "CP/P (coleção CENPALEO)", sem número de espécime; passou a "-" (a coleção já consta no depositário).
+- Pontuação: 19 fichas tinham "UNIDADE E IDADE" colado ao fim da frase anterior; 3 fichas mostravam "-"
+  como depositário (agora "Não informado na fonte consultada").
+
+- **Período sem registro removido:** "Permiano Inferior (Asseliano)" (0 registros) saiu da tabela de
+  períodos (de 16 para 15 intervalos). Sua descrição dizia que o Folhelho Lontras tem "o mais importante
+  conjunto de tetrápodes permianos de Santa Catarina", afirmação sem fonte (o Campáleo é conhecido por
+  peixes, conodontes, artrópodes e esponjas).
+
+### Registro novo
+- **233 — Palinomorfos holocênicos de turfeiras (Santa Rosa do Sul / São João do Sul).** Cancelli, Souza
+  & Neves (2012), *Acta Botanica Brasilica* 26(1):20–37, DOI 10.1590/S0102-33062012000100004: 54
+  morfotipos. Substitui, com fonte própria, o registro 040 removido em 2026.09.13 (que misturava três
+  fontes). Ponto aproximado; novo sítio "Planície Costeira sul-catarinense".
+
+### Site
+- **Árvore das aves aninhada em clados reais.** Neoaves agora contém Mirandornithes, **Columbaves**
+  (→ Otidimorphae, Columbimorphae), Strisores, Gruimorphae (→ Gruiformes, Charadriiformes),
+  **Phaethoquornithes** (→ Eurypygimorphae, Aequornithes) e Telluraves. Corrigido o uso de "Columbea",
+  que na definição original (Jarvis et al. 2014) inclui Mirandornithes e aqui continha só as pombas.
+  O cigana (Opisthocomiformes) fica direto em Neoaves, sem clado superior: a posição é debatida
+  (Jarvis et al. 2014 o põem como irmão de Gruiformes + Charadriiformes; outros estudos divergem).
+  As notas dos nós passam a aparecer ao passar o mouse. Contagens e fósseis inalterados (34 ordens, 104
+  famílias, 28 fósseis encaixados). Telluraves ficou plano de propósito: as subdivisões (Afroaves,
+  Australaves) não são consenso.
+- **Etiqueta "Nº 00X" dos cards** agora fica dentro do card, na primeira linha; antes passava da borda
+  superior e disputava espaço com a pílula de categoria.
+- **Mapa:** a bolha do maior sítio (Campáleo, Mafra) era cortada pela borda superior; o quadro do mapa
+  ganhou folga (viewBox `0 -40 640 800`). O zoom com a roda do mouse não mantinha o ponto sob o cursor
+  (deslocava ~30 px); agora usa a matriz de tela do SVG (`getScreenCTM`), que considera as faixas vazias
+  e a origem do viewBox. Arrastar e os botões +/−/◎ conferidos.
+- **Ficha:** entrada de fonte no formato "URL (anotação)" gerava link quebrado; corrigido.
+- Selos "Citação de mídia" sem quebra de linha.
+
+### Verificações
+`scripts/validar.py`: aprovado (228 registros, 57 sítios; 2 avisos — DOI 52/228 e 10 obras ainda com
+referência incompleta). Teste no navegador (desktop e celular): abas, fichas com aviso, grupos da
+bibliografia, selos nos cards (14), 57 sítios clicáveis no mapa, árvore aninhada, etiqueta dentro do card.
+
+### O que continua em aberto
+- Obras ainda com referência incompleta (10): Da Rosa et al. 1997 (ids 1, 2, 3, 5, 84); Netto & Zucatti
+  da Rosa 1997 (209–213); Reed 1930, Beurlen 1954/1957, Rocha-Campos 1964–1993 (31); Paula-Couto 1980
+  (39, original não consultado); Pigão & Mouro 2019 (99); "Nova localidade fossilífera da Fm. Rio do
+  Rasto" 2017 (181–183); Nizer & Weinschütz 2015 (223); Weinschütz et al. 2021 (37, veículo não confirmado).
+- Nomes taxonômicos seguem a obra citada; revisões posteriores só constam onde foram verificadas
+  (Glossopteris, bivalves de Taió, icnofósseis, Irati e Quaternário não foram revistos um a um).
+- Registro 221 cita Karl et al. 2007; o TCC diz 2008 (já anotado na ficha).
+
 ## 2026.09.13 — 08/10/2026 · referências completadas, citações ABNT refeitas, 1 registro removido
 
 Banco: **227 registros** (era 228), 56 sítios, 99 obras na bibliografia.

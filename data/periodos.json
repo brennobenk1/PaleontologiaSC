@@ -216,7 +216,7 @@
     "fim_ma": 295,
     "cor": "#3d6b52",
     "descricao": "Intervalo glacial a pós-glacial do Grupo Itararé, com rica fauna de invertebrados marinhos e icnofósseis associados a ambientes deltaicos e marinhos rasos.",
-    "total_registros": 63,
+    "total_registros": 64,
     "taxons": [
       {
         "taxon": "Protovirgularia isp.",
@@ -352,6 +352,13 @@
         ]
       },
       {
+        "taxon": "Folhelho fossilífero de Rio dos Cedros (possível equivalente do Folhelho Lontras)",
+        "count": 1,
+        "ids": [
+          43
+        ]
+      },
+      {
         "taxon": "Ammonoidea indet. (afim. Uraloceras)",
         "count": 1,
         "ids": [
@@ -436,7 +443,7 @@
         ]
       },
       {
-        "taxon": "Irajapintoseidon uruguayensis Beltan, 1975",
+        "taxon": "Irajapintoseidon uruguayensis",
         "count": 1,
         "ids": [
           57
@@ -657,25 +664,6 @@
         "count": 1,
         "ids": [
           231
-        ]
-      }
-    ]
-  },
-  {
-    "nome": "Permiano Inferior (Asseliano)",
-    "ordem": 6,
-    "era": "Paleozóico",
-    "inicio_ma": 298.9,
-    "fim_ma": 295,
-    "cor": "#6b8f5e",
-    "descricao": "Primeiro andar do Permiano Inferior (Cisuraliano); em Mafra corresponde ao Folhelho Lontras, com o mais importante conjunto de tetrápodes permianos de Santa Catarina.",
-    "total_registros": 1,
-    "taxons": [
-      {
-        "taxon": "Biota fóssil similar ao Campáleo (larvas, coprólitos, braquiópodes, esponjas, peixes)",
-        "count": 1,
-        "ids": [
-          43
         ]
       }
     ]
@@ -1585,17 +1573,17 @@
     ]
   },
   {
-    "nome": "Jurássico Superior (?) – Cretáceo Inferior (?)",
+    "nome": "Jurássico (segundo a reportagem)",
     "ordem": 11,
     "era": "Mesozóico",
-    "inicio_ma": 152,
-    "fim_ma": 100,
+    "inicio_ma": 201.4,
+    "fim_ma": 145.0,
     "cor": "#c9a23a",
-    "descricao": "Idade indicativa para depósitos eólicos do paleodeserto da Fm. Botucatu, com icnofósseis de vertebrados continentais.",
+    "descricao": "Idade citada em reportagem (ND Mais, 2023) para pegadas de terópode no litoral sul de SC: 'Jurássico', sem formação nem datação. Citação de mídia, sem publicação científica localizada.",
     "total_registros": 1,
     "taxons": [
       {
-        "taxon": "Theropoda indet. (afim. Carnosauria) — pista bípede",
+        "taxon": "Theropoda indet. (afim. Carnosauria) — pegadas bípedes",
         "count": 1,
         "ids": [
           67
@@ -1640,7 +1628,7 @@
         ]
       },
       {
-        "taxon": "Paleotoca Furnas Xocleng (icnofóssil de escavação — Xenarthra)",
+        "taxon": "Paleotoca Xocleng (icnofóssil de escavação — Xenarthra)",
         "count": 1,
         "ids": [
           81
@@ -1734,7 +1722,7 @@
         ]
       },
       {
-        "taxon": "Toxodon sp.",
+        "taxon": "Toxodontidae indet. (“toxodonte” na reportagem; anteriormente rotulado Toxodon sp.)",
         "count": 1,
         "ids": [
           70
@@ -1753,7 +1741,7 @@
     "total_registros": 1,
     "taxons": [
       {
-        "taxon": "Paleotoca (icnofóssil de escavação — Xenarthra: tatus, preguiças, tamanduás)",
+        "taxon": "Paleotoca Amaral de Baixo (icnofóssil de escavação — provável tatu extinto)",
         "count": 1,
         "ids": [
           44
@@ -1769,13 +1757,20 @@
     "fim_ma": 0.0,
     "cor": "#c2703a",
     "descricao": "Época atual, iniciada há ~11.700 anos. Em Santa Catarina, registrada pelos depósitos da planície costeira e pelos indicadores biológicos de variação do nível relativo do mar.",
-    "total_registros": 1,
+    "total_registros": 2,
     "taxons": [
       {
         "taxon": "Vermetidae indet. (tubos de gastrópode incrustante)",
         "count": 1,
         "ids": [
           177
+        ]
+      },
+      {
+        "taxon": "Palinomorfos holocênicos (54 morfotipos: fungos, algas, briófitas, pteridófitas, pólen de gimnospermas e outros)",
+        "count": 1,
+        "ids": [
+          233
         ]
       }
     ]
