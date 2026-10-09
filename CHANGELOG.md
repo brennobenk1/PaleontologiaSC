@@ -6,6 +6,79 @@ saber o que havia nele naquele momento.
 
 Formato: as versões seguem `ANO.MÊS.N`.
 
+## 2026.10.09 — 09/10/2026 · mais 34 registros, 3 retirados por procedência errada, localidades conferidas no texto integral
+
+Banco: **259 registros** (era 228), **71 sítios** (era 57), 50 municípios, 133 obras na bibliografia,
+84 registros com DOI (eram 52). Tudo continua só de Santa Catarina (critério: procedência da coleta, não o depositário).
+
+### Registros novos (34)
+- **Itajaí, Ediacarano (234, 235):** *Palaeopascichnus* sp. e *Nimbia* sp., de Becker-Kerber et al. (2020).
+- **Holoceno do litoral (236–253):** diatomáceas da Lagoa do Peri (Saupe & Mosimann, 2003) e da Lagoa do
+  Sombrio (Santos & Souza, 2016); palinomorfos de Garopaba (Kuhn et al., 2017); diatomáceas e palinomorfos das
+  lagunas de Jaguaruna (Amaral, 2008); 14 moluscos da barreira Pinheira–Guarda–Gamboa, Palhoça (Cancelli et al., 2017).
+- **Palinologia quaternária de altitude (254–257):** turfeira Ciama 2, Serra do Tabuleiro (Jeske-Pieruschka et al.,
+  2013); Morro da Igreja (Urubici) e Serra do Rio do Rastro (Behling, 1995); Campos do Quiriri (Lima, Bauermann &
+  Oliveira, 2011). Fontes são resumos; os pontos de 255 e 256 são marcos próximos (aproximados), e o município de 254
+  (São Bonifácio) foi derivado pelas coordenadas, não declarado pela fonte.
+- **Fm. Rio Bonito (258–260):** lenhos *Aterradoxylon solidum* e *Retemedulloxylon* sp. de Pouso Redondo (Merlotti, 1999)
+  e a tafoflórula de Rio da Estiva, entre Mafra e Papanduva (Rösler, 1975).
+- **Fm. Rio do Rasto no planalto norte (261–263):** *Glossopteris* indet. e *Paracalamites* sp. do afloramento AF/GP 282,
+  BR-470, km 207,5 (Rohn & Rösler, 1989); crânio de Temnospondyli do mesmo ponto (Boos, 2016); *Monoleaia unicostata
+  timbensis* (Rohn, 1987; holótipo GP/H 134), de Poço Preto, Irineópolis.
+- **Quaternário costeiro (264–267):** microfauna do testemunho PCSC-1, Santa Rosa do Sul — 15 táxons de moluscos,
+  foraminífero e ostracode (Cancelli, Souza & Dehnhardt, XIII ABEQUA); foraminíferos miliolídeos do testemunho de
+  Volta Velha, Itapoá (Silva et al., resumo ABEQUA nº 247, sem evento nem ano no documento, citado como s.d.); moluscos
+  subfósseis do concheiro de Nova Brasília, Imbituba (Caruso Júnior et al., 2000; Caruso Júnior, 1992 — **citação em
+  revisão**: a lista é compilada de levantamentos anteriores não examinados); escavações pleistocênicas «prováveis de
+  *Callichirus*» perto de Paulo Lopes (Caruso Júnior et al., 2000).
+
+### Registros retirados (3) — procedência, não invenção
+- **34, 35, 36** (*Glossopteris riorastensis*, *G. grafi*, *G.* cf. *indica/surangei*, que estavam em «Mafra (região)»): no texto
+  integral de Rohn & Rösler (1989) essas espécies constam apenas de afloramentos do Paraná. O único afloramento
+  catarinense do trabalho (AF/GP 282, BR-470, km 207,5) traz *Glossopteris* indeterminada — agora o registro 261. Quem abrir
+  `#/registro/34`, `35` ou `36` vê a explicação.
+
+### Localidades e pontos corrigidos
+- **Poço Preto (Irineópolis, BR-280):** os registros 33, 97, 185 e 186 estavam em «Mafra (região)» ou «Lages»; as fontes
+  (Rohn & Rösler, 1986; Rohn, 1987; Ferreira-Oliveira & Rohn, 2008) situam o material em Poço Preto/Valões. Os sítios
+  «Afloramentos do norte de SC/PR» (genérico) e «Entre Valões e Poço Preto» saíram; só **187 e 188** continuam num sítio
+  genérico («… — conchostráceos»): a procedência catarinense não foi confirmada (*Hemicycloleaia mitchelli* não consta em Rohn, 1987).
+- **Vale do Itajaí:** as fichas da Bacia do Itajaí (1–5, 84, 209–213, 234, 235) passam a um único ponto na
+  região de Blumenau, Indaial e Apiúna, em lugar dos dois sítios antigos.
+- **Mapa:** «Lauro Muller» na malha municipal passa a «Lauro Müller», o nome que as fichas usam (o destaque não casava).
+
+### Autoria, referência e histórico taxonômico
+- **97:** atribuído a «Beurlen», é de **Maack** (reedição de 2001, DOI 10.1590/S1516-89132001000500010); passa a
+  «Citação em revisão» (os *Estheria*/*Leaia* são de Reed).
+- **33, 185, 186:** páginas corrigidas em 33 (Rohn & Rösler, 1986: 27–34); 185: holótipo DNPM 1420 A; 186: holótipo DNPM 1420 B e
+  parátipos 1420 C, GP1T 1509 A e 1504; histórico de *Palaeolimnadiopsis subalata* (Reed, 1929).
+- **Taió (26, 27, 189, 190, 192):** Boardman et al. (2007) é *Rev. Bras. Paleontol.* **10(3):201–211**, não «10(1)», e o
+  artigo foi retirado do descritor de 192 (não trata de Notocalamitaceae). Histórico registrado: *Phyllotheca indica* tratada
+  como sinônimo de *P. australis*; *Paracalamites levis* como sinônimo de *P. australis*.
+- **28–30 (Itaiópolis):** família grafada «Pachydomidae»; o trabalho de 2019 é inconsistente quanto a Pectinidae/Heteropectinidae.
+- **71 (Anitápolis):** histórico de «*Oliveirania santa catharinae*» (Maury, 1927, anelídeo «siluriano») → pseudofóssil; as
+  pistas associadas são *Pterichnus mauryae* (Silva & Fernandes, 2021), Fm. Rio do Sul, Carbonífero Superior.
+- **Itajaí (1–5, 84, 209–213):** «Da Rosa et al. (1997)» não foi localizado e foi substituído por Netto (2012); histórico:
+  «*Chancelloria*» reinterpretada como tapetes microbianos; *Gordia* → *Helminthoidichnites*; *Oldhamia?* → *Choia?*;
+  *Arumberia* como estrutura microbiana. **Nota nova (209, 211):** Becker-Kerber et al. (2024, *Precambrian Research*
+  403:107307) descrevem «tectógrafos» (pseudofósseis de cisalhamento) na bacia, parecidos com pistas horizontais; o resumo
+  não diz se registros anteriores foram reavaliados.
+- **165:** nota sobre *Dadoxylon* (Kurzawe & Merlotti, 2009). **56–60 (Campáleo):** fontes reconferidas por táxon.
+- **233, 238, 264:** os dados do testemunho PCSC-1 (112 palinomorfos, dos quais 54 não-pólen) foram ligados; a equivalência
+  com o PCSC-01 das diatomáceas (mesma profundidade, 570 cm) **não** é declarada pelas fontes e não foi afirmada.
+
+### Pendências declaradas (não resolvidas)
+- **8 obras incompletas:** Reed (1930), Beurlen (1954, 1957) e Rocha-Campos (registro 31); Paula-Couto (1980, registro 39);
+  Pigão & Mouro (2019, registro 99); «Nova localidade fossilífera da Fm. Rio do Rasto» (2017, registros 181–183); Nizer &
+  Weinschütz (2015, registro 223). Buscas desta rodada não as localizaram em fonte acessível.
+- Fontes que o ambiente não conseguiu abrir (sem contornar): ResearchGate, ScienceDirect, PaleoRS/UFPR, Bioone, PBDB,
+  repositório da Unisinos e o da UFSC.
+- Os registros 56, 57 e 60 (e a autoria do Campáleo em 59) ainda dependem da Wikipédia, sinalizados nas fichas.
+- Registros 254 (município derivado), 255 e 256 (pontos aproximados) e 257 (município desconhecido).
+- Não incluídos por falta de táxon ou de fóssil confirmado: ostracodes e foraminíferos da Ilha do Arvoredo (Meireles et al.),
+  Rio do Rasto de Monte Castelo/Santa Cecília/Lages (Boos, 2016), madeiras da Fm. Rio Bonito (Mayer, 1989).
+
+
 ## 2026.09.14 — 08/10/2026 · tudo com fonte científica ou com "citação de mídia" explícita
 
 Banco: **228 registros** (era 227), **57 sítios**, 15 intervalos de tempo, 107 obras na bibliografia, 52 registros com DOI

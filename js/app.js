@@ -401,7 +401,10 @@ const REGISTROS_REMOVIDOS = {
   184: 'Registro de cf. Melosaurus sp., retirado na versão 2026.08 por não haver ocorrência documentada desse gênero em Santa Catarina.',
   16:  'Duplicata do registro nº 098: os mesmos dois morfotipos de peixe com encéfalo preservado (Figueroa et al., 2024). Removido na versão 2026.09.12.',
   23:  'Duplicata do registro nº 095 (Mesogondolella spp.), apoiada apenas em reportagem. Removido na versão 2026.09.12.',
-  40:  'Registro "fitólitos e palinomorfos — Lagoa do Sombrio": a ficha misturava três fontes sem relação entre si (um estudo de fitólitos em sambaqui de São Francisco do Sul, um resumo sobre dinoflagelados da plataforma de Itajaí e a localidade de Sombrio) e nenhuma delas sustentava o conteúdo declarado. Removido na versão 2026.09.13. Os palinomorfos holocênicos do litoral sul catarinense agora têm registro próprio, com fonte (nº 233, Cancelli et al., 2012).'
+  40:  'Registro "fitólitos e palinomorfos — Lagoa do Sombrio": a ficha misturava três fontes sem relação entre si (um estudo de fitólitos em sambaqui de São Francisco do Sul, um resumo sobre dinoflagelados da plataforma de Itajaí e a localidade de Sombrio) e nenhuma delas sustentava o conteúdo declarado. Removido na versão 2026.09.13. Os palinomorfos holocênicos do litoral sul catarinense agora têm registro próprio, com fonte (nº 233, Cancelli et al., 2012).',
+  34:  'Registro de Glossopteris riorastensis, retirado na versão 2026.10.09: na leitura do texto integral de Rohn & Rösler (1989), a espécie consta apenas de afloramentos do Paraná; o único afloramento catarinense da Fm. Rio do Rasto estudado no trabalho (AF/GP 282, BR-470, km 207,5, Otacílio Costa) traz só Glossopteris indeterminada (registro nº 261). A espécie existe na literatura (em afloramentos paranaenses); o registro saiu por estar atribuído ao estado errado.',
+  35:  'Registro de Glossopteris grafi, retirado na versão 2026.10.09: na leitura do texto integral de Rohn & Rösler (1989), a espécie consta apenas de afloramentos do Paraná; o único afloramento catarinense da Fm. Rio do Rasto estudado no trabalho (AF/GP 282, BR-470, km 207,5, Otacílio Costa) traz só Glossopteris indeterminada (registro nº 261). A espécie existe na literatura (em afloramentos paranaenses); o registro saiu por estar atribuído ao estado errado.',
+  36:  'Registro de Glossopteris cf. indica/surangei, retirado na versão 2026.10.09: na leitura do texto integral de Rohn & Rösler (1989), a espécie consta apenas de afloramentos do Paraná; o único afloramento catarinense da Fm. Rio do Rasto estudado no trabalho (AF/GP 282, BR-470, km 207,5, Otacílio Costa) traz só Glossopteris indeterminada (registro nº 261). A espécie existe na literatura (em afloramentos paranaenses); o registro saiu por estar atribuído ao estado errado.',
 };
 
 function openFossilModal(id){
@@ -999,7 +1002,7 @@ function initFontes(){
     });
   });
   const lista = [...obras.values()].sort((a, b) => a.ref.localeCompare(b.ref, 'pt'));
-  lista.forEach(o => { o.nat = natureza(o.ref); o.doi = (o.ref.match(/DOI\s*(10\.\d{4,9}\/[^\s;,)]+)/) || [])[1] || ''; });
+  lista.forEach(o => { o.nat = natureza(o.ref); o.doi = ((o.ref.match(/DOI\s*(10\.\d{4,9}\/[^\s,]+)/) || [])[1] || '').replace(/[.;)]+$/, ''); });
   const grupos = ORDEM.filter(t => lista.some(o => o.nat === t));
   alvo.innerHTML = grupos.map(t => {
     const itens = lista.filter(o => o.nat === t);
@@ -1779,7 +1782,7 @@ const CITACAO = {
   // senão a citação sai como "PALEO-SC. Paleo-SC — Banco de Dados..."
   entidade: 'Paleo-SC',
   titulo: 'Banco de Dados Paleontológico de Santa Catarina',
-  versao: '2026.09.14',
+  versao: '2026.10.09',
   ano: '2026',
   url: 'https://brennobenk1.github.io/PaleontologiaSC/'
 };

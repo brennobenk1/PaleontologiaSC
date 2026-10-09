@@ -7,7 +7,7 @@
     "fim_ma": 538.8,
     "cor": "#1f4e5f",
     "descricao": "Último período do Pré-cambriano, marcado pelo surgimento dos primeiros metazoários macroscópicos de corpo mole (biota ediacarana).",
-    "total_registros": 10,
+    "total_registros": 12,
     "taxons": [
       {
         "taxon": "Parvancorina sp.",
@@ -78,6 +78,20 @@
         "ids": [
           213
         ]
+      },
+      {
+        "taxon": "Palaeopascichnus sp.",
+        "count": 1,
+        "ids": [
+          234
+        ]
+      },
+      {
+        "taxon": "Nimbia sp.",
+        "count": 1,
+        "ids": [
+          235
+        ]
       }
     ]
   },
@@ -108,8 +122,15 @@
     "fim_ma": 298.9,
     "cor": "#3d6b52",
     "descricao": "Período de grandes glaciações no Gondwana; na Bacia do Paraná corresponde aos depósitos glaciogênicos e periglaciais do Grupo Itararé.",
-    "total_registros": 11,
+    "total_registros": 12,
     "taxons": [
+      {
+        "taxon": "Pterichnus mauryae isp. nov.",
+        "count": 1,
+        "ids": [
+          71
+        ]
+      },
       {
         "taxon": "Cruziana problematica",
         "count": 1,
@@ -197,16 +218,8 @@
     "fim_ma": 298.9,
     "cor": "#3d6b52",
     "descricao": "Limite cronoestratigráfico entre o Carbonífero e o Permiano, registrado nas camadas superiores do Grupo Itararé.",
-    "total_registros": 1,
-    "taxons": [
-      {
-        "taxon": "Pterichnus mauryae isp. nov.",
-        "count": 1,
-        "ids": [
-          71
-        ]
-      }
-    ]
+    "total_registros": 0,
+    "taxons": []
   },
   {
     "nome": "Carbonífero – Permiano Inferior",
@@ -676,7 +689,7 @@
     "fim_ma": 273.0,
     "cor": "#7fa66b",
     "descricao": "Período com ampla diversidade de invertebrados marinhos, flora glossopterídea e icnofósseis na Fm. Rio Bonito (Assembleia Taió) e no Grupo Itararé.",
-    "total_registros": 93,
+    "total_registros": 96,
     "taxons": [
       {
         "taxon": "Phyllotheca australis (Brongniart, 1828)",
@@ -1328,6 +1341,27 @@
         "ids": [
           232
         ]
+      },
+      {
+        "taxon": "Aterradoxylon solidum Merlotti, 1999 (gen. et sp. nov.)",
+        "count": 1,
+        "ids": [
+          258
+        ]
+      },
+      {
+        "taxon": "Retemedulloxylon sp. (fragmento lenhoso com contramolde medular silicoso)",
+        "count": 1,
+        "ids": [
+          259
+        ]
+      },
+      {
+        "taxon": "Tafoflórula de Rio da Estiva (Glossopteris, sementes, frutificações e caules)",
+        "count": 1,
+        "ids": [
+          260
+        ]
       }
     ]
   },
@@ -1459,27 +1493,6 @@
         ]
       },
       {
-        "taxon": "Glossopteris riorastensis Rohn & Rösler, 1989",
-        "count": 1,
-        "ids": [
-          34
-        ]
-      },
-      {
-        "taxon": "Glossopteris grafi Rohn & Rösler, 1989",
-        "count": 1,
-        "ids": [
-          35
-        ]
-      },
-      {
-        "taxon": "Glossopteris cf. G. indica / G. surangei (e outros morfotipos)",
-        "count": 1,
-        "ids": [
-          36
-        ]
-      },
-      {
         "taxon": "Estheria sp. / Leaia sp. (filópodos)",
         "count": 1,
         "ids": [
@@ -1568,6 +1581,27 @@
         "count": 1,
         "ids": [
           188
+        ]
+      },
+      {
+        "taxon": "Glossopteris indet. e Paracalamites sp. 2 (AF/GP 282, BR-470 km 207,5)",
+        "count": 1,
+        "ids": [
+          261
+        ]
+      },
+      {
+        "taxon": "Temnospondyli indet. (crânio ainda não descrito formalmente)",
+        "count": 1,
+        "ids": [
+          262
+        ]
+      },
+      {
+        "taxon": "Monoleaia unicostata timbensis Rohn, 1987 (subsp. nov.)",
+        "count": 1,
+        "ids": [
+          263
         ]
       }
     ]
@@ -1679,7 +1713,7 @@
     "fim_ma": 0.0117,
     "cor": "#b5651d",
     "descricao": "Época das grandes glaciações; em SC corresponde aos depósitos quaternários com megafauna continental.",
-    "total_registros": 2,
+    "total_registros": 3,
     "taxons": [
       {
         "taxon": "Tatu-gigante (Propraopus sp. / Glyptodon sp. — osteodermos)",
@@ -1693,6 +1727,13 @@
         "count": 1,
         "ids": [
           227
+        ]
+      },
+      {
+        "taxon": "Escavações biogênicas, provavelmente de Callichirus (crustáceo decápode)",
+        "count": 1,
+        "ids": [
+          267
         ]
       }
     ]
@@ -1738,13 +1779,34 @@
     "fim_ma": 0,
     "cor": "#a85a2e",
     "descricao": "Período quaternário, abrangendo depósitos superficiais recentes e registros de fauna pleistocênica em diferentes contextos sedimentares.",
-    "total_registros": 1,
+    "total_registros": 4,
     "taxons": [
       {
         "taxon": "Paleotoca Amaral de Baixo (icnofóssil de escavação — provável tatu extinto)",
         "count": 1,
         "ids": [
           44
+        ]
+      },
+      {
+        "taxon": "Pólen, esporos e carvão de turfeira da Serra do Tabuleiro (testemunho Ciama 2; ~39.700 anos)",
+        "count": 1,
+        "ids": [
+          254
+        ]
+      },
+      {
+        "taxon": "Pólen e esporos da turfeira do Morro da Igreja (campos e floresta de araucária)",
+        "count": 1,
+        "ids": [
+          255
+        ]
+      },
+      {
+        "taxon": "Pólen e esporos da turfeira da Serra do Rio do Rastro (campos e floresta de araucária)",
+        "count": 1,
+        "ids": [
+          256
         ]
       }
     ]
@@ -1757,7 +1819,7 @@
     "fim_ma": 0.0,
     "cor": "#c2703a",
     "descricao": "Época atual, iniciada há ~11.700 anos. Em Santa Catarina, registrada pelos depósitos da planície costeira e pelos indicadores biológicos de variação do nível relativo do mar.",
-    "total_registros": 2,
+    "total_registros": 24,
     "taxons": [
       {
         "taxon": "Vermetidae indet. (tubos de gastrópode incrustante)",
@@ -1771,6 +1833,160 @@
         "count": 1,
         "ids": [
           233
+        ]
+      },
+      {
+        "taxon": "Diatomáceas holocênicas da Lagoa do Peri (44 táxons; Aulacoseira ambigua, Paralia sulcata)",
+        "count": 1,
+        "ids": [
+          236
+        ]
+      },
+      {
+        "taxon": "Palinomorfos holocênicos de Garopaba (84 táxons: pólen, esporos, fungos, algas, acritarcos, cistos de dinoflagelados)",
+        "count": 1,
+        "ids": [
+          237
+        ]
+      },
+      {
+        "taxon": "Diatomáceas holocênicas da Lagoa do Sombrio (Paralia sulcata, Navicula schadei, Staurosira construens, Cyclotella baltica)",
+        "count": 1,
+        "ids": [
+          238
+        ]
+      },
+      {
+        "taxon": "Diatomáceas, pólen e esporos holocênicos de lagunas de Jaguaruna",
+        "count": 1,
+        "ids": [
+          239
+        ]
+      },
+      {
+        "taxon": "Bulla striata",
+        "count": 1,
+        "ids": [
+          240
+        ]
+      },
+      {
+        "taxon": "Bostrycapulus odites",
+        "count": 1,
+        "ids": [
+          241
+        ]
+      },
+      {
+        "taxon": "Cerithium atratum",
+        "count": 1,
+        "ids": [
+          242
+        ]
+      },
+      {
+        "taxon": "Chichoreus senegalensis",
+        "count": 1,
+        "ids": [
+          243
+        ]
+      },
+      {
+        "taxon": "Nassarius vibex",
+        "count": 1,
+        "ids": [
+          244
+        ]
+      },
+      {
+        "taxon": "Trachycardium muricatum",
+        "count": 1,
+        "ids": [
+          245
+        ]
+      },
+      {
+        "taxon": "Corbula caribaea",
+        "count": 1,
+        "ids": [
+          246
+        ]
+      },
+      {
+        "taxon": "Iphigenia brasiliensis",
+        "count": 1,
+        "ids": [
+          247
+        ]
+      },
+      {
+        "taxon": "Lucina pectinata",
+        "count": 1,
+        "ids": [
+          248
+        ]
+      },
+      {
+        "taxon": "Ostrea equestris",
+        "count": 1,
+        "ids": [
+          249
+        ]
+      },
+      {
+        "taxon": "Strigilla pisiformis",
+        "count": 1,
+        "ids": [
+          250
+        ]
+      },
+      {
+        "taxon": "Tagelus plebeius",
+        "count": 1,
+        "ids": [
+          251
+        ]
+      },
+      {
+        "taxon": "Anomalocardia brasiliana",
+        "count": 1,
+        "ids": [
+          252
+        ]
+      },
+      {
+        "taxon": "Chione pubera",
+        "count": 1,
+        "ids": [
+          253
+        ]
+      },
+      {
+        "taxon": "Palinomorfos holocênicos de turfeira dos Campos do Quiriri (47 palinomorfos)",
+        "count": 1,
+        "ids": [
+          257
+        ]
+      },
+      {
+        "taxon": "Microfauna holocênica do testemunho PCSC-1 (15 táxons: 5 bivalves, 8 gastrópodes, 1 foraminífero e 1 ostracode)",
+        "count": 1,
+        "ids": [
+          264
+        ]
+      },
+      {
+        "taxon": "Foraminíferos bentônicos holocênicos — Miliolida (testemunho de Volta Velha, Itapoá)",
+        "count": 1,
+        "ids": [
+          265
+        ]
+      },
+      {
+        "taxon": "Moluscos subfósseis do concheiro de Nova Brasília (12 espécies; dominantes: Heleobia australis, Cerithiopsis greeni, Crepidula plana, Nassarius vibex, Tellina lineata, Tagelus plebeius)",
+        "count": 1,
+        "ids": [
+          266
         ]
       }
     ]

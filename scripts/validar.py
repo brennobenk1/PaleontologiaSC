@@ -248,7 +248,7 @@ checar(not sem_autoria, "toda referência tem autoria antes do título",
 _doi_fora = []
 for d in FOSSEIS:
     if d.get("doi"):
-        _no_texto = {x.rstrip(".,;)") for x in re.findall(r"10\.\d{4,9}/[^\s;,)\"”]+", d["descritor"])}
+        _no_texto = {x.rstrip(".,;)") for x in re.findall(r"10\.\d{4,9}/[^\s,\"”]+", d["descritor"])}
         if _no_texto and d["doi"] not in _no_texto:
             _doi_fora.append(d["id"])
         elif not _no_texto and d["doi"].lower() not in d["descritor"].lower():
