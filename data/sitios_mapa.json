@@ -1247,5 +1247,21 @@
     ],
     "x": 575.2,
     "y": 109.5
+  },
+  {
+    "site": "Caverna do Gigante (Urubici)",
+    "municipio": "Urubici",
+    "bacia": "Bacia do Paraná — Fm. Botucatu",
+    "lat": -27.9841,
+    "lon": -49.6777,
+    "count": 1,
+    "periodos": [
+      "Plioceno–Pleistoceno"
+    ],
+    "taxons_amostra": [
+      "Caverna do Gigante (marcas de garras de preguiça-gigante; potencial paleotoca)"
+    ],
+    "x": 482.5,
+    "y": 440.4
   }
 ]

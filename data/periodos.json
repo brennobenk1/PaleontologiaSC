@@ -1652,7 +1652,7 @@
     "fim_ma": 0.0117,
     "cor": "#b5651d",
     "descricao": "Transição entre o Plioceno e o Pleistoceno, com depósitos da plataforma continental e registros de megafauna marinha e continental.",
-    "total_registros": 9,
+    "total_registros": 10,
     "taxons": [
       {
         "taxon": "Paleotocas (icnofósseis de escavação — Dasypodidae / Mylodontidae)",
@@ -1715,6 +1715,13 @@
         "count": 1,
         "ids": [
           269
+        ]
+      },
+      {
+        "taxon": "Caverna do Gigante (marcas de garras de preguiça-gigante; potencial paleotoca)",
+        "count": 1,
+        "ids": [
+          272
         ]
       }
     ]

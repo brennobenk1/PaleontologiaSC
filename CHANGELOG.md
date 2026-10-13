@@ -6,9 +6,9 @@ saber o que havia nele naquele momento.
 
 Formato: as versões seguem `ANO.MÊS.N`.
 
-## 2026.10.09 — 09/10/2026 · mais 38 registros, 3 retirados por procedência errada, localidades conferidas no texto integral
+## 2026.10.09 — 09/10/2026 · mais 39 registros, 3 retirados por procedência errada, localidades conferidas no texto integral
 
-Banco: **263 registros** (era 228), **73 sítios** (era 57), 54 municípios, 144 obras na bibliografia,
+Banco: **264 registros** (era 228), **74 sítios** (era 57), 54 municípios, 145 obras na bibliografia,
 91 registros com DOI (eram 52). Tudo continua só de Santa Catarina (critério: procedência da coleta, não o depositário).
 
 ### Registros novos (34)
@@ -157,6 +157,17 @@ as contagens do Geoparque não são desagregadas por município.
 - Fontes que o ambiente não conseguiu abrir: repositório da UNESC (texto integral de Miranda, 2025), repositório da UFSC (TCC de Bechtel),
   repositório da Unisinos (dissertação de Cezaro), página de turismo de Timbé do Sul e o site do Projeto Paleotocas (UFRGS, bloqueado para leitura automática).
 - **Não incluído, à espera de decisão:** duas paleotocas de Irineópolis (Bom Sossego I e II), que só aparecem no TCC de Bechtel (2022), lido em resumo.
+
+### Paleotocas de Urubici: Morro Azul e Caverna do Gigante (mesma data)
+Pedida a paleotoca do **Morro Azul** (Campestre, Urubici). **Não foi localizada nenhuma publicação científica sobre ela:** só há a atração turística
+«Caverna e Mirante Morro Azul» (avaliações de visitantes). Em contrapartida, apareceu um trabalho científico sobre outra cavidade do município:
+- **Novo, 272 — Caverna do Gigante (Urubici):** Sessegolo et al. (2023, 37º Congresso Brasileiro de Espeleologia, p. 311–319). Topografia (33,8 m de
+  desenvolvimento linear, quatro entradas), arenito da Fm. Botucatu, 1.057 m, coordenada UTM publicada (convertida; o ponto cai em Urubici) e marcas de garras
+  atribuídas a preguiças-gigantes. **Ressalva na ficha:** os autores a chamam de «potencial paleotoca» e atribuem a formação a *piping*; não afirmam que o
+  mamífero a tenha escavado. Não se sabe se é a mesma cavidade da atração do Morro Azul — isso está declarado na ficha. Um sítio novo no mapa.
+- **178:** ganhou uma remissão ao registro 272.
+- Obras na bibliografia: 144 → 145.
+- **Não incluído, à espera de decisão:** Bom Sossego I e II (Irineópolis; Bechtel, 2022, lido em resumo) e a paleotoca de Xaxim (só reportagens, sem localização precisa).
 
 ## 2026.09.14 — 08/10/2026 · tudo com fonte científica ou com "citação de mídia" explícita
 
