@@ -8,7 +8,7 @@ Formato: as versões seguem `ANO.MÊS.N`.
 
 ## 2026.10.09 — 09/10/2026 · mais 38 registros, 3 retirados por procedência errada, localidades conferidas no texto integral
 
-Banco: **263 registros** (era 228), **73 sítios** (era 57), 54 municípios, 137 obras na bibliografia,
+Banco: **263 registros** (era 228), **73 sítios** (era 57), 54 municípios, 144 obras na bibliografia,
 91 registros com DOI (eram 52). Tudo continua só de Santa Catarina (critério: procedência da coleta, não o depositário).
 
 ### Registros novos (34)
@@ -138,6 +138,25 @@ contexto cultural, sem alterar nenhum dado paleontológico.
   contraria as reportagens; o de Jacinto Machado cita paleotocas sem nomear nenhuma.
 - A cópia recebida é pré-publicação (sem DOI e com outra ordem de autores); a referência foi conferida na página do periódico.
 - Obras na bibliografia: 135 → 137.
+
+### Busca de paleotocas em Timbé do Sul (mesma data)
+Procuradas publicações, teses, trabalhos de eventos, a página de geossítios do Geoparque e reportagens, em duas rodadas. **Resultado: a única
+paleotoca nomeada em Timbé do Sul é a Toca do Tatu (registro 82, já no banco).** Nenhuma outra apareceu, o que não prova que não existam:
+as contagens do Geoparque não são desagregadas por município.
+- **82 (Toca do Tatu):** a ficha passou a trazer os dados do texto de Frank et al. (2012) — planta em «U» com dois túneis e um salão, 48,5 m,
+  dimensões, volume escavado, tipos de marcas de garras, grafismos (mais de 35 m²), inscrições modernas, ação de caçadores de tesouros e
+  situação de conservação —, além de Cezaro et al. (2016), Provedan (2019, TCC UDESC), Bechtel (2022, TCC UDESC), Santos et al. (2024),
+  Miranda (2025, dissertação UNESC; só o resumo) e a matéria da *Nature* (Rodrigues, 2025, texto jornalístico com DOI, não artigo de pesquisa).
+  Pendências sinalizadas: «baixos-relevos» (termo da ficha anterior que não aparece no resumo do texto de Frank), a contagem de geometrias
+  (cinco × sete), o nome «Rocinha»/«Rochinha» e o valor de 48,5 m, que Provedan atribui a Lima & Vargas (2018, não localizado).
+- **38:** contagens de paleotocas do Geoparque — 17, 23 e 24 em trabalhos diferentes, com distribuições por compartimento que não coincidem —,
+  registradas como não conciliadas e sem desagregação por município; mais uma citação de mídia (Revista Oeste, 31/03/2026), marcada como tal.
+- **83:** relatório da UDESC (Souza & Valdati, sem ano) descreve em Praia Grande o complexo «Furnas do Itamar / Reserva Caeté» (11 feições);
+  fica anotado, sem registro próprio por falta de coordenadas.
+- Obras na bibliografia: 135 → 144.
+- Fontes que o ambiente não conseguiu abrir: repositório da UNESC (texto integral de Miranda, 2025), repositório da UFSC (TCC de Bechtel),
+  repositório da Unisinos (dissertação de Cezaro), página de turismo de Timbé do Sul e o site do Projeto Paleotocas (UFRGS, bloqueado para leitura automática).
+- **Não incluído, à espera de decisão:** duas paleotocas de Irineópolis (Bom Sossego I e II), que só aparecem no TCC de Bechtel (2022), lido em resumo.
 
 ## 2026.09.14 — 08/10/2026 · tudo com fonte científica ou com "citação de mídia" explícita
 
