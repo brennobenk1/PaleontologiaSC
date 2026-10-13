@@ -27,8 +27,9 @@ import json, re, sys, pathlib, unicodedata
 RAIZ = pathlib.Path(__file__).resolve().parent.parent
 ARQ = RAIZ / "js" / "dados.js"
 # Citações de mídia: cada obra do descritor que começa com este prefixo é reportagem ou
-# divulgação institucional, não publicação científica. O registro que a usa leva
-# tipo_fonte = "Citação de mídia" (validar.py confere os dois lados).
+# divulgação institucional, não publicação científica. O registro cujas obras são TODAS
+# de mídia leva tipo_fonte = "Citação de mídia"; se há publicação junto (fonte mista),
+# o tipo é o da publicação e a parte de mídia continua explícita (validar.py confere).
 PREF_MIDIA = "Citação de mídia"
 
 
@@ -111,7 +112,7 @@ def eh_midia(parte):
 def gerar_parte(parte):
     if eh_midia(parte):
         resto = re.sub(r"^" + PREF_MIDIA + r"\s*[—–-]\s*", "", parte.strip())
-        return f"[Citação de mídia, sem publicação científica primária identificada: {resto}]"
+        return f"[Citação de mídia — reportagem ou divulgação, não é publicação científica: {resto}]"
     m = ESTRUT.match(parte)
     if not m or not parece_autoria(m.group("aut")):
         return f"[referência sem formato bibliográfico, transcrita do descritor: {parte}]"

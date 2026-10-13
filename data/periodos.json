@@ -1652,7 +1652,7 @@
     "fim_ma": 0.0117,
     "cor": "#b5651d",
     "descricao": "Transição entre o Plioceno e o Pleistoceno, com depósitos da plataforma continental e registros de megafauna marinha e continental.",
-    "total_registros": 7,
+    "total_registros": 9,
     "taxons": [
       {
         "taxon": "Paleotocas (icnofósseis de escavação — Dasypodidae / Mylodontidae)",
@@ -1701,6 +1701,20 @@
         "count": 1,
         "ids": [
           180
+        ]
+      },
+      {
+        "taxon": "Megaichnus major (Paleotoca do Veisom)",
+        "count": 1,
+        "ids": [
+          268
+        ]
+      },
+      {
+        "taxon": "Megaichnus major (Paleotoca da Aparência)",
+        "count": 1,
+        "ids": [
+          269
         ]
       }
     ]
@@ -1779,7 +1793,7 @@
     "fim_ma": 0,
     "cor": "#a85a2e",
     "descricao": "Período quaternário, abrangendo depósitos superficiais recentes e registros de fauna pleistocênica em diferentes contextos sedimentares.",
-    "total_registros": 4,
+    "total_registros": 5,
     "taxons": [
       {
         "taxon": "Paleotoca Amaral de Baixo (icnofóssil de escavação — provável tatu extinto)",
@@ -1808,6 +1822,13 @@
         "ids": [
           256
         ]
+      },
+      {
+        "taxon": "Pólen e esporos da turfeira da Serra da Boa Vista (campos, floresta pluvial atlântica e floresta de araucária)",
+        "count": 1,
+        "ids": [
+          270
+        ]
       }
     ]
   },
@@ -1819,7 +1840,7 @@
     "fim_ma": 0.0,
     "cor": "#c2703a",
     "descricao": "Época atual, iniciada há ~11.700 anos. Em Santa Catarina, registrada pelos depósitos da planície costeira e pelos indicadores biológicos de variação do nível relativo do mar.",
-    "total_registros": 24,
+    "total_registros": 25,
     "taxons": [
       {
         "taxon": "Vermetidae indet. (tubos de gastrópode incrustante)",
@@ -1987,6 +2008,13 @@
         "count": 1,
         "ids": [
           266
+        ]
+      },
+      {
+        "taxon": "Pólen e esporos do perfil de Poço Grande (planície costeira: dunas, plantas aquáticas e floresta pluvial atlântica)",
+        "count": 1,
+        "ids": [
+          271
         ]
       }
     ]

@@ -312,12 +312,14 @@
     "bacia": "Bacia do Paraná — Fm. Botucatu",
     "lat": -28.8006,
     "lon": -49.7208,
-    "count": 1,
+    "count": 3,
     "periodos": [
       "Plioceno–Pleistoceno"
     ],
     "taxons_amostra": [
-      "Paleotoca Xocleng (icnofóssil de escavação — Xenarthra)"
+      "Paleotoca Xocleng (icnofóssil de escavação — Xenarthra)",
+      "Megaichnus major (Paleotoca do Veisom)",
+      "Megaichnus major (Paleotoca da Aparência)"
     ],
     "x": 477.6,
     "y": 612.4
@@ -1052,8 +1054,8 @@
     "site": "Serra do Rio do Rastro (Lauro Müller / Bom Jardim da Serra)",
     "municipio": "Lauro Müller / Bom Jardim da Serra (região)",
     "bacia": "Depósitos Quaternários de turfeira (planalto e serras)",
-    "lat": -28.4072,
-    "lon": -49.5461,
+    "lat": -28.3833,
+    "lon": -49.55,
     "count": 1,
     "periodos": [
       "Quaternário (Pleistoceno–Holoceno)"
@@ -1061,8 +1063,8 @@
     "taxons_amostra": [
       "Pólen e esporos da turfeira da Serra do Rio do Rastro (campos e floresta de araucária)"
     ],
-    "x": 497.5,
-    "y": 529.7
+    "x": 497.1,
+    "y": 524.7
   },
   {
     "site": "Campos do Quiriri (Planalto de São Bento do Sul)",
@@ -1213,5 +1215,37 @@
     ],
     "x": 587.3,
     "y": 435.7
+  },
+  {
+    "site": "Serra da Boa Vista (Rancho Queimado / Alfredo Wagner)",
+    "municipio": "Rancho Queimado / Alfredo Wagner (região)",
+    "bacia": "Depósitos Quaternários de turfeira (planalto e serras)",
+    "lat": -27.7,
+    "lon": -49.15,
+    "count": 1,
+    "periodos": [
+      "Quaternário (Pleistoceno–Holoceno)"
+    ],
+    "taxons_amostra": [
+      "Pólen e esporos da turfeira da Serra da Boa Vista (campos, floresta pluvial atlântica e floresta de araucária)"
+    ],
+    "x": 542.8,
+    "y": 380.4
+  },
+  {
+    "site": "Poço Grande (Guaramirim / Joinville)",
+    "municipio": "Guaramirim / Joinville (região)",
+    "bacia": "Planície Costeira — Depósitos Quaternários",
+    "lat": -26.4167,
+    "lon": -48.8667,
+    "count": 1,
+    "periodos": [
+      "Holoceno"
+    ],
+    "taxons_amostra": [
+      "Pólen e esporos do perfil de Poço Grande (planície costeira: dunas, plantas aquáticas e floresta pluvial atlântica)"
+    ],
+    "x": 575.2,
+    "y": 109.5
   }
 ]

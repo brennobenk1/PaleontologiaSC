@@ -298,21 +298,35 @@ alertar(len(_incompletas) == 0,
         f"obras citadas com título: {len(_obras) - len(_incompletas)}/{len(_obras)} (incompletas: {len(_incompletas)})",
         "complete autor, ano, título e veículo das obras listadas na aba Sobre & Fontes")
 
-# --- 20. citação de mídia tem de ser EXPLÍCITA, nos dois sentidos ---
-# Regra do projeto: registro sustentado por reportagem ou divulgação não é removido,
-# mas precisa declarar isso. Três pontas têm de concordar: o tipo_fonte, o prefixo
-# "Citação de mídia —" na obra do descritor e o aviso "CITAÇÃO DE MÍDIA" nas observações.
+# --- 20. citação de mídia: explícita e SEM publicação (regra do projeto) ---
+# Regra do projeto: registro sustentado só por reportagem ou divulgação não é removido,
+# mas precisa declarar isso. Regra do autor (2026.10.09): se há DOI ou publicação que
+# documente a ocorrência, o registro NÃO é "citação de mídia". Portanto:
+#  (a) tipo_fonte == "Citação de mídia"  <=>  TODAS as obras do descritor são de mídia;
+#  (b) um registro só de mídia não tem campo doi, link doi.org nem "DOI" no texto;
+#  (c) qualquer parte de mídia (inclusive em registro de fonte mista) vem com o prefixo
+#      "Citação de mídia —" no descritor E com o aviso "CITAÇÃO DE MÍDIA" nas observações;
+#  (d) o aviso "CITAÇÃO DE MÍDIA" só existe onde há parte de mídia.
 _PM = "Citação de mídia"
 _incoer = []
 for d in FOSSEIS:
-    tem_parte = any(p.lstrip().startswith(_PM) for p in _partes(d["descritor"]))
+    partes = _partes(d["descritor"], d["tipo_fonte"])
+    n_midia = sum(1 for p in partes if p.lstrip().startswith(_PM))
+    so_midia = bool(partes) and n_midia == len(partes)
+    tem_parte = n_midia > 0
     eh_tipo = d["tipo_fonte"] == _PM
     tem_aviso = "CITAÇÃO DE MÍDIA" in d.get("observacoes", "")
-    if not (tem_parte == eh_tipo == tem_aviso):
-        _incoer.append((d["id"], f"parte={tem_parte} tipo={eh_tipo} aviso={tem_aviso}"))
+    if eh_tipo != so_midia:
+        _incoer.append((d["id"], f"tipo={'mídia' if eh_tipo else d['tipo_fonte']} mas {n_midia}/{len(partes)} obras são de mídia"))
+    if tem_parte != tem_aviso:
+        _incoer.append((d["id"], f"parte_midia={tem_parte} aviso={tem_aviso}"))
+    if eh_tipo:
+        _txt = d["descritor"] + " " + d.get("observacoes", "")
+        if d.get("doi") or any("doi.org" in u for u in d.get("fontes", [])) or re.search(r"\bDOI\b", _txt):
+            _incoer.append((d["id"], "registro de mídia com DOI/link doi.org (se há DOI, não é citação de mídia)"))
     if d["tipo_fonte"] == "Divulgação ou imprensa":
         _incoer.append((d["id"], "rótulo antigo 'Divulgação ou imprensa'"))
-checar(not _incoer, "citações de mídia explícitas (tipo, descritor e observações concordam)",
+checar(not _incoer, "citações de mídia explícitas e sem DOI; fontes mistas declaradas",
        f"incoerências: {_incoer}")
 
 print()

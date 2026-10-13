@@ -6,10 +6,10 @@ saber o que havia nele naquele momento.
 
 Formato: as versões seguem `ANO.MÊS.N`.
 
-## 2026.10.09 — 09/10/2026 · mais 34 registros, 3 retirados por procedência errada, localidades conferidas no texto integral
+## 2026.10.09 — 09/10/2026 · mais 38 registros, 3 retirados por procedência errada, localidades conferidas no texto integral
 
-Banco: **259 registros** (era 228), **71 sítios** (era 57), 50 municípios, 133 obras na bibliografia,
-84 registros com DOI (eram 52). Tudo continua só de Santa Catarina (critério: procedência da coleta, não o depositário).
+Banco: **263 registros** (era 228), **73 sítios** (era 57), 54 municípios, 137 obras na bibliografia,
+91 registros com DOI (eram 52). Tudo continua só de Santa Catarina (critério: procedência da coleta, não o depositário).
 
 ### Registros novos (34)
 - **Itajaí, Ediacarano (234, 235):** *Palaeopascichnus* sp. e *Nimbia* sp., de Becker-Kerber et al. (2020).
@@ -78,6 +78,66 @@ Banco: **259 registros** (era 228), **71 sítios** (era 57), 50 municípios, 133
 - Não incluídos por falta de táxon ou de fóssil confirmado: ostracodes e foraminíferos da Ilha do Arvoredo (Meireles et al.),
   Rio do Rasto de Monte Castelo/Santa Cecília/Lages (Boos, 2016), madeiras da Fm. Rio Bonito (Mayer, 1989).
 
+### Revisão do rótulo «Citação de mídia» e das paleotocas de Morro Grande (mesma data)
+**Regra nova:** se o registro tem DOI ou publicação que documente a ocorrência, ele **não** é «Citação de mídia».
+`tipo_fonte = "Citação de mídia"` passou a valer só quando **todas** as obras do descritor são reportagem ou divulgação
+(8 registros: 44, 56, 57, 67, 68, 69, 70, 195, antes 13). Quando há publicação **e** reportagem, o tipo é o da publicação,
+a parte de mídia continua explícita (prefixo «Citação de mídia —» no descritor e aviso «CITAÇÃO DE MÍDIA» nas observações)
+e a ficha mostra o aviso «Fonte mista».
+- **Paleotocas do Geoparque — 81, 38, 83:** deixam de ser «Citação de mídia». Base nova: Valdati, Gomes, Weinschütz, Ricetti & Bechtel
+  (2024, *Revista Brasileira de Geografia Física* 17(3):1905–1920, DOI 10.26848/rbgf.v17.3.p1905-1920), que cataloga as
+  paleotocas do Geoparque e descreve três delas; e, no 81, a ficha de geossítio «Paleotocas Xocleng» (nº 1841) do Geossit/SGB
+  (Godoy, Binotto & Wildner, 2011), nova categoria de fonte «Ficha de geossítio (SGB/Geossit)». O 81 passa a ter a formação
+  (Fm. Botucatu) confirmada pela ficha e o nome «Furnas Xocleng», antes dado como ausente das fontes, localizado na página do
+  Geoparque Costões e Lagunas e no resumo da ficha do SGB. **Divergência registrada, não resolvida:** a ficha do SGB situa o
+  geossítio em Jacinto Machado (Engenho Velho, Costão da Pedra), a página do Geoparque em Morro Grande (Três Barras); o banco
+  mantém Morro Grande e declara isso na ficha. Números de reportagem (mais de 40 estruturas) seguem marcados como mídia e
+  não coincidem com o catálogo do artigo (24 no Geoparque).
+- **Novos (268, 269):** *Megaichnus major* — paleotocas do **Veisom** (10 m) e da **Aparência** (61 m), Vale do Pingador,
+  Morro Grande, em arenitos da Fm. Botucatu (Valdati et al., 2024). Pinos na sede municipal, porque o artigo não publica coordenadas.
+- **Mesossauros 101 e 222:** passam a «Tese ou dissertação» (Elias, 2020, TCC da UFSC, que os registra); as reportagens
+  continuam marcadas como mídia dentro da ficha.
+- **Registros que seguem só de mídia (68, 70 e demais):** removidos os links doi.org e os DOI do texto; trabalhos científicos de
+  contexto (Mothé et al. 2012, Lopes & Buchmann 2011, Buchmann et al. 2009) continuam citados por autor, ano e periódico, sem DOI.
+  Mothé et al. (2012) saiu do descritor do 68: é revisão taxonômica e não trata do espécime.
+- **Becker-Kerber et al. (2024), texto integral lido:** a ocorrência é nova (Gaspar, 26°54′54,59″S, 48°58′7,10″W), interpretada como
+  tectógrafos (pseudofósseis) — não entra como fóssil. O artigo **não reavalia** os icnofósseis antigos da bacia (209–213) nem os
+  macrofósseis de 2020 (234, 235); os avisos «conferir o texto completo» foram trocados pelo que o texto diz. Para *Gordia* e
+  *Helminthoidichnites* (209, 211), o artigo traz os critérios que os distinguem dos tectógrafos.
+- **Interface:** fechar a ficha (botão, clique fora, Esc ou «voltar») **não rola mais a página ao topo** — a página fica onde o
+  usuário estava. A causa: fechar a ficha chamava `history.back()`, o que reaplicava a rota e a aba, e a aba rolava ao topo.
+- **Validador:** regra 20 reescrita (tipo «Citação de mídia» ⇔ todas as obras de mídia; registro só de mídia não tem DOI;
+  parte de mídia sempre declarada).
+
+### Behling (1995) lido no texto integral (mesma data)
+O PDF completo de Behling (1995, *Vegetation History and Archaeobotany* 4:127–152) substituiu a leitura só do resumo.
+- **255 (Morro da Igreja) e 256 (Serra do Rio Rastro):** passam a trazer dimensões e altitude da turfeira, datas de amostragem,
+  profundidade do perfil, contagens polínicas, as datações de radiocarbono (Hv 17554–17558, não calibradas) e a sequência de
+  zonas. No 256, o pino foi movido para as coordenadas impressas no artigo (28°23′ S, 49°33′ O), que caem em Bom Jardim da Serra,
+  a menos de 1 km da divisa com Lauro Müller.
+- **Divergência registrada no 255:** o artigo dá o Morro da Igreja em 28°11′ S, 49°52′ O e «25 km a sudeste de Urubici»; essas
+  coordenadas caem em São Joaquim, ~30 km a oés-sudoeste de Urubici, e não combinam com «sudeste» nem com o morro conhecido. O pino
+  segue no morro (aproximado) e a ficha declara o problema; possível erro de impressão, não verificado.
+- **Novos (270, 271):** os dois perfis que antes não tinham localização conhecida — **Serra da Boa Vista** (27°42′ S, 49°09′ O, 1.160 m;
+  turfeira, ~14.000 anos AP até o presente) e **Poço Grande** (26°25′ S, 48°52′ O, planície costeira; Holoceno superior, ~4.840 anos AP
+  até o presente). O artigo não declara o município: foi derivado pelas coordenadas e fica como «região» (Rancho Queimado / Alfredo Wagner;
+  Guaramirim / Joinville), porque os dois pontos estão a menos de 1 km de uma divisa. Dois novos sítios no mapa.
+
+### Santos et al. (2024) e Cezaro et al. (2016): contexto cultural das paleotocas (mesma data)
+Lido o artigo de patrimônio cultural de Santos, Campos, Bandeira, Carelli, Miziescki & Silva (2024, *Desenvolvimento
+Socioeconômico em Debate* 10(1):86–104, DOI 10.18616/rdsd.v10i1.8551). Não é trabalho de paleontologia: entra só como nota de
+contexto cultural, sem alterar nenhum dado paleontológico.
+- **81 (Paleotoca Xocleng):** o artigo registra que o plano de cultura de Jacinto Machado cita paleotocas ocupadas pelos
+  Laklãnõ-Xokleng, que o de Morro Grande lista «Furnas» entre os geossítios e que os planos mencionam «paleotocas e furnas
+  ocupadas pelos indígenas Laklãnõ-Xokleng (Jacinto Machado e Morro Grande)». Não individualiza a feição nem dá coordenadas:
+  **a divergência Jacinto Machado × Morro Grande continua sem solução** e a ficha diz isso.
+- **82 (Toca do Tatu):** o plano de Timbé do Sul cita a Paleotoca Toca do Tatu e suas inscrições. Entrou também Cezaro, Santos &
+  Campos (2016, *Revista Memorare* 3(1):47–72), artigo científico sobre a arte rupestre da cavidade (mais de 35 m² de gravuras,
+  mais de sete geometrias, Tradição Geométrica Meridional); valores lidos em resumo da ferramenta de leitura, a conferir no original.
+- **83 e 38:** o plano de Praia Grande não cita paleotocas (só Pedra Branca, Itaimbezinho e Malacara), o que não confirma nem
+  contraria as reportagens; o de Jacinto Machado cita paleotocas sem nomear nenhuma.
+- A cópia recebida é pré-publicação (sem DOI e com outra ordem de autores); a referência foi conferida na página do periódico.
+- Obras na bibliografia: 135 → 137.
 
 ## 2026.09.14 — 08/10/2026 · tudo com fonte científica ou com "citação de mídia" explícita
 

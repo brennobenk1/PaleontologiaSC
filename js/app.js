@@ -118,7 +118,10 @@ function periodoCor(nomePeriodo){
     function showView(name, opts){
       views.forEach(v => v.classList.toggle('active', v.dataset.view === name));
       navLinks.forEach(l => l.classList.toggle('active', l.dataset.view === name));
-      window.scrollTo({ top: 0, behavior: 'smooth' });
+      /* Trocar de aba leva ao topo. Mas quando a rota é re-aplicada para a aba
+         que JÁ está na tela (fechar uma ficha = history.back(), que dispara o
+         hashchange), rolar ao topo jogava o usuário para longe de onde estava. */
+      if(!(opts && opts.manterRolagem)) window.scrollTo({ top: 0, behavior: 'smooth' });
       mainNav.classList.remove('open');
       navToggle.setAttribute('aria-expanded','false');
       if(!(opts && opts.semUrl)) atualizarURL(name);
@@ -474,6 +477,15 @@ function avisoDeFonte(f){
       <b>Citação de mídia</b> — este registro é conhecido por reportagem ou divulgação institucional.
       Não foi localizada publicação científica primária sobre este material; o que está descrito abaixo
       reproduz o que a matéria afirma, e o que ela não informa está marcado como “não informado”.
+    </div>`;
+  /* Fonte mista: o registro tem base em publicação (por isso NÃO é "citação de mídia"),
+     mas parte do que a ficha afirma vem de reportagem ou divulgação — essas partes
+     estão marcadas no texto como CITAÇÃO DE MÍDIA. */
+  if(/(^|;\s+)Citação de mídia —/.test(f.descritor || '')) return `
+    <div class="aviso-fonte aviso-misto" role="note">
+      <b>Fonte mista</b> — o registro tem base em publicação (listada abaixo), mas parte das informações
+      vem de reportagem ou divulgação institucional; essas partes estão marcadas no texto como
+      “citação de mídia”.
     </div>`;
   if(f.tipo_fonte === 'Citação em revisão') return `
     <div class="aviso-fonte aviso-revisao" role="note">
@@ -970,17 +982,19 @@ function initFontes(){
   const alvo = document.getElementById('listaFontes');
   if(!alvo) return;
   const esc = s => String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
-  const ORDEM = ['Artigo em periódico', 'Capítulo de sítio (SIGEP)', 'Monografia ou boletim institucional',
+  const ORDEM = ['Artigo em periódico', 'Capítulo de sítio (SIGEP)', 'Ficha de geossítio (SGB/Geossit)', 'Monografia ou boletim institucional',
                  'Tese ou dissertação', 'Anais ou resumo de evento', 'Citação de mídia'];
   const NOTA = {
     'Citação de mídia': 'Reportagens e divulgação institucional — NÃO são fontes científicas. Foram mantidas porque registram ocorrências reais conhecidas só por essa via; cada ficha traz o selo “Citação de mídia” e declara o que a matéria afirma e o que não informa.',
-    'Anais ou resumo de evento': 'Resumos de congressos e reuniões científicas, em geral sem revisão por pares.'
+    'Anais ou resumo de evento': 'Resumos de congressos e reuniões científicas, em geral sem revisão por pares.',
+    'Ficha de geossítio (SGB/Geossit)': 'Fichas do banco de geossítios do Serviço Geológico do Brasil: descrição institucional do local, não artigo revisado por pares.'
   };
   /* natureza da OBRA (não do registro): um mesmo trabalho pode sustentar
      registros de naturezas diferentes */
   const natureza = (txt) => {
     if(/^Citação de mídia/.test(txt)) return 'Citação de mídia';
     if(/SIGEP/.test(txt)) return 'Capítulo de sítio (SIGEP)';
+    if(/Geossit|Serviço Geológico do Brasil/.test(txt)) return 'Ficha de geossítio (SGB/Geossit)';
     if(/Dissertação|Tese de|Trabalho de Conclusão|Ph\.D\./.test(txt)) return 'Tese ou dissertação';
     if(/Departamento Nacional da Produção Mineral|DNPM, Divisão/.test(txt)) return 'Monografia ou boletim institucional';
     if(/Paleontologia em Destaque|Anais|Congr\.|Boletim de Resumos|resumo|SICITE|Simpósio|Seminário/i.test(txt)) return 'Anais ou resumo de evento';
@@ -1592,8 +1606,15 @@ function urlDoRegistro(id){
 }
 
 let __fechandoPorNavegacao = false;
+let __hashInicialAplicado = false;
 function aplicarHash(){
+  const primeira = !__hashInicialAplicado;
+  __hashInicialAplicado = true;
   const bruto = decodeURIComponent(location.hash.replace(/^#\/?/, ''));
+  const abaAtiva = (document.querySelector('.view.active') || {}).dataset;
+  const nomeAtiva = abaAtiva ? abaAtiva.view : null;
+  /* mostra a aba sem mexer na rolagem se ela já for a que está na tela */
+  const mostrar = nome => window.paleoShowView(nome, { semUrl:true, manterRolagem: nome === nomeAtiva });
   /* Ao navegar para uma rota que não é ficha (botão "voltar", link, endereço
      digitado), uma ficha aberta precisa fechar — antes ficava por cima da
      nova aba. O fechamento aqui não mexe na URL: ela já é a de destino. */
@@ -1604,17 +1625,19 @@ function aplicarHash(){
     __fechandoPorNavegacao = false;
   }
   // endereço sem rota (a página inicial, alcançada pelo "voltar") mostra o Início
-  if(!bruto){ window.paleoShowView('inicio', { semUrl:true }); return; }
+  if(!bruto){ mostrar('inicio'); return; }
 
   const mReg = bruto.match(/^registro\/(\d+)/);
   if(mReg){
-    window.paleoShowView('catalogo', { semUrl:true });
+    /* num permalink (1ª carga) a ficha abre sobre o catálogo; depois disso (avançar/voltar
+       no histórico) ela abre sobre a aba em que o usuário já estava, sem trocá-la */
+    if(primeira) mostrar('catalogo');
     setTimeout(() => openFossilModal(parseInt(mReg[1], 10)), 60);
     return;
   }
   const mAve = bruto.match(/^ave\/(.+)$/);
   if(mAve){
-    window.paleoShowView('avifauna', { semUrl:true });
+    if(primeira) mostrar('avifauna');
     setTimeout(() => openAviModal(mAve[1]), 60);
     return;
   }
@@ -1644,7 +1667,7 @@ function aplicarHash(){
     set('searchInput', __catalogFilters.q);
     renderCatalog();
   }
-  window.paleoShowView(view, { semUrl:true });
+  mostrar(view);
 }
 
 window.addEventListener('hashchange', () => { if(!__ignorarHash) aplicarHash(); });
@@ -1868,7 +1891,7 @@ function focarModal(){
   card.setAttribute('tabindex','-1');
   // foca o próprio diálogo: o leitor de tela anuncia o título (aria-labelledby)
   // antes de o usuário começar a tabular pelo conteúdo
-  requestAnimationFrame(() => card.focus());
+  requestAnimationFrame(() => card.focus({ preventScroll: true }));
 }
 
 function prenderFoco(e){
@@ -1889,7 +1912,7 @@ document.addEventListener('keydown', prenderFoco, true);
 /* devolve o foco a quem abriu — senão o leitor volta ao topo da página */
 document.addEventListener('modal:close', () => {
   if(__focoAnterior && document.contains(__focoAnterior)){
-    __focoAnterior.focus();
+    __focoAnterior.focus({ preventScroll: true });
     __focoAnterior = null;
   }
 });

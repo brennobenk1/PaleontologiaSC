@@ -878,6 +878,8 @@ body::before{
 .aviso-fonte b{ color: var(--terracotta); }
 .aviso-fonte.aviso-revisao{ border-left-color: var(--petrol-lt); background: var(--stone); }
 .aviso-fonte.aviso-revisao b{ color: var(--petrol); }
+.aviso-fonte.aviso-misto{ border-left-color: var(--petrol-lt); background: var(--stone); }
+.aviso-fonte.aviso-misto b{ color: var(--petrol); }
 .nat-outra{ background: var(--stone-dk); color: var(--texto-suave); }
 
 /* barra proporcional na linha de cada período geológico */
