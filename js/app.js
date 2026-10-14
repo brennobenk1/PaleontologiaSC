@@ -553,13 +553,28 @@ function carregarMalhaMunicipal(){
 
 async function initMapa(){
   await carregarMalhaMunicipal();
+  /* CAMADAS. Cada item da legenda é um botão que liga e desliga o grupo
+     correspondente do SVG (ícone de olho: aberto = visível; fechado e
+     riscado = oculto). Existe porque as áreas das bacias ficam por cima
+     da malha municipal e se sobrepõem entre si: com a camada oculta, o
+     que estava embaixo volta a receber o clique. Só o desenho muda — os
+     dados e os sítios não são tocados. */
+  const camadas = [
+    ...DB_BACIAS.map((b, i) => ({ id: 'bacia-' + i, nome: b.nome, swatch: `background:${b.cor};opacity:.85` })),
+    { id: 'sitios', nome: 'Sítio de coleta (tamanho = nº de registros)', swatch: 'background:#a85f28;border-radius:50%' },
+    { id: 'municipios', nome: 'Malha municipal (municípios com registro em destaque)', swatch: 'background:rgba(168,95,40,0.30);border:1px solid #1f4e5f' }
+  ];
+  const ICONE_OLHO = '<svg class="legend-olho" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">'
+    + '<path d="M1.5 12S5.5 5 12 5s10.5 7 10.5 7-4 7-10.5 7S1.5 12 1.5 12z"/><circle cx="12" cy="12" r="3"/>'
+    + '<line class="olho-risco" x1="3.5" y1="3.5" x2="20.5" y2="20.5"/></svg>';
   const legendList = document.getElementById('bacenLegend');
-  legendList.innerHTML = DB_BACIAS.map(b =>
-    `<li><span class="legend-swatch" style="background:${b.cor}"></span><span>${b.nome}</span></li>`
-  ).join('') + `<li><span class="legend-swatch" style="background:#a85f28;border-radius:50%;"></span><span>Sítio de coleta (tamanho = nº de registros)</span></li>`;
+  legendList.innerHTML = camadas.map(l =>
+    `<li><button type="button" class="legend-toggle" data-camada="${l.id}" aria-pressed="true" title="Clique para ocultar ou mostrar esta camada" aria-label="Exibir camada: ${l.nome.replace(/"/g, '&quot;')}">`
+    + `<span class="legend-swatch" style="${l.swatch}"></span><span class="legend-nome">${l.nome}</span>${ICONE_OLHO}</button></li>`
+  ).join('');
 
-  const polygons = DB_BACIAS.map(b =>
-    `<polygon points="${b.svg_points}" fill="${b.cor}" fill-opacity="0.22" stroke="${b.cor}" stroke-width="1.5" stroke-dasharray="4,3" data-bacia="${encodeURIComponent(b.nome)}"></polygon>`
+  const polygons = DB_BACIAS.map((b, i) =>
+    `<g data-camada="bacia-${i}"><polygon points="${b.svg_points}" fill="${b.cor}" fill-opacity="0.22" stroke="${b.cor}" stroke-width="1.5" stroke-dasharray="4,3" data-bacia="${encodeURIComponent(b.nome)}"></polygon></g>`
   ).join('');
 
   // maiores primeiro => desenhados por baixo, para que sítios pequenos
@@ -672,10 +687,10 @@ async function initMapa(){
     <svg viewBox="${SC_MAP_VIEWBOX}" id="scMapSvg" role="img" aria-label="Mapa de Santa Catarina com municípios e sítios fossilíferos">
       <g id="mapaZoom">
         <path d="${SC_MAP_PATH}" fill="#ece1c8" stroke="none"></path>
-        <g id="camadaMunicipios">${municipios}</g>
+        <g id="camadaMunicipios" data-camada="municipios">${municipios}</g>
         <path d="${SC_MAP_PATH}" fill="none" stroke="#1f4e5f" stroke-width="2.2" pointer-events="none"></path>
         ${polygons}
-        ${circles}
+        <g id="camadaSitios" data-camada="sitios">${circles}</g>
       </g>
     </svg>
     <div class="mapa-zoom-btns">
@@ -688,6 +703,15 @@ async function initMapa(){
 
   const svgEl = document.getElementById('scMapSvg');
   initMapaZoom(svgEl);
+
+  legendList.querySelectorAll('.legend-toggle').forEach(btn => {
+    btn.addEventListener('click', () => {
+      const visivel = btn.getAttribute('aria-pressed') !== 'true';
+      btn.setAttribute('aria-pressed', visivel ? 'true' : 'false');
+      const grupo = svgEl.querySelector(`[data-camada="${btn.dataset.camada}"]`);
+      if(grupo) grupo.classList.toggle('camada-oculta', !visivel);
+    });
+  });
 
   svgEl.querySelectorAll('.muni').forEach(mp => {
     mp.addEventListener('click', e => {

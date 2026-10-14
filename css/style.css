@@ -405,6 +405,29 @@ body::before{
 .map-legend{ list-style:none; margin:0; padding:0; display:flex; flex-direction:column; gap:0.5rem; }
 .map-legend li{ display:flex; gap:0.55rem; align-items:flex-start; font-size:0.84rem; }
 .legend-swatch{ width:14px; height:14px; border-radius:3px; flex-shrink:0; margin-top:0.18rem; }
+
+/* Legenda do mapa: cada item é um botão que liga/desliga a camada.
+   Olho aberto = visível; olho fechado e riscado = oculto. */
+.map-legend{ gap:0.15rem; }
+.legend-toggle{
+  display:flex; align-items:flex-start; gap:0.55rem; width:100%;
+  font:inherit; color:inherit; text-align:left; cursor:pointer;
+  background:transparent; border:1px solid transparent; border-radius: var(--radius-sm);
+  padding:0.32rem 0.4rem; min-height:34px;
+  transition: background .15s ease, border-color .15s ease;
+}
+.legend-toggle:hover{ background: var(--stone-dk); border-color: var(--line); }
+.legend-nome{ flex:1 1 auto; transition: opacity .15s ease; }
+.legend-olho{ flex-shrink:0; margin-left:auto; margin-top:0.02rem; color: var(--petrol); }
+.legend-olho .olho-risco{ display:none; }
+.legend-toggle[aria-pressed="false"] .legend-olho{ color: var(--texto-suave-forte); }
+.legend-toggle[aria-pressed="false"] .legend-olho .olho-risco{ display:inline; }
+.legend-toggle[aria-pressed="false"] .legend-swatch,
+.legend-toggle[aria-pressed="false"] .legend-nome{ opacity:0.45; }
+.camada-oculta{ display:none; }
+@media (max-width:880px){
+  .legend-toggle{ min-height:44px; align-items:center; }
+}
 .map-site-detail{
   background: var(--paper); border:1px solid var(--line); border-radius: var(--radius-md); padding: 1rem;
   font-size: 0.88rem; min-height: 120px;

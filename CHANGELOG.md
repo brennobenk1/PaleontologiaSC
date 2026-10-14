@@ -246,6 +246,13 @@ Varredura só de Santa Catarina, pela procedência da coleta. Cada registro traz
   (Del Mouro et al.) e itens do boletim da SBP (2019) sobre pecopterídeas da bacia carbonífera, paleoincêndios na camada Barro Branco (Criciúma)
   e tafonomia de acúmulos conchíferos no Estuário de São Francisco do Sul — todos só com título disponível.
 
+### Mapa: cada camada da legenda liga e desliga (mesma data, 14/10/2026)
+- A legenda do mapa passou a ter **um botão por camada**, com ícone de olho (SVG, sem emoji): **olho aberto = camada visível; olho fechado e riscado = camada oculta**
+  (o item oculto fica esmaecido). As cinco camadas: as três bacias, os sítios de coleta e a malha municipal. Serve para navegar melhor, porque as áreas das bacias ficam
+  por cima da malha e se sobrepõem — com a camada oculta, o que estava embaixo volta a receber o clique.
+- Funciona por mouse, toque e teclado (Enter/Espaço); o estado é exposto por `aria-pressed`. Só muda o desenho: dados, sítios e contagens não foram tocados.
+- Teste de navegador (`regr.py`) ganhou verificações das cinco camadas, do olho riscado e do retorno ao estado inicial.
+
 ## 2026.09.14 — 08/10/2026 · tudo com fonte científica ou com "citação de mídia" explícita
 
 Banco: **228 registros** (era 227), **57 sítios**, 15 intervalos de tempo, 107 obras na bibliografia, 52 registros com DOI
