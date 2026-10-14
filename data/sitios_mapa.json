@@ -787,14 +787,17 @@
     "bacia": "Bacia do Paraná — Grupo Itararé",
     "lat": -26.1112,
     "lon": -49.805,
-    "count": 3,
+    "count": 7,
     "periodos": [
       "Carbonífero – Permiano Inferior"
     ],
     "taxons_amostra": [
       "Hormosiroidea meandrica (Fazenda Potreiro)",
       "Undichna consulca",
-      "Gordia arcuata e Gordia marina"
+      "Gordia arcuata e Gordia marina",
+      "Biconvexiella roxoi (Oliveira) (Fazenda Potreiro)",
+      "Quinquenella rionegrensis? (Fazenda Potreiro)",
+      "Langella imbituvensis (Oliveira) (Fazenda Potreiro)"
     ],
     "x": 468.0,
     "y": 44.6
@@ -1263,5 +1266,75 @@
     ],
     "x": 482.5,
     "y": 440.4
+  },
+  {
+    "site": "Serra do Espigão (ponto de Figueroa et al., 2016)",
+    "municipio": "Monte Castelo",
+    "bacia": "Bacia do Paraná — Fm. Rio do Rasto",
+    "lat": -26.74887,
+    "lon": -50.31538,
+    "x": 409.6,
+    "y": 179.6,
+    "count": 1,
+    "periodos": [
+      "Permiano Superior"
+    ],
+    "taxons_amostra": [
+      "Actinistia indet. (escamas isoladas — Rio do Rasto, Serra do Espigão)"
+    ]
+  },
+  {
+    "site": "Ribeirão São Pascoal (Irineópolis) — local do peixe de Richter (2002)",
+    "municipio": "Irineópolis (região)",
+    "bacia": "Bacia do Paraná — Fm. Rio do Rasto",
+    "lat": -26.253146,
+    "lon": -50.727041,
+    "x": 362.6,
+    "y": 75.0,
+    "count": 1,
+    "periodos": [
+      "Permiano Superior"
+    ],
+    "taxons_amostra": [
+      "Rubidus pascoalensis Richter, 2002"
+    ]
+  },
+  {
+    "site": "Afloramento do rio Ferreira (Treviso)",
+    "municipio": "Treviso",
+    "bacia": "Bacia do Paraná — Fm. Rio Bonito",
+    "lat": -28.5167,
+    "lon": -49.4625,
+    "x": 507.1,
+    "y": 552.9,
+    "count": 2,
+    "periodos": [
+      "Permiano Inferior"
+    ],
+    "taxons_amostra": [
+      "Cyclodendron brasiliense Lejal-Nicol & Bernardes-de-Oliveira, 1979",
+      "Brasilodendron pedroanum (Carruthers) Chaloner, Leistikow & Hill (Treviso)"
+    ]
+  },
+  {
+    "site": "Lauro Müller — horizontes de Rigby (1972a)",
+    "municipio": "Lauro Müller",
+    "bacia": "Bacia do Paraná — Fm. Rio Bonito",
+    "lat": -28.3989,
+    "lon": -49.3961,
+    "x": 514.7,
+    "y": 528.0,
+    "count": 24,
+    "periodos": [
+      "Permiano Inferior"
+    ],
+    "taxons_amostra": [
+      "Lycopodiopsis sp. (Lauro Müller)",
+      "Phyllotheca griesbachi Zeiller (Lauro Müller)",
+      "Schizoneura gondwanensis Feistmantel (Lauro Müller)",
+      "Paracalamites australis Rigby (Lauro Müller)",
+      "Sphenopteris lobifolia Morris (Lauro Müller)",
+      "Gangamopteris obovata (Carruthers) White (Lauro Müller)"
+    ]
   }
 ]

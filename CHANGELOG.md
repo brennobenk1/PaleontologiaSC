@@ -6,10 +6,10 @@ saber o que havia nele naquele momento.
 
 Formato: as versões seguem `ANO.MÊS.N`.
 
-## 2026.10.09 — 09/10/2026 · mais 39 registros, 3 retirados por procedência errada, localidades conferidas no texto integral
+## 2026.10.09 — 09/10/2026 · mais 71 registros, 3 retirados por procedência errada, localidades conferidas no texto integral
 
-Banco: **264 registros** (era 228), **74 sítios** (era 57), 54 municípios, 145 obras na bibliografia,
-91 registros com DOI (eram 52). Tudo continua só de Santa Catarina (critério: procedência da coleta, não o depositário).
+Banco: **296 registros** (era 228), **78 sítios** (era 57), 56 municípios, 149 obras na bibliografia,
+120 registros com DOI (eram 52). Tudo continua só de Santa Catarina (critério: procedência da coleta, não o depositário).
 
 ### Registros novos (34)
 - **Itajaí, Ediacarano (234, 235):** *Palaeopascichnus* sp. e *Nimbia* sp., de Becker-Kerber et al. (2020).
@@ -168,6 +168,83 @@ Pedida a paleotoca do **Morro Azul** (Campestre, Urubici). **Não foi localizada
 - **178:** ganhou uma remissão ao registro 272.
 - Obras na bibliografia: 144 → 145.
 - **Não incluído, à espera de decisão:** Bom Sossego I e II (Irineópolis; Bechtel, 2022, lido em resumo) e a paleotoca de Xaxim (só reportagens, sem localização precisa).
+
+### Folhelho Lontras conferido no PDF integral de Mouro et al. (2020) (mesma data)
+Recebido o PDF do artigo (*Palaeogeography, Palaeoclimatology, Palaeoecology* 555:109850, 14 páginas), lido por inteiro, com as Figs. 2 e 5 conferidas na imagem.
+O artigo já sustentava 27 registros do Campáleo; cada um foi comparado com o texto. **Coordenada, localização (BR-280, 2 km do entroncamento com a BR-116, Mafra),
+contagens e exemplares figurados (CP.V 5202a, CP/E 3755b) conferem.** Corrigido o que não conferia:
+- **Nomenclatura atribuída ao artigo, mas que ele não traz (38 registros):** a nota «na nomenclatura de superfície de SC, base da Fm. Rio do Sul» não está em Mouro et al.
+  (2020), que adota Campo Mourão (topo da Fm. Campo Mourão, Grupo Itararé). Os nomes «base da Fm. Rio do Sul» (Ricetti et al., 2012) e «Membro Rio do Sul da Fm. Taciba»
+  (Kallen et al., 2014) aparecem só em títulos da lista de referências do artigo; a nota foi reescrita dizendo isso. A idade segue em discussão: conodontes e palinologia
+  (Cisuraliano; Rb-Sr preliminar) × U-Pb em zircão (Carbonífero Superior), e os autores admitem idade pensilvaniana para o Campáleo. O artigo não dá idade numérica; o
+  intervalo do campo «idade» fica declarado como convenção do banco.
+- **19 e 60 (celacanto / *Coelacanthus* sp.):** o artigo **não menciona** celacanto, peixes de nadadeira lobada nem escamas; a nota de 09/10 que dizia o contrário estava errada
+  e foi corrigida. O relato histórico de Mouro et al. (2018), lido, também não os cita. Os registros ficam como **ocorrência não verificada em fonte primária** (a fonte
+  possível é o capítulo de Mouro et al., 2021, não consultado); nada foi removido.
+- **25 (coprólitos):** o artigo descreve coprólitos *heteropolares*, «arredondados e cilíndricos», ~24 × 13 mm, poucos, dos níveis inferiores; não diz «espiralados» nem os atribui a
+  peixes. Texto corrigido; o rótulo «Coprolita espiralada» (da ficha original) foi mantido e explicado.
+- **45, 46 (amonoides, gastrópodes):** o artigo cita amonoides só no resumo e trata os moluscos como grupo (Fig. 5, fossilização «desconhecida»); «afinidade com *Uraloceras*»,
+  «filme carbonoso/pirita» e o número de conchas não constam nele — vêm do verbete da Wikipédia e ficam sinalizados. Registro histórico: Oliveira (1918) cita «um gastrópode
+  assemelhado a *Pleurotomaria*» (via Mouro et al., 2018).
+- **62, 64, 65, 66:** «~175 μm» (ostracodes), *Oichnus* (predação), enterospira «~22 mm … de condrictes» e «gimnosperma araucariácea» **não** constam no artigo; sinalizados.
+- **52 (Discinidae):** o artigo não cita a família; *Orbiculoidea* é um discinídeo, então «distinta de *Orbiculoidea*» não vem dele. Histórico de nomes (Mouro et al., 2018):
+  «Discina»/«Lingula» nas notas de Oliveira (1911–1918); **48:** *Lingula imbituvensis* (Oliveira, 1930) → *Langella imbituvensis* na revisão dos braquiópodes.
+- **20 e 42 (insetos):** corrigido «piritização excepcional» (o artigo e o resumo de Ricetti et al., 2016, falam em preservação *em parte* piritizada; o CP/E 3755b, em concreção, é tratado
+  como fosfatizado) e a atribuição do «tecido muscular» do CP.I 2276b (o texto o descreve como piritizado). Registrados os exemplares figurados sem determinação taxonômica
+  (CP/E 3243a,b; CP.I 2276a,b; CP.I 5332a; CP.I 680) e a lista de amostras do artigo.
+- **Dados novos do artigo, só onde ele os dá:** perfil do afloramento (10 m basais + LSMH de 1,10 m + 7 m de ritmito), descoberta em 1908 (Woodworth e Euzébio de Oliveira),
+  ambiente (marinho restrito, 200–400 m, fundo anóxico/euxínico; «baía de fiorde» como crença dos autores), status de **possível** Lagerstätte (a conclusão diz «ainda não
+  considerado»), ocorrência por subnível (Fig. 2) e tipo de preservação por grupo (Fig. 5), geoquímica das esponjas (síncrotron, EDS, Raman; sem sinal Raman de apatita nem de pirita),
+  estojos de tricópteros, escolecodontes, ostracodes, conodontes (cinco subníveis), lenhos (*Agathoxylon* e *Abietopitys*), foraminíferos (só na Fig. 5).
+- **18, 41, 99:** passam a citar também o artigo de 2020 (contexto). **22:** a procedência da amostra de Oliveira (1927, New York State Museum) não é dada; a atribuição ao
+  Campáleo vale para a unidade, não necessariamente para essa coleta.
+- **Obra duplicada na bibliografia:** Mouro et al. (2018) aparecia com duas grafias de autor («Mouro, L.D.» e «Del Mouro, L.»); unificada na forma da revista (*Del Mouro*, com DOI).
+- **Natureza da fonte, achado lateral:** 39 e 41 estavam como «Anais ou resumo de evento» por causa do nome *Anais da Academia Brasileira de Ciências*, que é periódico; passam a «Artigo em
+  periódico», e a aba Sobre & Fontes deixa de classificar essas obras como anais (a regra procurava a palavra «Anais»).
+- Obras na bibliografia: 145 → 144.
+- **Apresentação e pôster:** a frase «Folhelho Lontras, Lagerstätte com preservação de tecidos moles (MOURO et al., 2020)» ficava acima do que o artigo diz; passou a
+  «possível Lagerstätte … tecidos duros e, possivelmente, moles». Percentual de registros com artigo em periódico ou capítulo de sítio recalculado pela mudança em 39 e 41.
+- Pendente: a origem do celacanto (capítulo de Mouro et al., 2021; os coautores do artigo podem confirmar), as contagens de moluscos e a atribuição de *Oichnus* (Saldanha, 2022).
+
+### Busca dirigida por registros ainda ausentes (mesma data, 14/10/2026) — 32 registros novos (273–304)
+Varredura só de Santa Catarina, pela procedência da coleta. Cada registro traz a obra, o que ela diz e o que **não** foi conferido.
+- **273 — *Actinistia* indet. (escamas isoladas), Fm. Rio do Rasto, Serra do Espigão (Monte Castelo):** MCN.P.1197, 1198 e 1199, de
+  Figueroa, Miguel & Gallo (2016, *Rev. Bras. Paleontol.* 19:401–406, lido no texto integral). **Divergência declarada:** o suplemento
+  de Francischini et al. (SEPM) grafa «Acnistia» e põe o material no Mb. Morro Pelado; o artigo original escreve *Actinistia* e não
+  especifica o membro — o registro segue o artigo. É a mesma serra do registro 176, mas a ficha não afirma que seja o mesmo afloramento.
+  O ponto é o do artigo; novo sítio no mapa e município novo (Monte Castelo).
+- **274 — *Rubidus pascoalensis* Richter, 2002 (peixe actinopterígio, Fm. Rio do Rasto, Irineópolis):** a coordenada (26,253146° S;
+  50,727041° O) foi **informada pelo autor do site (B. A. Benk) em 14/10/2026** como o local de coleta do peixe de Richter, e cai em
+  Irineópolis. A ficha declara isso. O artigo original (Richter, 2002, *Rev. Bras. Paleontol.* 3:56–61) **não foi consultado**:
+  holótipo, tombo, depositário e membro são desconhecidos aqui, e o volume aparece como 3 numa fonte e como 2(1) noutra. Fontes
+  conferidas: BioNames e o suplemento SEPM.
+- **275–278 — braquiópodes da Fazenda Potreiro (Mafra), Gr. Itararé / Fm. Mafra (porção média):** *Biconvexiella roxoi*,
+  *Quinquenella rionegrensis*?, *Langella imbituvensis* e *Orbiculoidea guaraunensis*, de Neves, Taboada, Weinschütz & Simões (2017,
+  *Paleontologia em Destaque* 32, resumo do XXV CBP). Fonte é resumo; os nomes seguem o resumo, com o «?» onde ele o põe.
+  O sufixo «(Fazenda Potreiro)» existe porque o banco exige táxon único.
+- **279–280 — licófitas de Treviso, Fm. Rio Bonito (Mb. Siderópolis), Artinskiano:** *Cyclodendron brasiliense* Lejal-Nicol &
+  Bernardes-de-Oliveira, 1979 (TR-47 e TR-49) e *Brasilodendron pedroanum* (Carruthers) Chaloner, Leistikow & Hill, de Bernardes-de-Oliveira
+  et al. (2016, DOI 10.11606/issn.2316-9095.v16i4p65-85). O *B. pedroanum* leva o histórico taxonômico (Read, 1941: *Lepidodendron
+  pedroanum*, *Lepidostrobus* sp., *Glossopteris* cf. *ampla* e *G. indica*). Lejal-Nicol (1979) e Read (1941) **não foram consultados**.
+  O ponto é a sede municipal (aproximado): o afloramento do rio Ferreira não tem coordenada publicada na fonte lida. Município novo (Treviso).
+- **281–304 — macroflora de Lauro Müller (24 registros), Fm. Rio Bonito:** a lista de Rigby (1972a, *An. Acad. Bras. Ciênc.* 44 suppl.)
+  na Tabela 1 de Bernardes-de-Oliveira et al. (2016), com os horizontes (I, II, III e BB) de cada táxon: *Lycopodiopsis* sp.,
+  *Phyllotheca griesbachi*, *Schizoneura gondwanensis*, *Paracalamites australis*, *Sphenopteris lobifolia*, *Gangamopteris obovata*,
+  *Glossopteris browniana*, *G. communis*, *G. occidentalis*, *G. ampla*, *G. angustifolia*, *Vertebraria* sp., *Arberia minasica*,
+  *Derbyella aurita*, *Noeggerathiopsis spathulata*, *«Walikaliamillani»* (grafia do texto-fonte, **a conferir em Rigby, 1972a**),
+  ramos de gimnosperma indet., *Samaropsis seixasi*, *S. moreirana*, *S. mendesi*, *S. yoshidae*, *S. thomasi*, *Cordaicarpus oliveiranus*
+  e folhas de licófita indet. Cada ficha remete aos registros anteriores do mesmo táxon (103, 33, 105, 110, 121, 32, 126, 124, 125, 193,
+  114, 147). O ponto é a sede de Lauro Müller (aproximado). Rigby (1972a) **não foi consultado**; a Tabela 1 e os dados de Treviso
+  foram lidos por ferramenta de leitura automática (resumo, não texto integral) e conferidos em duas leituras que coincidiram.
+- **193 e 194:** o DOI de Bernardes-de-Oliveira et al. (2016) passou a constar no descritor e no campo `doi`.
+- **Quatro sítios novos** (Serra do Espigão — ponto de Figueroa et al.; Ribeirão São Pascoal; Afloramento do rio Ferreira, Treviso;
+  Lauro Müller — horizontes de Rigby) e **dois municípios novos** (Monte Castelo, Treviso). Obras na bibliografia: 144 → 149.
+- **Achados, mas não incluídos** (sem localidade em SC verificável ou sem texto além do título): espécimes de «*Tietea*» de Lages (KU);
+  *Dinodontosaurus* do MCZ (procedência mascarada); conchostráceos do USNM (Tasch/Gordon, sem localidade); Elias, Schmitt & Schultz
+  (2024), preprint SSRN 4911965, «A New Temnospondyl for the Permian Rio do Rasto Formation, Paraná Basin of Santa Catarina State»
+  (só o título; pista para a próxima rodada); resumos do XXV CBP (2017) sobre *Pteridosperma cisulariana* (Criciúma) e acritarcos
+  (Del Mouro et al.) e itens do boletim da SBP (2019) sobre pecopterídeas da bacia carbonífera, paleoincêndios na camada Barro Branco (Criciúma)
+  e tafonomia de acúmulos conchíferos no Estuário de São Francisco do Sul — todos só com título disponível.
 
 ## 2026.09.14 — 08/10/2026 · tudo com fonte científica ou com "citação de mídia" explícita
 

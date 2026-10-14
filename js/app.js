@@ -997,6 +997,7 @@ function initFontes(){
     if(/Geossit|Serviço Geológico do Brasil/.test(txt)) return 'Ficha de geossítio (SGB/Geossit)';
     if(/Dissertação|Tese de|Trabalho de Conclusão|Ph\.D\./.test(txt)) return 'Tese ou dissertação';
     if(/Departamento Nacional da Produção Mineral|DNPM, Divisão/.test(txt)) return 'Monografia ou boletim institucional';
+    if(/Anais da Academia Brasileira de Ci[eê]ncias/.test(txt)) return 'Artigo em periódico';   /* periódico, apesar do nome */
     if(/Paleontologia em Destaque|Anais|Congr\.|Boletim de Resumos|resumo|SICITE|Simpósio|Seminário/i.test(txt)) return 'Anais ou resumo de evento';
     return 'Artigo em periódico';
   };

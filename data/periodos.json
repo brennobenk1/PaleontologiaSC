@@ -229,7 +229,7 @@
     "fim_ma": 295,
     "cor": "#3d6b52",
     "descricao": "Intervalo glacial a pós-glacial do Grupo Itararé, com rica fauna de invertebrados marinhos e icnofósseis associados a ambientes deltaicos e marinhos rasos.",
-    "total_registros": 64,
+    "total_registros": 68,
     "taxons": [
       {
         "taxon": "Protovirgularia isp.",
@@ -678,6 +678,34 @@
         "ids": [
           231
         ]
+      },
+      {
+        "taxon": "Biconvexiella roxoi (Oliveira) (Fazenda Potreiro)",
+        "count": 1,
+        "ids": [
+          275
+        ]
+      },
+      {
+        "taxon": "Quinquenella rionegrensis? (Fazenda Potreiro)",
+        "count": 1,
+        "ids": [
+          276
+        ]
+      },
+      {
+        "taxon": "Langella imbituvensis (Oliveira) (Fazenda Potreiro)",
+        "count": 1,
+        "ids": [
+          277
+        ]
+      },
+      {
+        "taxon": "Orbiculoidea guaraunensis Oliveira, 1930 (Fazenda Potreiro)",
+        "count": 1,
+        "ids": [
+          278
+        ]
       }
     ]
   },
@@ -689,7 +717,7 @@
     "fim_ma": 273.0,
     "cor": "#7fa66b",
     "descricao": "Período com ampla diversidade de invertebrados marinhos, flora glossopterídea e icnofósseis na Fm. Rio Bonito (Assembleia Taió) e no Grupo Itararé.",
-    "total_registros": 96,
+    "total_registros": 122,
     "taxons": [
       {
         "taxon": "Phyllotheca australis (Brongniart, 1828)",
@@ -1362,6 +1390,188 @@
         "ids": [
           260
         ]
+      },
+      {
+        "taxon": "Cyclodendron brasiliense Lejal-Nicol & Bernardes-de-Oliveira, 1979",
+        "count": 1,
+        "ids": [
+          279
+        ]
+      },
+      {
+        "taxon": "Brasilodendron pedroanum (Carruthers) Chaloner, Leistikow & Hill (Treviso)",
+        "count": 1,
+        "ids": [
+          280
+        ]
+      },
+      {
+        "taxon": "Lycopodiopsis sp. (Lauro Müller)",
+        "count": 1,
+        "ids": [
+          281
+        ]
+      },
+      {
+        "taxon": "Phyllotheca griesbachi Zeiller (Lauro Müller)",
+        "count": 1,
+        "ids": [
+          282
+        ]
+      },
+      {
+        "taxon": "Schizoneura gondwanensis Feistmantel (Lauro Müller)",
+        "count": 1,
+        "ids": [
+          283
+        ]
+      },
+      {
+        "taxon": "Paracalamites australis Rigby (Lauro Müller)",
+        "count": 1,
+        "ids": [
+          284
+        ]
+      },
+      {
+        "taxon": "Sphenopteris lobifolia Morris (Lauro Müller)",
+        "count": 1,
+        "ids": [
+          285
+        ]
+      },
+      {
+        "taxon": "Gangamopteris obovata (Carruthers) White (Lauro Müller)",
+        "count": 1,
+        "ids": [
+          286
+        ]
+      },
+      {
+        "taxon": "Glossopteris browniana Brongniart (Lauro Müller)",
+        "count": 1,
+        "ids": [
+          287
+        ]
+      },
+      {
+        "taxon": "Glossopteris communis Feistmantel (Lauro Müller)",
+        "count": 1,
+        "ids": [
+          288
+        ]
+      },
+      {
+        "taxon": "Glossopteris occidentalis White (Lauro Müller)",
+        "count": 1,
+        "ids": [
+          289
+        ]
+      },
+      {
+        "taxon": "Glossopteris ampla Dana (Lauro Müller)",
+        "count": 1,
+        "ids": [
+          290
+        ]
+      },
+      {
+        "taxon": "Glossopteris angustifolia Brongniart (Lauro Müller)",
+        "count": 1,
+        "ids": [
+          291
+        ]
+      },
+      {
+        "taxon": "Vertebraria sp. (Lauro Müller)",
+        "count": 1,
+        "ids": [
+          292
+        ]
+      },
+      {
+        "taxon": "Arberia minasica (White) emend. Rigby (Lauro Müller)",
+        "count": 1,
+        "ids": [
+          293
+        ]
+      },
+      {
+        "taxon": "Derbyella aurita White (Lauro Müller)",
+        "count": 1,
+        "ids": [
+          294
+        ]
+      },
+      {
+        "taxon": "Noeggerathiopsis spathulata (Dana) Feistmantel (Lauro Müller)",
+        "count": 1,
+        "ids": [
+          295
+        ]
+      },
+      {
+        "taxon": "Walikaliamillani Rigby (grafia conforme o texto-fonte) (Lauro Müller)",
+        "count": 1,
+        "ids": [
+          296
+        ]
+      },
+      {
+        "taxon": "Ramos de gimnosperma indet. (Lauro Müller)",
+        "count": 1,
+        "ids": [
+          297
+        ]
+      },
+      {
+        "taxon": "Samaropsis seixasi (White) Seward (Lauro Müller)",
+        "count": 1,
+        "ids": [
+          298
+        ]
+      },
+      {
+        "taxon": "Samaropsis moreirana (White) Dolianiti (Lauro Müller)",
+        "count": 1,
+        "ids": [
+          299
+        ]
+      },
+      {
+        "taxon": "Samaropsis mendesi Rigby (Lauro Müller)",
+        "count": 1,
+        "ids": [
+          300
+        ]
+      },
+      {
+        "taxon": "Samaropsis yoshidae Rigby (Lauro Müller)",
+        "count": 1,
+        "ids": [
+          301
+        ]
+      },
+      {
+        "taxon": "Samaropsis thomasi Schopf (Lauro Müller)",
+        "count": 1,
+        "ids": [
+          302
+        ]
+      },
+      {
+        "taxon": "Cordaicarpus oliveiranus (White) Millan (Lauro Müller)",
+        "count": 1,
+        "ids": [
+          303
+        ]
+      },
+      {
+        "taxon": "Folhas de licófita indet. (Lauro Müller)",
+        "count": 1,
+        "ids": [
+          304
+        ]
       }
     ]
   },
@@ -1483,7 +1693,7 @@
     "fim_ma": 251.9,
     "cor": "#9bb86b",
     "descricao": "Permiano final, representado pela Fm. Rio do Rasto, com depósitos continentais lacustres-fluviais e tetrápodes e invertebrados associados.",
-    "total_registros": 17,
+    "total_registros": 19,
     "taxons": [
       {
         "taxon": "Schizoneura gondwanensis Feistmantel, 1876",
@@ -1602,6 +1812,20 @@
         "count": 1,
         "ids": [
           263
+        ]
+      },
+      {
+        "taxon": "Actinistia indet. (escamas isoladas — Rio do Rasto, Serra do Espigão)",
+        "count": 1,
+        "ids": [
+          273
+        ]
+      },
+      {
+        "taxon": "Rubidus pascoalensis Richter, 2002",
+        "count": 1,
+        "ids": [
+          274
         ]
       }
     ]
