@@ -253,7 +253,6 @@ Varredura só de Santa Catarina, pela procedência da coleta. Cada registro traz
 - Funciona por mouse, toque e teclado (Enter/Espaço); o estado é exposto por `aria-pressed`. Só muda o desenho: dados, sítios e contagens não foram tocados.
 - Teste de navegador (`regr.py`) ganhou verificações das cinco camadas, do olho riscado e do retorno ao estado inicial.
 
-<<<<<<< HEAD
 ### Mapa: contorno da Bacia do Paraná refeito a partir do mapa geológico do SGB (mesma data, 14/10/2026)
 - O polígono da Bacia do Paraná era um desenho genérico de 12 vértices feito à mão. Foi substituído por um contorno **derivado do Mapa Geológico do Estado de Santa Catarina,
   1:500.000 (Serviço Geológico do Brasil — SGB/CPRM, 2020; GeoSGB, camada «litoestratigrafia_estados» nº 16)**: união dos afloramentos das unidades paleozoicas da bacia —
@@ -275,8 +274,6 @@ Varredura só de Santa Catarina, pela procedência da coleta. Cada registro traz
   (substituiu `svg_points`/`coords`). O mapa usa `<path>` com `fill-rule="evenodd"`: traço contínuo para o contorno com base cartográfica, tracejado para o esquemático.
 - Mobile: o mapa ocupava só ≈ 160 px de largura, com os botões de zoom ao lado (defeito antigo do CSS); agora ocupa a largura toda e os botões ficam abaixo, como o comentário do CSS já previa.
 
-=======
->>>>>>> 196e1734a57695435b03196a43966b099efab82b
 ## 2026.09.14 — 08/10/2026 · tudo com fonte científica ou com "citação de mídia" explícita
 
 Banco: **228 registros** (era 227), **57 sítios**, 15 intervalos de tempo, 107 obras na bibliografia, 52 registros com DOI

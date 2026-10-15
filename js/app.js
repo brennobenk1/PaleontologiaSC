@@ -560,11 +560,7 @@ async function initMapa(){
      que estava embaixo volta a receber o clique. Só o desenho muda — os
      dados e os sítios não são tocados. */
   const camadas = [
-<<<<<<< HEAD
     ...DB_BACIAS.map((b, i) => ({ id: 'bacia-' + i, nome: b.nome, nota: b.contorno_tipo === 'sgb' ? '' : 'contorno esquemático', swatch: `background:${b.cor};opacity:.85` })),
-=======
-    ...DB_BACIAS.map((b, i) => ({ id: 'bacia-' + i, nome: b.nome, swatch: `background:${b.cor};opacity:.85` })),
->>>>>>> 196e1734a57695435b03196a43966b099efab82b
     { id: 'sitios', nome: 'Sítio de coleta (tamanho = nº de registros)', swatch: 'background:#a85f28;border-radius:50%' },
     { id: 'municipios', nome: 'Malha municipal (municípios com registro em destaque)', swatch: 'background:rgba(168,95,40,0.30);border:1px solid #1f4e5f' }
   ];
@@ -574,15 +570,7 @@ async function initMapa(){
   const legendList = document.getElementById('bacenLegend');
   legendList.innerHTML = camadas.map(l =>
     `<li><button type="button" class="legend-toggle" data-camada="${l.id}" aria-pressed="true" title="Clique para ocultar ou mostrar esta camada" aria-label="Exibir camada: ${l.nome.replace(/"/g, '&quot;')}">`
-<<<<<<< HEAD
     + `<span class="legend-swatch" style="${l.swatch}"></span><span class="legend-nome">${l.nome}${l.nota ? `<small class="legend-nota">${l.nota}</small>` : ''}</span>${ICONE_OLHO}</button></li>`
-=======
-    + `<span class="legend-swatch" style="${l.swatch}"></span><span class="legend-nome">${l.nome}</span>${ICONE_OLHO}</button></li>`
-  ).join('');
-
-  const polygons = DB_BACIAS.map((b, i) =>
-    `<g data-camada="bacia-${i}"><polygon points="${b.svg_points}" fill="${b.cor}" fill-opacity="0.22" stroke="${b.cor}" stroke-width="1.5" stroke-dasharray="4,3" data-bacia="${encodeURIComponent(b.nome)}"></polygon></g>`
->>>>>>> 196e1734a57695435b03196a43966b099efab82b
   ).join('');
 
   // Contorno com base cartográfica (SGB) => traço contínuo; esquemático (desenhado à mão) => tracejado.
