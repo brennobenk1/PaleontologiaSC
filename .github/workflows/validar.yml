@@ -1,0 +1,46 @@
+name: Validar banco de dados
+
+# Roda a cada push e pull request. O objetivo é que uma alteração que
+# quebre a integridade do catálogo — coordenada fora de SC, contradição
+# estratigráfica, data/ desatualizado — seja pega ANTES de ir ao ar,
+# e não meses depois por acaso.
+
+on:
+  push:
+    branches: [main, master]
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  validar:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Sintaxe do JavaScript
+        run: |
+          node --check js/dados.js
+          node --check js/app.js
+
+      - name: Chaves do CSS balanceadas
+        run: |
+          python3 -c "
+          c = open('css/style.css').read()
+          a, f = c.count('{'), c.count('}')
+          assert a == f, f'CSS desbalanceado: {a} abre, {f} fecha'
+          print(f'CSS ok — {a} blocos')
+          "
+
+      - name: Integridade do banco
+        run: python3 scripts/validar.py -v
+
+      - name: data/ em dia com a fonte única
+        run: python3 scripts/exportar-dados.py --check

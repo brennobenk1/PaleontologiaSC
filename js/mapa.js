@@ -25,7 +25,7 @@
     const legendList = document.getElementById('bacenLegend');
     legendList.innerHTML = '';
     DB.bacias.forEach(b => {
-      L.polygon(b.coords, {
+      L.polygon(b.aneis || b.coords, {
         color: b.cor, weight: 1.5, fillColor: b.cor, fillOpacity: 0.18, dashArray: '4,4'
       }).addTo(map).bindPopup(`<b>${b.nome}</b><br>${b.descricao}`);
 

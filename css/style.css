@@ -16,22 +16,29 @@
    ========================================================= */
 
 :root{
-  --ink:        #1b2420;
-  --petrol:     #1f4e5f;
-  --petrol-dk:  #0f2b35;
-  --petrol-lt:  #4a8397;
-  --moss:       #5c7a52;
-  --moss-dk:    #3d5536;
-  --moss-lt:    #8a9b6f;
-  --stone:      #dde1d3;
-  --stone-dk:   #c9d0b9;
-  --paper:      #f6f7f0;
-  --terracotta: #b5651d;
-  --terracotta-lt: #d68a42;
-  --gold:       #8a6a1f;
-  --gold-lt:    #c69a2e;
-  --line:       rgba(20,32,26,0.14);
-  --line-strong: rgba(20,32,26,0.32);
+  --ink:        #172a2e;
+  --petrol:     #17505b;
+  --petrol-dk:  #0c3238;
+  --petrol-lt:  #4e8590;
+  --moss:       #617558;
+  --moss-dk:    #44543b;
+  --moss-lt:    #9aa887;
+  --stone:      #efe8da;
+  --stone-dk:   #e3d9c6;
+  --paper:      #fbf8f2;
+  --terracotta: #a9542a;
+  --terracotta-lt: #d08a5c;
+  --gold:       #8f4c1c;
+  --gold-lt:    #c98a4e;
+  /* texto secundário: 0.72 garante >=4.79:1 (WCAG AA) sobre --stone-dk
+     (#e3d9c6), o fundo mais escuro em uso. NÃO reduzir.
+     ATENÇÃO: este token ficou INDEFINIDO por várias versões sem que nada
+     quebrasse visivelmente — o navegador caía no valor herdado e todo texto
+     secundário saía na cor do principal. validar.py agora acusa isso. */
+  --texto-suave: rgba(23,42,46,0.72);
+  --texto-suave-forte: rgba(23,42,46,0.84);
+  --line:       rgba(23,42,46,0.13);
+  --line-strong: rgba(23,42,46,0.30);
   --shadow-sm:  0 1px 2px rgba(15,43,53,0.10);
   --shadow-md:  0 10px 26px rgba(15,43,53,0.14);
   --shadow-lg:  0 22px 52px rgba(15,43,53,0.24);
@@ -68,7 +75,7 @@ a:hover{ color: var(--gold); }
 button{ font-family: inherit; cursor:pointer; }
 :focus-visible{ outline: 2.5px solid var(--gold-lt); outline-offset: 2px; }
 .hidden{ display:none !important; }
-.muted{ color: rgba(20,32,26,0.58); font-size: 0.92em; }
+.muted{ color: var(--texto-suave); font-size: 0.92em; }
 em, i, .fossil-taxon, .avi-taxon-name{ font-family: var(--font-display); }
 
 /* fine rock-matrix texture: quiet, not a gradient-blob backdrop */
@@ -76,9 +83,9 @@ body::before{
   content:"";
   position: fixed; inset:0; pointer-events:none; z-index:0;
   background-image:
-    radial-gradient(circle at 14% 8%, rgba(31,78,95,0.05), transparent 42%),
-    radial-gradient(circle at 88% 84%, rgba(92,122,82,0.05), transparent 46%),
-    repeating-linear-gradient(115deg, rgba(20,32,26,0.018) 0px, rgba(20,32,26,0.018) 1px, transparent 1px, transparent 5px);
+    radial-gradient(circle at 14% 8%, rgba(23,80,91,0.045), transparent 42%),
+    radial-gradient(circle at 88% 84%, rgba(168,95,40,0.05), transparent 46%),
+    repeating-linear-gradient(115deg, rgba(143,76,28,0.022) 0px, rgba(143,76,28,0.022) 1px, transparent 1px, transparent 5px);
 }
 
 @media (prefers-reduced-motion: reduce){
@@ -143,7 +150,7 @@ body::before{
   font-optical-sizing: auto;
   max-width: 18ch;
 }
-.hero-lede{ font-size: 1.1rem; color: rgba(20,32,26,0.82); max-width: 48ch; }
+.hero-lede{ font-size: 1.1rem; color: var(--texto-suave-forte); max-width: 48ch; }
 .hero-actions{ display:flex; gap: 0.8rem; margin-top: 1.5rem; flex-wrap:wrap; }
 
 .btn{
@@ -239,7 +246,7 @@ body::before{
 }
 .feature-card:hover::after, .feature-card:focus-visible::after{ transform: scaleX(1); }
 .feature-card h3{ font-size: 1.08rem; margin-bottom: 0.5rem; }
-.feature-card p{ font-size: 0.92rem; color: rgba(20,32,26,0.78); margin:0 0 1rem; }
+.feature-card p{ font-size: 0.92rem; color: var(--texto-suave-forte); margin:0 0 1rem; }
 .feature-card p b{ font-family: var(--font-display); font-size:1.05em; color: var(--petrol-dk); }
 .feature-go{
   margin-top:auto; font-family: var(--font-mono); font-size:0.68rem;
@@ -259,7 +266,7 @@ body::before{
   font-family: var(--font-mono); font-size: 0.82rem; text-align:right; color: var(--petrol-dk);
   display:flex; flex-direction:column; line-height:1.15;
 }
-.era-bar-count i{ font-style:normal; font-size:0.65rem; color: rgba(20,32,26,0.45); }
+.era-bar-count i{ font-style:normal; font-size:0.65rem; color: var(--texto-suave); }
 
 /* fichas do hero: agora levam à seção que contam */
 .stat-card[data-goto]{ cursor:pointer; transition: transform .18s ease, box-shadow .18s ease, border-color .18s ease; }
@@ -272,7 +279,7 @@ body::before{
 .limit-grid{ display:grid; grid-template-columns: repeat(3,1fr); gap: 1.2rem; }
 .limit-card{ border-left: 3px solid var(--gold-lt); padding-left: 1rem; }
 .limit-card h4{ font-size: 1rem; margin-bottom:0.35rem; }
-.limit-card p{ font-size: 0.9rem; color: rgba(20,32,26,0.78); margin:0; }
+.limit-card p{ font-size: 0.9rem; color: var(--texto-suave-forte); margin:0; }
 
 /* =========================== VIEWS (SPA panels) =========================== */
 .view{ display:none; max-width: var(--maxw); margin: 0 auto; padding: 2.4rem 1.5rem 4rem; animation: fadeIn .35s ease; }
@@ -282,7 +289,7 @@ body::before{
 @keyframes fadeIn{ from{ opacity:0; transform: translateY(6px); } to{ opacity:1; transform:none; } }
 
 .view-header{ margin-bottom: 1.6rem; }
-.view-intro{ color: rgba(20,32,26,0.78); max-width: 70ch; font-size: 1rem; }
+.view-intro{ color: var(--texto-suave-forte); max-width: 70ch; font-size: 1rem; }
 
 /* =========================== CATALOG =========================== */
 .catalog-toolbar{ display:flex; flex-direction:column; gap: 0.9rem; margin-bottom: 1.2rem; }
@@ -319,9 +326,10 @@ body::before{
 }
 /* faixa estratigráfica: cor do período geológico do próprio registro —
    mesma paleta da coluna-testemunho do topo da página.
-   NÃO usar overflow:hidden no card: a etiqueta de tombo fica em top:-8px,
-   propositalmente para fora, e seria decepada. A própria faixa é
-   arredondada para acompanhar o canto do cartão. */
+   A faixa é arredondada para acompanhar o canto do cartão (sem
+   overflow:hidden no card). A etiqueta "Nº" fica DENTRO do cartão,
+   como primeira linha — antes ela avançava sobre a borda superior e
+   disputava espaço com a pílula de categoria. */
 .fossil-card::before{
   content:""; position:absolute; left:0; top:0; bottom:0; width:5px;
   background: var(--per-cor, var(--moss-lt));
@@ -335,12 +343,12 @@ body::before{
   background: var(--per-cor, var(--moss-lt)); margin-right:0.45rem;
 }
 .fossil-tagno{
-  position:absolute; top:-8px; right:14px;
-  font-family: var(--font-mono); font-size: 0.62rem; letter-spacing:0.03em; color: var(--gold);
-  background: var(--paper); border:1px solid var(--line-strong); border-radius: 3px; padding: 0.1rem 0.4rem;
-  transform: rotate(2deg);
+  align-self:flex-start;
+  font-family: var(--font-mono); font-size: 0.62rem; letter-spacing:0.06em; color: var(--texto-suave);
+  border:1px solid var(--line-strong); border-radius: 3px; padding: 0.08rem 0.4rem; line-height:1.4;
+  margin-bottom: -0.1rem;
 }
-.card-top{ display:flex; justify-content:space-between; align-items:flex-start; gap:0.5rem; margin-top: 0.3rem; }
+.card-top{ display:flex; justify-content:space-between; align-items:flex-start; gap:0.5rem; }
 .fossil-taxon{ font-family: var(--font-display); font-style: italic; font-size: 1.1rem; color: var(--petrol-dk); margin:0; line-height:1.25; }
 .cat-pill{
   font-family: var(--font-mono); font-size: 0.64rem; text-transform:uppercase; letter-spacing:0.03em;
@@ -351,7 +359,7 @@ body::before{
 .cat-pill.cat-invert{ background: var(--petrol-lt); }
 .cat-pill.cat-flora{ background: var(--moss); }
 .cat-pill.cat-icno{ background: var(--moss-dk); }
-.cat-pill.cat-micro{ background: #6d5c85; }
+.cat-pill.cat-micro{ background: #7d6a44; }
 .cat-pill.cat-meta{ background: var(--petrol-dk); }
 
 /* rótulo em versalete acima do valor — repetir "Formação:" inline em
@@ -364,10 +372,10 @@ body::before{
 .fossil-meta span{ display:flex; flex-direction:column; gap:0.08rem; }
 .fossil-meta b{
   font-family: var(--font-mono); font-size:0.6rem; font-weight:600;
-  text-transform:uppercase; letter-spacing:0.06em; color: rgba(20,32,26,0.45);
+  text-transform:uppercase; letter-spacing:0.06em; color: var(--texto-suave);
 }
 .fossil-guarda{
-  font-size:0.76rem; color: rgba(20,32,26,0.58); line-height:1.35;
+  font-size:0.76rem; color: var(--texto-suave); line-height:1.35;
   padding-top:0.5rem; margin-top:auto; border-top:1px solid var(--line);
 }
 .fossil-period{
@@ -388,7 +396,7 @@ body::before{
 .catalog-table tbody tr:hover{ background: var(--stone-dk); }
 .catalog-table .fossil-taxon{ font-size: 0.95rem; }
 
-.empty-state{ text-align:center; padding: 3rem 1rem; color: rgba(20,32,26,0.6); font-style:italic; }
+.empty-state{ text-align:center; padding: 3rem 1rem; color: var(--texto-suave); font-style:italic; }
 
 /* =========================== MAPA =========================== */
 .map-layout{ display:grid; grid-template-columns: 280px 1fr; gap: 1.2rem; }
@@ -397,18 +405,42 @@ body::before{
 .map-legend{ list-style:none; margin:0; padding:0; display:flex; flex-direction:column; gap:0.5rem; }
 .map-legend li{ display:flex; gap:0.55rem; align-items:flex-start; font-size:0.84rem; }
 .legend-swatch{ width:14px; height:14px; border-radius:3px; flex-shrink:0; margin-top:0.18rem; }
+
+/* Legenda do mapa: cada item é um botão que liga/desliga a camada.
+   Olho aberto = visível; olho fechado e riscado = oculto. */
+.map-legend{ gap:0.15rem; }
+.legend-toggle{
+  display:flex; align-items:flex-start; gap:0.55rem; width:100%;
+  font:inherit; color:inherit; text-align:left; cursor:pointer;
+  background:transparent; border:1px solid transparent; border-radius: var(--radius-sm);
+  padding:0.32rem 0.4rem; min-height:34px;
+  transition: background .15s ease, border-color .15s ease;
+}
+.legend-toggle:hover{ background: var(--stone-dk); border-color: var(--line); }
+.legend-nome{ flex:1 1 auto; transition: opacity .15s ease; }
+.legend-nota{ display:block; font-size:0.72rem; font-style:italic; color: var(--texto-suave); }
+.legend-olho{ flex-shrink:0; margin-left:auto; margin-top:0.02rem; color: var(--petrol); }
+.legend-olho .olho-risco{ display:none; }
+.legend-toggle[aria-pressed="false"] .legend-olho{ color: var(--texto-suave-forte); }
+.legend-toggle[aria-pressed="false"] .legend-olho .olho-risco{ display:inline; }
+.legend-toggle[aria-pressed="false"] .legend-swatch,
+.legend-toggle[aria-pressed="false"] .legend-nome{ opacity:0.45; }
+.camada-oculta{ display:none; }
+@media (max-width:880px){
+  .legend-toggle{ min-height:44px; align-items:center; }
+}
 .map-site-detail{
   background: var(--paper); border:1px solid var(--line); border-radius: var(--radius-md); padding: 1rem;
   font-size: 0.88rem; min-height: 120px;
 }
 .map-site-detail h5{ font-family: var(--font-display); margin: 0 0 0.4rem; color: var(--petrol-dk); font-size: 1.05rem; }
 .map-site-detail .site-taxon-list{ margin: 0.5rem 0 0; padding-left: 1.1rem; font-size:0.83rem; }
-.map-canvas{ border-radius: var(--radius-md); overflow:hidden; border:1px solid var(--line); box-shadow: var(--shadow-sm); background: var(--stone-dk); display:flex; align-items:center; justify-content:center; padding: 1rem; }
+.map-canvas{ border-radius: var(--radius-md); overflow:hidden; border:1px solid var(--line); box-shadow: var(--shadow-sm); background: #d7e1df; display:flex; align-items:center; justify-content:center; padding: 1rem; }
 .map-canvas svg{ width:100%; height:auto; max-height: 640px; display:block; }
 .site-dot{ cursor:pointer; transition: r .15s ease, fill-opacity .15s ease; }
 .site-dot:hover{ fill-opacity: 1; }
 .site-dot-active{ stroke: var(--gold-lt); stroke-width: 2.5; }
-.map-canvas polygon{ cursor:pointer; }
+.map-canvas polygon, .map-canvas path[data-bacia]{ cursor:pointer; }
 
 /* =========================== PERÍODOS =========================== */
 .timeline-rail{ height:6px; border-radius:999px; background: var(--line); margin-bottom: 2rem; overflow:hidden; display:flex; }
@@ -431,7 +463,7 @@ body::before{
 .period-panel{ max-height:0; overflow:hidden; transition: max-height .3s ease; }
 .period-item.open .period-panel{ max-height: 3000px; }
 .period-panel-inner{ padding: 0 1.2rem 1.2rem; }
-.period-desc{ font-size:0.92rem; color: rgba(20,32,26,0.78); margin-bottom:1rem; border-top: 1px dashed var(--line); padding-top:0.9rem; }
+.period-desc{ font-size:0.92rem; color: var(--texto-suave-forte); margin-bottom:1rem; border-top: 1px dashed var(--line); padding-top:0.9rem; }
 .taxon-chip-list{ display:flex; flex-wrap:wrap; gap:0.5rem; }
 .taxon-chip{
   font-family: var(--font-display); font-style:italic; font-size:0.88rem;
@@ -458,7 +490,7 @@ body::before{
 .about-grid{ display:grid; grid-template-columns: repeat(2, 1fr); gap: 1.3rem; }
 .about-card{ background: var(--paper); border:1px solid var(--line); border-radius: var(--radius-md); padding: 1.4rem; }
 .field-glossary dt{ font-family: var(--font-mono); font-size:0.78rem; color: var(--petrol-dk); font-weight:600; margin-top:0.7rem; }
-.field-glossary dd{ font-size:0.86rem; color: rgba(20,32,26,0.78); margin: 0.15rem 0 0; }
+.field-glossary dd{ font-size:0.86rem; color: var(--texto-suave-forte); margin: 0.15rem 0 0; }
 .limit-list{ padding-left: 1.1rem; font-size:0.9rem; color: rgba(20,32,26,0.8); }
 .limit-list li{ margin-bottom:0.6rem; }
 
@@ -467,7 +499,7 @@ body::before{
 .footer-inner{ max-width: var(--maxw); margin:0 auto; }
 .footer-brand{ display:flex; align-items:center; gap:0.6rem; font-family: var(--font-mono); font-size:0.84rem; color: var(--petrol-dk); margin-bottom:0.5rem;}
 .footer-logo{ width:26px; height:26px; border-radius:50%; }
-.footer-note{ font-size:0.8rem; color: rgba(20,32,26,0.6); margin:0; max-width:70ch; }
+.footer-note{ font-size:0.8rem; color: var(--texto-suave); margin:0; max-width:70ch; }
 
 /* =========================== MODAL ===================== */
 .modal-overlay{
@@ -501,7 +533,7 @@ body::before{
 .avi-layout{ display:grid; grid-template-columns: 320px 1fr; gap: 1.4rem; margin-bottom: 2.5rem; }
 .avi-sidebar h4{ font-family: var(--font-mono); font-size:0.78rem; text-transform:uppercase; letter-spacing:0.04em; color: var(--moss-dk); margin: 0 0 0.6rem; }
 .avi-map-canvas{
-  border-radius: var(--radius-md); border:1px solid var(--line); background: var(--stone-dk);
+  border-radius: var(--radius-md); border:1px solid var(--line); background: #d7e1df;
   display:flex; align-items:center; justify-content:center; padding: 0.6rem; box-shadow: var(--shadow-sm);
 }
 .avi-map-canvas svg{ width:100%; height:auto; display:block; }
@@ -527,7 +559,7 @@ body::before{
 .avi-card:hover{ box-shadow: var(--shadow-md); transform: translateY(-2px); border-color: var(--petrol-lt); }
 .avi-card-top{ display:flex; justify-content:space-between; align-items:flex-start; gap:0.5rem; }
 .avi-taxon-name{ font-family: var(--font-display); font-style: italic; font-size: 1.08rem; color: var(--petrol-dk); margin:0; line-height:1.25; }
-.avi-card-meta{ font-size: 0.86rem; color: rgba(20,32,26,0.75); display:flex; flex-direction:column; gap:0.15rem; }
+.avi-card-meta{ font-size: 0.86rem; color: var(--texto-suave-forte); display:flex; flex-direction:column; gap:0.15rem; }
 .avi-card-meta b{ color: var(--ink); font-weight:600; }
 .avi-card-period{ font-family: var(--font-mono); font-size: 0.74rem; color: var(--moss-dk); }
 
@@ -659,7 +691,7 @@ body::before{
 .tree-canvas-wrap.dragging{ cursor:grabbing; }
 .tree-hint{
   position:absolute; left:1rem; bottom:0.8rem; z-index:4; margin:0; font-family: var(--font-mono);
-  font-size:0.68rem; color: rgba(20,32,26,0.5); pointer-events:none; letter-spacing:0.01em;
+  font-size:0.68rem; color: var(--texto-suave); pointer-events:none; letter-spacing:0.01em;
 }
 .tree-svg{ width:100%; height:100%; display:block; }
 .tree-link{ fill:none; stroke: var(--line-strong); stroke-width:1.4; }
@@ -680,7 +712,7 @@ body::before{
 .tree-label-familia{ font-family: var(--font-display); font-style:italic; font-size:12px; }
 .tree-label-fossil{ font-family: var(--font-display); font-weight:700; font-size:12.5px; }
 .tree-label-extinct{ opacity:0.72; }
-.tree-label-age{ font-family: var(--font-mono); font-size:10px; fill: rgba(20,32,26,0.55); font-style:normal; }
+.tree-label-age{ font-family: var(--font-mono); font-size:10px; fill: var(--texto-suave); font-style:normal; }
 .tree-label-match{ font-weight:700; }
 .tree-node-match circle{ stroke-width:3; }
 
@@ -700,3 +732,351 @@ body::before{
   .tree-toolbar{ flex-direction:column; align-items:stretch; }
   .tree-canvas-wrap{ height: 480px; }
 }
+
+/* =========================================================
+   PERMALINK / EXPORTAÇÃO
+   ========================================================= */
+.btn-permalink{
+  display:inline-flex; align-items:center; gap:0.4rem; float:right;
+  font-family: var(--font-mono); font-size:0.65rem; letter-spacing:0.03em;
+  background:none; border:1px solid var(--line-strong); border-radius:999px;
+  padding:0.28rem 0.7rem; color: var(--moss-dk);
+  transition: background .15s ease, color .15s ease, border-color .15s ease;
+}
+.btn-permalink:hover{ background: var(--stone-dk); color: var(--petrol-dk); border-color: var(--petrol-lt); }
+.btn-permalink.copiado{ background: var(--moss); color: var(--paper); border-color: var(--moss-dk); }
+.btn-permalink svg{ flex-shrink:0; }
+
+.export-group{ display:flex; align-items:center; gap:0.4rem; }
+.export-label{
+  font-family: var(--font-mono); font-size:0.63rem; text-transform:uppercase;
+  letter-spacing:0.05em; color: var(--texto-suave);
+}
+.btn-export{
+  font-family: var(--font-mono); font-size:0.68rem; letter-spacing:0.03em;
+  background: var(--paper); border:1px solid var(--line-strong); border-radius: var(--radius-sm);
+  padding:0.3rem 0.6rem; color: var(--petrol-dk);
+  transition: background .15s ease, border-color .15s ease;
+}
+.btn-export:hover{ background: var(--stone-dk); border-color: var(--petrol-lt); }
+
+@media (max-width: 880px){
+  .export-group{ width:100%; justify-content:flex-end; }
+  .btn-export{ min-height:38px; padding:0.3rem 0.9rem; }
+  .btn-permalink{ float:none; margin-bottom:0.5rem; }
+}
+.footer-versao{
+  display:flex; flex-wrap:wrap; gap:0.5rem 1rem; align-items:center;
+  font-family: var(--font-mono); font-size:0.7rem; color: var(--texto-suave);
+  margin:0.9rem 0 0.5rem;
+}
+.footer-versao b{ color: var(--petrol-dk); }
+.footer-citar{
+  margin:0; max-width:80ch; padding:0.9rem 1rem; border:1px solid var(--line);
+  border-radius: var(--radius-md); background: var(--paper);
+}
+.citar-topo{ display:flex; flex-wrap:wrap; gap:0.5rem 1rem; align-items:center; justify-content:space-between; margin-bottom:0.6rem; }
+.citar-topo > b{ font-family: var(--font-mono); font-size:0.66rem; text-transform:uppercase;
+  letter-spacing:0.06em; color: var(--petrol-dk); }
+.citar-acoes{ display:flex; gap:0.3rem; }
+.btn-citar, .btn-citar-copiar{
+  font-family: var(--font-mono); font-size:0.62rem; letter-spacing:0.03em;
+  background: var(--stone-dk); border:1px solid var(--line); border-radius:999px;
+  padding:0.2rem 0.6rem; color: var(--texto-suave);
+  transition: background .15s ease, color .15s ease, border-color .15s ease;
+}
+.btn-citar:hover, .btn-citar-copiar:hover{ border-color: var(--petrol-lt); color: var(--petrol-dk); }
+.btn-citar.ativo{ background: var(--petrol-dk); color: var(--paper); border-color: var(--petrol-dk); }
+.btn-citar-copiar{ margin-left:0.4rem; background: var(--paper); }
+.btn-citar-copiar.copiado{ background: var(--moss); color: var(--paper); border-color: var(--moss-dk); }
+.citar-texto{
+  font-size:0.78rem; line-height:1.65; color: var(--ink); margin:0 0 0.5rem;
+  padding:0.6rem 0.7rem; background: var(--stone-dk); border-radius: var(--radius-sm);
+  border-left:3px solid var(--gold-lt);
+}
+.citar-texto.citar-bibtex{ font-family: var(--font-mono); font-size:0.68rem; white-space:pre; overflow-x:auto; }
+.citar-nota{ font-size:0.7rem; color: var(--texto-suave); margin:0; line-height:1.5; }
+@media (max-width:880px){
+  .citar-topo{ flex-direction:column; align-items:flex-start; }
+  .btn-citar, .btn-citar-copiar{ min-height:32px; padding:0.25rem 0.75rem; }
+}
+
+/* rótulos de tipo de fonte */
+.fonte-tipo, .fonte-doi i{
+  font-style:normal; font-family: var(--font-mono); font-size:0.58rem;
+  text-transform:uppercase; letter-spacing:0.05em;
+  border-radius:3px; padding:0.06rem 0.34rem; margin-right:0.4rem;
+  display:inline-block; vertical-align:1px;
+}
+.fonte-doi i{ background: var(--petrol-dk); color: var(--paper); }
+.f-cientifica{ background: var(--moss); color: var(--paper); }
+.f-repo{ background: var(--stone-dk); color: var(--moss-dk); border:1px solid var(--line-strong); }
+.f-wiki{ background: var(--stone-dk); color: var(--moss-dk); border:1px solid var(--line-strong); }
+.f-noticia{ background: var(--terracotta-lt); color: #4a2607; }
+.f-outra{ background: var(--stone-dk); color: var(--moss-dk); }
+.modal-sources a{ display:inline-block; line-height:1.6; }
+
+/* indicador de "carregando mais" da renderização incremental */
+.cards-sentinela{
+  display:flex; justify-content:center; gap:0.4rem; padding:1.6rem 0 0.6rem;
+}
+.cards-sentinela span{
+  width:6px; height:6px; border-radius:50%; background: var(--moss-lt);
+  animation: pulsaPonto 1s ease-in-out infinite;
+}
+.cards-sentinela span:nth-child(2){ animation-delay:.15s; }
+.cards-sentinela span:nth-child(3){ animation-delay:.3s; }
+@keyframes pulsaPonto{ 0%,100%{opacity:.3; transform:scale(.8);} 50%{opacity:1; transform:scale(1);} }
+@media (prefers-reduced-motion: reduce){ .cards-sentinela span{ animation:none; opacity:.5; } }
+
+/* reportar erro — ao lado do permalink na ficha */
+.btn-reportar{
+  float:right; margin-left:0.4rem; text-decoration:none;
+  display:inline-flex; align-items:center; gap:0.3rem;
+  font-family: var(--font-mono); font-size:0.65rem; letter-spacing:0.03em;
+  border:1px solid var(--line-strong); border-radius:999px;
+  padding:0.28rem 0.7rem; color: var(--texto-suave);
+  transition: background .15s ease, color .15s ease, border-color .15s ease;
+}
+.btn-reportar:hover{ background: var(--terracotta-lt); color:#4a2607; border-color: var(--terracotta); }
+@media (max-width:880px){ .btn-reportar{ float:none; margin:0 0 0.5rem 0; } }
+
+/* navegação taxonômica de dois níveis */
+.nav-taxonomica{ display:flex; flex-wrap:wrap; gap:0.4rem; margin:0 0 1rem; align-items:center; }
+.tax-chip, .tax-sub{
+  font-family: var(--font-body); font-size:0.82rem;
+  background: var(--paper); border:1px solid var(--line-strong); border-radius:999px;
+  padding:0.3rem 0.8rem; color: var(--ink);
+  transition: background .15s ease, color .15s ease, border-color .15s ease;
+}
+.tax-chip i, .tax-sub i{
+  font-style:normal; font-family: var(--font-mono); font-size:0.66rem;
+  color: var(--texto-suave); margin-left:0.35rem;
+}
+.tax-chip:hover, .tax-sub:hover{ border-color: var(--petrol-lt); background: var(--stone-dk); }
+.tax-chip.ativo{ background: var(--petrol-dk); color: var(--paper); border-color: var(--petrol-dk); }
+.tax-chip.ativo i{ color: rgba(246,247,240,0.7); }
+.tax-subs{
+  flex-basis:100%; display:flex; flex-wrap:wrap; gap:0.35rem;
+  padding:0.6rem 0 0.1rem; margin-top:0.2rem; border-top:1px dashed var(--line);
+}
+.tax-sub{ font-size:0.76rem; padding:0.22rem 0.65rem; background: var(--stone-dk); }
+.tax-sub.ativo{ background: var(--moss); color: var(--paper); border-color: var(--moss-dk); }
+.tax-sub.ativo i{ color: rgba(246,247,240,0.75); }
+@media (max-width:880px){ .nav-taxonomica{ gap:0.3rem; } .tax-chip{ font-size:0.76rem; padding:0.28rem 0.65rem; } }
+
+/* grupos de afinidade indeterminada — não são irmãos dos demais */
+.tax-chip.tax-indet{ border-style:dashed; color: var(--texto-suave); }
+.tax-chip.tax-indet.ativo{ background: var(--moss-dk); color: var(--paper); border-style:solid; }
+.tax-marca{
+  display:inline-block; margin-right:0.35rem; width:14px; height:14px; line-height:14px;
+  text-align:center; border-radius:50%; background: var(--stone-dk); color: var(--moss-dk);
+  font-family: var(--font-mono); font-size:0.6rem; vertical-align:1px;
+}
+.tax-chip.tax-indet.ativo .tax-marca{ background: rgba(246,247,240,0.25); color: var(--paper); }
+
+/* natureza da referência, no cabeçalho do descritor da ficha */
+.fonte-natureza{
+  font-family: var(--font-mono); font-size:0.58rem; text-transform:none;
+  letter-spacing:0.02em; border-radius:3px; padding:0.08rem 0.4rem; margin-left:0.15rem;
+  white-space:nowrap;
+}
+.nat-periodico{ background: var(--moss); color: var(--paper); }
+.nat-sigep{ background: var(--petrol-lt); color: var(--paper); }
+.nat-tese{ background: var(--stone-dk); color: var(--petrol-dk); border:1px solid var(--line-strong); }
+.nat-anais{ background: var(--stone-dk); color: var(--moss-dk); border:1px solid var(--line-strong); }
+.nat-midia{ background: var(--terracotta-lt); color:#4a2607; }
+.nat-revisao{ background: var(--stone-dk); color: var(--petrol-dk); border:1px dashed var(--line-strong); }
+.selo-midia{
+  display:inline-block; align-self:flex-start; margin:0.1rem 0 0.35rem;
+  padding:0.12rem 0.5rem; border-radius:999px;
+  font-size:0.68rem; font-weight:700; letter-spacing:0.04em; text-transform:uppercase;
+  background: var(--terracotta-lt); color:#4a2607; border:1px solid rgba(74,38,7,0.25);
+}
+.selo-midia.selo-revisao{ background: var(--stone-dk); color: var(--petrol-dk); border:1px dashed var(--line-strong); }
+.aviso-fonte{
+  margin:0.5rem 0 0.8rem; padding:0.65rem 0.85rem; border-radius:8px;
+  font-size:0.88rem; line-height:1.45; border-left:4px solid var(--terracotta);
+  background: #f6e4d5; color: var(--ink);
+}
+.aviso-fonte b{ color: var(--terracotta); }
+.aviso-fonte.aviso-revisao{ border-left-color: var(--petrol-lt); background: var(--stone); }
+.aviso-fonte.aviso-revisao b{ color: var(--petrol); }
+.aviso-fonte.aviso-misto{ border-left-color: var(--petrol-lt); background: var(--stone); }
+.aviso-fonte.aviso-misto b{ color: var(--petrol); }
+.nat-outra{ background: var(--stone-dk); color: var(--texto-suave); }
+
+/* barra proporcional na linha de cada período geológico */
+.period-barra{
+  flex: 0 0 120px; height:5px; border-radius:999px;
+  background: rgba(20,32,26,0.08); overflow:hidden; display:block;
+}
+.period-barra i{ display:block; height:100%; border-radius:999px; }
+@media (max-width:880px){ .period-barra{ display:none; } }
+
+/* a árvore, agora como bloco dentro da aba de avifauna */
+.section-arvore{
+  border-top:1px solid var(--line); margin-top:1.5rem; padding-top:2.2rem;
+}
+
+/* =========================================================
+   MAPA — malha municipal, zoom e deslocamento
+   ========================================================= */
+.muni{
+  fill: rgba(255,255,255,0.16); stroke: #1f4e5f; stroke-width:0.35;
+  stroke-opacity:0.30; cursor:pointer;
+  transition: fill .15s ease, stroke-opacity .15s ease;
+}
+/* municípios que já têm ocorrência publicada */
+.muni-com-registro{ fill: rgba(168,95,40,0.16); stroke-opacity:0.5; }
+.muni:hover{ fill: rgba(31,78,95,0.20); stroke-opacity:0.85; }
+.muni-ativo{ fill: rgba(168,95,40,0.32); stroke: #6e3812; stroke-width:1; stroke-opacity:1; }
+/* o detalhe da divisa só compensa a partir de certa ampliação */
+.mapa-ampliado .muni{ stroke-width:0.5; stroke-opacity:0.55; }
+
+#scMapSvg{ cursor:grab; touch-action:none; }
+#scMapSvg.arrastando{ cursor:grabbing; }
+.map-canvas{ position:relative; }
+
+.mapa-zoom-btns{
+  position:absolute; top:0.9rem; right:0.9rem; z-index:4;
+  display:flex; flex-direction:column; gap:0.4rem;
+}
+.mapa-zoom-btns button{
+  width:34px; height:34px; border-radius: var(--radius-sm); border:none;
+  background: var(--petrol-dk); color: var(--paper); font-size:1.05rem; line-height:1;
+  box-shadow: var(--shadow-sm); transition: background .15s ease, transform .15s ease;
+}
+.mapa-zoom-btns button:hover{ background: var(--petrol); transform: translateY(-1px); }
+.mapa-dica{
+  position:absolute; left:1rem; bottom:0.7rem; margin:0; pointer-events:none;
+  font-family: var(--font-mono); font-size:0.64rem; color: var(--texto-suave);
+}
+@media (max-width:880px){
+  .mapa-dica{ font-size:0.58rem; left:0.6rem; }
+  /* No mobile a área útil é estreita e QUALQUER canto do mapa tem sítio:
+     à direita ficam os de Itajaí, embaixo os dos Cânions e da plataforma
+     sul. Em vez de procurar um canto livre, os controles saem de cima do
+     mapa e viram uma barra abaixo dele. */
+  /* .map-canvas é flex em linha: sem isto o mapa encolhia para ~160 px e os
+     botões ficavam ao lado dele, em vez de abaixo. */
+  .map-canvas{ flex-direction:column; }
+  .mapa-zoom-btns{
+    position:static; flex-direction:row; justify-content:center;
+    margin-top:0.6rem; gap:0.5rem;
+  }
+  .mapa-zoom-btns button{ width:44px; height:38px; }
+  .mapa-dica{ display:none; }
+}
+
+/* =========================================================
+   TEMA BANDEIRA DE SANTA CATARINA
+   ---------------------------------------------------------
+   Lei estadual nº 975/1953: três faixas horizontais iguais —
+   vermelha, branca, vermelha — e um losango VERDE-CLARO ao
+   centro, com as Armas do Estado. A lei não fixa códigos de
+   cor; os tons abaixo são representativos e foram conferidos
+   contra WCAG AA antes de entrar. O verde-claro do losango
+   reprova como texto (4,04:1), por isso aparece só em
+   preenchimentos; textos usam o verde escuro (6,47:1).
+   ========================================================= */
+:root[data-tema="bandeira"]{
+  --ink:        #1c1a1c;
+  --petrol:     #c8102e;   /* vermelho da bandeira: cor primária */
+  --petrol-dk:  #9b0c23;
+  --petrol-lt:  #d9455c;
+  --moss:       #3f8f3a;   /* verde-claro do losango */
+  --moss-dk:    #2c6b2a;
+  --moss-lt:    #7fb97a;
+  --stone:      #f6f5f3;   /* a faixa branca central */
+  --stone-dk:   #ebe9e5;
+  --paper:      #ffffff;
+  --terracotta: #b03027;
+  --terracotta-lt: #e08b84;
+  --gold:       #8c6d13;   /* dourado das estrelas do brasão */
+  --gold-lt:    #c9a227;
+  --line:       rgba(28,26,28,0.14);
+  --line-strong: rgba(28,26,28,0.30);
+  --texto-suave: rgba(28,26,28,0.68);
+  --texto-suave-forte: rgba(28,26,28,0.82);
+  --shadow-sm:  0 1px 2px rgba(28,26,28,0.10);
+  --shadow-md:  0 10px 26px rgba(28,26,28,0.13);
+  --shadow-lg:  0 22px 52px rgba(28,26,28,0.22);
+}
+:root[data-tema="bandeira"] body::before{
+  background-image:
+    radial-gradient(circle at 14% 8%, rgba(200,16,46,0.045), transparent 42%),
+    radial-gradient(circle at 88% 84%, rgba(63,143,58,0.05), transparent 46%),
+    repeating-linear-gradient(115deg, rgba(28,26,28,0.016) 0px, rgba(28,26,28,0.016) 1px, transparent 1px, transparent 5px);
+}
+/* a própria bandeira, reduzida a uma faixa no topo do cabeçalho */
+:root[data-tema="bandeira"] .site-header::after{
+  content:""; position:absolute; left:0; right:0; top:0; height:5px; z-index:2;
+  background: linear-gradient(90deg, #c8102e 0 46%, #ffffff 46% 54%, #c8102e 54% 100%);
+}
+/* losango verde marcando as etiquetas de seção */
+:root[data-tema="bandeira"] .section-num::before{
+  content:""; display:inline-block; width:7px; height:7px; margin-right:0.45rem;
+  background: #3f8f3a; transform: rotate(45deg); vertical-align:1px;
+}
+/* SVG com cor fixa no atributo: a regra CSS vence o atributo de apresentação */
+:root[data-tema="bandeira"] .site-dot{ fill:#c8102e; stroke:#7d0a1c; }
+:root[data-tema="bandeira"] .muni-com-registro{ fill: rgba(63,143,58,0.20); }
+:root[data-tema="bandeira"] .muni-ativo{ fill: rgba(200,16,46,0.28); stroke:#7d0a1c; }
+:root[data-tema="bandeira"] .map-canvas,
+:root[data-tema="bandeira"] .avi-map-canvas{ background:#e7eaec; }
+
+/* botão de troca de tema */
+.btn-tema{
+  display:inline-flex; align-items:center; gap:0.4rem; margin-left:0.6rem;
+  font-family: var(--font-mono); font-size:0.62rem; letter-spacing:0.04em;
+  text-transform:uppercase; background:none; border:1px solid var(--line-strong);
+  border-radius:999px; padding:0.3rem 0.7rem; color: var(--texto-suave);
+  transition: border-color .15s ease, color .15s ease;
+}
+.btn-tema:hover{ border-color: var(--petrol); color: var(--petrol); }
+.tema-losango{
+  width:9px; height:9px; transform: rotate(45deg); flex-shrink:0;
+  background: linear-gradient(135deg, #c8102e 50%, #3f8f3a 50%);
+}
+:root[data-tema="bandeira"] .btn-tema{ border-color: var(--petrol); color: var(--petrol); }
+@media (max-width:880px){ .btn-tema{ margin-left:auto; margin-right:0.4rem; } .tema-rotulo{ display:none; } }
+
+/* indicador do filtro exato por sítio (vindo do mapa) */
+.filtro-sitio{
+  margin-left:0.5rem; font-family: var(--font-mono); font-size:0.68rem;
+  background: var(--stone-dk); border:1px solid var(--line-strong); border-radius:999px;
+  padding:0.12rem 0.6rem; color: var(--petrol-dk); cursor:pointer;
+}
+.filtro-sitio:hover{ border-color: var(--petrol); background: var(--paper); }
+
+/* aba Sobre & Fontes — lista completa de referências */
+.about-card-wide{ grid-column: 1 / -1; }
+.fontes-barra{ display:flex; justify-content:flex-end; margin:0.4rem 0 0; }
+.lista-fontes{ margin-top:0.3rem; }
+.fontes-grupo{ border-top:1px solid var(--line); padding:0.7rem 0 0.3rem; }
+.fontes-grupo > summary{
+  cursor:pointer; font-family: var(--font-mono); font-size:0.78rem; letter-spacing:0.04em;
+  text-transform:uppercase; color: var(--petrol-dk); padding:0.2rem 0;
+}
+.fontes-cont{ color: var(--texto-suave); text-transform:none; letter-spacing:0; margin-left:0.5rem; }
+.fontes-nota{ margin:0.3rem 0 0; font-size:0.8rem; color: var(--texto-suave); }
+.fontes-lista{ list-style:decimal; padding-left:1.5rem; margin:0.5rem 0 0.4rem; }
+.fonte-item{
+  display:flex; flex-wrap:wrap; gap:0.25rem 1rem; justify-content:space-between;
+  padding:0.5rem 0; border-bottom:1px dashed var(--line); font-size:0.88rem; line-height:1.5;
+}
+.fonte-texto{ flex:1 1 30rem; min-width:0; overflow-wrap:anywhere; }
+.fonte-acoes{
+  display:flex; gap:0.7rem; align-items:baseline; flex-wrap:wrap;
+  font-family: var(--font-mono); font-size:0.7rem;
+}
+.fonte-acoes a{ color: var(--petrol); }
+.fonte-ver{
+  font-family: inherit; font-size:inherit; background:none; border:1px solid var(--line-strong);
+  border-radius:999px; padding:0.1rem 0.6rem; color: var(--petrol-dk); cursor:pointer;
+  transition: border-color .15s ease, background .15s ease;
+}
+.fonte-ver:hover{ border-color: var(--petrol); background: var(--stone); }
+
+.fonte-anotacao{ font-size:0.82rem; color: var(--texto-suave); }

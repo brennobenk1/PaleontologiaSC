@@ -5,17 +5,17 @@
     "bacia": "Bacia do Paraná — Grupo Itararé",
     "lat": -26.1583,
     "lon": -49.8147,
-    "count": 39,
+    "count": 38,
     "periodos": [
-      "Permiano Inferior (Asseliano)",
-      "Permiano Inferior (Cisuraliano)"
+      "Carbonífero – Permiano Inferior"
     ],
     "taxons_amostra": [
-      "Actinopterygii indet. (paleoniscídeos) — morfotipo 1",
-      "Actinopterygii indet. — morfotipo 2",
-      "Symmoriiformes gen. et sp. nov.",
+      "Palaeoniscidae / Actinopterygii basais (ictiofauna do Campáleo)",
       "Chondrichthyes indet. (2 dentes)",
-      "Crossopterygii (celacanto) — morfotipos de escamas"
+      "Crossopterygii (celacanto) — morfotipos de escamas",
+      "Anthracoblattina mendesi Pinto & Sedor, 2000",
+      "Braquiópodes indet. (Brachiopoda)",
+      "?Demospongiae indet. (possível demosponja)"
     ],
     "x": 466.9,
     "y": 54.5
@@ -35,7 +35,8 @@
       "Astralomya sinuosa Rocha-Campos & Simões, 1993",
       "Schizodus occidentalis",
       "Stutchiburia brasiliensis",
-      "Edmondia sp."
+      "Edmondia sp.",
+      "Oriocrassatella itajaiensis"
     ],
     "x": 447.4,
     "y": 255.4
@@ -55,7 +56,8 @@
       "Diplichnites gouldi",
       "Diplopodichnus biformis",
       "Maculichna varia",
-      "Umfolozia sinuosa"
+      "Umfolozia sinuosa",
+      "Cochlichnus anguineus"
     ],
     "x": 486.5,
     "y": 277.6
@@ -66,7 +68,7 @@
     "bacia": "Bacia do Paraná — Grupo Itararé",
     "lat": -27.305,
     "lon": -49.795,
-    "count": 6,
+    "count": 7,
     "periodos": [
       "Carbonífero Superior"
     ],
@@ -75,50 +77,11 @@
       "Glaciichnium liebegastensis",
       "Gluckstadtella elongata isp. nov.",
       "Helminthoidichnites tenuis",
-      "Mermia carickensis"
+      "Mermia carickensis",
+      "Treptichnus pollardi"
     ],
     "x": 469.1,
     "y": 296.6
-  },
-  {
-    "site": "Região de Itajaí / BR-470",
-    "municipio": "Itajaí",
-    "bacia": "Bacia do Itajaí",
-    "lat": -26.9078,
-    "lon": -48.6614,
-    "count": 5,
-    "periodos": [
-      "Ediacarano (Neoproterozóico)",
-      "Ediacarano / Cambriano"
-    ],
-    "taxons_amostra": [
-      "Parvancorina sp.",
-      "Charniodiscus? sp.",
-      "Cyclomedusa sp.",
-      "Chancelloria sp.",
-      "Aspidella sp."
-    ],
-    "x": 598.7,
-    "y": 212.8
-  },
-  {
-    "site": "Afloramentos do norte de SC/PR",
-    "municipio": "Mafra (região)",
-    "bacia": "Bacia do Paraná — Grupo Itararé",
-    "lat": -26.15,
-    "lon": -49.9,
-    "count": 4,
-    "periodos": [
-      "Permiano Superior"
-    ],
-    "taxons_amostra": [
-      "Schizoneura gondwanensis Feistmantel, 1876",
-      "Glossopteris riorastensis (Rohn & Rösler, 1989)",
-      "Glossopteris grafi (Rohn & Rösler, 1989)",
-      "Glossopteris cf. G. indica / G. surangei (e outros morfotipos)"
-    ],
-    "x": 457.1,
-    "y": 52.8
   },
   {
     "site": "Localidade Moema",
@@ -132,8 +95,8 @@
     ],
     "taxons_amostra": [
       "Heteropecten catharinae (Reed, 1930)",
-      "Myonia costata (Reed, 1930)",
-      "Myonia tayoensis (Reed, 1930)"
+      "Myonia costata Rocha-Campos, 1970",
+      "Myonia tayoensis? Reed, 1930"
     ],
     "x": 456.0,
     "y": 92.9
@@ -144,14 +107,18 @@
     "bacia": "Bacia do Paraná — Grupo Itararé",
     "lat": -27.305,
     "lon": -49.795,
-    "count": 3,
+    "count": 7,
     "periodos": [
-      "Carbonífero Superior"
+      "Carbonífero Superior",
+      "Carbonífero – Permiano Inferior"
     ],
     "taxons_amostra": [
       "Gordia molassica",
       "Kouphichnium minusculum / Kouphichnium isp.",
-      "Isopodichnus isp. (sin. parcial de Cruziana problematica)"
+      "Isopodichnus isp. (sin. parcial de Cruziana problematica)",
+      "Neonereites isp.",
+      "Gluckstadtella isp.",
+      "Rusophycus isp. (Pedreira Itaú-Itaúna)"
     ],
     "x": 469.1,
     "y": 296.6
@@ -181,7 +148,6 @@
     "lon": -49.5,
     "count": 1,
     "periodos": [
-      "Cretáceo Inferior",
       "Permiano Inferior"
     ],
     "taxons_amostra": [
@@ -193,7 +159,7 @@
   {
     "site": "Costa de Sombrio (plataforma continental)",
     "municipio": "Sombrio",
-    "bacia": "Plataforma Continental — Fm. Laguna-Barreira",
+    "bacia": "Plataforma Continental (formação não informada na reportagem)",
     "lat": -29.22,
     "lon": -49.5,
     "count": 2,
@@ -201,27 +167,11 @@
       "Pleistoceno Superior"
     ],
     "taxons_amostra": [
-      "Stegomastodon waringi (Holland, 1920)",
-      "Toxodon sp."
+      "Notiomastodon platensis (Ameghino, 1888)",
+      "Toxodontidae indet. (“toxodonte” na reportagem; anteriormente rotulado Toxodon sp.)"
     ],
     "x": 502.9,
     "y": 700.9
-  },
-  {
-    "site": "Região de Itajaí",
-    "municipio": "Itajaí",
-    "bacia": "Bacia do Itajaí",
-    "lat": -26.9078,
-    "lon": -48.6614,
-    "count": 1,
-    "periodos": [
-      "Ediacarano (Neoproterozóico)"
-    ],
-    "taxons_amostra": [
-      "Acritarcos (Acritarcha indet.)"
-    ],
-    "x": 598.7,
-    "y": 212.8
   },
   {
     "site": "Afloramento Bainha",
@@ -235,10 +185,11 @@
     ],
     "taxons_amostra": [
       "Glossopteris browniana Brongniart",
-      "Gangamopteris rigbyi Bernardes-de-Oliveira",
-      "Notocalamites askosus Rigby (endêmico)",
-      "Arberiopsis boureaui Bernardes-de-Oliveira (endêmico)",
-      "Samaropsis bainhensis Millan"
+      "Phyllotheca australis Brongniart",
+      "Phyllotheca griesbachii Zeiller",
+      "Notocalamites askosus Rigby",
+      "Paracalamites australis Rigby",
+      "Frutificação de Sphenophyta (?)"
     ],
     "x": 517.7,
     "y": 586.4
@@ -276,33 +227,17 @@
     "y": 643.9
   },
   {
-    "site": "Lagoa do Sombrio",
-    "municipio": "Sombrio",
-    "bacia": "Planície Costeira — Depósitos Quaternários",
-    "lat": -29.1133,
-    "lon": -49.6306,
-    "count": 1,
-    "periodos": [
-      "Pleistoceno–Holoceno"
-    ],
-    "taxons_amostra": [
-      "Registro paleoambiental (fitólitos, palinomorfos)"
-    ],
-    "x": 487.9,
-    "y": 678.4
-  },
-  {
     "site": "Afloramento de Rio dos Cedros",
     "municipio": "Rio dos Cedros",
-    "bacia": "Bacia do Itajaí",
+    "bacia": "Bacia do Paraná — Grupo Itararé (equivalente possível do Folhelho Lontras)",
     "lat": -26.6483,
     "lon": -49.2783,
     "count": 1,
     "periodos": [
-      "Permiano Inferior (Asseliano)"
+      "Carbonífero – Permiano Inferior"
     ],
     "taxons_amostra": [
-      "Biota fóssil similar ao Campáleo (larvas, coprólitos, braquiópodes, esponjas, peixes)"
+      "Folhelho fossilífero de Rio dos Cedros (possível equivalente do Folhelho Lontras)"
     ],
     "x": 528.2,
     "y": 158.0
@@ -318,7 +253,7 @@
       "Quaternário (Pleistoceno–Holoceno)"
     ],
     "taxons_amostra": [
-      "Paleotoca (icnofóssil de escavação — Xenarthra: tatus, preguiças, tamanduás)"
+      "Paleotoca Amaral de Baixo (icnofóssil de escavação — provável tatu extinto)"
     ],
     "x": 516.4,
     "y": 528.8
@@ -326,15 +261,15 @@
   {
     "site": "Litoral sul de SC",
     "municipio": "Litoral sul (região)",
-    "bacia": "Planície Costeira — Depósitos Quaternários",
+    "bacia": "Bacia do Paraná (inferência do compilador; a reportagem não cita bacia)",
     "lat": -28.95,
     "lon": -49.45,
     "count": 1,
     "periodos": [
-      "Jurássico Superior (?) – Cretáceo Inferior (?)"
+      "Jurássico (segundo a reportagem)"
     ],
     "taxons_amostra": [
-      "Theropoda indet. (afim. Carnosauria) — pista bípede"
+      "Theropoda indet. (afim. Carnosauria) — pegadas bípedes"
     ],
     "x": 508.6,
     "y": 643.9
@@ -356,14 +291,14 @@
     "y": 713.6
   },
   {
-    "site": "Afloramento de Anitápolis",
+    "site": "Anitápolis (localidade imprecisa)",
     "municipio": "Anitápolis",
-    "bacia": "Embasamento Cristalino / Depósitos Superficiais",
+    "bacia": "Bacia do Paraná — Grupo Itararé",
     "lat": -27.8869,
     "lon": -49.1394,
     "count": 1,
     "periodos": [
-      "Carbonífero Superior – Permiano Inferior (limite)"
+      "Carbonífero Superior"
     ],
     "taxons_amostra": [
       "Pterichnus mauryae isp. nov."
@@ -375,24 +310,26 @@
     "site": "Morro Grande",
     "municipio": "Morro Grande",
     "bacia": "Bacia do Paraná — Fm. Botucatu",
-    "lat": -28.6611,
-    "lon": -49.5444,
-    "count": 1,
+    "lat": -28.8006,
+    "lon": -49.7208,
+    "count": 3,
     "periodos": [
       "Plioceno–Pleistoceno"
     ],
     "taxons_amostra": [
-      "Paleotoca Furnas Xocleng (icnofóssil de escavação — Xenarthra)"
+      "Paleotoca Xocleng (icnofóssil de escavação — Xenarthra)",
+      "Megaichnus major (Paleotoca do Veisom)",
+      "Megaichnus major (Paleotoca da Aparência)"
     ],
-    "x": 497.8,
-    "y": 582.9
+    "x": 477.6,
+    "y": 612.4
   },
   {
     "site": "Timbé do Sul (rio Rocinha)",
     "municipio": "Timbé do Sul",
     "bacia": "Bacia do Paraná — Fm. Botucatu",
-    "lat": -28.8244,
-    "lon": -49.9183,
+    "lat": -28.7726,
+    "lon": -49.8961,
     "count": 1,
     "periodos": [
       "Plioceno–Pleistoceno"
@@ -400,11 +337,11 @@
     "taxons_amostra": [
       "Paleotoca Toca do Tatu (icnofóssil de escavação — Xenarthra)"
     ],
-    "x": 455.1,
-    "y": 617.4
+    "x": 457.6,
+    "y": 606.4
   },
   {
-    "site": "Paleotoca do Engenho Velho",
+    "site": "Jacinto Machado e Praia Grande (paleotocas do Geoparque)",
     "municipio": "Jacinto Machado / Praia Grande",
     "bacia": "Bacia do Paraná — Fm. Botucatu / Cânions",
     "lat": -29.0333,
@@ -418,22 +355,6 @@
     ],
     "x": 466.7,
     "y": 661.5
-  },
-  {
-    "site": "Entre Valões e Poço Preto",
-    "municipio": "Lages",
-    "bacia": "Bacia do Paraná — Fm. Rio do Rasto",
-    "lat": -27.8167,
-    "lon": -50.3264,
-    "count": 1,
-    "periodos": [
-      "Permiano Superior"
-    ],
-    "taxons_amostra": [
-      "Estheria sp. / Leaia sp. (filópodos)"
-    ],
-    "x": 408.4,
-    "y": 404.6
   },
   {
     "site": "Pedreira de Turvo",
@@ -457,14 +378,963 @@
     "bacia": "Bacia do Paraná — Fm. Irati",
     "lat": -26.1056,
     "lon": -50.3197,
+    "count": 2,
+    "periodos": [
+      "Permiano Inferior"
+    ],
+    "taxons_amostra": [
+      "Mesosauridae indet. (mesossauro)",
+      "Palaeonisciformes indet. (Fm. Irati, Três Barras)"
+    ],
+    "x": 409.2,
+    "y": 43.4
+  },
+  {
+    "site": "Afloramento de Canoinhas",
+    "municipio": "Canoinhas",
+    "bacia": "Bacia do Paraná — Fm. Teresina",
+    "lat": -26.19994,
+    "lon": -50.433,
+    "count": 6,
+    "periodos": [
+      "Permiano Médio (Guadalupiano)"
+    ],
+    "taxons_amostra": [
+      "Krauselcladus canoinhensis Yoshida emend. Fanton et al.",
+      "Pinzonella neotropica",
+      "cf. Jacquesia elongata",
+      "?Lycopodiopsis derbyi (caules de licófita)",
+      "Micrófilos permineralizados (indet.)",
+      "Actinopterygii indet. (dentes e escamas em bone beds)"
+    ],
+    "x": 396.2,
+    "y": 63.3
+  },
+  {
+    "site": "Coluna White (Serra do Rio do Rastro)",
+    "municipio": "Lauro Müller / Bom Jardim da Serra",
+    "bacia": "Bacia do Paraná — Grupos Guatá e Passa Dois",
+    "lat": -28.3889,
+    "lon": -49.4644,
+    "count": 10,
+    "periodos": [
+      "Permiano Médio (Guadalupiano)",
+      "Permiano Superior"
+    ],
+    "taxons_amostra": [
+      "Dadoxylon sp. (troncos fósseis silicificados)",
+      "Pelecypoda indet. (Fm. Palermo)",
+      "Palinoflora da Fm. Palermo (esporomorfos)",
+      "Restos de peixes indet. (Fm. Serra Alta)",
+      "Pelecypoda indet. (Fm. Serra Alta)",
+      "Conchostraca indet. (Fm. Serra Alta)"
+    ],
+    "x": 506.9,
+    "y": 525.4
+  },
+  {
+    "site": "Região de Criciúma (Fm. Palermo)",
+    "municipio": "Criciúma",
+    "bacia": "Bacia do Paraná — Fm. Palermo",
+    "lat": -28.6775,
+    "lon": -49.3697,
+    "count": 1,
+    "periodos": [
+      "Permiano Médio (Guadalupiano)"
+    ],
+    "taxons_amostra": [
+      "\"Loxomma\" sp. (tetrápode — identificação a revisar)"
+    ],
+    "x": 517.8,
+    "y": 586.4
+  },
+  {
+    "site": "Serra do Espigão",
+    "municipio": "Santa Cecília",
+    "bacia": "Bacia do Paraná — Fm. Rio do Rasto",
+    "lat": -26.87,
+    "lon": -50.45,
+    "count": 1,
+    "periodos": [
+      "Permiano Médio (Guadalupiano)"
+    ],
+    "taxons_amostra": [
+      "Parapytanga catarinensis Strapasson, Pinheiro & Soares, 2015"
+    ],
+    "x": 394.3,
+    "y": 204.8
+  },
+  {
+    "site": "Costões Laguna–Imbituba",
+    "municipio": "Laguna / Imbituba",
+    "bacia": "Planície Costeira / Complexo Lagunar Centro-Sul Catarinense",
+    "lat": -28.42,
+    "lon": -48.74,
+    "count": 1,
+    "periodos": [
+      "Holoceno"
+    ],
+    "taxons_amostra": [
+      "Vermetidae indet. (tubos de gastrópode incrustante)"
+    ],
+    "x": 589.7,
+    "y": 532.0
+  },
+  {
+    "site": "Paleotoca de Urubici (URU-01-P2)",
+    "municipio": "Urubici",
+    "bacia": "Bacia do Paraná (inferência do compilador; o artigo não cita bacia nem formação)",
+    "lat": -27.9652,
+    "lon": -49.5092,
+    "count": 1,
+    "periodos": [
+      "Plioceno–Pleistoceno"
+    ],
+    "taxons_amostra": [
+      "Megaichnus major (paleotoca URU-01-P2)"
+    ],
+    "x": 501.8,
+    "y": 436.0
+  },
+  {
+    "site": "Paleotoca de Doutor Pedrinho",
+    "municipio": "Doutor Pedrinho",
+    "bacia": "Bacia do Paraná / depósitos cenozóicos sobrepostos",
+    "lat": -26.7217,
+    "lon": -49.4794,
+    "count": 1,
+    "periodos": [
+      "Plioceno–Pleistoceno"
+    ],
+    "taxons_amostra": [
+      "Megaichnus major (paleotoca de Doutor Pedrinho)"
+    ],
+    "x": 505.2,
+    "y": 173.4
+  },
+  {
+    "site": "Paleotocas de Porto União",
+    "municipio": "Porto União",
+    "bacia": "Bacia do Paraná — Fm. Botucatu",
+    "lat": -26.2383,
+    "lon": -51.0772,
+    "count": 1,
+    "periodos": [
+      "Plioceno–Pleistoceno"
+    ],
+    "taxons_amostra": [
+      "Megaichnus isp. (paleotocas de Porto União)"
+    ],
+    "x": 322.6,
+    "y": 71.4
+  },
+  {
+    "site": "Afloramento de Ponte Alta",
+    "municipio": "Ponte Alta",
+    "bacia": "Bacia do Paraná — Fm. Rio do Rasto",
+    "lat": -27.4839,
+    "lon": -50.38,
+    "count": 2,
+    "periodos": [
+      "Permiano Médio (Guadalupiano)"
+    ],
+    "taxons_amostra": [
+      "Fragmentos vegetais indet. (similares a Calamites sp. e Pecopteris sp.)",
+      "Conchostraca indet. (similares a Cyzicus sp. e Asmussia sp.)"
+    ],
+    "x": 402.3,
+    "y": 334.4
+  },
+  {
+    "site": "Fm. Rio do Rasto — SC (localidade não detalhada)",
+    "municipio": "Não especificado",
+    "bacia": "Bacia do Paraná — Fm. Rio do Rasto",
+    "lat": -27.5,
+    "lon": -49.5,
+    "count": 1,
+    "periodos": [
+      "Permiano Superior"
+    ],
+    "taxons_amostra": [
+      "Australoxylon duartei (lenho fóssil permineralizado)"
+    ],
+    "x": 502.9,
+    "y": 337.8
+  },
+  {
+    "site": "Afloramentos do norte de SC/PR — conchostráceos",
+    "municipio": "Mafra (região)",
+    "bacia": "Bacia do Paraná — Fm. Rio do Rasto",
+    "lat": -26.15,
+    "lon": -49.9,
+    "count": 2,
+    "periodos": [
+      "Permiano Superior"
+    ],
+    "taxons_amostra": [
+      "Monoleiolophus unicostatus (Leaiidae)",
+      "Hemicycloleaia mitchelli"
+    ],
+    "x": 457.2,
+    "y": 52.7
+  },
+  {
+    "site": "Afloramento Bruno Peiker",
+    "municipio": "Taió",
+    "bacia": "Bacia do Paraná — Fm. Rio Bonito",
+    "lat": -27.11,
+    "lon": -49.985,
+    "count": 2,
+    "periodos": [
+      "Permiano Inferior"
+    ],
+    "taxons_amostra": [
+      "Paragiridia taioensis Boardman, Iannuzzi & Dutra, 2016",
+      "Notocalamitaceae indet. (novo táxon em análise)"
+    ],
+    "x": 447.4,
+    "y": 255.4
+  },
+  {
+    "site": "Afloramento Clube Caça e Tiro",
+    "municipio": "Taió",
+    "bacia": "Bacia do Paraná — Fm. Rio Bonito",
+    "lat": -27.11,
+    "lon": -49.985,
     "count": 1,
     "periodos": [
       "Permiano Inferior"
     ],
     "taxons_amostra": [
-      "Mesosauridae indet. (mesossauro)"
+      "Gangamopteris cf. G. obovata (Carruthers) White"
     ],
-    "x": 409.2,
-    "y": 43.4
+    "x": 447.4,
+    "y": 255.4
+  },
+  {
+    "site": "Afloramento Igreja",
+    "municipio": "Taió",
+    "bacia": "Bacia do Paraná — Fm. Rio Bonito",
+    "lat": -27.11,
+    "lon": -49.985,
+    "count": 1,
+    "periodos": [
+      "Permiano Inferior"
+    ],
+    "taxons_amostra": [
+      "Sementes tipo Cordaicarpus e Samaropsis (mal preservadas)"
+    ],
+    "x": 447.4,
+    "y": 255.4
+  },
+  {
+    "site": "Paleoflora Siderópolis (região carbonífera)",
+    "municipio": "Siderópolis (região)",
+    "bacia": "Bacia do Paraná — Fm. Rio Bonito",
+    "lat": -28.595,
+    "lon": -49.43,
+    "count": 3,
+    "periodos": [
+      "Permiano Inferior"
+    ],
+    "taxons_amostra": [
+      "Vertebraria isp. (sistema radicular de glossopteridófita)",
+      "Macroflora Siderópolis — associação glossopteridófita",
+      "Brasilodendron pedroanum (Carruthers) Chaloner, Leistikow & Hill"
+    ],
+    "x": 510.9,
+    "y": 568.9
+  },
+  {
+    "site": "Major Vieira (nova ocorrência de Krauselcladus)",
+    "municipio": "Major Vieira",
+    "bacia": "Bacia do Paraná (formação não informada na reportagem)",
+    "lat": -26.3717,
+    "lon": -50.3283,
+    "count": 1,
+    "periodos": [
+      "Permiano Médio (Guadalupiano)"
+    ],
+    "taxons_amostra": [
+      "Krauselcladus canoinhensis — nova ocorrência (Major Vieira)"
+    ],
+    "x": 408.2,
+    "y": 99.6
+  },
+  {
+    "site": "Afloramento Campo da Lança",
+    "municipio": "Mafra",
+    "bacia": "Bacia do Paraná — Grupo Itararé",
+    "lat": -26.1112,
+    "lon": -49.805,
+    "count": 4,
+    "periodos": [
+      "Carbonífero – Permiano Inferior"
+    ],
+    "taxons_amostra": [
+      "Icnofauna do Afloramento Campo da Lança (8 icnogêneros)",
+      "Rusophycus cf. carbonarius Dawson (traço de repouso de artrópode)",
+      "Protichnites isp. (pista de artrópode)",
+      "Escavações tipo Gyrolithes (Gyrolithes-like burrows)"
+    ],
+    "x": 468.0,
+    "y": 44.6
+  },
+  {
+    "site": "Afloramento Bela Vista do Sul",
+    "municipio": "Mafra",
+    "bacia": "Bacia do Paraná — Grupo Itararé",
+    "lat": -26.1112,
+    "lon": -49.805,
+    "count": 3,
+    "periodos": [
+      "Carbonífero – Permiano Inferior",
+      "Permiano Inferior"
+    ],
+    "taxons_amostra": [
+      "Icnofauna do Afloramento Bela Vista do Sul",
+      "Lockeia siliquaria (traço de repouso de bivalve)",
+      "Lyonia rochacamposi Taboada et al., 2016"
+    ],
+    "x": 468.0,
+    "y": 44.6
+  },
+  {
+    "site": "Pedreira Waltrick",
+    "municipio": "Trombudo Central",
+    "bacia": "Bacia do Paraná — Grupo Itararé",
+    "lat": -27.305,
+    "lon": -49.795,
+    "count": 1,
+    "periodos": [
+      "Carbonífero – Permiano Inferior"
+    ],
+    "taxons_amostra": [
+      "Icnofauna da Pedreira Waltrick"
+    ],
+    "x": 469.1,
+    "y": 296.6
+  },
+  {
+    "site": "Pedreira Fama",
+    "municipio": "Trombudo Central",
+    "bacia": "Bacia do Paraná — Grupo Itararé",
+    "lat": -27.305,
+    "lon": -49.795,
+    "count": 1,
+    "periodos": [
+      "Carbonífero – Permiano Inferior"
+    ],
+    "taxons_amostra": [
+      "Icnofauna da Pedreira Fama"
+    ],
+    "x": 469.1,
+    "y": 296.6
+  },
+  {
+    "site": "Região de Presidente Getúlio",
+    "municipio": "Presidente Getúlio",
+    "bacia": "Bacia do Paraná — Grupo Itararé",
+    "lat": -27.0453,
+    "lon": -49.6231,
+    "count": 1,
+    "periodos": [
+      "Carbonífero – Permiano Inferior"
+    ],
+    "taxons_amostra": [
+      "Icnofósseis indet. de sistema de fiorde (Presidente Getúlio)"
+    ],
+    "x": 488.8,
+    "y": 241.8
+  },
+  {
+    "site": "Região de Bom Retiro (Fm. Irati)",
+    "municipio": "Bom Retiro",
+    "bacia": "Bacia do Paraná — Fm. Irati",
+    "lat": -27.7981,
+    "lon": -49.4869,
+    "count": 1,
+    "periodos": [
+      "Permiano Inferior"
+    ],
+    "taxons_amostra": [
+      "Folhelhos betuminosos fossilíferos da Fm. Irati (Bom Retiro)"
+    ],
+    "x": 504.4,
+    "y": 400.7
+  },
+  {
+    "site": "Pedreira Butiá",
+    "municipio": "Mafra",
+    "bacia": "Bacia do Paraná — Grupo Itararé",
+    "lat": -26.1112,
+    "lon": -49.805,
+    "count": 3,
+    "periodos": [
+      "Permiano Inferior"
+    ],
+    "taxons_amostra": [
+      "Myonia argentinensis (Harrington, 1955)",
+      "Aviculopecten multiscalptus (Thomas, 1928)",
+      "Productida indet. (braquiópodes productídeos)"
+    ],
+    "x": 468.0,
+    "y": 44.6
+  },
+  {
+    "site": "Fazenda Potreiro",
+    "municipio": "Mafra",
+    "bacia": "Bacia do Paraná — Grupo Itararé",
+    "lat": -26.1112,
+    "lon": -49.805,
+    "count": 7,
+    "periodos": [
+      "Carbonífero – Permiano Inferior"
+    ],
+    "taxons_amostra": [
+      "Hormosiroidea meandrica (Fazenda Potreiro)",
+      "Undichna consulca",
+      "Gordia arcuata e Gordia marina",
+      "Biconvexiella roxoi (Oliveira) (Fazenda Potreiro)",
+      "Quinquenella rionegrensis? (Fazenda Potreiro)",
+      "Langella imbituvensis (Oliveira) (Fazenda Potreiro)"
+    ],
+    "x": 468.0,
+    "y": 44.6
+  },
+  {
+    "site": "Papanduva (Fm. Irati)",
+    "municipio": "Papanduva",
+    "bacia": "Bacia do Paraná — Fm. Irati",
+    "lat": -26.3703,
+    "lon": -50.1447,
+    "count": 1,
+    "periodos": [
+      "Permiano Inferior"
+    ],
+    "taxons_amostra": [
+      "Mesosauridae indet. (mesossauro de Papanduva)"
+    ],
+    "x": 429.2,
+    "y": 99.3
+  },
+  {
+    "site": "Ribeirão das Pedras (Taió)",
+    "municipio": "Taió",
+    "bacia": "Bacia do Paraná — Fm. Irati",
+    "lat": -27.11,
+    "lon": -49.985,
+    "count": 1,
+    "periodos": [
+      "Permiano Inferior"
+    ],
+    "taxons_amostra": [
+      "Mesosauridae indet. (mesossauro de Ribeirão das Pedras)"
+    ],
+    "x": 447.4,
+    "y": 255.4
+  },
+  {
+    "site": "Taió (Fm. Rio do Sul)",
+    "municipio": "Taió",
+    "bacia": "Bacia do Paraná — Grupo Itararé",
+    "lat": -27.11,
+    "lon": -49.985,
+    "count": 1,
+    "periodos": [
+      "Carbonífero Superior"
+    ],
+    "taxons_amostra": [
+      "Taiophlebia niloriclasodae Martins-Neto, Gallego, Brauckmann & Cruz, 2007"
+    ],
+    "x": 447.4,
+    "y": 255.4
+  },
+  {
+    "site": "Linha Mimosa (Lindóia do Sul)",
+    "municipio": "Lindóia do Sul",
+    "bacia": "Bacia do Paraná — paleotoca cenozoica",
+    "lat": -27.0268,
+    "lon": -52.0515,
+    "count": 1,
+    "periodos": [
+      "Pleistoceno"
+    ],
+    "taxons_amostra": [
+      "Paleotoca da Cavidade Linha Mimosa (icnofóssil de escavação de megafauna)"
+    ],
+    "x": 211.3,
+    "y": 237.9
+  },
+  {
+    "site": "Afloramento Porongos (Lauro Müller)",
+    "municipio": "Lauro Müller",
+    "bacia": "Bacia do Paraná — Fm. Rio Bonito",
+    "lat": -28.4226,
+    "lon": -49.44,
+    "count": 1,
+    "periodos": [
+      "Permiano Inferior"
+    ],
+    "taxons_amostra": [
+      "Carvão vegetal fóssil (macro-charcoal) de gimnospermas"
+    ],
+    "x": 509.7,
+    "y": 532.5
+  },
+  {
+    "site": "Localidade 21 (Itaiópolis)",
+    "municipio": "Itaiópolis",
+    "bacia": "Bacia do Paraná — Grupo Itararé",
+    "lat": -26.34,
+    "lon": -49.91,
+    "count": 1,
+    "periodos": [
+      "Permiano Inferior"
+    ],
+    "taxons_amostra": [
+      "?Hexactinellida indet. (espículas de esponjas silicosas)"
+    ],
+    "x": 456.0,
+    "y": 92.9
+  },
+  {
+    "site": "Planície Costeira sul-catarinense (turfeiras de Santa Rosa do Sul e São João do Sul)",
+    "municipio": "Santa Rosa do Sul / São João do Sul",
+    "bacia": "Planície Costeira — Depósitos Quaternários",
+    "lat": -29.1613,
+    "lon": -49.7767,
+    "count": 1,
+    "periodos": [
+      "Holoceno"
+    ],
+    "taxons_amostra": [
+      "Palinomorfos holocênicos (54 morfotipos: fungos, algas, briófitas, pteridófitas, pólen de gimnospermas e outros)"
+    ],
+    "x": 471.2,
+    "y": 688.9
+  },
+  {
+    "site": "Vale do Itajaí (Blumenau, Indaial e Apiúna)",
+    "municipio": "Blumenau / Indaial / Apiúna (região)",
+    "bacia": "Bacia do Itajaí",
+    "lat": -26.95,
+    "lon": -49.23,
+    "count": 13,
+    "periodos": [
+      "Ediacarano (Neoproterozóico)",
+      "Ediacarano / Cambriano"
+    ],
+    "taxons_amostra": [
+      "Parvancorina sp.",
+      "Charniodiscus? sp.",
+      "Cyclomedusa sp.",
+      "Chancelloria sp.",
+      "Acritarcos (Acritarcha indet.)",
+      "Aspidella sp."
+    ],
+    "x": 533.6,
+    "y": 222.1
+  },
+  {
+    "site": "Lagoa do Peri (Florianópolis)",
+    "municipio": "Florianópolis",
+    "bacia": "Planície Costeira — Depósitos Quaternários",
+    "lat": -27.725,
+    "lon": -48.5417,
+    "count": 1,
+    "periodos": [
+      "Holoceno"
+    ],
+    "taxons_amostra": [
+      "Diatomáceas holocênicas da Lagoa do Peri (44 táxons; Aulacoseira ambigua, Paralia sulcata)"
+    ],
+    "x": 612.3,
+    "y": 385.7
+  },
+  {
+    "site": "Garopaba (testemunho PCSC-3)",
+    "municipio": "Garopaba",
+    "bacia": "Planície Costeira — Depósitos Quaternários",
+    "lat": -28.0276,
+    "lon": -48.6195,
+    "count": 1,
+    "periodos": [
+      "Holoceno"
+    ],
+    "taxons_amostra": [
+      "Palinomorfos holocênicos de Garopaba (84 táxons: pólen, esporos, fungos, algas, acritarcos, cistos de dinoflagelados)"
+    ],
+    "x": 603.4,
+    "y": 449.6
+  },
+  {
+    "site": "Lagoa do Sombrio",
+    "municipio": "Sombrio (região)",
+    "bacia": "Planície Costeira — Depósitos Quaternários",
+    "lat": -29.1078,
+    "lon": -49.6325,
+    "count": 1,
+    "periodos": [
+      "Holoceno"
+    ],
+    "taxons_amostra": [
+      "Diatomáceas holocênicas da Lagoa do Sombrio (Paralia sulcata, Navicula schadei, Staurosira construens, Cyclotella baltica)"
+    ],
+    "x": 487.6,
+    "y": 677.7
+  },
+  {
+    "site": "Região de Jaguaruna (lagunas holocênicas)",
+    "municipio": "Jaguaruna (região)",
+    "bacia": "Planície Costeira — Depósitos Quaternários",
+    "lat": -28.6148,
+    "lon": -49.0286,
+    "count": 1,
+    "periodos": [
+      "Holoceno"
+    ],
+    "taxons_amostra": [
+      "Diatomáceas, pólen e esporos holocênicos de lagunas de Jaguaruna"
+    ],
+    "x": 556.7,
+    "y": 573.6
+  },
+  {
+    "site": "Barreira Pinheira–Guarda–Gamboa (Palhoça)",
+    "municipio": "Palhoça",
+    "bacia": "Planície Costeira — Depósitos Quaternários",
+    "lat": -27.9021,
+    "lon": -48.6681,
+    "count": 14,
+    "periodos": [
+      "Holoceno"
+    ],
+    "taxons_amostra": [
+      "Bulla striata",
+      "Bostrycapulus odites",
+      "Cerithium atratum",
+      "Chichoreus senegalensis",
+      "Nassarius vibex",
+      "Trachycardium muricatum"
+    ],
+    "x": 597.9,
+    "y": 423.1
+  },
+  {
+    "site": "Serra do Tabuleiro (turfeira Ciama 2)",
+    "municipio": "São Bonifácio (região)",
+    "bacia": "Depósitos Quaternários de turfeira (planalto e serras)",
+    "lat": -27.8968,
+    "lon": -48.8681,
+    "count": 1,
+    "periodos": [
+      "Quaternário (Pleistoceno–Holoceno)"
+    ],
+    "taxons_amostra": [
+      "Pólen, esporos e carvão de turfeira da Serra do Tabuleiro (testemunho Ciama 2; ~39.700 anos)"
+    ],
+    "x": 575.0,
+    "y": 422.0
+  },
+  {
+    "site": "Morro da Igreja (Urubici)",
+    "municipio": "Urubici (região)",
+    "bacia": "Depósitos Quaternários de turfeira (planalto e serras)",
+    "lat": -28.125,
+    "lon": -49.4744,
+    "count": 1,
+    "periodos": [
+      "Quaternário (Pleistoceno–Holoceno)"
+    ],
+    "taxons_amostra": [
+      "Pólen e esporos da turfeira do Morro da Igreja (campos e floresta de araucária)"
+    ],
+    "x": 505.7,
+    "y": 470.2
+  },
+  {
+    "site": "Serra do Rio do Rastro (Lauro Müller / Bom Jardim da Serra)",
+    "municipio": "Lauro Müller / Bom Jardim da Serra (região)",
+    "bacia": "Depósitos Quaternários de turfeira (planalto e serras)",
+    "lat": -28.3833,
+    "lon": -49.55,
+    "count": 1,
+    "periodos": [
+      "Quaternário (Pleistoceno–Holoceno)"
+    ],
+    "taxons_amostra": [
+      "Pólen e esporos da turfeira da Serra do Rio do Rastro (campos e floresta de araucária)"
+    ],
+    "x": 497.1,
+    "y": 524.7
+  },
+  {
+    "site": "Campos do Quiriri (Planalto de São Bento do Sul)",
+    "municipio": "São Bento do Sul (região)",
+    "bacia": "Depósitos Quaternários de turfeira (planalto e serras)",
+    "lat": -26.2503,
+    "lon": -49.3792,
+    "count": 1,
+    "periodos": [
+      "Holoceno"
+    ],
+    "taxons_amostra": [
+      "Palinomorfos holocênicos de turfeira dos Campos do Quiriri (47 palinomorfos)"
+    ],
+    "x": 516.6,
+    "y": 74.4
+  },
+  {
+    "site": "Pouso Redondo (afloramento da Fm. Rio Bonito não identificado)",
+    "municipio": "Pouso Redondo (região)",
+    "bacia": "Bacia do Paraná — Fm. Rio Bonito",
+    "lat": -27.2578,
+    "lon": -49.9339,
+    "count": 2,
+    "periodos": [
+      "Permiano Inferior"
+    ],
+    "taxons_amostra": [
+      "Aterradoxylon solidum Merlotti, 1999 (gen. et sp. nov.)",
+      "Retemedulloxylon sp. (fragmento lenhoso com contramolde medular silicoso)"
+    ],
+    "x": 453.2,
+    "y": 287.1
+  },
+  {
+    "site": "Rio da Estiva (BR-116, km 139, entre Mafra e Papanduva)",
+    "municipio": "Mafra / Papanduva (região)",
+    "bacia": "Bacia do Paraná — Fm. Rio Bonito",
+    "lat": -26.2639,
+    "lon": -49.9775,
+    "count": 1,
+    "periodos": [
+      "Permiano Inferior"
+    ],
+    "taxons_amostra": [
+      "Tafoflórula de Rio da Estiva (Glossopteris, sementes, frutificações e caules)"
+    ],
+    "x": 448.2,
+    "y": 77.3
+  },
+  {
+    "site": "Poço Preto (Irineópolis) — BR-280, rio Timbó",
+    "municipio": "Irineópolis (região)",
+    "bacia": "Bacia do Paraná — Fm. Rio do Rasto",
+    "lat": -26.2386,
+    "lon": -50.7997,
+    "count": 5,
+    "periodos": [
+      "Permiano Superior"
+    ],
+    "taxons_amostra": [
+      "Schizoneura gondwanensis Feistmantel, 1876",
+      "Estheria sp. / Leaia sp. (filópodos)",
+      "Palaeolimnadiopsis subalata (Reed, 1929) Raymond, 1946",
+      "Falsisca brasiliensis Ferreira-Oliveira & Rohn, 2008",
+      "Monoleaia unicostata timbensis Rohn, 1987 (subsp. nov.)"
+    ],
+    "x": 354.2,
+    "y": 71.9
+  },
+  {
+    "site": "BR-470, km 207,5 (Otacílio Costa)",
+    "municipio": "Otacílio Costa (região)",
+    "bacia": "Bacia do Paraná — Fm. Rio do Rasto",
+    "lat": -27.5149,
+    "lon": -49.97,
+    "count": 2,
+    "periodos": [
+      "Permiano Superior"
+    ],
+    "taxons_amostra": [
+      "Glossopteris indet. e Paracalamites sp. 2 (AF/GP 282, BR-470 km 207,5)",
+      "Temnospondyli indet. (crânio ainda não descrito formalmente)"
+    ],
+    "x": 449.1,
+    "y": 341.4
+  },
+  {
+    "site": "Testemunho PCSC-1 (Santa Rosa do Sul)",
+    "municipio": "Santa Rosa do Sul",
+    "bacia": "Planície Costeira — Depósitos Quaternários",
+    "lat": -29.1783,
+    "lon": -49.7494,
+    "count": 1,
+    "periodos": [
+      "Holoceno"
+    ],
+    "taxons_amostra": [
+      "Microfauna holocênica do testemunho PCSC-1 (15 táxons: 5 bivalves, 8 gastrópodes, 1 foraminífero e 1 ostracode)"
+    ],
+    "x": 474.3,
+    "y": 692.5
+  },
+  {
+    "site": "Volta Velha (Itapoá) — testemunho da planície costeira",
+    "municipio": "Itapoá",
+    "bacia": "Planície Costeira — Depósitos Quaternários",
+    "lat": -26.0829,
+    "lon": -48.6318,
+    "count": 1,
+    "periodos": [
+      "Holoceno"
+    ],
+    "taxons_amostra": [
+      "Foraminíferos bentônicos holocênicos — Miliolida (testemunho de Volta Velha, Itapoá)"
+    ],
+    "x": 602.0,
+    "y": 39.0
+  },
+  {
+    "site": "Concheiro natural de Nova Brasília (Imbituba)",
+    "municipio": "Imbituba (região)",
+    "bacia": "Planície Costeira — Depósitos Quaternários",
+    "lat": -28.193,
+    "lon": -48.7019,
+    "count": 1,
+    "periodos": [
+      "Holoceno"
+    ],
+    "taxons_amostra": [
+      "Moluscos subfósseis do concheiro de Nova Brasília (12 espécies; dominantes: Heleobia australis, Cerithiopsis greeni, Crepidula plana, Nassarius vibex, Tellina lineata, Tagelus plebeius)"
+    ],
+    "x": 594.0,
+    "y": 484.5
+  },
+  {
+    "site": "Paulo Lopes (areia marinha rasa pleistocênica com escavações)",
+    "municipio": "Paulo Lopes (região)",
+    "bacia": "Planície Costeira — Depósitos Quaternários",
+    "lat": -27.9617,
+    "lon": -48.7601,
+    "count": 1,
+    "periodos": [
+      "Pleistoceno"
+    ],
+    "taxons_amostra": [
+      "Escavações biogênicas, provavelmente de Callichirus (crustáceo decápode)"
+    ],
+    "x": 587.3,
+    "y": 435.7
+  },
+  {
+    "site": "Serra da Boa Vista (Rancho Queimado / Alfredo Wagner)",
+    "municipio": "Rancho Queimado / Alfredo Wagner (região)",
+    "bacia": "Depósitos Quaternários de turfeira (planalto e serras)",
+    "lat": -27.7,
+    "lon": -49.15,
+    "count": 1,
+    "periodos": [
+      "Quaternário (Pleistoceno–Holoceno)"
+    ],
+    "taxons_amostra": [
+      "Pólen e esporos da turfeira da Serra da Boa Vista (campos, floresta pluvial atlântica e floresta de araucária)"
+    ],
+    "x": 542.8,
+    "y": 380.4
+  },
+  {
+    "site": "Poço Grande (Guaramirim / Joinville)",
+    "municipio": "Guaramirim / Joinville (região)",
+    "bacia": "Planície Costeira — Depósitos Quaternários",
+    "lat": -26.4167,
+    "lon": -48.8667,
+    "count": 1,
+    "periodos": [
+      "Holoceno"
+    ],
+    "taxons_amostra": [
+      "Pólen e esporos do perfil de Poço Grande (planície costeira: dunas, plantas aquáticas e floresta pluvial atlântica)"
+    ],
+    "x": 575.2,
+    "y": 109.5
+  },
+  {
+    "site": "Caverna do Gigante (Urubici)",
+    "municipio": "Urubici",
+    "bacia": "Bacia do Paraná — Fm. Botucatu",
+    "lat": -27.9841,
+    "lon": -49.6777,
+    "count": 1,
+    "periodos": [
+      "Plioceno–Pleistoceno"
+    ],
+    "taxons_amostra": [
+      "Caverna do Gigante (marcas de garras de preguiça-gigante; potencial paleotoca)"
+    ],
+    "x": 482.5,
+    "y": 440.4
+  },
+  {
+    "site": "Serra do Espigão (ponto de Figueroa et al., 2016)",
+    "municipio": "Monte Castelo",
+    "bacia": "Bacia do Paraná — Fm. Rio do Rasto",
+    "lat": -26.74887,
+    "lon": -50.31538,
+    "x": 409.6,
+    "y": 179.6,
+    "count": 1,
+    "periodos": [
+      "Permiano Superior"
+    ],
+    "taxons_amostra": [
+      "Actinistia indet. (escamas isoladas — Rio do Rasto, Serra do Espigão)"
+    ]
+  },
+  {
+    "site": "Ribeirão São Pascoal (Irineópolis) — local do peixe de Richter (2002)",
+    "municipio": "Irineópolis (região)",
+    "bacia": "Bacia do Paraná — Fm. Rio do Rasto",
+    "lat": -26.253146,
+    "lon": -50.727041,
+    "x": 362.6,
+    "y": 75.0,
+    "count": 1,
+    "periodos": [
+      "Permiano Superior"
+    ],
+    "taxons_amostra": [
+      "Rubidus pascoalensis Richter, 2002"
+    ]
+  },
+  {
+    "site": "Afloramento do rio Ferreira (Treviso)",
+    "municipio": "Treviso",
+    "bacia": "Bacia do Paraná — Fm. Rio Bonito",
+    "lat": -28.5167,
+    "lon": -49.4625,
+    "x": 507.1,
+    "y": 552.9,
+    "count": 2,
+    "periodos": [
+      "Permiano Inferior"
+    ],
+    "taxons_amostra": [
+      "Cyclodendron brasiliense Lejal-Nicol & Bernardes-de-Oliveira, 1979",
+      "Brasilodendron pedroanum (Carruthers) Chaloner, Leistikow & Hill (Treviso)"
+    ]
+  },
+  {
+    "site": "Lauro Müller — horizontes de Rigby (1972a)",
+    "municipio": "Lauro Müller",
+    "bacia": "Bacia do Paraná — Fm. Rio Bonito",
+    "lat": -28.3989,
+    "lon": -49.3961,
+    "x": 514.7,
+    "y": 528.0,
+    "count": 24,
+    "periodos": [
+      "Permiano Inferior"
+    ],
+    "taxons_amostra": [
+      "Lycopodiopsis sp. (Lauro Müller)",
+      "Phyllotheca griesbachi Zeiller (Lauro Müller)",
+      "Schizoneura gondwanensis Feistmantel (Lauro Müller)",
+      "Paracalamites australis Rigby (Lauro Müller)",
+      "Sphenopteris lobifolia Morris (Lauro Müller)",
+      "Gangamopteris obovata (Carruthers) White (Lauro Müller)"
+    ]
   }
 ]
