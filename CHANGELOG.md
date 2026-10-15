@@ -274,6 +274,7 @@ Varredura só de Santa Catarina, pela procedência da coleta. Cada registro traz
   (substituiu `svg_points`/`coords`). O mapa usa `<path>` com `fill-rule="evenodd"`: traço contínuo para o contorno com base cartográfica, tracejado para o esquemático.
 - Mobile: o mapa ocupava só ≈ 160 px de largura, com os botões de zoom ao lado (defeito antigo do CSS); agora ocupa a largura toda e os botões ficam abaixo, como o comentário do CSS já previa.
 
+<<<<<<< HEAD
 ### Árvore genealógica das aves conferida nó a nó e registro a registro (mesma data, 15/10/2026)
 
 Os 30 registros da aba Avifauna e todos os nós da árvore foram conferidos contra a literatura (Nascimento & Silveira, 2024;
@@ -353,6 +354,8 @@ conferi-la; a seção quaternária do artigo não abriu por inteiro; Alvarenga (
 completa de famílias para dizer quais faltam. Páginas que recusaram a consulta: BioOne, Crossref (Navaornis, Pleistovultur), PLOS ONE
 (Angst et al., 2013) e Europe PMC (Guilherme et al., 2024).
 
+=======
+>>>>>>> 9de11a17fe817fec4f47b1fcbc7aa749d7108eb1
 ## 2026.09.14 — 08/10/2026 · tudo com fonte científica ou com "citação de mídia" explícita
 
 Banco: **228 registros** (era 227), **57 sítios**, 15 intervalos de tempo, 107 obras na bibliografia, 52 registros com DOI
