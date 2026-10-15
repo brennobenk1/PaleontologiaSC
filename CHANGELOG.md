@@ -8,7 +8,7 @@ Formato: as versões seguem `ANO.MÊS.N`.
 
 ## 2026.10.09 — 09/10/2026 · mais 71 registros, 3 retirados por procedência errada, localidades conferidas no texto integral
 
-Banco: **296 registros** (era 228), **78 sítios** (era 57), 56 municípios, 149 obras na bibliografia,
+Banco: **295 registros** (era 228), **77 sítios** (era 57), 54 municípios, 148 obras na bibliografia,
 120 registros com DOI (eram 52). Tudo continua só de Santa Catarina (critério: procedência da coleta, não o depositário).
 
 ### Registros novos (34)
@@ -274,7 +274,6 @@ Varredura só de Santa Catarina, pela procedência da coleta. Cada registro traz
   (substituiu `svg_points`/`coords`). O mapa usa `<path>` com `fill-rule="evenodd"`: traço contínuo para o contorno com base cartográfica, tracejado para o esquemático.
 - Mobile: o mapa ocupava só ≈ 160 px de largura, com os botões de zoom ao lado (defeito antigo do CSS); agora ocupa a largura toda e os botões ficam abaixo, como o comentário do CSS já previa.
 
-<<<<<<< HEAD
 ### Árvore genealógica das aves conferida nó a nó e registro a registro (mesma data, 15/10/2026)
 
 Os 30 registros da aba Avifauna e todos os nós da árvore foram conferidos contra a literatura (Nascimento & Silveira, 2024;
@@ -354,8 +353,29 @@ conferi-la; a seção quaternária do artigo não abriu por inteiro; Alvarenga (
 completa de famílias para dizer quais faltam. Páginas que recusaram a consulta: BioOne, Crossref (Navaornis, Pleistovultur), PLOS ONE
 (Angst et al., 2013) e Europe PMC (Guilherme et al., 2024).
 
-=======
->>>>>>> 9de11a17fe817fec4f47b1fcbc7aa749d7108eb1
+### Registro 69 retirado: esqueleto de exposição, não espécime (mesma data, 15/10/2026)
+- **nº 069 — *Lestodon armatus*, «plataforma continental Passo de Torres–Araranguá» (Museu Oceanográfico Univali).**
+  Por indicação do autor do site (Brenno Alef Benk), a peça que a ficha descrevia é uma **réplica** montada para
+  exposição, isto é, atração turística do museu, e não um espécime catalogado. A ficha vinha só da divulgação do
+  museu «Esqueleto de Preguiça-Gigante é atração no Museu Oceanográfico» (julho de 2022; reproduzida por Novo Momento,
+  25/07/2022): não havia número de tombo, data de coleta, método de datação nem publicação científica. Segundo essa
+  divulgação, os fósseis (30 mil anos, «Fm. Laguna-Barreira», «ao menos dois» lestodontes, redes de arrasto de camarão)
+  seriam achados originais do museu; a cópia da reportagem que consegui abrir não diz se o esqueleto exposto é réplica
+  ou original, então a informação de que é réplica vem do autor, não da reportagem.
+- **Efeitos:** saem o sítio «Plataforma continental Passo de Torres–Araranguá» e os municípios de Passo de Torres e Araranguá
+  (só apareciam neste registro; sem contar «Não especificado», o banco passa de 56 para 54 municípios), além da rubrica de
+  bacia «Plataforma Continental — Fm. Laguna-Barreira» e a referência da reportagem na bibliografia; o
+  Pleistoceno Superior fica com 2 registros (68 e 70). O endereço `#/registro/69` agora abre o aviso de registro removido
+  (como já ocorre com 16, 17, 23, 34–36, 40 e 184); o número não será reaproveitado.
+- **Instituição Univali:** a descrição dizia que o museu «custodia» megafauna da plataforma; isso só se apoiava neste registro.
+  Agora diz que o museu divulgou os achados dos registros 68 e 70 (só por reportagens) e que o local de guarda não é informado.
+- **Varredura:** procurei nos 295 registros restantes por «réplica», «escultura», «estátua», «maquete», «modelo», «atração»,
+  «monumento», «reprodução», «cópia», «fibra de vidro» e «turístico»: nenhum outro registro descreve peça de exposição. A menção
+  de atração turística em 272 (Caverna e Mirante Morro Azul) já estava marcada como informação de contexto, não como registro;
+  81 e 82 citam guias/roteiros turísticos só como fonte de localização.
+- Se algum dia houver publicação ou tombo de *Lestodon* recolhido na plataforma catarinense, ele pode entrar como registro
+  próprio, com a fonte.
+
 ## 2026.09.14 — 08/10/2026 · tudo com fonte científica ou com "citação de mídia" explícita
 
 Banco: **228 registros** (era 227), **57 sítios**, 15 intervalos de tempo, 107 obras na bibliografia, 52 registros com DOI

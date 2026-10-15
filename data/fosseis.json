@@ -1724,33 +1724,6 @@
     "tipo_fonte": "Citação de mídia"
   },
   {
-    "id": 69,
-    "periodo": "Pleistoceno Superior",
-    "era": "Cenozóico — Quaternário",
-    "periodo_ordem": 15,
-    "formacao": "Fm. Laguna-Barreira (depósitos da plataforma continental)",
-    "taxon": "Lestodon armatus Gervais, 1855",
-    "categoria": "Vertebrado — mamífero",
-    "numero_catalogo": "-",
-    "local_coleta": "Plataforma continental entre Passo de Torres e Araranguá, SC (redes de arrasto de camarão — coordenada aproximada)",
-    "site": "Plataforma continental Passo de Torres–Araranguá",
-    "municipio": "Passo de Torres / Araranguá (região)",
-    "lat": -29.28,
-    "lon": -49.55,
-    "bacia": "Plataforma Continental — Fm. Laguna-Barreira",
-    "armazenamento": "Museu Oceanográfico Univali, Balneário Piçarras, SC",
-    "descritor": "Citação de mídia — Museu Oceanográfico Univali, divulgação «Esqueleto de Preguiça-Gigante é atração no Museu Oceanográfico» (julho de 2022; página original indisponível em 08/10/2026), conforme reproduzida por Novo Momento (25/07/2022)",
-    "unidade_pesquisa": "Univali",
-    "idade_ma": "ca. 30.000 anos antes do presente, segundo a divulgação (método não informado)",
-    "observacoes": "CITAÇÃO DE MÍDIA — não foi localizada publicação científica. Segundo a divulgação, fósseis de lestodonte (Lestodon armatus) saíram de redes de arrasto de camarão na plataforma continental entre Passo de Torres e Araranguá, pertencem à 'formação Laguna-Barreira' e são 'datados de cerca de 30 mil anos antes do presente'; a equipe do museu encontrou 'ao menos dois' lestodontes, 'tratando-se do primeiro registro desta espécie no Estado'. A altura (~4,5 m) e o peso (~3 t) citados descrevem a espécie em geral, não o exemplar. O esqueleto montado está exposto no Museu Oceanográfico Univali (Balneário Piçarras). Não são informados identificador, tombo, data da coleta nem método de datação.",
-    "fontes": [
-      "https://novomomento.com.br/preguica-gigante-museu-oceanografico/",
-      "https://www.univali.br/noticias/Paginas/Esqueleto-de-Pregui%C3%A7a-Gigante-%C3%A9-atra%C3%A7%C3%A3o-no-Museu-Oceanogr%C3%A1fico.aspx (página original; indisponível em 08/10/2026)"
-    ],
-    "citacao_abnt": "[Citação de mídia — reportagem ou divulgação, não é publicação científica: Museu Oceanográfico Univali, divulgação «Esqueleto de Preguiça-Gigante é atração no Museu Oceanográfico» (julho de 2022; página original indisponível em 08/10/2026), conforme reproduzida por Novo Momento (25/07/2022)]",
-    "tipo_fonte": "Citação de mídia"
-  },
-  {
     "id": 70,
     "periodo": "Pleistoceno Superior",
     "era": "Cenozóico — Quaternário",

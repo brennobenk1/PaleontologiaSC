@@ -1991,20 +1991,13 @@
     "fim_ma": 0.0117,
     "cor": "#b5651d",
     "descricao": "Subdivisão final do Pleistoceno, com registros de megafauna sul-americana extinta (gliptodontes, toxodontes) em depósitos litorâneos e cavernas.",
-    "total_registros": 3,
+    "total_registros": 2,
     "taxons": [
       {
         "taxon": "Notiomastodon platensis (Ameghino, 1888)",
         "count": 1,
         "ids": [
           68
-        ]
-      },
-      {
-        "taxon": "Lestodon armatus Gervais, 1855",
-        "count": 1,
-        "ids": [
-          69
         ]
       },
       {

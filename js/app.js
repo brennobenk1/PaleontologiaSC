@@ -400,6 +400,7 @@ function renderCatalogTable(list){
 /* Números de registro que deixaram de existir. Um permalink já citado não
    pode simplesmente abrir um modal vazio: explica-se o que houve. */
 const REGISTROS_REMOVIDOS = {
+  69:  'Registro de Lestodon armatus (esqueleto exposto no Museu Oceanográfico Univali), retirado na versão 2026.10.09: a ficha vinha de uma divulgação do museu sobre o esqueleto montado exposto como atração, que é uma réplica, e não um espécime catalogado. Não havia número de tombo nem publicação científica. Os achados de megafauna recolhidos em redes de arrasto no litoral sul continuam nos registros nº 068 e nº 070.',
   17:  'Duplicata do registro nº 055 (Crioselache wittigi): era o mesmo dente, cadastrado antes de receber nome. Removido na versão 2026.09.12.',
   184: 'Registro de cf. Melosaurus sp., retirado na versão 2026.08 por não haver ocorrência documentada desse gênero em Santa Catarina.',
   16:  'Duplicata do registro nº 098: os mesmos dois morfotipos de peixe com encéfalo preservado (Figueroa et al., 2024). Removido na versão 2026.09.12.',
