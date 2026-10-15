@@ -32,9 +32,9 @@
     ],
     "taxons_amostra": [
       "Fauna marinha da 'Assembleia Taió' (bivalves + braquiópodes)",
-      "Astralomya sinuosa Rocha-Campos & Simões, 1993",
+      "Australomya sinuosa Rocha-Campos & Simões, 1993",
       "Schizodus occidentalis",
-      "Stutchiburia brasiliensis",
+      "Stutchburia brasiliensis",
       "Edmondia sp.",
       "Oriocrassatella itajaiensis"
     ],
@@ -1319,6 +1319,22 @@
       "Paracalamites australis Rigby (Lauro Müller)",
       "Sphenopteris lobifolia Morris (Lauro Müller)",
       "Gangamopteris obovata (Carruthers) White (Lauro Müller)"
+    ]
+  },
+  {
+    "site": "Cascalheira Perimbó (Petrolândia)",
+    "municipio": "Petrolândia",
+    "bacia": "Bacia do Paraná — Grupo Passa Dois",
+    "lat": -27.58879,
+    "lon": -49.7374,
+    "x": 475.7,
+    "y": 357.0,
+    "count": 1,
+    "periodos": [
+      "Permiano Médio (Guadalupiano)"
+    ],
+    "taxons_amostra": [
+      "Palinoflora da Zona Lueckisporites virkkiae (esporomorfos — Petrolândia)"
     ]
   }
 ]

@@ -12,8 +12,8 @@ sequencial» da versão 2026.10.09.
 
 ## 2026.10.09 — 09/10/2026 · mais 71 registros, 3 retirados por procedência errada, localidades conferidas no texto integral
 
-Banco: **295 registros** (era 228), **77 sítios** (era 57), 54 municípios, 148 obras na bibliografia,
-120 registros com DOI (eram 52). Tudo continua só de Santa Catarina (critério: procedência da coleta, não o depositário).
+Banco: **296 registros** (era 228), **78 sítios** (era 57), 55 municípios, 154 obras na bibliografia,
+131 registros com DOI (eram 52). Tudo continua só de Santa Catarina (critério: procedência da coleta, não o depositário).
 
 ### Registros novos (34)
 - **Itajaí, Ediacarano (234, 235):** *Palaeopascichnus* sp. e *Nimbia* sp., de Becker-Kerber et al. (2020).
@@ -411,6 +411,64 @@ sem ocorrência documentada ou peça de exposição; os motivos estão nas seç�
   houver buraco); continua sendo a mesma verificação, não uma nova (20 no total).
 - **Dependências conferidas.** Contagens por período, sítios, bibliografia, `data/*.json` e a planilha foram recalculados
   a partir do `dados.js`; nada no código dependia de um número de registro específico.
+
+### Verificação dos registros que já existiam (mesma data, 15/10/2026) — 1 registro novo (296)
+A pedido do autor ("prossiga com verificações sobre os registros que já existem no site"), uma rodada de conferência
+das fichas contra as fontes, sem remover nada. Os números de registro desta seção são os atuais (001–296).
+
+**Erros achados e corrigidos**
+- **Link de fonte errado em 11 fichas do Taió (28 e 77–86).** O link (academia.edu/1074810) abre Ghilardi & Simões (2000),
+  sobre coquinas da Fm. Corumbataí em São Paulo, e não o Taió. A fonte correta, que já estava no descritor, é Schmidt-Neto,
+  Netto & Tognoli (2014), *Rev. Bras. Paleontol.* 17(2):207–224, DOI 10.4072/rbp.2014.2.08. Os links foram trocados pelo DOI, o
+  campo DOI foi preenchido e o tipo da fonte passou de «Tese ou dissertação» para «Artigo em periódico» (fichas 77–86). Li a
+  lista de táxons do artigo (leitura automática do texto, duas leituras concordantes): todos os táxons dessas fichas constam
+  nela. Os DOIs com título, autoria e volume foram confirmados no OpenAlex.
+- **Grafias herdadas do resumo do artigo (77, 79, 80).** O resumo escreve «Astralomya», «Stutchiburia» e «Edimondia»; o corpo
+  do texto, a Fig. 4 e a lista de referências trazem **Australomya sinuosa** (Rocha-Campos & Simões, 1993, *An. Acad. Bras.
+  Ciênc.* 65:29–39), **Stutchburia brasiliensis** e *Edmondia*. As fichas 77 e 79 passam à grafia correta, com nota; a 80 já
+  estava certa e ganhou nota.
+- **Referências completadas.** Registro 28 (Assembleia Taió): Beurlen (1954) e Rocha-Campos (1964, 1966, 1967, 1970) e
+  Rocha-Campos & Simões (1993) foram escritos por extenso a partir da lista de referências de Schmidt-Neto et al. (2014) — as
+  obras originais não foram consultadas, e a ficha diz isso. Registro 91: Silva et al. (2023) passa a trazer os quatro
+  autores, o volume (*J. South Am. Earth Sci.* 128:104477) e o DOI 10.1016/j.jsames.2023.104477, conferidos no OpenAlex.
+
+**Notas acrescentadas (nenhum nome ou idade foi alterado)**
+- **Moluscos de Palhoça (234, 235, 236, 237, 239, 243): nomenclatura atual (WoRMS, consulta de 15/10/2026).**
+  *Chichoreus* [sic] *senegalensis* → *Siratus senegalensis* (o gênero correto é *Chicoreus*); *Nassarius vibex* → *Phrontis vibex*;
+  *Trachycardium muricatum* → *Dallocardia muricata*; *Corbula caribaea* → *Caryocorbula swiftiana*; *Lucina pectinata* →
+  *Phacoides pectinatus* (a WoRMS lista três «Lucina pectinata» de autores diferentes e o artigo não dá autoria, então a ficha não
+  afirma qual é o material); *Anomalocardia brasiliana* → *A. flexuosa*. As demais espécies da lista constam como aceitas; *Chione
+  pubera* só foi vista como aceita no GBIF (a resposta da WoRMS veio ilegível). Os nomes do banco seguem o artigo.
+- **Escala de idade do Permiano (157–159, 161–163).** O capítulo SIGEP da Coluna White usa a escala regional russa (Kunguriano,
+  Kazaniano, Tatariano), em que a Fm. Serra Alta fica no «Permiano Superior»; outro capítulo SIGEP data a Fm. Teresina, que está
+  acima da Serra Alta, do Guadalupiano inferior. Souza & Marques-Toigo (2005, *An. Acad. Bras. Ciênc.* 77(2):353–365, DOI
+  10.1590/s0001-37652005000200012) tratam a zona palinológica que inclui Palermo, Irati, Serra Alta e Teresina como do final do
+  Cisuraliano ao início do Guadalupiano. Na linha do tempo do site, portanto, a Serra Alta aparece mais jovem que a Teresina por
+  diferença de fonte, não por ordem estratigráfica; as fichas agora dizem isso. **Não mudei os rótulos de período** porque não há
+  fonte que date a Serra Alta isoladamente na escala global — fica como decisão do autor.
+- **Registro 255 (testemunho PCSC-1):** a coordenada publicada no resumo cai, na malha municipal do site, em São João do Sul; a fonte diz
+  Santa Rosa do Sul, que foi mantido.
+
+**Registro novo (296):** palinoflora da Zona *Lueckisporites virkkiae* na pedreira Cascalheira Perimbó, Petrolândia (SC-110), em
+afloramento do Grupo Passa Dois que o autor atribui à Fm. Teresina (o mapa da CPRM indica a Rio do Rasto, e o autor diz não poder
+confirmar). Fonte: Avelino (2015), trabalho de conclusão de curso da UFRGS (não é artigo revisado por pares), lido por ferramenta
+de leitura automática. Petrolândia é o 55º município do banco.
+
+**Conferido e sem alteração**
+- Nomes das 56 espécies do afloramento Bainha (SIGEP 082): todos conferem com a lista do capítulo.
+- Nota sobre o artigo dos «tectógrafos» do Itajaí (Becker-Kerber et al., 2024, *Precambrian Res.* 403:107307): já estava nas fichas
+  200–204, 225 e 226 desde 09/10/2026 (leitura do texto integral); o resumo e essa leitura concordam: o artigo trata de marcas
+  novas, em Gaspar, e não reinterpreta os fósseis descritos antes.
+- DOIs: título, autoria e volume conferidos no OpenAlex/Crossref para 34 dos 36 consultados, incluindo Paim et al. (1997), que estava
+  pendente. Os outros 2 ficaram sem confirmação por limite de requisições (entre eles, a reportagem de Rodrigues, 2025, na *Nature*).
+  Observação: o OpenAlex lista a primeira autora de Santos et al. (2024) com dois nomes diferentes; o banco segue «Santos, A.L.».
+- Coordenadas × municípios: os únicos pontos fora do município declarado são os já explicados (33 e 60, «litoral sul» genérico;
+  61 e 62, pesca de arrasto no mar; 246, sobre a divisa de polígonos; 255, acima).
+
+**Continua em aberto (7 obras incompletas)** Reed (1930); Beurlen (1957); Paula-Couto (1980; registro 33); Pigão & Mouro
+(2019; registro 91); «Nova localidade fossilífera da Fm. Rio do Rasto» (2017; registros 173–174) e a ocorrência inventariada de
+175; Nizer & Weinschütz (2015; registro 214). Busca nesta rodada: ResearchGate e ScienceDirect seguem fechados ao ambiente; um
+palpite para «Pigão & Mouro» (SICITE 2019) não se confirmou — o trabalho que apareceu é outro (Gibathe et al.).
 
 ## 2026.09.14 — 08/10/2026 · tudo com fonte científica ou com "citação de mídia" explícita
 
