@@ -106,7 +106,10 @@ checar(not pdiv, "contagem por período confere", "\n        ".join(pdiv))
 # --- 5. chaves e unicidade ---
 ids = [d["id"] for d in FOSSEIS]
 dups = [i for i, n in Counter(ids).items() if n > 1]
-checar(not dups, "ids únicos", f"duplicados: {dups}")
+buracos = sorted(set(range(1, len(ids) + 1)) - set(ids))
+checar(not dups and sorted(ids) == list(range(1, len(ids) + 1)),
+       f"ids únicos e sequenciais (001–{len(ids):03d}, sem buracos)",
+       f"duplicados: {dups}; faltando: {buracos}; acima do total: {sorted(i for i in ids if i > len(ids))}")
 tx = [t for t, n in Counter(d["taxon"] for d in FOSSEIS).items() if n > 1]
 checar(not tx, "táxons não duplicados", f"repetidos: {tx}")
 
@@ -243,7 +246,7 @@ checar(not sem_autoria, "toda referência tem autoria antes do título",
        f"descritor sem autor: {sem_autoria}")
 
 # --- 18. DOI do registro tem de estar no próprio descritor ---
-# Motivo: o registro 224 trazia o DOI da revisão de 2021 (Balistieri et al.) em vez
+# Motivo: o registro 224 (hoje nº 215; numeração anterior a 15/10/2026) trazia o DOI da revisão de 2021 (Balistieri et al.) em vez
 # do DOI do artigo que o descritor cita (Netto et al. 2007).
 _doi_fora = []
 for d in FOSSEIS:

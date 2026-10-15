@@ -397,28 +397,12 @@ function renderCatalogTable(list){
   tbody.querySelectorAll('tr').forEach(row => row.addEventListener('click', () => openFossilModal(parseInt(row.dataset.id))));
 }
 
-/* Números de registro que deixaram de existir. Um permalink já citado não
-   pode simplesmente abrir um modal vazio: explica-se o que houve. */
-const REGISTROS_REMOVIDOS = {
-  69:  'Registro de Lestodon armatus (esqueleto exposto no Museu Oceanográfico Univali), retirado na versão 2026.10.09: a ficha vinha de uma divulgação do museu sobre o esqueleto montado exposto como atração, que é uma réplica, e não um espécime catalogado. Não havia número de tombo nem publicação científica. Os achados de megafauna recolhidos em redes de arrasto no litoral sul continuam nos registros nº 068 e nº 070.',
-  17:  'Duplicata do registro nº 055 (Crioselache wittigi): era o mesmo dente, cadastrado antes de receber nome. Removido na versão 2026.09.12.',
-  184: 'Registro de cf. Melosaurus sp., retirado na versão 2026.08 por não haver ocorrência documentada desse gênero em Santa Catarina.',
-  16:  'Duplicata do registro nº 098: os mesmos dois morfotipos de peixe com encéfalo preservado (Figueroa et al., 2024). Removido na versão 2026.09.12.',
-  23:  'Duplicata do registro nº 095 (Mesogondolella spp.), apoiada apenas em reportagem. Removido na versão 2026.09.12.',
-  40:  'Registro "fitólitos e palinomorfos — Lagoa do Sombrio": a ficha misturava três fontes sem relação entre si (um estudo de fitólitos em sambaqui de São Francisco do Sul, um resumo sobre dinoflagelados da plataforma de Itajaí e a localidade de Sombrio) e nenhuma delas sustentava o conteúdo declarado. Removido na versão 2026.09.13. Os palinomorfos holocênicos do litoral sul catarinense agora têm registro próprio, com fonte (nº 233, Cancelli et al., 2012).',
-  34:  'Registro de Glossopteris riorastensis, retirado na versão 2026.10.09: na leitura do texto integral de Rohn & Rösler (1989), a espécie consta apenas de afloramentos do Paraná; o único afloramento catarinense da Fm. Rio do Rasto estudado no trabalho (AF/GP 282, BR-470, km 207,5, Otacílio Costa) traz só Glossopteris indeterminada (registro nº 261). A espécie existe na literatura (em afloramentos paranaenses); o registro saiu por estar atribuído ao estado errado.',
-  35:  'Registro de Glossopteris grafi, retirado na versão 2026.10.09: na leitura do texto integral de Rohn & Rösler (1989), a espécie consta apenas de afloramentos do Paraná; o único afloramento catarinense da Fm. Rio do Rasto estudado no trabalho (AF/GP 282, BR-470, km 207,5, Otacílio Costa) traz só Glossopteris indeterminada (registro nº 261). A espécie existe na literatura (em afloramentos paranaenses); o registro saiu por estar atribuído ao estado errado.',
-  36:  'Registro de Glossopteris cf. indica/surangei, retirado na versão 2026.10.09: na leitura do texto integral de Rohn & Rösler (1989), a espécie consta apenas de afloramentos do Paraná; o único afloramento catarinense da Fm. Rio do Rasto estudado no trabalho (AF/GP 282, BR-470, km 207,5, Otacílio Costa) traz só Glossopteris indeterminada (registro nº 261). A espécie existe na literatura (em afloramentos paranaenses); o registro saiu por estar atribuído ao estado errado.',
-};
-
 function openFossilModal(id){
   const f = dbFindFossil(id);
   if(!f){
-    const motivo = REGISTROS_REMOVIDOS[id];
     document.getElementById('modalBody').innerHTML = `
-      <h3 id="modalTitle">Registro nº ${String(id).padStart(3,'0')} ${motivo ? 'removido' : 'não encontrado'}</h3>
-      <p>${motivo || 'Não existe registro com este número no catálogo.'}</p>
-      <p class="muted">Os números de registro não são reaproveitados.</p>`;
+      <h3 id="modalTitle">Registro nº ${String(id).padStart(3,'0')} não encontrado</h3>
+      <p>Não existe registro com este número no catálogo (os números vão de 001 a ${String(DB_FOSSEIS.length).padStart(3,'0')}).</p>`;
     document.getElementById('modalOverlay').classList.add('open');
     focarModal();
     return;

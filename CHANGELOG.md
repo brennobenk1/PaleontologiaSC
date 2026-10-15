@@ -6,6 +6,10 @@ saber o que havia nele naquele momento.
 
 Formato: as versões seguem `ANO.MÊS.N`.
 
+**Atenção — numeração.** A partir da versão 2026.10.09 (15/10/2026) os registros são numerados de 001 até o total, sem
+buracos. Todas as seções ANTERIORES a esta citam os números da época; a tabela de conversão está na seção «Numeração
+sequencial» da versão 2026.10.09.
+
 ## 2026.10.09 — 09/10/2026 · mais 71 registros, 3 retirados por procedência errada, localidades conferidas no texto integral
 
 Banco: **295 registros** (era 228), **77 sítios** (era 57), 54 municípios, 148 obras na bibliografia,
@@ -365,8 +369,8 @@ completa de famílias para dizer quais faltam. Páginas que recusaram a consulta
 - **Efeitos:** saem o sítio «Plataforma continental Passo de Torres–Araranguá» e os municípios de Passo de Torres e Araranguá
   (só apareciam neste registro; sem contar «Não especificado», o banco passa de 56 para 54 municípios), além da rubrica de
   bacia «Plataforma Continental — Fm. Laguna-Barreira» e a referência da reportagem na bibliografia; o
-  Pleistoceno Superior fica com 2 registros (68 e 70). O endereço `#/registro/69` agora abre o aviso de registro removido
-  (como já ocorre com 16, 17, 23, 34–36, 40 e 184); o número não será reaproveitado.
+  Pleistoceno Superior fica com 2 registros (na numeração antiga, 68 e 70; hoje 61 e 62). A numeração foi em seguida refeita
+  sem buracos (seção abaixo), então `#/registro/69` passa a abrir outro registro.
 - **Instituição Univali:** a descrição dizia que o museu «custodia» megafauna da plataforma; isso só se apoiava neste registro.
   Agora diz que o museu divulgou os achados dos registros 68 e 70 (só por reportagens) e que o local de guarda não é informado.
 - **Varredura:** procurei nos 295 registros restantes por «réplica», «escultura», «estátua», «maquete», «modelo», «atração»,
@@ -375,6 +379,38 @@ completa de famílias para dizer quais faltam. Páginas que recusaram a consulta
   81 e 82 citam guias/roteiros turísticos só como fonte de localização.
 - Se algum dia houver publicação ou tombo de *Lestodon* recolhido na plataforma catarinense, ele pode entrar como registro
   próprio, com a fonte.
+
+### Numeração sequencial: 001 a 295, sem buracos (mesma data, 15/10/2026)
+Por decisão do autor, os registros agora vão de 001 até o total. Antes, números de fichas removidas ficavam vagos
+(16, 17, 23, 34, 35, 36, 40, 69 e 184) e a numeração terminava em 304 com 295 registros. A ordem relativa foi mantida; só
+os números mudaram.
+
+**Conversão (número antigo → número novo).** Cada faixa abaixo desloca o número por uma constante:
+
+| Número antigo | Novo número | Deslocamento |
+|---|---|---|
+| 1–15 | 1–15 | 0 |
+| 18–22 | 16–20 | −2 |
+| 24–33 | 21–30 | −3 |
+| 37–39 | 31–33 | −6 |
+| 41–68 | 34–61 | −7 |
+| 70–183 | 62–175 | −8 |
+| 185–304 | 176–295 | −9 |
+
+Os nove números 16, 17, 23, 34, 35, 36, 40, 69 e 184 não existem mais (fichas removidas: duplicatas, procedência errada,
+sem ocorrência documentada ou peça de exposição; os motivos estão nas seções de cada versão).
+
+- **Textos internos reescritos.** 93 menções do tipo «registro nº 231» dentro das observações (e 3 nas fichas de
+  instituições) foram convertidas para o número novo; conferi que cada menção continua apontando para o mesmo
+  táxon/sítio. Cinco menções a fichas JÁ REMOVIDAS (antigas 17, 23, 16, 40 e 34–36), que não têm número novo, foram
+  reescritas com o título da ficha e o número antigo explicado («nº 017 na numeração anterior a 15/10/2026»).
+- **Links antigos.** Qualquer `#/registro/N` publicado antes desta versão com N ≥ 18 passa a abrir outro registro (use a
+  tabela acima para converter). O mapa de «registros removidos» que explicava números vagos saiu do site, porque não
+  há mais números vagos; um número fora de 001–295 abre «registro não encontrado».
+- **Regra de validação.** A verificação «ids únicos» passou a exigir também ids sequenciais de 1 até o total (reprova se
+  houver buraco); continua sendo a mesma verificação, não uma nova (20 no total).
+- **Dependências conferidas.** Contagens por período, sítios, bibliografia, `data/*.json` e a planilha foram recalculados
+  a partir do `dados.js`; nada no código dependia de um número de registro específico.
 
 ## 2026.09.14 — 08/10/2026 · tudo com fonte científica ou com "citação de mídia" explícita
 

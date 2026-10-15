@@ -8,7 +8,7 @@ O site mostra o `descritor` (a referência de cada registro), mas a planilha
 .xlsx e data/fosseis.json exportam também `citacao_abnt`. Em 2026.09 uma
 auditoria achou 37 de 99 registros cuja citação ABNT era de OUTRO trabalho
 (ex.: o registro das larvas de tricóptero levava a citação de uma barata
-fóssil; o registro 40 misturava três fontes). Como ninguém vê esse campo no
+fóssil; o antigo registro 40, já removido, misturava três fontes). Como ninguém vê esse campo no
 site, o erro passou despercebido.
 
 REGRA: o par (sobrenome do 1º autor, ano) da citação ABNT precisa existir
