@@ -560,7 +560,7 @@ async function initMapa(){
      que estava embaixo volta a receber o clique. Só o desenho muda — os
      dados e os sítios não são tocados. */
   const camadas = [
-    ...DB_BACIAS.map((b, i) => ({ id: 'bacia-' + i, nome: b.nome, swatch: `background:${b.cor};opacity:.85` })),
+    ...DB_BACIAS.map((b, i) => ({ id: 'bacia-' + i, nome: b.nome, nota: b.contorno_tipo === 'sgb' ? '' : 'contorno esquemático', swatch: `background:${b.cor};opacity:.85` })),
     { id: 'sitios', nome: 'Sítio de coleta (tamanho = nº de registros)', swatch: 'background:#a85f28;border-radius:50%' },
     { id: 'municipios', nome: 'Malha municipal (municípios com registro em destaque)', swatch: 'background:rgba(168,95,40,0.30);border:1px solid #1f4e5f' }
   ];
@@ -570,12 +570,15 @@ async function initMapa(){
   const legendList = document.getElementById('bacenLegend');
   legendList.innerHTML = camadas.map(l =>
     `<li><button type="button" class="legend-toggle" data-camada="${l.id}" aria-pressed="true" title="Clique para ocultar ou mostrar esta camada" aria-label="Exibir camada: ${l.nome.replace(/"/g, '&quot;')}">`
-    + `<span class="legend-swatch" style="${l.swatch}"></span><span class="legend-nome">${l.nome}</span>${ICONE_OLHO}</button></li>`
+    + `<span class="legend-swatch" style="${l.swatch}"></span><span class="legend-nome">${l.nome}${l.nota ? `<small class="legend-nota">${l.nota}</small>` : ''}</span>${ICONE_OLHO}</button></li>`
   ).join('');
 
-  const polygons = DB_BACIAS.map((b, i) =>
-    `<g data-camada="bacia-${i}"><polygon points="${b.svg_points}" fill="${b.cor}" fill-opacity="0.22" stroke="${b.cor}" stroke-width="1.5" stroke-dasharray="4,3" data-bacia="${encodeURIComponent(b.nome)}"></polygon></g>`
-  ).join('');
+  // Contorno com base cartográfica (SGB) => traço contínuo; esquemático (desenhado à mão) => tracejado.
+  // fill-rule evenodd para respeitar eventuais buracos do contorno.
+  const polygons = DB_BACIAS.map((b, i) => {
+    const tracejado = b.contorno_tipo === 'sgb' ? '' : ' stroke-dasharray="4,3"';
+    return `<g data-camada="bacia-${i}"><path d="${b.svg_path}" fill="${b.cor}" fill-opacity="0.22" fill-rule="evenodd" stroke="${b.cor}" stroke-width="1.5" stroke-linejoin="round"${tracejado} data-bacia="${encodeURIComponent(b.nome)}"></path></g>`;
+  }).join('');
 
   // maiores primeiro => desenhados por baixo, para que sítios pequenos
   // sobrepostos por um vizinho grande continuem visíveis e clicáveis
@@ -730,7 +733,7 @@ async function initMapa(){
       dot.classList.add('site-dot-active');
     });
   });
-  svgEl.querySelectorAll('polygon').forEach(poly => {
+  svgEl.querySelectorAll('[data-bacia]').forEach(poly => {
     poly.addEventListener('click', () => {
       const nome = decodeURIComponent(poly.dataset.bacia);
       const b = DB_BACIAS.find(x => x.nome === nome);
@@ -870,7 +873,8 @@ function showBaciaDetail(b){
   const el = document.getElementById('mapSiteDetail');
   el.innerHTML = `
     <h5>${b.nome}</h5>
-    <p style="margin:0;font-size:0.88rem;">${b.descricao}</p>
+    <p style="margin:0 0 0.5rem;font-size:0.88rem;">${b.descricao}</p>
+    ${b.contorno ? `<p class="muted" style="margin:0;font-size:0.8rem;"><b>Como foi desenhado:</b> ${b.contorno}</p>` : ''}
   `;
 }
 
@@ -1101,7 +1105,7 @@ function initAvifauna(){
   const nMesozoicos = DB_AVIFAUNA.filter(t => aviEra(t.periodo) === 'Mesozoico').length;
   document.getElementById('aviStats').innerHTML = `
     <div class="stat-card"><span class="stat-num">${DB_RESUMO_AVIFAUNA.total_registros_literatura}</span><span class="stat-label">Registros na literatura</span></div>
-    <div class="stat-card"><span class="stat-num">${DB_RESUMO_AVIFAUNA.taxons_total_catalogo || DB_AVIFAUNA.length}</span><span class="stat-label">Táxons extintos catalogados</span></div>
+    <div class="stat-card"><span class="stat-num">${DB_RESUMO_AVIFAUNA.taxons_total_catalogo || DB_AVIFAUNA.length}</span><span class="stat-label">Registros de aves extintas catalogados</span></div>
     <div class="stat-card"><span class="stat-num">${nMesozoicos}</span><span class="stat-label">Táxons mesozoicos (Cretáceo)</span></div>
     <div class="stat-card"><span class="stat-num">${nEstadosComRegistro}</span><span class="stat-label">Estados com registro</span></div>
   `;
@@ -1463,7 +1467,7 @@ function renderTreeSVG(){
     const r = isFossil ? 5 : (n.type === 'familia' ? 4.5 : 6);
     const labelClass = 'tree-label tree-label-' + n.type + (matched ? ' tree-label-match' : '') + (n.extinta || n.viva === false ? ' tree-label-extinct' : '');
     const marker = hasHiddenChildren && n._collapsed ? `<text class="tree-toggle-glyph" x="${n._x}" y="${n._y+1}" text-anchor="middle" dominant-baseline="middle">+</text>` : '';
-    const daggerPrefix = isFossil ? '&#8224; ' : ((n.type==='ordem' && n.extinta) || (n.type==='familia' && n.viva===false) ? '&#8224; ' : '');
+    const daggerPrefix = isFossil ? '&#8224; ' : (((n.type==='ordem' || n.type==='clado') && n.extinta) || (n.type==='familia' && n.viva===false) ? '&#8224; ' : '');
     return `
       <g class="tree-node tree-node-${n.type}${matched?' tree-node-match':''}" data-id="${n.id}" transform="translate(${n._x},${n._y})" tabindex="0">
         ${n.nota ? `<title>${n.nota.replace(/&/g,'&amp;').replace(/</g,'&lt;')}</title>` : ''}
@@ -1556,10 +1560,13 @@ function initArvore(){
   // números que estavam fixos no HTML ("24 táxons") e ficaram defasados
   // quando o catálogo cresceu para 27
   const n = DB_AVIFAUNA.length;
-  const a = document.getElementById('arvNumFosseis'); if(a) a.textContent = n;
-  const v = document.getElementById('aviNumTaxons');  if(v) v.textContent = n;
-
   const stats = treeCountStats();
+  // a árvore só recebe os registros identificados até um ramo; os "Aves indet."
+  // de afinidade indeterminada ficam de fora e aparecem só no catálogo
+  const a = document.getElementById('arvNumFosseis'); if(a) a.textContent = stats.fosseis;
+  const v = document.getElementById('aviNumTaxons');  if(v) v.textContent = n;
+  const fora = document.getElementById('arvNumForaArvore'); if(fora) fora.textContent = n - stats.fosseis;
+
   document.getElementById('treeStats').innerHTML = `
     <div class="stat-card"><span class="stat-num">${stats.ordens}</span><span class="stat-label">Ordens</span></div>
     <div class="stat-card"><span class="stat-num">${stats.familiasVivas}</span><span class="stat-label">Famílias vivas listadas</span></div>

@@ -38,7 +38,7 @@ data/
   periodos.json           agrupamento por período — gerado da planilha
   sitios_mapa.json         agrupamento por sítio de coleta — gerado da planilha
   instituicoes.json        dados de contato das instituições — mantido manualmente
-  bacias.json              polígonos das bacias geológicas — mantido manualmente
+  bacias.json              contornos das bacias do mapa — gerado por scripts/gerar-bacias.py (exportado de js/dados.js)
 vendor/leaflet/          biblioteca Leaflet (mapa), incluída localmente
 img/logo.png             logo do projeto
 gerar_dados.py           script para regenerar data/*.json a partir do .xlsx
@@ -60,9 +60,11 @@ O site lê esses arquivos diretamente — não há necessidade de tocar no HTML/
 mapa de coordenadas, o script avisa no terminal quais precisam ser cadastradas (latitude,
 longitude e bacia) no dicionário `SITE_MAP`, no topo do `gerar_dados.py`.
 
-Os arquivos `data/instituicoes.json` (contatos) e `data/bacias.json` (polígonos das
-bacias no mapa) não vêm da planilha — são mantidos manualmente, editando o JSON
-diretamente.
+O arquivo `data/instituicoes.json` (contatos) não vem da planilha — é mantido manualmente.
+Os contornos das bacias no mapa (`DB_BACIAS` em `js/dados.js`, exportado para `data/bacias.json`)
+também não vêm da planilha: o da Bacia do Paraná é gerado por `scripts/gerar-bacias.py` a partir
+dos polígonos do mapa geológico do SGB guardados em `data/fonte-geometria/`; os de Itajaí e da
+Plataforma/Planície Costeira são esquemáticos (marcados `contorno_tipo: "esquematico"`).
 
 ## Abas do site
 

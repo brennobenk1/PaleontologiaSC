@@ -253,6 +253,106 @@ Varredura só de Santa Catarina, pela procedência da coleta. Cada registro traz
 - Funciona por mouse, toque e teclado (Enter/Espaço); o estado é exposto por `aria-pressed`. Só muda o desenho: dados, sítios e contagens não foram tocados.
 - Teste de navegador (`regr.py`) ganhou verificações das cinco camadas, do olho riscado e do retorno ao estado inicial.
 
+### Mapa: contorno da Bacia do Paraná refeito a partir do mapa geológico do SGB (mesma data, 14/10/2026)
+- O polígono da Bacia do Paraná era um desenho genérico de 12 vértices feito à mão. Foi substituído por um contorno **derivado do Mapa Geológico do Estado de Santa Catarina,
+  1:500.000 (Serviço Geológico do Brasil — SGB/CPRM, 2020; GeoSGB, camada «litoestratigrafia_estados» nº 16)**: união dos afloramentos das unidades paleozoicas da bacia —
+  Fm. Campo Mourão, Fm. Taciba (Gr. Itararé), Fm. Rio Bonito e Fm. Palermo (Gr. Guatá), Fm. Irati, Fm. Serra Alta, Fm. Teresina e Fm. Rio do Rasto (Gr. Passa Dois).
+  O nome da camada na legenda passou a refletir isso: «Grupos Itararé, Guatá e Passa Dois (Carbonífero–Permiano)».
+- **Como foi feito:** os 27 polígonos (todos com área ≥ 0,004 grau², ≈ 45 km², mais alguns fragmentos menores) foram lidos do serviço do SGB e guardados em
+  `data/fonte-geometria/sgb_parana_paleozoico.json` (com o OBJECTID e a área oficial de cada um). O script `scripts/gerar-bacias.py` une os anéis externos, fecha
+  reentrâncias de até ≈ 2 km, descarta partes menores que ≈ 60 km², simplifica (≈ 1,3 km) e converte para a projeção do mapa. Resultado: 1 polígono de 239 vértices.
+- **Conferência:** a área de cada polígono transcrito foi comparada com a área oficial do SGB (SHAPE.AREA); nos polígonos grandes a diferença ficou entre ≈ 1,5% e 5%.
+  Dos 45 sítios com registro paleozoico da Bacia do Paraná, **42 caem dentro do contorno**. Os 3 que ficam fora: Poço Preto (Irineópolis), a ≈ 2 km da borda;
+  Afloramento de Rio dos Cedros, a ≈ 5 km; e Serra do Espigão (Santa Cecília), a ≈ 18 km. Pode ser efeito da generalização do contorno ou da imprecisão da coordenada
+  (que é da localidade, não do afloramento); não foi investigado, e a Serra do Espigão é a que mais merece conferência.
+- **Limites, declarados no próprio mapa (clique na bacia):** não é o limite formal da bacia; não inclui a Fm. Botucatu nem o Gr. Serra Geral (a bacia continua sob eles, a oeste);
+  fragmentos menores que ≈ 60 km² foram omitidos.
+- **Itajaí e Plataforma/Planície Costeira continuam esquemáticos** (desenho à mão, sem base cartográfica). No mapa do SGB o Grupo Itajaí aparece em centenas de fragmentos e o
+  Quaternário em mais de 600 polígonos; não deu para obtê-los com precisão. Por isso são desenhados **tracejados**, a legenda traz «contorno esquemático» e o clique explica.
+  Quando o acesso ao GeoSGB estiver liberado, basta apontar `scripts/gerar-bacias.py` para os polígonos dessas unidades.
+- Esquema de `DB_BACIAS` (e de `data/bacias.json`): `nome`, `cor`, `descricao`, `contorno_tipo` («sgb» ou «esquematico»), `contorno` (texto), `aneis` ([lat, lon]) e `svg_path`
+  (substituiu `svg_points`/`coords`). O mapa usa `<path>` com `fill-rule="evenodd"`: traço contínuo para o contorno com base cartográfica, tracejado para o esquemático.
+- Mobile: o mapa ocupava só ≈ 160 px de largura, com os botões de zoom ao lado (defeito antigo do CSS); agora ocupa a largura toda e os botões ficam abaixo, como o comentário do CSS já previa.
+
+### Árvore genealógica das aves conferida nó a nó e registro a registro (mesma data, 15/10/2026)
+
+Os 30 registros da aba Avifauna e todos os nós da árvore foram conferidos contra a literatura (Nascimento & Silveira, 2024;
+Nascimento, 2022; os artigos de descrição; Jarvis et al., 2014; Prum et al., 2015; CBRO, 2021). O que estava errado foi
+corrigido e cada ficha passou a dizer o que as fontes dizem e o que não foi possível verificar.
+
+**Classificação dos fósseis (com o histórico de mudanças, como pede a regra do projeto)**
+- ***Cratoavis***: o «Avisauridae?» não tem sustentação nas fontes e saiu; é classificado em Euenantiornithes (Nascimento &
+  Silveira, 2024), sem posição resolvida dentro do grupo. A descrição original é Braz. J. Geol. 45(2):161–171; o artigo da
+  *Nature Communications* descreve as penas do mesmo espécime.
+- ***Kaririavis***: «Euornithes» não consta no artigo; a posição entre os ornituromorfos é dada como incerta pelos autores. «Mais
+  antigo fóssil de ave da América do Sul» não é dito pelos autores (*Cratoavis* tem a mesma idade); fica «mais antigo ornituromorfo
+  do Gondwana». Guarda corrigida: UFRJ-DG 116 Av (constava a UFC).
+- ***Eutreptodactylus***: a reclassificação para **Gracilitarsidae / ?Piciformes** (rodada de 09/2026) foi **revertida** para
+  Cuculidae. O corpo da dissertação de Nascimento (2022) e a revisão de 2024 mantêm Cuculidae («provavelmente de uma nova
+  subfamília»); Mayr et al. (2011) não citam Gracilitarsidae e o descrevem como ave minúscula (semi)zigodáctila. Só o *resumo* da
+  dissertação lista uma ocorrência de Gracilitarsidae no Brasil, sem identificá-la; a frase «Mayr (2005) sugere ?Piciformes» não pôde
+  ser verificada. Saíram as afirmações «seis famílias globalmente extintas» e «única voadora» de Itaboraí. A ressalva do holótipo
+  perdido continua.
+- ***Diogenornis***: Opisthodactylidae (Alvarenga, 1983) → grupo-tronco de Rheidae (Mayr, 2009) → próximo de Casuariidae (Alvarenga,
+  2010; Agnolín, 2016). A posição ficou como incerta, direto em Palaeognathae.
+- ***Paleopsilopterus*** e ***Eschatornis***: o nó «Psilopteridae» separado de Phorusrhacidae saiu; os dois ficam em Phorusrhacidae,
+  com o histórico na nota.
+- ***Itaboravis***: «Idiornithidae» passa a «?Cariamae» (posição tentativa, por afinidade com *Elaphrocnemus*, que é do grupo
+  Idiornithidae; o úmero lembra Tinamidae — Mayr et al., 2011).
+- ***Taubacrex***: histórico registrado — Rallidae (Alvarenga, 1988) → Quercymegapodiidae (Mourer-Chauviré, 2000).
+- ***Macranhinga paranensis***: a frase «*Anhinga fraileyi* é sinônimo de *M. paranensis* (Diederle, 2017)» **não foi verificada**; o
+  resumo de Diederle (2017) diz só que o holótipo foi reexaminado e que há nova proposta, e a revisão de 2024 trata o material gigante
+  do Acre como *M. ranzii* e *Macranhinga* sp. Registro mantido como identificação provisória, com a sequência de nomes na ficha.
+- ***Pelagornis longirostris***: o crânio-tipo (descrito por Spulski, 1910, como *Odontopteryx longirostris*; *Pseudodontornis* por
+  Lambrecht, 1930) foi comprado em 1905 de um marinheiro brasileiro, sem local nem idade — «possivelmente do Brasil, mas longe de ser
+  certo» (Hopson, 1964). A dissertação de 2022 também chama a atribuição de problemática. Mantido, com essa ressalva; o grupo
+  (Odontopterygiformes) saiu de Galloanserae e ficou como ramo próprio de Neognathae (relações debatidas: Bourdon, 2005; Mayr et al., 2019).
+- ***Rhea fossilis***: o autor era «Ameghino, 1888»; é **Moreno & Mercerat, 1891** (espécie da Argentina). A ocorrência brasileira é citada
+  na dissertação sem localidade; o «Pleistoceno» que constava não tinha fonte e virou «idade não informada».
+- ***Wingegyps***: o holótipo é da Gruta dos Brejões (BA), não do «Carste de Lagoa Santa» (o material de Lund da região de Lagoa Santa
+  é referido à parte). ***Neochen pugil***: saiu a frase «primeiro “dinossauro” nomeado para o Brasil» (sem sentido e sem fonte) e o local
+  passa a «região de Lagoa Santa». ***Ciconia lydekkeri***: saiu «também registrada em outras partes da América do Sul» (sem fonte).
+  ***Pleistovultur***: as porcentagens de tamanho (25% e 11%) não foram encontradas na fonte e viraram comparação qualitativa.
+
+**Datas**
+- *Navaornis* e o bonebed de Presidente Prudente: **Santoniano superior – Campaniano inferior (~85–75 Ma)**, como diz o artigo da
+  *Nature* (constava Campaniano–Maastrichtiano, ~80–71,7 Ma). Holótipo MPM-200-1, Museu de Paleontologia de Marília.
+- Itaboraí (6 registros): constava «Paleoceno Médio – Eoceno Inferior, ~56–53 Ma», que não é a idade de nenhuma fonte. Agora **Eoceno
+  Inferior (~53–50 Ma)**, de Nascimento & Silveira (2024), com a ficha registrando que Mayr et al. (2011) davam Paleoceno Superior
+  (~59–57 Ma).
+- Campos com texto duplicado («Pleistoceno Pleistoceno», «Neógeno (idade incerta) Neógeno» etc.) refeitos.
+
+**Referências e números**
+- A citação do CBRO no rodapé da árvore dizia *Ornithology Research* 29:269–313; é **29(2):94–105** (Pacheco et al., 2021, DOI
+  10.1007/s43388-021-00058-x), com a versão em português no Zenodo.
+- *Taubatornis* tinha copiado o volume de *Wingegyps*; é Proc. Biol. Soc. Washington 115(4):701–705. *Hoazinavis* dizia «ver Mayr et al.
+  2011b»; é Naturwissenschaften 98(11):961–966. Referências de *Itaboravis* e dos dois «Aves indet.» de Itaboraí completadas.
+- Registros na literatura: 669 → **670** (Nascimento & Silveira, 2024). Gêneros extintos descritos: 19 → **17** (15 do artigo + *Navaornis* +
+  *Eschatornis*); espécies: 22 (20 + 2). A nota que citava «16 gêneros / 20 espécies» do artigo estava errada.
+- Nomes populares: «biguá» e «biáguar» para Anhingidae → **biguatinga**; «cigana-do-banhado» → **cigana**.
+
+**Estrutura da árvore**
+- *Enantiornithes* e *Ornithuromorpha* eram «ordens» (são clados); *Passeriformes* aparecia como duas ordens (Tyranni e Passeri). Agora há
+  uma ordem Passeriformes com dois clados: o painel mostra **34 ordens** (33 vivas, o mesmo número do CBRO, mais Odontopterygiformes).
+- Strisores: «Steatornithiformes / Caprimulgiformes» desdobrado em Steatornithiformes, Nyctibiiformes e Caprimulgiformes; Galbulidae e
+  Bucconidae passam a **Galbuliformes** (divisão do SACC).
+- Telluraves deixou de ser uma lista plana: Accipitrimorphae, Strigiformes, Coraciimorphae e Australaves, com nota de que a ordem de
+  ramificação entre eles varia nos estudos genômicos. A nota do hoatzin passou a citar também Prum et al. (2015, Inopinaves).
+- Texto da página: saiu «a mesma estrutura de referência citada na plataforma *Ornitologia Avançada de Santa Catarina*» (não verificável e
+  a árvore mudou); o número de fósseis na árvore é 28, e os 2 «Aves indet.» de Itaboraí ficam só no catálogo (dito na página).
+
+**Conferido e sem alteração:** Mirandornithes, Columbaves (Prum et al., 2015), Gruimorphae (Jarvis et al., 2014; Kuhl et al., 2020),
+Phaethoquornithes/Aequornithes, Oceanitidae como família nova do CBRO (2021), a ausência de Pelecanoididae (incorporada a Procellariidae
+pelo CBRO), as 33 ordens e 102 famílias do CBRO; *Brasilogyps* («mais antigo Cathartidae da América do Sul»), *Chaunoides*, *Hoazinavis*
+(autoria e ano), *Anhinga minuta*, *Macranhinga ranzii*, a referência de *Wingegyps* e a de *Pleistovultur*; autoria de *Neochen pugil* e
+*Ciconia lydekkeri*; dados de *Eschatornis* e de *Paraphysornis* (inclusive o histórico *Physornis* → *Paraphysornis*, 1993).
+
+**Não verificado (declarado):** a tabela «registros por UF» soma 410, não 670, e não consegui abrir a tabela do artigo de 2024 para
+conferi-la; a seção quaternária do artigo não abriu por inteiro; Alvarenga (2010) e Agnolín (2016) para *Diogenornis* e Diederle (2017) para
+*Macranhinga* foram conferidos só por resumo ou por fonte secundária; a árvore traz 94 das 102 famílias do CBRO e não consegui a lista
+completa de famílias para dizer quais faltam. Páginas que recusaram a consulta: BioOne, Crossref (Navaornis, Pleistovultur), PLOS ONE
+(Angst et al., 2013) e Europe PMC (Guilherme et al., 2024).
+
 ## 2026.09.14 — 08/10/2026 · tudo com fonte científica ou com "citação de mídia" explícita
 
 Banco: **228 registros** (era 227), **57 sítios**, 15 intervalos de tempo, 107 obras na bibliografia, 52 registros com DOI
