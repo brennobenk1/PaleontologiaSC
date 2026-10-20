@@ -92,8 +92,81 @@ const __periodoCorCache = {};
 function periodoCor(nomePeriodo){
   if(__periodoCorCache[nomePeriodo] !== undefined) return __periodoCorCache[nomePeriodo];
   const p = DB_PERIODOS.find(x => x.nome === nomePeriodo);
-  return (__periodoCorCache[nomePeriodo] = p ? p.cor : '#8a9b6f');
+  return (__periodoCorCache[nomePeriodo] = p ? corPeriodo(p) : '#8a9b6f');
 }
+
+/* ===========================================================
+   CORES CRONOESTRATIGRÁFICAS (ICS)
+   -----------------------------------------------------------
+   Toda cor de período ou de era do site passa por uma variável
+   CSS (--pc-<ordem> para períodos, --ec-<chave> para eras), em
+   vez de um valor fixo no HTML gerado. Alternar entre a paleta
+   do site e a da Tabela Cronoestratigráfica Internacional é só
+   reescrever as variáveis: nada precisa ser redesenhado.
+
+   As cores da paleta ICS foram amostradas, pixel a pixel, na
+   «Tabela Cronoestratigráfica Internacional» v2022/02 (Cohen
+   et al., ICS/CGMW; versão em português do IGCP/UNESCO e LNEG)
+   enviada pelo autor — a cor da célula correspondente a cada
+   unidade (série/época, ou sistema/período quando o nome do
+   intervalo é o do sistema). REGRA para intervalos que cruzam
+   duas unidades: vale a cor da mais antiga.
+   =========================================================== */
+const COR_ICS_PERIODO = {
+  'Ediacarano (Neoproterozóico)':                          '#FCDA7C', // Ediacarano (sistema/período)
+  'Ediacarano / Cambriano':                                '#FCDA7C', // cruza Ediacarano e Cambriano → o mais antigo
+  'Carbonífero Superior':                                  '#86B4C3', // Pensilvaniano (= Carbonífero Superior)
+  'Carbonífero Superior – Permiano Inferior (limite)':     '#86B4C3', // cruza Carbonífero e Permiano → o mais antigo
+  'Carbonífero – Permiano Inferior':                       '#67A3AC', // cruza Carbonífero e Permiano → Carbonífero (sistema)
+  'Permiano Inferior':                                     '#DE7155', // Cisuraliano
+  'Permiano Médio (Guadalupiano)':                         '#EE856A', // Guadalupiano
+  'Permiano Superior':                                     '#F2B6A3', // Lopingiano
+  'Jurássico (segundo a reportagem)':                      '#00AADC', // Jurássico (sistema)
+  'Cretáceo Inferior':                                     '#94BF66', // Cretáceo Inferior
+  'Plioceno–Pleistoceno':                                  '#FEF8AB', // cruza Plioceno e Pleistoceno → Plioceno
+  'Pleistoceno':                                           '#FEEEA9', // Pleistoceno
+  'Pleistoceno Superior':                                  '#FEF2E1', // Pleistoceno Superior
+  'Quaternário (Pleistoceno–Holoceno)':                    '#FBF690', // Quaternário (sistema)
+  'Holoceno':                                              '#FAEBD0'  // Holoceno
+};
+/* eras do gráfico de barras da página inicial (campo «era» do registro) */
+const COR_ICS_ERA = {
+  'Neoproterozóico / Cambriano': '#FCDA7C',   // Ediacarano (12 dos 13 registros)
+  'Paleozóico — Carbonífero':    '#67A3AC',   // Carbonífero (sistema)
+  'Paleozóico — Permiano':       '#E05E39',   // Pérmico (sistema)
+  'Mesozóico':                   '#5DBDE2',   // Mesozoico (eratema)
+  'Cenozóico — Quaternário':     '#FBF690'    // Quaternário (sistema)
+};
+const COR_CLASSICA_ERA = {
+  'Neoproterozóico / Cambriano':'#1f4e5f','Paleozóico — Carbonífero':'#3d6b52','Paleozóico — Permiano':'#7fa66b',
+  'Mesozóico':'#c9a23a','Cenozóico — Quaternário':'#b5651d'
+};
+const CHAVE_ERA = {
+  'Neoproterozóico / Cambriano':'neo','Paleozóico — Carbonífero':'carb','Paleozóico — Permiano':'perm',
+  'Mesozóico':'meso','Cenozóico — Quaternário':'ceno'
+};
+/* avifauna: táxons mesozoicos são do Cretáceo; os demais, cenozoicos */
+const COR_ICS_AVI = { meso: '#88B859', ceno: '#F5EB0C' };      // Cretáceo (sistema) · Cenozoico (eratema)
+const COR_CLASSICA_AVI = { meso: '#1f4e5f', ceno: '#b5651d' };
+
+function corPeriodo(p){ return 'var(--pc-' + p.ordem + ')'; }
+function corEra(e){ return 'var(--ec-' + (CHAVE_ERA[e] || 'ceno') + ')'; }
+function coresIcsAtivas(){ return document.documentElement.dataset.cores === 'ics'; }
+
+/* grava as variáveis conforme o modo atual (clássico do site ou ICS) */
+function aplicarPaletaPeriodos(){
+  const ics = coresIcsAtivas();
+  const st = document.documentElement.style;
+  DB_PERIODOS.forEach(p => {
+    const v = ics && COR_ICS_PERIODO[p.nome] ? COR_ICS_PERIODO[p.nome] : p.cor;
+    st.setProperty('--pc-' + p.ordem, v);
+  });
+  Object.keys(CHAVE_ERA).forEach(e => {
+    st.setProperty('--ec-' + CHAVE_ERA[e], (ics ? COR_ICS_ERA : COR_CLASSICA_ERA)[e]);
+  });
+  ['meso','ceno'].forEach(k => st.setProperty('--ea-' + k, (ics ? COR_ICS_AVI : COR_CLASSICA_AVI)[k]));
+}
+aplicarPaletaPeriodos();   // antes da primeira pintura: dados.js já foi avaliado (ambos com defer, em ordem)
 
 /* ===========================================================
    NAVEGAÇÃO (SPA entre abas)
@@ -176,7 +249,7 @@ function initHome(){
   const totalRegistros = orderedPeriods.reduce((s,p)=>s+p.total_registros,0);
   const coreBands = orderedPeriods.map(p => {
     const h = Math.max(3, (p.total_registros/totalRegistros*100)).toFixed(2);
-    return `<span class="core-band" style="height:${h}%; background:${p.cor}" title="${p.nome} — ${p.total_registros} registro${p.total_registros===1?'':'s'}"></span>`;
+    return `<span class="core-band" style="height:${h}%; background:${corPeriodo(p)}" title="${p.nome} — ${p.total_registros} registro${p.total_registros===1?'':'s'}"></span>`;
   }).join('');
 
   document.getElementById('heroStats').innerHTML = `
@@ -200,7 +273,6 @@ function initHome(){
   document.getElementById('stripTrack').innerHTML = taxons.concat(taxons).map(t => `<span>${t}</span>`).join('');
 
   const eraOrder = ['Neoproterozóico / Cambriano','Paleozóico — Carbonífero','Paleozóico — Permiano','Mesozóico','Cenozóico — Quaternário'];
-  const eraColors = { 'Neoproterozóico / Cambriano':'#1f4e5f','Paleozóico — Carbonífero':'#3d6b52','Paleozóico — Permiano':'#7fa66b','Mesozóico':'#c9a23a','Cenozóico — Quaternário':'#b5651d' };
   const counts = {};
   DB_FOSSEIS.forEach(f => { counts[f.era] = (counts[f.era]||0) + 1; });
   const total = DB_FOSSEIS.length;
@@ -213,7 +285,7 @@ function initHome(){
     return `
     <div class="era-bar-row">
       <span class="era-bar-label">${e}</span>
-      <span class="era-bar-track"><span class="era-bar-fill" style="width:${w.toFixed(1)}%; background:${eraColors[e]}"></span></span>
+      <span class="era-bar-track"><span class="era-bar-fill" style="width:${w.toFixed(1)}%; background:${corEra(e)}"></span></span>
       <span class="era-bar-count">${counts[e]}<i>${pct}%</i></span>
     </div>
   `;}).join('');
@@ -647,6 +719,30 @@ async function initMapa(){
     if(!mexeu) break;
   }
 
+  /* período dominante de cada sítio — só é visível no modo de cores
+     cronoestratigráficas: o ponto usa a cor do período com mais registros
+     no sítio (empate: o mais antigo). */
+  const periodoDominante = (() => {
+    const cont = {};
+    DB_FOSSEIS.forEach(f => {
+      const c = cont[f.site] || (cont[f.site] = {});
+      c[f.periodo] = (c[f.periodo] || 0) + 1;
+    });
+    const ordemDe = {};
+    DB_PERIODOS.forEach(p => { ordemDe[p.nome] = p; });
+    const res = {};
+    Object.keys(cont).forEach(site => {
+      let melhor = null;
+      Object.keys(cont[site]).forEach(nome => {
+        const p = ordemDe[nome]; if(!p) return;
+        if(!melhor || cont[site][nome] > cont[site][melhor.nome]
+           || (cont[site][nome] === cont[site][melhor.nome] && p.ordem < melhor.ordem)) melhor = p;
+      });
+      if(melhor) res[site] = melhor;
+    });
+    return res;
+  })();
+
   const circles = DB_SITIOS.filter(s => s.x != null)
     .slice().sort((a, b) => b.count - a.count)
     .map(s => {
@@ -656,7 +752,7 @@ async function initMapa(){
     const guia = (Math.abs(pos[s.site].x - s.x) > 0.05 || Math.abs(pos[s.site].y - s.y) > 0.05)
       ? `<line x1="${s.x}" y1="${s.y}" x2="${cx}" y2="${cy}" stroke="#7a3a10" stroke-width="0.8" stroke-opacity="0.45"></line>`
       : '';
-    return `${guia}<circle cx="${cx}" cy="${cy}" r="${r}" fill="#a85f28" fill-opacity="0.82" stroke="#6e3812" stroke-width="1.4" class="site-dot" data-site="${encodeURIComponent(s.site)}"></circle>`;
+    return `${guia}<circle cx="${cx}" cy="${cy}" r="${r}" fill="#a85f28" fill-opacity="0.82" stroke="#6e3812" stroke-width="1.4" class="site-dot" style="--sc:${periodoDominante[s.site] ? corPeriodo(periodoDominante[s.site]) : '#a85f28'}" data-site="${encodeURIComponent(s.site)}"></circle>`;
   }).join('');
 
   /* Malha municipal. Os municípios com registro recebem preenchimento
@@ -876,17 +972,17 @@ function initPeriodos(){
   document.getElementById('timelineRail').innerHTML = periodos.map(p => {
     const span = Math.max(p.inicio_ma - p.fim_ma, 0.3);
     const pct = (span / total * 100).toFixed(2);
-    return `<span style="width:${pct}%;background:${p.cor}" title="${p.nome}"></span>`;
+    return `<span style="width:${pct}%;background:${corPeriodo(p)}" title="${p.nome}"></span>`;
   }).join('');
 
   const wrap = document.getElementById('periodsAccordion');
   wrap.innerHTML = periodos.map((p, idx) => `
     <div class="period-item" data-idx="${idx}">
       <button class="period-trigger" aria-expanded="false">
-        <span class="period-swatch" style="background:${p.cor}"></span>
+        <span class="period-swatch" style="background:${corPeriodo(p)}"></span>
         <span class="period-title">${p.nome}</span>
         <span class="period-range">${p.inicio_ma}–${p.fim_ma} Ma</span>
-        <span class="period-barra" aria-hidden="true"><i style="width:${Math.max(4, p.total_registros / maxPeriodo * 100).toFixed(1)}%; background:${p.cor}"></i></span>
+        <span class="period-barra" aria-hidden="true"><i style="width:${Math.max(4, p.total_registros / maxPeriodo * 100).toFixed(1)}%; background:${corPeriodo(p)}"></i></span>
         <span class="period-count">${p.total_registros} registro${p.total_registros===1?'':'s'}</span>
         <svg class="period-chevron" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
       </button>
@@ -2087,3 +2183,57 @@ function initTema(){
   pintar();
 }
 document.addEventListener('DOMContentLoaded', initTema);
+
+/* ===========================================================
+   CONFIGURAÇÕES DO SITE — engrenagem no canto superior direito
+   -----------------------------------------------------------
+   Reúne os dois ajustes de aparência: o tema «Bandeira» (initTema,
+   acima) e o modo de cores cronoestratigráficas da Tabela do ICS.
+   Os dois são independentes e ficam no localStorage
+   (paleo-tema · paleo-cores); o <head> os aplica antes da pintura.
+   =========================================================== */
+function montarLegendaCrono(){
+  const ul = document.getElementById('mapaCronoLegenda');
+  if(!ul) return;
+  ul.innerHTML = DB_PERIODOS.filter(p => p.total_registros > 0)
+    .slice().sort((a, b) => a.ordem - b.ordem)
+    .map(p => `<li><span class="legend-swatch legend-swatch-crono" style="background:${corPeriodo(p)}"></span><span>${p.nome}</span></li>`)
+    .join('');
+}
+function initConfig(){
+  const wrap = document.getElementById('config');
+  const btn = document.getElementById('btnConfig');
+  const painel = document.getElementById('painelConfig');
+  if(!wrap || !btn || !painel) return;
+  const abrir = sim => {
+    painel.hidden = !sim;
+    btn.setAttribute('aria-expanded', sim ? 'true' : 'false');
+  };
+  btn.addEventListener('click', e => { e.stopPropagation(); abrir(painel.hidden); });
+  document.addEventListener('click', e => { if(!painel.hidden && !wrap.contains(e.target)) abrir(false); });
+  document.addEventListener('keydown', e => {
+    if(e.key === 'Escape' && !painel.hidden){ abrir(false); btn.focus(); }
+  });
+
+  const bCores = document.getElementById('btnCores');
+  const caixaMapa = document.getElementById('mapaCrono');
+  const pintar = () => {
+    const on = coresIcsAtivas();
+    if(bCores) bCores.setAttribute('aria-pressed', on ? 'true' : 'false');
+    if(caixaMapa) caixaMapa.hidden = !on;
+  };
+  if(bCores) bCores.addEventListener('click', () => {
+    const on = coresIcsAtivas();
+    if(on) delete document.documentElement.dataset.cores;
+    else document.documentElement.dataset.cores = 'ics';
+    try{
+      if(on) localStorage.removeItem('paleo-cores');
+      else localStorage.setItem('paleo-cores', 'ics');
+    }catch(e){ /* sem localStorage: vale só nesta sessão */ }
+    aplicarPaletaPeriodos();
+    pintar();
+  });
+  montarLegendaCrono();
+  pintar();
+}
+document.addEventListener('DOMContentLoaded', initConfig);

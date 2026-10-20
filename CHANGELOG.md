@@ -12,7 +12,7 @@ sequencial» da versão 2026.10.09.
 
 ## 2026.10.09 — 09/10/2026 · mais 71 registros, 3 retirados por procedência errada, localidades conferidas no texto integral
 
-Banco: **296 registros** (era 228), **78 sítios** (era 57), 55 municípios, 154 obras na bibliografia,
+Banco: **298 registros** (era 228), **79 sítios** (era 57), 55 municípios, 155 obras na bibliografia,
 131 registros com DOI (eram 52). Tudo continua só de Santa Catarina (critério: procedência da coleta, não o depositário).
 
 ### Registros novos (34)
@@ -469,6 +469,58 @@ de leitura automática. Petrolândia é o 55º município do banco.
 (2019; registro 91); «Nova localidade fossilífera da Fm. Rio do Rasto» (2017; registros 173–174) e a ocorrência inventariada de
 175; Nizer & Weinschütz (2015; registro 214). Busca nesta rodada: ResearchGate e ScienceDirect seguem fechados ao ambiente; um
 palpite para «Pigão & Mouro» (SICITE 2019) não se confirmou — o trabalho que apareceu é outro (Gibathe et al.).
+
+### Conferência das paleotocas (19/10/2026) — 2 registros novos (297, 298)
+A pedido do autor ("veja o catálogo da região sul do Brasil em SC e confira as paleotocas"). O catálogo do Projeto Paleotocas
+(UFRGS) lista os trabalhos sobre SC, mas os PDFs ficam em um servidor que bloqueia a leitura automática; a conferência foi feita
+nas fontes abertas (artigos, TCCs e resumos da UDESC e da UFRGS). Os números de registro são os atuais.
+
+**Corrigido**
+- **Porto União (172):** o registro se chamava «Megaichnus isp.», mas o texto completo de Santos et al. (2021) não usa o
+  icnogênero — classifica as feições pela morfologia e pelo arranjo (tipos I a V, de Buchmann et al., 2009). O nome passou a
+  «Paleotocas e crotovinas (icnofósseis de escavação — Porto União)». O texto dá 13 paleotocas e 6 crotovinas, 10 delas em
+  Porto União e 9 em União da Vitória (sem dizer quais são de cada cidade), todas em arenito da Fm. Botucatu, em morros-testemunho,
+  e não publica coordenadas. Acrescentado Schipanski et al. (2021, *Geomae* 12(2):91–102), sobre as «Grutas do Monge» (Morro da
+  Cruz): dois túneis de 49,5 m e 41,28 m, atribuídos a Mylodontidae, com túneis menores de Dasypodidae. Não separei o complexo em
+  registro próprio porque os textos não dizem se é o mesmo conjunto de «Gruta do Monge 1 e 2» do primeiro trabalho.
+- **Idade (170, 171, 172):** a idade «Plioceno–Pleistoceno» estava como se fosse dado da fonte; nenhuma destas fichas tem datação.
+  Passou a constar como convenção do banco, igual às fichas 74, 259, 260 e 263. Na 171, a frase que dava a estrutura como
+  plio-pleistocênica e a rocha como «~270 milhões de anos» mais antiga foi reescrita (a Fm. Taciba é paleozoica, mas o número
+  não tinha fonte).
+- **Aparência (260):** o artigo não nomeia o município; Morro Grande vem da proximidade (cerca de 20 m) com a do Veisom (259).
+  Anotado, junto com a contagem do catálogo do Geoparque (24 paleotocas em Valdati et al., 2024; nove em Weinschütz et al., 2019).
+
+**Registros novos**
+- **297 e 298 — Bom Sossego I e II, Irineópolis.** Duas paleotocas, com coordenadas publicadas, de Bechtel (2022), TCC de Geografia
+  da UDESC (não é artigo revisado por pares; lido por ferramenta de leitura automática). A I (1.030 m) é classificada pelo autor
+  como *Megaichnus major*; a II (1.027 m) não tem classificação nem comprimento no texto, e a rocha (Fm. Botucatu) é inferida pelo
+  autor pelos afloramentos. As duas coordenadas caem em Irineópolis na malha do site. Irineópolis já constava em seis fichas de localização aproximada
+  («região»); passa a ter as primeiras com localização exata (municípios com localização exata: 39 → 40).
+
+**Conferido e sem alteração**
+- Registros 32, 37, 73, 74, 75, 170, 218, 259 e 263: coordenadas, municípios, rochas e dimensões conferem com as fontes
+  consultadas; a divergência de município da Paleotoca Xocleng (73: ficha do SGB em Jacinto Machado × Geoparque em Morro Grande)
+  continua sem solução.
+- Em aberto: as comunicações do Projeto Paleotocas de que só há o título (Pasqualon et al., 2013, planalto catarinense; Ricetti
+  et al., 2015, Planalto Norte; Orth et al., 2017, divisa PR/SC; Frank et al., 2018, SC × RS) e o complexo «Furnas do Itamar /
+  Reserva Caeté» (Praia Grande, 11 feições), citado na ficha 75, sem coordenadas nem dimensões nas fontes lidas.
+
+### Configurações do site: engrenagem e cores cronoestratigráficas (19/10/2026)
+- **Engrenagem no canto superior direito.** O botão «Bandeira» saiu do cabeçalho e foi para um painel aberto por um ícone de
+  engrenagem (SVG, não emoji; discreto, com o painel fechando por clique fora ou Esc). O painel traz o botão «Bandeira», que
+  continua trocando o tema do site, e o novo botão **«Utilizar cores cronoestratigráficas»**.
+- **Cores cronoestratigráficas (ICS).** Ligado o botão, as cores de período e de era passam às da Tabela Cronoestratigráfica
+  Internacional (ICS, v2022/02, versão em português do IGCP/UNESCO e LNEG) em: cartões e tabela do catálogo; pontos do mapa (cada
+  sítio usa a cor do período com mais registros, empate pelo mais antigo, e a legenda lista os períodos); coluna-testemunho e
+  barras por era da página inicial; linha do tempo e lista de períodos; pontos e legenda da avifauna (Cretáceo × Cenozoico).
+  As cores foram **amostradas, pixel a pixel, na imagem da tabela enviada pelo autor**, e não copiadas de uma lista de códigos.
+  Regra para intervalos que cruzam duas unidades: vale a cor da mais antiga (por exemplo, «Plioceno–Pleistoceno» usa a do Plioceno
+  e «Carbonífero – Permiano Inferior» a do Carbonífero); o «Ediacarano / Cambriano» usa a do Ediacarano. A escolha fica no
+  navegador (localStorage) e é independente do tema «Bandeira».
+- **Contraste.** Algumas cores do ICS (Plioceno, Pleistoceno, Holoceno, Quaternário) são muito claras para o fundo creme; no
+  modo ICS os pontos, faixas e barras ganham um contorno fino.
+- Por baixo: toda cor de período passou a ser uma variável CSS (`--pc-<ordem>`, `--ec-<era>`), então alternar o modo só reescreve
+  as variáveis; nada é redesenhado.
 
 ## 2026.09.14 — 08/10/2026 · tudo com fonte científica ou com "citação de mídia" explícita
 

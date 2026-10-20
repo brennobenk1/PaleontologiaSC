@@ -1883,7 +1883,7 @@
     "fim_ma": 0.0117,
     "cor": "#b5651d",
     "descricao": "Transição entre o Plioceno e o Pleistoceno, com depósitos da plataforma continental e registros de megafauna marinha e continental.",
-    "total_registros": 10,
+    "total_registros": 12,
     "taxons": [
       {
         "taxon": "Paleotocas (icnofósseis de escavação — Dasypodidae / Mylodontidae)",
@@ -1928,7 +1928,7 @@
         ]
       },
       {
-        "taxon": "Megaichnus isp. (paleotocas de Porto União)",
+        "taxon": "Paleotocas e crotovinas (icnofósseis de escavação — Porto União)",
         "count": 1,
         "ids": [
           172
@@ -1953,6 +1953,20 @@
         "count": 1,
         "ids": [
           263
+        ]
+      },
+      {
+        "taxon": "Megaichnus major (Paleotoca Bom Sossego I)",
+        "count": 1,
+        "ids": [
+          297
+        ]
+      },
+      {
+        "taxon": "Paleotoca Bom Sossego II (icnofóssil de escavação — megafauna)",
+        "count": 1,
+        "ids": [
+          298
         ]
       }
     ]

@@ -52,6 +52,11 @@
   --radius-lg: 18px;
 
   --maxw: 1220px;
+
+  /* avifauna: cor do Cretáceo e do Cenozoico no modo cronoestratigráfico — o JS
+     (aplicarPaletaPeriodos) reescreve estes dois valores conforme o modo */
+  --ea-meso: #1f4e5f;
+  --ea-ceno: #b5651d;
 }
 
 *{ box-sizing: border-box; }
@@ -1026,13 +1031,41 @@ body::before{
 :root[data-tema="bandeira"] .map-canvas,
 :root[data-tema="bandeira"] .avi-map-canvas{ background:#e7eaec; }
 
-/* botão de troca de tema */
+/* CONFIGURAÇÕES — engrenagem discreta no canto superior direito do cabeçalho.
+   O painel reúne o botão do tema «Bandeira» e o das cores cronoestratigráficas. */
+.config{ position:relative; margin-left:-0.7rem; flex-shrink:0; }
+.btn-config{
+  display:inline-flex; align-items:center; justify-content:center; width:32px; height:32px;
+  background:none; border:1px solid transparent; border-radius:50%;
+  color: var(--texto-suave); opacity:0.62; cursor:pointer;
+  transition: opacity .15s ease, color .15s ease, border-color .15s ease, transform .35s ease;
+}
+.btn-config:hover, .btn-config[aria-expanded="true"]{
+  opacity:1; color: var(--petrol); border-color: var(--line-strong);
+}
+.btn-config[aria-expanded="true"] svg{ transform: rotate(45deg); }
+.btn-config svg{ transition: transform .35s ease; }
+.btn-config:focus-visible{ outline:2px solid var(--gold-lt); outline-offset:2px; opacity:1; }
+.config-painel{
+  position:absolute; right:0; top:calc(100% + 0.55rem); z-index:60; width:min(19rem, calc(100vw - 2rem));
+  display:flex; flex-direction:column; gap:0.55rem; padding:0.85rem 0.9rem 0.8rem;
+  background: var(--paper); border:1px solid var(--line-strong); border-radius: var(--radius-md);
+  box-shadow: var(--shadow-lg);
+}
+.config-painel[hidden], .map-crono[hidden]{ display:none; }
+.config-titulo{
+  margin:0 0 0.1rem; font-family: var(--font-mono); font-size:0.62rem; letter-spacing:0.08em;
+  text-transform:uppercase; color: var(--texto-suave);
+}
+.config-nota{ margin:0.1rem 0 0; font-size:0.72rem; line-height:1.4; color: var(--texto-suave); }
+
+/* botões de alternância dentro do painel */
 .btn-tema{
-  display:inline-flex; align-items:center; gap:0.4rem; margin-left:0.6rem;
-  font-family: var(--font-mono); font-size:0.62rem; letter-spacing:0.04em;
+  display:flex; align-items:center; gap:0.55rem; width:100%; text-align:left;
+  font-family: var(--font-mono); font-size:0.66rem; letter-spacing:0.04em;
   text-transform:uppercase; background:none; border:1px solid var(--line-strong);
-  border-radius:999px; padding:0.3rem 0.7rem; color: var(--texto-suave);
-  transition: border-color .15s ease, color .15s ease;
+  border-radius:14px; padding:0.45rem 0.8rem; color: var(--texto-suave); cursor:pointer;
+  transition: border-color .15s ease, color .15s ease, background .15s ease;
 }
 .btn-tema:hover{ border-color: var(--petrol); color: var(--petrol); }
 .tema-losango{
@@ -1040,7 +1073,58 @@ body::before{
   background: linear-gradient(135deg, #c8102e 50%, #3f8f3a 50%);
 }
 :root[data-tema="bandeira"] .btn-tema{ border-color: var(--petrol); color: var(--petrol); }
-@media (max-width:880px){ .btn-tema{ margin-left:auto; margin-right:0.4rem; } .tema-rotulo{ display:none; } }
+/* botão das cores cronoestratigráficas: faixa com as cores do ICS; ligado = preenchido */
+.cores-chip{
+  width:22px; height:9px; flex-shrink:0; border-radius:2px;
+  background: linear-gradient(90deg, #FCDA7C 0 16%, #67A3AC 16% 32%, #DE7155 32% 50%, #94BF66 50% 66%, #FBF690 66% 84%, #FAEBD0 84% 100%);
+  box-shadow: inset 0 0 0 1px rgba(0,0,0,0.25);
+}
+.btn-cores[aria-pressed="true"]{ background: var(--stone-dk); border-color: var(--petrol); color: var(--petrol-dk); }
+.btn-cores[aria-pressed="true"] .cores-rotulo::after{ content:" ✓"; }
+@media (max-width:880px){
+  /* no celular a engrenagem fica entre o logotipo e o menu */
+  .config{ margin-left:auto; }
+  .config-painel{ position:fixed; right:0.8rem; top:3.6rem; }
+}
+
+/* =========================================================
+   CORES CRONOESTRATIGRÁFICAS (modo «ics»)
+   ---------------------------------------------------------
+   As cores dos períodos vêm das variáveis --pc-<ordem> e --ec-<era>
+   (ver aplicarPaletaPeriodos em app.js). Aqui entram só os ajustes
+   de contraste: várias cores do ICS (Plioceno, Pleistoceno, Holoceno,
+   Quaternário) são muito claras e sumiriam no fundo creme sem um
+   contorno fino.
+   ========================================================= */
+:root[data-cores="ics"] .per-dot,
+:root[data-cores="ics"] .period-swatch,
+:root[data-cores="ics"] .legend-swatch-crono{ box-shadow: inset 0 0 0 1px rgba(0,0,0,0.28); }
+:root[data-cores="ics"] .core-band{ box-shadow: inset 0 0 0 0.5px rgba(0,0,0,0.12); }
+:root[data-cores="ics"] .era-bar-fill,
+:root[data-cores="ics"] .period-barra i{ box-shadow: inset 0 0 0 1px rgba(0,0,0,0.22); }
+:root[data-cores="ics"] .timeline-rail{ box-shadow: inset 0 0 0 1px rgba(0,0,0,0.2); }
+:root[data-cores="ics"] .timeline-rail span + span{ box-shadow: -1px 0 0 rgba(0,0,0,0.16); }
+:root[data-cores="ics"] .fossil-card::before{ box-shadow: inset 0 0 0 1px rgba(0,0,0,0.2); }
+:root[data-cores="ics"] .catalog-table tbody tr{
+  box-shadow: inset 4px 0 0 var(--per-cor, transparent), inset 5px 0 0 rgba(0,0,0,0.2);
+}
+/* mapa: o ponto passa a ter a cor do período dominante do sítio (variável --sc, definida no ponto) */
+:root[data-cores="ics"] .site-dot{ fill: var(--sc, #a85f28); fill-opacity:0.95; stroke: rgba(34,24,12,0.78); }
+.legend-swatch-crono{ border-radius:50%; }
+/* no modo ICS o ícone «Sítio de coleta» da legenda mostra as cores dos períodos */
+:root[data-cores="ics"] .legend-toggle[data-camada="sitios"] .legend-swatch{
+  background: conic-gradient(#FCDA7C 0 17%, #67A3AC 17% 34%, #DE7155 34% 51%, #94BF66 51% 68%, #FBF690 68% 85%, #F2B6A3 85% 100%) !important;
+  box-shadow: inset 0 0 0 1px rgba(0,0,0,0.3);
+}
+.map-crono{ margin-top:0.2rem; }
+.map-crono-nota{ font-size:0.76rem; margin:0.55rem 0 0; line-height:1.4; }
+/* avifauna: Cretáceo × Cenozoico */
+.swatch-avi-meso{ background:#1f4e5f; }
+.swatch-avi-ceno{ background:#b5651d; }
+:root[data-cores="ics"] .swatch-avi-meso{ background: var(--ea-meso); box-shadow: inset 0 0 0 1px rgba(0,0,0,0.3); }
+:root[data-cores="ics"] .swatch-avi-ceno{ background: var(--ea-ceno); box-shadow: inset 0 0 0 1px rgba(0,0,0,0.3); }
+:root[data-cores="ics"] .avi-taxon-dot{ fill: var(--ea-ceno); stroke: rgba(34,24,12,0.8); }
+:root[data-cores="ics"] .avi-taxon-dot-mesozoic{ fill: var(--ea-meso); stroke: rgba(7,26,32,0.85); }
 
 /* indicador do filtro exato por sítio (vindo do mapa) */
 .filtro-sitio{

@@ -4847,7 +4847,7 @@
     "armazenamento": "Estrutura in situ (icnofóssil não coletável)",
     "descritor": "Munhoz, M.S., Audi, C. & Buchmann, F.S.C. (2024) — \"Propagação sonora em Megaichnus major (paleotocas) como evidência de comunicação acústica de Mylodontoidea fossoriais\", Revista Brasileira de Paleontologia 27(4):e20240428, DOI 10.4072/rbp.2024.4.0428",
     "unidade_pesquisa": "UNESP — Campus do Litoral Paulista (afiliação de F.S.C. Buchmann; demais afiliações a conferir no artigo)",
-    "idade_ma": "Plioceno–Pleistoceno",
+    "idade_ma": "Não datada; intervalo convencional deste banco para paleotocas atribuídas à megafauna extinta (5,33 Ma – 11.700 a)",
     "observacoes": "Classificação: paleotoca — estrutura de habitação (Domichnia) escavada por mamíferos da megafauna. Conjunto de túneis, trincheiras e dolinas a 1.036 m de altitude, com coordenada publicada (27°57′54,7″S, 49°30′33,2″O). Serviu de laboratório para experimentos de PROPAGAÇÃO SONORA dentro da estrutura: estimativas a partir do ouvido médio de Lestodon e Glossotherium robustum indicam faixa auditiva de 44 Hz a 16.490 Hz, e os testes avaliam a hipótese de comunicação acústica entre mylodontídeos fossoriais — coerente com as evidências de vida gregária em paleotocas (Buchmann et al., 2016). O artigo analisa apenas o túnel URU-01-P2 (15 m, sem ramificações) da 'paleotoca Caverna do Rio dos Bugres, URU-01', e informa que a identidade do escavador é incerta (não há fósseis associados); formação e rocha NÃO são informadas. OUTRA CAVIDADE EM URUBICI (2026.10.09): a «Caverna do Gigante», com marcas de garras de preguiça-gigante, consta no registro nº 263. CONTEXTO CIENTÍFICO (sobre o tipo de estrutura, não sobre este local): Lopes, Frank, Buchmann & Caron (2017, Ichnos 24(2):133–145) erigiram o icnogênero Megaichnus (M. major, atribuído a preguiças-gigantes, Mylodontidae; M. minor, a tatus-gigantes, Cingulata); Buchmann, Lopes & Caron (2009, Revista Brasileira de Paleontologia 12(3):247–256, DOI 10.4072/rbp.2009.3.07) tratam de paleotocas e crotovinas do sudeste e sul do Brasil. ",
     "doi": "10.4072/rbp.2024.4.0428",
     "fontes": [
@@ -4877,8 +4877,8 @@
     "armazenamento": "Estrutura in situ (icnofóssil não coletável)",
     "descritor": "Audi, C. (2022) — \"Fotogrametria de uma paleotoca escavada por preguiças-gigantes (Megaichnus major)\", Dissertação de Mestrado, Universidade Estadual Paulista (Unesp), Programa de Pós-graduação em Biodiversidade de Ambientes Costeiros, campus do Litoral Paulista (orientador: F.S.C. Buchmann)",
     "unidade_pesquisa": "Unesp — Campus do Litoral Paulista (Pós-graduação em Biodiversidade de Ambientes Costeiros)",
-    "idade_ma": "Plioceno–Pleistoceno",
-    "observacoes": "Classificação: paleotoca — estrutura de habitação (Domichnia) escavada por mamíferos da megafauna. Paleotoca escavada no ARENITO DA FORMAÇÃO TACIBA (Permiano) — caso que ilustra bem a natureza destes icnofósseis: a estrutura é do Plioceno–Pleistoceno, mas a rocha escavada é ~270 milhões de anos mais antiga. Documentada por fotogrametria, com geração de modelo tridimensional. O resumo da dissertação localiza a paleotoca em Doutor Pedrinho (SC) e informa que a estrutura foi escavada no arenito da Fm. Taciba; não informa dimensões. CONTEXTO CIENTÍFICO (sobre o tipo de estrutura, não sobre este local): Lopes, Frank, Buchmann & Caron (2017, Ichnos 24(2):133–145) erigiram o icnogênero Megaichnus (M. major, atribuído a preguiças-gigantes, Mylodontidae; M. minor, a tatus-gigantes, Cingulata); Buchmann, Lopes & Caron (2009, Revista Brasileira de Paleontologia 12(3):247–256, DOI 10.4072/rbp.2009.3.07) tratam de paleotocas e crotovinas do sudeste e sul do Brasil. ",
+    "idade_ma": "Não datada; intervalo convencional deste banco para paleotocas atribuídas à megafauna extinta (5,33 Ma – 11.700 a)",
+    "observacoes": "Classificação: paleotoca — estrutura de habitação (Domichnia) escavada por mamíferos da megafauna. Paleotoca escavada no ARENITO DA FORMAÇÃO TACIBA (Permiano) — caso que ilustra bem a natureza destes icnofósseis: a estrutura é cenozoica (o intervalo Plioceno–Pleistoceno é a convenção deste banco; não há datação direta), mas a rocha escavada é paleozoica, centenas de milhões de anos mais antiga que a estrutura. Documentada por fotogrametria, com geração de modelo tridimensional. O resumo da dissertação localiza a paleotoca em Doutor Pedrinho (SC) e informa que a estrutura foi escavada no arenito da Fm. Taciba; não informa dimensões. CONTEXTO CIENTÍFICO (sobre o tipo de estrutura, não sobre este local): Lopes, Frank, Buchmann & Caron (2017, Ichnos 24(2):133–145) erigiram o icnogênero Megaichnus (M. major, atribuído a preguiças-gigantes, Mylodontidae; M. minor, a tatus-gigantes, Cingulata); Buchmann, Lopes & Caron (2009, Revista Brasileira de Paleontologia 12(3):247–256, DOI 10.4072/rbp.2009.3.07) tratam de paleotocas e crotovinas do sudeste e sul do Brasil. ",
     "fontes": [
       "https://repositorio.unesp.br/items/a7a21c5b-d669-4f0c-b86a-cf6d4ced7815",
       "https://jornal.unesp.br/2022/01/18/uma-visita-a-casa-dos-gigantes/ (notícia sobre a paleotoca digitalizada de Doutor Pedrinho)"
@@ -4894,7 +4894,7 @@
     "era": "Cenozóico — Quaternário",
     "periodo_ordem": 13,
     "formacao": "Fm. Botucatu (arenitos), segundo Santos et al. (2021)",
-    "taxon": "Megaichnus isp. (paleotocas de Porto União)",
+    "taxon": "Paleotocas e crotovinas (icnofósseis de escavação — Porto União)",
     "categoria": "Icnofóssil — paleotoca",
     "numero_catalogo": "-",
     "local_coleta": "Paleotocas de Porto União, Porto União, SC",
@@ -4904,19 +4904,20 @@
     "lon": -51.0772,
     "bacia": "Bacia do Paraná — Fm. Botucatu",
     "armazenamento": "Estrutura in situ (icnofóssil não coletável)",
-    "descritor": "Santos, R.F., Schipanski, H.J., Martello, A.R. & Vogel, H.F. (2021) — \"Preliminary analysis of paleoburrows in Porto União-SC and União da Vitória-PR, Brazil\", Research, Society and Development 10(11):e330101119176, DOI 10.33448/rsd-v10i11.19176",
+    "descritor": "Santos, R.F., Schipanski, H.J., Martello, A.R. & Vogel, H.F. (2021) — \"Preliminary analysis of paleoburrows in Porto União-SC and União da Vitória-PR, Brazil\", Research, Society and Development 10(11):e330101119176, DOI 10.33448/rsd-v10i11.19176; Schipanski, H.J., Santos, R.F., Martello, A.R. & Vogel, H.F. (2021) — \"Desmistificando a origem de um complexo de grutas no município de Porto União, Santa Catarina – Brasil\", Geomae (Campo Mourão) 12(2):91–102",
     "unidade_pesquisa": "Não informada no resumo consultado",
-    "idade_ma": "Plioceno–Pleistoceno",
-    "observacoes": "Classificação: paleotoca — estrutura de habitação (Domichnia) escavada por mamíferos da megafauna. Conjunto de paleotocas do Planalto Norte catarinense, analisadas em conjunto com as de União da Vitória (PR), do outro lado do rio Iguaçu. Levantadas pelo método de amostragem em bola de neve (snowball sampling), com medição de altura e largura dos túneis. Segundo o resumo, foram achadas 13 paleotocas livres ou parcialmente obstruídas e 6 crotovinas, todas em arenitos, somando União da Vitória (PR) e Porto União (SC) — o resumo não separa as contagens por município —, com quatro morfologias de túnel e cinco tipos de icnofósseis, alguns atribuídos a Mylodontidae; não nomeia localidades dentro de Porto União. CONTEXTO CIENTÍFICO (sobre o tipo de estrutura, não sobre este local): Lopes, Frank, Buchmann & Caron (2017, Ichnos 24(2):133–145) erigiram o icnogênero Megaichnus (M. major, atribuído a preguiças-gigantes, Mylodontidae; M. minor, a tatus-gigantes, Cingulata); Buchmann, Lopes & Caron (2009, Revista Brasileira de Paleontologia 12(3):247–256, DOI 10.4072/rbp.2009.3.07) tratam de paleotocas e crotovinas do sudeste e sul do Brasil. ",
+    "idade_ma": "Não datada; intervalo convencional deste banco para paleotocas atribuídas à megafauna extinta (5,33 Ma – 11.700 a)",
+    "observacoes": "Classificação: paleotoca — estrutura de habitação (Domichnia) escavada por mamíferos da megafauna. Conjunto de paleotocas do Planalto Norte catarinense, analisadas em conjunto com as de União da Vitória (PR), do outro lado do rio Iguaçu. Levantadas pelo método de amostragem em bola de neve (snowball sampling), com medição de altura e largura dos túneis. Segundo o resumo, foram achadas 13 paleotocas livres ou parcialmente obstruídas e 6 crotovinas, todas em arenitos, somando União da Vitória (PR) e Porto União (SC) — o resumo não separa as contagens por município —, com quatro morfologias de túnel e cinco tipos de icnofósseis, alguns atribuídos a Mylodontidae; não nomeia localidades dentro de Porto União. CONTEXTO CIENTÍFICO (sobre o tipo de estrutura, não sobre este local): Lopes, Frank, Buchmann & Caron (2017, Ichnos 24(2):133–145) erigiram o icnogênero Megaichnus (M. major, atribuído a preguiças-gigantes, Mylodontidae; M. minor, a tatus-gigantes, Cingulata); Buchmann, Lopes & Caron (2009, Revista Brasileira de Paleontologia 12(3):247–256, DOI 10.4072/rbp.2009.3.07) tratam de paleotocas e crotovinas do sudeste e sul do Brasil. CONFERÊNCIA NO TEXTO COMPLETO (2026.10.19): (1) NOME: este registro constava como «Megaichnus isp.», mas o texto de Santos et al. (2021) NÃO usa o icnogênero Megaichnus: classifica as feições pela morfologia da seção (circular, semicircular, elíptica vertical e elíptica horizontal) e pelo arranjo (linear, bifurcado e galeria), segundo Buchmann et al. (2009), em cinco tipos (I a V); o nome foi trocado por uma descrição que só diz o que o trabalho diz. (2) CONTAGENS: o texto informa 13 paleotocas e 6 crotovinas (19 feições) e escreve que «dez delas foram encontradas na cidade de Porto União – SC e nove na cidade de União da Vitória – PR»; nomeia as localidades (Gruta do Monge 1 e 2, Toca dos Kavales, Toca Caixa d'água e a crotovina vizinha, Toca dos Valperes, Toca dos Trilhos 1 e 2, Toca do Legru, Gruta do São Pedro do Timbó 1 a 3, Toca dos Giacomini, Toca do Pintado e Crotovinas Ouro Verde 1 a 5), mas NÃO diz quais ficam em cada município. (3) ROCHA E DIMENSÕES: todas escavadas em arenito da Fm. Botucatu, em inselbergs (morros-testemunho) com basalto acima; altitudes de 765 a 903 m; comprimento de 6,43 m a mais de 50 m; altura de 0,61 a 3,8 m e largura de 0,67 a 2,63 m (o texto dá a mesma média, 1,55 m, para altura e largura — conferir no original). (4) COORDENADAS: o método diz que foram obtidas, mas o texto não as publica (só a localização em figura); o pino é o do município. (5) IDADE: sem datação absoluta; o texto comenta que a idade do arenito Botucatu é debatida (do Triássico Superior ao Cretáceo Inferior) e atribui os construtores ao Pleistoceno/Plio-Pleistoceno, pela megafauna, sem conciliar as duas idades. OUTRO TRABALHO SOBRE UM COMPLEXO DE PORTO UNIÃO: Schipanski et al. (2021, Geomae 12(2):91–102) estudam um único complexo, as «Grutas do Monge», no Morro da Cruz, área urbana de Porto União, na divisa com União da Vitória (26°14′46,0″S, 51°04′42,3″O); dois túneis principais (A, com 49,5 m, e B, com 41,28 m e um trecho anexo de 8,94 m) e um braço ramificado (b′, 21 m); marcas de garras de dois dígitos de 30 a 40 cm nos túneis A e B (tipo II) e de até 30 cm no braço (tipo III); sedimento de «areias eólicas da Fm. Botucatu», além de argilito e siltito, em um morro na transição entre o Segundo e o Terceiro Planalto Paranaense, com base na Fm. Rio do Rasto. Os autores rejeitam, por improvável, a hipótese local de origem indígena/uso na Guerra do Contestado (1912–1916) e concluem que são paleotocas escavadas pela megafauna pleistocênica — os túneis A e B inicialmente por Mylodontidae (possivelmente Glossotherium ou Scelidotherium) e os secundários depois por Dasypodidae —, ligadas a paleoclimas mais secos; há inscrições modernas. Dizem ainda que os registros de paleotocas para SC eram escassos e que não havia registro para o Planalto Norte Catarinense. Os dois trabalhos têm os mesmos autores e ambos tratam de uma «Gruta/Grutas do Monge», mas os textos lidos não declaram expressamente que são o mesmo conjunto; por isso o complexo não foi separado em registro próprio. FONTE: valores lidos por ferramenta de leitura automática (resumo, não leitura integral): conferir nos originais antes de citar.",
     "doi": "10.33448/rsd-v10i11.19176",
     "fontes": [
       "https://doi.org/10.33448/rsd-v10i11.19176",
-      "https://rsdjournal.org/rsd/article/view/19176"
+      "https://rsdjournal.org/rsd/article/view/19176",
+      "https://periodicos.unespar.edu.br/geomae/article/download/5848/6308/32739"
     ],
     "x": 322.6,
     "y": 71.4,
     "tipo_fonte": "Artigo em periódico",
-    "citacao_abnt": "SANTOS, R.F.; SCHIPANSKI, H.J.; MARTELLO, A.R. et al. 2021. Preliminary analysis of paleoburrows in Porto União-SC and União da Vitória-PR, Brazil. Research, Society and Development, 10(11), e330101119176. DOI: 10.33448/rsd-v10i11.19176"
+    "citacao_abnt": "SANTOS, R.F.; SCHIPANSKI, H.J.; MARTELLO, A.R. et al. 2021. Preliminary analysis of paleoburrows in Porto União-SC and União da Vitória-PR, Brazil. Research, Society and Development, 10(11), e330101119176. DOI: 10.33448/rsd-v10i11.19176 | SCHIPANSKI, H.J.; SANTOS, R.F.; MARTELLO, A.R.; VOGEL, H.F. 2021. Desmistificando a origem de um complexo de grutas no município de Porto União, Santa Catarina – Brasil. Geomae (Campo Mourão), 12(2), 91–102."
   },
   {
     "id": 173,
@@ -7425,7 +7426,7 @@
     "descritor": "Valdati, J., Gomes, M.C.V., Weinschütz, L.C., Ricetti, J.H.Z. & Bechtel, A.P. (2024) — \"Proposta de classificação das paleotocas com base nas características fisionômicas e morfológicas\", Revista Brasileira de Geografia Física 17(3):1905–1920, DOI 10.26848/rbgf.v17.3.p1905-1920",
     "unidade_pesquisa": "Geoparque UNESCO (área de estudo do artigo); afiliações dos autores a conferir no original",
     "idade_ma": "Não datada; intervalo convencional deste banco para paleotocas atribuídas à megafauna extinta (5,33 Ma – 11.700 a)",
-    "observacoes": "Classificação: paleotoca — estrutura de habitação (Domichnia) escavada por mamíferos da megafauna. Descrita por Valdati et al. (2024) como uma das três paleotocas detalhadas no artigo. Segundo o artigo: perto da paleotoca do Veisom (registro nº 259; cerca de 20 m), no mesmo compartimento geomorfológico (Escarpa da Serra Geral, Vale do Pingador), na mesma litologia (arenitos da Fm. Botucatu) e fisionomia (Floresta Ombrófila Densa secundária, em encosta íngreme usada no passado para agricultura), a 430 m de altitude; 61 m de extensão total, largura máxima de 3,37 m e altura máxima de 3,35 m; azimute variando ao longo do túnel entre 257° (oés-sudoeste) e 192° (sul); marcas de garras visíveis no interior, de diversos tamanhos; paredes lisas; classificada, pelo critério de Lopes et al. (2017), como Megaichnus major, e atribuída pelos autores a um milodontídeo ou megaterídeo. Sem datação; o intervalo de idade é a convenção deste banco para paleotocas atribuídas à megafauna extinta. Pino do mapa aproximado (sede de Morro Grande). Valores lidos em resumo da ferramenta de leitura, não no PDF: conferir no original antes de citar. ",
+    "observacoes": "Classificação: paleotoca — estrutura de habitação (Domichnia) escavada por mamíferos da megafauna. Descrita por Valdati et al. (2024) como uma das três paleotocas detalhadas no artigo. Segundo o artigo: perto da paleotoca do Veisom (registro nº 259; cerca de 20 m), no mesmo compartimento geomorfológico (Escarpa da Serra Geral, Vale do Pingador), na mesma litologia (arenitos da Fm. Botucatu) e fisionomia (Floresta Ombrófila Densa secundária, em encosta íngreme usada no passado para agricultura), a 430 m de altitude; 61 m de extensão total, largura máxima de 3,37 m e altura máxima de 3,35 m; azimute variando ao longo do túnel entre 257° (oés-sudoeste) e 192° (sul); marcas de garras visíveis no interior, de diversos tamanhos; paredes lisas; classificada, pelo critério de Lopes et al. (2017), como Megaichnus major, e atribuída pelos autores a um milodontídeo ou megaterídeo. Sem datação; o intervalo de idade é a convenção deste banco para paleotocas atribuídas à megafauna extinta. Pino do mapa aproximado (sede de Morro Grande). Valores lidos em resumo da ferramenta de leitura, não no PDF: conferir no original antes de citar. CONFERÊNCIA (2026.10.19): o artigo não nomeia o município desta cavidade; ela é colocada em Morro Grande por ficar a cerca de 20 m da do Veisom (registro nº 259), que o artigo situa em Morro Grande. O TCC de Bechtel (2022) também nomeia Aparência, Veisom e Parque, sem indicar o município de nenhuma. Segundo o texto consultado de Valdati et al. (2024), foram catalogadas 24 paleotocas no Geoparque (Weinschütz et al., 2019, havia catalogado nove), a maior parte em Morro Grande e cerca de 80% com azimute sul-sudoeste.",
     "fontes": [
       "https://doi.org/10.26848/rbgf.v17.3.p1905-1920",
       "https://periodicos.ufpe.br/revistas/index.php/rbgfe/article/view/259418"
@@ -8510,5 +8511,61 @@
     "citacao_abnt": "AVELINO, J.M.S. 2015. Novos achados palinológicos em Petrolândia – SC: reconhecimento da Zona Lueckisporites Virkkiae em amostras de afloramento do Grupo Passa Dois (Permiano - Guadalupiano) na Bacia do Paraná. Trabalho de Conclusão de Curso (Geologia), Universidade Federal do Rio Grande do Sul, Instituto de Geociências (orientador: P.A. de Souza).",
     "x": 475.7,
     "y": 357.0
+  },
+  {
+    "periodo": "Plioceno–Pleistoceno",
+    "era": "Cenozóico — Quaternário",
+    "periodo_ordem": 13,
+    "formacao": "Fm. Botucatu (arenito) — contexto geral dos afloramentos, segundo Bechtel (2022)",
+    "categoria": "Icnofóssil — paleotoca",
+    "numero_catalogo": "-",
+    "site": "Bom Sossego (Irineópolis)",
+    "municipio": "Irineópolis",
+    "bacia": "Bacia do Paraná — Fm. Botucatu",
+    "armazenamento": "Estrutura in situ (icnofóssil não coletável)",
+    "descritor": "Bechtel, A.P. (2022) — \"Registro da megafauna pliocênica-quaternária no Geoparque Caminhos dos Cânions do Sul e Irineópolis, SC\", Trabalho de Conclusão de Curso (Geografia), Universidade do Estado de Santa Catarina (UDESC)",
+    "unidade_pesquisa": "UDESC — curso de Geografia (trabalho de conclusão de curso)",
+    "idade_ma": "Não datada; intervalo convencional deste banco para paleotocas atribuídas à megafauna extinta (5,33 Ma – 11.700 a)",
+    "tipo_fonte": "Tese ou dissertação",
+    "fontes": [
+      "https://sistemabu.udesc.br/pergamumweb/vinculos/0000a3/0000a31d.pdf"
+    ],
+    "citacao_abnt": "BECHTEL, A.P. 2022. Registro da megafauna pliocênica-quaternária no Geoparque Caminhos dos Cânions do Sul e Irineópolis, SC. Trabalho de Conclusão de Curso (Geografia), Universidade do Estado de Santa Catarina (UDESC).",
+    "id": 297,
+    "taxon": "Megaichnus major (Paleotoca Bom Sossego I)",
+    "lat": -26.4572,
+    "lon": -50.7063,
+    "x": 364.9,
+    "y": 118.1,
+    "local_coleta": "Paleotoca «Bom Sossego I» (BS I), localidade Bom Sossego, Irineópolis, SC, em propriedade privada; 1.030 m (±10 m) de altitude (coordenada publicada: 26,4572°S, 50,7063°O)",
+    "observacoes": "Classificação: paleotoca — estrutura de habitação (Domichnia) escavada por mamíferos da megafauna. Segundo Bechtel (2022): entrada de 3,40 m de largura por 1,07 m de altura, parcialmente fechada; azimute de 132°; marcas de escavação dos tipos A (pequenos buracos) e D (ranhuras); classificada, pelo critério de Lopes et al. (2017), como Megaichnus major. O trabalho não informa o comprimento total (só um trecho final de cerca de 3,30 m, medido com trena) e não afirma expressamente a rocha desta cavidade — a Fm. Botucatu aparece como contexto geral dos afloramentos da área. Há marcas antrópicas (números, cores e símbolos; uma cor ainda rósea que o autor associa a menos de 100 anos). Primeira paleotoca de Irineópolis neste banco; a outra da mesma localidade é o registro nº 298. O mesmo trabalho trata de três paleotocas do Geoparque Caminhos dos Cânions do Sul (Veisom, Aparência e Parque; ver registros nº 259 e 260). IDADE: o trabalho não atribui idade a esta cavidade; cita Buchmann et al. (2016) para dizer que a idade das paleotocas não pode ser determinada com precisão. O intervalo Plioceno–Pleistoceno é a convenção deste banco, sem datação direta. FONTE: trabalho de conclusão de curso (graduação), não artigo revisado por pares; o PDF foi lido por ferramenta de leitura automática (resumo, não leitura integral): conferir os valores no original antes de citar. O próprio texto tem inconsistências de rotulagem (BS II aparece como «BM II» numa legenda; Lopes et al. aparece como 2016 e como 2017)."
+  },
+  {
+    "periodo": "Plioceno–Pleistoceno",
+    "era": "Cenozóico — Quaternário",
+    "periodo_ordem": 13,
+    "formacao": "Fm. Botucatu (arenito) — inferida pelo autor a partir dos afloramentos da região (Bechtel, 2022)",
+    "categoria": "Icnofóssil — paleotoca",
+    "numero_catalogo": "-",
+    "site": "Bom Sossego (Irineópolis)",
+    "municipio": "Irineópolis",
+    "bacia": "Bacia do Paraná — Fm. Botucatu",
+    "armazenamento": "Estrutura in situ (icnofóssil não coletável)",
+    "descritor": "Bechtel, A.P. (2022) — \"Registro da megafauna pliocênica-quaternária no Geoparque Caminhos dos Cânions do Sul e Irineópolis, SC\", Trabalho de Conclusão de Curso (Geografia), Universidade do Estado de Santa Catarina (UDESC)",
+    "unidade_pesquisa": "UDESC — curso de Geografia (trabalho de conclusão de curso)",
+    "idade_ma": "Não datada; intervalo convencional deste banco para paleotocas atribuídas à megafauna extinta (5,33 Ma – 11.700 a)",
+    "tipo_fonte": "Tese ou dissertação",
+    "fontes": [
+      "https://sistemabu.udesc.br/pergamumweb/vinculos/0000a3/0000a31d.pdf"
+    ],
+    "citacao_abnt": "BECHTEL, A.P. 2022. Registro da megafauna pliocênica-quaternária no Geoparque Caminhos dos Cânions do Sul e Irineópolis, SC. Trabalho de Conclusão de Curso (Geografia), Universidade do Estado de Santa Catarina (UDESC).",
+    "id": 298,
+    "taxon": "Paleotoca Bom Sossego II (icnofóssil de escavação — megafauna)",
+    "lat": -26.4579,
+    "lon": -50.7064,
+    "x": 364.9,
+    "y": 118.2,
+    "local_coleta": "Paleotoca «Bom Sossego II» (BS II), localidade Bom Sossego, Irineópolis, SC; 1.027 m (±4 m) de altitude (coordenada publicada: 26,4579°S, 50,7064°O), a poucas dezenas de metros da Bom Sossego I",
+    "observacoes": "Classificação: paleotoca — estrutura de habitação (Domichnia) escavada por mamíferos da megafauna. Segundo Bechtel (2022): entrada parcialmente fechada, sem medidas; túnel preservado por mais de 10 m, de parede lisa; entrada inclinada, que facilita a entrada de água; marcas de garras do tipo D1, com mais de 30 cm; marca antrópica na parede (inscrição lida como «Dane»). A rocha é INFERIDA pelo autor como arenito da Fm. Botucatu «devido aos afloramentos» da região; o trabalho não traz a classificação Megaichnus, o azimute nem o comprimento desta cavidade. Ver também o registro nº 297 (Bom Sossego I, mesma localidade). IDADE: o trabalho não atribui idade a esta cavidade; cita Buchmann et al. (2016) para dizer que a idade das paleotocas não pode ser determinada com precisão. O intervalo Plioceno–Pleistoceno é a convenção deste banco, sem datação direta. FONTE: trabalho de conclusão de curso (graduação), não artigo revisado por pares; o PDF foi lido por ferramenta de leitura automática (resumo, não leitura integral): conferir os valores no original antes de citar. O próprio texto tem inconsistências de rotulagem (BS II aparece como «BM II» numa legenda; Lopes et al. aparece como 2016 e como 2017)."
   }
 ]

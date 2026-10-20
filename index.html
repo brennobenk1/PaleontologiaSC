@@ -27,7 +27,10 @@
   /* Tema aplicado antes da pintura, para não piscar o tema errado no
      carregamento. Inline de propósito: arquivo externo chegaria tarde. */
   (function(){
-    try{ var t = localStorage.getItem('paleo-tema'); if(t) document.documentElement.dataset.tema = t; }
+    try{
+      var t = localStorage.getItem('paleo-tema'); if(t) document.documentElement.dataset.tema = t;
+      var c = localStorage.getItem('paleo-cores'); if(c === 'ics') document.documentElement.dataset.cores = 'ics';
+    }
     catch(e){ /* localStorage bloqueado: segue no tema padrão */ }
   })();
 </script>
@@ -55,10 +58,28 @@
       <button class="nav-link" data-view="sobre">Sobre &amp; Fontes</button>
     </nav>
 
-    <button class="btn-tema" id="btnTema" type="button" aria-pressed="false"
-            title="Alternar entre a paleta clássica e as cores da bandeira de Santa Catarina">
-      <span class="tema-losango" aria-hidden="true"></span><span class="tema-rotulo">Bandeira</span>
-    </button>
+    <div class="config" id="config">
+      <button class="btn-config" id="btnConfig" type="button" aria-label="Configurações do site"
+              aria-haspopup="true" aria-expanded="false" aria-controls="painelConfig" title="Configurações">
+        <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.6"
+             stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">
+          <circle cx="12" cy="12" r="3.1"/>
+          <path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 1 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 1 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 1 1-2.83-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 1 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 1 1 2.83-2.83l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 1 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 1 1 2.83 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 1 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z"/>
+        </svg>
+      </button>
+      <div class="config-painel" id="painelConfig" role="group" aria-label="Configurações do site" hidden>
+        <p class="config-titulo">Configurações do site</p>
+        <button class="btn-tema" id="btnTema" type="button" aria-pressed="false"
+                title="Alternar entre a paleta clássica e as cores da bandeira de Santa Catarina">
+          <span class="tema-losango" aria-hidden="true"></span><span class="tema-rotulo">Bandeira</span>
+        </button>
+        <button class="btn-tema btn-cores" id="btnCores" type="button" aria-pressed="false"
+                title="Colorir catálogo, mapa, página inicial e períodos com as cores da Tabela Cronoestratigráfica Internacional">
+          <span class="cores-chip" aria-hidden="true"></span><span class="cores-rotulo">Utilizar cores cronoestratigráficas</span>
+        </button>
+        <p class="config-nota">Cores da Tabela Cronoestratigráfica Internacional (ICS, v2022/02). Intervalos que cruzam duas unidades usam a cor da mais antiga.</p>
+      </div>
+    </div>
 
     <button class="nav-toggle" id="navToggle" aria-label="Abrir menu" aria-expanded="false">
       <span></span><span></span><span></span>
@@ -239,6 +260,11 @@
     <div class="map-sidebar">
       <h4>Bacias / unidades</h4>
       <ul class="map-legend" id="bacenLegend"></ul>
+      <div class="map-crono" id="mapaCrono" hidden>
+        <h4>Cor do sítio = período</h4>
+        <ul class="map-legend map-legend-crono" id="mapaCronoLegenda"></ul>
+        <p class="muted map-crono-nota">Cada ponto usa a cor do período com mais registros no sítio (empate: o mais antigo). Cores: Tabela Cronoestratigráfica Internacional (ICS, v2022/02).</p>
+      </div>
       <h4>Sítio selecionado</h4>
       <div class="map-site-detail" id="mapSiteDetail">
         <p class="muted">Toque em um ponto do mapa para ver os detalhes do sítio.</p>
@@ -298,8 +324,8 @@
       <div class="avi-map-canvas" id="aviSvgMapWrap"></div>
       <p class="muted avi-map-caption">Intensidade da cor = nº de registros citados na literatura por UF.</p>
       <ul class="map-legend" style="margin-top:0.6rem;">
-        <li><span class="legend-swatch" style="background:#1f4e5f;border-radius:50%;"></span><span>Táxon mesozoico (Cretáceo)</span></li>
-        <li><span class="legend-swatch" style="background:#b5651d;border-radius:50%;"></span><span>Táxon cenozoico</span></li>
+        <li><span class="legend-swatch swatch-avi-meso" style="border-radius:50%;"></span><span>Táxon mesozoico (Cretáceo)</span></li>
+        <li><span class="legend-swatch swatch-avi-ceno" style="border-radius:50%;"></span><span>Táxon cenozoico</span></li>
       </ul>
     </div>
 

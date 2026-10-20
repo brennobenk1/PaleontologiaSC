@@ -507,7 +507,7 @@
       "Plioceno–Pleistoceno"
     ],
     "taxons_amostra": [
-      "Megaichnus isp. (paleotocas de Porto União)"
+      "Paleotocas e crotovinas (icnofósseis de escavação — Porto União)"
     ],
     "x": 322.6,
     "y": 71.4
@@ -1335,6 +1335,23 @@
     ],
     "taxons_amostra": [
       "Palinoflora da Zona Lueckisporites virkkiae (esporomorfos — Petrolândia)"
+    ]
+  },
+  {
+    "site": "Bom Sossego (Irineópolis)",
+    "municipio": "Irineópolis",
+    "bacia": "Bacia do Paraná — Fm. Botucatu",
+    "lat": -26.4572,
+    "lon": -50.7063,
+    "x": 364.9,
+    "y": 118.1,
+    "count": 2,
+    "periodos": [
+      "Plioceno–Pleistoceno"
+    ],
+    "taxons_amostra": [
+      "Megaichnus major (Paleotoca Bom Sossego I)",
+      "Paleotoca Bom Sossego II (icnofóssil de escavação — megafauna)"
     ]
   }
 ]
