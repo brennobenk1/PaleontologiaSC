@@ -498,20 +498,119 @@
     "y": 173.4
   },
   {
-    "site": "Paleotocas de Porto União",
+    "site": "Gruta do Monge (Morro da Cruz, Porto União)",
     "municipio": "Porto União",
     "bacia": "Bacia do Paraná — Fm. Botucatu",
-    "lat": -26.2383,
-    "lon": -51.0772,
+    "lat": -26.2461,
+    "lon": -51.0784,
+    "count": 2,
+    "periodos": [
+      "Plioceno–Pleistoceno"
+    ],
+    "taxons_amostra": [
+      "Paleotoca Gruta do Monge (1) (icnofóssil de escavação — megafauna)",
+      "Paleotoca Gruta do Monge (2) (icnofóssil de escavação — megafauna)"
+    ],
+    "x": 322.4,
+    "y": 73.5
+  },
+  {
+    "site": "Toca dos Trilhos (Porto União)",
+    "municipio": "Porto União",
+    "bacia": "Bacia do Paraná — Fm. Botucatu",
+    "lat": -26.2663,
+    "lon": -51.0759,
     "count": 1,
     "periodos": [
       "Plioceno–Pleistoceno"
     ],
     "taxons_amostra": [
-      "Paleotocas e crotovinas (icnofósseis de escavação — Porto União)"
+      "Paleotoca Toca dos Trilhos (icnofóssil de escavação — megafauna)"
     ],
-    "x": 322.6,
-    "y": 71.4
+    "x": 322.7,
+    "y": 77.8
+  },
+  {
+    "site": "Toca dos Trilhos 2 (Porto União)",
+    "municipio": "Porto União",
+    "bacia": "Bacia do Paraná — Fm. Botucatu",
+    "lat": -26.2644,
+    "lon": -51.0751,
+    "count": 1,
+    "periodos": [
+      "Plioceno–Pleistoceno"
+    ],
+    "taxons_amostra": [
+      "Paleotoca Toca dos Trilhos (2) (icnofóssil de escavação — megafauna)"
+    ],
+    "x": 322.8,
+    "y": 77.4
+  },
+  {
+    "site": "Toca do Legru (Porto União)",
+    "municipio": "Porto União",
+    "bacia": "Bacia do Paraná — Fm. Botucatu",
+    "lat": -26.2756,
+    "lon": -51.0997,
+    "count": 1,
+    "periodos": [
+      "Plioceno–Pleistoceno"
+    ],
+    "taxons_amostra": [
+      "Paleotoca Toca do Legru (icnofóssil de escavação — megafauna)"
+    ],
+    "x": 320.0,
+    "y": 79.7
+  },
+  {
+    "site": "Gruta do São Pedro do Timbó (Porto União)",
+    "municipio": "Porto União",
+    "bacia": "Bacia do Paraná — Fm. Botucatu",
+    "lat": -26.4339,
+    "lon": -50.8453,
+    "count": 3,
+    "periodos": [
+      "Plioceno–Pleistoceno"
+    ],
+    "taxons_amostra": [
+      "Paleotoca Gruta do São Pedro do Timbó (1) (icnofóssil de escavação — megafauna)",
+      "Paleotoca Gruta do São Pedro do Timbó (2) (icnofóssil de escavação — megafauna)",
+      "Paleotoca Gruta do São Pedro do Timbó (3) (icnofóssil de escavação — megafauna)"
+    ],
+    "x": 349.0,
+    "y": 113.1
+  },
+  {
+    "site": "Toca dos Giacomini (Porto União)",
+    "municipio": "Porto União",
+    "bacia": "Bacia do Paraná — Fm. Botucatu",
+    "lat": -26.2725,
+    "lon": -51.0683,
+    "count": 1,
+    "periodos": [
+      "Plioceno–Pleistoceno"
+    ],
+    "taxons_amostra": [
+      "Paleotoca Toca dos Giacomini (icnofóssil de escavação — megafauna)"
+    ],
+    "x": 323.6,
+    "y": 79.1
+  },
+  {
+    "site": "Toca do Pintado (Porto União)",
+    "municipio": "Porto União",
+    "bacia": "Bacia do Paraná — Fm. Botucatu",
+    "lat": -26.2885,
+    "lon": -51.0496,
+    "count": 1,
+    "periodos": [
+      "Plioceno–Pleistoceno"
+    ],
+    "taxons_amostra": [
+      "Paleotoca Toca do Pintado (icnofóssil de escavação — megafauna)"
+    ],
+    "x": 325.7,
+    "y": 82.4
   },
   {
     "site": "Afloramento de Ponte Alta",

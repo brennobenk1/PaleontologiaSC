@@ -12,8 +12,8 @@ sequencial» da versão 2026.10.09.
 
 ## 2026.10.09 — 09/10/2026 · mais 71 registros, 3 retirados por procedência errada, localidades conferidas no texto integral
 
-Banco: **304 registros** (era 228), **84 sítios** (era 57), 60 municípios, 162 obras na bibliografia,
-135 registros com DOI (eram 52). Tudo continua só de Santa Catarina (critério: procedência da coleta, não o depositário).
+Banco: **313 registros** (era 228), **90 sítios** (era 57), 60 municípios, 162 obras na bibliografia,
+144 registros com DOI (eram 52). Tudo continua só de Santa Catarina (critério: procedência da coleta, não o depositário).
 
 ### Registros novos (34)
 - **Itajaí, Ediacarano (234, 235):** *Palaeopascichnus* sp. e *Nimbia* sp., de Becker-Kerber et al. (2020).
@@ -568,6 +568,36 @@ idade conferidos na própria fonte. Os candidatos que não passaram estão lista
   Flona de Chapecó, não é registro fóssil; Cyrino et al. (2026), Saldanha et al. (2023) e outros que apareceram na busca — são de
   Minas Gerais ou não nomeiam o estado. O restante da paleoicnologia do Itararé, dos vertebrados do Rio do Rasto e do Folhelho
   Lontras apontados pela literatura já estava no banco.
+
+### Paleotocas de Porto União: uma cavidade por registro, com a posição lida no mapa do artigo (26/10/2026) — registros 172 e 305–313
+Artigo indicado pelo autor do site (Santos et al., 2021, *Research, Society and Development* 10(11):e330101119176; o link do ResearchGate
+foi acrescentado às fontes) e PDF integral com a Figura 2. O registro 172, que reunia as cavidades de Porto União, foi dividido: **uma
+paleotoca por registro**, com os dados do Quadro 1 de cada uma (altitude, comprimento, altura, largura, arranjo) e os tipos de marcas
+que o texto lista para ela. Banco: 313 registros (eram 304) e 90 sítios (eram 84).
+- **Como se localizou cada cavidade.** O artigo não publica coordenadas nem diz o município de cada uma (o Quadro 1 só dá nome e
+  medidas); a posição só aparece na Figura 2, em que cada marcador tem cor e nome na legenda. A figura foi georreferenciada pelos ticks de
+  0,1° do próprio quadro (erro estimado de cerca de 0,1 km), e cada ponto foi testado contra a malha municipal do IBGE (Santa Catarina e
+  Paraná): **dez cavidades caem em Porto União (SC) e nove em União da Vitória (PR)**, exatamente a contagem do texto do artigo.
+- **Conferência da leitura.** O marcador «Grutas do Monge» cai a cerca de 50 m da coordenada publicada por Schipanski et al. (2021,
+  Geomae), 26°14′46,0″S 51°04′42,3″O. As duas Grutas do Monge usam essa coordenada publicada, o que indica ser o mesmo local nos dois
+  trabalhos (antes constava que os textos não declaravam isso expressamente).
+- **Registros de SC (10):** 172 e 305 (Gruta do Monge e Gruta do Monge (2)), 306 e 307 (Toca dos Trilhos e Toca dos Trilhos (2)), 308 (Toca do
+  Legru), 309 a 311 (Gruta do São Pedro do Timbó, (2) e (3)), 312 (Toca dos Giacomini) e 313 (Toca do Pintado). As cavidades que dividem
+  um marcador no mapa (as duas do Monge e as três do São Pedro do Timbó) compartilham o ponto. As duas Trilhos foram lidas no quadro
+  ampliado da figura (inset), com o zoom calibrado por dois marcadores que aparecem nos dois quadros; o erro delas é um pouco maior
+  (cerca de 0,15 km). O ponto do São Pedro do Timbó e o do Legru ficam a cerca de 0,5 km do limite municipal, e a contagem do artigo só
+  fecha com os dois em Porto União.
+- **Ficaram de fora, por serem do Paraná (9):** Toca dos Kavales, Toca dos Valperes, Toca e Crotovina Caixa d’água e as cinco Crotovinas Ouro
+  Verde (União da Vitória, PR). O banco é só de Santa Catarina.
+- **Afiliações** dos autores (página da revista): Universidade Estadual do Paraná (três) e Universidade Federal do Paraná (um); antes
+  constava «não informada no resumo consultado».
+- **Média de 1,55 m** de altura e de largura (nota «conferir no original»): recalculada a partir dos 19 valores do Quadro 1, as duas
+  médias dão de fato ≈1,55 m.
+- **Texto do artigo registrado:** tipos de marca I a V e a atribuição dos autores (tipo I a Mylodontidae; construtores *Glossotherium* ou
+  *Scelidotherium*, e não *Eremotherium*); quatro das 13 paleotocas sem marcas (pelas listas do texto, as Tocas 7, 8, 11 e 13, todas em SC);
+  crotovinas incompletas por cortes de obras; e a inconsistência interna do artigo, que cita a Fm. Rio do Rasto na área de estudo e descreve
+  todas as cavidades em arenito da Fm. Botucatu.
+- O sítio «Paleotocas de Porto União» deixou de existir: virou sete sítios (um por marcador do mapa do artigo).
 
 ## 2026.09.14 — 08/10/2026 · tudo com fonte científica ou com "citação de mídia" explícita
 

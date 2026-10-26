@@ -1890,7 +1890,7 @@
     "fim_ma": 0.0117,
     "cor": "#b5651d",
     "descricao": "Transição entre o Plioceno e o Pleistoceno, com depósitos da plataforma continental e registros de megafauna marinha e continental.",
-    "total_registros": 12,
+    "total_registros": 21,
     "taxons": [
       {
         "taxon": "Paleotocas (icnofósseis de escavação — Dasypodidae / Mylodontidae)",
@@ -1935,7 +1935,7 @@
         ]
       },
       {
-        "taxon": "Paleotocas e crotovinas (icnofósseis de escavação — Porto União)",
+        "taxon": "Paleotoca Gruta do Monge (1) (icnofóssil de escavação — megafauna)",
         "count": 1,
         "ids": [
           172
@@ -1974,6 +1974,69 @@
         "count": 1,
         "ids": [
           298
+        ]
+      },
+      {
+        "taxon": "Paleotoca Gruta do Monge (2) (icnofóssil de escavação — megafauna)",
+        "count": 1,
+        "ids": [
+          305
+        ]
+      },
+      {
+        "taxon": "Paleotoca Toca dos Trilhos (icnofóssil de escavação — megafauna)",
+        "count": 1,
+        "ids": [
+          306
+        ]
+      },
+      {
+        "taxon": "Paleotoca Toca dos Trilhos (2) (icnofóssil de escavação — megafauna)",
+        "count": 1,
+        "ids": [
+          307
+        ]
+      },
+      {
+        "taxon": "Paleotoca Toca do Legru (icnofóssil de escavação — megafauna)",
+        "count": 1,
+        "ids": [
+          308
+        ]
+      },
+      {
+        "taxon": "Paleotoca Gruta do São Pedro do Timbó (1) (icnofóssil de escavação — megafauna)",
+        "count": 1,
+        "ids": [
+          309
+        ]
+      },
+      {
+        "taxon": "Paleotoca Gruta do São Pedro do Timbó (2) (icnofóssil de escavação — megafauna)",
+        "count": 1,
+        "ids": [
+          310
+        ]
+      },
+      {
+        "taxon": "Paleotoca Gruta do São Pedro do Timbó (3) (icnofóssil de escavação — megafauna)",
+        "count": 1,
+        "ids": [
+          311
+        ]
+      },
+      {
+        "taxon": "Paleotoca Toca dos Giacomini (icnofóssil de escavação — megafauna)",
+        "count": 1,
+        "ids": [
+          312
+        ]
+      },
+      {
+        "taxon": "Paleotoca Toca do Pintado (icnofóssil de escavação — megafauna)",
+        "count": 1,
+        "ids": [
+          313
         ]
       }
     ]
