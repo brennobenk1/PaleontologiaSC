@@ -89,14 +89,15 @@
     "bacia": "Bacia do Paraná — Grupo Itararé",
     "lat": -26.34,
     "lon": -49.91,
-    "count": 3,
+    "count": 4,
     "periodos": [
       "Permiano Inferior"
     ],
     "taxons_amostra": [
       "Heteropecten catharinae (Reed, 1930)",
       "Myonia costata Rocha-Campos, 1970",
-      "Myonia tayoensis? Reed, 1930"
+      "Myonia tayoensis? Reed, 1930",
+      "Deltopecten? sp."
     ],
     "x": 456.0,
     "y": 92.9
@@ -1353,5 +1354,85 @@
       "Megaichnus major (Paleotoca Bom Sossego I)",
       "Paleotoca Bom Sossego II (icnofóssil de escavação — megafauna)"
     ]
+  },
+  {
+    "site": "Areal Maciambu (Pinheira, Palhoça)",
+    "municipio": "Palhoça",
+    "bacia": "Planície Costeira — Depósitos Quaternários",
+    "lat": -27.83,
+    "lon": -48.6383,
+    "count": 1,
+    "periodos": [
+      "Pleistoceno Superior"
+    ],
+    "taxons_amostra": [
+      "Ophiomorpha nodosa (galerias verticais não ramificadas — Tipo 1 de Kennedy & MacDougall, 1969)"
+    ],
+    "x": 601.3,
+    "y": 407.9
+  },
+  {
+    "site": "Lagoa do Imaruí e rio D’Una (sondagens)",
+    "municipio": "Imaruí / Imbituba (região)",
+    "bacia": "Planície Costeira — Depósitos Quaternários",
+    "lat": -28.228,
+    "lon": -48.8342,
+    "count": 1,
+    "periodos": [
+      "Quaternário (Pleistoceno–Holoceno)"
+    ],
+    "taxons_amostra": [
+      "Ostracodes do Quaternário tardio da Lagoa do Imaruí e do rio D’Una (12 espécies; Cyprideis multidentata e C. salebrosa dominam entre os autóctones)"
+    ],
+    "x": 578.9,
+    "y": 491.9
+  },
+  {
+    "site": "ESEC Mata Preta (turfeira)",
+    "municipio": "Abelardo Luz",
+    "bacia": "Depósitos Quaternários de turfeira (planalto e serras)",
+    "lat": -26.4834,
+    "lon": -52.2201,
+    "count": 1,
+    "periodos": [
+      "Quaternário (Pleistoceno–Holoceno)"
+    ],
+    "taxons_amostra": [
+      "Pólen e esporos da turfeira da Estação Ecológica da Mata Preta (78 tipos de palinomorfos; base a ~39.600 anos cal AP)"
+    ],
+    "x": 191.9,
+    "y": 123.6
+  },
+  {
+    "site": "Flona de Chapecó (planície de inundação)",
+    "municipio": "Chapecó / Guatambu (Flona de Chapecó)",
+    "bacia": "Depósitos Quaternários continentais (planalto e serras)",
+    "lat": -27.0989,
+    "lon": -52.7767,
+    "count": 1,
+    "periodos": [
+      "Quaternário (Pleistoceno–Holoceno)"
+    ],
+    "taxons_amostra": [
+      "Pólen e esporos de sedimento de planície de inundação da Floresta Nacional de Chapecó (campos e florestas; ~26.900 anos cal AP até o presente)"
+    ],
+    "x": 128.3,
+    "y": 253.5
+  },
+  {
+    "site": "Parna das Araucárias (turfeira)",
+    "municipio": "Ponte Serrada (região)",
+    "bacia": "Depósitos Quaternários de turfeira (planalto e serras)",
+    "lat": -26.8595,
+    "lon": -51.9273,
+    "count": 1,
+    "periodos": [
+      "Quaternário (Pleistoceno–Holoceno)"
+    ],
+    "taxons_amostra": [
+      "Pólen e esporos de turfeira do Parque Nacional das Araucárias (campos e floresta com araucária; últimos ~34.000 anos cal AP)"
+    ],
+    "x": 225.4,
+    "y": 203.0
   }
 ]

@@ -12,8 +12,8 @@ sequencial» da versão 2026.10.09.
 
 ## 2026.10.09 — 09/10/2026 · mais 71 registros, 3 retirados por procedência errada, localidades conferidas no texto integral
 
-Banco: **298 registros** (era 228), **79 sítios** (era 57), 55 municípios, 155 obras na bibliografia,
-131 registros com DOI (eram 52). Tudo continua só de Santa Catarina (critério: procedência da coleta, não o depositário).
+Banco: **304 registros** (era 228), **84 sítios** (era 57), 60 municípios, 162 obras na bibliografia,
+135 registros com DOI (eram 52). Tudo continua só de Santa Catarina (critério: procedência da coleta, não o depositário).
 
 ### Registros novos (34)
 - **Itajaí, Ediacarano (234, 235):** *Palaeopascichnus* sp. e *Nimbia* sp., de Becker-Kerber et al. (2020).
@@ -521,6 +521,53 @@ nas fontes abertas (artigos, TCCs e resumos da UDESC e da UFRGS). Os números de
   modo ICS os pontos, faixas e barras ganham um contorno fino.
 - Por baixo: toda cor de período passou a ser uma variável CSS (`--pc-<ordem>`, `--ec-<era>`), então alternar o modo só reescreve
   as variáveis; nada é redesenhado.
+
+### Registro 256 (Volta Velha, Itapoá): evento e ano da referência (20/10/2026)
+- O resumo nº 247 dos Anais da ABEQUA (Silva, Angulo, Souza & Boski, «Caracterização micropaleontológica de testemunhos rasos
+  das planícies costeiras holocênicas do Paraná e norte de Santa Catarina — resultados preliminares») não traz evento nem ano
+  no próprio PDF; constava como s.d. Ele aparece no índice dos «Anais do Congresso da ABEQUA 2017» (site da ABEQUA), que
+  identifica o evento como o XVI Congresso da ABEQUA, Bertioga (SP), 21–27/10/2017, v. 3, n. 1. Descritor, citação ABNT e
+  fontes passam a ter 2017; as datas do congresso foram lidas só nessa página.
+- **Correção:** a ficha dizia «35 sondagens manuais»; o resumo diz «35 amostras» para foraminíferos, de sete sondagens (seis em
+  SC — três em Volta Velha, Itapoá, e três na Baía de São Francisco — e uma no Paraná, em Cabaraquara). O escopo do registro
+  não muda: continua só a amostra de miliolídeos de Volta Velha.
+
+### Busca de registros ausentes (26/10/2026) — 6 registros novos (299–304)
+Busca na literatura (OpenAlex, Crossref, repositórios de teses e sites das revistas) por ocorrências de SC que o banco ainda não
+tinha. Cada candidato foi cruzado com os 298 registros (DOI, táxon, localidade) e só entrou o que teve município, unidade e
+idade conferidos na própria fonte. Os candidatos que não passaram estão listados abaixo.
+- **299 — *Ophiomorpha nodosa*, Praia da Pinheira, Palhoça** (Martins et al., 2018, *Rev. Bras. Paleontol.* 21(1):79–86;
+  texto integral): 15 espécimes (UFSC-P 369–383) em areias marinhas rasas da penúltima transgressão (MIS 5, ~125 mil anos,
+  por correlação com a Barreira III; o artigo não informa o método de datação). Período do catálogo: Pleistoceno Superior.
+  Nota cruzada no registro 258 (Paulo Lopes): o artigo diz que havia só dois registros anteriores do icnogênero em SC, e a
+  correspondência com o 258 não foi verificada.
+- **300 — *Deltopecten?* sp., Localidade Moema, Itaiópolis** (Gibathe, 2019, TCC da UTFPR; só o resumo foi lido, o texto
+  integral está sob embargo): bivalve da família Deltopectinidae que não consta do artigo de anais usado nos registros 25–27.
+- **301 — Ostracodes do Quaternário tardio da Lagoa do Imaruí e do rio D'Una** (Coimbra, 2006, *Rev. Bras. Paleontol.*
+  9(3):295–302; texto integral): 12 espécies em sondagens entre Imaruí e Imbituba, exemplares figurados na UFRGS. O artigo não
+  tem datações próprias nem coordenadas (ponto do mapa = centro do município de Imaruí) e traz contagens internamente
+  inconsistentes de sondagens e amostras, registradas como estão.
+- **302 — Palinologia da turfeira da ESEC Mata Preta, Abelardo Luz** (Moraes, Pontelli & Lima Primam, 2025, *Rev. Bras.
+  Paleontol.* 28(3):e20250508; texto integral): testemunho de 320 cm, três datações AMS, base a 39.647 anos cal AP. O resumo do
+  artigo chama essa idade de «Pleistoceno Médio»; ela cai no Pleistoceno Superior (a dissertação de origem diz Pleistoceno
+  Superior), e o catálogo registra a idade numérica.
+- **303 — Palinologia da Flona de Chapecó** (Kirchner Eidt et al., 2026, *Rev. Bras. Paleontol.* 28(4):e20250550; texto
+  integral): testemunho de 154 cm, quatro datações AMS, ~26.900 anos cal AP até o presente. O título diz «últimos 22.000
+  anos», mas o resumo e as datações cobrem ~27.000. As coordenadas do artigo caem em Guatambu na malha do site, e a Flona
+  abrange Chapecó e Guatambu; o registro leva os dois nomes.
+- **304 — Palinologia da turfeira do Parque Nacional das Araucárias, Ponte Serrada** (Girardi, 2025, dissertação da Unioeste;
+  só o resumo foi lido, o PDF não pôde ser aberto): últimos ~34.000 anos cal AP. Sem coordenadas (ponto do mapa = centro do
+  município) e sem lista de táxons até que o texto integral seja conferido.
+- **Sítios novos (5):** Areal Maciambu (Palhoça); Lagoa do Imaruí e rio D'Una; ESEC Mata Preta; Flona de Chapecó; Parna das
+  Araucárias. O registro 300 usa o sítio Localidade Moema, que já existia.
+- **Candidatos que NÃO entraram, e por quê:** Gruta do Presépio (Hadler et al., 2024, *The Holocene*; Ballejo et al., 2022,
+  *Boreas*) — abrigo arqueológico do Holoceno em SC, mas os resumos não dão o município nem a geologia e o texto integral não
+  foi acessível; Behling & Negrelle (2001, *Quaternary Research*) — o artigo não nomeia o local nem o município no corpo do
+  texto (Volta Velha/Itapoá só aparece por inferência das referências); Graeff et al. (2026, *Rev. Palaeobot. Palynol.*,
+  Planalto Meio-Oeste catarinense) — só os metadados estavam acessíveis; Eidt (2015, TCC da UFFS) — chuva polínica atual da
+  Flona de Chapecó, não é registro fóssil; Cyrino et al. (2026), Saldanha et al. (2023) e outros que apareceram na busca — são de
+  Minas Gerais ou não nomeiam o estado. O restante da paleoicnologia do Itararé, dos vertebrados do Rio do Rasto e do Folhelho
+  Lontras apontados pela literatura já estava no banco.
 
 ## 2026.09.14 — 08/10/2026 · tudo com fonte científica ou com "citação de mídia" explícita
 

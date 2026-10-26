@@ -717,7 +717,7 @@
     "fim_ma": 273.0,
     "cor": "#7fa66b",
     "descricao": "Período com ampla diversidade de invertebrados marinhos, flora glossopterídea e icnofósseis na Fm. Rio Bonito (Assembleia Taió) e no Grupo Itararé.",
-    "total_registros": 122,
+    "total_registros": 123,
     "taxons": [
       {
         "taxon": "Phyllotheca australis (Brongniart, 1828)",
@@ -1572,6 +1572,13 @@
         "ids": [
           295
         ]
+      },
+      {
+        "taxon": "Deltopecten? sp.",
+        "count": 1,
+        "ids": [
+          300
+        ]
       }
     ]
   },
@@ -2012,7 +2019,7 @@
     "fim_ma": 0.0117,
     "cor": "#b5651d",
     "descricao": "Subdivisão final do Pleistoceno, com registros de megafauna sul-americana extinta (gliptodontes, toxodontes) em depósitos litorâneos e cavernas.",
-    "total_registros": 2,
+    "total_registros": 3,
     "taxons": [
       {
         "taxon": "Notiomastodon platensis (Ameghino, 1888)",
@@ -2027,6 +2034,13 @@
         "ids": [
           62
         ]
+      },
+      {
+        "taxon": "Ophiomorpha nodosa (galerias verticais não ramificadas — Tipo 1 de Kennedy & MacDougall, 1969)",
+        "count": 1,
+        "ids": [
+          299
+        ]
       }
     ]
   },
@@ -2038,7 +2052,7 @@
     "fim_ma": 0,
     "cor": "#a85a2e",
     "descricao": "Período quaternário, abrangendo depósitos superficiais recentes e registros de fauna pleistocênica em diferentes contextos sedimentares.",
-    "total_registros": 5,
+    "total_registros": 9,
     "taxons": [
       {
         "taxon": "Paleotoca Amaral de Baixo (icnofóssil de escavação — provável tatu extinto)",
@@ -2073,6 +2087,34 @@
         "count": 1,
         "ids": [
           261
+        ]
+      },
+      {
+        "taxon": "Ostracodes do Quaternário tardio da Lagoa do Imaruí e do rio D’Una (12 espécies; Cyprideis multidentata e C. salebrosa dominam entre os autóctones)",
+        "count": 1,
+        "ids": [
+          301
+        ]
+      },
+      {
+        "taxon": "Pólen e esporos da turfeira da Estação Ecológica da Mata Preta (78 tipos de palinomorfos; base a ~39.600 anos cal AP)",
+        "count": 1,
+        "ids": [
+          302
+        ]
+      },
+      {
+        "taxon": "Pólen e esporos de sedimento de planície de inundação da Floresta Nacional de Chapecó (campos e florestas; ~26.900 anos cal AP até o presente)",
+        "count": 1,
+        "ids": [
+          303
+        ]
+      },
+      {
+        "taxon": "Pólen e esporos de turfeira do Parque Nacional das Araucárias (campos e floresta com araucária; últimos ~34.000 anos cal AP)",
+        "count": 1,
+        "ids": [
+          304
         ]
       }
     ]
